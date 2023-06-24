@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, interactive-widget=resizes-content" />
+	<meta name="color-scheme" content="dark light" />
+	<meta name="robots" content="all" />
+	<meta name="description" content="An overview of web specifications" />
+
+	<link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+	<link rel="icon" href="./assets/icon.png" type="image/png" sizes="any" />
+	<link rel="manifest" href="./app.webmanifest" />
+
+	<title>Web Specs</title>
+
+	<style>
+		body {
+			font-family: system-ui, sans-serif;
+			box-sizing: border-box;
+			block-size: 100vh;
+			block-size: 100dvb;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.list {
+			flex-grow: 1;
+			overflow: auto;
+			padding-inline: .5rem;
+		}
+
+		.list {
+			scroll-padding-block-start: 1em;
+			scroll-padding-block-start: 1lh;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		::highlight(search) {
+			background-color: CanvasText;
+			color: Canvas;
+		}
+
+		ul {
+			margin: 0;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table > tr > td {
+			border: 1px solid #888;
+		}
+
+		table > tr > td > a {
+			inline-size: 100%;
+			display: inline-block;
+			padding: .1em .2em;
+		}
+	</style>
+
+	<script type="module" src="./script.js"></script>
+</head>
+
+<body>
+	<noscript>
+		Please enable JavaScript to view this site.
+		<hr />
+	</noscript>
+
+	<input type="search" placeholder="Search..." />
+
+	<ul>
+		<li><a href="#csswg">CSS Working Group</a></li>
+		<li><a href="#fxtf">CSS-SVG Effects Task Force</a></li>
+		<li><a href="#houdini">CSS Houdini Task Force</a></li>
+		<li><a href="#whatwg">Web Hypertext Application Technology Working Group</a></li>
+	</ul>
+
+	<div class="list">
+		<h2 id="csswg"><a href="https://w3c.github.io/csswg-drafts/">CSS Working Group</a>:</h2>
+
+		<table class="csswg">
+			<template>
+				<tr>
+					<td><a href="" class="link"><strong></strong></a></td>
+					<td class="name"></td>
+				</tr>
+			</template>
+		</table>
+
+		<h2 id="fxtf"><a href="https://drafts.fxtf.org">CSS-SVG Effects Task Force</a>:</h2>
+
+		<table class="fxtf">
+			<template>
+				<tr>
+					<td><a href="" class="link"><strong></strong></a></td>
+					<td class="name"></td>
+				</tr>
+			</template>
+		</table>
+
+		<h2 id="houdini"><a href="https://drafts.css-houdini.org">CSS Houdini Task Force</a>:</h2>
+
+		<table class="houdini">
+			<template>
+				<tr>
+					<td><a href="" class="link"><strong></strong></a></td>
+					<td class="name"></td>
+				</tr>
+			</template>
+		</table>
+		
+		<h2 id="whatwg"><a href="https://spec.whatwg.org">Web Hypertext Application Technology Working Group</a>:</h2>
+
+		<table class="whatwg">
+			<template>
+				<tr>
+					<td><a href="" class="link"><strong></strong></a></td>
+					<td class="name"></td>
+				</tr>
+			</template>
+		</table>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+[
+	{
+		"name": "Web Hypertext Application Technology Working Group",
+		"shortName": "WHATWG",
+		"specs": [
+			{
+				"name": "Compatibility",
+				"url": "https://compat.spec.whatwg.org/"
+			},
+			{
+				"name": "Console",
+				"url": "https://console.spec.whatwg.org/"
+			},
+			{
+				"name": "DOM",
+				"url": "https://dom.spec.whatwg.org/"
+			},
+			{
+				"name": "Encoding",
+				"url": "https://encoding.spec.whatwg.org/"
+			},
+			{
+				"name": "Fetch",
+				"url": "https://fetch.spec.whatwg.org/"
+			},
+			{
+				"name": "File System",
+				"url": "https://fs.spec.whatwg.org/"
+			},
+			{
+				"name": "Fullscreen API",
+				"url": "https://fullscreen.spec.whatwg.org/"
+			},
+			{
+				"name": "HTML",
+				"url": "https://html.spec.whatwg.org/"
+			},
+			{
+				"name": "Infra",
+				"url": "https://infra.spec.whatwg.org/"
+			},
+			{
+				"name": "MIME Sniffing",
+				"url": "https://mimesniff.spec.whatwg.org/"
+			},
+			{
+				"name": "Notifications API",
+				"url": "https://notifications.spec.whatwg.org/"
+			},
+			{
+				"name": "Quirks Mode",
+				"url": "https://quirks.spec.whatwg.org/"
+			},
+			{
+				"name": "Storage",
+				"url": "https://storage.spec.whatwg.org/"
+			},
+			{
+				"name": "Streams",
+				"url": "https://streams.spec.whatwg.org/"
+			},
+			{
+				"name": "Test Utils",
+				"url": "https://testutils.spec.whatwg.org/"
+			},
+			{
+				"name": "URL",
+				"url": "https://url.spec.whatwg.org/"
+			},
+			{
+				"name": "Web IDL",
+				"url": "https://webidl.spec.whatwg.org/"
+			},
+			{
+				"name": "WebSockets",
+				"url": "https://websockets.spec.whatwg.org/"
+			},
+			{
+				"name": "XMLHttpRequest",
+				"url": "https://xhr.spec.whatwg.org/"
+			}
+		]
+	}
+]

@@ -1,0 +1,15 @@
+
+:root {
+	color-scheme: dark light;
+	font-family: system-ui, sans-serif;
+	overflow-wrap: break-word;
+	line-height: 1.5;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	box-sizing: border-box;
+	min-block-size: 100dvb;
+	margin: 0;
+	padding: .5rem;
+}
