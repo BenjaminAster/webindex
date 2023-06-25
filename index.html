@@ -10,15 +10,16 @@
 	<!-- <meta name="repository" content="https://github.com/BenjaminAster/web-specs" /> -->
 	<!-- <meta property="og:image" content="https://benjaminaster.com/NAME/assets/icon.png" /> -->
 
-	<!-- <link rel="icon" href="./assets/icon.png" type="image/png" sizes="512x512" /> -->
-	<!-- <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" sizes="any" /> -->
-	<!-- <link rel="manifest" href="./app.webmanifest" /> -->
+	<link rel="icon" href="./assets/icon.png" type="image/png" sizes="512x512" />
+	<link rel="icon" href="./assets/icon.svg" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="./app.webmanifest" />
 
 	<title>Web-related Specifications</title>
 
 	<link rel="stylesheet" href="./style.css" />
 
 	<script type="module" src="./script.js"></script>
+	<link rel="preload" as="fetch" crossorigin="anonymous" href="./index/specs.json" />
 </head>
 
 <body>
@@ -27,7 +28,23 @@
 		<hr />
 	</noscript>
 
-	
+	<main>
+		<ul id="main-list">
+			<template>
+				<li>
+					<h3 class="group-name"></h3>
+					<ul class="group-specs">
+						<template>
+							<li>
+								<h4><a href="#" class="spec-name spec-link"></a></h4>
+								<a href="#" class="icon:github repo-link"></a>
+							</li>
+						</template>
+					</ul>
+				</li>
+			</template>
+		</ul>
+	</main>
 </body>
 
 </html>

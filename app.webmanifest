@@ -1,0 +1,21 @@
+{
+	"name": "Web Specs",
+	"short_name": "Specs",
+	"display": "standalone",
+	"start_url": "./",
+	"scope": "./",
+	"icons": [
+		{
+			"src": "./assets/icon.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any monochrome"
+		},
+		{
+			"src": "./assets/maskable.png",
+			"type": "image/png",
+			"sizes": "768x768",
+			"purpose": "maskable"
+		}
+	]
+}
