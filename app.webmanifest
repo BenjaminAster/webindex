@@ -1,9 +1,10 @@
 {
 	"name": "Web Specs",
 	"short_name": "Specs",
-	"display": "standalone",
+	"display": "browser",
 	"start_url": "./",
 	"scope": "./",
+	"background_color": "#2f3034",
 	"icons": [
 		{
 			"src": "./assets/icon.png",

@@ -16,7 +16,7 @@ body {
 @layer global {
 	h1, h2, h3, h4, h5, h6 {
 		margin: 0;
-		font-weight: 500;
+		font-weight: 550;
 	}
 
 	a {
@@ -50,6 +50,17 @@ ul#main-list > li {
 	padding: .7rem;
 }
 
+.group-header {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: .5rem;
+	align-items: baseline;
+}
+
+.group-header .group-idenfifier {
+	color: color-mix(in srgb, Canvas, CanvasText 75%);
+}
+
 ul.group-specs {
 	display: flex;
 	flex-direction: column;
@@ -58,6 +69,18 @@ ul.group-specs {
 ul.group-specs > li {
 	display: flex;
 	align-items: center;
+	gap: .5rem;
+}
+
+ul.group-specs > li .spec-link {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: .5rem;
+	align-items: baseline;
+}
+
+ul.group-specs > li .spec-url {
+	color: color-mix(in srgb, Canvas, CanvasText 75%);
 }
 
 ul.group-specs > li:not(:last-of-type) {
@@ -65,7 +88,7 @@ ul.group-specs > li:not(:last-of-type) {
 }
 
 ul.group-specs > li > a.repo-link {
-	margin-inline-start: auto;
+	/* margin-inline-start: auto; */
 }
 
 :where([class^="icon:"], [class*=" icon:"])::before {

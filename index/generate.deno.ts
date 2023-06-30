@@ -23,6 +23,8 @@ declare global {
 	}
 }
 
+const fetchOptions: RequestInit = { cache: "default" };
+
 {
 	// Polyfills:
 
@@ -35,11 +37,11 @@ declare global {
 	}
 }
 
-let list: { name: string, homepage: string, specs: { name: string, url: string, repoUrl: string }[] }[] = (await Promise.all([
+let list: { name: string, homepage: string, identifier: string, specs: { name: string, url: string, repoUrl: string }[] }[] = (await Promise.all([
 	(async function* () {
 		// WHATWG:
 
-		const html = await (await globalThis.fetch("https://spec.whatwg.org/", { cache: "reload" })).text();
+		const html = await (await globalThis.fetch("https://spec.whatwg.org/", fetchOptions)).text();
 		const doc = new DOMParser().parseFromString(html, "text/html");
 
 		const specs = await Array.fromAsync((async function* () {
@@ -54,8 +56,9 @@ let list: { name: string, homepage: string, specs: { name: string, url: string, 
 		})());
 
 		yield {
-			name: "Web Hypertext Application Technology Working Group (WHATWG)",
-			homepage: "https://whatwg.org",
+			name: "Web Hypertext Application Technology Working Group",
+			homepage: "https://whatwg.org/",
+			identifier: "whatwg",
 			specs,
 		};
 	})(),
@@ -64,7 +67,8 @@ let list: { name: string, homepage: string, specs: { name: string, url: string, 
 
 		yield {
 			name: "TC39",
-			homepage: "https://tc39.es",
+			identifier: "tc39",
+			homepage: "https://tc39.es/",
 			specs: [
 				{
 					name: "ECMAScript",
@@ -82,13 +86,13 @@ let list: { name: string, homepage: string, specs: { name: string, url: string, 
 	// (async () => {
 	// 	// W3C Working Groups
 
-	// 	const html = await (await globalThis.fetch("https://www.w3.org/groups/wg/", { cache: "reload" })).text();
+	// 	const html = await (await globalThis.fetch("https://www.w3.org/groups/wg/", fetchOptions)).text();
 	// 	const doc = new DOMParser().parseFromString(html, "text/html");
 
 	// 	for (const anchor of doc.querySelectorAll(".group-list > card a.card__link")) {
 	// 		const groupName = anchor.innerText;
 	// 		const { id } = anchor.getAttribute("href").match(/\/groups\/wg\/(?<id>[\w-]+)\/$/).groups;
-	// 		const groupHTML = await (await globalThis.fetch(`https://www.w3.org/groups/wg/${id}/publications/`, { cache: "reload" })).text();
+	// 		const groupHTML = await (await globalThis.fetch(`https://www.w3.org/groups/wg/${id}/publications/`, fetchOptions)).text();
 	// 		const groupDoc = new DOMParser().parseFromString(groupHTML, "text/html");
 	// 		for (const specAnchor of groupDoc.querySelectorAll(".tr-list > .maturity-grouping > .tr-list__item > .tr-list__item__header > h3 > a"))
 	// 		return {
@@ -104,25 +108,28 @@ let list: { name: string, homepage: string, specs: { name: string, url: string, 
 			{
 				name: "CSS Working Group",
 				repoName: "csswg-drafts",
+				identifier: "wg/css",
 				draftsDomain: "https://drafts.csswg.org",
 				homepage: "https://wiki.csswg.org/",
 			},
 			{
 				name: "CSS-SVG Effects Task Force",
 				repoName: "fxtf-drafts",
+				identifier: "fxtf",
 				draftsDomain: "https://drafts.fxtf.org",
 				homepage: "https://www.w3.org/Graphics/fx/",
 			},
 			{
 				name: "CSS-TAG Houdini Task Force",
 				repoName: "css-houdini-drafts",
+				identifier: "css-houdini",
 				draftsDomain: "https://drafts.css-houdini.org",
 				homepage: "https://github.com/w3c/css-houdini-drafts/wiki/",
 			},
 		];
 
-		for (const { name, draftsDomain, repoName, homepage } of infos) {
-			const html = await (await globalThis.fetch(draftsDomain, { cache: "reload" })).text();
+		for (const { name, draftsDomain, repoName, homepage, identifier } of infos) {
+			const html = await (await globalThis.fetch(draftsDomain, fetchOptions)).text();
 			const doc = new DOMParser().parseFromString(html, "text/html");
 
 			const specs = await Array.fromAsync((async function* () {
@@ -140,6 +147,7 @@ let list: { name: string, homepage: string, specs: { name: string, url: string, 
 
 			yield {
 				name,
+				identifier,
 				homepage,
 				specs,
 			};
@@ -148,42 +156,63 @@ let list: { name: string, homepage: string, specs: { name: string, url: string, 
 	(async function* () {
 		// W3C
 
-		const groupIdentifiers = await (await globalThis.fetch("https://w3c.github.io/groups/identifiers.json", { cache: "reload" })).json();
+		const groupIdentifiers = await (await globalThis.fetch("https://w3c.github.io/groups/identifiers.json", fetchOptions)).json();
 
-		$groupsLoop: for await (const { identifier, name, repositories, homepage } of groupIdentifiers.map(async ({ identifier }) => {
+		$groupsLoop: for await (const { identifier, name, specs, homepage } of groupIdentifiers.map(async ({ identifier }) => {
 			if (excludedGroups.includes(identifier)) return {};
 
-			const { name, _links: { homepage } } = await (await globalThis.fetch(`https://w3c.github.io/groups/${identifier}/group.json`, { cache: "reload" })).json();
+			const { name, _links: { homepage: { href: homepage = undefined } = {} } = {} } = (
+				await (await globalThis.fetch(`https://w3c.github.io/groups/${identifier}/group.json`, fetchOptions)).json()
+			);
 
 			let repositories = await Promise.all(manualData.includedRepos[identifier]?.map(async (url) => {
-				const { login, repoName, path } = url.match(/^https:\/\/github.com\/(?<login>[\w-]+)\/(?<repoName>[\w-]+)(\/tree\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/).groups;
+				let { login, repoName, path, isFile } = url.match(/^https:\/\/github.com\/(?<login>[\w-]+)\/(?<repoName>[\w-]+)(\/(tree|(?<isFile>blob))\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/).groups;
+				let homepageUrl = `https://${login}.github.io/${repoName}/${path ? (isFile ? path.replace(/(\.bs|\.html)$/, "") : `${path}/`) : ""}`;
+				// if (path?.endsWith(".md")) homepageUrl = url;
 				return {
 					name: path?.split("/").at(-1) || repoName,
-					homepageUrl: `https://${login}.github.io/${repoName}/${path ? `${path}/` : ""}`,
+					homepageUrl,
 					repoUrl: url,
 				}
 			}) || []);
 
 			try {
-				repositories.push(...await (await globalThis.fetch(`https://w3c.github.io/groups/${identifier}/repositories.json`, { cache: "reload" })).json());
+				repositories.push(...await (await globalThis.fetch(`https://w3c.github.io/groups/${identifier}/repositories.json`, fetchOptions)).json());
 			} catch { }
 
-			return { identifier, name, repositories, homepage };
-		})) {
-			if (!(repositories?.length > 0)) continue $groupsLoop;
+			if (!(repositories?.length > 0)) return {};
 
 			const specs = await Array.fromAsync((async function* () {
-				$reposLoop: for (const { name: repoName, homepageUrl, isArchived, owner: { login = undefined } = {}, repoUrl } of repositories) {
-					if (isArchived || !homepageUrl) continue $reposLoop;
+				$reposLoop: for (let { name: repoName, homepageUrl, isArchived, isPrivate, owner: { login = undefined } = {}, repoUrl } of repositories) {
+					if (isArchived || isPrivate) continue $reposLoop;
+					repoUrl ||= `https://github.com/${login}/${repoName}`;
+					if (!homepageUrl || manualData.ignoreHomepageUrl[identifier]?.includes(repoUrl)) {
+						homepageUrl = `https://${login}.github.io/${repoName}/`;
+					}
+					if (manualData.excludedRepos[identifier]?.includes(repoUrl)) continue $reposLoop;
+					if (homepageUrl.startsWith("https://www.w3.org/")) homepageUrl = `https://${login}.github.io/${repoName}/`;
+					else if (homepageUrl.startsWith("http://")) homepageUrl = homepageUrl.replace("http://", "https://");
+					else if (!homepageUrl.startsWith("https://")) homepageUrl = "https://" + homepageUrl;
+					const response = await globalThis.fetch(homepageUrl, fetchOptions);
+					if (!response.ok) continue $reposLoop;
+					let doc = new DOMParser().parseFromString(await response.text(), "text/html");
+					if (doc.querySelector("meta[http-equiv=refresh]")) {
+						const link = doc.querySelector("meta[http-equiv=refresh]").getAttribute("content").match(/https:.+$/)[0];
+						doc = new DOMParser().parseFromString(await (await globalThis.fetch(link, fetchOptions)).text(), "text/html");
+					}
+					let title = doc.title.trim() || repoName;
+					if (title.match(/\b((working|community) group)\b/i)) continue $reposLoop;
 					yield {
-						name: repoName,
-						repoUrl: repoUrl || `https://github.com/${login}/${repoName}`,
-						url: homepageUrl.startsWith("https://www.w3.org/") ? `https://${login}.github.io/${repoName}/` : homepageUrl,
+						name: title,
+						repoUrl,
+						url: homepageUrl,
 					};
 				}
 			})());
 
-			if (specs.length > 0) yield {
+			return { identifier, name, specs, homepage };
+		})) {
+			if (specs?.length > 0) yield {
 				name,
 				identifier,
 				homepage,
@@ -195,7 +224,7 @@ let list: { name: string, homepage: string, specs: { name: string, url: string, 
 
 		// return tmp;
 
-		// const html = await (await globalThis.fetch("https://w3c.github.io/groups/all-repositories.json", { cache: "reload" })).json();
+		// const html = await (await globalThis.fetch("https://w3c.github.io/groups/all-repositories.json", fetchOptions)).json();
 	})(),
 ].map(async (generator) => await Array.fromAsync(generator)))).flat();
 

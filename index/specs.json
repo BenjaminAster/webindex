@@ -1,7 +1,8 @@
 [
 	{
-		"name": "Web Hypertext Application Technology Working Group (WHATWG)",
-		"homepage": "https://whatwg.org",
+		"name": "Web Hypertext Application Technology Working Group",
+		"homepage": "https://whatwg.org/",
+		"identifier": "whatwg",
 		"specs": [
 			{
 				"name": "Compatibility",
@@ -102,7 +103,8 @@
 	},
 	{
 		"name": "TC39",
-		"homepage": "https://tc39.es",
+		"identifier": "tc39",
+		"homepage": "https://tc39.es/",
 		"specs": [
 			{
 				"name": "ECMAScript",
@@ -118,6 +120,7 @@
 	},
 	{
 		"name": "CSS Working Group",
+		"identifier": "wg/css",
 		"homepage": "https://wiki.csswg.org/",
 		"specs": [
 			{
@@ -809,6 +812,7 @@
 	},
 	{
 		"name": "CSS-SVG Effects Task Force",
+		"identifier": "fxtf",
 		"homepage": "https://www.w3.org/Graphics/fx/",
 		"specs": [
 			{
@@ -865,6 +869,7 @@
 	},
 	{
 		"name": "CSS-TAG Houdini Task Force",
+		"identifier": "css-houdini",
 		"homepage": "https://github.com/w3c/css-houdini-drafts/wiki/",
 		"specs": [
 			{
@@ -915,607 +920,227 @@
 		]
 	},
 	{
-		"name": "ARIA and Assistive Technologies Community Group",
-		"identifier": "cg/aria-at",
-		"homepage": {
-			"href": "https://www.w3.org/community/aria-at/"
-		},
-		"specs": [
-			{
-				"name": "aria-at",
-				"repoUrl": "https://github.com/w3c/aria-at",
-				"url": "https://aria-at.netlify.app"
-			}
-		]
-	},
-	{
-		"name": "Accessibility Discoverability Vocabulary for Schema.org Community Group",
-		"identifier": "cg/a11y-discov-vocab",
-		"homepage": {
-			"href": "https://www.w3.org/community/a11y-discov-vocab/"
-		},
-		"specs": [
-			{
-				"name": "a11y-discov-vocab",
-				"repoUrl": "https://github.com/w3c/a11y-discov-vocab",
-				"url": "https://w3c.github.io/a11y-discov-vocab/"
-			}
-		]
-	},
-	{
 		"name": "Accessibility Guidelines Working Group",
 		"identifier": "wg/ag",
-		"homepage": {
-			"href": "https://www.w3.org/WAI/GL/"
-		},
+		"homepage": "https://www.w3.org/WAI/GL/",
 		"specs": [
 			{
-				"name": "wcag",
+				"name": "Web Content Accessibility Guidelines (WCAG) 2.1",
 				"repoUrl": "https://github.com/w3c/wcag",
 				"url": "https://w3c.github.io/wcag/guidelines/"
-			},
-			{
-				"name": "wcag-act-rules-cg",
-				"repoUrl": "https://github.com/w3c/wcag-act-rules-cg",
-				"url": "https://auto-wcag.github.io/auto-wcag/"
-			},
-			{
-				"name": "wcag2ict",
-				"repoUrl": "https://github.com/w3c/wcag2ict",
-				"url": "https://wcag2ict.netlify.app/"
-			}
-		]
-	},
-	{
-		"name": "Accessible Platform Architectures Working Group",
-		"identifier": "wg/apa",
-		"homepage": {
-			"href": "https://www.w3.org/WAI/APA/"
-		},
-		"specs": [
-			{
-				"name": "aac-registry",
-				"repoUrl": "https://github.com/w3c/aac-registry",
-				"url": "https://w3c.github.io/aac-registry/"
-			},
-			{
-				"name": "adapt",
-				"repoUrl": "https://github.com/w3c/adapt",
-				"url": "https://w3c.github.io/adapt/"
-			},
-			{
-				"name": "captcha-accessibility",
-				"repoUrl": "https://github.com/w3c/captcha-accessibility",
-				"url": "https://w3c.github.io/captcha-accessibility/"
-			},
-			{
-				"name": "ctaur",
-				"repoUrl": "https://github.com/w3c/ctaur",
-				"url": "https://w3c.github.io/ctaur/"
-			},
-			{
-				"name": "fast",
-				"repoUrl": "https://github.com/w3c/fast",
-				"url": "https://w3c.github.io/fast/"
-			},
-			{
-				"name": "maturity-model",
-				"repoUrl": "https://github.com/w3c/maturity-model",
-				"url": "https://w3c.github.io/maturity-model/"
-			},
-			{
-				"name": "media-accessibility-reqs",
-				"repoUrl": "https://github.com/w3c/media-accessibility-reqs",
-				"url": "https://w3c.github.io/media-accessibility-reqs/"
-			},
-			{
-				"name": "naur",
-				"repoUrl": "https://github.com/w3c/naur",
-				"url": "https://w3c.github.io/naur/"
-			},
-			{
-				"name": "payment-accessibility-reqs",
-				"repoUrl": "https://github.com/w3c/payment-accessibility-reqs",
-				"url": "https://w3c.github.io/payment-accessibility-reqs/"
-			},
-			{
-				"name": "pronunciation",
-				"repoUrl": "https://github.com/w3c/pronunciation",
-				"url": "https://w3c.github.io/pronunciation/"
-			},
-			{
-				"name": "raur",
-				"repoUrl": "https://github.com/w3c/raur",
-				"url": "http://w3c.github.io/raur/"
-			},
-			{
-				"name": "remote-meetings",
-				"repoUrl": "https://github.com/w3c/remote-meetings",
-				"url": "https://w3c.github.io/remote-meetings/"
-			},
-			{
-				"name": "saur",
-				"repoUrl": "https://github.com/w3c/saur",
-				"url": "https://w3c.github.io/saur/"
-			},
-			{
-				"name": "xaur",
-				"repoUrl": "https://github.com/w3c/xaur",
-				"url": "https://w3c.github.io/xaur/"
 			}
 		]
 	},
 	{
 		"name": "Accessible Rich Internet Applications Working Group",
 		"identifier": "wg/aria",
-		"homepage": {
-			"href": "https://www.w3.org/WAI/ARIA/"
-		},
+		"homepage": "https://www.w3.org/WAI/ARIA/",
 		"specs": [
 			{
-				"name": "accname",
+				"name": "Accessible Name and Description Computation 1.2",
 				"repoUrl": "https://github.com/w3c/accname",
 				"url": "https://w3c.github.io/accname/"
 			},
 			{
-				"name": "aria",
+				"name": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
 				"repoUrl": "https://github.com/w3c/aria",
 				"url": "https://w3c.github.io/aria/"
 			},
 			{
-				"name": "aria-practices",
-				"repoUrl": "https://github.com/w3c/aria-practices",
-				"url": "https://w3c.github.io/aria-practices/"
-			},
-			{
-				"name": "core-aam",
+				"name": "Core Accessibility API Mappings 1.2",
 				"repoUrl": "https://github.com/w3c/core-aam",
 				"url": "https://w3c.github.io/core-aam/"
 			},
 			{
-				"name": "dpub-aam",
+				"name": "Digital Publishing Accessibility API Mappings 1.1",
 				"repoUrl": "https://github.com/w3c/dpub-aam",
 				"url": "https://w3c.github.io/dpub-aam/"
 			},
 			{
-				"name": "graphics-aam",
+				"name": "Graphics Accessibility API Mappings",
 				"repoUrl": "https://github.com/w3c/graphics-aam",
 				"url": "https://w3c.github.io/graphics-aam/"
 			},
 			{
-				"name": "graphics-aria",
+				"name": "WAI-ARIA Graphics Module",
 				"repoUrl": "https://github.com/w3c/graphics-aria",
 				"url": "https://w3c.github.io/graphics-aria/"
 			},
 			{
-				"name": "html-aam",
+				"name": "HTML Accessibility API Mappings 1.0",
 				"repoUrl": "https://github.com/w3c/html-aam",
 				"url": "https://w3c.github.io/html-aam/"
 			},
 			{
-				"name": "mathml-aam",
+				"name": "MathML Accessiblity API Mappings 1.0",
 				"repoUrl": "https://github.com/w3c/mathml-aam",
 				"url": "https://w3c.github.io/mathml-aam/"
 			}
 		]
 	},
 	{
-		"name": "Advisory Board",
-		"identifier": "other/ab",
-		"homepage": {
-			"href": "https://www.w3.org/Member/Board/"
-		},
-		"specs": [
-			{
-				"name": "AB-memberonly",
-				"repoUrl": "https://github.com/w3c/AB-memberonly",
-				"url": "https://w3c.github.io/AB-memberonly/"
-			},
-			{
-				"name": "AB-private",
-				"repoUrl": "https://github.com/w3c/AB-private",
-				"url": "https://w3c.github.io/AB-private/"
-			},
-			{
-				"name": "standards-track",
-				"repoUrl": "https://github.com/w3c/standards-track",
-				"url": "https://w3c.github.io/standards-track/"
-			},
-			{
-				"name": "w3process",
-				"repoUrl": "https://github.com/w3c/w3process",
-				"url": "https://w3c.github.io/w3process/"
-			},
-			{
-				"name": "w3process-obsolete-rescinded",
-				"repoUrl": "https://github.com/w3c/w3process-obsolete-rescinded",
-				"url": "https://w3c.github.io/w3process-obsolete-rescinded/"
-			}
-		]
-	},
-	{
-		"name": "Audio Community Group",
-		"identifier": "cg/audio-comgp",
-		"homepage": {
-			"href": "https://www.w3.org/community/audio-comgp/"
-		},
-		"specs": [
-			{
-				"name": "web-audio-cg",
-				"repoUrl": "https://github.com/WebAudio/web-audio-cg",
-				"url": "https://WebAudio.github.io/web-audio-cg/"
-			}
-		]
-	},
-	{
 		"name": "Audio Working Group",
 		"identifier": "wg/audio",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/audio"
-		},
+		"homepage": "https://www.w3.org/groups/wg/audio/",
 		"specs": [
 			{
-				"name": "web-audio-api",
+				"name": "Web Audio API",
 				"repoUrl": "https://github.com/WebAudio/web-audio-api",
 				"url": "https://webaudio.github.io/web-audio-api/"
 			},
 			{
-				"name": "web-midi-api",
+				"name": "Web MIDI API",
 				"repoUrl": "https://github.com/WebAudio/web-midi-api",
-				"url": "http://webaudio.github.io/web-midi-api/"
-			}
-		]
-	},
-	{
-		"name": "Audiobooks Working Group",
-		"identifier": "wg/publishing",
-		"homepage": {
-			"href": "https://www.w3.org/publishing/groups/publ-wg/"
-		},
-		"specs": [
-			{
-				"name": "audiobooks",
-				"repoUrl": "https://github.com/w3c/audiobooks",
-				"url": "https://w3c.github.io/audiobooks/"
-			},
-			{
-				"name": "dpub-aria",
-				"repoUrl": "https://github.com/w3c/dpub-aria",
-				"url": "https://w3c.github.io/dpub-aria/"
-			},
-			{
-				"name": "dpub-pwp-ucr",
-				"repoUrl": "https://github.com/w3c/dpub-pwp-ucr",
-				"url": "https://w3c.github.io/dpub-pwp-ucr/"
-			},
-			{
-				"name": "lpf",
-				"repoUrl": "https://github.com/w3c/lpf",
-				"url": "https://w3c.github.io/lpf"
-			},
-			{
-				"name": "pub-manifest",
-				"repoUrl": "https://github.com/w3c/pub-manifest",
-				"url": "https://w3c.github.io/pub-manifest"
-			},
-			{
-				"name": "pub-vocab",
-				"repoUrl": "https://github.com/w3c/pub-vocab",
-				"url": "https://w3c.github.io/pub-vocab/"
-			},
-			{
-				"name": "publ-tests",
-				"repoUrl": "https://github.com/w3c/publ-tests",
-				"url": "https://w3c.github.io/publ-tests"
-			},
-			{
-				"name": "publ-wg",
-				"repoUrl": "https://github.com/w3c/publ-wg",
-				"url": "https://w3c.github.io/publ-wg/"
-			},
-			{
-				"name": "pwpub",
-				"repoUrl": "https://github.com/w3c/pwpub",
-				"url": "https://w3c.github.io/pwpub/"
-			},
-			{
-				"name": "sync-media-pub",
-				"repoUrl": "https://github.com/w3c/sync-media-pub",
-				"url": "http://w3c.github.io/sync-media-pub"
-			},
-			{
-				"name": "wpub",
-				"repoUrl": "https://github.com/w3c/wpub",
-				"url": "https://w3c.github.io/wpub/"
-			},
-			{
-				"name": "wpub-ann",
-				"repoUrl": "https://github.com/w3c/wpub-ann",
-				"url": "https://w3c.github.io/wpub-ann/"
+				"url": "https://webaudio.github.io/web-midi-api/"
 			}
 		]
 	},
 	{
 		"name": "Browser Testing and Tools Working Group",
 		"identifier": "wg/browser-tools-testing",
-		"homepage": {
-			"href": "https://www.w3.org/testing/browser/"
-		},
+		"homepage": "https://www.w3.org/testing/browser/",
 		"specs": [
 			{
-				"name": "webdriver",
+				"name": "WebDriver",
 				"repoUrl": "https://github.com/w3c/webdriver",
 				"url": "https://w3c.github.io/webdriver/"
 			},
 			{
-				"name": "webdriver-bidi",
+				"name": "WebDriver BiDi",
 				"repoUrl": "https://github.com/w3c/webdriver-bidi",
 				"url": "https://w3c.github.io/webdriver-bidi/"
 			}
 		]
 	},
 	{
-		"name": "CSS Print Community Group",
-		"identifier": "cg/cssprint",
-		"homepage": {
-			"href": "https://www.w3.org/community/cssprint/"
-		},
-		"specs": [
-			{
-				"name": "css-print",
-				"repoUrl": "https://github.com/w3c/css-print",
-				"url": "https://w3c.github.io/css-print/"
-			}
-		]
-	},
-	{
-		"name": "Chinese Web Interest Group",
-		"identifier": "ig/chinese-web",
-		"homepage": {
-			"href": "https://www.w3.org/2018/chinese-web-ig/"
-		},
-		"specs": [
-			{
-				"name": "chinese-ig",
-				"repoUrl": "https://github.com/w3c/chinese-ig",
-				"url": "https://w3c.github.io/chinese-ig/"
-			},
-			{
-				"name": "chinese-ig-charter",
-				"repoUrl": "https://github.com/w3c/chinese-ig-charter",
-				"url": "https://w3c.github.io/chinese-ig-charter/charter-2022.html"
-			},
-			{
-				"name": "danmaku",
-				"repoUrl": "https://github.com/w3c/danmaku",
-				"url": "https://w3c.github.io/danmaku/"
-			}
-		]
-	},
-	{
-		"name": "Conversational Interfaces Community Group",
-		"identifier": "cg/conv",
-		"homepage": {
-			"href": "https://www.w3.org/community/conv/"
-		},
-		"specs": [
-			{
-				"name": "dmpl",
-				"repoUrl": "https://github.com/w3c/dmpl",
-				"url": "https://w3c.github.io/dmpl"
-			},
-			{
-				"name": "dms",
-				"repoUrl": "https://github.com/w3c/dms",
-				"url": "https://w3c.github.io/dms/"
-			}
-		]
-	},
-	{
-		"name": "Credible Web Community Group",
-		"identifier": "cg/credibility",
-		"homepage": {
-			"href": "https://www.w3.org/community/credibility/"
-		},
-		"specs": [
-			{
-				"name": "credweb",
-				"repoUrl": "https://github.com/w3c/credweb",
-				"url": "https://credweb.org"
-			}
-		]
-	},
-	{
-		"name": "Data Privacy Vocabularies and Controls Community Group",
-		"identifier": "cg/dpvcg",
-		"homepage": {
-			"href": "https://www.w3.org/community/dpvcg/"
-		},
-		"specs": [
-			{
-				"name": "dpv",
-				"repoUrl": "https://github.com/w3c/dpv",
-				"url": "https://w3id.org/dpv"
-			}
-		]
-	},
-	{
-		"name": "Dataset Exchange Working Group",
-		"identifier": "wg/dx",
-		"homepage": {
-			"href": "https://www.w3.org/2017/dxwg/"
-		},
-		"specs": [
-			{
-				"name": "dx-connegp",
-				"repoUrl": "https://github.com/w3c/dx-connegp",
-				"url": "https://w3c.github.io/dx-connegp/connegp/"
-			},
-			{
-				"name": "dx-prof",
-				"repoUrl": "https://github.com/w3c/dx-prof",
-				"url": "https://w3c.github.io/dx-prof/prof/"
-			},
-			{
-				"name": "dxwg",
-				"repoUrl": "https://github.com/w3c/dxwg",
-				"url": "https://w3c.github.io/dxwg/dcat/"
-			}
-		]
-	},
-	{
 		"name": "Decentralized Identifier Working Group",
 		"identifier": "wg/did",
-		"homepage": {
-			"href": "https://www.w3.org/2019/did-wg/"
-		},
+		"homepage": "https://www.w3.org/2019/did-wg/",
 		"specs": [
 			{
-				"name": "did-cbor-note",
+				"name": "The Plain CBOR Representation v1.0",
 				"repoUrl": "https://github.com/w3c/did-cbor-note",
 				"url": "https://w3c.github.io/did-cbor-note/"
 			},
 			{
-				"name": "did-core",
+				"name": "Decentralized Identifiers (DIDs) v1.0",
 				"repoUrl": "https://github.com/w3c/did-core",
 				"url": "https://w3c.github.io/did-core/"
 			},
 			{
-				"name": "did-imp-guide",
+				"name": "DID Implementation Guide v1.0",
 				"repoUrl": "https://github.com/w3c/did-imp-guide",
 				"url": "https://w3c.github.io/did-imp-guide/"
 			},
 			{
-				"name": "did-rubric",
+				"name": "DID Method Rubric v1.0",
 				"repoUrl": "https://github.com/w3c/did-rubric",
 				"url": "https://w3c.github.io/did-rubric/"
 			},
 			{
-				"name": "did-spec-registries",
+				"name": "DID Specification Registries",
 				"repoUrl": "https://github.com/w3c/did-spec-registries",
 				"url": "https://w3c.github.io/did-spec-registries/"
-			},
-			{
-				"name": "did-test-suite",
-				"repoUrl": "https://github.com/w3c/did-test-suite",
-				"url": "https://w3c.github.io/did-test-suite/"
-			},
-			{
-				"name": "did-use-cases",
-				"repoUrl": "https://github.com/w3c/did-use-cases",
-				"url": "https://w3c.github.io/did-use-cases/"
-			},
-			{
-				"name": "did-wg",
-				"repoUrl": "https://github.com/w3c/did-wg",
-				"url": "https://w3c.github.io/did-wg/"
 			}
 		]
 	},
 	{
 		"name": "Devices and Sensors Working Group",
 		"identifier": "wg/das",
-		"homepage": {
-			"href": "https://www.w3.org/das/"
-		},
+		"homepage": "https://www.w3.org/das/",
 		"specs": [
 			{
-				"name": "accelerometer",
+				"name": "Accelerometer",
 				"repoUrl": "https://github.com/w3c/accelerometer",
 				"url": "https://w3c.github.io/accelerometer/"
 			},
 			{
-				"name": "ambient-light",
+				"name": "Ambient Light Sensor",
 				"repoUrl": "https://github.com/w3c/ambient-light",
 				"url": "https://w3c.github.io/ambient-light/"
 			},
 			{
-				"name": "battery",
+				"name": "Battery Status API",
 				"repoUrl": "https://github.com/w3c/battery",
 				"url": "https://w3c.github.io/battery/"
 			},
 			{
-				"name": "compute-pressure",
+				"name": "Compute Pressure Level 1",
 				"repoUrl": "https://github.com/w3c/compute-pressure",
 				"url": "https://w3c.github.io/compute-pressure/"
 			},
 			{
-				"name": "contact-picker",
+				"name": "Contact Picker API",
 				"repoUrl": "https://github.com/w3c/contact-picker",
 				"url": "https://w3c.github.io/contact-picker/"
 			},
 			{
-				"name": "das-charter",
-				"repoUrl": "https://github.com/w3c/das-charter",
-				"url": "https://w3c.github.io/das-charter/das-wg-charter.html"
-			},
-			{
-				"name": "device-posture",
+				"name": "Device Posture API",
 				"repoUrl": "https://github.com/w3c/device-posture",
 				"url": "https://w3c.github.io/device-posture/"
 			},
 			{
-				"name": "deviceorientation",
+				"name": "DeviceOrientation Event Specification",
 				"repoUrl": "https://github.com/w3c/deviceorientation",
 				"url": "https://w3c.github.io/deviceorientation/"
 			},
 			{
-				"name": "devicesensors-wg",
+				"name": "W3C DAS WG » Home",
 				"repoUrl": "https://github.com/w3c/devicesensors-wg",
 				"url": "https://w3c.github.io/devicesensors-wg/"
 			},
 			{
-				"name": "geolocation-api",
+				"name": "Geolocation API",
 				"repoUrl": "https://github.com/w3c/geolocation-api",
 				"url": "https://w3c.github.io/geolocation-api/"
 			},
 			{
-				"name": "geolocation-sensor",
+				"name": "Geolocation Sensor",
 				"repoUrl": "https://github.com/w3c/geolocation-sensor",
 				"url": "https://w3c.github.io/geolocation-sensor/"
 			},
 			{
-				"name": "gyroscope",
+				"name": "Gyroscope",
 				"repoUrl": "https://github.com/w3c/gyroscope",
 				"url": "https://w3c.github.io/gyroscope/"
 			},
 			{
-				"name": "html-media-capture",
+				"name": "HTML Media Capture",
 				"repoUrl": "https://github.com/w3c/html-media-capture",
 				"url": "https://w3c.github.io/html-media-capture/"
 			},
 			{
-				"name": "magnetometer",
+				"name": "Magnetometer",
 				"repoUrl": "https://github.com/w3c/magnetometer",
 				"url": "https://w3c.github.io/magnetometer/"
 			},
 			{
-				"name": "motion-sensors",
+				"name": "Motion Sensors Explainer",
 				"repoUrl": "https://github.com/w3c/motion-sensors",
 				"url": "https://w3c.github.io/motion-sensors/"
 			},
 			{
-				"name": "orientation-sensor",
+				"name": "Orientation Sensor",
 				"repoUrl": "https://github.com/w3c/orientation-sensor",
 				"url": "https://w3c.github.io/orientation-sensor/"
 			},
 			{
-				"name": "proximity",
+				"name": "Proximity Sensor",
 				"repoUrl": "https://github.com/w3c/proximity",
 				"url": "https://w3c.github.io/proximity/"
 			},
 			{
-				"name": "screen-wake-lock",
+				"name": "Screen Wake Lock API",
 				"repoUrl": "https://github.com/w3c/screen-wake-lock",
 				"url": "https://w3c.github.io/screen-wake-lock/"
 			},
 			{
-				"name": "sensors",
+				"name": "Generic Sensor API",
 				"repoUrl": "https://github.com/w3c/sensors",
 				"url": "https://w3c.github.io/sensors/"
 			},
 			{
-				"name": "vibration",
+				"name": "Vibration API (Second Edition)",
 				"repoUrl": "https://github.com/w3c/vibration",
 				"url": "https://w3c.github.io/vibration/"
 			}
@@ -1524,762 +1149,267 @@
 	{
 		"name": "Distributed Tracing Working Group",
 		"identifier": "wg/distributed-tracing",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/distributed-tracing"
-		},
+		"homepage": "https://www.w3.org/groups/wg/distributed-tracing/",
 		"specs": [
 			{
-				"name": "baggage",
+				"name": "Propagation format for distributed context: Baggage",
 				"repoUrl": "https://github.com/w3c/baggage",
 				"url": "https://w3c.github.io/baggage/"
 			},
 			{
-				"name": "distributed-tracing-wg",
-				"repoUrl": "https://github.com/w3c/distributed-tracing-wg",
-				"url": "https://w3c.github.io/distributed-tracing-wg/"
-			},
-			{
-				"name": "trace-context",
+				"name": "Trace Context",
 				"repoUrl": "https://github.com/w3c/trace-context",
 				"url": "https://w3c.github.io/trace-context/"
 			},
 			{
-				"name": "trace-context-amqp",
+				"name": "Trace Context: AMQP protocol",
 				"repoUrl": "https://github.com/w3c/trace-context-amqp",
 				"url": "https://w3c.github.io/trace-context-amqp/"
 			},
 			{
-				"name": "trace-context-binary",
+				"name": "Trace Context: binary protocol",
 				"repoUrl": "https://github.com/w3c/trace-context-binary",
 				"url": "https://w3c.github.io/trace-context-binary/"
 			},
 			{
-				"name": "trace-context-mqtt",
+				"name": "Trace Context: MQTT protocol",
 				"repoUrl": "https://github.com/w3c/trace-context-mqtt",
 				"url": "https://w3c.github.io/trace-context-mqtt/"
 			},
 			{
-				"name": "trace-context-protocols-registry",
+				"name": "Trace Context Protocols Registry",
 				"repoUrl": "https://github.com/w3c/trace-context-protocols-registry",
 				"url": "https://w3c.github.io/trace-context-protocols-registry/"
 			},
 			{
-				"name": "trace-interchange-format",
+				"name": "Trace Interchange Format",
 				"repoUrl": "https://github.com/w3c/trace-interchange-format",
 				"url": "https://w3c.github.io/trace-interchange-format/"
 			},
 			{
-				"name": "trace-response-headers",
+				"name": "Trace Response Headers",
 				"repoUrl": "https://github.com/w3c/trace-response-headers",
 				"url": "https://w3c.github.io/trace-response-headers/"
 			},
 			{
-				"name": "tracestate-ids-registry",
+				"name": "Tracestate Ids Registry",
 				"repoUrl": "https://github.com/w3c/tracestate-ids-registry",
 				"url": "https://w3c.github.io/tracestate-ids-registry/"
 			}
 		]
 	},
 	{
-		"name": "EPUB 3 Community Group",
-		"identifier": "cg/epub3",
-		"homepage": {
-			"href": "https://www.w3.org/community/epub3/"
-		},
-		"specs": [
-			{
-				"name": "epubcheck",
-				"repoUrl": "https://github.com/w3c/epubcheck",
-				"url": "https://w3c.github.io/epubcheck/"
-			}
-		]
-	},
-	{
-		"name": "EPUB 3 Working Group",
-		"identifier": "wg/epub",
-		"homepage": {
-			"href": "https://www.w3.org/publishing/groups/epub-wg/"
-		},
-		"specs": [
-			{
-				"name": "epub-structural-tests",
-				"repoUrl": "https://github.com/w3c/epub-structural-tests",
-				"url": "https://w3c.github.io/epub-structural-tests/"
-			},
-			{
-				"name": "epub-tests",
-				"repoUrl": "https://github.com/w3c/epub-tests",
-				"url": "https://w3c.github.io/epub-tests/"
-			},
-			{
-				"name": "epub-translations",
-				"repoUrl": "https://github.com/w3c/epub-translations",
-				"url": "https://w3c.github.io/epub-translations"
-			},
-			{
-				"name": "epub-wg",
-				"repoUrl": "https://github.com/w3c/epub-wg",
-				"url": "https://w3c.github.io/epub-wg/"
-			}
-		]
-	},
-	{
-		"name": "Equity Community Group",
-		"identifier": "cg/equity",
-		"homepage": {
-			"href": "https://www.w3.org/community/equity/"
-		},
-		"specs": [
-			{
-				"name": "equity-cg",
-				"repoUrl": "https://github.com/w3c/equity-cg",
-				"url": "https://w3c.github.io/equity-cg/"
-			}
-		]
-	},
-	{
 		"name": "GPU for the Web Community Group",
 		"identifier": "cg/gpu",
-		"homepage": {
-			"href": "https://www.w3.org/community/gpu/"
-		},
+		"homepage": "https://www.w3.org/community/gpu/",
 		"specs": [
 			{
-				"name": "cts",
-				"repoUrl": "https://github.com/gpuweb/cts",
-				"url": "https://gpuweb.github.io/cts/"
+				"name": "WebGPU Shading Language",
+				"repoUrl": "https://github.com/gpuweb/gpuweb/tree/main/wgsl",
+				"url": "https://gpuweb.github.io/gpuweb/wgsl/"
 			},
 			{
-				"name": "gpuweb",
+				"name": "WebGPU",
 				"repoUrl": "https://github.com/gpuweb/gpuweb",
-				"url": "http://webgpu.io"
-			}
-		]
-	},
-	{
-		"name": "GPU for the Web Working Group",
-		"identifier": "wg/gpu",
-		"homepage": {
-			"href": "https://www.w3.org/2020/gpu/"
-		},
-		"specs": [
-			{
-				"name": "cts",
-				"repoUrl": "https://github.com/gpuweb/cts",
-				"url": "https://gpuweb.github.io/cts/"
-			},
-			{
-				"name": "gpuweb",
-				"repoUrl": "https://github.com/gpuweb/gpuweb",
-				"url": "http://webgpu.io"
-			},
-			{
-				"name": "gpuweb-wg",
-				"repoUrl": "https://github.com/w3c/gpuweb-wg",
-				"url": "https://w3c.github.io/gpuweb-wg/"
-			}
-		]
-	},
-	{
-		"name": "HTML Working Group",
-		"identifier": "wg/htmlwg",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/htmlwg"
-		},
-		"specs": [
-			{
-				"name": "htmlwg",
-				"repoUrl": "https://github.com/w3c/htmlwg",
-				"url": "https://w3c.github.io/htmlwg/"
-			}
-		]
-	},
-	{
-		"name": "Hebrew Layout Task Force",
-		"identifier": "tf/i18n-hlreq",
-		"homepage": {
-			"href": "https://github.com/w3c/hlreq/"
-		},
-		"specs": [
-			{
-				"name": "iip",
-				"repoUrl": "https://github.com/w3c/iip",
-				"url": "https://w3c.github.io/iip/"
+				"url": "https://gpuweb.github.io/gpuweb/"
 			}
 		]
 	},
 	{
 		"name": "Immersive Web Community Group",
 		"identifier": "cg/immersive-web",
-		"homepage": {
-			"href": "https://www.w3.org/community/immersive-web/"
-		},
+		"homepage": "https://www.w3.org/community/immersive-web/",
 		"specs": [
 			{
-				"name": "capture",
+				"name": "WebXR Capture Module",
 				"repoUrl": "https://github.com/immersive-web/capture",
 				"url": "https://immersive-web.github.io/capture/"
 			},
 			{
-				"name": "marker-tracking",
+				"name": "WebXR Marker Tracking Module",
 				"repoUrl": "https://github.com/immersive-web/marker-tracking",
 				"url": "https://immersive-web.github.io/marker-tracking/"
 			},
 			{
-				"name": "model-element",
+				"name": "The <model> element",
 				"repoUrl": "https://github.com/immersive-web/model-element",
 				"url": "https://immersive-web.github.io/model-element/"
 			},
 			{
-				"name": "real-world-meshing",
+				"name": "WebXR Raw Camera Access Module",
+				"repoUrl": "https://github.com/immersive-web/raw-camera-access",
+				"url": "https://immersive-web.github.io/raw-camera-access/"
+			},
+			{
+				"name": "WebXR Mesh Detection Module",
 				"repoUrl": "https://github.com/immersive-web/real-world-meshing",
 				"url": "https://immersive-web.github.io/real-world-meshing/"
 			},
 			{
-				"name": "webvr-polyfill",
-				"repoUrl": "https://github.com/immersive-web/webvr-polyfill",
-				"url": "http://immersive-web.github.io/webvr-polyfill/examples/"
-			},
-			{
-				"name": "webvr-polyfill-dpdb",
-				"repoUrl": "https://github.com/immersive-web/webvr-polyfill-dpdb",
-				"url": "https://dpdb.webvr.rocks/dpdb.json"
-			},
-			{
-				"name": "webxr-input-profiles",
-				"repoUrl": "https://github.com/immersive-web/webxr-input-profiles",
-				"url": "https://immersive-web.github.io/webxr-input-profiles"
+				"name": "Legacy WebVR Spec Version List",
+				"repoUrl": "https://github.com/immersive-web/webvr",
+				"url": "https://immersive-web.github.io/webvr/"
 			}
 		]
 	},
 	{
 		"name": "Immersive Web Working Group",
 		"identifier": "wg/immersive-web",
-		"homepage": {
-			"href": "https://www.w3.org/immersive-web/"
-		},
+		"homepage": "https://www.w3.org/immersive-web/",
 		"specs": [
 			{
-				"name": "anchors",
+				"name": "WebXR Anchors Module",
 				"repoUrl": "https://github.com/immersive-web/anchors",
 				"url": "https://immersive-web.github.io/anchors/"
 			},
 			{
-				"name": "dom-overlays",
+				"name": "WebXR Depth Sensing Module",
+				"repoUrl": "https://github.com/immersive-web/depth-sensing",
+				"url": "https://immersive-web.github.io/depth-sensing/"
+			},
+			{
+				"name": "WebXR DOM Overlays Module",
 				"repoUrl": "https://github.com/immersive-web/dom-overlays",
 				"url": "https://immersive-web.github.io/dom-overlays/"
 			},
 			{
-				"name": "hit-test",
+				"name": "WebXR Hit Test Module",
 				"repoUrl": "https://github.com/immersive-web/hit-test",
 				"url": "https://immersive-web.github.io/hit-test/"
 			},
 			{
-				"name": "homepage",
-				"repoUrl": "https://github.com/immersive-web/homepage",
-				"url": "https://immersive-web.github.io/homepage/"
-			},
-			{
-				"name": "immersiveweb.dev",
-				"repoUrl": "https://github.com/immersive-web/immersiveweb.dev",
-				"url": "https://immersiveweb.dev"
-			},
-			{
-				"name": "layers",
+				"name": "WebXR Layers API Level 1",
 				"repoUrl": "https://github.com/immersive-web/layers",
 				"url": "https://immersive-web.github.io/layers/"
 			},
 			{
-				"name": "lighting-estimation",
+				"name": "WebXR Lighting Estimation API Level 1",
 				"repoUrl": "https://github.com/immersive-web/lighting-estimation",
 				"url": "https://immersive-web.github.io/lighting-estimation/"
 			},
 			{
-				"name": "webxr",
+				"name": "WebXR Device API",
 				"repoUrl": "https://github.com/immersive-web/webxr",
 				"url": "https://immersive-web.github.io/webxr/"
 			},
 			{
-				"name": "webxr-ar-module",
+				"name": "WebXR Augmented Reality Module - Level 1",
 				"repoUrl": "https://github.com/immersive-web/webxr-ar-module",
 				"url": "https://immersive-web.github.io/webxr-ar-module"
 			},
 			{
-				"name": "webxr-gamepads-module",
+				"name": "WebXR Gamepads Module - Level 1",
 				"repoUrl": "https://github.com/immersive-web/webxr-gamepads-module",
 				"url": "https://immersive-web.github.io/webxr-gamepads-module"
 			},
 			{
-				"name": "webxr-hand-input",
+				"name": "WebXR Hand Input Module - Level 1",
 				"repoUrl": "https://github.com/immersive-web/webxr-hand-input",
 				"url": "https://immersive-web.github.io/webxr-hand-input/"
-			},
-			{
-				"name": "webxr-test-api",
-				"repoUrl": "https://github.com/immersive-web/webxr-test-api",
-				"url": "https://immersive-web.github.io/webxr-test-api/"
-			}
-		]
-	},
-	{
-		"name": "Improving Web Advertising Business Group",
-		"identifier": "bg/web-adv",
-		"homepage": {
-			"href": "https://www.w3.org/community/web-adv/"
-		},
-		"specs": [
-			{
-				"name": "web-advertising",
-				"repoUrl": "https://github.com/w3c/web-advertising",
-				"url": "https://w3c.github.io/web-advertising/dashboard/"
-			}
-		]
-	},
-	{
-		"name": "Internationalization Interest Group",
-		"identifier": "ig/i18n",
-		"homepage": {
-			"href": "https://www.w3.org/International/ig/"
-		},
-		"specs": [
-			{
-				"name": "iip",
-				"repoUrl": "https://github.com/w3c/iip",
-				"url": "https://w3c.github.io/iip/"
-			},
-			{
-				"name": "jlreq",
-				"repoUrl": "https://github.com/w3c/jlreq",
-				"url": "https://w3c.github.io/jlreq/"
-			}
-		]
-	},
-	{
-		"name": "Internationalization Working Group",
-		"identifier": "wg/i18n-core",
-		"homepage": {
-			"href": "https://www.w3.org/International/core/"
-		},
-		"specs": [
-			{
-				"name": "bp-i18n-specdev",
-				"repoUrl": "https://github.com/w3c/bp-i18n-specdev",
-				"url": "https://w3c.github.io/bp-i18n-specdev/"
-			},
-			{
-				"name": "charmod-norm",
-				"repoUrl": "https://github.com/w3c/charmod-norm",
-				"url": "https://w3c.github.io/charmod-norm/"
-			},
-			{
-				"name": "clreq",
-				"repoUrl": "https://github.com/w3c/clreq",
-				"url": "https://w3c.github.io/clreq/"
-			},
-			{
-				"name": "i18n-checker",
-				"repoUrl": "https://github.com/w3c/i18n-checker",
-				"url": "https://validator.w3.org/i18n-checker/"
-			},
-			{
-				"name": "i18n-glossary",
-				"repoUrl": "https://github.com/w3c/i18n-glossary",
-				"url": "https://w3c.github.io/i18n-glossary/"
-			},
-			{
-				"name": "i18n-request",
-				"repoUrl": "https://github.com/w3c/i18n-request",
-				"url": "https://github.com/w3c/i18n-request/projects/1"
-			},
-			{
-				"name": "i18n-tests",
-				"repoUrl": "https://github.com/w3c/i18n-tests",
-				"url": "https://w3c.github.io/i18n-tests/"
-			},
-			{
-				"name": "iip",
-				"repoUrl": "https://github.com/w3c/iip",
-				"url": "https://w3c.github.io/iip/"
-			},
-			{
-				"name": "ilreq",
-				"repoUrl": "https://github.com/w3c/ilreq",
-				"url": "https://github.com/w3c/iip/"
-			},
-			{
-				"name": "jlreq",
-				"repoUrl": "https://github.com/w3c/jlreq",
-				"url": "https://w3c.github.io/jlreq/"
-			},
-			{
-				"name": "localizable-manifests",
-				"repoUrl": "https://github.com/w3c/localizable-manifests",
-				"url": "https://w3c.github.io/localizable-manifests/"
-			},
-			{
-				"name": "ltli",
-				"repoUrl": "https://github.com/w3c/ltli",
-				"url": "http://w3c.github.io/ltli/"
-			},
-			{
-				"name": "predefined-counter-styles",
-				"repoUrl": "https://github.com/w3c/predefined-counter-styles",
-				"url": "https://w3c.github.io/predefined-counter-styles/"
-			},
-			{
-				"name": "string-meta",
-				"repoUrl": "https://github.com/w3c/string-meta",
-				"url": "https://w3c.github.io/string-meta/"
-			},
-			{
-				"name": "string-search",
-				"repoUrl": "https://github.com/w3c/string-search",
-				"url": "https://w3c.github.io/string-search/"
-			},
-			{
-				"name": "timezone",
-				"repoUrl": "https://github.com/w3c/timezone",
-				"url": "https://w3c.github.io/timezone/"
-			},
-			{
-				"name": "type-samples",
-				"repoUrl": "https://github.com/w3c/type-samples",
-				"url": "https://w3c.github.io/type-samples/"
-			},
-			{
-				"name": "typography",
-				"repoUrl": "https://github.com/w3c/typography",
-				"url": "https://w3c.github.io/typography/"
-			}
-		]
-	},
-	{
-		"name": "JSON-LD Working Group",
-		"identifier": "wg/json-ld",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/json-ld/"
-		},
-		"specs": [
-			{
-				"name": "json-ld-api",
-				"repoUrl": "https://github.com/w3c/json-ld-api",
-				"url": "https://w3c.github.io/json-ld-api/"
-			},
-			{
-				"name": "json-ld-bp",
-				"repoUrl": "https://github.com/w3c/json-ld-bp",
-				"url": "https://w3c.github.io/json-ld-bp/"
-			},
-			{
-				"name": "json-ld-cbor",
-				"repoUrl": "https://github.com/w3c/json-ld-cbor",
-				"url": "https://w3c.github.io/json-ld-cbor/"
-			},
-			{
-				"name": "json-ld-framing",
-				"repoUrl": "https://github.com/w3c/json-ld-framing",
-				"url": "https://w3c.github.io/json-ld-framing/"
-			},
-			{
-				"name": "json-ld-rc",
-				"repoUrl": "https://github.com/w3c/json-ld-rc",
-				"url": "https://w3c.github.io/json-ld-rc/context.jsonld"
-			},
-			{
-				"name": "json-ld-streaming",
-				"repoUrl": "https://github.com/w3c/json-ld-streaming",
-				"url": "https://w3c.github.io/json-ld-streaming/"
-			},
-			{
-				"name": "json-ld-syntax",
-				"repoUrl": "https://github.com/w3c/json-ld-syntax",
-				"url": "https://w3c.github.io/json-ld-syntax/"
-			},
-			{
-				"name": "json-ld-wg",
-				"repoUrl": "https://github.com/w3c/json-ld-wg",
-				"url": "https://w3c.github.io/json-ld-wg/"
-			}
-		]
-	},
-	{
-		"name": "Japanese Layout Task Force | 日本語組版タスクフォース",
-		"identifier": "tf/i18n-jlreq",
-		"homepage": {
-			"href": "https://github.com/w3c/jlreq/"
-		},
-		"specs": [
-			{
-				"name": "jlreq",
-				"repoUrl": "https://github.com/w3c/jlreq",
-				"url": "https://w3c.github.io/jlreq/"
-			},
-			{
-				"name": "ruby-t2s-req",
-				"repoUrl": "https://github.com/w3c/ruby-t2s-req",
-				"url": "https://w3c.github.io/ruby-t2s-req/"
-			},
-			{
-				"name": "simple-ruby",
-				"repoUrl": "https://github.com/w3c/simple-ruby",
-				"url": "https://w3c.github.io/simple-ruby/"
-			}
-		]
-	},
-	{
-		"name": "Low Vision Accessibility Task Force",
-		"identifier": "tf/low-vision-a11y-tf",
-		"homepage": {
-			"href": "https://www.w3.org/WAI/GL/low-vision-a11y-tf/"
-		},
-		"specs": [
-			{
-				"name": "low-vision-a11y-tf",
-				"repoUrl": "https://github.com/w3c/low-vision-a11y-tf",
-				"url": "http://w3c.github.io/low-vision-a11y-tf/"
 			}
 		]
 	},
 	{
 		"name": "Math Working Group",
 		"identifier": "wg/math",
-		"homepage": {
-			"href": "https://www.w3.org/Math/"
-		},
+		"homepage": "https://www.w3.org/Math/",
 		"specs": [
 			{
-				"name": "mathml",
+				"name": "Mathematical Markup Language (MathML) Version 4.0",
 				"repoUrl": "https://github.com/w3c/mathml",
 				"url": "https://w3c.github.io/mathml/"
 			},
 			{
-				"name": "mathml-core",
+				"name": "MathML Core",
 				"repoUrl": "https://github.com/w3c/mathml-core",
 				"url": "https://w3c.github.io/mathml-core"
 			},
 			{
-				"name": "mathml-docs",
-				"repoUrl": "https://github.com/w3c/mathml-docs",
-				"url": "https://w3c.github.io/mathml-docs/"
+				"name": "XML Entity Definitions for Characters (3rd Edition)",
+				"repoUrl": "https://github.com/w3c/xml-entities",
+				"url": "https://w3c.github.io/xml-entities/"
 			}
 		]
 	},
 	{
 		"name": "Media Working Group",
 		"identifier": "wg/media",
-		"homepage": {
-			"href": "https://www.w3.org/media-wg/"
-		},
+		"homepage": "https://www.w3.org/media-wg/",
 		"specs": [
 			{
-				"name": "autoplay",
+				"name": "Autoplay Policy Detection",
 				"repoUrl": "https://github.com/w3c/autoplay",
 				"url": "https://w3c.github.io/autoplay/"
 			},
 			{
-				"name": "encrypted-media",
+				"name": "Encrypted Media Extensions",
 				"repoUrl": "https://github.com/w3c/encrypted-media",
 				"url": "https://w3c.github.io/encrypted-media/"
 			},
 			{
-				"name": "media-capabilities",
+				"name": "Media Capabilities",
 				"repoUrl": "https://github.com/w3c/media-capabilities",
 				"url": "https://w3c.github.io/media-capabilities/"
 			},
 			{
-				"name": "media-playback-quality",
+				"name": "Media Playback Quality",
 				"repoUrl": "https://github.com/w3c/media-playback-quality",
 				"url": "https://w3c.github.io/media-playback-quality/"
 			},
 			{
-				"name": "media-source",
+				"name": "Media Source Extensions™",
 				"repoUrl": "https://github.com/w3c/media-source",
 				"url": "https://w3c.github.io/media-source/"
 			},
 			{
-				"name": "mediasession",
+				"name": "Media Session Standard",
 				"repoUrl": "https://github.com/w3c/mediasession",
 				"url": "https://w3c.github.io/mediasession/"
 			},
 			{
-				"name": "mse-byte-stream-format-isobmff",
+				"name": "ISO BMFF Byte Stream Format",
 				"repoUrl": "https://github.com/w3c/mse-byte-stream-format-isobmff",
 				"url": "https://w3c.github.io/mse-byte-stream-format-isobmff/"
 			},
 			{
-				"name": "mse-byte-stream-format-mp2t",
+				"name": "MPEG-2 TS Byte Stream Format",
 				"repoUrl": "https://github.com/w3c/mse-byte-stream-format-mp2t",
 				"url": "https://w3c.github.io/mse-byte-stream-format-mp2t/"
 			},
 			{
-				"name": "mse-byte-stream-format-mpeg-audio",
+				"name": "MPEG Audio Byte Stream Format",
 				"repoUrl": "https://github.com/w3c/mse-byte-stream-format-mpeg-audio",
 				"url": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/"
 			},
 			{
-				"name": "mse-byte-stream-format-registry",
+				"name": "Media Source Extensions Byte Stream Format Registry",
 				"repoUrl": "https://github.com/w3c/mse-byte-stream-format-registry",
 				"url": "https://w3c.github.io/mse-byte-stream-format-registry/"
 			},
 			{
-				"name": "mse-byte-stream-format-webm",
+				"name": "WebM Byte Stream Format",
 				"repoUrl": "https://github.com/w3c/mse-byte-stream-format-webm",
 				"url": "https://w3c.github.io/mse-byte-stream-format-webm/"
 			},
 			{
-				"name": "picture-in-picture",
+				"name": "Picture-in-Picture",
 				"repoUrl": "https://github.com/w3c/picture-in-picture",
 				"url": "https://w3c.github.io/picture-in-picture"
 			},
 			{
-				"name": "webcodecs",
+				"name": "WebCodecs",
 				"repoUrl": "https://github.com/w3c/webcodecs",
 				"url": "https://w3c.github.io/webcodecs/"
 			}
 		]
 	},
 	{
-		"name": "Media and Entertainment Interest Group",
-		"identifier": "ig/me",
-		"homepage": {
-			"href": "https://www.w3.org/2011/webtv/"
-		},
-		"specs": [
-			{
-				"name": "me-media-integration-guidelines",
-				"repoUrl": "https://github.com/w3c/me-media-integration-guidelines",
-				"url": "https://w3c.github.io/me-media-integration-guidelines/"
-			},
-			{
-				"name": "me-media-production",
-				"repoUrl": "https://github.com/w3c/me-media-production",
-				"url": "https://w3c.github.io/me-media-production/"
-			},
-			{
-				"name": "me-vision",
-				"repoUrl": "https://github.com/w3c/me-vision",
-				"url": "https://w3c.github.io/me-vision/"
-			}
-		]
-	},
-	{
-		"name": "MiniApps Ecosystem Community Group",
-		"identifier": "cg/miniapps",
-		"homepage": {
-			"href": "https://www.w3.org/community/miniapps/"
-		},
-		"specs": [
-			{
-				"name": "miniapp-components",
-				"repoUrl": "https://github.com/w3c/miniapp-components",
-				"url": "https://w3c.github.io/miniapp-components/"
-			},
-			{
-				"name": "miniapp-iot",
-				"repoUrl": "https://github.com/w3c/miniapp-iot",
-				"url": "https://w3c.github.io/miniapp-iot/"
-			}
-		]
-	},
-	{
-		"name": "MiniApps Working Group",
-		"identifier": "wg/miniapps",
-		"homepage": {
-			"href": "https://www.w3.org/2021/miniapps/"
-		},
-		"specs": [
-			{
-				"name": "miniapp-addressing",
-				"repoUrl": "https://github.com/w3c/miniapp-addressing",
-				"url": "https://w3c.github.io/miniapp-addressing/"
-			},
-			{
-				"name": "miniapp-lifecycle",
-				"repoUrl": "https://github.com/w3c/miniapp-lifecycle",
-				"url": "https://w3c.github.io/miniapp-lifecycle/"
-			},
-			{
-				"name": "miniapp-manifest",
-				"repoUrl": "https://github.com/w3c/miniapp-manifest",
-				"url": "https://w3c.github.io/miniapp-manifest/"
-			},
-			{
-				"name": "miniapp-packaging",
-				"repoUrl": "https://github.com/w3c/miniapp-packaging",
-				"url": "https://w3c.github.io/miniapp-packaging/"
-			},
-			{
-				"name": "miniapp-white-paper",
-				"repoUrl": "https://github.com/w3c/miniapp-white-paper",
-				"url": "https://w3c.github.io/miniapp-white-paper/"
-			}
-		]
-	},
-	{
-		"name": "Mobile Accessibility Task Force",
-		"identifier": "tf/mobile-a11y-tf",
-		"homepage": {
-			"href": "https://www.w3.org/WAI/GL/mobile-a11y-tf/"
-		},
-		"specs": [
-			{
-				"name": "Mobile-A11y-TF-Note",
-				"repoUrl": "https://github.com/w3c/Mobile-A11y-TF-Note",
-				"url": "http://w3c.github.io/Mobile-A11y-TF-Note/"
-			}
-		]
-	},
-	{
-		"name": "Music Notation Community Group",
-		"identifier": "cg/music-notation",
-		"homepage": {
-			"href": "https://www.w3.org/community/music-notation/"
-		},
-		"specs": [
-			{
-				"name": "smufl",
-				"repoUrl": "https://github.com/w3c/smufl",
-				"url": "https://w3c.github.io/smufl/latest/"
-			}
-		]
-	},
-	{
-		"name": "Open UI Community Group",
-		"identifier": "cg/open-ui",
-		"homepage": {
-			"href": "https://www.w3.org/community/open-ui/"
-		},
-		"specs": [
-			{
-				"name": "open-ui",
-				"repoUrl": "https://github.com/openui/open-ui",
-				"url": "https://open-ui.org"
-			}
-		]
-	},
-	{
-		"name": "OpenTrack Community Group",
-		"identifier": "cg/opentrack",
-		"homepage": {
-			"href": "https://www.w3.org/community/opentrack/"
-		},
-		"specs": [
-			{
-				"name": "opentrack-cg",
-				"repoUrl": "https://github.com/w3c/opentrack-cg",
-				"url": "https://w3c.github.io/opentrack-cg/spec/competition/"
-			}
-		]
-	},
-	{
 		"name": "Pointer Events Working Group",
 		"identifier": "wg/pointer-events",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/pointer-events"
-		},
+		"homepage": "https://www.w3.org/groups/wg/pointer-events/",
 		"specs": [
 			{
-				"name": "pointerevents",
+				"name": "Pointer Events",
 				"repoUrl": "https://github.com/w3c/pointerevents",
 				"url": "https://w3c.github.io/pointerevents/"
 			}
@@ -2288,12 +1418,10 @@
 	{
 		"name": "Portable Network Graphics (PNG) Working Group",
 		"identifier": "wg/png",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/png/"
-		},
+		"homepage": "https://www.w3.org/groups/wg/png/",
 		"specs": [
 			{
-				"name": "PNG-spec",
+				"name": "Portable Network Graphics (PNG) Specification (Third Edition)",
 				"repoUrl": "https://github.com/w3c/PNG-spec",
 				"url": "https://w3c.github.io/PNG-spec/"
 			}
@@ -2302,831 +1430,227 @@
 	{
 		"name": "Privacy Community Group",
 		"identifier": "cg/privacycg",
-		"homepage": {
-			"href": "https://www.w3.org/community/privacycg/"
-		},
+		"homepage": "https://www.w3.org/community/privacycg/",
 		"specs": [
 			{
-				"name": "admin",
-				"repoUrl": "https://github.com/privacycg/admin",
-				"url": "https://privacycg.github.io"
-			},
-			{
-				"name": "gpc-spec",
+				"name": "Global Privacy Control (GPC)",
 				"repoUrl": "https://github.com/privacycg/gpc-spec",
 				"url": "https://privacycg.github.io/gpc-spec/"
 			},
 			{
-				"name": "meetings",
-				"repoUrl": "https://github.com/privacycg/meetings",
-				"url": "https://privacycg.github.io"
-			},
-			{
-				"name": "nav-tracking-mitigations",
+				"name": "Navigational-Tracking Mitigations",
 				"repoUrl": "https://github.com/privacycg/nav-tracking-mitigations",
 				"url": "https://privacycg.github.io/nav-tracking-mitigations/"
 			},
 			{
-				"name": "privacycg.github.io",
-				"repoUrl": "https://github.com/privacycg/privacycg.github.io",
-				"url": "https://privacycg.github.io"
-			},
-			{
-				"name": "private-click-measurement",
+				"name": "Private Click Measurement",
 				"repoUrl": "https://github.com/privacycg/private-click-measurement",
 				"url": "https://privacycg.github.io/private-click-measurement/"
 			},
 			{
-				"name": "proposals",
-				"repoUrl": "https://github.com/privacycg/proposals",
-				"url": "https://privacycg.github.io"
-			},
-			{
-				"name": "requestStorageAccessFor",
+				"name": "requestStorageAccessFor API",
 				"repoUrl": "https://github.com/privacycg/requestStorageAccessFor",
 				"url": "https://privacycg.github.io/requestStorageAccessFor/"
 			},
 			{
-				"name": "storage-access",
+				"name": "The Storage Access API",
 				"repoUrl": "https://github.com/privacycg/storage-access",
 				"url": "https://privacycg.github.io/storage-access/"
 			},
 			{
-				"name": "storage-partitioning",
+				"name": "Client-Side Storage Partitioning | storage-partitioning",
 				"repoUrl": "https://github.com/privacycg/storage-partitioning",
 				"url": "https://privacycg.github.io/storage-partitioning/"
+			},
+			{
+				"name": "Example Privacy CG explainer and spec source files | template",
+				"repoUrl": "https://github.com/privacycg/template",
+				"url": "https://privacycg.github.io/template/"
 			}
 		]
 	},
 	{
-		"name": "Privacy Interest Group",
-		"identifier": "ig/privacy",
-		"homepage": {
-			"href": "https://www.w3.org/Privacy/"
-		},
+		"name": "SVG Working Group",
+		"identifier": "wg/svg",
+		"homepage": "https://www.w3.org/Graphics/SVG/WG/",
 		"specs": [
 			{
-				"name": "fingerprinting-guidance",
-				"repoUrl": "https://github.com/w3c/fingerprinting-guidance",
-				"url": "https://w3c.github.io/fingerprinting-guidance/"
-			},
-			{
-				"name": "ping",
-				"repoUrl": "https://github.com/w3c/ping",
-				"url": "https://w3c.github.io/ping/"
-			},
-			{
-				"name": "ping-security-questionnaire",
-				"repoUrl": "https://github.com/w3c/ping-security-questionnaire",
-				"url": "https://w3ctag.github.io/security-questionnaire/"
-			},
-			{
-				"name": "tracking-issues",
-				"repoUrl": "https://github.com/w3cping/tracking-issues",
-				"url": "https://w3c.github.io/horizontal-issue-tracker/?repo=w3cping/tracking-issues"
-			}
-		]
-	},
-	{
-		"name": "Publishing Community Group",
-		"identifier": "cg/publishingcg",
-		"homepage": {
-			"href": "https://www.w3.org/community/publishingcg/"
-		},
-		"specs": [
-			{
-				"name": "publishingcg",
-				"repoUrl": "https://github.com/w3c/publishingcg",
-				"url": "https://w3c.github.io/publishingcg/"
-			}
-		]
-	},
-	{
-		"name": "Publishing Maintenance Working Group",
-		"identifier": "wg/pm",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/pm"
-		},
-		"specs": [
-			{
-				"name": "audiobooks",
-				"repoUrl": "https://github.com/w3c/audiobooks",
-				"url": "https://w3c.github.io/audiobooks/"
-			},
-			{
-				"name": "dpub-aria",
-				"repoUrl": "https://github.com/w3c/dpub-aria",
-				"url": "https://w3c.github.io/dpub-aria/"
-			},
-			{
-				"name": "dpub-pwp-ucr",
-				"repoUrl": "https://github.com/w3c/dpub-pwp-ucr",
-				"url": "https://w3c.github.io/dpub-pwp-ucr/"
-			},
-			{
-				"name": "epub-structural-tests",
-				"repoUrl": "https://github.com/w3c/epub-structural-tests",
-				"url": "https://w3c.github.io/epub-structural-tests/"
-			},
-			{
-				"name": "epub-tests",
-				"repoUrl": "https://github.com/w3c/epub-tests",
-				"url": "https://w3c.github.io/epub-tests/"
-			},
-			{
-				"name": "epub-translations",
-				"repoUrl": "https://github.com/w3c/epub-translations",
-				"url": "https://w3c.github.io/epub-translations"
-			},
-			{
-				"name": "lpf",
-				"repoUrl": "https://github.com/w3c/lpf",
-				"url": "https://w3c.github.io/lpf"
-			},
-			{
-				"name": "pm-wg",
-				"repoUrl": "https://github.com/w3c/pm-wg",
-				"url": "https://w3c.github.io/pm-wg/"
-			},
-			{
-				"name": "pub-manifest",
-				"repoUrl": "https://github.com/w3c/pub-manifest",
-				"url": "https://w3c.github.io/pub-manifest"
-			},
-			{
-				"name": "pub-vocab",
-				"repoUrl": "https://github.com/w3c/pub-vocab",
-				"url": "https://w3c.github.io/pub-vocab/"
-			},
-			{
-				"name": "publ-tests",
-				"repoUrl": "https://github.com/w3c/publ-tests",
-				"url": "https://w3c.github.io/publ-tests"
-			},
-			{
-				"name": "sync-media-pub",
-				"repoUrl": "https://github.com/w3c/sync-media-pub",
-				"url": "http://w3c.github.io/sync-media-pub"
-			},
-			{
-				"name": "wpub",
-				"repoUrl": "https://github.com/w3c/wpub",
-				"url": "https://w3c.github.io/wpub/"
-			},
-			{
-				"name": "wpub-ann",
-				"repoUrl": "https://github.com/w3c/wpub-ann",
-				"url": "https://w3c.github.io/wpub-ann/"
-			}
-		]
-	},
-	{
-		"name": "RDF Dataset Canonicalization and Hash Working Group",
-		"identifier": "wg/rch",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/rch"
-		},
-		"specs": [
-			{
-				"name": "rdf-canon",
-				"repoUrl": "https://github.com/w3c/rdf-canon",
-				"url": "https://w3c.github.io/rdf-canon/spec/"
-			}
-		]
-	},
-	{
-		"name": "RDF Test Suite Curation Community Group",
-		"identifier": "cg/rdf-tests",
-		"homepage": {
-			"href": "https://www.w3.org/community/rdf-tests/"
-		},
-		"specs": [
-			{
-				"name": "rdf-tests",
-				"repoUrl": "https://github.com/w3c/rdf-tests",
-				"url": "w3c.github.io/rdf-tests"
-			}
-		]
-	},
-	{
-		"name": "RDF-DEV Community Group",
-		"identifier": "cg/rdf-dev",
-		"homepage": {
-			"href": "https://www.w3.org/community/rdf-dev/"
-		},
-		"specs": [
-			{
-				"name": "rdf-star",
-				"repoUrl": "https://github.com/w3c/rdf-star",
-				"url": "https://w3c.github.io/rdf-star/"
-			}
-		]
-	},
-	{
-		"name": "RDF-star Working Group",
-		"identifier": "wg/rdf-star",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/rdf-star"
-		},
-		"specs": [
-			{
-				"name": "rdf-concepts",
-				"repoUrl": "https://github.com/w3c/rdf-concepts",
-				"url": "https://w3c.github.io/rdf-concepts/"
-			},
-			{
-				"name": "rdf-n-quads",
-				"repoUrl": "https://github.com/w3c/rdf-n-quads",
-				"url": "https://w3c.github.io/rdf-n-quads/"
-			},
-			{
-				"name": "rdf-n-triples",
-				"repoUrl": "https://github.com/w3c/rdf-n-triples",
-				"url": "https://w3c.github.io/rdf-n-triples/"
-			},
-			{
-				"name": "rdf-new",
-				"repoUrl": "https://github.com/w3c/rdf-new",
-				"url": "https://w3c.github.io/rdf-new/"
-			},
-			{
-				"name": "rdf-primer",
-				"repoUrl": "https://github.com/w3c/rdf-primer",
-				"url": "https://w3c.github.io/rdf-primer/"
-			},
-			{
-				"name": "rdf-schema",
-				"repoUrl": "https://github.com/w3c/rdf-schema",
-				"url": "https://w3c.github.io/rdf-schema/"
-			},
-			{
-				"name": "rdf-semantics",
-				"repoUrl": "https://github.com/w3c/rdf-semantics",
-				"url": "https://w3c.github.io/rdf-semantics/"
-			},
-			{
-				"name": "rdf-trig",
-				"repoUrl": "https://github.com/w3c/rdf-trig",
-				"url": "https://w3c.github.io/rdf-trig/"
-			},
-			{
-				"name": "rdf-turtle",
-				"repoUrl": "https://github.com/w3c/rdf-turtle",
-				"url": "https://w3c.github.io/rdf-turtle/"
-			},
-			{
-				"name": "rdf-ucr",
-				"repoUrl": "https://github.com/w3c/rdf-ucr",
-				"url": "https://w3c.github.io/rdf-ucr/"
-			},
-			{
-				"name": "rdf-xml",
-				"repoUrl": "https://github.com/w3c/rdf-xml",
-				"url": "https://w3c.github.io/rdf-xml/"
-			},
-			{
-				"name": "sparql-concepts",
-				"repoUrl": "https://github.com/w3c/sparql-concepts",
-				"url": "https://w3c.github.io/sparql-concepts/"
-			},
-			{
-				"name": "sparql-entailment",
-				"repoUrl": "https://github.com/w3c/sparql-entailment",
-				"url": "https://w3c.github.io/sparql-entailment/"
-			},
-			{
-				"name": "sparql-federated-query",
-				"repoUrl": "https://github.com/w3c/sparql-federated-query",
-				"url": "https://w3c.github.io/sparql-federated-query/"
-			},
-			{
-				"name": "sparql-graph-store-protocol",
-				"repoUrl": "https://github.com/w3c/sparql-graph-store-protocol",
-				"url": "https://w3c.github.io/sparql-graph-store-protocol/"
-			},
-			{
-				"name": "sparql-new",
-				"repoUrl": "https://github.com/w3c/sparql-new",
-				"url": "https://w3c.github.io/sparql-new/"
-			},
-			{
-				"name": "sparql-protocol",
-				"repoUrl": "https://github.com/w3c/sparql-protocol",
-				"url": "https://w3c.github.io/sparql-protocol/"
-			},
-			{
-				"name": "sparql-query",
-				"repoUrl": "https://github.com/w3c/sparql-query",
-				"url": "https://w3c.github.io/sparql-query/"
-			},
-			{
-				"name": "sparql-results-csv-tsv",
-				"repoUrl": "https://github.com/w3c/sparql-results-csv-tsv",
-				"url": "https://w3c.github.io/sparql-results-csv-tsv/"
-			},
-			{
-				"name": "sparql-results-json",
-				"repoUrl": "https://github.com/w3c/sparql-results-json",
-				"url": "https://w3c.github.io/sparql-results-json/"
-			},
-			{
-				"name": "sparql-results-xml",
-				"repoUrl": "https://github.com/w3c/sparql-results-xml",
-				"url": "https://w3c.github.io/sparql-results-xml/"
-			},
-			{
-				"name": "sparql-service-description",
-				"repoUrl": "https://github.com/w3c/sparql-service-description",
-				"url": "https://w3c.github.io/sparql-service-description/"
-			},
-			{
-				"name": "sparql-update",
-				"repoUrl": "https://github.com/w3c/sparql-update",
-				"url": "https://w3c.github.io/sparql-update/"
-			}
-		]
-	},
-	{
-		"name": "SPARQL 1.2 Community Group",
-		"identifier": "cg/sparql-12",
-		"homepage": {
-			"href": "https://www.w3.org/community/sparql-12/"
-		},
-		"specs": [
-			{
-				"name": "sparql-12",
-				"repoUrl": "https://github.com/w3c/sparql-12",
-				"url": "https://w3c.github.io/sparql-12/"
+				"name": "SVG Accessibility API Mappings",
+				"repoUrl": "https://github.com/w3c/svg-aam",
+				"url": "https://w3c.github.io/svg-aam/"
 			}
 		]
 	},
 	{
 		"name": "Second Screen Working Group",
 		"identifier": "wg/secondscreen",
-		"homepage": {
-			"href": "https://www.w3.org/2014/secondscreen/"
-		},
+		"homepage": "https://www.w3.org/2014/secondscreen/",
 		"specs": [
 			{
-				"name": "openscreenprotocol",
+				"name": "Open Screen Protocol",
 				"repoUrl": "https://github.com/w3c/openscreenprotocol",
 				"url": "https://w3c.github.io/openscreenprotocol/"
 			},
 			{
-				"name": "presentation-api",
+				"name": "Presentation API",
 				"repoUrl": "https://github.com/w3c/presentation-api",
 				"url": "https://w3c.github.io/presentation-api/"
 			},
 			{
-				"name": "remote-playback",
+				"name": "Remote Playback API",
 				"repoUrl": "https://github.com/w3c/remote-playback",
 				"url": "https://w3c.github.io/remote-playback/"
 			},
 			{
-				"name": "secondscreen-charter",
-				"repoUrl": "https://github.com/w3c/secondscreen-charter",
-				"url": "https://w3c.github.io/secondscreen-charter/"
-			},
-			{
-				"name": "secondscreen-wg",
-				"repoUrl": "https://github.com/w3c/secondscreen-wg",
-				"url": "https://w3c.github.io/secondscreen-wg/"
-			},
-			{
-				"name": "window-management",
+				"name": "Window Management",
 				"repoUrl": "https://github.com/w3c/window-management",
 				"url": "https://w3c.github.io/window-management/"
 			}
 		]
 	},
 	{
-		"name": "Semantic Web in Health Care and Life Sciences Community Group",
-		"identifier": "cg/hclscg",
-		"homepage": {
-			"href": "https://www.w3.org/community/hclscg/"
-		},
-		"specs": [
-			{
-				"name": "hcls-drug-drug-interaction",
-				"repoUrl": "https://github.com/w3c/hcls-drug-drug-interaction",
-				"url": "https://w3c.github.io/hcls-drug-drug-interaction/"
-			}
-		]
-	},
-	{
 		"name": "Service Workers Working Group",
 		"identifier": "wg/service-workers",
-		"homepage": {
-			"href": "https://www.w3.org/sw/"
-		},
+		"homepage": "https://www.w3.org/sw/",
 		"specs": [
 			{
-				"name": "ServiceWorker",
+				"name": "Service Workers Nightly",
 				"repoUrl": "https://github.com/w3c/ServiceWorker",
 				"url": "https://w3c.github.io/ServiceWorker/"
-			},
-			{
-				"name": "service-workers-wg",
-				"repoUrl": "https://github.com/w3c/service-workers-wg",
-				"url": "https://w3c.github.io/service-workers-wg/"
 			}
 		]
 	},
 	{
 		"name": "Silver Task Force",
 		"identifier": "tf/silver-tf",
-		"homepage": {
-			"href": "https://www.w3.org/WAI/GL/task-forces/silver/"
-		},
+		"homepage": "https://www.w3.org/WAI/GL/task-forces/silver/",
 		"specs": [
 			{
-				"name": "silver",
-				"repoUrl": "https://github.com/w3c/silver",
-				"url": "https://w3c.github.io/silver/"
-			}
-		]
-	},
-	{
-		"name": "Spatial Data on the Web Working Group",
-		"identifier": "wg/sdw",
-		"homepage": {
-			"href": "https://www.w3.org/2021/sdw"
-		},
-		"specs": [
-			{
-				"name": "sdw",
-				"repoUrl": "https://github.com/w3c/sdw",
-				"url": "https://w3c.github.io/sdw/"
-			}
-		]
-	},
-	{
-		"name": "Text and Data Mining Reservation Protocol Community Group",
-		"identifier": "cg/tdmrep",
-		"homepage": {
-			"href": "https://www.w3.org/community/tdmrep/"
-		},
-		"specs": [
-			{
-				"name": "tdm-reservation-protocol",
-				"repoUrl": "https://github.com/w3c/tdm-reservation-protocol",
-				"url": "https://w3c.github.io/tdm-reservation-protocol/"
-			}
-		]
-	},
-	{
-		"name": "Timed Text Working Group",
-		"identifier": "wg/timed-text",
-		"homepage": {
-			"href": "https://www.w3.org/AudioVideo/TT/"
-		},
-		"specs": [
-			{
-				"name": "adpt",
-				"repoUrl": "https://github.com/w3c/adpt",
-				"url": "https://w3c.github.io/adpt/"
-			},
-			{
-				"name": "charter-timed-text",
-				"repoUrl": "https://github.com/w3c/charter-timed-text",
-				"url": "https://w3c.github.io/charter-timed-text/"
-			},
-			{
-				"name": "dapt",
-				"repoUrl": "https://github.com/w3c/dapt",
-				"url": "https://w3c.github.io/dapt/"
-			},
-			{
-				"name": "dapt-reqs",
-				"repoUrl": "https://github.com/w3c/dapt-reqs",
-				"url": "https://w3c.github.io/dapt-reqs/"
-			},
-			{
-				"name": "imsc",
-				"repoUrl": "https://github.com/w3c/imsc",
-				"url": "https://w3c.github.io/imsc/"
-			},
-			{
-				"name": "imsc-hrm",
-				"repoUrl": "https://github.com/w3c/imsc-hrm",
-				"url": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html"
-			},
-			{
-				"name": "imsc-tests",
-				"repoUrl": "https://github.com/w3c/imsc-tests",
-				"url": "https://w3c.github.io/imsc-tests/"
-			},
-			{
-				"name": "imsc-vnext-reqs",
-				"repoUrl": "https://github.com/w3c/imsc-vnext-reqs",
-				"url": "https://w3c.github.io/imsc-vnext-reqs/"
-			},
-			{
-				"name": "png-hdr-pq",
-				"repoUrl": "https://github.com/w3c/png-hdr-pq",
-				"url": "https://w3c.github.io/png-hdr-pq/"
-			},
-			{
-				"name": "tt-module-karaoke",
-				"repoUrl": "https://github.com/w3c/tt-module-karaoke",
-				"url": "https://w3c.github.io/tt-module-karaoke/"
-			},
-			{
-				"name": "tt-module-live",
-				"repoUrl": "https://github.com/w3c/tt-module-live",
-				"url": "https://w3c.github.io/tt-module-live/tt-live-1/spec/tt-live.html"
-			},
-			{
-				"name": "tt-profile-registry",
-				"repoUrl": "https://github.com/w3c/tt-profile-registry",
-				"url": "https://w3c.github.io/tt-profile-registry/"
-			},
-			{
-				"name": "tt-reqs",
-				"repoUrl": "https://github.com/w3c/tt-reqs",
-				"url": "https://w3c.github.io/tt-reqs/ttml2-2e-reqs/"
-			},
-			{
-				"name": "ttml-webvtt-mapping",
-				"repoUrl": "https://github.com/w3c/ttml-webvtt-mapping",
-				"url": "https://w3c.github.io/ttml-webvtt-mapping/"
-			},
-			{
-				"name": "ttml1",
-				"repoUrl": "https://github.com/w3c/ttml1",
-				"url": "http://w3c.github.io/ttml1/"
-			},
-			{
-				"name": "ttml2",
-				"repoUrl": "https://github.com/w3c/ttml2",
-				"url": "https://w3c.github.io/ttml2/"
-			},
-			{
-				"name": "ttml3",
-				"repoUrl": "https://github.com/w3c/ttml3",
-				"url": "http://w3c.github.io/ttml3/"
-			},
-			{
-				"name": "webvtt",
-				"repoUrl": "https://github.com/w3c/webvtt",
-				"url": "https://w3c.github.io/webvtt/"
+				"name": "W3C Accessibility Guidelines (WCAG) 3.0",
+				"repoUrl": "https://github.com/w3c/silver/tree/main/guidelines",
+				"url": "https://w3c.github.io/silver/guidelines/"
 			}
 		]
 	},
 	{
 		"name": "Touch Events Community Group",
 		"identifier": "cg/touchevents",
-		"homepage": {
-			"href": "https://www.w3.org/community/touchevents/"
-		},
+		"homepage": "https://www.w3.org/community/touchevents/",
 		"specs": [
 			{
-				"name": "touch-events",
+				"name": "Touch Events - Level 2",
 				"repoUrl": "https://github.com/w3c/touch-events",
 				"url": "https://w3c.github.io/touch-events/"
 			}
 		]
 	},
 	{
-		"name": "Verifiable Credentials Working Group",
-		"identifier": "wg/vc",
-		"homepage": {
-			"href": "https://www.w3.org/2017/vc/"
-		},
-		"specs": [
-			{
-				"name": "vc-data-integrity",
-				"repoUrl": "https://github.com/w3c/vc-data-integrity",
-				"url": "https://w3c.github.io/vc-data-integrity/"
-			},
-			{
-				"name": "vc-data-model",
-				"repoUrl": "https://github.com/w3c/vc-data-model",
-				"url": "https://w3c.github.io/vc-data-model/"
-			},
-			{
-				"name": "vc-di-bbs",
-				"repoUrl": "https://github.com/w3c/vc-di-bbs",
-				"url": "https://w3c.github.io/vc-di-bbs/"
-			},
-			{
-				"name": "vc-di-ecdsa",
-				"repoUrl": "https://github.com/w3c/vc-di-ecdsa",
-				"url": "https://w3c.github.io/vc-di-ecdsa/"
-			},
-			{
-				"name": "vc-di-eddsa",
-				"repoUrl": "https://github.com/w3c/vc-di-eddsa",
-				"url": "https://w3c.github.io/vc-di-eddsa/"
-			},
-			{
-				"name": "vc-imp-guide",
-				"repoUrl": "https://github.com/w3c/vc-imp-guide",
-				"url": "https://w3c.github.io/vc-imp-guide"
-			},
-			{
-				"name": "vc-json-schema",
-				"repoUrl": "https://github.com/w3c/vc-json-schema",
-				"url": "https://w3c.github.io/vc-json-schema"
-			},
-			{
-				"name": "vc-jws-2020",
-				"repoUrl": "https://github.com/w3c/vc-jws-2020",
-				"url": "https://w3c.github.io/vc-jws-2020/"
-			},
-			{
-				"name": "vc-jwt",
-				"repoUrl": "https://github.com/w3c/vc-jwt",
-				"url": "https://w3c.github.io/vc-jwt/"
-			},
-			{
-				"name": "vc-specs-dir",
-				"repoUrl": "https://github.com/w3c/vc-specs-dir",
-				"url": "https://w3c.github.io/vc-specs-dir/"
-			},
-			{
-				"name": "vc-status-list-2021",
-				"repoUrl": "https://github.com/w3c/vc-status-list-2021",
-				"url": "https://w3c.github.io/vc-status-list-2021/"
-			},
-			{
-				"name": "vc-test-suite",
-				"repoUrl": "https://github.com/w3c/vc-test-suite",
-				"url": "https://w3c.github.io/vc-test-suite/"
-			},
-			{
-				"name": "vc-use-cases",
-				"repoUrl": "https://github.com/w3c/vc-use-cases",
-				"url": "https://w3c.github.io/vc-use-cases/"
-			},
-			{
-				"name": "verifiable-credentials",
-				"repoUrl": "https://github.com/w3c/verifiable-credentials",
-				"url": "https://w3c.github.io/verifiable-credentials/"
-			}
-		]
-	},
-	{
-		"name": "Voice Interaction Community Group",
-		"identifier": "cg/voiceinteraction",
-		"homepage": {
-			"href": "https://www.w3.org/community/voiceinteraction/"
-		},
-		"specs": [
-			{
-				"name": "voiceinteraction",
-				"repoUrl": "https://github.com/w3c/voiceinteraction",
-				"url": "https://w3c.github.io/voiceinteraction/"
-			}
-		]
-	},
-	{
-		"name": "W3C Process Community Group",
-		"identifier": "cg/w3process",
-		"homepage": {
-			"href": "https://www.w3.org/community/w3process/"
-		},
-		"specs": [
-			{
-				"name": "w3process",
-				"repoUrl": "https://github.com/w3c/w3process",
-				"url": "https://w3c.github.io/w3process/"
-			}
-		]
-	},
-	{
-		"name": "Web & Networks Interest Group",
-		"identifier": "ig/web-networks",
-		"homepage": {
-			"href": "https://www.w3.org/web-networks/"
-		},
-		"specs": [
-			{
-				"name": "edge-computing-web-exploration",
-				"repoUrl": "https://github.com/w3c/edge-computing-web-exploration",
-				"url": "https://w3c.github.io/edge-computing-web-exploration/"
-			},
-			{
-				"name": "web-networks",
-				"repoUrl": "https://github.com/w3c/web-networks",
-				"url": "https://w3c.github.io/web-networks/"
-			}
-		]
-	},
-	{
 		"name": "Web Application Security Working Group",
 		"identifier": "wg/webappsec",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/webappsec"
-		},
+		"homepage": "https://www.w3.org/groups/wg/webappsec/",
 		"specs": [
 			{
-				"name": "permissions",
+				"name": "Permissions",
 				"repoUrl": "https://github.com/w3c/permissions",
 				"url": "https://w3c.github.io/permissions/"
 			},
 			{
-				"name": "permissions-registry",
+				"name": "Permissions Registry",
 				"repoUrl": "https://github.com/w3c/permissions-registry",
 				"url": "https://w3c.github.io/permissions-registry/"
 			},
 			{
-				"name": "trusted-types",
+				"name": "Trusted Types",
 				"repoUrl": "https://github.com/w3c/trusted-types",
 				"url": "https://w3c.github.io/trusted-types/dist/spec/"
 			},
 			{
-				"name": "webappsec",
-				"repoUrl": "https://github.com/w3c/webappsec",
-				"url": "http://www.w3.org/2011/webappsec/"
-			},
-			{
-				"name": "webappsec-change-password-url",
+				"name": "A Well-Known URL for Changing Passwords",
 				"repoUrl": "https://github.com/w3c/webappsec-change-password-url",
 				"url": "https://w3c.github.io/webappsec-change-password-url/"
 			},
 			{
-				"name": "webappsec-clear-site-data",
+				"name": "Clear Site Data",
 				"repoUrl": "https://github.com/w3c/webappsec-clear-site-data",
 				"url": "https://w3c.github.io/webappsec-clear-site-data/"
 			},
 			{
-				"name": "webappsec-cors-for-developers",
+				"name": "CORS for Developers",
 				"repoUrl": "https://github.com/w3c/webappsec-cors-for-developers",
 				"url": "https://w3c.github.io/webappsec-cors-for-developers/"
 			},
 			{
-				"name": "webappsec-cowl",
+				"name": "Confinement with Origin Web Labels",
 				"repoUrl": "https://github.com/w3c/webappsec-cowl",
 				"url": "https://w3c.github.io/webappsec-cowl/"
 			},
 			{
-				"name": "webappsec-credential-management",
+				"name": "Credential Management Level 1",
 				"repoUrl": "https://github.com/w3c/webappsec-credential-management",
 				"url": "https://w3c.github.io/webappsec-credential-management/"
 			},
 			{
-				"name": "webappsec-csp",
+				"name": "Content Security Policy Level 3",
 				"repoUrl": "https://github.com/w3c/webappsec-csp",
 				"url": "https://w3c.github.io/webappsec-csp/"
 			},
 			{
-				"name": "webappsec-cspee",
+				"name": "Content Security Policy: Embedded Enforcement",
 				"repoUrl": "https://github.com/w3c/webappsec-cspee",
 				"url": "https://w3c.github.io/webappsec-cspee/"
 			},
 			{
-				"name": "webappsec-fetch-metadata",
+				"name": "Fetch Metadata Request Headers",
 				"repoUrl": "https://github.com/w3c/webappsec-fetch-metadata",
 				"url": "https://w3c.github.io/webappsec-fetch-metadata/"
 			},
 			{
-				"name": "webappsec-mixed-content",
+				"name": "Mixed Content",
 				"repoUrl": "https://github.com/w3c/webappsec-mixed-content",
 				"url": "https://w3c.github.io/webappsec-mixed-content/"
 			},
 			{
-				"name": "webappsec-permissions-policy",
+				"name": "Permissions Policy",
 				"repoUrl": "https://github.com/w3c/webappsec-permissions-policy",
 				"url": "https://w3c.github.io/webappsec-permissions-policy/"
 			},
 			{
-				"name": "webappsec-post-spectre-webdev",
+				"name": "Post-Spectre Web Development",
 				"repoUrl": "https://github.com/w3c/webappsec-post-spectre-webdev",
 				"url": "https://w3c.github.io/webappsec-post-spectre-webdev/"
 			},
 			{
-				"name": "webappsec-referrer-policy",
+				"name": "Referrer Policy",
 				"repoUrl": "https://github.com/w3c/webappsec-referrer-policy",
 				"url": "https://w3c.github.io/webappsec-referrer-policy/"
 			},
 			{
-				"name": "webappsec-secure-contexts",
+				"name": "Secure Contexts",
 				"repoUrl": "https://github.com/w3c/webappsec-secure-contexts",
 				"url": "https://w3c.github.io/webappsec-secure-contexts/"
 			},
 			{
-				"name": "webappsec-suborigins",
+				"name": "Suborigins",
 				"repoUrl": "https://github.com/w3c/webappsec-suborigins",
 				"url": "https://w3c.github.io/webappsec-suborigins/"
 			},
 			{
-				"name": "webappsec-subresource-integrity",
+				"name": "Subresource Integrity",
 				"repoUrl": "https://github.com/w3c/webappsec-subresource-integrity",
 				"url": "https://w3c.github.io/webappsec-subresource-integrity/"
 			},
 			{
-				"name": "webappsec-uisecurity",
+				"name": "User Interface Security and the Visibility API",
 				"repoUrl": "https://github.com/w3c/webappsec-uisecurity",
 				"url": "https://w3c.github.io/webappsec-uisecurity/"
 			},
 			{
-				"name": "webappsec-upgrade-insecure-requests",
+				"name": "Upgrade Insecure Requests",
 				"repoUrl": "https://github.com/w3c/webappsec-upgrade-insecure-requests",
 				"url": "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
 			},
 			{
-				"name": "webcrypto",
+				"name": "Web Cryptography API",
 				"repoUrl": "https://github.com/w3c/webcrypto",
 				"url": "https://w3c.github.io/webcrypto/"
 			}
@@ -3135,121 +1659,107 @@
 	{
 		"name": "Web Applications Working Group",
 		"identifier": "wg/webapps",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/webapps"
-		},
+		"homepage": "https://www.w3.org/groups/wg/webapps/",
 		"specs": [
 			{
-				"name": "FileAPI",
+				"name": "File API",
 				"repoUrl": "https://github.com/w3c/FileAPI",
 				"url": "https://w3c.github.io/FileAPI/"
 			},
 			{
-				"name": "IndexedDB",
+				"name": "Indexed Database API 3.0",
 				"repoUrl": "https://github.com/w3c/IndexedDB",
 				"url": "https://w3c.github.io/IndexedDB/"
 			},
 			{
-				"name": "IntersectionObserver",
+				"name": "Intersection Observer",
 				"repoUrl": "https://github.com/w3c/IntersectionObserver",
 				"url": "https://w3c.github.io/IntersectionObserver/"
 			},
 			{
-				"name": "badging",
+				"name": "Badging API",
 				"repoUrl": "https://github.com/w3c/badging",
 				"url": "https://w3c.github.io/badging/"
 			},
 			{
-				"name": "contact-picker",
-				"repoUrl": "https://github.com/w3c/contact-picker",
-				"url": "https://w3c.github.io/contact-picker/"
-			},
-			{
-				"name": "gamepad",
+				"name": "Gamepad",
 				"repoUrl": "https://github.com/w3c/gamepad",
 				"url": "https://w3c.github.io/gamepad/"
 			},
 			{
-				"name": "html-aria",
+				"name": "ARIA in HTML",
 				"repoUrl": "https://github.com/w3c/html-aria",
 				"url": "https://w3c.github.io/html-aria/"
 			},
 			{
-				"name": "image-resource",
+				"name": "Image Resource",
 				"repoUrl": "https://github.com/w3c/image-resource",
 				"url": "https://w3c.github.io/image-resource/"
 			},
 			{
-				"name": "manifest",
+				"name": "Web Application Manifest",
 				"repoUrl": "https://github.com/w3c/manifest",
 				"url": "https://w3c.github.io/manifest/"
 			},
 			{
-				"name": "manifest-app-info",
+				"name": "Web App Manifest - Application Information",
 				"repoUrl": "https://github.com/w3c/manifest-app-info",
 				"url": "https://w3c.github.io/manifest-app-info/"
 			},
 			{
-				"name": "pointerlock",
+				"name": "Pointer Lock 2.0",
 				"repoUrl": "https://github.com/w3c/pointerlock",
 				"url": "https://w3c.github.io/pointerlock/"
 			},
 			{
-				"name": "push-api",
+				"name": "Push API",
 				"repoUrl": "https://github.com/w3c/push-api",
 				"url": "https://w3c.github.io/push-api/"
 			},
 			{
-				"name": "screen-orientation",
+				"name": "Screen Orientation",
 				"repoUrl": "https://github.com/w3c/screen-orientation",
 				"url": "https://w3c.github.io/screen-orientation/"
 			},
 			{
-				"name": "uievents",
+				"name": "UI Events",
 				"repoUrl": "https://github.com/w3c/uievents",
 				"url": "https://w3c.github.io/uievents/"
 			},
 			{
-				"name": "uievents-code",
+				"name": "UI Events KeyboardEvent code Values",
 				"repoUrl": "https://github.com/w3c/uievents-code",
 				"url": "https://w3c.github.io/uievents-code/"
 			},
 			{
-				"name": "uievents-key",
+				"name": "UI Events KeyboardEvent key Values",
 				"repoUrl": "https://github.com/w3c/uievents-key",
 				"url": "https://w3c.github.io/uievents-key/"
 			},
 			{
-				"name": "using-aria",
+				"name": "Using ARIA",
 				"repoUrl": "https://github.com/w3c/using-aria",
 				"url": "https://w3c.github.io/using-aria/"
 			},
 			{
-				"name": "web-locks",
+				"name": "Web Locks API",
 				"repoUrl": "https://github.com/w3c/web-locks",
 				"url": "https://w3c.github.io/web-locks/"
 			},
 			{
-				"name": "web-share",
+				"name": "Web Share API",
 				"repoUrl": "https://github.com/w3c/web-share",
 				"url": "https://w3c.github.io/web-share/"
-			},
-			{
-				"name": "webappswg",
-				"repoUrl": "https://github.com/w3c/webappswg",
-				"url": "https://w3c.github.io/webappswg/"
 			}
 		]
 	},
 	{
 		"name": "Web Authentication Working Group",
 		"identifier": "wg/webauthn",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/webauthn/"
-		},
+		"homepage": "https://www.w3.org/groups/wg/webauthn/",
 		"specs": [
 			{
-				"name": "webauthn",
+				"name": "Web Authentication: An API for accessing Public Key Credentials - Level",
 				"repoUrl": "https://github.com/w3c/webauthn",
 				"url": "https://w3c.github.io/webauthn/"
 			}
@@ -3258,95 +1768,52 @@
 	{
 		"name": "Web Bluetooth Community Group",
 		"identifier": "cg/web-bluetooth",
-		"homepage": {
-			"href": "https://www.w3.org/community/web-bluetooth/"
-		},
+		"homepage": "https://www.w3.org/community/web-bluetooth/",
 		"specs": [
 			{
-				"name": "web-bluetooth",
+				"name": "Web Bluetooth",
 				"repoUrl": "https://github.com/WebBluetoothCG/web-bluetooth",
 				"url": "https://WebBluetoothCG.github.io/web-bluetooth/"
 			}
 		]
 	},
 	{
-		"name": "Web Components Community Group",
-		"identifier": "cg/webcomponents",
-		"homepage": {
-			"href": "https://www.w3.org/community/webcomponents/"
-		},
-		"specs": [
-			{
-				"name": "webcomponents-cg",
-				"repoUrl": "https://github.com/w3c/webcomponents-cg",
-				"url": "https://w3c.github.io/webcomponents-cg/"
-			}
-		]
-	},
-	{
 		"name": "Web Editing Working Group",
 		"identifier": "wg/webediting",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/webediting"
-		},
+		"homepage": "https://www.w3.org/groups/wg/webediting/",
 		"specs": [
-			{
-				"name": "clipboard-pickling",
-				"repoUrl": "https://github.com/w3c/editing/tree/gh-pages/docs/clipboard-pickling",
-				"url": "https://w3c.github.io/editing/docs/clipboard-pickling/"
-			},
-			{
-				"name": "clipboard-unsanitized",
-				"repoUrl": "https://github.com/w3c/editing/tree/gh-pages/docs/clipboard-unsanitized",
-				"url": "https://w3c.github.io/editing/docs/clipboard-unsanitized/"
-			},
-			{
-				"name": "contentEditableDisabled",
-				"repoUrl": "https://github.com/w3c/editing/tree/gh-pages/docs/contentEditableDisabled",
-				"url": "https://w3c.github.io/editing/docs/contentEditableDisabled/"
-			},
-			{
-				"name": "contentEditableTrue",
-				"repoUrl": "https://github.com/w3c/editing/tree/gh-pages/docs/contentEditableTrue",
-				"url": "https://w3c.github.io/editing/docs/contentEditableTrue/"
-			},
 			{
 				"name": "execCommand",
 				"repoUrl": "https://github.com/w3c/editing/tree/gh-pages/docs/execCommand",
 				"url": "https://w3c.github.io/editing/docs/execCommand/"
 			},
 			{
-				"name": "clipboard-apis",
+				"name": "Clipboard API and events",
 				"repoUrl": "https://github.com/w3c/clipboard-apis",
 				"url": "https://w3c.github.io/clipboard-apis/"
 			},
 			{
-				"name": "contentEditable",
+				"name": "ContentEditable",
 				"repoUrl": "https://github.com/w3c/contentEditable",
 				"url": "https://w3c.github.io/contentEditable/"
 			},
 			{
-				"name": "edit-context",
+				"name": "EditContext API",
 				"repoUrl": "https://github.com/w3c/edit-context",
 				"url": "https://w3c.github.io/edit-context/"
 			},
 			{
-				"name": "editing",
-				"repoUrl": "https://github.com/w3c/editing",
-				"url": "http://w3c.github.io/editing/"
-			},
-			{
-				"name": "input-events",
+				"name": "Input Events",
 				"repoUrl": "https://github.com/w3c/input-events",
 				"url": "https://w3c.github.io/input-events/"
 			},
 			{
-				"name": "selection-api",
+				"name": "Selection API",
 				"repoUrl": "https://github.com/w3c/selection-api",
-				"url": "http://w3c.github.io/selection-api/"
+				"url": "https://w3c.github.io/selection-api/"
 			},
 			{
-				"name": "virtual-keyboard",
+				"name": "VirtualKeyboard API",
 				"repoUrl": "https://github.com/w3c/virtual-keyboard",
 				"url": "https://w3c.github.io/virtual-keyboard/"
 			}
@@ -3355,12 +1822,20 @@
 	{
 		"name": "Web Fonts Working Group",
 		"identifier": "wg/webfonts",
-		"homepage": {
-			"href": "https://www.w3.org/Fonts/WG/"
-		},
+		"homepage": "https://www.w3.org/Fonts/WG/",
 		"specs": [
 			{
-				"name": "woff",
+				"name": "IFT | W3C Incremental Font Transfer",
+				"repoUrl": "https://github.com/w3c/IFT",
+				"url": "https://w3c.github.io/IFT/"
+			},
+			{
+				"name": "PFE-analysis | Code repository for tools for the the testing and analysis of potential Progressive Font Enrichment (PFE) solutions.",
+				"repoUrl": "https://github.com/w3c/PFE-analysis",
+				"url": "https://w3c.github.io/PFE-analysis/"
+			},
+			{
+				"name": "WOFF File Format 2.0",
 				"repoUrl": "https://github.com/w3c/woff",
 				"url": "https://w3c.github.io/woff/woff2/"
 			}
@@ -3369,12 +1844,10 @@
 	{
 		"name": "Web Machine Learning Community Group",
 		"identifier": "cg/webmachinelearning",
-		"homepage": {
-			"href": "https://www.w3.org/community/webmachinelearning/"
-		},
+		"homepage": "https://www.w3.org/community/webmachinelearning/",
 		"specs": [
 			{
-				"name": "model-loader",
+				"name": "Model Loader API",
 				"repoUrl": "https://github.com/webmachinelearning/model-loader",
 				"url": "https://webmachinelearning.github.io/model-loader/"
 			}
@@ -3383,50 +1856,27 @@
 	{
 		"name": "Web Machine Learning Working Group",
 		"identifier": "wg/webmachinelearning",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/webmachinelearning/"
-		},
+		"homepage": "https://www.w3.org/groups/wg/webmachinelearning/",
 		"specs": [
 			{
-				"name": "webmachinelearning-ethics",
+				"name": "Ethical Principles for Web Machine Learning",
 				"repoUrl": "https://github.com/webmachinelearning/webmachinelearning-ethics",
 				"url": "https://webmachinelearning.github.io/webmachinelearning-ethics/"
 			},
 			{
-				"name": "webnn",
+				"name": "Web Neural Network API",
 				"repoUrl": "https://github.com/webmachinelearning/webnn",
 				"url": "https://webmachinelearning.github.io/webnn/"
 			}
 		]
 	},
 	{
-		"name": "Web Media API Community Group",
-		"identifier": "cg/webmediaapi",
-		"homepage": {
-			"href": "https://www.w3.org/community/webmediaapi/"
-		},
-		"specs": [
-			{
-				"name": "webmediaapi",
-				"repoUrl": "https://github.com/w3c/webmediaapi",
-				"url": "https://w3c.github.io/webmediaapi/"
-			},
-			{
-				"name": "webmediaguidelines",
-				"repoUrl": "https://github.com/w3c/webmediaguidelines",
-				"url": "https://w3c.github.io/webmediaguidelines/"
-			}
-		]
-	},
-	{
 		"name": "Web Media Text Tracks Community Group",
 		"identifier": "cg/texttracks",
-		"homepage": {
-			"href": "https://www.w3.org/community/texttracks/"
-		},
+		"homepage": "https://www.w3.org/community/texttracks/",
 		"specs": [
 			{
-				"name": "webvtt",
+				"name": "WebVTT: The Web Video Text Tracks Format",
 				"repoUrl": "https://github.com/w3c/webvtt",
 				"url": "https://w3c.github.io/webvtt/"
 			}
@@ -3435,12 +1885,10 @@
 	{
 		"name": "Web NFC Community Group",
 		"identifier": "cg/web-nfc",
-		"homepage": {
-			"href": "https://www.w3.org/community/web-nfc/"
-		},
+		"homepage": "https://www.w3.org/community/web-nfc/",
 		"specs": [
 			{
-				"name": "web-nfc",
+				"name": "Web NFC",
 				"repoUrl": "https://github.com/w3c/web-nfc",
 				"url": "https://w3c.github.io/web-nfc/"
 			}
@@ -3449,510 +1897,649 @@
 	{
 		"name": "Web Payments Working Group",
 		"identifier": "wg/payments",
-		"homepage": {
-			"href": "https://www.w3.org/Payments/WG/"
-		},
+		"homepage": "https://www.w3.org/Payments/WG/",
 		"specs": [
 			{
-				"name": "payment-handler",
+				"name": "Payment Handler API",
 				"repoUrl": "https://github.com/w3c/payment-handler",
 				"url": "https://w3c.github.io/payment-handler/"
 			},
 			{
-				"name": "payment-method-id",
+				"name": "Payment Method Identifiers",
 				"repoUrl": "https://github.com/w3c/payment-method-id",
 				"url": "https://w3c.github.io/payment-method-id/"
 			},
 			{
-				"name": "payment-method-manifest",
+				"name": "Payment Method Manifest",
 				"repoUrl": "https://github.com/w3c/payment-method-manifest",
 				"url": "https://w3c.github.io/payment-method-manifest/"
 			},
 			{
-				"name": "payment-request",
+				"name": "Payment Request API 1.1",
 				"repoUrl": "https://github.com/w3c/payment-request",
 				"url": "https://w3c.github.io/payment-request/"
 			},
 			{
-				"name": "secure-payment-confirmation",
+				"name": "Secure Payment Confirmation",
 				"repoUrl": "https://github.com/w3c/secure-payment-confirmation",
 				"url": "https://w3c.github.io/secure-payment-confirmation/"
 			},
 			{
-				"name": "webpayments",
+				"name": "Home · w3c/webpayments Wiki · GitHub",
 				"repoUrl": "https://github.com/w3c/webpayments",
 				"url": "https://github.com/w3c/webpayments/wiki"
+			},
+			{
+				"name": "Unicorn Toasters Markup API",
+				"repoUrl": "https://github.com/w3c/webpayments-flows",
+				"url": "https://w3c.github.io/webpayments-flows/"
 			}
 		]
 	},
 	{
 		"name": "Web Performance Working Group",
 		"identifier": "wg/webperf",
-		"homepage": {
-			"href": "https://www.w3.org/webperf/"
-		},
+		"homepage": "https://www.w3.org/webperf/",
 		"specs": [
 			{
-				"name": "beacon",
+				"name": "Beacon",
 				"repoUrl": "https://github.com/w3c/beacon",
 				"url": "https://w3c.github.io/beacon/"
 			},
 			{
-				"name": "charter-webperf",
-				"repoUrl": "https://github.com/w3c/charter-webperf",
-				"url": "https://w3c.github.io/charter-webperf/"
-			},
-			{
-				"name": "device-memory",
+				"name": "Device Memory",
 				"repoUrl": "https://github.com/w3c/device-memory",
 				"url": "https://w3c.github.io/device-memory/"
 			},
 			{
-				"name": "event-timing",
+				"name": "Event Timing API",
 				"repoUrl": "https://github.com/w3c/event-timing",
 				"url": "https://w3c.github.io/event-timing/"
 			},
 			{
-				"name": "hr-time",
+				"name": "High Resolution Time",
 				"repoUrl": "https://github.com/w3c/hr-time",
 				"url": "https://w3c.github.io/hr-time/"
 			},
 			{
-				"name": "largest-contentful-paint",
+				"name": "Largest Contentful Paint",
 				"repoUrl": "https://github.com/w3c/largest-contentful-paint",
 				"url": "https://w3c.github.io/largest-contentful-paint/"
 			},
 			{
-				"name": "longtasks",
+				"name": "Long Tasks API",
 				"repoUrl": "https://github.com/w3c/longtasks",
 				"url": "https://w3c.github.io/longtasks/"
 			},
 			{
-				"name": "navigation-timing",
+				"name": "Navigation Timing Level 2",
 				"repoUrl": "https://github.com/w3c/navigation-timing",
 				"url": "https://w3c.github.io/navigation-timing/"
 			},
 			{
-				"name": "network-error-logging",
+				"name": "Network Error Logging",
 				"repoUrl": "https://github.com/w3c/network-error-logging",
 				"url": "https://w3c.github.io/network-error-logging/"
 			},
 			{
-				"name": "paint-timing",
+				"name": "Paint Timing 1",
 				"repoUrl": "https://github.com/w3c/paint-timing",
 				"url": "https://w3c.github.io/paint-timing/"
 			},
 			{
-				"name": "perf-timing-primer",
-				"repoUrl": "https://github.com/w3c/perf-timing-primer",
-				"url": "http://w3c.github.io/perf-timing-primer/"
+				"name": "Performance APIs, Security and Privacy",
+				"repoUrl": "https://github.com/w3c/perf-security-privacy",
+				"url": "https://w3c.github.io/perf-security-privacy/"
 			},
 			{
-				"name": "performance-timeline",
+				"name": "A Primer for Web Performance Timing APIs",
+				"repoUrl": "https://github.com/w3c/perf-timing-primer",
+				"url": "https://w3c.github.io/perf-timing-primer/"
+			},
+			{
+				"name": "Performance Timeline",
 				"repoUrl": "https://github.com/w3c/performance-timeline",
 				"url": "https://w3c.github.io/performance-timeline/"
 			},
 			{
-				"name": "reporting",
+				"name": "Reporting API",
 				"repoUrl": "https://github.com/w3c/reporting",
 				"url": "https://w3c.github.io/reporting/"
 			},
 			{
-				"name": "requestidlecallback",
+				"name": "requestIdleCallback()",
 				"repoUrl": "https://github.com/w3c/requestidlecallback",
 				"url": "https://w3c.github.io/requestidlecallback/"
 			},
 			{
-				"name": "resource-hints",
-				"repoUrl": "https://github.com/w3c/resource-hints",
-				"url": "https://w3c.github.io/resource-hints/"
-			},
-			{
-				"name": "resource-timing",
+				"name": "Resource Timing",
 				"repoUrl": "https://github.com/w3c/resource-timing",
 				"url": "https://w3c.github.io/resource-timing/"
 			},
 			{
-				"name": "server-timing",
+				"name": "Server Timing",
 				"repoUrl": "https://github.com/w3c/server-timing",
-				"url": "http://w3c.github.io/server-timing/"
+				"url": "https://w3c.github.io/server-timing/"
 			},
 			{
-				"name": "timing-entrytypes-registry",
+				"name": "Timing Entry Names Registry",
 				"repoUrl": "https://github.com/w3c/timing-entrytypes-registry",
 				"url": "https://w3c.github.io/timing-entrytypes-registry/"
 			},
 			{
-				"name": "user-timing",
+				"name": "User Timing Level 3",
 				"repoUrl": "https://github.com/w3c/user-timing",
 				"url": "https://w3c.github.io/user-timing/"
 			},
 			{
-				"name": "web-performance",
-				"repoUrl": "https://github.com/w3c/web-performance",
-				"url": "https://w3c.github.io/web-performance/"
-			},
-			{
-				"name": "webperf-dashboard",
+				"name": "W3C Webperf Tracker",
 				"repoUrl": "https://github.com/w3c/webperf-dashboard",
-				"url": "http://w3c.github.io/webperf-dashboard/"
+				"url": "https://w3c.github.io/webperf-dashboard/"
 			}
 		]
 	},
 	{
 		"name": "Web Platform Incubator Community Group",
 		"identifier": "cg/wicg",
-		"homepage": {
-			"href": "https://www.w3.org/community/wicg/"
-		},
+		"homepage": "https://www.w3.org/community/wicg/",
 		"specs": [
 			{
-				"name": "aom",
-				"repoUrl": "https://github.com/WICG/aom",
-				"url": "http://wicg.github.io/aom/"
+				"name": "Accelerated Text Detection in Images",
+				"repoUrl": "https://github.com/WICG/shape-detection-api/blob/main/text.bs",
+				"url": "https://WICG.github.io/shape-detection-api/text"
 			},
 			{
-				"name": "attribution-reporting-api",
+				"name": "WICG administration repository | admin",
+				"repoUrl": "https://github.com/WICG/admin",
+				"url": "https://WICG.github.io/admin/"
+			},
+			{
+				"name": "The Accessibility Object Model (AOM) | aom",
+				"repoUrl": "https://github.com/WICG/aom",
+				"url": "https://wicg.github.io/aom/"
+			},
+			{
+				"name": "Attribution Reporting",
 				"repoUrl": "https://github.com/WICG/attribution-reporting-api",
 				"url": "https://wicg.github.io/attribution-reporting-api/"
 			},
 			{
-				"name": "background-fetch",
+				"name": "Specification ‘audio-focus’ | audio-focus",
+				"repoUrl": "https://github.com/WICG/audio-focus",
+				"url": "https://WICG.github.io/audio-focus/"
+			},
+			{
+				"name": "Background Fetch",
 				"repoUrl": "https://github.com/WICG/background-fetch",
 				"url": "https://wicg.github.io/background-fetch/"
 			},
 			{
-				"name": "background-sync",
+				"name": "Web Background Synchronization",
 				"repoUrl": "https://github.com/WICG/background-sync",
 				"url": "https://wicg.github.io/background-sync/spec/"
 			},
 			{
-				"name": "client-hints-infrastructure",
+				"name": "Capability Delegation | capability-delegation",
+				"repoUrl": "https://github.com/WICG/capability-delegation",
+				"url": "https://WICG.github.io/capability-delegation/"
+			},
+			{
+				"name": "Client Hints Infrastructure",
 				"repoUrl": "https://github.com/WICG/client-hints-infrastructure",
 				"url": "https://wicg.github.io/client-hints-infrastructure"
 			},
 			{
-				"name": "close-watcher",
+				"name": "Close Watcher API",
 				"repoUrl": "https://github.com/WICG/close-watcher",
 				"url": "https://wicg.github.io/close-watcher/"
 			},
 			{
-				"name": "color-api",
+				"name": "Color API",
 				"repoUrl": "https://github.com/WICG/color-api",
 				"url": "https://wicg.github.io/color-api/"
 			},
 			{
-				"name": "content-index",
+				"name": "Compression Streams",
+				"repoUrl": "https://github.com/WICG/compression",
+				"url": "https://WICG.github.io/compression/"
+			},
+			{
+				"name": "Conditional Focus",
+				"repoUrl": "https://github.com/WICG/conditional-focus",
+				"url": "https://WICG.github.io/conditional-focus/"
+			},
+			{
+				"name": "Content Index",
 				"repoUrl": "https://github.com/WICG/content-index",
 				"url": "https://wicg.github.io/content-index/spec/"
 			},
 			{
-				"name": "cookie-store",
+				"name": "Controls List API | controls-list",
+				"repoUrl": "https://github.com/WICG/controls-list",
+				"url": "https://WICG.github.io/controls-list/"
+			},
+			{
+				"name": "Cookie Store API",
 				"repoUrl": "https://github.com/WICG/cookie-store",
 				"url": "https://wicg.github.io/cookie-store/"
 			},
 			{
-				"name": "crash-reporting",
+				"name": "Crash Reporting",
 				"repoUrl": "https://github.com/WICG/crash-reporting",
 				"url": "https://wicg.github.io/crash-reporting/"
 			},
 			{
-				"name": "csp-next",
+				"name": "Scripting Policy",
 				"repoUrl": "https://github.com/WICG/csp-next",
 				"url": "https://wicg.github.io/csp-next/scripting-policy.html"
 			},
 			{
-				"name": "custom-state-pseudo-class",
+				"name": "CSS Parser API",
+				"repoUrl": "https://github.com/WICG/css-parser-api",
+				"url": "https://WICG.github.io/css-parser-api/"
+			},
+			{
+				"name": "Custom State Pseudo Class",
 				"repoUrl": "https://github.com/WICG/custom-state-pseudo-class",
 				"url": "https://wicg.github.io/custom-state-pseudo-class/"
 			},
 			{
-				"name": "datacue",
+				"name": "DataCue API",
 				"repoUrl": "https://github.com/WICG/datacue",
 				"url": "https://wicg.github.io/datacue/"
 			},
 			{
-				"name": "deprecation-reporting",
+				"name": "Deprecation Reporting",
 				"repoUrl": "https://github.com/WICG/deprecation-reporting",
 				"url": "https://wicg.github.io/deprecation-reporting/"
 			},
 			{
-				"name": "devtools-protocol",
+				"name": "Domains | devtools-protocol",
 				"repoUrl": "https://github.com/WICG/devtools-protocol",
 				"url": "https://wicg.github.io/devtools-protocol/specification/docs/domains/"
 			},
 			{
-				"name": "document-picture-in-picture",
+				"name": "Digital Goods API",
+				"repoUrl": "https://github.com/WICG/digital-goods",
+				"url": "https://WICG.github.io/digital-goods/"
+			},
+			{
+				"name": "Direct Sockets API",
+				"repoUrl": "https://github.com/WICG/direct-sockets",
+				"url": "https://WICG.github.io/direct-sockets/"
+			},
+			{
+				"name": "Document Picture-in-Picture Specification",
 				"repoUrl": "https://github.com/WICG/document-picture-in-picture",
 				"url": "https://wicg.github.io/document-picture-in-picture/"
 			},
 			{
-				"name": "document-policy",
+				"name": "Document Policy",
 				"repoUrl": "https://github.com/WICG/document-policy",
 				"url": "https://wicg.github.io/document-policy/"
 			},
 			{
-				"name": "element-capture",
+				"name": "Element Capture",
 				"repoUrl": "https://github.com/WICG/element-capture",
 				"url": "https://screen-share.github.io/element-capture/"
 			},
 			{
-				"name": "element-timing",
+				"name": "Element Timing API",
 				"repoUrl": "https://github.com/WICG/element-timing",
 				"url": "https://wicg.github.io/element-timing/"
 			},
 			{
-				"name": "entries-api",
+				"name": "File and Directory Entries API",
 				"repoUrl": "https://github.com/WICG/entries-api",
 				"url": "https://wicg.github.io/entries-api/"
 			},
 			{
-				"name": "fenced-frame",
+				"name": "EyeDropper API",
+				"repoUrl": "https://github.com/WICG/eyedropper-api",
+				"url": "https://WICG.github.io/eyedropper-api/"
+			},
+			{
+				"name": "Fenced Frame",
 				"repoUrl": "https://github.com/WICG/fenced-frame",
 				"url": "https://wicg.github.io/fenced-frame/"
 			},
 			{
-				"name": "file-system-access",
+				"name": "File Handling | file-handling",
+				"repoUrl": "https://github.com/WICG/file-handling",
+				"url": "https://WICG.github.io/file-handling/"
+			},
+			{
+				"name": "File System Access",
 				"repoUrl": "https://github.com/WICG/file-system-access",
 				"url": "https://wicg.github.io/file-system-access/"
 			},
 			{
-				"name": "first-party-sets",
+				"name": "User Agent Interaction with First-Party Sets",
 				"repoUrl": "https://github.com/WICG/first-party-sets",
 				"url": "https://wicg.github.io/first-party-sets/"
 			},
 			{
-				"name": "focus-visible",
+				"name": "focus-visible class demo",
 				"repoUrl": "https://github.com/WICG/focus-visible",
 				"url": "https://wicg.github.io/focus-visible/demo/"
 			},
 			{
-				"name": "get-installed-related-apps",
+				"name": "Get Installed Related Apps API",
 				"repoUrl": "https://github.com/WICG/get-installed-related-apps",
-				"url": "http://wicg.github.io/get-installed-related-apps/spec/"
+				"url": "https://wicg.github.io/get-installed-related-apps/spec/"
 			},
 			{
-				"name": "handwriting-recognition",
+				"name": "Handwriting Recognition API",
 				"repoUrl": "https://github.com/WICG/handwriting-recognition",
 				"url": "https://wicg.github.io/handwriting-recognition/"
 			},
 			{
-				"name": "import-maps",
+				"name": "Idle Detection API",
+				"repoUrl": "https://github.com/WICG/idle-detection",
+				"url": "https://WICG.github.io/idle-detection/"
+			},
+			{
+				"name": "HTML Standard",
 				"repoUrl": "https://github.com/WICG/import-maps",
 				"url": "https://html.spec.whatwg.org/multipage/webappapis.html#import-maps"
 			},
 			{
-				"name": "intervention-reporting",
+				"name": "inert | Polyfill for the inert attribute and property.",
+				"repoUrl": "https://github.com/WICG/inert",
+				"url": "https://WICG.github.io/inert/"
+			},
+			{
+				"name": "Ink API",
+				"repoUrl": "https://github.com/WICG/ink-enhancement",
+				"url": "https://WICG.github.io/ink-enhancement/"
+			},
+			{
+				"name": "Input Device Capabilities",
+				"repoUrl": "https://github.com/WICG/input-device-capabilities",
+				"url": "https://WICG.github.io/input-device-capabilities/"
+			},
+			{
+				"name": "Intervention Reporting",
 				"repoUrl": "https://github.com/WICG/intervention-reporting",
 				"url": "https://wicg.github.io/intervention-reporting/"
 			},
 			{
-				"name": "is-input-pending",
+				"name": "Early detection of input events",
 				"repoUrl": "https://github.com/WICG/is-input-pending",
 				"url": "https://wicg.github.io/is-input-pending/"
 			},
 			{
-				"name": "keyboard-lock",
+				"name": "JS Self-Profiling API",
+				"repoUrl": "https://github.com/WICG/js-self-profiling",
+				"url": "https://WICG.github.io/js-self-profiling/"
+			},
+			{
+				"name": "Keyboard Lock",
 				"repoUrl": "https://github.com/WICG/keyboard-lock",
 				"url": "https://wicg.github.io/keyboard-lock/"
 			},
 			{
-				"name": "keyboard-map",
+				"name": "Keyboard Map",
 				"repoUrl": "https://github.com/WICG/keyboard-map",
 				"url": "https://wicg.github.io/keyboard-map/"
 			},
 			{
-				"name": "layout-instability",
+				"name": "Layout Instability API",
 				"repoUrl": "https://github.com/WICG/layout-instability",
 				"url": "https://wicg.github.io/layout-instability/"
 			},
 			{
-				"name": "local-font-access",
+				"name": "Local Font Access API",
 				"repoUrl": "https://github.com/WICG/local-font-access",
 				"url": "https://wicg.github.io/local-font-access"
 			},
 			{
-				"name": "manifest-incubations",
+				"name": "Manifest Incubations",
 				"repoUrl": "https://github.com/WICG/manifest-incubations",
 				"url": "https://wicg.github.io/manifest-incubations/"
 			},
 			{
-				"name": "media-feeds",
+				"name": "Media Feeds",
 				"repoUrl": "https://github.com/WICG/media-feeds",
 				"url": "https://wicg.github.io/media-feeds/"
 			},
 			{
-				"name": "multicapture",
+				"name": "media-latency-hint",
+				"repoUrl": "https://github.com/WICG/media-latency-hint",
+				"url": "https://WICG.github.io/media-latency-hint/"
+			},
+			{
+				"name": "Multicapture",
 				"repoUrl": "https://github.com/WICG/multicapture",
 				"url": "https://wicg.github.io/multicapture/"
 			},
 			{
-				"name": "nav-speculation",
+				"name": "WICG/nav-speculation",
 				"repoUrl": "https://github.com/WICG/nav-speculation",
 				"url": "https://wicg.github.io/nav-speculation/"
 			},
 			{
-				"name": "navigation-api",
+				"name": "Add the navigation API by domenic · Pull Request #8502 · whatwg/html · GitHub",
 				"repoUrl": "https://github.com/WICG/navigation-api",
 				"url": "https://github.com/whatwg/html/pull/8502"
 			},
 			{
-				"name": "netinfo",
+				"name": "Network Information API",
 				"repoUrl": "https://github.com/WICG/netinfo",
 				"url": "https://wicg.github.io/netinfo/"
 			},
 			{
-				"name": "page-lifecycle",
+				"name": "GitHub - WICG/origin-policy: [On hold for now] A mechanism for origins to set their origin-wide configuration in a central location",
+				"repoUrl": "https://github.com/WICG/origin-policy",
+				"url": "https://WICG.github.io/origin-policy/"
+			},
+			{
+				"name": "overscroll and scrollend events",
+				"repoUrl": "https://github.com/WICG/overscroll-scrollend-events",
+				"url": "https://WICG.github.io/overscroll-scrollend-events/"
+			},
+			{
+				"name": "Page Lifecycle",
 				"repoUrl": "https://github.com/WICG/page-lifecycle",
 				"url": "https://wicg.github.io/page-lifecycle/"
 			},
 			{
-				"name": "periodic-background-sync",
+				"name": "Pending Beacon",
+				"repoUrl": "https://github.com/WICG/pending-beacon",
+				"url": "https://WICG.github.io/pending-beacon/"
+			},
+			{
+				"name": "Measure Memory API",
+				"repoUrl": "https://github.com/WICG/performance-measure-memory",
+				"url": "https://WICG.github.io/performance-measure-memory/"
+			},
+			{
+				"name": "Web Periodic Background Synchronization",
 				"repoUrl": "https://github.com/WICG/periodic-background-sync",
 				"url": "https://wicg.github.io/periodic-background-sync/"
 			},
 			{
-				"name": "permissions-request",
+				"name": "Requesting Permissions",
 				"repoUrl": "https://github.com/WICG/permissions-request",
 				"url": "https://wicg.github.io/permissions-request/"
 			},
 			{
-				"name": "permissions-revoke",
+				"name": "Relinquishing Permissions",
 				"repoUrl": "https://github.com/WICG/permissions-revoke",
 				"url": "https://wicg.github.io/permissions-revoke/"
 			},
 			{
-				"name": "portals",
+				"name": "Portals",
 				"repoUrl": "https://github.com/WICG/portals",
 				"url": "https://wicg.github.io/portals/"
 			},
 			{
-				"name": "private-network-access",
+				"name": "preferCurrentTab",
+				"repoUrl": "https://github.com/WICG/prefer-current-tab",
+				"url": "https://WICG.github.io/prefer-current-tab/"
+			},
+			{
+				"name": "Private Network Access",
 				"repoUrl": "https://github.com/WICG/private-network-access",
 				"url": "https://wicg.github.io/private-network-access/"
 			},
 			{
-				"name": "proposals",
-				"repoUrl": "https://github.com/WICG/proposals",
-				"url": "https://wicg.io/"
-			},
-			{
-				"name": "responsive-image-client-hints",
+				"name": "Responsive Image Client Hints",
 				"repoUrl": "https://github.com/WICG/responsive-image-client-hints",
 				"url": "https://wicg.github.io/responsive-image-client-hints"
 			},
 			{
-				"name": "sanitizer-api",
+				"name": "HTML Sanitizer API",
 				"repoUrl": "https://github.com/WICG/sanitizer-api",
 				"url": "https://wicg.github.io/sanitizer-api/"
 			},
 			{
-				"name": "savedata",
+				"name": "Save Data API",
 				"repoUrl": "https://github.com/WICG/savedata",
 				"url": "https://wicg.github.io/savedata/"
 			},
 			{
-				"name": "scheduling-apis",
+				"name": "Prioritized Task Scheduling",
 				"repoUrl": "https://github.com/WICG/scheduling-apis",
 				"url": "https://wicg.github.io/scheduling-apis/"
 			},
 			{
-				"name": "serial",
+				"name": "URL Fragment Text Directives",
+				"repoUrl": "https://github.com/WICG/scroll-to-text-fragment",
+				"url": "https://WICG.github.io/scroll-to-text-fragment/"
+			},
+			{
+				"name": "Web Serial API",
 				"repoUrl": "https://github.com/WICG/serial",
 				"url": "https://wicg.github.io/serial/"
 			},
 			{
-				"name": "shape-detection-api",
+				"name": "Accelerated Shape Detection in Images",
 				"repoUrl": "https://github.com/WICG/shape-detection-api",
 				"url": "https://wicg.github.io/shape-detection-api"
 			},
 			{
-				"name": "sms-one-time-codes",
+				"name": "Shared Storage API",
+				"repoUrl": "https://github.com/WICG/shared-storage",
+				"url": "https://WICG.github.io/shared-storage/"
+			},
+			{
+				"name": "Origin-bound one-time codes delivered via SMS",
 				"repoUrl": "https://github.com/WICG/sms-one-time-codes",
 				"url": "https://wicg.github.io/sms-one-time-codes/"
 			},
 			{
-				"name": "spatial-navigation",
+				"name": "CSS Spatial Navigation Level 1",
 				"repoUrl": "https://github.com/WICG/spatial-navigation",
 				"url": "https://drafts.csswg.org/css-nav-1/"
 			},
 			{
-				"name": "speech-api",
+				"name": "Web Speech API",
 				"repoUrl": "https://github.com/WICG/speech-api",
 				"url": "https://wicg.github.io/speech-api/"
 			},
 			{
-				"name": "storage-buckets",
+				"name": "starter-kit | A simple starter kit for incubations",
+				"repoUrl": "https://github.com/WICG/starter-kit",
+				"url": "https://WICG.github.io/starter-kit/"
+			},
+			{
+				"name": "Storage Buckets | storage-buckets",
 				"repoUrl": "https://github.com/WICG/storage-buckets",
 				"url": "https://wicg.github.io/storage-buckets/explainer"
 			},
 			{
-				"name": "trust-token-api",
+				"name": "Private State Token API",
 				"repoUrl": "https://github.com/WICG/trust-token-api",
 				"url": "https://wicg.github.io/trust-token-api/"
 			},
 			{
-				"name": "turtledove",
+				"name": "Protected Audience (formerly FLEDGE)",
 				"repoUrl": "https://github.com/WICG/turtledove",
 				"url": "https://wicg.github.io/turtledove/"
 			},
 			{
-				"name": "ua-client-hints",
+				"name": "User-Agent Client Hints",
 				"repoUrl": "https://github.com/WICG/ua-client-hints",
 				"url": "https://wicg.github.io/ua-client-hints/"
 			},
 			{
-				"name": "urlpattern",
+				"name": "URLPattern API",
 				"repoUrl": "https://github.com/WICG/urlpattern",
 				"url": "https://wicg.github.io/urlpattern"
 			},
 			{
-				"name": "user-preference-media-features-headers",
+				"name": "User Preference Media Features Client Hints Headers",
 				"repoUrl": "https://github.com/WICG/user-preference-media-features-headers",
 				"url": "https://wicg.github.io/user-preference-media-features-headers/"
 			},
 			{
-				"name": "video-rvfc",
+				"name": "HTMLVideoElement.requestVideoFrameCallback()",
 				"repoUrl": "https://github.com/WICG/video-rvfc",
 				"url": "https://wicg.github.io/video-rvfc/"
 			},
 			{
-				"name": "view-transitions",
+				"name": "CSS View Transitions Module Level 1",
 				"repoUrl": "https://github.com/WICG/view-transitions",
 				"url": "https://drafts.csswg.org/css-view-transitions-1/"
 			},
 			{
-				"name": "visual-viewport",
+				"name": "Visual Viewport API",
 				"repoUrl": "https://github.com/WICG/visual-viewport",
 				"url": "https://wicg.github.io/visual-viewport/"
 			},
 			{
-				"name": "web-otp",
+				"name": "Web App Launch Handler API",
+				"repoUrl": "https://github.com/WICG/web-app-launch",
+				"url": "https://WICG.github.io/web-app-launch/"
+			},
+			{
+				"name": "WebOTP API",
 				"repoUrl": "https://github.com/WICG/web-otp",
 				"url": "https://wicg.github.io/web-otp/"
 			},
 			{
-				"name": "webcrypto-secure-curves",
+				"name": "Web Smart Card API",
+				"repoUrl": "https://github.com/WICG/web-smart-card",
+				"url": "https://WICG.github.io/web-smart-card/"
+			},
+			{
+				"name": "Secure Curves in the Web Cryptography API",
 				"repoUrl": "https://github.com/WICG/webcrypto-secure-curves",
 				"url": "https://wicg.github.io/webcrypto-secure-curves/"
 			},
 			{
-				"name": "webmonetization",
+				"name": "WebHID API",
+				"repoUrl": "https://github.com/WICG/webhid",
+				"url": "https://WICG.github.io/webhid/"
+			},
+			{
+				"name": "Web Monetization | Web Monetization",
 				"repoUrl": "https://github.com/WICG/webmonetization",
 				"url": "https://webmonetization.org"
 			},
 			{
-				"name": "webusb",
+				"name": "WICG/webpackage main preview",
+				"repoUrl": "https://github.com/WICG/webpackage",
+				"url": "https://WICG.github.io/webpackage/"
+			},
+			{
+				"name": "WebUSB API",
 				"repoUrl": "https://github.com/WICG/webusb",
 				"url": "https://wicg.github.io/webusb/"
 			},
 			{
-				"name": "window-controls-overlay",
+				"name": "Window Controls Overlay",
 				"repoUrl": "https://github.com/WICG/window-controls-overlay",
 				"url": "https://wicg.github.io/window-controls-overlay/"
 			},
 			{
-				"name": "web-share-target",
+				"name": "CHIPS",
+				"repoUrl": "https://github.com/privacycg/CHIPS",
+				"url": "https://privacycg.github.io/CHIPS/"
+			},
+			{
+				"name": "Web Share Target API",
 				"repoUrl": "https://github.com/w3c/web-share-target",
 				"url": "https://w3c.github.io/web-share-target/"
 			}
@@ -3961,306 +2548,222 @@
 	{
 		"name": "Web Real-Time Communications Working Group",
 		"identifier": "wg/webrtc",
-		"homepage": {
-			"href": "https://www.w3.org/groups/wg/webrtc"
-		},
+		"homepage": "https://www.w3.org/groups/wg/webrtc/",
 		"specs": [
 			{
-				"name": "mediacapture-automation",
+				"name": "Media Capture Automation",
 				"repoUrl": "https://github.com/w3c/mediacapture-automation",
 				"url": "https://w3c.github.io/mediacapture-automation/"
 			},
 			{
-				"name": "mediacapture-extensions",
+				"name": "Media Capture and Streams Extensions",
 				"repoUrl": "https://github.com/w3c/mediacapture-extensions",
 				"url": "https://w3c.github.io/mediacapture-extensions/"
 			},
 			{
-				"name": "mediacapture-fromelement",
+				"name": "Media Capture from DOM Elements",
 				"repoUrl": "https://github.com/w3c/mediacapture-fromelement",
 				"url": "https://w3c.github.io/mediacapture-fromelement"
 			},
 			{
-				"name": "mediacapture-handle",
+				"name": "Capture Handle - Landing Page",
 				"repoUrl": "https://github.com/w3c/mediacapture-handle",
 				"url": "https://w3c.github.io/mediacapture-handle/"
 			},
 			{
-				"name": "mediacapture-image",
+				"name": "MediaStream Image Capture",
 				"repoUrl": "https://github.com/w3c/mediacapture-image",
 				"url": "https://w3c.github.io/mediacapture-image/"
 			},
 			{
-				"name": "mediacapture-main",
+				"name": "Media Capture and Streams",
 				"repoUrl": "https://github.com/w3c/mediacapture-main",
 				"url": "https://w3c.github.io/mediacapture-main/"
 			},
 			{
-				"name": "mediacapture-output",
+				"name": "Audio Output Devices API",
 				"repoUrl": "https://github.com/w3c/mediacapture-output",
 				"url": "https://w3c.github.io/mediacapture-output/"
 			},
 			{
-				"name": "mediacapture-record",
+				"name": "MediaStream Recording",
 				"repoUrl": "https://github.com/w3c/mediacapture-record",
 				"url": "https://w3c.github.io/mediacapture-record/"
 			},
 			{
-				"name": "mediacapture-region",
+				"name": "Region Capture",
 				"repoUrl": "https://github.com/w3c/mediacapture-region",
-				"url": "http://w3c.github.io/mediacapture-region/"
+				"url": "https://w3c.github.io/mediacapture-region/"
 			},
 			{
-				"name": "mediacapture-screen-share",
+				"name": "Screen Capture",
 				"repoUrl": "https://github.com/w3c/mediacapture-screen-share",
 				"url": "https://w3c.github.io/mediacapture-screen-share/"
 			},
 			{
-				"name": "mediacapture-transform",
+				"name": "MediaStreamTrack Insertable Media Processing using Streams",
 				"repoUrl": "https://github.com/w3c/mediacapture-transform",
 				"url": "https://w3c.github.io/mediacapture-transform/"
 			},
 			{
-				"name": "mediacapture-viewport",
+				"name": "Viewport Capture",
 				"repoUrl": "https://github.com/w3c/mediacapture-viewport",
 				"url": "https://w3c.github.io/mediacapture-viewport/"
 			},
 			{
-				"name": "mst-content-hint",
+				"name": "MediaStreamTrack Content Hints",
 				"repoUrl": "https://github.com/w3c/mst-content-hint",
 				"url": "https://w3c.github.io/mst-content-hint/"
 			},
 			{
-				"name": "webrtc-charter",
-				"repoUrl": "https://github.com/w3c/webrtc-charter",
-				"url": "http://w3c.github.io/webrtc-charter/webrtc-charter.html"
-			},
-			{
-				"name": "webrtc-encoded-transform",
+				"name": "WebRTC Encoded Transform",
 				"repoUrl": "https://github.com/w3c/webrtc-encoded-transform",
 				"url": "https://w3c.github.io/webrtc-encoded-transform/"
 			},
 			{
-				"name": "webrtc-extensions",
+				"name": "WebRTC Extensions",
 				"repoUrl": "https://github.com/w3c/webrtc-extensions",
 				"url": "https://w3c.github.io/webrtc-extensions/"
 			},
 			{
-				"name": "webrtc-ice",
+				"name": "IceTransport Extensions for WebRTC",
 				"repoUrl": "https://github.com/w3c/webrtc-ice",
 				"url": "https://w3c.github.io/webrtc-ice/"
 			},
 			{
-				"name": "webrtc-identity",
+				"name": "Identity for WebRTC 1.0",
 				"repoUrl": "https://github.com/w3c/webrtc-identity",
 				"url": "https://w3c.github.io/webrtc-identity/"
 			},
 			{
-				"name": "webrtc-interop-reports",
+				"name": "webrtc-pc interop",
 				"repoUrl": "https://github.com/w3c/webrtc-interop-reports",
 				"url": "https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html"
 			},
 			{
-				"name": "webrtc-nv-use-cases",
+				"name": "WebRTC Extended Use Cases",
 				"repoUrl": "https://github.com/w3c/webrtc-nv-use-cases",
 				"url": "https://w3c.github.io/webrtc-nv-use-cases/"
 			},
 			{
-				"name": "webrtc-pc",
+				"name": "WebRTC: Real-Time Communication in Browsers",
 				"repoUrl": "https://github.com/w3c/webrtc-pc",
 				"url": "https://w3c.github.io/webrtc-pc/"
 			},
 			{
-				"name": "webrtc-priority",
+				"name": "WebRTC Priority Control API",
 				"repoUrl": "https://github.com/w3c/webrtc-priority",
 				"url": "https://w3c.github.io/webrtc-priority/"
 			},
 			{
-				"name": "webrtc-provisional-stats",
+				"name": "Provisional Identifiers for WebRTC's Statistics API",
 				"repoUrl": "https://github.com/w3c/webrtc-provisional-stats",
 				"url": "https://w3c.github.io/webrtc-provisional-stats/"
 			},
 			{
-				"name": "webrtc-stats",
+				"name": "Identifiers for WebRTC's Statistics API",
 				"repoUrl": "https://github.com/w3c/webrtc-stats",
 				"url": "https://w3c.github.io/webrtc-stats/"
 			},
 			{
-				"name": "webrtc-svc",
+				"name": "Scalable Video Coding (SVC) Extension for WebRTC",
 				"repoUrl": "https://github.com/w3c/webrtc-svc",
 				"url": "https://w3c.github.io/webrtc-svc/"
 			}
 		]
 	},
 	{
-		"name": "Web Thing Protocol Community Group",
-		"identifier": "cg/web-thing-protocol",
-		"homepage": {
-			"href": "https://www.w3.org/community/web-thing-protocol/"
-		},
-		"specs": [
-			{
-				"name": "web-thing-protocol",
-				"repoUrl": "https://github.com/w3c/web-thing-protocol",
-				"url": "https://w3c.github.io/web-thing-protocol/"
-			}
-		]
-	},
-	{
-		"name": "Web of Things Community Group",
-		"identifier": "cg/wot",
-		"homepage": {
-			"href": "https://www.w3.org/community/wot/"
-		},
-		"specs": [
-			{
-				"name": "wot-cg",
-				"repoUrl": "https://github.com/w3c/wot-cg",
-				"url": "https://w3c.github.io/wot-cg/"
-			}
-		]
-	},
-	{
-		"name": "Web of Things Interest Group",
-		"identifier": "ig/wot",
-		"homepage": {
-			"href": "https://www.w3.org/WoT/IG/"
-		},
-		"specs": [
-			{
-				"name": "wot",
-				"repoUrl": "https://github.com/w3c/wot",
-				"url": "http://www.w3.org/WoT/IG/"
-			},
-			{
-				"name": "wot-charter-drafts",
-				"repoUrl": "https://github.com/w3c/wot-charter-drafts",
-				"url": "https://w3c.github.io/wot-charter-drafts/wot-wg-2023-draft.html"
-			},
-			{
-				"name": "wot-marketing",
-				"repoUrl": "https://github.com/w3c/wot-marketing",
-				"url": "https://w3c.github.io/wot-marketing/"
-			}
-		]
-	},
-	{
-		"name": "Web of Things Japanese Community Group",
-		"identifier": "cg/wot-jp",
-		"homepage": {
-			"href": "https://www.w3.org/community/wot-jp/"
-		},
-		"specs": [
-			{
-				"name": "wot-jp-cg",
-				"repoUrl": "https://github.com/w3c/wot-jp-cg",
-				"url": "https://wot-jp-cg.netlify.app/"
-			}
-		]
-	},
-	{
-		"name": "Web of Things Working Group",
-		"identifier": "wg/wot",
-		"homepage": {
-			"href": "https://www.w3.org/WoT/WG/"
-		},
-		"specs": [
-			{
-				"name": "wot-architecture",
-				"repoUrl": "https://github.com/w3c/wot-architecture",
-				"url": "http://w3c.github.io/wot-architecture/"
-			},
-			{
-				"name": "wot-binding-templates",
-				"repoUrl": "https://github.com/w3c/wot-binding-templates",
-				"url": "http://w3c.github.io/wot-binding-templates/"
-			},
-			{
-				"name": "wot-discovery",
-				"repoUrl": "https://github.com/w3c/wot-discovery",
-				"url": "https://w3c.github.io/wot-discovery/"
-			},
-			{
-				"name": "wot-profile",
-				"repoUrl": "https://github.com/w3c/wot-profile",
-				"url": "http://w3c.github.io/wot-profile/"
-			},
-			{
-				"name": "wot-scripting-api",
-				"repoUrl": "https://github.com/w3c/wot-scripting-api",
-				"url": "http://w3c.github.io/wot-scripting-api/"
-			},
-			{
-				"name": "wot-security-best-practices",
-				"repoUrl": "https://github.com/w3c/wot-security-best-practices",
-				"url": "https://github.com/w3c/wot-security-best-practices/blob/master/index.html"
-			},
-			{
-				"name": "wot-thing-description",
-				"repoUrl": "https://github.com/w3c/wot-thing-description",
-				"url": "http://w3c.github.io/wot-thing-description/"
-			},
-			{
-				"name": "wotwg",
-				"repoUrl": "https://github.com/w3c/wotwg",
-				"url": "https://w3c.github.io/wotwg/"
-			}
-		]
-	},
-	{
 		"name": "WebAssembly Community Group",
 		"identifier": "cg/webassembly",
-		"homepage": {
-			"href": "https://www.w3.org/community/webassembly/"
-		},
+		"homepage": "https://www.w3.org/community/webassembly/",
 		"specs": [
 			{
-				"name": "annotations",
-				"repoUrl": "https://github.com/WebAssembly/annotations",
-				"url": "https://WebAssembly.github.io/annotations/"
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/branch-hinting",
+				"url": "https://WebAssembly.github.io/branch-hinting/"
 			},
 			{
-				"name": "esm-integration",
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/conditional-sections",
+				"url": "https://WebAssembly.github.io/conditional-sections/"
+			},
+			{
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/content-security-policy",
+				"url": "https://WebAssembly.github.io/content-security-policy/"
+			},
+			{
+				"name": "WebAssembly JavaScript Interface",
 				"repoUrl": "https://github.com/WebAssembly/esm-integration",
 				"url": "https://webassembly.github.io/esm-integration/js-api/index.html#esm-integration"
 			},
 			{
-				"name": "feature-detection",
-				"repoUrl": "https://github.com/WebAssembly/feature-detection",
-				"url": "https://webassembly.github.io/feature-detection/"
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/exception-handling",
+				"url": "https://WebAssembly.github.io/exception-handling/"
 			},
 			{
-				"name": "flexible-vectors",
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/extended-const",
+				"url": "https://WebAssembly.github.io/extended-const/"
+			},
+			{
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/extended-name-section",
+				"url": "https://WebAssembly.github.io/extended-name-section/"
+			},
+			{
+				"name": "WebAssembly Specifications",
 				"repoUrl": "https://github.com/WebAssembly/flexible-vectors",
 				"url": "https://webassembly.github.io/flexible-vectors/"
 			},
 			{
-				"name": "function-references",
+				"name": "WebAssembly Specifications",
 				"repoUrl": "https://github.com/WebAssembly/function-references",
 				"url": "https://webassembly.github.io/function-references/"
 			},
 			{
-				"name": "multi-memory",
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/gc-js-customization",
+				"url": "https://WebAssembly.github.io/gc-js-customization/"
+			},
+			{
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/js-promise-integration",
+				"url": "https://WebAssembly.github.io/js-promise-integration/"
+			},
+			{
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/js-types",
+				"url": "https://WebAssembly.github.io/js-types/"
+			},
+			{
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/memory-control",
+				"url": "https://WebAssembly.github.io/memory-control/"
+			},
+			{
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/memory64",
+				"url": "https://WebAssembly.github.io/memory64/"
+			},
+			{
+				"name": "WebAssembly Specifications",
 				"repoUrl": "https://github.com/WebAssembly/multi-memory",
 				"url": "https://webassembly.github.io/multi-memory/"
 			},
 			{
-				"name": "profiles",
-				"repoUrl": "https://github.com/WebAssembly/profiles",
-				"url": "https://webassembly.github.com/profiles/"
+				"name": "WebAssembly Specifications",
+				"repoUrl": "https://github.com/WebAssembly/relaxed-dead-code-validation",
+				"url": "https://WebAssembly.github.io/relaxed-dead-code-validation/"
 			},
 			{
-				"name": "spec",
-				"repoUrl": "https://github.com/WebAssembly/spec",
-				"url": "https://webassembly.github.io/spec/"
-			},
-			{
-				"name": "tail-call",
+				"name": "WebAssembly Specifications",
 				"repoUrl": "https://github.com/WebAssembly/tail-call",
 				"url": "https://webassembly.github.io/tail-call/"
 			},
 			{
-				"name": "threads",
+				"name": "WebAssembly Specifications",
 				"repoUrl": "https://github.com/WebAssembly/threads",
 				"url": "https://webassembly.github.io/threads/"
 			}
@@ -4269,12 +2772,10 @@
 	{
 		"name": "WebTransport Working Group",
 		"identifier": "wg/webtransport",
-		"homepage": {
-			"href": "https://www.w3.org/webtransport/"
-		},
+		"homepage": "https://www.w3.org/webtransport/",
 		"specs": [
 			{
-				"name": "webtransport",
+				"name": "WebTransport",
 				"repoUrl": "https://github.com/w3c/webtransport",
 				"url": "https://w3c.github.io/webtransport/"
 			}

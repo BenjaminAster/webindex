@@ -32,12 +32,18 @@
 		<ul id="main-list">
 			<template>
 				<li>
-					<h3 class="group-name"></h3>
+					<div class="group-header">
+						<h3><a href="#" class="group-name group-link"></a></h3>
+						<span class="group-idenfifier"></span>
+					</div>
 					<ul class="group-specs">
 						<template>
 							<li>
-								<h4><a href="#" class="spec-name spec-link"></a></h4>
-								<a href="#" class="icon:github repo-link"></a>
+								<a href="#" class="icon:github repo-link" title="View source on GitHub"></a>
+								<a href="#" class="spec-link">
+									<h4 class="spec-name"></h4>
+									<span class="spec-url"></span>
+								</a>
 							</li>
 						</template>
 					</ul>
