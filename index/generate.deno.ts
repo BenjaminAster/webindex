@@ -14,8 +14,7 @@ deno run --unstable --allow-net --allow-read --allow-write=. index/generate.deno
 import { DOMParser as _DOMParser } from "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts";
 const DOMParser: typeof globalThis.DOMParser = _DOMParser;
 
-// @ts-ignore
-import { parse as parseIDL } from "npm:webidl2@24.4.0";
+import { analyzeDocument, collectedStuff } from "./analyze-document.deno.ts";
 
 import manualData from "./manual-data.ts";
 const { excludedGroups } = manualData;
@@ -47,6 +46,7 @@ const fetchDocument = async (url: string) => domParser.parseFromString(await (aw
 
 let list: { name: string, homepage: string, identifier: string, specs: { name: string, url: string, repoUrl: string }[] }[] = [];
 
+console.log("starting...");
 
 {
 	// WHATWG:
@@ -130,24 +130,6 @@ let list: { name: string, homepage: string, identifier: string, specs: { name: s
 		],
 	});
 }
-// (async () => {
-// 	// W3C Working Groups
-
-// 	const html = await (await globalThis.fetch("https://www.w3.org/groups/wg/", fetchOptions)).text();
-// 	const doc = new DOMParser().parseFromString(html, "text/html");
-
-// 	for (const anchor of doc.querySelectorAll(".group-list > card a.card__link")) {
-// 		const groupName = anchor.innerText;
-// 		const { id } = anchor.getAttribute("href").match(/\/groups\/wg\/(?<id>[\w-]+)\/$/).groups;
-// 		const groupHTML = await (await globalThis.fetch(`https://www.w3.org/groups/wg/${id}/publications/`, fetchOptions)).text();
-// 		const groupDoc = new DOMParser().parseFromString(groupHTML, "text/html");
-// 		for (const specAnchor of groupDoc.querySelectorAll(".tr-list > .maturity-grouping > .tr-list__item > .tr-list__item__header > h3 > a"))
-// 		return {
-// 			name: anchor.innerText,
-// 			url: `https://${id}.spec.whatwg.org/`,
-// 		}
-// 	}
-// })(),
 {
 	// CSS
 
@@ -176,7 +158,9 @@ let list: { name: string, homepage: string, identifier: string, specs: { name: s
 	];
 
 	for (const { name, draftsDomain, repoName, homepage, identifier } of infos) {
+		console.log("fetching", draftsDomain);
 		const doc = await fetchDocument(`https://${draftsDomain}/`);
+		console.log("fetched", draftsDomain);
 
 		const specs = await Array.fromAsync((async function* () {
 			$specLoop: for (const anchor of doc.querySelectorAll("#spec_table > tbody > tr[data-path] > td:first-child > a")) {
@@ -185,6 +169,11 @@ let list: { name: string, homepage: string, identifier: string, specs: { name: s
 				const url = `https://${draftsDomain}/${id}/`;
 				const repoUrl = `https://github.com/w3c/${repoName}/tree/main/${id}`;
 				if (manualData.excludedRepos[identifier]?.includes(repoUrl)) continue $specLoop;
+				// const doc = await fetchDocument(url);
+				// analyzeDocument(doc, {
+				// 	specUrl: url,
+				// });
+				console.log(url);
 				yield {
 					name: anchor.innerText,
 					url,
@@ -348,4 +337,13 @@ Deno.writeTextFile(new URL("./specs.json", import.meta.url), JSON.stringify({
 		unix: Date.now(),
 	},
 	list,
+}, null, "\t"));
+
+Deno.writeTextFile(new URL("./css.json", import.meta.url), JSON.stringify({
+	timestamp: {
+		iso: new Date().toISOString(),
+		utc: new Date().toUTCString(),
+		unix: Date.now(),
+	},
+	cssProperties: collectedStuff.cssProperties,
 }, null, "\t"));
