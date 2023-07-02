@@ -6,16 +6,16 @@ await Promise.all([
 	(async () => {
 		// CSS Working Group:
 
-		const html = await (await window.fetch("https://w3c.github.io/csswg-drafts/", { cache: "reload" })).text();
+		const html = await (await window.fetch("https://drafts.csswg.org/", { cache: "reload" })).text();
 		const doc = new DOMParser().parseFromString(html, "text/html");
 		const list = document.querySelector(".csswg");
 		const templateContent = list.querySelector(":scope > template").content;
 
-		for (const anchor of doc.querySelectorAll("body > ul > li > ul > li > a")) {
+		for (const anchor of doc.querySelectorAll("#spec_table > tbody > tr[data-path] > td:first-child > a")) {
 			const id = anchor.getAttribute("href").match(/[\w-]+/)[0];
 			const { id: idWithoutLevel, level } = id.match(/^(?<id>(\w|(-(?!\d+$)))+)(-(?<level>\d+))?$/).groups;
 			const name = anchor.innerText;
-			const url = `https://w3c.github.io/csswg-drafts/${id}/`;
+			const url = `https://drafts.csswg.org/${id}/`;
 			const clone = templateContent.cloneNode(true);
 			clone.querySelector(".link > strong").textContent = idWithoutLevel;
 			if (level) clone.querySelector(".link").append(document.createTextNode(`-${level}`));

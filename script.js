@@ -19,6 +19,33 @@ export const storage = new class {
 	};
 };
 
+{
+	// color theme
+	const button = document.querySelector("#theme-button");
+	const mediaMatch = window.matchMedia("(prefers-color-scheme: light)");
+	const themeInStorage = storage.get("color-theme") ?? "os-default";
+	let currentTheme = ((themeInStorage === "os-default" && mediaMatch.matches) || themeInStorage === "light") ? "light" : "dark";
+
+	const updateTheme = () => {
+		document.documentElement.dataset.theme = currentTheme;
+		// const themeColor = window.getComputedStyle(document.querySelector("c-header")).backgroundColor.trim();
+		// document.querySelector("meta[name=theme-color]").content = themeColor;
+	};
+	updateTheme();
+
+	button.addEventListener("click", async () => {
+		currentTheme = currentTheme === "dark" ? "light" : "dark";
+		storage.set("color-theme", ((currentTheme === "light") === mediaMatch.matches) ? "os-default" : currentTheme);
+		updateTheme();
+	});
+
+	mediaMatch.addEventListener("change", ({ matches }) => {
+		currentTheme = matches ? "light" : "dark";
+		storage.set("color-theme", "os-default");
+		updateTheme();
+	});
+}
+
 const { list: specsData } = await (await globalThis.fetch("./index/specs.json")).json();
 
 const mainList = document.querySelector("#main-list");
@@ -47,30 +74,49 @@ for (const { name, homepage, identifier, specs } of specsData) {
 	mainList.append(clone);
 }
 
-{
-	// color theme
-	const button = document.querySelector("#theme-button");
-	const mediaMatch = window.matchMedia("(prefers-color-scheme: light)");
-	const themeInStorage = storage.get("color-theme") ?? "os-default";
-	let currentTheme = ((themeInStorage === "os-default" && mediaMatch.matches) || themeInStorage === "light") ? "light" : "dark";
+$: {
+	const searchBox = document.querySelector("input[type=search]#searchbox");
 
-	const updateTheme = () => {
-		document.documentElement.dataset.theme = currentTheme;
-		// const themeColor = window.getComputedStyle(document.querySelector("c-header")).backgroundColor.trim();
-		// document.querySelector("meta[name=theme-color]").content = themeColor;
+	if (!CSS.highlights) {
+		throw new Error(String.raw`no CSS highlights, no search ¯\_(ツ)_/¯`);
 	};
-	updateTheme();
 
-	button.addEventListener("click", async () => {
-		currentTheme = currentTheme === "dark" ? "light" : "dark";
-		storage.set("color-theme", ((currentTheme === "light") === mediaMatch.matches) ? "os-default" : currentTheme);
-		updateTheme();
+	searchBox.focus();
+
+	window.addEventListener("keypress", () => {
+		searchBox.focus();
 	});
 
-	mediaMatch.addEventListener("change", ({ matches }) => {
-		currentTheme = matches ? "light" : "dark";
-		storage.set("color-theme", "os-default");
-		updateTheme();
+	const textNodes = (() => {
+		const nodeArray = [];
+		const treeWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT)
+		let /** @type {Node} */ node;
+		while (node = treeWalker.nextNode()) if (node.textContent.trim()) nodeArray.push(node);
+		return nodeArray;
+	})();
+
+	const highlight = new Highlight();
+	CSS.highlights.set("search", highlight);
+
+	searchBox.addEventListener("input", function () {
+		highlight.clear();
+		let /** @type {number} */ index;
+		let firstMatch = true;
+		const treeWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+		let /** @type {Node} */ node;
+		$nodeLoop: while (node = treeWalker.nextNode()) {
+			if (!node.textContent.trim()) continue $nodeLoop;
+			if ((index = node.textContent.toLowerCase().replaceAll(/[^\w]/g, " ").indexOf(this.value.toLowerCase().replaceAll(/[^\w]/g, " "))) >= 0) {
+				const range = new Range();
+				range.setStart(node, index);
+				range.setEnd(node, index + this.value.length);
+				highlight.add(range);
+				if (firstMatch) HTMLElement.prototype.scrollIntoViewIfNeeded
+					? node.parentElement.scrollIntoViewIfNeeded(true)
+					: node.parentElement.scrollIntoView({ block: "center" });
+				firstMatch = false;
+			}
+		}
 	});
 }
 

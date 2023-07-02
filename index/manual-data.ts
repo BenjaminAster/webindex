@@ -257,6 +257,7 @@ export default {
 			"https://github.com/w3c/csswg-drafts/tree/main/css-egg-1",
 		],
 		"fxtf": [
+			"https://github.com/w3c/fxtf-drafts/tree/main/custom",
 			"https://github.com/w3c/fxtf-drafts/tree/main/matrix",
 		],
 		"wg/ag": [
@@ -433,6 +434,9 @@ export default {
 		"cg/patcg": [
 			"https://github.com/patcg-individual-drafts/topics",
 			"https://github.com/patcg-individual-drafts/private-aggregation-api",
+		],
+		"wg/webapps": [
+			"https://github.com/w3c/DOM-Parsing",
 		],
 	},
 	ignoreHomepageUrl: {
