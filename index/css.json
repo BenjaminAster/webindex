@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Sun, 02 Jul 2023 14:44:02 GMT",
-		"iso": "2023-07-02T14:44:02.124Z",
-		"unix": 1688309042124
+		"utc": "Sun, 02 Jul 2023 19:39:39 GMT",
+		"iso": "2023-07-02T19:39:39.316Z",
+		"unix": 1688326779316
 	},
 	"cssProperties": [
 		{
@@ -1703,6 +1703,13 @@
 			"spec": "https://drafts.csswg.org/css2/"
 		},
 		{
+			"name": "display",
+			"value": "<display-outside> || [ <display-inside> | math ]",
+			"isNewValues": true,
+			"id": null,
+			"spec": "https://w3c.github.io/mathml-core/"
+		},
+		{
 			"name": "dominant-baseline",
 			"value": "auto | text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top",
 			"id": "propdef-dominant-baseline",
@@ -3033,6 +3040,24 @@
 			"value": "[ pack | next ] || [definite-first | ordered ]",
 			"id": "propdef-masonry-auto-flow",
 			"spec": "https://drafts.csswg.org/css-grid-3/"
+		},
+		{
+			"name": "math-depth",
+			"value": "auto-add | add(<integer>) | <integer>",
+			"id": "propdef-math-depth",
+			"spec": "https://w3c.github.io/mathml-core/"
+		},
+		{
+			"name": "math-shift",
+			"value": "normal | compact",
+			"id": "propdef-math-shift",
+			"spec": "https://w3c.github.io/mathml-core/"
+		},
+		{
+			"name": "math-style",
+			"value": "normal | compact",
+			"id": "propdef-math-style",
+			"spec": "https://w3c.github.io/mathml-core/"
 		},
 		{
 			"name": "max-block-size",
@@ -4844,6 +4869,13 @@
 			"value": "capitalize | uppercase | lowercase | none | inherit",
 			"id": "propdef-text-transform",
 			"spec": "https://drafts.csswg.org/css2/"
+		},
+		{
+			"name": "text-transform",
+			"value": "math-auto",
+			"isNewValues": true,
+			"id": "ref-for-propdef-text-transform",
+			"spec": "https://w3c.github.io/mathml-core/"
 		},
 		{
 			"name": "text-underline-offset",
@@ -7116,6 +7148,14 @@
 			"spec": "https://drafts.csswg.org/css-color-5/"
 		},
 		{
+			"name": "a1lx",
+			"valueFor": [
+				"AV1LayeredImageIndexingProperty"
+			],
+			"id": "valdef-av1layeredimageindexingproperty-a1lx",
+			"spec": "https://aomediacodec.github.io/av1-avif/"
+		},
+		{
 			"name": "A3",
 			"valueFor": [
 				"<page-size>"
@@ -8870,6 +8910,54 @@
 			],
 			"id": "valdef-anchor-auto-same",
 			"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+		},
+		{
+			"name": "av01",
+			"valueFor": [
+				"ISOBMFF Brand"
+			],
+			"id": "valdef-isobmff-brand-av01",
+			"spec": "https://aomediacodec.github.io/av1-isobmff/"
+		},
+		{
+			"name": "av01",
+			"valueFor": [
+				"AV1SampleEntry"
+			],
+			"id": "valdef-av1sampleentry-av01",
+			"spec": "https://aomediacodec.github.io/av1-isobmff/"
+		},
+		{
+			"name": "av01",
+			"valueFor": [
+				"AV1 Image Item Type"
+			],
+			"id": "valdef-av1-image-item-type-av01",
+			"spec": "https://aomediacodec.github.io/av1-avif/"
+		},
+		{
+			"name": "av1C",
+			"valueFor": [
+				"AV1 Item Configuration Property"
+			],
+			"id": "valdef-av1-item-configuration-property-av1c",
+			"spec": "https://aomediacodec.github.io/av1-avif/"
+		},
+		{
+			"name": "av1m",
+			"valueFor": [
+				"AV1MultiFrameSampleGroupEntry"
+			],
+			"id": "valdef-av1multiframesamplegroupentry-av1m",
+			"spec": "https://aomediacodec.github.io/av1-isobmff/"
+		},
+		{
+			"name": "av1M",
+			"valueFor": [
+				"AV1MetadataSampleGroupEntry"
+			],
+			"id": "valdef-av1metadatasamplegroupentry-av1m",
+			"spec": "https://aomediacodec.github.io/av1-isobmff/"
 		},
 		{
 			"name": "avoid",
@@ -11841,6 +11929,14 @@
 			],
 			"id": "valdef-text-justify-distribute",
 			"spec": "https://drafts.csswg.org/css-text-4/"
+		},
+		{
+			"name": "Do Not Upgrade",
+			"valueFor": [
+				"insecure requests policy"
+			],
+			"id": "valdef-insecure-requests-policy-do-not-upgrade",
+			"spec": "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
 		},
 		{
 			"name": "dodgerblue",
@@ -15987,6 +16083,22 @@
 			],
 			"id": "valdef-blend-mode-luminosity",
 			"spec": "https://drafts.fxtf.org/compositing-2/"
+		},
+		{
+			"name": "MA1A",
+			"valueFor": [
+				"AV1 Image Item Type"
+			],
+			"id": "valdef-av1-image-item-type-ma1a",
+			"spec": "https://aomediacodec.github.io/av1-avif/"
+		},
+		{
+			"name": "MA1B",
+			"valueFor": [
+				"AV1 Image Item Type"
+			],
+			"id": "valdef-av1-image-item-type-ma1b",
+			"spec": "https://aomediacodec.github.io/av1-avif/"
 		},
 		{
 			"name": "magenta",
@@ -23626,6 +23738,14 @@
 			"spec": "https://drafts.csswg.org/css-values-4/"
 		},
 		{
+			"name": "Upgrade",
+			"valueFor": [
+				"insecure requests policy"
+			],
+			"id": "valdef-insecure-requests-policy-upgrade",
+			"spec": "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
+		},
+		{
 			"name": "upper-alpha",
 			"valueFor": [
 				"<counter-style-name>"
@@ -29296,6 +29416,11 @@
 			"spec": "https://drafts.csswg.org/selectors-4/"
 		},
 		{
+			"name": ":future",
+			"id": "selectordef-future",
+			"spec": "https://w3c.github.io/webvtt/"
+		},
+		{
 			"name": ":has()",
 			"id": "has-pseudo",
 			"spec": "https://drafts.csswg.org/selectors-4/"
@@ -29576,6 +29701,11 @@
 			"spec": "https://drafts.csswg.org/selectors-4/"
 		},
 		{
+			"name": ":past",
+			"id": "selectordef-past",
+			"spec": "https://w3c.github.io/webvtt/"
+		},
+		{
 			"name": ":paused",
 			"id": "selectordef-paused",
 			"spec": "https://drafts.csswg.org/selectors-4/"
@@ -29791,6 +29921,26 @@
 			"name": "::before",
 			"id": "sel-before",
 			"spec": "https://drafts.csswg.org/selectors-3/"
+		},
+		{
+			"name": "::cue",
+			"id": "selectordef-cue",
+			"spec": "https://w3c.github.io/webvtt/"
+		},
+		{
+			"name": "::cue()",
+			"id": "selectordef-cue-selector",
+			"spec": "https://w3c.github.io/webvtt/"
+		},
+		{
+			"name": "::cue-region",
+			"id": "selectordef-cue-region",
+			"spec": "https://w3c.github.io/webvtt/"
+		},
+		{
+			"name": "::cue-region()",
+			"id": "selectordef-cue-region-selector",
+			"spec": "https://w3c.github.io/webvtt/"
 		},
 		{
 			"name": "::file-selector-button",

@@ -1,6 +1,14 @@
 
 // @ts-ignore
-import { parse as parseIDL } from "npm:webidl2@24.4.0";
+import { parse as _parseIDL } from "npm:webidl2@24.4.0";
+
+const parseIDL = (idl: string) => {
+	try {
+		return _parseIDL(idl);
+	} catch {
+		return [];
+	}
+}
 
 export const collectedStuff = {
 	cssProperties: [],
@@ -13,6 +21,9 @@ export const collectedStuff = {
 	cssPseudoClasses: [],
 	cssPseudoElements: [],
 	cssUnits: [],
+	jsInterfaces: [],
+	jsAttributes: [],
+	jsFunctions: [],
 };
 
 const sortArrayByObjectValue = (array: any[], key: string) => {
@@ -30,7 +41,14 @@ export const tidyUpCollectedStuff = () => {
 	sortArrayByObjectValue(collectedStuff.cssPseudoClasses, "name");
 	sortArrayByObjectValue(collectedStuff.cssPseudoElements, "name");
 	sortArrayByObjectValue(collectedStuff.cssUnits, "name");
+	sortArrayByObjectValue(collectedStuff.jsInterfaces, "name");
+	sortArrayByObjectValue(collectedStuff.jsAttributes, "name");
+	sortArrayByObjectValue(collectedStuff.jsFunctions, "name");
 	// console.log([...types]);
+
+	Deno.writeTextFile(new URL("./invalid.idl", import.meta.url), b);
+
+	// console.log([...a]);
 }
 
 // let types = new Set();
@@ -70,6 +88,10 @@ const dfnTypes = [
 	"value",
 ];
 
+let a = new Set();
+
+let b = "";
+
 export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string }) => {
 	{
 		// debug
@@ -102,7 +124,7 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 			$loop: for (const tbody of doc.querySelectorAll(":is(body, :not(.issue)) > table.def.propdef > tbody")) {
 				const propertyEls = tbody.querySelectorAll(":scope > tr:first-of-type > td:first-of-type > :is(dfn, .css)");
 				const value = tbody.querySelector(":scope > tr:nth-of-type(2) > td:first-of-type")?.textContent.trim().replaceAll(/\s+/g, " ");
-				const isNewValues = tbody.querySelector(":scope > tr:nth-of-type(2) > th")?.textContent.trim() === "New values:";
+				const isNewValues = tbody.querySelector(":scope > tr:nth-of-type(2) > th")?.textContent.trim().match(/^New value(s)?:/);
 				// console.log(value);
 				for (const propertyEl of propertyEls) {
 					if (!value) throw new Error(`[no value] ${propertyEl} ${specUrl}`);
@@ -239,13 +261,88 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 	{
 		// JavaScript
 
-		$idlLoop: for (const container of doc.querySelectorAll(".idl")) {
-			if (!container.matches("pre.def")) {
-				console.log("[invalid IDL container element]", specUrl)
+		$idlLoop: for (const container of doc.querySelectorAll("pre > code.idl, :not(#idl-index) + pre.idl")) {
+			container.querySelector(":scope > .idlHeader")?.remove();
+			let isPrerendered = container.childElementCount > 0;
+			if (!isPrerendered) {
+				if (!a.has(specUrl)) {
+					console.log("[IDL is not prerendered]", specUrl)
+					a.add(specUrl);
+				}
 			}
-			if (container.childElementCount === 0) {
-				console.log("[IDL is not prerendered]", specUrl)
+
+			const idl = container.textContent.trim();
+			// console.log(specUrl);
+			const tree = parseIDL(idl);
+
+			if (tree.length === 0) {
+				console.log("[invalid WebIDL]", specUrl);
+				b += `// ${specUrl}:\n\n${idl}\n\n`;
 			}
+
+			for (const item of tree) {
+				if (["interface", "interface mixin", "namespace"].includes(item.type)) {
+					const inheritance = item.inheritance;
+					const namespace = item.extAttrs.find(({ name }) => name === "LegacyNamespace")?.rhs?.value;
+					collectedStuff.jsInterfaces.push({
+						name: item.name,
+						...(inheritance ? { inheritance } : {}),
+						...(namespace ? { namespace } : {}),
+						...(item.type === "interface mixin" || item.partial === true ? { mixin: true } : {}),
+						spec: specUrl,
+					});
+
+					for (const member of item.members) {
+						if (member.type === "operation") {
+							collectedStuff.jsFunctions.push({
+								name: member.name,
+								interface: item.name,
+								...(member.special === "static" ? { static: true } : {}),
+								spec: specUrl,
+							});
+						} else if (["attribute", "const"].includes(member.type)) {
+							collectedStuff.jsAttributes.push({
+								name: member.name,
+								interface: item.name,
+								...(member.type === "const" || member.special === "static" ? { static: true } : {}),
+								spec: specUrl,
+							});
+						}
+					}
+				}
+			}
+
+			// if (isPrerendered) {
+			// 	for (const dfn of container.querySelectorAll("dfn[data-dfn-type], a.idl-code[data-link-type]")) {
+			// 		const type = dfn.getAttribute("data-dfn-type") || dfn.getAttribute("data-link-type");
+			// 		const name = dfn.textContent.trim().replaceAll(/\s+/g, " ");
+			// 		const id = dfn.getAttribute("id");
+
+			// 		if (type === "interface") {
+			// 			collectedStuff.jsInterfaces.push({
+			// 				name,
+			// 				id,
+			// 				spec: specUrl,
+			// 			});
+			// 		} else if (type === "attribute") {
+			// 			const attributeType = dfn.getAttribute("data-type");
+			// 			collectedStuff.jsAttributes.push({
+			// 				name,
+			// 				type: attributeType,
+			// 				id,
+			// 				spec: specUrl,
+			// 			});
+			// 		} else if (type === "method") {
+			// 			collectedStuff.jsMethods.push({
+			// 				name,
+			// 				id,
+			// 				spec: specUrl,
+			// 			});
+			// 		}
+			// 	}
+			// }
+
+
 		}
 	}
 };

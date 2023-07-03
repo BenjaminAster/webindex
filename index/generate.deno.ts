@@ -43,21 +43,21 @@ const cachedResources = JSON.parse(await Deno.readTextFile(new URL("./cache/inde
 
 const fetchCached = async (url: string) => {
 	const encodedUrl = url.replaceAll(/[^a-z0-9]/ig, "_") + ".html";
-	if (cachedResources.includes(url)) return await Deno.readTextFile(new URL(`./cache/${encodedUrl}`, import.meta.url));
+	if (cachedResources.includes(url)) return { text: await Deno.readTextFile(new URL(`./cache/${encodedUrl}`, import.meta.url)), ok: true };
 	else {
 		const response = await globalThis.fetch(url, fetchOptions);
 		const responseText = await response.text();
 		cachedResources.push(url);
 		await Deno.writeTextFile(new URL("./cache/index.json", import.meta.url), JSON.stringify(cachedResources, null, "\t"));
 		await Deno.writeTextFile(new URL(`./cache/${encodedUrl}`, import.meta.url), responseText);
-		return responseText;
+		return { text: responseText, ok: response.ok };
 	}
 };
 
 const fetchJson = async (url: string) => await (await globalThis.fetch(url, fetchOptions)).json();
 
 const domParser = new DOMParser();
-const fetchDocument = async (url: string) => domParser.parseFromString(await fetchCached(url), "text/html");
+const fetchDocument = async (url: string) => domParser.parseFromString((await fetchCached(url)).text, "text/html");
 
 let list: { name: string, homepage: string, identifier: string, specs: { name: string, url: string, repoUrl: string }[] }[] = [];
 
@@ -278,93 +278,94 @@ console.log("starting...");
 		specs,
 	});
 }
-// {
-// 	// W3C groups & other organizations (e.g. Khronos, Alliance for Open Media, etc.)
+{
+	// W3C groups & other organizations (e.g. Khronos, Alliance for Open Media, etc.)
 
-// 	const groupIdentifiers = [...await fetchJson("https://w3c.github.io/groups/identifiers.json"), ...manualData.additionalGroups];
+	const groupIdentifiers = [...await fetchJson("https://w3c.github.io/groups/identifiers.json"), ...manualData.additionalGroups];
 
-// 	$groupsLoop: for (let { identifier, name, homepage } of groupIdentifiers) {
+	$groupsLoop: for (let { identifier, name, homepage } of groupIdentifiers) {
 
-// 		console.log(`group ${identifier}`);
+		// console.log(`group ${identifier}`);
 
-// 		// if (excludedGroups.includes(identifier)) return {};
-// 		if (excludedGroups.includes(identifier)) continue $groupsLoop;
+		// if (excludedGroups.includes(identifier)) return {};
+		if (excludedGroups.includes(identifier)) continue $groupsLoop;
 
-// 		if (!name || !homepage) {
-// 			({ name, _links: { homepage: { href: homepage = undefined } = {} } = {} } = (
-// 				await fetchJson(`https://w3c.github.io/groups/${identifier}/group.json`)
-// 			));
-// 		}
+		if (!name || !homepage) {
+			({ name, _links: { homepage: { href: homepage = undefined } = {} } = {} } = (
+				await fetchJson(`https://w3c.github.io/groups/${identifier}/group.json`)
+			));
+		}
 
-// 		let repositories = await Promise.all(manualData.includedRepos[identifier]?.map(async (url) => {
-// 			let { login, repoName, path, isFile } = url.match(/^https:\/\/github.com\/(?<login>[\w-]+)\/(?<repoName>[\w-]+)(\/(tree|(?<isFile>blob))\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/).groups;
-// 			let homepageUrl = `https://${login.toLowerCase()}.github.io/${repoName}/${path ? (isFile ? path.replace(/(\.bs|\.html)$/, "") : `${path}/`) : ""}`;
-// 			if (path?.endsWith(".md")) homepageUrl = url;
-// 			return {
-// 				name: path?.split("/").at(-1) || repoName,
-// 				homepageUrl,
-// 				repoUrl: url,
-// 			}
-// 		}) || []);
+		let repositories = await Promise.all(manualData.includedRepos[identifier]?.map(async (url) => {
+			let { login, repoName, path, isFile } = url.match(/^https:\/\/github.com\/(?<login>[\w-]+)\/(?<repoName>[\w-]+)(\/(tree|(?<isFile>blob))\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/).groups;
+			let homepageUrl = `https://${login.toLowerCase()}.github.io/${repoName}/${path ? (isFile ? path.replace(/(\.bs|\.html)$/, "") : `${path}/`) : ""}`;
+			if (path?.endsWith(".md")) homepageUrl = url;
+			return {
+				name: path?.split("/").at(-1) || repoName,
+				homepageUrl,
+				repoUrl: url,
+			}
+		}) || []);
 
-// 		try {
-// 			repositories.push(...await fetchJson(`https://w3c.github.io/groups/${identifier}/repositories.json`));
-// 		} catch { }
+		try {
+			repositories.push(...await fetchJson(`https://w3c.github.io/groups/${identifier}/repositories.json`));
+		} catch { }
 
-// 		// if (!(repositories?.length > 0)) return {};
-// 		if (!(repositories?.length > 0)) continue $groupsLoop;
+		// if (!(repositories?.length > 0)) return {};
+		if (!(repositories?.length > 0)) continue $groupsLoop;
 
-// 		const specs = await Array.fromAsync((async function* () {
-// 			$reposLoop: for (let { name: repoName, homepageUrl, isArchived, isPrivate, owner: { login = undefined } = {}, repoUrl } of repositories) {
-// 				if (isArchived || isPrivate) continue $reposLoop;
-// 				repoUrl ||= `https://github.com/${login}/${repoName}`;
-// 				if (!homepageUrl || manualData.ignoreHomepageUrl[identifier]?.includes(repoUrl) || homepageUrl.startsWith("https://www.w3.org/")) {
-// 					// console.log(repoName, identifier, homepageUrl, login);
-// 					homepageUrl = `https://${login.toLowerCase()}.github.io/${repoName}/`;
-// 				}
-// 				if (manualData.urlRewrites[identifier]?.[repoUrl]) {
-// 					homepageUrl = manualData.urlRewrites[identifier]?.[repoUrl];
-// 				}
-// 				if (manualData.excludedRepos[identifier]?.includes(repoUrl)) continue $reposLoop;
-// 				else if (homepageUrl.startsWith("http://")) homepageUrl = homepageUrl.replace("http://", "https://");
-// 				else if (!homepageUrl.startsWith("https://")) homepageUrl = "https://" + homepageUrl;
-// 				const response = await globalThis.fetch(homepageUrl, fetchOptions);
-// 				if (!response.ok) continue $reposLoop;
-// 				let doc = domParser.parseFromString(await response.text(), "text/html");
-// 				let title = doc.title.trim() || repoName;
-// 				if (title.match(/\b((working|community) group)\b/i)) continue $reposLoop;
-// 				else if (homepageUrl.match(/^https:\/\/github.com\/.+\.md$/)) {
-// 					let newTitle = doc.querySelector("#readme > .markdown-body :is(h1, h2, h3)").textContent.trim();
-// 					if (newTitle) title = newTitle;
-// 				}
-// 				console.log(homepageUrl);
-// 				yield {
-// 					name: title,
-// 					repoUrl,
-// 					url: homepageUrl,
-// 				};
-// 			}
-// 		})());
+		const specs = await Array.fromAsync((async function* () {
+			$reposLoop: for (let { name: repoName, homepageUrl, isArchived, isPrivate, owner: { login = undefined } = {}, repoUrl } of repositories) {
+				if (isArchived || isPrivate) continue $reposLoop;
+				repoUrl ||= `https://github.com/${login}/${repoName}`;
+				if (!homepageUrl || manualData.ignoreHomepageUrl[identifier]?.includes(repoUrl) || homepageUrl.startsWith("https://www.w3.org/")) {
+					// console.log(repoName, identifier, homepageUrl, login);
+					homepageUrl = `https://${login.toLowerCase()}.github.io/${repoName}/`;
+				}
+				if (manualData.urlRewrites[identifier]?.[repoUrl]) {
+					homepageUrl = manualData.urlRewrites[identifier]?.[repoUrl];
+				}
+				if (manualData.excludedRepos[identifier]?.includes(repoUrl)) continue $reposLoop;
+				else if (homepageUrl.startsWith("http://")) homepageUrl = homepageUrl.replace("http://", "https://");
+				else if (!homepageUrl.startsWith("https://")) homepageUrl = "https://" + homepageUrl;
+				const { ok, text } = await fetchCached(homepageUrl);
+				if (!ok) continue $reposLoop;
+				let doc = domParser.parseFromString(text, "text/html");
+				let title = doc.title.trim() || repoName;
+				if (title.match(/\b((working|community) group)\b/i)) continue $reposLoop;
+				else if (homepageUrl.match(/^https:\/\/github.com\/.+\.md$/)) {
+					let newTitle = doc.querySelector("#readme > .markdown-body :is(h1, h2, h3)").textContent.trim();
+					if (newTitle) title = newTitle;
+				}
+				// console.log(homepageUrl);
+				analyzeDocument(doc, { specUrl: homepageUrl });
+				yield {
+					name: title,
+					repoUrl,
+					url: homepageUrl,
+				};
+			}
+		})());
 
-// 		// return { identifier, name, specs, homepage };
+		// return { identifier, name, specs, homepage };
 
-// 		if (specs?.length > 0) {
-// 			console.log(`added group ${name} with ${specs.length} specs`);
-// 			list.push({
-// 				name,
-// 				identifier,
-// 				homepage,
-// 				specs,
-// 			});
-// 		}
-// 	}
+		if (specs?.length > 0) {
+			console.log(`added group ${name} with ${specs.length} specs`);
+			list.push({
+				name,
+				identifier,
+				homepage,
+				specs,
+			});
+		}
+	}
 
-// 	// console.log(tmp);
+	// console.log(tmp);
 
-// 	// return tmp;
+	// return tmp;
 
-// 	// const html = await (await globalThis.fetch("https://w3c.github.io/groups/all-repositories.json", fetchOptions)).json();
-// }
+	// const html = await (await globalThis.fetch("https://w3c.github.io/groups/all-repositories.json", fetchOptions)).json();
+}
 
 // Deno.writeTextFile(new URL("./specs.json", import.meta.url), JSON.stringify({
 // 	timestamp: {
@@ -393,4 +394,15 @@ Deno.writeTextFile(new URL("./css.json", import.meta.url), JSON.stringify({
 	cssPseudoElements: collectedStuff.cssPseudoElements,
 	cssDescriptors: collectedStuff.cssDescriptors,
 	cssUnits: collectedStuff.cssUnits,
+}, null, "\t"));
+
+Deno.writeTextFile(new URL("./javascript.json", import.meta.url), JSON.stringify({
+	timestamp: {
+		utc: new Date().toUTCString(),
+		iso: new Date().toISOString(),
+		unix: Date.now(),
+	},
+	jsInterfaces: collectedStuff.jsInterfaces,
+	jsAttributes: collectedStuff.jsAttributes,
+	jsFunctions: collectedStuff.jsFunctions,
 }, null, "\t"));

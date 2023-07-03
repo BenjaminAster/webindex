@@ -445,6 +445,24 @@ export default {
 		],
 		"cg/wicg": [
 			"https://github.com/WICG/storage-buckets",
+			"https://github.com/WICG/client-hints-infrastructure",
+			"https://github.com/WICG/local-font-access",
+			"https://github.com/WICG/responsive-image-client-hints",
+			"https://github.com/WICG/shape-detection-api",
+			"https://github.com/WICG/urlpattern",
+		],
+		"wg/math": [
+			"https://github.com/w3c/mathml-core",
+		],
+		"wg/immersive-web": [
+			"https://github.com/immersive-web/webxr-ar-module",
+			"https://github.com/immersive-web/webxr-gamepads-module",
+		],
+		"wg/media": [
+			"https://github.com/w3c/picture-in-picture",
+		],
+		"wg/webrtc": [
+			"https://github.com/w3c/mediacapture-fromelement",
 		],
 	},
 	urlRewrites: {
@@ -468,4 +486,9 @@ export default {
 			"https://github.com/WebAssembly/spec/tree/main/document/web-api": "https://webassembly.github.io/spec/web-api/",
 		},
 	},
+	specsExcludedFromCSS: [
+		"https://aomediacodec.github.io/av1-avif/",
+		"https://aomediacodec.github.io/av1-isobmff/",
+		"https://w3c.github.io/webappsec-upgrade-insecure-requests/",
+	],
 };
