@@ -37,6 +37,10 @@ const fetchOptions: RequestInit = { cache: "reload" };
 		}
 		return returnArray;
 	}
+
+	Object.groupBy ??= <T>(array: T[], callback: (item: T, index?: number) => string) => (
+		array.reduce((object, item, i) => ((object[callback(item, i)] ??= []).push(item), object), {})
+	);
 }
 
 const cachedResources = JSON.parse(await Deno.readTextFile(new URL("./cache/index.json", import.meta.url)));

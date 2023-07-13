@@ -74,50 +74,50 @@ for (const { name, homepage, identifier, specs } of specsData) {
 	mainList.append(clone);
 }
 
-$: {
-	const searchBox = document.querySelector("input[type=search]#searchbox");
+// $: {
+// 	const searchBox = document.querySelector("input[type=search]#searchbox");
 
-	if (!CSS.highlights) {
-		throw new Error(String.raw`no CSS highlights, no search ¯\_(ツ)_/¯`);
-	};
+// 	if (!CSS.highlights) {
+// 		throw new Error(String.raw`no CSS highlights, no search ¯\_(ツ)_/¯`);
+// 	};
 
-	searchBox.focus();
+// 	searchBox.focus();
 
-	window.addEventListener("keypress", () => {
-		searchBox.focus();
-	});
+// 	window.addEventListener("keypress", () => {
+// 		searchBox.focus();
+// 	});
 
-	const textNodes = (() => {
-		const nodeArray = [];
-		const treeWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT)
-		let /** @type {Node} */ node;
-		while (node = treeWalker.nextNode()) if (node.textContent.trim()) nodeArray.push(node);
-		return nodeArray;
-	})();
+// 	const textNodes = (() => {
+// 		const nodeArray = [];
+// 		const treeWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT)
+// 		let /** @type {Node} */ node;
+// 		while (node = treeWalker.nextNode()) if (node.textContent.trim()) nodeArray.push(node);
+// 		return nodeArray;
+// 	})();
 
-	const highlight = new Highlight();
-	CSS.highlights.set("search", highlight);
+// 	const highlight = new Highlight();
+// 	CSS.highlights.set("search", highlight);
 
-	searchBox.addEventListener("input", function () {
-		highlight.clear();
-		let /** @type {number} */ index;
-		let firstMatch = true;
-		const treeWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-		let /** @type {Node} */ node;
-		$nodeLoop: while (node = treeWalker.nextNode()) {
-			if (!node.textContent.trim()) continue $nodeLoop;
-			if ((index = node.textContent.toLowerCase().replaceAll(/[^\w]/g, " ").indexOf(this.value.toLowerCase().replaceAll(/[^\w]/g, " "))) >= 0) {
-				const range = new Range();
-				range.setStart(node, index);
-				range.setEnd(node, index + this.value.length);
-				highlight.add(range);
-				if (firstMatch) HTMLElement.prototype.scrollIntoViewIfNeeded
-					? node.parentElement.scrollIntoViewIfNeeded(true)
-					: node.parentElement.scrollIntoView({ block: "center" });
-				firstMatch = false;
-			}
-		}
-	});
-}
+// 	searchBox.addEventListener("input", function () {
+// 		highlight.clear();
+// 		let /** @type {number} */ index;
+// 		let firstMatch = true;
+// 		const treeWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+// 		let /** @type {Node} */ node;
+// 		$nodeLoop: while (node = treeWalker.nextNode()) {
+// 			if (!node.textContent.trim()) continue $nodeLoop;
+// 			if ((index = node.textContent.toLowerCase().replaceAll(/[^\w]/g, " ").indexOf(this.value.toLowerCase().replaceAll(/[^\w]/g, " "))) >= 0) {
+// 				const range = new Range();
+// 				range.setStart(node, index);
+// 				range.setEnd(node, index + this.value.length);
+// 				highlight.add(range);
+// 				if (firstMatch) HTMLElement.prototype.scrollIntoViewIfNeeded
+// 					? node.parentElement.scrollIntoViewIfNeeded(true)
+// 					: node.parentElement.scrollIntoView({ block: "center" });
+// 				firstMatch = false;
+// 			}
+// 		}
+// 	});
+// }
 
 export { };

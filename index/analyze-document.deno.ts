@@ -1,6 +1,7 @@
 
 // @ts-ignore
 import { parse as _parseIDL } from "npm:webidl2@24.4.0";
+import manualData from "./manual-data.ts";
 
 const parseIDL = (idl: string) => {
 	try {
@@ -26,24 +27,102 @@ export const collectedStuff = {
 	jsFunctions: [],
 };
 
+const cssProperties = [];
+const cssTypes = [];
+const cssValues = [];
+const cssDescriptors = [];
+const cssAtRules = [];
+const cssFunctions = [];
+const cssSelectors = [];
+const cssPseudoClasses = [];
+const cssPseudoElements = [];
+const cssUnits = [];
+const jsInterfaces = [];
+const jsAttributes = [];
+const jsFunctions = [];
+
 const sortArrayByObjectValue = (array: any[], key: string) => {
 	array = array.sort(({ [key]: a }, { [key]: b }) => [a.toLowerCase(), b.toLowerCase()].toSorted().toString() === [b, a].toString().toLowerCase() ? 1 : -1);
 }
 
 export const tidyUpCollectedStuff = () => {
-	sortArrayByObjectValue(collectedStuff.cssProperties, "name");
-	sortArrayByObjectValue(collectedStuff.cssTypes, "name");
-	sortArrayByObjectValue(collectedStuff.cssValues, "name");
-	sortArrayByObjectValue(collectedStuff.cssDescriptors, "name");
-	sortArrayByObjectValue(collectedStuff.cssAtRules, "name");
-	sortArrayByObjectValue(collectedStuff.cssFunctions, "name");
-	sortArrayByObjectValue(collectedStuff.cssSelectors, "name");
-	sortArrayByObjectValue(collectedStuff.cssPseudoClasses, "name");
-	sortArrayByObjectValue(collectedStuff.cssPseudoElements, "name");
-	sortArrayByObjectValue(collectedStuff.cssUnits, "name");
-	sortArrayByObjectValue(collectedStuff.jsInterfaces, "name");
-	sortArrayByObjectValue(collectedStuff.jsAttributes, "name");
-	sortArrayByObjectValue(collectedStuff.jsFunctions, "name");
+	sortArrayByObjectValue(cssProperties, "name");
+	sortArrayByObjectValue(cssTypes, "name");
+	sortArrayByObjectValue(cssValues, "name");
+	sortArrayByObjectValue(cssDescriptors, "name");
+	sortArrayByObjectValue(cssAtRules, "name");
+	sortArrayByObjectValue(cssFunctions, "name");
+	sortArrayByObjectValue(cssSelectors, "name");
+	sortArrayByObjectValue(cssPseudoClasses, "name");
+	sortArrayByObjectValue(cssPseudoElements, "name");
+	sortArrayByObjectValue(cssUnits, "name");
+	sortArrayByObjectValue(jsInterfaces, "name");
+	sortArrayByObjectValue(jsAttributes, "name");
+	sortArrayByObjectValue(jsFunctions, "name");
+
+	const css2Spec = "https://drafts.csswg.org/css2/";
+
+	{
+		// CSS properties:
+
+		let current = cssProperties[0];
+		let currentList = [];
+
+		let organizedArray = [];
+
+		$flatList: for (let i = 0; i < cssProperties.length; i++) {
+			currentList.push(current);
+			let next = cssProperties[i + 1];
+			if (next?.name !== current.name) {
+				const name = current.name;
+				// let { css2Definitions, nonCSS2Definitions } = Object.groupBy(currentList, ({ spec }) => spec === css2Spec ? "css2Definitions" : "nonCSS2Definitions");
+				currentList.forEach(item => delete item.name);
+				let nonCSS2 = currentList.filter(({ spec }) => spec !== css2Spec);
+				if (nonCSS2.length) {
+					const sortedByBaseSpec = [];
+					for (const info of nonCSS2) {
+						const { specId = "other", level } = info.spec.match(/\/(?<specId>[^\/]+)-(?<level>\d+)$/)?.groups ?? {};
+						Object.assign(sortedByBaseSpec.find(({ specId: _specId }) => _specId === specId) ?? sortedByBaseSpec.push({ specId, hasRealDefinition: false, levels: [] }), {
+							...(info.onlyNewValues ? {} : { hasRealDefinition: true }),
+						}).levels.push({ level, info });
+					}
+					for (const info of sortedByBaseSpec) {
+						info.levels.sort(({ level: levelA }, { level: levelB }) => +levelA - +levelB);
+					}
+					const { realDefinitions, newValuesDefinitions } = Object.groupBy(
+						Object.values(sortedByBaseSpec),
+						({ hasRealDefinition }) => hasRealDefinition ? "realDefinitions" : "newValuesDefinitions",
+					);
+				} else {
+					organizedArray.push({
+						name: current.name,
+						specs: currentList,
+					});
+				}
+				// let hasNonCss2Definition = currentList.some(({ spec, onlyNewValues }) => spec !== css2Spec && !onlyNewValues);
+				// if (hasNonCss2Definition) currentList = currentList.filter(({ spec }) => spec !== css2Spec);
+
+				currentList = [];
+			}
+			current = next;
+		}
+
+		collectedStuff.cssProperties = organizedArray;
+	}
+
+	collectedStuff.cssTypes = cssTypes;
+	collectedStuff.cssValues = cssValues;
+	collectedStuff.cssDescriptors = cssDescriptors;
+	collectedStuff.cssAtRules = cssAtRules;
+	collectedStuff.cssFunctions = cssFunctions;
+	collectedStuff.cssSelectors = cssSelectors;
+	collectedStuff.cssPseudoClasses = cssPseudoClasses;
+	collectedStuff.cssPseudoElements = cssPseudoElements;
+	collectedStuff.cssUnits = cssUnits;
+	collectedStuff.jsInterfaces = jsInterfaces;
+	collectedStuff.jsAttributes = jsAttributes;
+	collectedStuff.jsFunctions = jsFunctions;
+
 	// console.log([...types]);
 
 	Deno.writeTextFile(new URL("./invalid.idl", import.meta.url), b);
@@ -115,8 +194,10 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 		// }
 	}
 
-	{
+	$css: {
 		// CSS
+
+		if (manualData.specsExcludedFromCSS.includes(specUrl)) break $css;
 
 		{
 			// CSS properties
@@ -124,17 +205,17 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 			$loop: for (const tbody of doc.querySelectorAll(":is(body, :not(.issue)) > table.def.propdef > tbody")) {
 				const propertyEls = tbody.querySelectorAll(":scope > tr:first-of-type > td:first-of-type > :is(dfn, .css)");
 				const value = tbody.querySelector(":scope > tr:nth-of-type(2) > td:first-of-type")?.textContent.trim().replaceAll(/\s+/g, " ");
-				const isNewValues = tbody.querySelector(":scope > tr:nth-of-type(2) > th")?.textContent.trim().match(/^New value(s)?:/);
+				const onlyNewValues = tbody.querySelector(":scope > tr:nth-of-type(2) > th")?.textContent.trim().match(/^New value(s)?:/);
 				// console.log(value);
 				for (const propertyEl of propertyEls) {
 					if (!value) throw new Error(`[no value] ${propertyEl} ${specUrl}`);
 					const propertyName = propertyEl.textContent.trim();
 					const linkId = propertyEl.getAttribute("id");
 
-					collectedStuff.cssProperties.push({
+					cssProperties.push({
 						name: propertyName,
 						value,
-						...(isNewValues ? { isNewValues: true } : {}),
+						...(onlyNewValues ? { onlyNewValues: true } : {}),
 						id: linkId,
 						spec: specUrl,
 					});
@@ -180,7 +261,7 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 					}
 					definition ||= null;
 					const id = dfn.getAttribute("id");
-					collectedStuff.cssTypes.push({
+					cssTypes.push({
 						name,
 						id,
 						definition,
@@ -189,7 +270,7 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 				} else if (type === "descriptor") {
 					const descriptorFor = dfn.getAttribute("data-dfn-for") || null;
 					const id = dfn.getAttribute("id");
-					collectedStuff.cssDescriptors.push({
+					cssDescriptors.push({
 						name,
 						descriptorFor,
 						id,
@@ -200,7 +281,7 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 					const id = dfn.getAttribute("id");
 					if (["<length>", "<angle>", "<time>", "<frequency>", "<resolution>"].includes(valueForString)) {
 						name = name.replace(/ unit$/, "");
-						collectedStuff.cssUnits.push({
+						cssUnits.push({
 							name,
 							forType: valueForString,
 							id,
@@ -208,7 +289,7 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 						});
 					} else {
 						const valueFor = valueForString?.split(",").map(s => s.trim()) ?? [];
-						collectedStuff.cssValues.push({
+						cssValues.push({
 							name,
 							valueFor,
 							id,
@@ -217,7 +298,7 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 					}
 				} else if (type === "at-rule") {
 					const id = dfn.getAttribute("id");
-					collectedStuff.cssAtRules.push({
+					cssAtRules.push({
 						name,
 						id,
 						spec: specUrl,
@@ -226,7 +307,7 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 					const id = dfn.getAttribute("id");
 					const functionName = name.match(/^\<?(?<functionName>[^\(]+)(\(.*\))?\>?$/).groups.functionName;
 					name = functionName + "()";
-					collectedStuff.cssFunctions.push({
+					cssFunctions.push({
 						name,
 						id,
 						spec: specUrl,
@@ -234,20 +315,20 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 				} else if (type === "selector") {
 					const id = dfn.getAttribute("id");
 					name = name.replace(/\((?<inParentheses>[^\(]+)\)/, "()");
-					if (name.startsWith("::")) {
-						collectedStuff.cssPseudoElements.push({
+					if (name.startsWith("::") || [":first-line", ":first-letter", ":before", ":after"].includes("name")) {
+						cssPseudoElements.push({
 							name,
 							id,
 							spec: specUrl,
 						});
 					} else if (name.startsWith(":")) {
-						collectedStuff.cssPseudoClasses.push({
+						cssPseudoClasses.push({
 							name,
 							id,
 							spec: specUrl,
 						});
 					} else {
-						collectedStuff.cssSelectors.push({
+						cssSelectors.push({
 							name,
 							id,
 							spec: specUrl,
@@ -284,7 +365,7 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 				if (["interface", "interface mixin", "namespace"].includes(item.type)) {
 					const inheritance = item.inheritance;
 					const namespace = item.extAttrs.find(({ name }) => name === "LegacyNamespace")?.rhs?.value;
-					collectedStuff.jsInterfaces.push({
+					jsInterfaces.push({
 						name: item.name,
 						...(inheritance ? { inheritance } : {}),
 						...(namespace ? { namespace } : {}),
@@ -294,14 +375,14 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 
 					for (const member of item.members) {
 						if (member.type === "operation") {
-							collectedStuff.jsFunctions.push({
+							jsFunctions.push({
 								name: member.name,
 								interface: item.name,
 								...(member.special === "static" ? { static: true } : {}),
 								spec: specUrl,
 							});
 						} else if (["attribute", "const"].includes(member.type)) {
-							collectedStuff.jsAttributes.push({
+							jsAttributes.push({
 								name: member.name,
 								interface: item.name,
 								...(member.type === "const" || member.special === "static" ? { static: true } : {}),
@@ -319,21 +400,21 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 			// 		const id = dfn.getAttribute("id");
 
 			// 		if (type === "interface") {
-			// 			collectedStuff.jsInterfaces.push({
+			// 			jsInterfaces.push({
 			// 				name,
 			// 				id,
 			// 				spec: specUrl,
 			// 			});
 			// 		} else if (type === "attribute") {
 			// 			const attributeType = dfn.getAttribute("data-type");
-			// 			collectedStuff.jsAttributes.push({
+			// 			jsAttributes.push({
 			// 				name,
 			// 				type: attributeType,
 			// 				id,
 			// 				spec: specUrl,
 			// 			});
 			// 		} else if (type === "method") {
-			// 			collectedStuff.jsMethods.push({
+			// 			jsMethods.push({
 			// 				name,
 			// 				id,
 			// 				spec: specUrl,
