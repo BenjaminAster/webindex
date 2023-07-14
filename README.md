@@ -24,3 +24,9 @@ https://github.com/mdn/content
 https://github.com/web-platform-tests/wpt
 https://github.com/microsoft/TypeScript-DOM-lib-generator
 https://github.com/saschanaz/webidl-updater
+https://github.com/w3c/w3c-api
+https://github.com/w3c/strudy
+https://github.com/w3c/specberus
+https://github.com/w3c/snapshot-generator
+https://github.com/w3c/note-respec-repo-template
+https://github.com/csstree/csstree
