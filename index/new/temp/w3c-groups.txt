@@ -1,0 +1,300 @@
+3D FOSS Web Development Community Group
+ACT Rules Community Group
+AI KR (Artificial Intelligence Knowledge Representation) Community Group
+ARIA Authoring Practices Task Force
+ARIA Editors
+ARIA and Assistive Technologies Community Group
+Accessibility Conformance Testing (ACT) Task Force
+Accessibility Discoverability Vocabulary for Schema.org Community Group
+Accessibility Education and Outreach Working Group (EOWG)
+Accessibility Guidelines Working Group
+Accessibility at the Edge Community Group
+Accessibility for Children Community Group
+Accessible Online Learning Community Group
+Accessible Platform Architectures Working Group
+Accessible Rich Internet Applications Working Group
+Advisory Board
+Advisory Committee
+African Layout Task Force
+Alliance for Open Media
+Anti-Fraud Community Group
+Arabic Layout Task Force
+Argumentation Community Group
+Atomic Data Community Group
+Audio Community Group
+Audio Description Community Group
+Audio Working Group
+Audiovisual Media Formats for Browsers Community Group
+Automated Planning and Scheduling Community Group
+Automotive Ontology Community Group
+Automotive Payments Task Force
+Automotive Privacy and Security Task Force
+Automotive Working Group
+Automotive and Transportation Business Group
+Autonomous Agents on the Web Community Group
+Ben Wiser
+Best Practices for Multilingual Linked Open Data Community Group
+Bibframe2Schema.org Community Group
+Bioschemas for lifesciences Community Group
+Bitcoin Hypermedia Community Group
+Blockchain Community Group
+Board Directors
+Board Finance Committee
+Board Governance Committee
+Board Personnel Committee
+Board of Directors
+Brand Identity Tokens Community Group
+Browser Testing and Tools Working Group
+Building Device Naming Standards Community Group
+CSS Print Community Group
+CSS4 Community Group
+CSV on the Web Community Group
+CV 3.0 - Global Resume Community Group
+Cascading Style Sheets (CSS) Working Group
+Chase Phillips
+Chemistry for the Web and Publishing Community Group
+Chinese Text Layout Task Force | 中文排版需求
+Chinese Web Interest Group
+Civic Technology Community Group
+Cognitive AI Community Group
+Cognitive Accessibility Community Group
+Cognitive and Learning Disabilities Accessibility Task Force
+Color on the Web Community Group
+Community Council
+CompuServe
+Consent Community Group
+Consent Name System Community Group
+Conversational Interfaces Community Group
+Credentials Community Group
+Credible Web Community Group
+DCAT Task Force
+Data Privacy Vocabularies and Controls Community Group
+Data Visualization Community Group
+Data-Centric Digital Rights (DCDR) Framework Community Group
+Dataset Exchange Working Group
+David Baron
+DeWitt Clinton
+Decentralized Identifier Working Group
+Decentralized Identifier and Verifiable Credentials Applications Community Group
+Decentralized Sharing Community Group
+Declarative 3D for the Web Architecture Community Group
+Declarative Dynamic Extensions to HTML Community Group
+Design Tokens Community Group
+Devices and Sensors Working Group
+Digital Asset Management Industry Business Ontology Community Group
+Distributed Tracing Working Group
+EPUB 3 Community Group
+EXPath Community Group
+Educational Exercises and Activities Community Group
+Educational and Occupational Credentials in schema.org Community Group
+Entity Reconciliation Community Group
+Equity Community Group
+Ethiopic Layout Task Force
+European Layout Task Force
+Experience API (xAPI) Vocabulary & Semantic Interoperability Community Group
+FAST Task Force
+FIDO Alliance
+Federated Identity Community Group
+Federated Learning Community Group
+Federated Timesheets Community Group
+Financial Industry Business Ontology Community Group
+Font and Text Community Group
+GPU for the Web Community Group
+GPU for the Web Working Group
+Games Community Group
+Google
+HTML Working Group
+HTML5 Specifications Community Group
+Harald Alvestrand
+Healthcare Schema Vocabulary Community Group
+Hebrew Layout Task Force
+Human Centric AI Community Group
+Human Services Community Group
+Hydra Community Group
+IETF Web Packaging Working Group
+Immersive Captions Community Group
+Immersive Web Community Group
+Immersive Web Working Group
+Improving Web Advertising Business Group
+India International Program
+Information Architecture Community Group
+Inter-Platform Validation for Confidential Computing Community Group
+Interledger Payments Community Group
+Internationalization Interest Group
+Internationalization Working Group
+Invisible Markup Community Group
+JSON for Linking Data Community Group
+JSON-LD Working Group
+Japanese Layout Task Force | 日本語組版タスクフォース
+Joint Photographic Experts Group
+Khronos Group
+Knowledge Graph Construction Community Group
+LDP Next Community Group
+Linked Building Data Community Group
+Linked Data Models for Emotion and Sentiment Analysis Community Group
+Linked Data for Language Technology Community Group
+Low Vision Accessibility Task Force
+Low Vision Community Group
+Machine Learning Schema Community Group
+Managed Components Community Group
+Maps For HTML Community Group
+Math Working Group
+MathML Refresh Community Group
+Maturity Model Task Force
+Media Resource In-band Tracks Community Group
+Media Working Group
+Media and Entertainment Interest Group
+Metaverse Interoperability Community Group
+MiniApps Ecosystem Community Group
+MiniApps Working Group
+Mixed Reality Service Community Group
+Mobile Accessibility Task Force
+Mongolian Layout Task Force
+Moving Picture Experts Group
+Mozilla
+Multi-device Timing Community Group
+Multicast Community Group
+Music Notation Community Group
+Netscape
+Nordic Accessibility Community Group
+Nordic Chapter Smart City / Web of Things Community Group
+Nordic Web of Data Community Group
+Notation 3 (N3) Community Group
+ODRL Community Group
+ORTC (Object Real-time Communications) Community Group
+Ontology-Lexica Community Group
+Open Educational Resources Schema Community Group
+Open UI Community Group
+OpenActive Community Group
+OpenTrack Community Group
+PM Working Group Chairs
+Patents and Standards Interest Group
+Performing Arts Information Representation Community Group
+Permanent Identifier Community Group
+Philosophy of the Web Community Group
+Pointer Events Working Group
+Portable Network Graphics (PNG) Working Group
+Positive Work Environment Community Group
+Privacy Community Group
+Privacy Interest Group
+Privacy Principles Task Force
+Private Advertising Technology Community Group
+Publishing Business Group
+Publishing Community Group
+Publishing Maintenance Working Group
+Publishing Steering Committee task force
+Quick-fix support for XML Community Group
+RDF Dataset Canonicalization and Hash Working Group
+RDF Dataset Canonicalization and Hash Working Group Chairs
+RDF JavaScript Libraries Community Group
+RDF Stream Processing Community Group
+RDF Surfaces Community Group
+RDF Test Suite Curation Community Group
+RDF-DEV Community Group
+RDF-star Editors
+RDF-star Semantics
+RDF-star Use Cases
+RDF-star WG chairs
+RDF-star Working Group
+Read Write Web Community Group
+Real Time Interaction Ecosystem Community Group
+Research Object for Scholarly Communication Community Group
+Research Questions Task Force
+Rights Automation for Market Data Community Group
+SHACL Community Group
+SPARQL-dev Community Group
+SVG Accessibility Task Force
+SVG Working Group
+Schema Architypes Community Group
+Schema Bib Extend Community Group
+Schema Course extension Community Group
+Schema Extensions for IoT Community Group
+Schema.org Community Group
+Schema.org for datasets Community Group
+Scholarly HTML Community Group
+Screen Capture Community Group
+Second Screen Community Group
+Second Screen Working Group
+Semantic HTML-vocabulary Community Group
+Semantic Industries Community Group
+Semantic Web in Health Care and Life Sciences Community Group
+Service Discovery Community Group
+Service Workers Working Group
+Shape Expressions Community Group
+Silver Community Group
+Silver Task Force
+Social Web Incubator Community Group
+Solid Community Group
+Southeast Asian Layout Task Force
+Spatial Data on the Web Working Group
+Spec Editors Community Group
+Spoken Presentation Task Force
+Sport Schema Community Group
+Sustainability Community Group
+Sustainable Web Design Community Group
+Synchronized Multimedia for Publications Community Group
+TC39
+TREE hypermedia Community Group
+Tab Atkins
+Talent Marketplace Signaling Community Group
+Technical Architecture Community Group
+Technical Architecture Group
+Text and Data Mining Reservation Protocol Community Group
+The Tourism Structured Web Data Community Group
+Tibetan Layout Task Force
+Timed Text Working Group
+Touch Events Community Group
+Transportation Ontology Coordination Committee
+Unhosted Web Community Group
+Verifiable Credentials Working Group
+Verifiable Credentials Working Group Chairs
+Vision Task Force
+Voice Interaction Community Group
+W3C Process Community Group
+WAI Adapt Task Force
+WAI Interest Group
+WAI-Engage: Web Accessibility Community Group
+WCAG2ICT Task Force
+Web & Networks Interest Group
+Web Application Security Working Group
+Web Applications Working Group
+Web Authentication Working Group
+Web Bluetooth Community Group
+Web Components Community Group
+Web Editing Working Group
+Web Fonts Working Group
+Web History Community Group
+Web Hypertext Application Technology Working Group
+Web Machine Learning Community Group
+Web Machine Learning Working Group
+Web Media API Community Group
+Web Media Text Tracks Community Group
+Web NFC Community Group
+Web Payment Security Interest Group
+Web Payments Working Group
+Web Performance Working Group
+Web Platform Incubator Community Group
+Web Real-Time Communications Working Group
+Web Thing Protocol Community Group
+Web Video Map Tracks (WebVMT) Community Group
+Web of Things Community Group
+Web of Things Interest Group
+Web of Things Japanese Community Group
+Web of Things Working Group
+Web-interoperable Runtimes Community Group
+WebAssembly Community Group
+WebAssembly Working Group
+WebAuthn Adoption Community Group
+WebDX Community Group
+WebExtensions Community Group
+WebID Community Group
+WebTransport Working Group
+WebView Community Group
+XForms Users Community Group
+XML Core Working Group
+XML Query Working Group
+XProc Next Community Group
+XSLT Extensions Community Group
+XSLT Working Group
+nostr Community Group
+zot protocol Community Group

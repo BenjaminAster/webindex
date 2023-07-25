@@ -1,0 +1,56 @@
+ART Area General Application Working Group Working Group
+Accessible Rich Internet Applications Working Group
+Advisory Board
+Applications Area Working Group APP Working Group
+Audio Working Group
+Browser Testing and Tools Working Group
+Cascading Style Sheets (CSS) Working Group
+DOM Working Group
+Devices and Sensors Working Group
+FIDO2 Technical Working Group
+GPU for the Web Working Group
+HTML Media Extensions Working Group
+HTTP State Management Mechanism Working Group
+HTTP Working Group
+Hypertext Transfer Protocol Authentication Working Group
+Hypertext Transfer Protocol Bis APP Working Group
+Immersive Web Community Group
+Immersive Web Working Group
+Kerberos WG Working Group
+Mark Nottingham (individual in art area)
+Math Working Group
+Media Working Group
+Network Working Group
+Pointer Events Working Group
+Portable Network Graphics (PNG) Working Group
+Privacy Community Group
+Privacy Interest Group
+QUIC Working Group
+SVG Working Group
+Screen Capture Community Group
+Second Screen Working Group
+Service Workers Working Group
+TC39
+Timed Text Working Group
+Tracking Protection Working Group
+Web Application Security Working Group
+Web Applications Working Group
+Web Authentication Working Group
+Web Bluetooth Community Group
+Web Cryptography Working Group
+Web Editing Working Group
+Web Events Working Group
+Web Fonts Working Group
+Web Machine Learning Working Group
+Web NFC Community Group
+Web Payments Working Group
+Web Performance Working Group
+Web Platform Incubator Community Group
+Web Platform Working Group
+Web Real-Time Communications Working Group
+Web Security Working Group
+WebAssembly Community Group
+WebAssembly Working Group
+WebGL Working Group
+WebTransport Working Group
+sourcemaps.info

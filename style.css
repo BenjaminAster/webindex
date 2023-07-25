@@ -172,6 +172,9 @@ ul#main-list > li:last-of-type {
 
 .group-header .group-idenfifier {
 	color: var(--gray-text);
+	font-size: .9rem;
+	/* text-transform: uppercase; */
+	/* font-variant: small-caps; */
 }
 
 ul.group-specs {
