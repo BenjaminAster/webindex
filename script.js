@@ -47,39 +47,39 @@ export const storage = new class {
 }
 
 
-let NEW_SOURCE = false;
+let NEW_SOURCE = true;
 // NEW_SOURCE = false; // toggle comment on/off
 
 if (NEW_SOURCE) {
-	const { specs: specsData } = await (await globalThis.fetch("./index/new/specs.json")).json();
+	const { specs: specsData } = await (await globalThis.fetch("./index/specs.json")).json();
 
 	const mainList = document.querySelector("#main-list");
 	const groupFragment = mainList.querySelector(":scope > template").content;
 
 	const openLinksInNewTab = window.matchMedia("(any-hover: none)").matches;
 
-	for (const { groupName, groupHomepage, identifier = "identifier", specs } of specsData) {
+	for (const { groupName, groupHomepage, groupIdentifier, specs } of specsData) {
 		const clone = groupFragment.cloneNode(true);
 		clone.querySelector(".group-name").textContent = groupName;
 		clone.querySelector("a.group-link").href = groupHomepage;
-		clone.querySelector(".group-idenfifier").textContent = identifier;
+		clone.querySelector(".group-idenfifier").textContent = groupIdentifier;
 
 		const specsList = clone.querySelector(".group-specs");
 		const specFragment = specsList.querySelector(":scope > template").content;
-		for (const { title: specName, url, repository } of specs) {
+		for (const { title, url, repo } of specs) {
 			const specClone = specFragment.cloneNode(true);
-			specClone.querySelector(".spec-name").textContent = specName;
+			specClone.querySelector(".spec-name").textContent = title;
 			const urlObject = new URL(url);
 			specClone.querySelector(".spec-url").textContent = urlObject.host + urlObject.pathname.replace(/\/$/, "");
 			specClone.querySelector("a.spec-link").href = url;
 			if (openLinksInNewTab) specClone.querySelector("a.spec-link").target = "_blank";
-			specClone.querySelector("a.repo-link").href = repository;
+			specClone.querySelector("a.repo-link").href = repo;
 			specsList.append(specClone);
 		}
 		mainList.append(clone);
 	}
 } else {
-	const { list: specsData } = await (await globalThis.fetch("./index/specs.json")).json();
+	const { list: specsData } = await (await globalThis.fetch("./index/old/specs.json")).json();
 
 	const mainList = document.querySelector("#main-list");
 	const groupFragment = mainList.querySelector(":scope > template").content;
