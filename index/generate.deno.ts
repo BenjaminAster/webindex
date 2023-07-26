@@ -24,22 +24,22 @@ const sortArrayByObjectValue = (array: any[], key: string) => {
 
 const cachedResources = await (async () => {
 	try {
-		return JSON.parse(await Deno.readTextFile(new URL("../cache/index.json", import.meta.url)));
+		return JSON.parse(await Deno.readTextFile(new URL("./cache/index.json", import.meta.url)));
 	} catch {
-		await Deno.writeTextFile(new URL("../cache/index.json", import.meta.url), "[]");
+		await Deno.writeTextFile(new URL("./cache/index.json", import.meta.url), "[]");
 		return [];
 	}
 })();
 
 const fetchCached = async (url: string) => {
 	const encodedUrl = url.replaceAll(/[^a-z0-9]/ig, "_") + ".html";
-	if (cachedResources.includes(url)) return { text: await Deno.readTextFile(new URL(`../cache/${encodedUrl}`, import.meta.url)), ok: true };
+	if (cachedResources.includes(url)) return { text: await Deno.readTextFile(new URL(`./cache/${encodedUrl}`, import.meta.url)), ok: true };
 	else {
 		const response = await globalThis.fetch(url, fetchOptions);
 		const responseText = await response.text();
 		cachedResources.push(url);
-		await Deno.writeTextFile(new URL("../cache/index.json", import.meta.url), JSON.stringify(cachedResources.sort(), null, "\t"));
-		await Deno.writeTextFile(new URL(`../cache/${encodedUrl}`, import.meta.url), responseText);
+		await Deno.writeTextFile(new URL("./cache/index.json", import.meta.url), JSON.stringify(cachedResources.sort(), null, "\t"));
+		await Deno.writeTextFile(new URL(`./cache/${encodedUrl}`, import.meta.url), responseText);
 		return { text: responseText, ok: response.ok };
 	}
 };
@@ -72,13 +72,12 @@ $specs: {
 		nightly: { url, repository: repo, pages },
 		// organization,
 		groups: [{ url: groupHomepage }],
-		title,
-		categories,
 		css: cssPath,
 		idlparsed: parsedIDLPath,
-	}) => ({ url, repo, groupHomepage, title, cssPath, parsedIDLPath, categories, pages }));
+		...rest
+	}) => ({ ...rest, url, repo, groupHomepage, cssPath, parsedIDLPath, pages }));
 
-	$specLoop: for (let { url, categories, repo, groupHomepage, title, cssPath, parsedIDLPath, pages, group } of [...results, ...manualData.additionalSpecs]) {
+	$specLoop: for (let { url, categories, repo, groupHomepage, title, cssPath, parsedIDLPath, pages, group, tests } of [...results, ...manualData.additionalSpecs]) {
 		if (!url) {
 			let { login, repoName, path, isFile } = repo.match(
 				/^https:\/\/github.com\/(?<login>[\w-]+)\/(?<repoName>[\w-]+)(\/(tree|(?<isFile>blob))\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/
@@ -127,11 +126,21 @@ $specs: {
 			});
 		}
 
+		let testsURL: string;
+		if (tests) {
+			if (tests.repository === "https://github.com/web-platform-tests/wpt") {
+				testsURL = `https://wpt.fyi/results/${tests.testPaths[0]}?label=master&product=chrome&product=safari&product=firefox&product=servo`;
+			} else {
+				testsURL = `${tests.repository}/tree/main/${tests.testPaths[0]}`;
+			}
+		}
+
 		if (pages) {
 			groupObject.specs.push({
 				title: `${title}: Table of Contents`,
 				url,
 				repo,
+				...(testsURL ? { tests: testsURL } : {}),
 			});
 			$switch: switch (url) {
 				case ("https://html.spec.whatwg.org/multipage/"): {
@@ -143,6 +152,7 @@ $specs: {
 							title: `${title}: ${heading}`,
 							url: page,
 							repo,
+							...(testsURL ? { tests: testsURL } : {}),
 						});
 					}
 					break $switch;
@@ -155,6 +165,7 @@ $specs: {
 							title: `${title}: ${heading}`,
 							url: page,
 							repo,
+							...(testsURL ? { tests: testsURL } : {}),
 						});
 					}
 					break $switch;
@@ -167,6 +178,7 @@ $specs: {
 							title: `${title}: ${heading}`,
 							url: page,
 							repo,
+							...(testsURL ? { tests: testsURL } : {}),
 						});
 					}
 					break $switch;
@@ -179,6 +191,7 @@ $specs: {
 				title,
 				url,
 				repo,
+				...(testsURL ? { tests: testsURL } : {}),
 			});
 		}
 
@@ -268,18 +281,13 @@ $specs: {
 }
 
 {
-	console.debug("sorting groups & specs...");
 	console.time("sorting");
-	// for (const group of specs) {
-	// 	group.specs = sortArrayByObjectValue(group.specs, "title");
-	// }
-	const groupsToSort = ["wg/css", "cg/wicg"];
-	for (const groupToSort of groupsToSort) {
-		const groupObj = specs.find((group) => group.groupIdentifier === groupToSort);
+	const groupsNotToSort = ["whatwg", "wg/svg", "tc39", "khronos/webgl", "wg/media"];
+	$groupsLoop: for (const groupObj of specs) {
+		if (groupsNotToSort.includes(groupObj.groupIdentifier)) continue $groupsLoop;
 		groupObj.specs = sortArrayByObjectValue(groupObj.specs, "title");
 	}
 	specs = sortArrayByObjectValue(specs, "groupName");
-	console.debug("done sorting groups & specs");
 	console.timeEnd("sorting");
 }
 

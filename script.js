@@ -66,14 +66,27 @@ if (NEW_SOURCE) {
 
 		const specsList = clone.querySelector(".group-specs");
 		const specFragment = specsList.querySelector(":scope > template").content;
-		for (const { title, url, repo } of specs) {
+		for (const { title, url, repo, tests } of specs) {
 			const specClone = specFragment.cloneNode(true);
 			specClone.querySelector(".spec-name").textContent = title;
 			const urlObject = new URL(url);
 			specClone.querySelector(".spec-url").textContent = urlObject.host + urlObject.pathname.replace(/\/$/, "");
 			specClone.querySelector("a.spec-link").href = url;
 			if (openLinksInNewTab) specClone.querySelector("a.spec-link").target = "_blank";
-			specClone.querySelector("a.repo-link").href = repo;
+			if (repo) {
+				specClone.querySelector("a.repo-link").href = repo;
+			} else {
+				// specClone.querySelector("a.repo-link").style.visibility = "hidden";
+				specClone.querySelector("a.repo-link").classList.add("disabled");
+				specClone.querySelector("a.repo-link").inert = true;
+			}
+			if (tests) {
+				specClone.querySelector("a.tests-link").href = tests;
+			} else {
+				// specClone.querySelector("a.tests-link").style.visibility = "hidden";
+				specClone.querySelector("a.tests-link").classList.add("disabled");
+				specClone.querySelector("a.tests-link").inert = true;
+			}
 			specsList.append(specClone);
 		}
 		mainList.append(clone);

@@ -1,6 +1,6 @@
 {
-	"name": "Web Specs",
-	"short_name": "Specs",
+	"name": "Web Index",
+	"short_name": "Web Index",
 	"display": "browser",
 	"start_url": "./",
 	"scope": "./",

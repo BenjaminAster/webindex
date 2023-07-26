@@ -210,6 +210,10 @@ ul.group-specs > li > a.repo-link {
 	/* --icon-size: 1.1rem; */
 }
 
+ul.group-specs > li > .disabled {
+	--icon-color: var(--gray-3);
+}
+
 #theme {
 	position: fixed;
 	inset-inline-end: 0;
