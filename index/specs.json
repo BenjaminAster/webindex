@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Wed, 26 Jul 2023 08:15:25 GMT",
-		"iso": "2023-07-26T08:15:25.862Z",
-		"unixMillis": 1690359325863
+		"utc": "Thu, 03 Aug 2023 16:11:00 GMT",
+		"iso": "2023-08-03T16:11:00.648Z",
+		"unixMillis": 1691079060648
 	},
 	"specs": [
 		{
@@ -1309,6 +1309,11 @@
 					"repo": "https://github.com/httpwg/httpwg.github.io"
 				},
 				{
+					"title": "RFC 8297 - An HTTP Status Code for Indicating Hints",
+					"url": "https://httpwg.org/specs/rfc8297.html",
+					"repo": "https://github.com/httpwg/httpwg.github.io"
+				},
+				{
 					"title": "RFC 8470 - Using Early Data in HTTP",
 					"url": "https://httpwg.org/specs/rfc8470.html",
 					"repo": "https://github.com/httpwg/httpwg.github.io"
@@ -2488,11 +2493,6 @@
 					"title": "Regular Expression Pattern Modifiers for ECMAScript",
 					"url": "https://tc39.es/proposal-regexp-modifiers/",
 					"repo": "https://github.com/tc39/proposal-regexp-modifiers"
-				},
-				{
-					"title": "Resizable ArrayBuffer and growable SharedArrayBuffer",
-					"url": "https://tc39.es/proposal-resizablearraybuffer/",
-					"repo": "https://github.com/tc39/proposal-resizablearraybuffer"
 				},
 				{
 					"title": "Set methods",
@@ -3946,7 +3946,7 @@
 					"title": "Private Network Access",
 					"url": "https://wicg.github.io/private-network-access/",
 					"repo": "https://github.com/WICG/private-network-access",
-					"tests": "https://wpt.fyi/results/fetch/local-network-access?label=master&product=chrome&product=safari&product=firefox&product=servo"
+					"tests": "https://wpt.fyi/results/fetch/private-network-access?label=master&product=chrome&product=safari&product=firefox&product=servo"
 				},
 				{
 					"title": "Private State Token API",

@@ -224,7 +224,6 @@ export default {
 		{ repo: "https://github.com/wpack-wg/bundled-responses/blob/main/draft-ietf-wpack-bundled-responses.md", group: "ietf/wpack" },
 		{ repo: "https://github.com/WebBluetoothCG/web-bluetooth/blob/main/scanning.html", group: "cg/web-bluetooth" },
 		{ repo: "https://github.com/tc39/proposal-import-attributes", url: "https://tc39.es/proposal-import-attributes/", group: "tc39" },
-		{ repo: "https://github.com/patcg-individual-drafts/topics", group: "cg/patcg" },
 		{ repo: "https://github.com/patcg-individual-drafts/private-aggregation-api", group: "cg/patcg" },
 		{ repo: "https://github.com/immersive-web/marker-tracking", group: "cg/immersive-web" },
 		{ repo: "https://github.com/immersive-web/real-world-geometry/blob/main/webxrmeshing-1.bs", group: "cg/immersive-web" },
@@ -268,6 +267,7 @@ export default {
 		// { repo: null, url: "https://ijg.org/files/Wallace.JPEG.pdf", group: "jpeg" },
 		{ repo: null, url: "https://www.w3.org/Graphics/JPEG/jfif3.pdf", group: "jpeg" },
 		{ repo: null, url: "https://www.w3.org/Graphics/JPEG/itu-t81.pdf", group: "jpeg" },
+		{ repo: null, url: "https://arxiv.org/ftp/arxiv/papers/1908/1908.03565.pdf", group: "jpeg" },
 		{ repo: null, url: "https://www.w3.org/Graphics/GIF/spec-gif87.txt", group: "compuserve" },
 		{ repo: null, url: "https://www.w3.org/Graphics/GIF/spec-gif89a.txt", group: "compuserve" },
 		{ repo: null, url: "http://www.vurdalakov.net/misc/gif/netscape-looping-application-extension/", group: "netscape" },
@@ -278,6 +278,7 @@ export default {
 		"jpeg": {
 			"https://www.w3.org/Graphics/JPEG/jfif3.pdf": "JPEG File Interchange Format",
 			"https://www.w3.org/Graphics/JPEG/itu-t81.pdf": "Digital compression and coding of continuous-tone still images",
+			"https://arxiv.org/ftp/arxiv/papers/1908/1908.03565.pdf": "JPEG XL image coding system",
 		},
 		"compuserve": {
 			"https://www.w3.org/Graphics/GIF/spec-gif87.txt": "Graphics Interchange Format (GIF) version 87a",

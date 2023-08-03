@@ -26,6 +26,7 @@ const cachedResources = await (async () => {
 	try {
 		return JSON.parse(await Deno.readTextFile(new URL("./cache/index.json", import.meta.url)));
 	} catch {
+		await Deno.mkdir(new URL("./cache/", import.meta.url), { recursive: true });
 		await Deno.writeTextFile(new URL("./cache/index.json", import.meta.url), "[]");
 		return [];
 	}
@@ -114,6 +115,8 @@ $specs: {
 			if (!ok) console.error(`[ERROR] ${url} not ok`);
 			let doc = domParser.parseFromString(text, "text/html");
 			title = doc.title.trim();
+		} else {
+			await fetchCached(url);
 		}
 
 		let groupObject = specs.find((item) => item.groupIdentifier === group);
