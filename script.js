@@ -46,21 +46,55 @@ export const storage = new class {
 	});
 }
 
+const tocList = document.querySelector("#toc-list");
+const tocFragment = tocList.querySelector(":scope > template").content;
+const mainList = document.querySelector("#main-list");
+const groupFragment = mainList.querySelector(":scope > template#specifications-template").content;
+const cssFragment = mainList.querySelector(":scope > template#css-template").content;
+const javaScriptFragment = mainList.querySelector(":scope > template#javascript-template").content;
+let currentTab = "specifications";
 
-let NEW_SOURCE = true;
-// NEW_SOURCE = false; // toggle comment on/off
+const openLinksInNewTab = window.matchMedia("(any-hover: none)").matches;
 
-if (NEW_SOURCE) {
-	const { specs: specsData } = await (await globalThis.fetch("./index/specs.json")).json();
+document.querySelector("#tabs").addEventListener("change", ({ target }) => {
+	currentTab = target.value;
+	for (const child of [...mainList.children, ...tocList.children]) {
+		if (child.localName !== "template") child.remove();
+	}
 
-	const mainList = document.querySelector("#main-list");
-	const groupFragment = mainList.querySelector(":scope > template").content;
+	console.log("change")
+	$switch: switch (currentTab) {
+		case ("specifications"): {
+			renderSpecs();
+			break $switch;
+		} case ("css"): {
+			renderCSS();
+			break $switch;
+		} case ("javascript"): {
+			renderJavaScript();
+			break $switch;
+		}
+	}
+});
 
-	const openLinksInNewTab = window.matchMedia("(any-hover: none)").matches;
+const nameToId = (/** @type {string} */ name) => name.toLowerCase().replaceAll(/\W+/g, "-");
 
+const { specs: specsData } = await (await globalThis.fetch("./index/specs.json")).json();
+
+const renderSpecs = () => {
 	for (const { groupName, groupHomepage, groupIdentifier, specs } of specsData) {
+		const groupLinkId = nameToId(groupName);
+
+		{
+			const clone = tocFragment.cloneNode(true);
+			clone.querySelector(".link-to-list").textContent = groupName;
+			clone.querySelector(".link-to-list").href = "#" + groupLinkId;
+			tocList.append(clone);
+		}
+
 		const clone = groupFragment.cloneNode(true);
 		clone.querySelector(".group-name").textContent = groupName;
+		clone.querySelector(".header h3").id = groupLinkId;
 		clone.querySelector("a.group-link").href = groupHomepage;
 		clone.querySelector(".group-idenfifier").textContent = groupIdentifier;
 
@@ -91,80 +125,140 @@ if (NEW_SOURCE) {
 		}
 		mainList.append(clone);
 	}
-} else {
-	const { list: specsData } = await (await globalThis.fetch("./index/old/specs.json")).json();
+};
 
-	const mainList = document.querySelector("#main-list");
-	const groupFragment = mainList.querySelector(":scope > template").content;
+renderSpecs();
 
-	const openLinksInNewTab = window.matchMedia("(any-hover: none)").matches;
+const {
+	cssProperties,
+	cssTypes,
+	cssAtRules,
+	cssFunctions,
+	cssSelectors,
+	cssPseudoClasses,
+	cssPseudoElements,
+	cssDescriptors,
+	cssUnits,
+} = await (await window.fetch("./index/old/css.json")).json();
 
-	for (const { name, homepage, identifier, specs } of specsData) {
-		const clone = groupFragment.cloneNode(true);
-		clone.querySelector(".group-name").textContent = name;
-		clone.querySelector("a.group-link").href = homepage;
-		clone.querySelector(".group-idenfifier").textContent = identifier;
+const renderCSS = () => {
+	const allData = [
+		["Properties", cssProperties],
+		["Types", cssTypes],
+		["At-rules", cssAtRules],
+		["Functions", cssFunctions],
+		["Basic selectors", cssSelectors],
+		["Pseudo classes", cssPseudoClasses],
+		["Pseudo elements", cssPseudoElements],
+		["Descriptors", cssDescriptors],
+		["Units", cssUnits],
+	];
+	for (const [categoryName, data] of allData) {
+		const categoryId = nameToId(categoryName);
 
-		const specsList = clone.querySelector(".group-specs");
-		const specFragment = specsList.querySelector(":scope > template").content;
-		for (const { name: specName, url, repoUrl } of specs) {
-			const specClone = specFragment.cloneNode(true);
-			specClone.querySelector(".spec-name").textContent = specName;
-			const urlObject = new URL(url);
-			specClone.querySelector(".spec-url").textContent = urlObject.host + urlObject.pathname.replace(/\/$/, "");
-			specClone.querySelector("a.spec-link").href = url;
-			if (openLinksInNewTab) specClone.querySelector("a.spec-link").target = "_blank";
-			specClone.querySelector("a.repo-link").href = repoUrl;
-			specsList.append(specClone);
+		{
+			const clone = tocFragment.cloneNode(true);
+			clone.querySelector(".link-to-list").textContent = categoryName;
+			clone.querySelector(".link-to-list").href = "#" + categoryId;
+			tocList.append(clone);
+		}
+
+		const clone = cssFragment.cloneNode(true);
+		clone.querySelector(".category").textContent = categoryName;
+		clone.querySelector(".category").id = categoryId;
+
+		const list = clone.querySelector(".list");
+		const itemFragment = list.querySelector(":scope > template").content;
+		let /** @type {HTMLElement} */ specList;
+		let /** @type {string} */ prevName;
+		for (const { name, id, spec } of data) {
+			const url = `${spec}#${id}`;
+			if (name !== prevName) {
+				const itemClone = itemFragment.cloneNode(true);
+				itemClone.querySelector(".name").textContent = name;
+				itemClone.querySelector("a.name").href = url;
+				specList = itemClone.querySelector(".spec-list");
+				list.append(itemClone);
+			}
+			const specFragment = specList.querySelector(":scope > template").content;
+			{
+				const specClone = specFragment.cloneNode(true);
+				const { specId } = spec.match(/(\/|\:)(?<specId>[^\/\:]+)\/?$/).groups;
+				specClone.querySelector("a.spec").href = url;
+				specClone.querySelector(".spec-identifier").textContent = specId;
+				specClone.querySelector(".spec-link-hash").textContent = "#" + id;
+				if (openLinksInNewTab) specClone.querySelector("a.spec").target = "_blank";
+				specList.append(specClone);
+			}
+			prevName = name;
 		}
 		mainList.append(clone);
 	}
 }
 
-// $: {
-// 	const searchBox = document.querySelector("input[type=search]#searchbox");
 
-// 	if (!CSS.highlights) {
-// 		throw new Error(String.raw`no CSS highlights, no search ¯\_(ツ)_/¯`);
-// 	};
+const {
+	jsInterfaces,
+	jsAttributes,
+	jsFunctions,
+} = await (await window.fetch("./index/old/javascript.json")).json();
 
-// 	searchBox.focus();
+const renderJavaScript = () => {
+	const allData = [
+		["Interfaces", jsInterfaces],
+		["Attributes", jsAttributes],
+		["Functions", jsFunctions],
+	];
+	for (const [categoryName, data] of allData) {
+		const categoryId = nameToId(categoryName);
 
-// 	window.addEventListener("keypress", () => {
-// 		searchBox.focus();
-// 	});
+		{
+			const clone = tocFragment.cloneNode(true);
+			clone.querySelector(".link-to-list").textContent = categoryName;
+			clone.querySelector(".link-to-list").href = "#" + categoryId;
+			tocList.append(clone);
+		}
 
-// 	const textNodes = (() => {
-// 		const nodeArray = [];
-// 		const treeWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT)
-// 		let /** @type {Node} */ node;
-// 		while (node = treeWalker.nextNode()) if (node.textContent.trim()) nodeArray.push(node);
-// 		return nodeArray;
-// 	})();
+		const clone = javaScriptFragment.cloneNode(true);
+		clone.querySelector(".category").textContent = categoryName;
+		clone.querySelector(".category").id = categoryId;
 
-// 	const highlight = new Highlight();
-// 	CSS.highlights.set("search", highlight);
-
-// 	searchBox.addEventListener("input", function () {
-// 		highlight.clear();
-// 		let /** @type {number} */ index;
-// 		let firstMatch = true;
-// 		const treeWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-// 		let /** @type {Node} */ node;
-// 		$nodeLoop: while (node = treeWalker.nextNode()) {
-// 			if (!node.textContent.trim()) continue $nodeLoop;
-// 			if ((index = node.textContent.toLowerCase().replaceAll(/[^\w]/g, " ").indexOf(this.value.toLowerCase().replaceAll(/[^\w]/g, " "))) >= 0) {
-// 				const range = new Range();
-// 				range.setStart(node, index);
-// 				range.setEnd(node, index + this.value.length);
-// 				highlight.add(range);
-// 				if (firstMatch) HTMLElement.prototype.scrollIntoViewIfNeeded
-// 					? node.parentElement.scrollIntoViewIfNeeded(true)
-// 					: node.parentElement.scrollIntoView({ block: "center" });
-// 				firstMatch = false;
-// 			}
-// 		}
-// 	});
-// }
-
-export { };
+		const list = clone.querySelector(".list");
+		const itemFragment = list.querySelector(":scope > template").content;
+		let /** @type {HTMLElement} */ specList;
+		let /** @type {string} */ prevDisplayName;
+		for (const { name, id, spec, static: isStatic, interface: interfaceName } of data) {
+			// const url = `${spec}#${id}`;
+			const url = spec;
+			let displayName = name;
+			if (categoryId === "attributes") {
+				if (interfaceName === "Window") displayName = `${name} (window)`;
+				else if (isStatic) displayName = `${name} (${interfaceName})`;
+				else displayName = `${name} (${interfaceName}.prototype)`;
+			} else if (categoryId === "functions") {
+				if (interfaceName === "Window") displayName = `${name}() (window)`;
+				else if (isStatic) displayName = `${name}() (${interfaceName})`;
+				else displayName = `${name}() (${interfaceName}.prototype)`;
+			}
+			if (displayName !== prevDisplayName) {
+				const itemClone = itemFragment.cloneNode(true);
+				itemClone.querySelector(".name").textContent = displayName;
+				itemClone.querySelector("a.name").href = url;
+				specList = itemClone.querySelector(".spec-list");
+				list.append(itemClone);
+			}
+			const specFragment = specList.querySelector(":scope > template").content;
+			{
+				const specClone = specFragment.cloneNode(true);
+				const { specId } = spec.match(/(\/|\:)(?<specId>[^\/\:]+)\/?$/).groups;
+				specClone.querySelector("a.spec").href = url;
+				specClone.querySelector(".spec-identifier").textContent = specId;
+				specClone.querySelector(".spec-link-hash").textContent = "#todo";
+				if (openLinksInNewTab) specClone.querySelector("a.spec").target = "_blank";
+				specList.append(specClone);
+			}
+			prevDisplayName = displayName;
+		}
+		mainList.append(clone);
+	}
+}

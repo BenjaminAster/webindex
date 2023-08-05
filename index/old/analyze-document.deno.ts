@@ -342,7 +342,7 @@ export const analyzeDocument = (doc: Document, { specUrl }: { specUrl: string })
 	{
 		// JavaScript
 
-		$idlLoop: for (const container of doc.querySelectorAll("pre > code.idl, :not(#idl-index) + pre.idl")) {
+		$idlLoop: for (const container of doc.querySelectorAll("pre > code.idl, :not(#idl-index) + pre.idl:not(.example)")) {
 			container.querySelector(":scope > .idlHeader")?.remove();
 			let isPrerendered = container.childElementCount > 0;
 			if (!isPrerendered) {

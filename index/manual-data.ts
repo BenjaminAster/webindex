@@ -1,13 +1,5 @@
 
 export default {
-	// closedW3CGroupIdentifiers: [
-	// 	"cg/ortc",
-	// 	"cg/inbandtracks",
-	// 	"wg/xslt",
-	// 	"wg/xml-query",
-	// 	"wg/xml-core",
-	// 	"wg/tracking",
-	// ],
 	additionalGroups: [
 		{
 			name: "ORTC (Object Real-time Communications) Community Group",
@@ -65,11 +57,6 @@ export default {
 			identifier: "aomedia",
 			homepage: "https://aomedia.org/",
 		},
-		// {
-		// 	name: "IETF Web Packaging Working Group",
-		// 	identifier: "ietf/wpack",
-		// 	homepage: "https://datatracker.ietf.org/wg/wpack/about/",
-		// },
 		{
 			name: "Ben Wiser",
 			identifier: "benwiser",
@@ -338,4 +325,92 @@ export default {
 			"https://drafts.csswg.org/css-color-hdr/": "https://drafts.csswg.org/css-color-hdr-1/",
 		},
 	},
+	additionalCSSProperties: [
+		{
+			name: "-webkit-appearance",
+			value: "none | auto | <compat-auto> | <compat-special>",
+			id: "propdef--webkit-appearance",
+			spec: "css-ui-4",
+		},
+		{
+			name: "-webkit-user-select",
+			value: "auto | text | none | contain | all",
+			id: "propdef--webkit-user-select",
+			spec: "css-ui-4",
+		},
+		{
+			name: "app-region",
+			value: "drag | no-drag",
+			id: "dfn-app-region",
+			spec: "manifest-incubations",
+		},
+		{
+			name: "page-break-after",
+			value: "auto | always | avoid | left | right",
+			id: "ref-for-propdef-page-break-after①",
+			spec: "css-break-4"
+		},
+		{
+			name: "page-break-before",
+			value: "auto | always | avoid | left | right",
+			id: "ref-for-propdef-page-break-before①",
+			spec: "css-break-4"
+		},
+		{
+			name: "page-break-inside",
+			value: "avoid | auto",
+			id: "ref-for-propdef-page-break-inside①",
+			spec: "css-break-4"
+		},
+		{
+			name: "touch-action",
+			value: "auto | none | [ [ pan-x | pan-left | pan-right ] || [ pan-y | pan-up | pan-down ] ] | manipulation",
+			id: "the-touch-action-css-property",
+			spec: "pointerevents3",
+		},
+		{
+			name: "z-index",
+			value: "auto | <integer>",
+			id: "propdef-z-index",
+			spec: "CSS22",
+		},
+	],
+	additionalCSSUnits: [
+		{
+			name: "cqw",
+			forType: "<length>",
+			id: "container-lengths",
+			spec: "css-contain-3",
+		},
+		{
+			name: "cqh",
+			forType: "<length>",
+			id: "container-lengths",
+			spec: "css-contain-3",
+		},
+		{
+			name: "cqi",
+			forType: "<length>",
+			id: "container-lengths",
+			spec: "css-contain-3",
+		},
+		{
+			name: "cqb",
+			forType: "<length>",
+			id: "container-lengths",
+			spec: "css-contain-3",
+		},
+		{
+			name: "cqmin",
+			forType: "<length>",
+			id: "container-lengths",
+			spec: "css-contain-3",
+		},
+		{
+			name: "cqmax",
+			forType: "<length>",
+			id: "container-lengths",
+			spec: "css-contain-3",
+		},
+	],
 };
