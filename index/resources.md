@@ -34,3 +34,5 @@
 - https://github.com/w3c/spec-dashboard
 - https://github.com/html-now/html-now.github.io
 - https://github.com/Fyrd/caniuse
+- https://github.com/whatwg/html-build
+- https://github.com/whatwg/wattsi

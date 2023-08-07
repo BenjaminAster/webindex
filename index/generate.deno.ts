@@ -8,19 +8,26 @@ deno run --allow-net --allow-read --allow-write=. index/generate.deno.ts
 
 import manualData from "./manual-data.ts";
 
+import { sortArrayByObjectValue } from "./utils.deno.ts";
+
 // @ts-ignore
 import { DOMParser as _DOMParser } from "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts";
 const DOMParser: typeof globalThis.DOMParser = _DOMParser;
+
+import {
+	exfiltrateIDL,
+	analyzeDocument,
+	analyzeIDL,
+	collectedCSSStuff,
+	collectedJavaScriptStuff,
+	tidyUpCollectedStuff,
+} from "./analyze-document.deno.ts";
 
 const { groups } = JSON.parse(await Deno.readTextFile(new URL("./groups/groups.json", import.meta.url)));
 
 const fetchOptions: RequestInit = { cache: "default", redirect: "error", headers: { "accept": "text/html;q=0.9", "accept-language": "en-US,en;q=0.9" } };
 
 const fetchJSON = async (url: string) => await (await globalThis.fetch(url, fetchOptions)).json();
-
-const sortArrayByObjectValue = (array: any[], key: string) => {
-	return array.toSorted(({ [key]: a }, { [key]: b }) => [a.toLowerCase(), b.toLowerCase()].toSorted().join(",") === [a, b].join(",").toLowerCase() ? -1 : 1);
-}
 
 const cachedResources = await (async () => {
 	try {
@@ -34,36 +41,40 @@ const cachedResources = await (async () => {
 
 const fetchCached = async (url: string) => {
 	const encodedUrl = url.replaceAll(/[^a-z0-9]/ig, "_") + ".html";
-	if (cachedResources.includes(url)) return { text: await Deno.readTextFile(new URL(`./cache/${encodedUrl}`, import.meta.url)), ok: true };
+	if (cachedResources.includes(url)) return await Deno.readTextFile(new URL(`./cache/${encodedUrl}`, import.meta.url));
 	else {
 		const response = await globalThis.fetch(url, fetchOptions);
+		if (!response.ok) console.error(`[NETWORK ERROR]: Failed to load ${url}`);
 		const responseText = await response.text();
 		cachedResources.push(url);
 		await Deno.writeTextFile(new URL("./cache/index.json", import.meta.url), JSON.stringify(cachedResources.sort(), null, "\t"));
 		await Deno.writeTextFile(new URL(`./cache/${encodedUrl}`, import.meta.url), responseText);
-		return { text: responseText, ok: response.ok };
+		return responseText;
 	}
 };
 
 const domParser = new DOMParser();
-const fetchDocument = async (url: string) => domParser.parseFromString((await fetchCached(url)).text, "text/html");
+const fetchDocument = async (url: string) => domParser.parseFromString(await fetchCached(url), "text/html");
 
 let specs = [];
 
-let cssProperties = [];
-let cssTypes = [];
-let cssValues = [];
-let cssDescriptors = [];
-let cssAtRules = [];
-let cssFunctions = [];
-let cssSelectors = [];
-let cssPseudoClasses = [];
-let cssPseudoElements = [];
-let cssUnits = [];
+// let cssProperties = [];
+// let cssTypes = [];
+// let cssValues = [];
+// let cssDescriptors = [];
+// let cssAtRules = [];
+// let cssFunctions = [];
+// let cssSelectors = [];
+// let cssPseudoClasses = [];
+// let cssPseudoElements = [];
+// let cssUnits = [];
 
-let jsInterfaces = [];
-let jsAttributes = [];
-let jsFunctions = [];
+// let jsInterfaces = [];
+// let jsAttributes = [];
+// let jsFunctions = [];
+
+let specsByShortname: Record<string, any> = {};
+let specsByURL: Record<string, any> = {};
 
 $specs: {
 	const indexURL = "https://w3c.github.io/webref/ed/index.json";
@@ -71,14 +82,16 @@ $specs: {
 	let { results, date } = await fetchJSON(indexURL);
 	results = results.map(({
 		nightly: { url, repository: repo, pages },
-		// organization,
 		groups: [{ url: groupHomepage }],
 		css: cssPath,
-		idlparsed: parsedIDLPath,
+		idl: idlPath,
+		// url: tr,
 		...rest
-	}) => ({ ...rest, url, repo, groupHomepage, cssPath, parsedIDLPath, pages }));
+	}) => ({ ...rest, url, repo, groupHomepage, cssPath, idlPath, pages }));
 
-	$specLoop: for (let { url, categories, repo, groupHomepage, title, cssPath, parsedIDLPath, pages, group, tests } of [...results, ...manualData.additionalSpecs]) {
+	$specLoop: for (let { url, categories, repo, groupHomepage, title, cssPath, idlPath, pages, group, tests, shortname } of [...results, ...manualData.additionalSpecs]) {
+		const manuallyAdded = !groupHomepage;
+
 		if (!url) {
 			let { login, repoName, path, isFile } = repo.match(
 				/^https:\/\/github.com\/(?<login>[\w-]+)\/(?<repoName>[\w-]+)(\/(tree|(?<isFile>blob))\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/
@@ -88,6 +101,10 @@ $specs: {
 
 		if (manualData.excludedSpecs.includes(url)) continue $specLoop;
 		if (categories && !categories.includes("browser")) continue $specLoop;
+
+		if (!shortname) {
+			({ shortname } = url.match(/\/(?<shortname>[^\/]+)(\/|\.html|\.md)?$/).groups);
+		}
 
 		group ||= manualData.groupRewrites[url];
 
@@ -110,11 +127,10 @@ $specs: {
 			if (titleRewrite) title = titleRewrite;
 		}
 
-		if (!title) {
-			const { ok, text } = await fetchCached(url);
-			if (!ok) console.error(`[ERROR] ${url} not ok`);
+		if (manuallyAdded) {
+			const text = await fetchCached(url);
 			let doc = domParser.parseFromString(text, "text/html");
-			title = doc.title.trim();
+			title ||= doc.title.trim();
 		} else {
 			await fetchCached(url);
 		}
@@ -138,6 +154,24 @@ $specs: {
 			}
 		}
 
+		const potentiallyAnalyzeAndGetDOM = async (url: string) => {
+			if (["pdf", "txt"].includes(url.match(/\.(?<extension>[^\.]+)$/)?.groups.extension)) return;
+			const analyzeCSS = (manuallyAdded || cssPath) && !manualData.specsExcludedFromCSS.includes(url);
+			let idl: string;
+			if (idlPath) {
+				idl = await fetchCached(new URL(idlPath, indexURL).href);
+			}
+			let doc: Document;
+			if (analyzeCSS || manuallyAdded) {
+				const text = await fetchCached(url);
+				doc = domParser.parseFromString(text, "text/html");
+				if (analyzeCSS) analyzeDocument(doc, { url });
+				if (manuallyAdded) idl = exfiltrateIDL(doc, { url });
+			}
+			if (idl) analyzeIDL(idl, { url });
+			if (doc) return doc;
+		};
+
 		if (pages) {
 			groupObject.specs.push({
 				title: `${title}: Table of Contents`,
@@ -148,8 +182,7 @@ $specs: {
 			$switch: switch (url) {
 				case ("https://html.spec.whatwg.org/multipage/"): {
 					for (const page of pages) {
-						const { text } = await fetchCached(page);
-						let doc = domParser.parseFromString(text, "text/html");
+						const doc = await potentiallyAnalyzeAndGetDOM(page);
 						let { heading } = doc.querySelector(":is(h2, h3, h4, h5, h6)[id]").textContent.trim().match(/^(\d+(\.\d+)* )?(?<heading>.+)$/s).groups;
 						groupObject.specs.push({
 							title: `${title}: ${heading}`,
@@ -161,7 +194,8 @@ $specs: {
 					break $switch;
 				} case ("https://tc39.es/ecma262/multipage/"): {
 					for (const page of pages) {
-						const { text } = await fetchCached(page);
+						await potentiallyAnalyzeAndGetDOM(page);
+						const text = await fetchCached(page);
 						let doc = domParser.parseFromString(text, "text/html");
 						let { heading } = doc.querySelector("h1").textContent.trim().match(/^[\w]+ (?<heading>.+)$/s).groups;
 						groupObject.specs.push({
@@ -174,8 +208,7 @@ $specs: {
 					break $switch;
 				} case ("https://svgwg.org/svg2-draft/"): {
 					for (const page of pages) {
-						const { text } = await fetchCached(page);
-						let doc = domParser.parseFromString(text, "text/html");
+						const doc = await potentiallyAnalyzeAndGetDOM(page);
 						let { heading } = doc.querySelector("h1").textContent.trim().match(/^(Chapter [\d]+|Appendix [\w]+): (?<heading>.+)$/s).groups;
 						groupObject.specs.push({
 							title: `${title}: ${heading}`,
@@ -267,20 +300,20 @@ $specs: {
 		// }
 	}
 
-	cssProperties = sortArrayByObjectValue(cssProperties, "name");
-	cssTypes = sortArrayByObjectValue(cssTypes, "name");
-	cssValues = sortArrayByObjectValue(cssValues, "name");
-	cssDescriptors = sortArrayByObjectValue(cssDescriptors, "name");
-	cssAtRules = sortArrayByObjectValue(cssAtRules, "name");
-	cssFunctions = sortArrayByObjectValue(cssFunctions, "name");
-	cssSelectors = sortArrayByObjectValue(cssSelectors, "name");
-	cssPseudoClasses = sortArrayByObjectValue(cssPseudoClasses, "name");
-	cssPseudoElements = sortArrayByObjectValue(cssPseudoElements, "name");
-	cssUnits = sortArrayByObjectValue(cssUnits, "name");
+	// cssProperties = sortArrayByObjectValue(cssProperties, "name");
+	// cssTypes = sortArrayByObjectValue(cssTypes, "name");
+	// cssValues = sortArrayByObjectValue(cssValues, "name");
+	// cssDescriptors = sortArrayByObjectValue(cssDescriptors, "name");
+	// cssAtRules = sortArrayByObjectValue(cssAtRules, "name");
+	// cssFunctions = sortArrayByObjectValue(cssFunctions, "name");
+	// cssSelectors = sortArrayByObjectValue(cssSelectors, "name");
+	// cssPseudoClasses = sortArrayByObjectValue(cssPseudoClasses, "name");
+	// cssPseudoElements = sortArrayByObjectValue(cssPseudoElements, "name");
+	// cssUnits = sortArrayByObjectValue(cssUnits, "name");
 
-	jsInterfaces = sortArrayByObjectValue(jsInterfaces, "name");
-	jsAttributes = sortArrayByObjectValue(jsAttributes, "name");
-	jsFunctions = sortArrayByObjectValue(jsFunctions, "name");
+	// jsInterfaces = sortArrayByObjectValue(jsInterfaces, "name");
+	// jsAttributes = sortArrayByObjectValue(jsAttributes, "name");
+	// jsFunctions = sortArrayByObjectValue(jsFunctions, "name");
 }
 
 {
@@ -294,23 +327,31 @@ $specs: {
 	console.timeEnd("sorting");
 }
 
+{
+	console.time("tidying up collected stuff");
+	tidyUpCollectedStuff();
+	console.timeEnd("tidying up collected stuff");
+}
+
+const timestamp = {
+	utc: new Date().toUTCString(),
+	iso: new Date().toISOString(),
+	unixMillis: Date.now(),
+};
+
 await Deno.writeTextFile(new URL("./specs.json", import.meta.url), JSON.stringify({
-	timestamp: {
-		utc: new Date().toUTCString(),
-		iso: new Date().toISOString(),
-		unixMillis: Date.now(),
-	},
+	timestamp,
 	specs,
 }, null, "\t"));
 
-// await Deno.writeTextFile(new URL("./css.json", import.meta.url), JSON.stringify({
-// 	cssProperties,
-// }, null, "\t"));
+await Deno.writeTextFile(new URL("./css.json", import.meta.url), JSON.stringify({
+	timestamp,
+	...collectedCSSStuff,
+}, null, "\t"));
 
-// await Deno.writeTextFile(new URL("./js.json", import.meta.url), JSON.stringify({
-// 	jsInterfaces,
-// 	jsAttributes,
-// 	jsFunctions,
-// }, null, "\t"));
+await Deno.writeTextFile(new URL("./javascript.json", import.meta.url), JSON.stringify({
+	timestamp,
+	...collectedJavaScriptStuff,
+}, null, "\t"));
 
 // export { };

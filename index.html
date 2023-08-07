@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
-<head data-theme="dark">
+<head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content" />
+
+	<!-- SEO -->
 	<meta name="robots" content="all" />
 	<meta name="author" content="Benjamin Aster" />
+	<meta name="repository" content="https://github.com/BenjaminAster/webindex" />
 	<meta name="description" content="A list of web-related Specifications" />
-	<!-- <meta name="repository" content="https://github.com/BenjaminAster/web-specs" /> -->
-	<!-- <meta property="og:image" content="https://benjaminaster.com/NAME/assets/icon.png" /> -->
+	<meta property="og:image" content="https://benjaminaster.com/webindex/assets/icon.png" />
 
-	<link rel="icon" href="./assets/icon.png" type="image/png" sizes="512x512" />
+	<!-- App -->
+	<title>Index of web-related technical information</title>
 	<link rel="icon" href="./assets/icon.svg" type="image/svg+xml" sizes="any" />
+	<link rel="icon" href="./assets/icon.png" type="image/png" sizes="512x512" />
 	<link rel="manifest" href="./app.webmanifest" />
 
-	<title>Web-related Specifications</title>
-
-	<link rel="stylesheet" href="./style.css" />
-
+	<!-- JavaScript -->
 	<script type="module" src="./script.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./style.css" />
 	<link rel="preload" as="style" href="./icons.css" />
-	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/specs.json" /> -->
+
+	<!-- Preloads -->
 	<link rel="preload" as="fetch" crossorigin="anonymous" href="./index/specs.json" />
 	<link rel="preload" as="fetch" crossorigin="anonymous" href="./index/old/css.json" />
 	<link rel="preload" as="fetch" crossorigin="anonymous" href="./index/old/javascript.json" />
