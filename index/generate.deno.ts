@@ -89,8 +89,10 @@ $specs: {
 		...rest
 	}) => ({ ...rest, url, repo, groupHomepage, cssPath, idlPath, pages }));
 
-	$specLoop: for (let { url, categories, repo, groupHomepage, title, cssPath, idlPath, pages, group, tests, shortname } of [...results, ...manualData.additionalSpecs]) {
-		const manuallyAdded = !groupHomepage;
+	$specLoop: for (let { url, categories, repo, groupHomepage, title, cssPath, idlPath, pages, group, tests, shortname, generator } of [...results, ...manualData.additionalSpecs]) {
+		let manuallyAdded = !groupHomepage;
+
+		// if (url === "https://streams.spec.whatwg.org/") break $specLoop;
 
 		if (!url) {
 			let { login, repoName, path, isFile } = repo.match(
@@ -127,14 +129,6 @@ $specs: {
 			if (titleRewrite) title = titleRewrite;
 		}
 
-		if (manuallyAdded) {
-			const text = await fetchCached(url);
-			let doc = domParser.parseFromString(text, "text/html");
-			title ||= doc.title.trim();
-		} else {
-			await fetchCached(url);
-		}
-
 		let groupObject = specs.find((item) => item.groupIdentifier === group);
 		if (!groupObject) {
 			specs.push(groupObject = {
@@ -154,21 +148,25 @@ $specs: {
 			}
 		}
 
-		const potentiallyAnalyzeAndGetDOM = async (url: string) => {
-			if (["pdf", "txt"].includes(url.match(/\.(?<extension>[^\.]+)$/)?.groups.extension)) return;
-			const analyzeCSS = (manuallyAdded || cssPath) && !manualData.specsExcludedFromCSS.includes(url);
+		if (url === "https://html.spec.whatwg.org/multipage/") generator = "wattsi";
+
+		const potentiallyAnalyzeAndGetDOM = async (pageURL: string) => {
+			const analyzeCSS = !manualData.specsExcludedFromCSS.includes(pageURL);
+			const analyzeJavaScript = manuallyAdded && !manualData.specsExcludedFromJavaScript.includes(pageURL);
+			const getTitle = !title;
 			let idl: string;
 			if (idlPath) {
 				idl = await fetchCached(new URL(idlPath, indexURL).href);
+				console.log("fetched idl from", idlPath);
 			}
 			let doc: Document;
-			if (analyzeCSS || manuallyAdded) {
-				const text = await fetchCached(url);
+			if (analyzeCSS || analyzeJavaScript || getTitle) {
+				const text = await fetchCached(pageURL);
 				doc = domParser.parseFromString(text, "text/html");
-				if (analyzeCSS) analyzeDocument(doc, { url });
-				if (manuallyAdded) idl = exfiltrateIDL(doc, { url });
+				if (analyzeCSS) analyzeDocument(doc, { url: pageURL });
+				if (analyzeJavaScript) idl = exfiltrateIDL(doc, { url: pageURL });
 			}
-			if (idl) analyzeIDL(idl, { url });
+			if (idl) analyzeIDL(idl, { url: pageURL, generator });
 			if (doc) return doc;
 		};
 
@@ -177,10 +175,13 @@ $specs: {
 				title: `${title}: Table of Contents`,
 				url,
 				repo,
+				shortname,
 				...(testsURL ? { tests: testsURL } : {}),
 			});
 			$switch: switch (url) {
 				case ("https://html.spec.whatwg.org/multipage/"): {
+					idlPath = null;
+					manuallyAdded = true;
 					for (const page of pages) {
 						const doc = await potentiallyAnalyzeAndGetDOM(page);
 						let { heading } = doc.querySelector(":is(h2, h3, h4, h5, h6)[id]").textContent.trim().match(/^(\d+(\.\d+)* )?(?<heading>.+)$/s).groups;
@@ -188,11 +189,14 @@ $specs: {
 							title: `${title}: ${heading}`,
 							url: page,
 							repo,
+							shortname: `${shortname}/${page.match(/\/(?<shortname>[^\/]+)\.html$/).groups.shortname}`,
 							...(testsURL ? { tests: testsURL } : {}),
 						});
 					}
 					break $switch;
 				} case ("https://tc39.es/ecma262/multipage/"): {
+					idlPath = null;
+					manuallyAdded = true;
 					for (const page of pages) {
 						await potentiallyAnalyzeAndGetDOM(page);
 						const text = await fetchCached(page);
@@ -202,18 +206,22 @@ $specs: {
 							title: `${title}: ${heading}`,
 							url: page,
 							repo,
+							shortname: `${shortname}/${page.match(/\/(?<shortname>[^\/]+)\.html$/).groups.shortname}`,
 							...(testsURL ? { tests: testsURL } : {}),
 						});
 					}
 					break $switch;
 				} case ("https://svgwg.org/svg2-draft/"): {
+					idlPath = null;
 					for (const page of pages) {
+						manuallyAdded = page !== "https://svgwg.org/svg2-draft/idl.html"; // hacky solution
 						const doc = await potentiallyAnalyzeAndGetDOM(page);
 						let { heading } = doc.querySelector("h1").textContent.trim().match(/^(Chapter [\d]+|Appendix [\w]+): (?<heading>.+)$/s).groups;
 						groupObject.specs.push({
 							title: `${title}: ${heading}`,
 							url: page,
 							repo,
+							shortname: `${shortname}/${page.match(/\/(?<shortname>[^\/]+)\.html$/).groups.shortname}`,
 							...(testsURL ? { tests: testsURL } : {}),
 						});
 					}
@@ -223,10 +231,17 @@ $specs: {
 				}
 			}
 		} else {
+
+			let doc = await potentiallyAnalyzeAndGetDOM(url);
+			if (manuallyAdded) {
+				title ||= doc.title.trim();
+			}
+
 			groupObject.specs.push({
 				title,
 				url,
 				repo,
+				shortname,
 				...(testsURL ? { tests: testsURL } : {}),
 			});
 		}
@@ -321,9 +336,9 @@ $specs: {
 	const groupsNotToSort = ["whatwg", "wg/svg", "tc39", "khronos/webgl", "wg/media"];
 	$groupsLoop: for (const groupObj of specs) {
 		if (groupsNotToSort.includes(groupObj.groupIdentifier)) continue $groupsLoop;
-		groupObj.specs = sortArrayByObjectValue(groupObj.specs, "title");
+		sortArrayByObjectValue(groupObj.specs, "title");
 	}
-	specs = sortArrayByObjectValue(specs, "groupName");
+	sortArrayByObjectValue(specs, "groupName");
 	console.timeEnd("sorting");
 }
 

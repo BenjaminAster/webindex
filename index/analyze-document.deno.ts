@@ -71,39 +71,49 @@ export const tidyUpCollectedStuff = () => {
 		let current = list[0];
 		let currentList = [];
 
+		// console.log(list)
+
 		let organizedArray = [];
 
 		$flatList: for (let i = 0; i < list.length; i++) {
 			currentList.push(current);
 			let next = list[i + 1];
-			if (!propertiesToConsider.every((property) => current[property] === next[property])) {
+			if (!propertiesToConsider.every((property) => current[property] === next?.[property])) {
 				// const name = current.name;
 				// let { css2Definitions, nonCSS2Definitions } = Object.groupBy(currentList, ({ spec }) => spec === css2Spec ? "css2Definitions" : "nonCSS2Definitions");
 				// currentList.forEach(item => delete item.name);
 				// let currentSpecURLWithoutLevelNumber = currentList
+				// console.log(list)
+				// console.log("######")
+				// console.log(currentList);
+				// console.log("---")
 				const sortedByBaseSpec = [];
 				for (const item of currentList) {
 					const { urlWithoutLevel = item.spec, level = 0 } = item.spec.match(/^(?<urlWithoutLevel>.+\D)(?<level>\d+)\/?$/)?.groups ?? {};
+					// console.log(urlWithoutLevel, level, sortedByBaseSpec);
 					(
 						sortedByBaseSpec.find((item) => item.urlWithoutLevel === urlWithoutLevel)
 						??
-						sortedByBaseSpec.push({ urlWithoutLevel, definitions: [] })
+						(sortedByBaseSpec.push({ urlWithoutLevel, definitions: [] }), sortedByBaseSpec.at(-1))
 					).definitions.push({
-						level,
-						item: current,
+						level: +level,
+						item: self.structuredClone(item),
 					});
 					// Object.assign(
 					// 	sortedByBaseSpec.find(({ specId: _specId }) => _specId === specId) ?? sortedByBaseSpec.push({ specId, hasRealDefinition: false, levels: [] }),
 					// 	{ ...(info.onlyNewValues ? {} : { hasRealDefinition: true }) },
 					// ).levels.push({ level, info });
 				}
+				// console.log(sortedByBaseSpec);
 				for (const object of sortedByBaseSpec) {
 					object.definitions.sort((a, b) => b.level - a.level);
 				}
-				const definitions = sortedByBaseSpec.flatMap(({ item }) => item);
+				const definitions = sortedByBaseSpec.flatMap(({ definitions }) => definitions.map(({ item }) => item));
+				// console.log(definitions)
 				for (const definition of definitions) {
 					propertiesToConsider.forEach((property) => delete definition[property]);
 				}
+				// console.log(Object.fromEntries(propertiesToConsider.map((property) => [property, current[property]])),current)
 				organizedArray.push({
 					...Object.fromEntries(propertiesToConsider.map((property) => [property, current[property]])),
 					definitions,
@@ -116,6 +126,8 @@ export const tidyUpCollectedStuff = () => {
 				// if (hasNonCss2Definition) currentList = currentList.filter(({ spec }) => spec !== css2Spec);
 
 				currentList = [];
+
+				// throw 1;
 			}
 			current = next;
 		}
@@ -125,22 +137,24 @@ export const tidyUpCollectedStuff = () => {
 
 	// collectedStuff.cssProperties = organizedArray;
 
+	Deno.writeTextFile("tmp.json", JSON.stringify(cssProperties, null, "\t"));
+
 	collectedCSSStuff.cssProperties = group(cssProperties);
-	collectedCSSStuff.cssTypes = group(cssTypes);
-	collectedCSSStuff.cssValues = group(cssValues);
-	collectedCSSStuff.cssDescriptors = group(cssDescriptors);
+	collectedCSSStuff.cssTypes = group(cssTypes, { propertiesToConsider: ["name"] });
+	collectedCSSStuff.cssValues = group(cssValues, { propertiesToConsider: ["name", "valueFor"] });
+	collectedCSSStuff.cssDescriptors = group(cssDescriptors, { propertiesToConsider: ["name", "descriptorFor"] });
 	collectedCSSStuff.cssAtRules = group(cssAtRules);
 	collectedCSSStuff.cssFunctions = group(cssFunctions);
 	collectedCSSStuff.cssSelectors = group(cssSelectors);
 	collectedCSSStuff.cssPseudoClasses = group(cssPseudoClasses);
 	collectedCSSStuff.cssPseudoElements = group(cssPseudoElements);
-	collectedCSSStuff.cssUnits = group(cssUnits);
+	collectedCSSStuff.cssUnits = group(cssUnits, { propertiesToConsider: ["name", "forType"] });
 
-	collectedJavaScriptStuff.jsInterfaces = group(jsInterfaces);
-	collectedJavaScriptStuff.jsDictionaries = group(jsDictionaries);
+	collectedJavaScriptStuff.jsInterfaces = group(jsInterfaces, { propertiesToConsider: ["name", "mixin", "namespace"] });
+	collectedJavaScriptStuff.jsDictionaries = group(jsDictionaries, { propertiesToConsider: ["name"] });
 	collectedJavaScriptStuff.jsDictionaryFields = group(jsDictionaryFields, { propertiesToConsider: ["name", "dictionary"] });
-	collectedJavaScriptStuff.jsAttributes = group(jsAttributes, { propertiesToConsider: ["name", "interface"] });
-	collectedJavaScriptStuff.jsFunctions = group(jsFunctions, { propertiesToConsider: ["name", "interface"] });
+	collectedJavaScriptStuff.jsAttributes = group(jsAttributes, { propertiesToConsider: ["name", "interface", "static"] });
+	collectedJavaScriptStuff.jsFunctions = group(jsFunctions, { propertiesToConsider: ["name", "interface", "static"] });
 
 	// collectedStuff.cssTypes = cssTypes;
 	// collectedStuff.cssValues = cssValues;
@@ -375,7 +389,8 @@ export const analyzeDocument = (doc: Document, { url }: { url: string }) => {
 export const exfiltrateIDL = (doc: Document, { url }: { url: string }) => {
 	let idl = "";
 
-	$idlLoop: for (const container of doc.querySelectorAll("pre > code.idl, :not(#idl-index) + pre.idl:not(.example)")) {
+	$idlLoop: for (const container of doc.querySelectorAll("pre > code.idl, pre.idl:not(.example)")) {
+		if (container.previousElementSibling?.id === "idl-index") continue $idlLoop;
 		container.querySelector(":scope > .idlHeader")?.remove();
 		let isPrerendered = container.childElementCount > 0;
 		// if (!isPrerendered) {
@@ -394,7 +409,7 @@ export const exfiltrateIDL = (doc: Document, { url }: { url: string }) => {
 	return idl;
 };
 
-export const analyzeIDL = (idl: string, { url }: { url: string }) => {
+export const analyzeIDL = (idl: string, { url, generator }: { url: string, generator: string }) => {
 	const tree = parseIDL(idl);
 
 	if (tree.length === 0) {
@@ -404,13 +419,15 @@ export const analyzeIDL = (idl: string, { url }: { url: string }) => {
 
 	for (const item of tree) {
 		if (["interface", "interface mixin", "namespace", "dictionary"].includes(item.type)) {
-			// TODO: reverse-engineer actual link ids
+			// TODO: reverse-engineer actual link ids better
+			const originalId = (generator === "respec" ? "dom-" : item.type === "dictionary" ? "dictdef-" : item.type === "namespace" ? "namespacedef-" : "") + item.name.toLowerCase();
+			const id = item.partial ? `ref-for-${originalId}` : originalId;
 			if (item.type === "dictionary") {
 				jsDictionaries.push({
 					name: item.name,
 					...(item.partial ? { partial: true } : {}),
 					spec: url,
-					id: item.name,
+					id,
 				});
 			} else {
 				const inheritance = item.inheritance;
@@ -422,7 +439,7 @@ export const analyzeIDL = (idl: string, { url }: { url: string }) => {
 					...(item.partial ? { partial: true } : {}),
 					...(item.type === "interface mixin" ? { mixin: true } : {}),
 					spec: url,
-					id: item.name,
+					id,
 				});
 			}
 
@@ -433,7 +450,7 @@ export const analyzeIDL = (idl: string, { url }: { url: string }) => {
 						interface: item.name,
 						...(item.type === "namespace" || member.special === "static" ? { static: true } : {}),
 						spec: url,
-						id: item.name,
+						id,
 					});
 				} else if (["attribute", "const"].includes(member.type)) {
 					jsAttributes.push({
@@ -441,14 +458,14 @@ export const analyzeIDL = (idl: string, { url }: { url: string }) => {
 						interface: item.name,
 						...(item.type === "namespace" || member.type === "const" || member.special === "static" ? { static: true } : {}),
 						spec: url,
-						id: item.name,
+						id,
 					});
 				} else if (member.type === "field") {
 					jsDictionaryFields.push({
 						name: member.name,
 						dictionary: item.name,
 						spec: url,
-						id: item.name,
+						id,
 					});
 				}
 			}

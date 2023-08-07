@@ -56,7 +56,7 @@ let currentTab = "specifications";
 
 const openLinksInNewTab = window.matchMedia("(any-hover: none)").matches;
 
-document.querySelector("#tabs").addEventListener("change", ({ target }) => {
+document.querySelector("fieldset#tabs").addEventListener("change", ({ target }) => {
 	currentTab = target.value;
 	for (const child of [...mainList.children, ...tocList.children]) {
 		if (child.localName !== "template") child.remove();
@@ -79,6 +79,8 @@ document.querySelector("#tabs").addEventListener("change", ({ target }) => {
 
 const nameToId = (/** @type {string} */ name) => name.toLowerCase().replaceAll(/\W+/g, "-");
 
+let shortnameMap = new Map();
+
 const { specs: specsData } = await (await globalThis.fetch("./index/specs.json")).json();
 
 const renderSpecs = () => {
@@ -88,7 +90,7 @@ const renderSpecs = () => {
 		{
 			const clone = tocFragment.cloneNode(true);
 			clone.querySelector(".link-to-list").textContent = groupName;
-			clone.querySelector(".link-to-list").href = "#" + groupLinkId;
+			clone.querySelector("a.link-to-list").href = "#" + groupLinkId;
 			tocList.append(clone);
 		}
 
@@ -100,7 +102,8 @@ const renderSpecs = () => {
 
 		const specsList = clone.querySelector(".group-specs");
 		const specFragment = specsList.querySelector(":scope > template").content;
-		for (const { title, url, repo, tests } of specs) {
+		for (const { title, url, repo, tests, shortname } of specs) {
+			shortnameMap.set(url, shortname);
 			const specClone = specFragment.cloneNode(true);
 			specClone.querySelector(".spec-name").textContent = title;
 			const urlObject = new URL(url);
@@ -139,7 +142,7 @@ const {
 	cssPseudoElements,
 	cssDescriptors,
 	cssUnits,
-} = await (await window.fetch("./index/old/css.json")).json();
+} = await (await window.fetch("./index/css.json")).json();
 
 const renderCSS = () => {
 	const allData = [
@@ -159,7 +162,7 @@ const renderCSS = () => {
 		{
 			const clone = tocFragment.cloneNode(true);
 			clone.querySelector(".link-to-list").textContent = categoryName;
-			clone.querySelector(".link-to-list").href = "#" + categoryId;
+			clone.querySelector("a.link-to-list").href = "#" + categoryId;
 			tocList.append(clone);
 		}
 
@@ -171,26 +174,23 @@ const renderCSS = () => {
 		const itemFragment = list.querySelector(":scope > template").content;
 		let /** @type {HTMLElement} */ specList;
 		let /** @type {string} */ prevName;
-		for (const { name, id, spec } of data) {
-			const url = `${spec}#${id}`;
-			if (name !== prevName) {
-				const itemClone = itemFragment.cloneNode(true);
-				itemClone.querySelector(".name").textContent = name;
-				itemClone.querySelector("a.name").href = url;
-				specList = itemClone.querySelector(".spec-list");
-				list.append(itemClone);
-			}
+		for (const { name, definitions } of data) {
+			const itemClone = itemFragment.cloneNode(true);
+			itemClone.querySelector(".name").textContent = name;
+			specList = itemClone.querySelector(".spec-list");
 			const specFragment = specList.querySelector(":scope > template").content;
-			{
+			for (const [i, { spec, id }] of definitions.entries()) {
+				const url = `${spec}#${id}`;
+				if (i === 0) itemClone.querySelector("a.name").href = url;
 				const specClone = specFragment.cloneNode(true);
-				const { specId } = spec.match(/(\/|\:)(?<specId>[^\/\:]+)\/?$/).groups;
+				const shortname = shortnameMap.get(spec);
 				specClone.querySelector("a.spec").href = url;
-				specClone.querySelector(".spec-identifier").textContent = specId;
+				specClone.querySelector(".spec-identifier").textContent = shortname;
 				specClone.querySelector(".spec-link-hash").textContent = "#" + id;
 				if (openLinksInNewTab) specClone.querySelector("a.spec").target = "_blank";
 				specList.append(specClone);
 			}
-			prevName = name;
+			list.append(itemClone);
 		}
 		mainList.append(clone);
 	}
@@ -201,13 +201,17 @@ const {
 	jsInterfaces,
 	jsAttributes,
 	jsFunctions,
-} = await (await window.fetch("./index/old/javascript.json")).json();
+	jsDictionaries,
+	jsDictionaryFields,
+} = await (await window.fetch("./index/javascript.json")).json();
 
 const renderJavaScript = () => {
 	const allData = [
 		["Interfaces", jsInterfaces],
 		["Attributes", jsAttributes],
 		["Functions", jsFunctions],
+		["Dictionaries", jsDictionaries],
+		["Dictionary fields", jsDictionaryFields],
 	];
 	for (const [categoryName, data] of allData) {
 		const categoryId = nameToId(categoryName);
@@ -215,7 +219,7 @@ const renderJavaScript = () => {
 		{
 			const clone = tocFragment.cloneNode(true);
 			clone.querySelector(".link-to-list").textContent = categoryName;
-			clone.querySelector(".link-to-list").href = "#" + categoryId;
+			clone.querySelector("a.link-to-list").href = "#" + categoryId;
 			tocList.append(clone);
 		}
 
@@ -227,9 +231,8 @@ const renderJavaScript = () => {
 		const itemFragment = list.querySelector(":scope > template").content;
 		let /** @type {HTMLElement} */ specList;
 		let /** @type {string} */ prevDisplayName;
-		for (const { name, id, spec, static: isStatic, interface: interfaceName } of data) {
-			// const url = `${spec}#${id}`;
-			const url = spec;
+		$dataLoop: for (const { name, definitions, static: isStatic, interface: interfaceName, dictionary } of data) {
+			if (!name) continue $dataLoop;
 			let displayName = name;
 			if (categoryId === "attributes") {
 				if (interfaceName === "Window") displayName = `${name} (window)`;
@@ -239,25 +242,25 @@ const renderJavaScript = () => {
 				if (interfaceName === "Window") displayName = `${name}() (window)`;
 				else if (isStatic) displayName = `${name}() (${interfaceName})`;
 				else displayName = `${name}() (${interfaceName}.prototype)`;
+			} else if (categoryId === "dictionary-fields") {
+				displayName = `${name} (${dictionary})`;
 			}
-			if (displayName !== prevDisplayName) {
-				const itemClone = itemFragment.cloneNode(true);
-				itemClone.querySelector(".name").textContent = displayName;
-				itemClone.querySelector("a.name").href = url;
-				specList = itemClone.querySelector(".spec-list");
-				list.append(itemClone);
-			}
+			const itemClone = itemFragment.cloneNode(true);
+			itemClone.querySelector(".name").textContent = displayName;
+			specList = itemClone.querySelector(".spec-list");
 			const specFragment = specList.querySelector(":scope > template").content;
-			{
+			for (const [i, { spec, id }] of definitions.entries()) {
+				const url = `${spec}#${id}`;
+				if (i === 0) itemClone.querySelector("a.name").href = url;
 				const specClone = specFragment.cloneNode(true);
-				const { specId } = spec.match(/(\/|\:)(?<specId>[^\/\:]+)\/?$/).groups;
+				const shortname = shortnameMap.get(spec);
 				specClone.querySelector("a.spec").href = url;
-				specClone.querySelector(".spec-identifier").textContent = specId;
-				specClone.querySelector(".spec-link-hash").textContent = "#todo";
+				specClone.querySelector(".spec-identifier").textContent = shortname;
+				specClone.querySelector(".spec-link-hash").textContent = "#" + id;
 				if (openLinksInNewTab) specClone.querySelector("a.spec").target = "_blank";
 				specList.append(specClone);
 			}
-			prevDisplayName = displayName;
+			list.append(itemClone);
 		}
 		mainList.append(clone);
 	}

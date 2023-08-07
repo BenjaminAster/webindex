@@ -1,0 +1,4669 @@
+[
+	{
+		"name": "--*",
+		"value": "<declaration-value>?",
+		"id": "propdef-",
+		"spec": "https://drafts.csswg.org/css-variables-2/"
+	},
+	{
+		"name": "--*",
+		"value": "<declaration-value>?",
+		"id": "propdef-",
+		"spec": "https://drafts.csswg.org/css-variables-1/"
+	},
+	{
+		"name": "-webkit-appearance",
+		"value": "none | auto | <compat-auto> | <compat-special>",
+		"id": "propdef--webkit-appearance",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "-webkit-line-clamp",
+		"value": "none | <integer [1,∞]>",
+		"id": "propdef--webkit-line-clamp",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "-webkit-text-fill-color",
+		"value": "<color>",
+		"id": "propdef--webkit-text-fill-color",
+		"spec": "https://compat.spec.whatwg.org/"
+	},
+	{
+		"name": "-webkit-text-stroke",
+		"value": "<line-width> || <color>",
+		"id": "propdef--webkit-text-stroke",
+		"spec": "https://compat.spec.whatwg.org/"
+	},
+	{
+		"name": "-webkit-text-stroke-color",
+		"value": "<color>",
+		"id": "propdef--webkit-text-stroke-color",
+		"spec": "https://compat.spec.whatwg.org/"
+	},
+	{
+		"name": "-webkit-text-stroke-width",
+		"value": "<line-width>",
+		"id": "propdef--webkit-text-stroke-width",
+		"spec": "https://compat.spec.whatwg.org/"
+	},
+	{
+		"name": "-webkit-user-select",
+		"value": "auto | text | none | contain | all",
+		"id": "propdef--webkit-user-select",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "accent-color",
+		"value": "auto | <color>",
+		"id": "propdef-accent-color",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "align-content",
+		"value": "normal | <baseline-position> | <content-distribution> | <overflow-position>? <content-position>",
+		"id": "propdef-align-content",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "align-content",
+		"value": "flex-start | flex-end | center | space-between | space-around | stretch",
+		"id": "propdef-align-content",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "align-items",
+		"value": "normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]",
+		"id": "propdef-align-items",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "align-items",
+		"value": "anchor-center",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-align-items",
+		"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+	},
+	{
+		"name": "align-items",
+		"value": "flex-start | flex-end | center | baseline | stretch",
+		"id": "propdef-align-items",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "align-self",
+		"value": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position>",
+		"id": "propdef-align-self",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "align-self",
+		"value": "anchor-center",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-align-self",
+		"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+	},
+	{
+		"name": "align-self",
+		"value": "auto | flex-start | flex-end | center | baseline | stretch",
+		"id": "propdef-align-self",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "align-tracks",
+		"value": "[normal | <baseline-position> | <content-distribution> | <overflow-position>? <content-position>]#",
+		"id": "propdef-align-tracks",
+		"spec": "https://drafts.csswg.org/css-grid-3/"
+	},
+	{
+		"name": "alignment-baseline",
+		"value": "baseline | text-bottom | alphabetic | ideographic | middle | central | mathematical | text-top",
+		"id": "propdef-alignment-baseline",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "all",
+		"value": "initial | inherit | unset",
+		"id": "propdef-all",
+		"spec": "https://drafts.csswg.org/css-cascade-3/"
+	},
+	{
+		"name": "all",
+		"value": "initial | inherit | unset | revert",
+		"id": "propdef-all",
+		"spec": "https://drafts.csswg.org/css-cascade-4/"
+	},
+	{
+		"name": "all",
+		"value": "initial | inherit | unset | revert | revert-layer",
+		"id": "propdef-all",
+		"spec": "https://drafts.csswg.org/css-cascade-5/"
+	},
+	{
+		"name": "anchor-default",
+		"value": "<anchor-element>",
+		"id": "propdef-anchor-default",
+		"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+	},
+	{
+		"name": "anchor-name",
+		"value": "none | <dashed-ident>",
+		"id": "propdef-anchor-name",
+		"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+	},
+	{
+		"name": "animation",
+		"value": "<single-animation>#",
+		"id": "propdef-animation",
+		"spec": "https://drafts.csswg.org/css-animations-1/"
+	},
+	{
+		"name": "animation-composition",
+		"value": "<single-animation-composition>#",
+		"id": "propdef-animation-composition",
+		"spec": "https://drafts.csswg.org/css-animations-2/"
+	},
+	{
+		"name": "animation-delay",
+		"value": "<time>#",
+		"id": "propdef-animation-delay",
+		"spec": "https://drafts.csswg.org/css-animations-1/"
+	},
+	{
+		"name": "animation-direction",
+		"value": "<single-animation-direction>#",
+		"id": "propdef-animation-direction",
+		"spec": "https://drafts.csswg.org/css-animations-1/"
+	},
+	{
+		"name": "animation-duration",
+		"value": "<time [0s,∞]>#",
+		"id": "propdef-animation-duration",
+		"spec": "https://drafts.csswg.org/css-animations-1/"
+	},
+	{
+		"name": "animation-duration",
+		"value": "[ auto | <time [0s,∞]> ]#",
+		"id": "propdef-animation-duration",
+		"spec": "https://drafts.csswg.org/css-animations-2/"
+	},
+	{
+		"name": "animation-fill-mode",
+		"value": "<single-animation-fill-mode>#",
+		"id": "propdef-animation-fill-mode",
+		"spec": "https://drafts.csswg.org/css-animations-1/"
+	},
+	{
+		"name": "animation-iteration-count",
+		"value": "<single-animation-iteration-count>#",
+		"id": "propdef-animation-iteration-count",
+		"spec": "https://drafts.csswg.org/css-animations-1/"
+	},
+	{
+		"name": "animation-name",
+		"value": "[ none | <keyframes-name> ]#",
+		"id": "propdef-animation-name",
+		"spec": "https://drafts.csswg.org/css-animations-1/"
+	},
+	{
+		"name": "animation-play-state",
+		"value": "<single-animation-play-state>#",
+		"id": "propdef-animation-play-state",
+		"spec": "https://drafts.csswg.org/css-animations-1/"
+	},
+	{
+		"name": "animation-range",
+		"value": "[ <'animation-range-start'> <'animation-range-end'>? ]#",
+		"id": "propdef-animation-range",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "animation-range-end",
+		"value": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+		"id": "propdef-animation-range-end",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "animation-range-start",
+		"value": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+		"id": "propdef-animation-range-start",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "animation-timeline",
+		"value": "<single-animation-timeline>#",
+		"id": "propdef-animation-timeline",
+		"spec": "https://drafts.csswg.org/css-animations-2/"
+	},
+	{
+		"name": "animation-timing-function",
+		"value": "<easing-function>#",
+		"id": "propdef-animation-timing-function",
+		"spec": "https://drafts.csswg.org/css-animations-1/"
+	},
+	{
+		"name": "app-region",
+		"value": "drag | no-drag",
+		"id": "dfn-app-region",
+		"spec": "https://wicg.github.io/manifest-incubations/"
+	},
+	{
+		"name": "appearance",
+		"value": "none | auto | <compat-auto> | <compat-special>",
+		"id": "propdef-appearance",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "aspect-ratio",
+		"value": "auto || <ratio>",
+		"id": "propdef-aspect-ratio",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "backdrop-filter",
+		"value": "none | <filter-value-list>",
+		"id": "propdef-backdrop-filter",
+		"spec": "https://drafts.fxtf.org/filter-effects-2/"
+	},
+	{
+		"name": "backface-visibility",
+		"value": "visible | hidden",
+		"id": "propdef-backface-visibility",
+		"spec": "https://drafts.csswg.org/css-transforms-2/"
+	},
+	{
+		"name": "background",
+		"value": "[<bg-layer># ,]? <final-bg-layer>",
+		"id": "propdef-background",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "background-attachment",
+		"value": "<attachment>#",
+		"id": "propdef-background-attachment",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "background-blend-mode",
+		"value": "<mix-blend-mode>#",
+		"id": "propdef-background-blend-mode",
+		"spec": "https://drafts.fxtf.org/compositing-2/"
+	},
+	{
+		"name": "background-blend-mode",
+		"value": "<blend-mode>#",
+		"id": "propdef-background-blend-mode",
+		"spec": "https://drafts.fxtf.org/compositing-1/"
+	},
+	{
+		"name": "background-clip",
+		"value": "<bg-clip>#",
+		"id": "propdef-background-clip",
+		"spec": "https://drafts.csswg.org/css-backgrounds-4/"
+	},
+	{
+		"name": "background-clip",
+		"value": "<box>#",
+		"id": "propdef-background-clip",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "background-color",
+		"value": "<color>",
+		"id": "propdef-background-color",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "background-image",
+		"value": "<bg-image>#",
+		"id": "propdef-background-image",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "background-origin",
+		"value": "<box>#",
+		"id": "propdef-background-origin",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "background-position",
+		"value": "<bg-position>#",
+		"id": "propdef-background-position",
+		"spec": "https://drafts.csswg.org/css-backgrounds-4/"
+	},
+	{
+		"name": "background-position",
+		"value": "<bg-position>#",
+		"id": "propdef-background-position",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "background-position-block",
+		"value": "[ center | [ start | end ]? <length-percentage>? ]#",
+		"id": "propdef-background-position-block",
+		"spec": "https://drafts.csswg.org/css-backgrounds-4/"
+	},
+	{
+		"name": "background-position-inline",
+		"value": "[ center | [ start | end ]? <length-percentage>? ]#",
+		"id": "propdef-background-position-inline",
+		"spec": "https://drafts.csswg.org/css-backgrounds-4/"
+	},
+	{
+		"name": "background-position-x",
+		"value": "[ center | [ [ left | right | x-start | x-end ]? <length-percentage>? ]! ]#",
+		"id": "propdef-background-position-x",
+		"spec": "https://drafts.csswg.org/css-backgrounds-4/"
+	},
+	{
+		"name": "background-position-y",
+		"value": "[ center | [ [ top | bottom | y-start | y-end ]? <length-percentage>? ]! ]#",
+		"id": "propdef-background-position-y",
+		"spec": "https://drafts.csswg.org/css-backgrounds-4/"
+	},
+	{
+		"name": "background-repeat",
+		"value": "<repeat-style>#",
+		"id": "propdef-background-repeat",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "background-size",
+		"value": "<bg-size>#",
+		"id": "propdef-background-size",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "baseline-shift",
+		"value": "<length-percentage> | sub | super | top | center | bottom",
+		"id": "propdef-baseline-shift",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "baseline-source",
+		"value": "auto | first | last",
+		"id": "propdef-baseline-source",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "block-ellipsis",
+		"value": "none | auto | <string>",
+		"id": "propdef-block-ellipsis",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "block-size",
+		"value": "<'width'>",
+		"id": "propdef-block-size",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "block-size",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-block-size",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "block-step",
+		"value": "<'block-step-size'> || <'block-step-insert'> || <'block-step-align'> || <'block-step-round'>",
+		"id": "propdef-block-step",
+		"spec": "https://drafts.csswg.org/css-rhythm-1/"
+	},
+	{
+		"name": "block-step-align",
+		"value": "auto | center | start | end",
+		"id": "propdef-block-step-align",
+		"spec": "https://drafts.csswg.org/css-rhythm-1/"
+	},
+	{
+		"name": "block-step-insert",
+		"value": "margin | padding",
+		"id": "propdef-block-step-insert",
+		"spec": "https://drafts.csswg.org/css-rhythm-1/"
+	},
+	{
+		"name": "block-step-round",
+		"value": "up | down | nearest",
+		"id": "propdef-block-step-round",
+		"spec": "https://drafts.csswg.org/css-rhythm-1/"
+	},
+	{
+		"name": "block-step-size",
+		"value": "none | <length [0,∞]>",
+		"id": "propdef-block-step-size",
+		"spec": "https://drafts.csswg.org/css-rhythm-1/"
+	},
+	{
+		"name": "bookmark-label",
+		"value": "<content-list>",
+		"id": "propdef-bookmark-label",
+		"spec": "https://drafts.csswg.org/css-content-3/"
+	},
+	{
+		"name": "bookmark-level",
+		"value": "none | <integer [1,∞]>",
+		"id": "propdef-bookmark-level",
+		"spec": "https://drafts.csswg.org/css-content-3/"
+	},
+	{
+		"name": "bookmark-state",
+		"value": "open | closed",
+		"id": "propdef-bookmark-state",
+		"spec": "https://drafts.csswg.org/css-content-3/"
+	},
+	{
+		"name": "border",
+		"value": "<line-width> || <line-style> || <color>",
+		"id": "propdef-border",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-block",
+		"value": "<'border-block-start'>",
+		"id": "propdef-border-block",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-color",
+		"value": "<'border-top-color'>{1,2}",
+		"id": "propdef-border-block-color",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-end",
+		"value": "<'border-top-width'> || <'border-top-style'> || <color>",
+		"id": "propdef-border-block-end",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-end-color",
+		"value": "<'border-top-color'>",
+		"id": "propdef-border-block-end-color",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-end-style",
+		"value": "<'border-top-style'>",
+		"id": "propdef-border-block-end-style",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-end-width",
+		"value": "<'border-top-width'>",
+		"id": "propdef-border-block-end-width",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-start",
+		"value": "<'border-top-width'> || <'border-top-style'> || <color>",
+		"id": "propdef-border-block-start",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-start-color",
+		"value": "<'border-top-color'>",
+		"id": "propdef-border-block-start-color",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-start-style",
+		"value": "<'border-top-style'>",
+		"id": "propdef-border-block-start-style",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-start-width",
+		"value": "<'border-top-width'>",
+		"id": "propdef-border-block-start-width",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-style",
+		"value": "<'border-top-style'>{1,2}",
+		"id": "propdef-border-block-style",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-block-width",
+		"value": "<'border-top-width'>{1,2}",
+		"id": "propdef-border-block-width",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-bottom",
+		"value": "<line-width> || <line-style> || <color>",
+		"id": "propdef-border-bottom",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-bottom-color",
+		"value": "<color>",
+		"id": "propdef-border-bottom-color",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-bottom-left-radius",
+		"value": "<length-percentage [0,∞]>{1,2}",
+		"id": "propdef-border-bottom-left-radius",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-bottom-right-radius",
+		"value": "<length-percentage [0,∞]>{1,2}",
+		"id": "propdef-border-bottom-right-radius",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-bottom-style",
+		"value": "<line-style>",
+		"id": "propdef-border-bottom-style",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-bottom-width",
+		"value": "<line-width>",
+		"id": "propdef-border-bottom-width",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-boundary",
+		"value": "none | parent | display",
+		"id": "propdef-border-boundary",
+		"spec": "https://drafts.csswg.org/css-round-display-1/"
+	},
+	{
+		"name": "border-collapse",
+		"value": "separate | collapse",
+		"id": "propdef-border-collapse",
+		"spec": "https://drafts.csswg.org/css-tables-3/"
+	},
+	{
+		"name": "border-color",
+		"value": "<color>{1,4}",
+		"id": "propdef-border-color",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-end-end-radius",
+		"value": "<'border-top-left-radius'>",
+		"id": "propdef-border-end-end-radius",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-end-start-radius",
+		"value": "<'border-top-left-radius'>",
+		"id": "propdef-border-end-start-radius",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-image",
+		"value": "<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>",
+		"id": "propdef-border-image",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-image-outset",
+		"value": "[ <length [0,∞]> | <number [0,∞]> ]{1,4}",
+		"id": "propdef-border-image-outset",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-image-repeat",
+		"value": "[ stretch | repeat | round | space ]{1,2}",
+		"id": "propdef-border-image-repeat",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-image-slice",
+		"value": "[<number [0,∞]> | <percentage [0,∞]>]{1,4} && fill?",
+		"id": "propdef-border-image-slice",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-image-source",
+		"value": "none | <image>",
+		"id": "propdef-border-image-source",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-image-width",
+		"value": "[ <length-percentage [0,∞]> | <number [0,∞]> | auto ]{1,4}",
+		"id": "propdef-border-image-width",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-inline",
+		"value": "<'border-block-start'>",
+		"id": "propdef-border-inline",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-color",
+		"value": "<'border-top-color'>{1,2}",
+		"id": "propdef-border-inline-color",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-end",
+		"value": "<'border-top-width'> || <'border-top-style'> || <color>",
+		"id": "propdef-border-inline-end",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-end-color",
+		"value": "<'border-top-color'>",
+		"id": "propdef-border-inline-end-color",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-end-style",
+		"value": "<'border-top-style'>",
+		"id": "propdef-border-inline-end-style",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-end-width",
+		"value": "<'border-top-width'>",
+		"id": "propdef-border-inline-end-width",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-start",
+		"value": "<'border-top-width'> || <'border-top-style'> || <color>",
+		"id": "propdef-border-inline-start",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-start-color",
+		"value": "<'border-top-color'>",
+		"id": "propdef-border-inline-start-color",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-start-style",
+		"value": "<'border-top-style'>",
+		"id": "propdef-border-inline-start-style",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-start-width",
+		"value": "<'border-top-width'>",
+		"id": "propdef-border-inline-start-width",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-style",
+		"value": "<'border-top-style'>{1,2}",
+		"id": "propdef-border-inline-style",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-inline-width",
+		"value": "<'border-top-width'>{1,2}",
+		"id": "propdef-border-inline-width",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-left",
+		"value": "<line-width> || <line-style> || <color>",
+		"id": "propdef-border-left",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-left-color",
+		"value": "<color>",
+		"id": "propdef-border-left-color",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-left-style",
+		"value": "<line-style>",
+		"id": "propdef-border-left-style",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-left-width",
+		"value": "<line-width>",
+		"id": "propdef-border-left-width",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-radius",
+		"value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
+		"id": "propdef-border-radius",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-right",
+		"value": "<line-width> || <line-style> || <color>",
+		"id": "propdef-border-right",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-right-color",
+		"value": "<color>",
+		"id": "propdef-border-right-color",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-right-style",
+		"value": "<line-style>",
+		"id": "propdef-border-right-style",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-right-width",
+		"value": "<line-width>",
+		"id": "propdef-border-right-width",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-spacing",
+		"value": "<length>{1,2}",
+		"id": "propdef-border-spacing",
+		"spec": "https://drafts.csswg.org/css-tables-3/"
+	},
+	{
+		"name": "border-start-end-radius",
+		"value": "<'border-top-left-radius'>",
+		"id": "propdef-border-start-end-radius",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-start-start-radius",
+		"value": "<'border-top-left-radius'>",
+		"id": "propdef-border-start-start-radius",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "border-style",
+		"value": "<line-style>{1,4}",
+		"id": "propdef-border-style",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-top",
+		"value": "<line-width> || <line-style> || <color>",
+		"id": "propdef-border-top",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-top-color",
+		"value": "<color>",
+		"id": "propdef-border-top-color",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-top-left-radius",
+		"value": "<length-percentage [0,∞]>{1,2}",
+		"id": "propdef-border-top-left-radius",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-top-right-radius",
+		"value": "<length-percentage [0,∞]>{1,2}",
+		"id": "propdef-border-top-right-radius",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-top-style",
+		"value": "<line-style>",
+		"id": "propdef-border-top-style",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-top-width",
+		"value": "<line-width>",
+		"id": "propdef-border-top-width",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "border-width",
+		"value": "<line-width>{1,4}",
+		"id": "propdef-border-width",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "bottom",
+		"value": "auto | <length-percentage>",
+		"id": "propdef-bottom",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "box-decoration-break",
+		"value": "slice | clone",
+		"id": "propdef-box-decoration-break",
+		"spec": "https://drafts.csswg.org/css-break-3/"
+	},
+	{
+		"name": "box-decoration-break",
+		"value": "slice | clone",
+		"id": "propdef-box-decoration-break",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "box-shadow",
+		"value": "none | <shadow>#",
+		"id": "propdef-box-shadow",
+		"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+	},
+	{
+		"name": "box-sizing",
+		"value": "content-box | border-box",
+		"id": "propdef-box-sizing",
+		"spec": "https://drafts.csswg.org/css-sizing-3/"
+	},
+	{
+		"name": "box-sizing",
+		"value": "content-box | border-box",
+		"id": "propdef-box-sizing",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "box-snap",
+		"value": "none | block-start | block-end | center | baseline | last-baseline",
+		"id": "propdef-box-snap",
+		"spec": "https://drafts.csswg.org/css-line-grid-1/"
+	},
+	{
+		"name": "break-after",
+		"value": "auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
+		"id": "propdef-break-after",
+		"spec": "https://drafts.csswg.org/css-break-3/"
+	},
+	{
+		"name": "break-after",
+		"value": "auto | avoid | always | all | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
+		"id": "propdef-break-after",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "break-before",
+		"value": "auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
+		"id": "propdef-break-before",
+		"spec": "https://drafts.csswg.org/css-break-3/"
+	},
+	{
+		"name": "break-before",
+		"value": "auto | avoid | always | all | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
+		"id": "propdef-break-before",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "break-inside",
+		"value": "auto | avoid | avoid-page | avoid-column | avoid-region",
+		"id": "propdef-break-inside",
+		"spec": "https://drafts.csswg.org/css-break-3/"
+	},
+	{
+		"name": "break-inside",
+		"value": "auto | avoid | avoid-page | avoid-column | avoid-region",
+		"id": "propdef-break-inside",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "caption-side",
+		"value": "inline-start | inline-end",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-caption-side①",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "caption-side",
+		"value": "top | bottom",
+		"id": "propdef-caption-side",
+		"spec": "https://drafts.csswg.org/css-tables-3/"
+	},
+	{
+		"name": "caret",
+		"value": "<'caret-color'> || <'caret-shape'>",
+		"id": "propdef-caret",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "caret-color",
+		"value": "auto | <color>",
+		"id": "propdef-caret-color",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "caret-color",
+		"value": "auto | <color>",
+		"id": "propdef-caret-color",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "caret-shape",
+		"value": "auto | bar | block | underscore",
+		"id": "propdef-caret-shape",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "clear",
+		"value": "inline-start | inline-end",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-clear①",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "clear",
+		"value": "inline-start | inline-end | block-start | block-end | left | right | top | bottom | none",
+		"id": "propdef-clear",
+		"spec": "https://drafts.csswg.org/css-page-floats-3/"
+	},
+	{
+		"name": "clip",
+		"value": "<rect()> | auto",
+		"id": "propdef-clip",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "clip-path",
+		"value": "<clip-source> | [ <basic-shape> || <geometry-box> ] | none",
+		"id": "propdef-clip-path",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "clip-rule",
+		"value": "nonzero | evenodd",
+		"id": "propdef-clip-rule",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "color",
+		"value": "<color> | inherit",
+		"id": "color1",
+		"spec": "https://drafts.csswg.org/css-color-3/"
+	},
+	{
+		"name": "color",
+		"value": "<color>",
+		"id": "propdef-color",
+		"spec": "https://drafts.csswg.org/css-color-4/"
+	},
+	{
+		"name": "color-adjust",
+		"value": "<'print-color-adjust'>",
+		"id": "propdef-color-adjust",
+		"spec": "https://drafts.csswg.org/css-color-adjust-1/"
+	},
+	{
+		"name": "color-interpolation",
+		"value": "auto | sRGB | linearRGB",
+		"id": "ColorInterpolationProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "color-interpolation-filters",
+		"value": "auto | sRGB | linearRGB",
+		"id": "propdef-color-interpolation-filters",
+		"spec": "https://drafts.fxtf.org/filter-effects-1/"
+	},
+	{
+		"name": "color-scheme",
+		"value": "normal | [ light | dark | <custom-ident> ]+ && only?",
+		"id": "propdef-color-scheme",
+		"spec": "https://drafts.csswg.org/css-color-adjust-1/"
+	},
+	{
+		"name": "column-count",
+		"value": "auto | <integer [1,∞]>",
+		"id": "propdef-column-count",
+		"spec": "https://drafts.csswg.org/css-multicol-1/"
+	},
+	{
+		"name": "column-fill",
+		"value": "auto | balance | balance-all",
+		"id": "propdef-column-fill",
+		"spec": "https://drafts.csswg.org/css-multicol-1/"
+	},
+	{
+		"name": "column-gap",
+		"value": "normal | <length-percentage [0,∞]>",
+		"id": "propdef-column-gap",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "column-rule",
+		"value": "<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>",
+		"id": "propdef-column-rule",
+		"spec": "https://drafts.csswg.org/css-multicol-1/"
+	},
+	{
+		"name": "column-rule-color",
+		"value": "<color>",
+		"id": "propdef-column-rule-color",
+		"spec": "https://drafts.csswg.org/css-multicol-1/"
+	},
+	{
+		"name": "column-rule-style",
+		"value": "<line-style>",
+		"id": "propdef-column-rule-style",
+		"spec": "https://drafts.csswg.org/css-multicol-1/"
+	},
+	{
+		"name": "column-rule-width",
+		"value": "<line-width>",
+		"id": "propdef-column-rule-width",
+		"spec": "https://drafts.csswg.org/css-multicol-1/"
+	},
+	{
+		"name": "column-span",
+		"value": "none | <integer [1,∞]> | all | auto",
+		"id": "propdef-column-span",
+		"spec": "https://drafts.csswg.org/css-multicol-2/"
+	},
+	{
+		"name": "column-span",
+		"value": "none | all",
+		"id": "propdef-column-span",
+		"spec": "https://drafts.csswg.org/css-multicol-1/"
+	},
+	{
+		"name": "column-width",
+		"value": "auto | <length [0,∞]>",
+		"id": "propdef-column-width",
+		"spec": "https://drafts.csswg.org/css-multicol-1/"
+	},
+	{
+		"name": "column-width",
+		"value": "min-content | max-content | fit-content(<length-percentage>)",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-column-width②",
+		"spec": "https://drafts.csswg.org/css-sizing-3/"
+	},
+	{
+		"name": "columns",
+		"value": "<'column-width'> || <'column-count'>",
+		"id": "propdef-columns",
+		"spec": "https://drafts.csswg.org/css-multicol-1/"
+	},
+	{
+		"name": "contain",
+		"value": "none | strict | content | [ size || layout || paint ]",
+		"id": "propdef-contain",
+		"spec": "https://drafts.csswg.org/css-contain-1/"
+	},
+	{
+		"name": "contain",
+		"value": "none | strict | content | [ size || layout || style || paint ]",
+		"id": "propdef-contain",
+		"spec": "https://drafts.csswg.org/css-contain-2/"
+	},
+	{
+		"name": "contain",
+		"value": "none | strict | content | [ [size | inline-size] || layout || style || paint ]",
+		"id": "ref-for-propdef-contain②",
+		"spec": "https://drafts.csswg.org/css-contain-3/"
+	},
+	{
+		"name": "contain-intrinsic-block-size",
+		"value": "auto? [ none | <length> ]",
+		"id": "propdef-contain-intrinsic-block-size",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "contain-intrinsic-height",
+		"value": "auto? [ none | <length> ]",
+		"id": "propdef-contain-intrinsic-height",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "contain-intrinsic-inline-size",
+		"value": "auto? [ none | <length> ]",
+		"id": "propdef-contain-intrinsic-inline-size",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "contain-intrinsic-size",
+		"value": "[ auto? [ none | <length> ] ]{1,2}",
+		"id": "propdef-contain-intrinsic-size",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "contain-intrinsic-width",
+		"value": "auto? [ none | <length> ]",
+		"id": "propdef-contain-intrinsic-width",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "container",
+		"value": "<'container-name'> [ / <'container-type'> ]?",
+		"id": "propdef-container",
+		"spec": "https://drafts.csswg.org/css-contain-3/"
+	},
+	{
+		"name": "container-name",
+		"value": "none | <custom-ident>+",
+		"id": "propdef-container-name",
+		"spec": "https://drafts.csswg.org/css-contain-3/"
+	},
+	{
+		"name": "container-type",
+		"value": "normal | size | inline-size",
+		"id": "propdef-container-type",
+		"spec": "https://drafts.csswg.org/css-contain-3/"
+	},
+	{
+		"name": "content",
+		"value": "normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> ]+ ]?",
+		"id": "propdef-content",
+		"spec": "https://drafts.csswg.org/css-content-3/"
+	},
+	{
+		"name": "content",
+		"value": "element()",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-content①",
+		"spec": "https://drafts.csswg.org/css-gcpm-3/"
+	},
+	{
+		"name": "content-visibility",
+		"value": "visible | auto | hidden",
+		"id": "propdef-content-visibility",
+		"spec": "https://drafts.csswg.org/css-contain-2/"
+	},
+	{
+		"name": "content-visibility",
+		"value": "visible | auto | hidden",
+		"id": "propdef-content-visibility",
+		"spec": "https://drafts.csswg.org/css-contain-3/"
+	},
+	{
+		"name": "continue",
+		"value": "-webkit-discard",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-continue④",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "continue",
+		"value": "auto | discard",
+		"id": "propdef-continue",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "continue",
+		"value": "overflow | paginate | fragments",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-continue①⑧",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "copy-into",
+		"value": "none | [ [ <custom-ident> <content-level>] [, <custom-ident> <content-level>]* ]?",
+		"id": "propdef-copy-into",
+		"spec": "https://drafts.csswg.org/css-gcpm-4/"
+	},
+	{
+		"name": "counter-increment",
+		"value": "[ <counter-name> <integer>? ]+ | none",
+		"id": "propdef-counter-increment",
+		"spec": "https://drafts.csswg.org/css-lists-3/"
+	},
+	{
+		"name": "counter-reset",
+		"value": "[ <counter-name> <integer>? | <reversed-counter-name> <integer>? ]+ | none",
+		"id": "propdef-counter-reset",
+		"spec": "https://drafts.csswg.org/css-lists-3/"
+	},
+	{
+		"name": "counter-set",
+		"value": "[ <counter-name> <integer>? ]+ | none",
+		"id": "propdef-counter-set",
+		"spec": "https://drafts.csswg.org/css-lists-3/"
+	},
+	{
+		"name": "cue",
+		"value": "<'cue-before'> <'cue-after'>?",
+		"id": "propdef-cue",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "cue-after",
+		"value": "<uri> <decibel>? | none",
+		"id": "propdef-cue-after",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "cue-before",
+		"value": "<uri> <decibel>? | none",
+		"id": "propdef-cue-before",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "cursor",
+		"value": "[ [<url> [<x> <y>]?,]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out ] ]",
+		"id": "propdef-cursor",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "cursor",
+		"value": "[ [ <url> | <url-set> ] [<x> <y>]? ]#? [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out ]",
+		"id": "propdef-cursor",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "cx",
+		"value": "<length-percentage>",
+		"id": "CxProperty",
+		"spec": "https://svgwg.org/svg2-draft/geometry.html"
+	},
+	{
+		"name": "cy",
+		"value": "<length-percentage>",
+		"id": "CyProperty",
+		"spec": "https://svgwg.org/svg2-draft/geometry.html"
+	},
+	{
+		"name": "d",
+		"value": "none | <string>",
+		"id": "DProperty",
+		"spec": "https://svgwg.org/svg2-draft/paths.html"
+	},
+	{
+		"name": "direction",
+		"value": "ltr | rtl",
+		"id": "propdef-direction",
+		"spec": "https://drafts.csswg.org/css-writing-modes-3/"
+	},
+	{
+		"name": "direction",
+		"value": "ltr | rtl",
+		"id": "propdef-direction",
+		"spec": "https://drafts.csswg.org/css-writing-modes-4/"
+	},
+	{
+		"name": "display",
+		"value": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>",
+		"id": "propdef-display",
+		"spec": "https://drafts.csswg.org/css-display-4/"
+	},
+	{
+		"name": "display",
+		"value": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>",
+		"id": "propdef-display",
+		"spec": "https://drafts.csswg.org/css-display-3/"
+	},
+	{
+		"name": "display",
+		"value": "flex | inline-flex",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-display③",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "display",
+		"value": "grid | inline-grid",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-display①",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "display",
+		"value": "grid | inline-grid",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-display②",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "display",
+		"value": "ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-display②",
+		"spec": "https://drafts.csswg.org/css-ruby-1/"
+	},
+	{
+		"name": "display",
+		"value": "<display-outside> || [ <display-inside> | math ]",
+		"onlyNewValues": true,
+		"id": null,
+		"spec": "https://w3c.github.io/mathml-core/"
+	},
+	{
+		"name": "dominant-baseline",
+		"value": "auto | text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top",
+		"id": "propdef-dominant-baseline",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "empty-cells",
+		"value": "show | hide",
+		"id": "propdef-empty-cells",
+		"spec": "https://drafts.csswg.org/css-tables-3/"
+	},
+	{
+		"name": "fill",
+		"value": "<'background'> with modifications",
+		"id": "propdef-fill",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "fill",
+		"value": "<paint>",
+		"id": "FillProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "fill-break",
+		"value": "bounding-box | slice | clone",
+		"id": "propdef-fill-break",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "fill-color",
+		"value": "<color>",
+		"id": "propdef-fill-color",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "fill-image",
+		"value": "<paint>#",
+		"id": "propdef-fill-image",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "fill-opacity",
+		"value": "<'opacity'>",
+		"id": "propdef-fill-opacity",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "fill-opacity",
+		"value": "<‘opacity’>",
+		"id": "FillOpacityProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "fill-origin",
+		"value": "match-parent | fill-box | stroke-box | content-box | padding-box | border-box",
+		"id": "propdef-fill-origin",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "fill-position",
+		"value": "<position>#",
+		"id": "propdef-fill-position",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "fill-repeat",
+		"value": "<repeat-style>#",
+		"id": "propdef-fill-repeat",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "fill-rule",
+		"value": "nonzero | evenodd",
+		"id": "propdef-fill-rule",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "fill-rule",
+		"value": "nonzero | evenodd",
+		"id": "FillRuleProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "fill-size",
+		"value": "<bg-size>#",
+		"id": "propdef-fill-size",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "filter",
+		"value": "none | <filter-value-list>",
+		"id": "propdef-filter",
+		"spec": "https://drafts.fxtf.org/filter-effects-1/"
+	},
+	{
+		"name": "flex",
+		"value": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]",
+		"id": "propdef-flex",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "flex-basis",
+		"value": "content | <'width'>",
+		"id": "propdef-flex-basis",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "flex-direction",
+		"value": "row | row-reverse | column | column-reverse",
+		"id": "propdef-flex-direction",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "flex-flow",
+		"value": "<'flex-direction'> || <'flex-wrap'>",
+		"id": "propdef-flex-flow",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "flex-grow",
+		"value": "<number [0,∞]>",
+		"id": "propdef-flex-grow",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "flex-shrink",
+		"value": "<number [0,∞]>",
+		"id": "propdef-flex-shrink",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "flex-wrap",
+		"value": "nowrap | wrap | wrap-reverse",
+		"id": "propdef-flex-wrap",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "float",
+		"value": "footnote",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-float①",
+		"spec": "https://drafts.csswg.org/css-gcpm-3/"
+	},
+	{
+		"name": "float",
+		"value": "inline-start | inline-end",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-float①",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "float",
+		"value": "block-start | block-end | inline-start | inline-end | snap-block | <snap-block()> | snap-inline | <snap-inline()> | left | right | top | bottom | none",
+		"id": "propdef-float",
+		"spec": "https://drafts.csswg.org/css-page-floats-3/"
+	},
+	{
+		"name": "float-defer",
+		"value": "<integer> | last | none",
+		"id": "propdef-float-defer",
+		"spec": "https://drafts.csswg.org/css-page-floats-3/"
+	},
+	{
+		"name": "float-offset",
+		"value": "<length> | <percentage>",
+		"id": "propdef-float-offset",
+		"spec": "https://drafts.csswg.org/css-page-floats-3/"
+	},
+	{
+		"name": "float-reference",
+		"value": "inline | column | region | page",
+		"id": "propdef-float-reference",
+		"spec": "https://drafts.csswg.org/css-page-floats-3/"
+	},
+	{
+		"name": "flood-color",
+		"value": "<color>",
+		"id": "propdef-flood-color",
+		"spec": "https://drafts.fxtf.org/filter-effects-1/"
+	},
+	{
+		"name": "flood-opacity",
+		"value": "<alpha-value>",
+		"id": "propdef-flood-opacity",
+		"spec": "https://drafts.fxtf.org/filter-effects-1/"
+	},
+	{
+		"name": "flow-from",
+		"value": "<ident> | none",
+		"id": "propdef-flow-from",
+		"spec": "https://drafts.csswg.org/css-regions-1/"
+	},
+	{
+		"name": "flow-into",
+		"value": "none | <ident> [element | content]?",
+		"id": "propdef-flow-into",
+		"spec": "https://drafts.csswg.org/css-regions-1/"
+	},
+	{
+		"name": "font",
+		"value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar",
+		"id": "propdef-font",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-family",
+		"value": "[ <family-name> | <generic-family> ]#",
+		"id": "propdef-font-family",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-feature-settings",
+		"value": "normal | <feature-tag-value>#",
+		"id": "propdef-font-feature-settings",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-kerning",
+		"value": "auto | normal | none",
+		"id": "propdef-font-kerning",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-language-override",
+		"value": "normal | <string>",
+		"id": "propdef-font-language-override",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-optical-sizing",
+		"value": "auto | none",
+		"id": "propdef-font-optical-sizing",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-palette",
+		"value": "normal | light | dark | <palette-identifier>",
+		"id": "propdef-font-palette",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-size",
+		"value": "<absolute-size> | <relative-size> | <length-percentage [0,∞]> | math",
+		"id": "propdef-font-size",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-size-adjust",
+		"value": "none | <number [0,∞]>",
+		"id": "propdef-font-size-adjust",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-size-adjust",
+		"value": "none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number> ]",
+		"id": "propdef-font-size-adjust",
+		"spec": "https://drafts.csswg.org/css-fonts-5/"
+	},
+	{
+		"name": "font-stretch",
+		"value": "normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
+		"id": "propdef-font-stretch",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-style",
+		"value": "normal | italic | oblique <angle [-90deg,90deg]>?",
+		"id": "propdef-font-style",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-synthesis",
+		"value": "none | [ weight || style || small-caps]",
+		"id": "propdef-font-synthesis",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-synthesis-small-caps",
+		"value": "auto | none",
+		"id": "propdef-font-synthesis-small-caps",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-synthesis-style",
+		"value": "auto | none",
+		"id": "propdef-font-synthesis-style",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-synthesis-weight",
+		"value": "auto | none",
+		"id": "propdef-font-synthesis-weight",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-variant",
+		"value": "normal | none | [ [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ] || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ] || [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ] || [ <east-asian-variant-values> || <east-asian-width-values> || ruby ] || [ sub | super ] || [ text | emoji | unicode ] ]",
+		"id": "propdef-font-variant",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-variant-alternates",
+		"value": "normal | [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ]",
+		"id": "propdef-font-variant-alternates",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-variant-caps",
+		"value": "normal | small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps",
+		"id": "propdef-font-variant-caps",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-variant-east-asian",
+		"value": "normal | [ <east-asian-variant-values> || <east-asian-width-values> || ruby ]",
+		"id": "propdef-font-variant-east-asian",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-variant-emoji",
+		"value": "normal | text | emoji | unicode",
+		"id": "propdef-font-variant-emoji",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-variant-ligatures",
+		"value": "normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ]",
+		"id": "propdef-font-variant-ligatures",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-variant-numeric",
+		"value": "normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ]",
+		"id": "propdef-font-variant-numeric",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-variant-position",
+		"value": "normal | sub | super",
+		"id": "propdef-font-variant-position",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-variation-settings",
+		"value": "normal | [ <string> <number>]#",
+		"id": "propdef-font-variation-settings",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "font-weight",
+		"value": "<font-weight-absolute> | bolder | lighter",
+		"id": "propdef-font-weight",
+		"spec": "https://drafts.csswg.org/css-fonts-4/"
+	},
+	{
+		"name": "footnote-display",
+		"value": "block | inline | compact",
+		"id": "propdef-footnote-display",
+		"spec": "https://drafts.csswg.org/css-gcpm-3/"
+	},
+	{
+		"name": "footnote-policy",
+		"value": "auto | line | block",
+		"id": "propdef-footnote-policy",
+		"spec": "https://drafts.csswg.org/css-gcpm-3/"
+	},
+	{
+		"name": "forced-color-adjust",
+		"value": "auto | none | preserve-parent-color",
+		"id": "propdef-forced-color-adjust",
+		"spec": "https://drafts.csswg.org/css-color-adjust-1/"
+	},
+	{
+		"name": "gap",
+		"value": "<'row-gap'> <'column-gap'>?",
+		"id": "propdef-gap",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "glyph-orientation-vertical",
+		"value": "auto | 0deg | 90deg | 0 | 90",
+		"id": "propdef-glyph-orientation-vertical",
+		"spec": "https://drafts.csswg.org/css-writing-modes-3/"
+	},
+	{
+		"name": "glyph-orientation-vertical",
+		"value": "auto | 0deg | 90deg | 0 | 90",
+		"id": "propdef-glyph-orientation-vertical",
+		"spec": "https://drafts.csswg.org/css-writing-modes-4/"
+	},
+	{
+		"name": "grid",
+		"value": "<'grid-template'> | <'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>? | [ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>",
+		"id": "propdef-grid",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid",
+		"value": "<'grid-template'> | <'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>? | [ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>",
+		"id": "propdef-grid",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-area",
+		"value": "<grid-line> [ / <grid-line> ]{0,3}",
+		"id": "propdef-grid-area",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-area",
+		"value": "<grid-line> [ / <grid-line> ]{0,3}",
+		"id": "propdef-grid-area",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-auto-columns",
+		"value": "<track-size>+",
+		"id": "propdef-grid-auto-columns",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-auto-columns",
+		"value": "<track-size>+",
+		"id": "propdef-grid-auto-columns",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-auto-flow",
+		"value": "[ row | column ] || dense",
+		"id": "propdef-grid-auto-flow",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-auto-flow",
+		"value": "[ row | column ] || dense",
+		"id": "propdef-grid-auto-flow",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-auto-rows",
+		"value": "<track-size>+",
+		"id": "propdef-grid-auto-rows",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-auto-rows",
+		"value": "<track-size>+",
+		"id": "propdef-grid-auto-rows",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-column",
+		"value": "<grid-line> [ / <grid-line> ]?",
+		"id": "propdef-grid-column",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-column",
+		"value": "<grid-line> [ / <grid-line> ]?",
+		"id": "propdef-grid-column",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-column-end",
+		"value": "<grid-line>",
+		"id": "propdef-grid-column-end",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-column-end",
+		"value": "<grid-line>",
+		"id": "propdef-grid-column-end",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-column-start",
+		"value": "<grid-line>",
+		"id": "propdef-grid-column-start",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-column-start",
+		"value": "<grid-line>",
+		"id": "propdef-grid-column-start",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-row",
+		"value": "<grid-line> [ / <grid-line> ]?",
+		"id": "propdef-grid-row",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-row",
+		"value": "<grid-line> [ / <grid-line> ]?",
+		"id": "propdef-grid-row",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-row-end",
+		"value": "<grid-line>",
+		"id": "propdef-grid-row-end",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-row-end",
+		"value": "<grid-line>",
+		"id": "propdef-grid-row-end",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-row-start",
+		"value": "<grid-line>",
+		"id": "propdef-grid-row-start",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-row-start",
+		"value": "<grid-line>",
+		"id": "propdef-grid-row-start",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-template",
+		"value": "none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?",
+		"id": "propdef-grid-template",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-template",
+		"value": "none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?",
+		"id": "propdef-grid-template",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-template-areas",
+		"value": "none | <string>+",
+		"id": "propdef-grid-template-areas",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-template-areas",
+		"value": "none | <string>+",
+		"id": "propdef-grid-template-areas",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-template-columns",
+		"value": "masonry",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-grid-template-columns",
+		"spec": "https://drafts.csswg.org/css-grid-3/"
+	},
+	{
+		"name": "grid-template-columns",
+		"value": "none | <track-list> | <auto-track-list>",
+		"id": "propdef-grid-template-columns",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-template-columns",
+		"value": "none | <track-list> | <auto-track-list> | subgrid <line-name-list>?",
+		"id": "propdef-grid-template-columns",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "grid-template-rows",
+		"value": "masonry",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-grid-template-rows",
+		"spec": "https://drafts.csswg.org/css-grid-3/"
+	},
+	{
+		"name": "grid-template-rows",
+		"value": "none | <track-list> | <auto-track-list>",
+		"id": "propdef-grid-template-rows",
+		"spec": "https://drafts.csswg.org/css-grid-1/"
+	},
+	{
+		"name": "grid-template-rows",
+		"value": "none | <track-list> | <auto-track-list> | subgrid <line-name-list>?",
+		"id": "propdef-grid-template-rows",
+		"spec": "https://drafts.csswg.org/css-grid-2/"
+	},
+	{
+		"name": "hanging-punctuation",
+		"value": "none | [ first || [ force-end | allow-end ] || last ]",
+		"id": "propdef-hanging-punctuation",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "hanging-punctuation",
+		"value": "none | [ first || [ force-end | allow-end ] || last ]",
+		"id": "propdef-hanging-punctuation",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "height",
+		"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+		"id": "propdef-height",
+		"spec": "https://drafts.csswg.org/css-sizing-3/"
+	},
+	{
+		"name": "height",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-height①",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "hyphenate-character",
+		"value": "auto | <string>",
+		"id": "propdef-hyphenate-character",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "hyphenate-limit-chars",
+		"value": "[ auto | <integer> ]{1,3}",
+		"id": "propdef-hyphenate-limit-chars",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "hyphenate-limit-last",
+		"value": "none | always | column | page | spread",
+		"id": "propdef-hyphenate-limit-last",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "hyphenate-limit-lines",
+		"value": "no-limit | <integer>",
+		"id": "propdef-hyphenate-limit-lines",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "hyphenate-limit-zone",
+		"value": "<length-percentage>",
+		"id": "propdef-hyphenate-limit-zone",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "hyphens",
+		"value": "none | manual | auto",
+		"id": "propdef-hyphens",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "hyphens",
+		"value": "none | manual | auto",
+		"id": "propdef-hyphens",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "image-orientation",
+		"value": "from-image | none | [ <angle> || flip ]",
+		"id": "propdef-image-orientation",
+		"spec": "https://drafts.csswg.org/css-images-3/"
+	},
+	{
+		"name": "image-rendering",
+		"value": "auto | smooth | high-quality | pixelated | crisp-edges",
+		"id": "propdef-image-rendering",
+		"spec": "https://drafts.csswg.org/css-images-3/"
+	},
+	{
+		"name": "image-rendering",
+		"value": "auto | optimizeQuality | optimizeSpeed",
+		"id": "ImageRenderingProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "image-resolution",
+		"value": "[ from-image || <resolution> ] && snap?",
+		"id": "propdef-image-resolution",
+		"spec": "https://drafts.csswg.org/css-images-4/"
+	},
+	{
+		"name": "initial-letter",
+		"value": "normal | <number [1,∞]> <integer [1,∞]> | <number [1,∞]> && [ drop | raise ]?",
+		"id": "propdef-initial-letter",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "initial-letter-align",
+		"value": "[ border-box? [ alphabetic | ideographic | hanging | leading ]? ]!",
+		"id": "propdef-initial-letter-align",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "initial-letter-wrap",
+		"value": "none | first | all | grid | <length-percentage>",
+		"id": "propdef-initial-letter-wrap",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "inline-size",
+		"value": "<'width'>",
+		"id": "propdef-inline-size",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "inline-size",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-inline-size",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "inline-size",
+		"value": "auto | <length-percentage>",
+		"id": "InlineSizeProperty",
+		"spec": "https://svgwg.org/svg2-draft/text.html"
+	},
+	{
+		"name": "inline-sizing",
+		"value": "normal | stretch",
+		"id": "propdef-inline-sizing",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "input-security",
+		"value": "auto | none",
+		"id": "propdef-input-security",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "inset",
+		"value": "<'top'>{1,4}",
+		"id": "propdef-inset",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "inset",
+		"value": "<top>{1,4}",
+		"id": "propdef-inset",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "inset-block",
+		"value": "<'top'>{1,2}",
+		"id": "propdef-inset-block",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "inset-block",
+		"value": "<top>{1,2}",
+		"id": "propdef-inset-block",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "inset-block-end",
+		"value": "<'top'>",
+		"id": "propdef-inset-block-end",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "inset-block-end",
+		"value": "auto | <length-percentage>",
+		"id": "propdef-inset-block-end",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "inset-block-start",
+		"value": "<'top'>",
+		"id": "propdef-inset-block-start",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "inset-block-start",
+		"value": "auto | <length-percentage>",
+		"id": "propdef-inset-block-start",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "inset-inline",
+		"value": "<'top'>{1,2}",
+		"id": "propdef-inset-inline",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "inset-inline",
+		"value": "<top>{1,2}",
+		"id": "propdef-inset-inline",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "inset-inline-end",
+		"value": "<'top'>",
+		"id": "propdef-inset-inline-end",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "inset-inline-end",
+		"value": "auto | <length-percentage>",
+		"id": "propdef-inset-inline-end",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "inset-inline-start",
+		"value": "<'top'>",
+		"id": "propdef-inset-inline-start",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "inset-inline-start",
+		"value": "auto | <length-percentage>",
+		"id": "propdef-inset-inline-start",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "isolation",
+		"value": "<isolation-mode>",
+		"id": "propdef-isolation",
+		"spec": "https://drafts.fxtf.org/compositing-2/"
+	},
+	{
+		"name": "isolation",
+		"value": "<isolation-mode>",
+		"id": "propdef-isolation",
+		"spec": "https://drafts.fxtf.org/compositing-1/"
+	},
+	{
+		"name": "justify-content",
+		"value": "normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ]",
+		"id": "propdef-justify-content",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "justify-content",
+		"value": "flex-start | flex-end | center | space-between | space-around",
+		"id": "propdef-justify-content",
+		"spec": "https://drafts.csswg.org/css-flexbox-1/"
+	},
+	{
+		"name": "justify-items",
+		"value": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ]",
+		"id": "propdef-justify-items",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "justify-items",
+		"value": "anchor-center",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-justify-items",
+		"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+	},
+	{
+		"name": "justify-self",
+		"value": "auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ]",
+		"id": "propdef-justify-self",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "justify-self",
+		"value": "anchor-center",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-justify-self",
+		"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+	},
+	{
+		"name": "justify-tracks",
+		"value": "[normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ] ]#",
+		"id": "propdef-justify-tracks",
+		"spec": "https://drafts.csswg.org/css-grid-3/"
+	},
+	{
+		"name": "layout-order",
+		"value": "<integer>",
+		"id": "propdef-layout-order",
+		"spec": "https://drafts.csswg.org/css-display-4/"
+	},
+	{
+		"name": "left",
+		"value": "auto | <length-percentage>",
+		"id": "propdef-left",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "letter-spacing",
+		"value": "normal | <length>",
+		"id": "propdef-letter-spacing",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "letter-spacing",
+		"value": "normal | <length-percentage>",
+		"id": "propdef-letter-spacing",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "lighting-color",
+		"value": "<color>",
+		"id": "propdef-lighting-color",
+		"spec": "https://drafts.fxtf.org/filter-effects-1/"
+	},
+	{
+		"name": "line-break",
+		"value": "auto | loose | normal | strict | anywhere",
+		"id": "propdef-line-break",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "line-break",
+		"value": "auto | loose | normal | strict | anywhere",
+		"id": "propdef-line-break",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "line-clamp",
+		"value": "none | <integer [1,∞]> <'block-ellipsis'>?",
+		"id": "propdef-line-clamp",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "line-grid",
+		"value": "match-parent | create",
+		"id": "propdef-line-grid",
+		"spec": "https://drafts.csswg.org/css-line-grid-1/"
+	},
+	{
+		"name": "line-height",
+		"value": "normal | <number> | <length-percentage>",
+		"id": "propdef-line-height",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "line-height-step",
+		"value": "<length [0,∞]>",
+		"id": "propdef-line-height-step",
+		"spec": "https://drafts.csswg.org/css-rhythm-1/"
+	},
+	{
+		"name": "line-padding",
+		"value": "<length>",
+		"id": "propdef-line-padding",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "line-snap",
+		"value": "none | baseline | contain",
+		"id": "propdef-line-snap",
+		"spec": "https://drafts.csswg.org/css-line-grid-1/"
+	},
+	{
+		"name": "link-parameters",
+		"value": "none | <link-param>+",
+		"id": "propdef-link-parameters",
+		"spec": "https://drafts.csswg.org/css-link-params-1/"
+	},
+	{
+		"name": "list-style",
+		"value": "<'list-style-position'> || <'list-style-image'> || <'list-style-type'>",
+		"id": "propdef-list-style",
+		"spec": "https://drafts.csswg.org/css-lists-3/"
+	},
+	{
+		"name": "list-style-image",
+		"value": "<image> | none",
+		"id": "propdef-list-style-image",
+		"spec": "https://drafts.csswg.org/css-lists-3/"
+	},
+	{
+		"name": "list-style-position",
+		"value": "inside | outside",
+		"id": "propdef-list-style-position",
+		"spec": "https://drafts.csswg.org/css-lists-3/"
+	},
+	{
+		"name": "list-style-type",
+		"value": "<counter-style> | <string> | none",
+		"id": "propdef-list-style-type",
+		"spec": "https://drafts.csswg.org/css-lists-3/"
+	},
+	{
+		"name": "margin",
+		"value": "<'margin-top'>{1,4}",
+		"id": "propdef-margin",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "margin",
+		"value": "<'margin-top'>{1,4}",
+		"id": "propdef-margin",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "margin-block",
+		"value": "<'margin-top'>{1,2}",
+		"id": "propdef-margin-block",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "margin-block-end",
+		"value": "<'margin-top'>",
+		"id": "propdef-margin-block-end",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "margin-block-start",
+		"value": "<'margin-top'>",
+		"id": "propdef-margin-block-start",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "margin-bottom",
+		"value": "<length-percentage> | auto",
+		"id": "propdef-margin-bottom",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "margin-bottom",
+		"value": "<length-percentage> | auto",
+		"id": "propdef-margin-bottom",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "margin-break",
+		"value": "auto | keep | discard",
+		"id": "propdef-margin-break",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "margin-inline",
+		"value": "<'margin-top'>{1,2}",
+		"id": "propdef-margin-inline",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "margin-inline-end",
+		"value": "<'margin-top'>",
+		"id": "propdef-margin-inline-end",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "margin-inline-start",
+		"value": "<'margin-top'>",
+		"id": "propdef-margin-inline-start",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "margin-left",
+		"value": "<length-percentage> | auto",
+		"id": "propdef-margin-left",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "margin-left",
+		"value": "<length-percentage> | auto",
+		"id": "propdef-margin-left",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "margin-right",
+		"value": "<length-percentage> | auto",
+		"id": "propdef-margin-right",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "margin-right",
+		"value": "<length-percentage> | auto",
+		"id": "propdef-margin-right",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "margin-top",
+		"value": "<length-percentage> | auto",
+		"id": "propdef-margin-top",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "margin-top",
+		"value": "<length-percentage> | auto",
+		"id": "propdef-margin-top",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "margin-trim",
+		"value": "none | block | inline | [ block-start || inline-start || block-end || inline-end ]",
+		"id": "propdef-margin-trim",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "marker",
+		"value": "none | <marker-ref>",
+		"id": "MarkerProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "marker-end",
+		"value": "none | <marker-ref>",
+		"id": "MarkerEndProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "marker-mid",
+		"value": "none | <marker-ref>",
+		"id": "MarkerMidProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "marker-side",
+		"value": "match-self | match-parent",
+		"id": "propdef-marker-side",
+		"spec": "https://drafts.csswg.org/css-lists-3/"
+	},
+	{
+		"name": "marker-start",
+		"value": "none | <marker-ref>",
+		"id": "MarkerStartProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "mask",
+		"value": "<mask-layer>#",
+		"id": "propdef-mask",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-border",
+		"value": "<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>",
+		"id": "propdef-mask-border",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-border-mode",
+		"value": "luminance | alpha",
+		"id": "propdef-mask-border-mode",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-border-outset",
+		"value": "[ <length> | <number> ]{1,4}",
+		"id": "propdef-mask-border-outset",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-border-repeat",
+		"value": "[ stretch | repeat | round | space ]{1,2}",
+		"id": "propdef-mask-border-repeat",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-border-slice",
+		"value": "[ <number> | <percentage> ]{1,4} fill?",
+		"id": "propdef-mask-border-slice",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-border-source",
+		"value": "none | <image>",
+		"id": "propdef-mask-border-source",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-border-width",
+		"value": "[ <length-percentage> | <number> | auto ]{1,4}",
+		"id": "propdef-mask-border-width",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-clip",
+		"value": "[ <geometry-box> | no-clip ]#",
+		"id": "propdef-mask-clip",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-composite",
+		"value": "<compositing-operator>#",
+		"id": "propdef-mask-composite",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-image",
+		"value": "<mask-reference>#",
+		"id": "propdef-mask-image",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-mode",
+		"value": "<masking-mode>#",
+		"id": "propdef-mask-mode",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-origin",
+		"value": "<geometry-box>#",
+		"id": "propdef-mask-origin",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-position",
+		"value": "<position>#",
+		"id": "propdef-mask-position",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-repeat",
+		"value": "<repeat-style>#",
+		"id": "propdef-mask-repeat",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-size",
+		"value": "<bg-size>#",
+		"id": "propdef-mask-size",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "mask-type",
+		"value": "luminance | alpha",
+		"id": "propdef-mask-type",
+		"spec": "https://drafts.fxtf.org/css-masking-1/"
+	},
+	{
+		"name": "masonry-auto-flow",
+		"value": "[ pack | next ] || [definite-first | ordered ]",
+		"id": "propdef-masonry-auto-flow",
+		"spec": "https://drafts.csswg.org/css-grid-3/"
+	},
+	{
+		"name": "math-depth",
+		"value": "auto-add | add(<integer>) | <integer>",
+		"id": "propdef-math-depth",
+		"spec": "https://w3c.github.io/mathml-core/"
+	},
+	{
+		"name": "math-shift",
+		"value": "normal | compact",
+		"id": "propdef-math-shift",
+		"spec": "https://w3c.github.io/mathml-core/"
+	},
+	{
+		"name": "math-style",
+		"value": "normal | compact",
+		"id": "propdef-math-style",
+		"spec": "https://w3c.github.io/mathml-core/"
+	},
+	{
+		"name": "max-block-size",
+		"value": "<'max-width'>",
+		"id": "propdef-max-block-size",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "max-block-size",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-max-block-size",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "max-content-inline-size",
+		"value": "auto | [ [ <length> | contents ] && use-inline-size? && use-min-inline-size? && use-max-inline-size? ]",
+		"id": "propdef-max-content-inline-size",
+		"spec": "https://dbaron.github.io/css-intrinsic-isize-props/"
+	},
+	{
+		"name": "max-height",
+		"value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+		"id": "propdef-max-height",
+		"spec": "https://drafts.csswg.org/css-sizing-3/"
+	},
+	{
+		"name": "max-height",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-max-height①",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "max-inline-size",
+		"value": "<'max-width'>",
+		"id": "propdef-max-inline-size",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "max-inline-size",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-max-inline-size",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "max-lines",
+		"value": "none | <integer [1,∞]>",
+		"id": "propdef-max-lines",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "max-width",
+		"value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+		"id": "propdef-max-width",
+		"spec": "https://drafts.csswg.org/css-sizing-3/"
+	},
+	{
+		"name": "max-width",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-max-width①",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "min-block-size",
+		"value": "<'min-width'>",
+		"id": "propdef-min-block-size",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "min-block-size",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-min-block-size",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "min-content-inline-size",
+		"value": "auto | [ [ <length> | contents ] && use-inline-size? && use-min-inline-size? && use-max-inline-size? ]",
+		"id": "propdef-min-content-inline-size",
+		"spec": "https://dbaron.github.io/css-intrinsic-isize-props/"
+	},
+	{
+		"name": "min-height",
+		"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+		"id": "propdef-min-height",
+		"spec": "https://drafts.csswg.org/css-sizing-3/"
+	},
+	{
+		"name": "min-height",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-min-height①",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "min-inline-size",
+		"value": "<'min-width'>",
+		"id": "propdef-min-inline-size",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "min-inline-size",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-min-inline-size",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "min-intrinsic-sizing",
+		"value": "legacy | zero-if-scroll || zero-if-extrinsic",
+		"id": "propdef-min-intrinsic-sizing",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "min-width",
+		"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+		"id": "propdef-min-width",
+		"spec": "https://drafts.csswg.org/css-sizing-3/"
+	},
+	{
+		"name": "min-width",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-min-width①",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "mix-blend-mode",
+		"value": "<blend-mode> | plus-darker | plus-lighter",
+		"id": "propdef-mix-blend-mode",
+		"spec": "https://drafts.fxtf.org/compositing-2/"
+	},
+	{
+		"name": "mix-blend-mode",
+		"value": "<blend-mode>",
+		"id": "propdef-mix-blend-mode",
+		"spec": "https://drafts.fxtf.org/compositing-1/"
+	},
+	{
+		"name": "nav-down",
+		"value": "auto | <id> [ current | root | <target-name> ]?",
+		"id": "propdef-nav-down",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "nav-left",
+		"value": "auto | <id> [ current | root | <target-name> ]?",
+		"id": "propdef-nav-left",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "nav-right",
+		"value": "auto | <id> [ current | root | <target-name> ]?",
+		"id": "propdef-nav-right",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "nav-up",
+		"value": "auto | <id> [ current | root | <target-name> ]?",
+		"id": "propdef-nav-up",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "object-fit",
+		"value": "fill | contain | cover | none | scale-down",
+		"id": "propdef-object-fit",
+		"spec": "https://drafts.csswg.org/css-images-3/"
+	},
+	{
+		"name": "object-fit",
+		"value": "fill | none | [contain | cover] || scale-down",
+		"id": "propdef-object-fit",
+		"spec": "https://drafts.csswg.org/css-images-4/"
+	},
+	{
+		"name": "object-position",
+		"value": "<position>",
+		"id": "propdef-object-position",
+		"spec": "https://drafts.csswg.org/css-images-3/"
+	},
+	{
+		"name": "object-view-box",
+		"value": "none | <basic-shape-rect>",
+		"id": "propdef-object-view-box",
+		"spec": "https://drafts.csswg.org/css-images-5/"
+	},
+	{
+		"name": "offset",
+		"value": "[ <'offset-position'>? [ <'offset-path'> [ <'offset-distance'> || <'offset-rotate'> ]? ]? ]! [ / <'offset-anchor'> ]?",
+		"id": "propdef-offset",
+		"spec": "https://drafts.fxtf.org/motion-1/"
+	},
+	{
+		"name": "offset-anchor",
+		"value": "auto | <position>",
+		"id": "propdef-offset-anchor",
+		"spec": "https://drafts.fxtf.org/motion-1/"
+	},
+	{
+		"name": "offset-distance",
+		"value": "<length-percentage>",
+		"id": "propdef-offset-distance",
+		"spec": "https://drafts.fxtf.org/motion-1/"
+	},
+	{
+		"name": "offset-path",
+		"value": "none | <offset-path> || <coord-box>",
+		"id": "propdef-offset-path",
+		"spec": "https://drafts.fxtf.org/motion-1/"
+	},
+	{
+		"name": "offset-position",
+		"value": "normal | auto | <position>",
+		"id": "propdef-offset-position",
+		"spec": "https://drafts.fxtf.org/motion-1/"
+	},
+	{
+		"name": "offset-rotate",
+		"value": "[ auto | reverse ] || <angle>",
+		"id": "propdef-offset-rotate",
+		"spec": "https://drafts.fxtf.org/motion-1/"
+	},
+	{
+		"name": "opacity",
+		"value": "<alphavalue> | inherit",
+		"id": "opacity",
+		"spec": "https://drafts.csswg.org/css-color-3/"
+	},
+	{
+		"name": "opacity",
+		"value": "<alpha-value>",
+		"id": "propdef-opacity",
+		"spec": "https://drafts.csswg.org/css-color-4/"
+	},
+	{
+		"name": "order",
+		"value": "[ <'layout-order'> <'reading-order'>? ] | [ [ reading || layout ] && <integer> ]",
+		"id": "propdef-order",
+		"spec": "https://drafts.csswg.org/css-display-4/"
+	},
+	{
+		"name": "order",
+		"value": "<integer>",
+		"id": "propdef-order",
+		"spec": "https://drafts.csswg.org/css-display-3/"
+	},
+	{
+		"name": "orphans",
+		"value": "<integer [1,∞]>",
+		"id": "propdef-orphans",
+		"spec": "https://drafts.csswg.org/css-break-3/"
+	},
+	{
+		"name": "orphans",
+		"value": "<integer [1,∞]>",
+		"id": "propdef-orphans",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "outline",
+		"value": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]",
+		"id": "propdef-outline",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "outline",
+		"value": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]",
+		"id": "propdef-outline",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "outline-color",
+		"value": "<color> | invert",
+		"id": "propdef-outline-color",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "outline-color",
+		"value": "[ <color> | <image-1D> ] | invert",
+		"id": "propdef-outline-color",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "outline-offset",
+		"value": "<length>",
+		"id": "propdef-outline-offset",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "outline-offset",
+		"value": "<length>",
+		"id": "propdef-outline-offset",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "outline-style",
+		"value": "auto | <border-style>",
+		"id": "propdef-outline-style",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "outline-style",
+		"value": "auto | <outline-line-style>",
+		"id": "propdef-outline-style",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "outline-width",
+		"value": "<line-width>",
+		"id": "propdef-outline-width",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "outline-width",
+		"value": "<line-width>",
+		"id": "propdef-outline-width",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "overflow",
+		"value": "<'overflow-block'>{1,2}",
+		"id": "propdef-overflow",
+		"spec": "https://drafts.csswg.org/css-overflow-3/"
+	},
+	{
+		"name": "overflow-anchor",
+		"value": "auto | none",
+		"id": "propdef-overflow-anchor",
+		"spec": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+	},
+	{
+		"name": "overflow-block",
+		"value": "visible | hidden | clip | scroll | auto",
+		"id": "propdef-overflow-block",
+		"spec": "https://drafts.csswg.org/css-overflow-3/"
+	},
+	{
+		"name": "overflow-clip-margin",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin",
+		"spec": "https://drafts.csswg.org/css-overflow-3/"
+	},
+	{
+		"name": "overflow-clip-margin",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-block",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-block",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-block-end",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-block-end",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-block-start",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-block-start",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-bottom",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-bottom",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-inline",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-inline",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-inline-end",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-inline-end",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-inline-start",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-inline-start",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-left",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-left",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-right",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-right",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-clip-margin-top",
+		"value": "<visual-box> || <length [0,∞]>",
+		"id": "propdef-overflow-clip-margin-top",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "overflow-inline",
+		"value": "visible | hidden | clip | scroll | auto",
+		"id": "propdef-overflow-inline",
+		"spec": "https://drafts.csswg.org/css-overflow-3/"
+	},
+	{
+		"name": "overflow-wrap",
+		"value": "normal | break-word | anywhere",
+		"id": "propdef-overflow-wrap",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "overflow-wrap",
+		"value": "normal | break-word | anywhere",
+		"id": "propdef-overflow-wrap",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "overflow-x",
+		"value": "visible | hidden | clip | scroll | auto",
+		"id": "propdef-overflow-x",
+		"spec": "https://drafts.csswg.org/css-overflow-3/"
+	},
+	{
+		"name": "overflow-y",
+		"value": "visible | hidden | clip | scroll | auto",
+		"id": "propdef-overflow-y",
+		"spec": "https://drafts.csswg.org/css-overflow-3/"
+	},
+	{
+		"name": "overlay",
+		"value": "none | auto",
+		"id": "propdef-overlay",
+		"spec": "https://drafts.csswg.org/css-position-4/"
+	},
+	{
+		"name": "overscroll-behavior",
+		"value": "[ contain | none | auto ]{1,2}",
+		"id": "propdef-overscroll-behavior",
+		"spec": "https://drafts.csswg.org/css-overscroll-1/"
+	},
+	{
+		"name": "overscroll-behavior-block",
+		"value": "contain | none | auto",
+		"id": "propdef-overscroll-behavior-block",
+		"spec": "https://drafts.csswg.org/css-overscroll-1/"
+	},
+	{
+		"name": "overscroll-behavior-inline",
+		"value": "contain | none | auto",
+		"id": "propdef-overscroll-behavior-inline",
+		"spec": "https://drafts.csswg.org/css-overscroll-1/"
+	},
+	{
+		"name": "overscroll-behavior-x",
+		"value": "contain | none | auto",
+		"id": "propdef-overscroll-behavior-x",
+		"spec": "https://drafts.csswg.org/css-overscroll-1/"
+	},
+	{
+		"name": "overscroll-behavior-y",
+		"value": "contain | none | auto",
+		"id": "propdef-overscroll-behavior-y",
+		"spec": "https://drafts.csswg.org/css-overscroll-1/"
+	},
+	{
+		"name": "padding",
+		"value": "<'padding-top'>{1,4}",
+		"id": "propdef-padding",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "padding",
+		"value": "<'padding-top'>{1,4}",
+		"id": "propdef-padding",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "padding-block",
+		"value": "<'padding-top'>{1,2}",
+		"id": "propdef-padding-block",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "padding-block-end",
+		"value": "<'padding-top'>",
+		"id": "propdef-padding-block-end",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "padding-block-start",
+		"value": "<'padding-top'>",
+		"id": "propdef-padding-block-start",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "padding-bottom",
+		"value": "<length-percentage [0,∞]>",
+		"id": "propdef-padding-bottom",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "padding-bottom",
+		"value": "<length-percentage [0,∞]>",
+		"id": "propdef-padding-bottom",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "padding-inline",
+		"value": "<'padding-top'>{1,2}",
+		"id": "propdef-padding-inline",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "padding-inline-end",
+		"value": "<'padding-top'>",
+		"id": "propdef-padding-inline-end",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "padding-inline-start",
+		"value": "<'padding-top'>",
+		"id": "propdef-padding-inline-start",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "padding-left",
+		"value": "<length-percentage [0,∞]>",
+		"id": "propdef-padding-left",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "padding-left",
+		"value": "<length-percentage [0,∞]>",
+		"id": "propdef-padding-left",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "padding-right",
+		"value": "<length-percentage [0,∞]>",
+		"id": "propdef-padding-right",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "padding-right",
+		"value": "<length-percentage [0,∞]>",
+		"id": "propdef-padding-right",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "padding-top",
+		"value": "<length-percentage [0,∞]>",
+		"id": "propdef-padding-top",
+		"spec": "https://drafts.csswg.org/css-box-3/"
+	},
+	{
+		"name": "padding-top",
+		"value": "<length-percentage [0,∞]>",
+		"id": "propdef-padding-top",
+		"spec": "https://drafts.csswg.org/css-box-4/"
+	},
+	{
+		"name": "page",
+		"value": "auto | <custom-ident>",
+		"id": "propdef-page",
+		"spec": "https://drafts.csswg.org/css-page-3/"
+	},
+	{
+		"name": "page-break-after",
+		"value": "auto | always | avoid | left | right",
+		"id": "ref-for-propdef-page-break-after①",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "page-break-before",
+		"value": "auto | always | avoid | left | right",
+		"id": "ref-for-propdef-page-break-before①",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "page-break-inside",
+		"value": "avoid | auto",
+		"id": "ref-for-propdef-page-break-inside①",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "paint-order",
+		"value": "normal | [ fill || stroke || markers ]",
+		"id": "PaintOrderProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "pause",
+		"value": "<'pause-before'> <'pause-after'>?",
+		"id": "propdef-pause",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "pause-after",
+		"value": "<time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong",
+		"id": "propdef-pause-after",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "pause-before",
+		"value": "<time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong",
+		"id": "propdef-pause-before",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "perspective",
+		"value": "none | <length [0,∞]>",
+		"id": "propdef-perspective",
+		"spec": "https://drafts.csswg.org/css-transforms-2/"
+	},
+	{
+		"name": "perspective-origin",
+		"value": "<position>",
+		"id": "propdef-perspective-origin",
+		"spec": "https://drafts.csswg.org/css-transforms-2/"
+	},
+	{
+		"name": "place-content",
+		"value": "<'align-content'> <'justify-content'>?",
+		"id": "propdef-place-content",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "place-items",
+		"value": "<'align-items'> <'justify-items'>?",
+		"id": "propdef-place-items",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "place-self",
+		"value": "<'align-self'> <'justify-self'>?",
+		"id": "propdef-place-self",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "pointer-events",
+		"value": "auto | none",
+		"id": "propdef-pointer-events",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "pointer-events",
+		"value": "auto | bounding-box | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | none",
+		"id": "PointerEventsProperty",
+		"spec": "https://svgwg.org/svg2-draft/interact.html"
+	},
+	{
+		"name": "position",
+		"value": "running()",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-position",
+		"spec": "https://drafts.csswg.org/css-gcpm-3/"
+	},
+	{
+		"name": "position",
+		"value": "static | relative | absolute | sticky | fixed",
+		"id": "propdef-position",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "position-fallback",
+		"value": "none | <dashed-ident>",
+		"id": "propdef-position-fallback",
+		"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+	},
+	{
+		"name": "position-fallback-bounds",
+		"value": "normal | <dashed-ident>",
+		"id": "propdef-position-fallback-bounds",
+		"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+	},
+	{
+		"name": "print-color-adjust",
+		"value": "economy | exact",
+		"id": "propdef-print-color-adjust",
+		"spec": "https://drafts.csswg.org/css-color-adjust-1/"
+	},
+	{
+		"name": "quotes",
+		"value": "auto | none | [ <string> <string> ]+",
+		"id": "propdef-quotes",
+		"spec": "https://drafts.csswg.org/css-content-3/"
+	},
+	{
+		"name": "r",
+		"value": "<length-percentage>",
+		"id": "RProperty",
+		"spec": "https://svgwg.org/svg2-draft/geometry.html"
+	},
+	{
+		"name": "reading-order",
+		"value": "<integer>",
+		"id": "propdef-reading-order",
+		"spec": "https://drafts.csswg.org/css-display-4/"
+	},
+	{
+		"name": "region-fragment",
+		"value": "auto | break",
+		"id": "propdef-region-fragment",
+		"spec": "https://drafts.csswg.org/css-regions-1/"
+	},
+	{
+		"name": "resize",
+		"value": "none | both | horizontal | vertical",
+		"id": "propdef-resize",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "resize",
+		"value": "none | both | horizontal | vertical | block | inline",
+		"id": "propdef-resize",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "rest",
+		"value": "<'rest-before'> <'rest-after'>?",
+		"id": "propdef-rest",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "rest-after",
+		"value": "<time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong",
+		"id": "propdef-rest-after",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "rest-before",
+		"value": "<time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong",
+		"id": "propdef-rest-before",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "right",
+		"value": "auto | <length-percentage>",
+		"id": "propdef-right",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "rotate",
+		"value": "none | <angle> | [ x | y | z | <number>{3} ] && <angle>",
+		"id": "propdef-rotate",
+		"spec": "https://drafts.csswg.org/css-transforms-2/"
+	},
+	{
+		"name": "row-gap",
+		"value": "normal | <length-percentage [0,∞]>",
+		"id": "propdef-row-gap",
+		"spec": "https://drafts.csswg.org/css-align-3/"
+	},
+	{
+		"name": "ruby-align",
+		"value": "start | center | space-between | space-around",
+		"id": "propdef-ruby-align",
+		"spec": "https://drafts.csswg.org/css-ruby-1/"
+	},
+	{
+		"name": "ruby-merge",
+		"value": "separate | merge | auto",
+		"id": "propdef-ruby-merge",
+		"spec": "https://drafts.csswg.org/css-ruby-1/"
+	},
+	{
+		"name": "ruby-overhang",
+		"value": "auto | none",
+		"id": "propdef-ruby-overhang",
+		"spec": "https://drafts.csswg.org/css-ruby-1/"
+	},
+	{
+		"name": "ruby-position",
+		"value": "[ alternate || [ over | under ] ] | inter-character",
+		"id": "propdef-ruby-position",
+		"spec": "https://drafts.csswg.org/css-ruby-1/"
+	},
+	{
+		"name": "rx",
+		"value": "<length-percentage> | auto",
+		"id": "RxProperty",
+		"spec": "https://svgwg.org/svg2-draft/geometry.html"
+	},
+	{
+		"name": "ry",
+		"value": "<length-percentage> | auto",
+		"id": "RyProperty",
+		"spec": "https://svgwg.org/svg2-draft/geometry.html"
+	},
+	{
+		"name": "scale",
+		"value": "none | [ <number> | <percentage> ]{1,3}",
+		"id": "propdef-scale",
+		"spec": "https://drafts.csswg.org/css-transforms-2/"
+	},
+	{
+		"name": "scroll-behavior",
+		"value": "auto | smooth",
+		"id": "propdef-scroll-behavior",
+		"spec": "https://drafts.csswg.org/css-overflow-3/"
+	},
+	{
+		"name": "scroll-margin",
+		"value": "<length>{1,4}",
+		"id": "propdef-scroll-margin",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-block",
+		"value": "<length>{1,2}",
+		"id": "propdef-scroll-margin-block",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-block-end",
+		"value": "<length>",
+		"id": "propdef-scroll-margin-block-end",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-block-start",
+		"value": "<length>",
+		"id": "propdef-scroll-margin-block-start",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-bottom",
+		"value": "<length>",
+		"id": "propdef-scroll-margin-bottom",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-inline",
+		"value": "<length>{1,2}",
+		"id": "propdef-scroll-margin-inline",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-inline-end",
+		"value": "<length>",
+		"id": "propdef-scroll-margin-inline-end",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-inline-start",
+		"value": "<length>",
+		"id": "propdef-scroll-margin-inline-start",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-left",
+		"value": "<length>",
+		"id": "propdef-scroll-margin-left",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-right",
+		"value": "<length>",
+		"id": "propdef-scroll-margin-right",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-margin-top",
+		"value": "<length>",
+		"id": "propdef-scroll-margin-top",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding",
+		"value": "[ auto | <length-percentage [0,∞]> ]{1,4}",
+		"id": "propdef-scroll-padding",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-block",
+		"value": "[ auto | <length-percentage [0,∞]> ]{1,2}",
+		"id": "propdef-scroll-padding-block",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-block-end",
+		"value": "auto | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-padding-block-end",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-block-start",
+		"value": "auto | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-padding-block-start",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-bottom",
+		"value": "auto | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-padding-bottom",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-inline",
+		"value": "[ auto | <length-percentage [0,∞]> ]{1,2}",
+		"id": "propdef-scroll-padding-inline",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-inline-end",
+		"value": "auto | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-padding-inline-end",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-inline-start",
+		"value": "auto | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-padding-inline-start",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-left",
+		"value": "auto | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-padding-left",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-right",
+		"value": "auto | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-padding-right",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-padding-top",
+		"value": "auto | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-padding-top",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-snap-align",
+		"value": "[ none | start | end | center ]{1,2}",
+		"id": "propdef-scroll-snap-align",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-snap-stop",
+		"value": "normal | always",
+		"id": "propdef-scroll-snap-stop",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-snap-type",
+		"value": "none | [ x | y | block | inline | both ] [ mandatory | proximity ]?",
+		"id": "propdef-scroll-snap-type",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-1/"
+	},
+	{
+		"name": "scroll-start",
+		"value": "[ auto | start | end | center | left | right | top | bottom | <length-percentage [0,∞]> ]{1,2}",
+		"id": "propdef-scroll-start",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-start-block",
+		"value": "auto | start | end | center | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-start-block",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-start-inline",
+		"value": "auto | start | end | center | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-start-inline",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-start-target",
+		"value": "[ none | auto ]{1,2}",
+		"id": "propdef-scroll-start-target",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-start-target-block",
+		"value": "auto | none",
+		"id": "propdef-scroll-start-target-block",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-start-target-inline",
+		"value": "auto | none",
+		"id": "propdef-scroll-start-target-inline",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-start-target-x",
+		"value": "none | auto",
+		"id": "propdef-scroll-start-target-x",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-start-target-y",
+		"value": "none | auto",
+		"id": "propdef-scroll-start-target-y",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-start-x",
+		"value": "auto | start | end | center | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-start-x",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-start-y",
+		"value": "auto | start | end | center | <length-percentage [0,∞]>",
+		"id": "propdef-scroll-start-y",
+		"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+	},
+	{
+		"name": "scroll-timeline",
+		"value": "[ <'scroll-timeline-name'> <'scroll-timeline-axis'>? ]#",
+		"id": "propdef-scroll-timeline",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "scroll-timeline-axis",
+		"value": "[ block | inline | x | y ]#",
+		"id": "propdef-scroll-timeline-axis",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "scroll-timeline-name",
+		"value": "[ none | <dashed-ident> ]#",
+		"id": "propdef-scroll-timeline-name",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "scrollbar-color",
+		"value": "auto | <color>{2}",
+		"id": "propdef-scrollbar-color",
+		"spec": "https://drafts.csswg.org/css-scrollbars-1/"
+	},
+	{
+		"name": "scrollbar-gutter",
+		"value": "auto | stable && both-edges?",
+		"id": "propdef-scrollbar-gutter",
+		"spec": "https://drafts.csswg.org/css-overflow-3/"
+	},
+	{
+		"name": "scrollbar-gutter",
+		"value": "auto | [ [ stable | always ] && both-edges? && force? ] || match-parent",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-scrollbar-gutter⑤",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "scrollbar-width",
+		"value": "auto | thin | none",
+		"id": "propdef-scrollbar-width",
+		"spec": "https://drafts.csswg.org/css-scrollbars-1/"
+	},
+	{
+		"name": "shape-image-threshold",
+		"value": "<alpha-value>",
+		"id": "propdef-shape-image-threshold",
+		"spec": "https://drafts.csswg.org/css-shapes-1/"
+	},
+	{
+		"name": "shape-inside",
+		"value": "auto | outside-shape | [ <basic-shape> || shape-box ] | <image> | display",
+		"id": "propdef-shape-inside",
+		"spec": "https://drafts.csswg.org/css-shapes-2/"
+	},
+	{
+		"name": "shape-inside",
+		"value": "auto | outside-shape | [ <basic-shape> || shape-box ] | <image> | display",
+		"id": "propdef-shape-inside",
+		"spec": "https://drafts.csswg.org/css-round-display-1/"
+	},
+	{
+		"name": "shape-inside",
+		"value": "auto | [ <basic-shape> | <uri> ]+",
+		"id": "ShapeInsideProperty",
+		"spec": "https://svgwg.org/svg2-draft/text.html"
+	},
+	{
+		"name": "shape-margin",
+		"value": "<length-percentage [0,∞]>",
+		"id": "propdef-shape-margin",
+		"spec": "https://drafts.csswg.org/css-shapes-1/"
+	},
+	{
+		"name": "shape-margin",
+		"value": "<length-percentage>",
+		"id": "ShapeMarginProperty",
+		"spec": "https://svgwg.org/svg2-draft/text.html"
+	},
+	{
+		"name": "shape-outside",
+		"value": "none | [ <basic-shape> || <shape-box> ] | <image>",
+		"id": "propdef-shape-outside",
+		"spec": "https://drafts.csswg.org/css-shapes-1/"
+	},
+	{
+		"name": "shape-padding",
+		"value": "<length>",
+		"id": "propdef-shape-padding",
+		"spec": "https://drafts.csswg.org/css-shapes-2/"
+	},
+	{
+		"name": "shape-rendering",
+		"value": "auto | optimizeSpeed | crispEdges | geometricPrecision",
+		"id": "ShapeRenderingProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "shape-subtract",
+		"value": "none | [ <basic-shape>| <uri> ]+",
+		"id": "ShapesubtractProperty",
+		"spec": "https://svgwg.org/svg2-draft/text.html"
+	},
+	{
+		"name": "spatial-navigation-action",
+		"value": "auto | focus | scroll",
+		"id": "propdef-spatial-navigation-action",
+		"spec": "https://drafts.csswg.org/css-nav-1/"
+	},
+	{
+		"name": "spatial-navigation-contain",
+		"value": "auto | contain",
+		"id": "propdef-spatial-navigation-contain",
+		"spec": "https://drafts.csswg.org/css-nav-1/"
+	},
+	{
+		"name": "spatial-navigation-function",
+		"value": "normal | grid",
+		"id": "propdef-spatial-navigation-function",
+		"spec": "https://drafts.csswg.org/css-nav-1/"
+	},
+	{
+		"name": "speak",
+		"value": "auto | never | always",
+		"id": "propdef-speak",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "speak-as",
+		"value": "normal | spell-out || digits || [ literal-punctuation | no-punctuation ]",
+		"id": "propdef-speak-as",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "string-set",
+		"value": "none | [ <custom-ident> <string>+ ]#",
+		"id": "propdef-string-set",
+		"spec": "https://drafts.csswg.org/css-content-3/"
+	},
+	{
+		"name": "string-set",
+		"value": "[ <custom-ident> <content-list> ]# | none",
+		"id": "propdef-string-set",
+		"spec": "https://drafts.csswg.org/css-gcpm-3/"
+	},
+	{
+		"name": "stroke",
+		"value": "<'background'> with modifications",
+		"id": "propdef-stroke",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke",
+		"value": "<paint>",
+		"id": "StrokeProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "stroke-align",
+		"value": "center | inset | outset",
+		"id": "propdef-stroke-align",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-break",
+		"value": "bounding-box | slice | clone",
+		"id": "propdef-stroke-break",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-color",
+		"value": "<color>#",
+		"id": "propdef-stroke-color",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-dash-corner",
+		"value": "none | <length>",
+		"id": "propdef-stroke-dash-corner",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-dash-justify",
+		"value": "none | [ stretch | compress ] || [ dashes || gaps ]",
+		"id": "propdef-stroke-dash-justify",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-dasharray",
+		"value": "none | <length-percentage>+#",
+		"id": "propdef-stroke-dasharray",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-dasharray",
+		"value": "none | <dasharray>",
+		"id": "StrokeDasharrayProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "stroke-dashoffset",
+		"value": "<length-percentage>",
+		"id": "propdef-stroke-dashoffset",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-dashoffset",
+		"value": "<length-percentage> | <number>",
+		"id": "StrokeDashoffsetProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "stroke-image",
+		"value": "<paint>#",
+		"id": "propdef-stroke-image",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-linecap",
+		"value": "butt | round | square",
+		"id": "propdef-stroke-linecap",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-linecap",
+		"value": "butt | round | square",
+		"id": "StrokeLinecapProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "stroke-linejoin",
+		"value": "[ crop | arcs | miter ] || [ bevel | round | fallback ]",
+		"id": "propdef-stroke-linejoin",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-linejoin",
+		"value": "miter | miter-clip | round | bevel | arcs",
+		"id": "StrokeLinejoinProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "stroke-miterlimit",
+		"value": "<number>",
+		"id": "propdef-stroke-miterlimit",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-miterlimit",
+		"value": "<number>",
+		"id": "StrokeMiterlimitProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "stroke-opacity",
+		"value": "<'opacity'>",
+		"id": "propdef-stroke-opacity",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-opacity",
+		"value": "<‘opacity’>",
+		"id": "StrokeOpacityProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "stroke-origin",
+		"value": "match-parent | fill-box | stroke-box | content-box | padding-box | border-box",
+		"id": "propdef-stroke-origin",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-position",
+		"value": "<position>#",
+		"id": "propdef-stroke-position",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-repeat",
+		"value": "<repeat-style>#",
+		"id": "propdef-stroke-repeat",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-size",
+		"value": "<bg-size>#",
+		"id": "propdef-stroke-size",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-width",
+		"value": "<length-percentage>#",
+		"id": "propdef-stroke-width",
+		"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+	},
+	{
+		"name": "stroke-width",
+		"value": "<length-percentage> | <number>",
+		"id": "StrokeWidthProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "tab-size",
+		"value": "<number> | <length>",
+		"id": "propdef-tab-size",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "tab-size",
+		"value": "<number> | <length>",
+		"id": "propdef-tab-size",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "table-layout",
+		"value": "auto | fixed",
+		"id": "propdef-table-layout",
+		"spec": "https://drafts.csswg.org/css-tables-3/"
+	},
+	{
+		"name": "text-align",
+		"value": "start | end",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-text-align①",
+		"spec": "https://drafts.csswg.org/css-logical-1/"
+	},
+	{
+		"name": "text-align",
+		"value": "start | end | left | right | center | justify | match-parent | justify-all",
+		"id": "propdef-text-align",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "text-align",
+		"value": "start | end | left | right | center | <string> | justify | match-parent | justify-all",
+		"id": "propdef-text-align",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-align-all",
+		"value": "start | end | left | right | center | justify | match-parent",
+		"id": "propdef-text-align-all",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "text-align-all",
+		"value": "start | end | left | right | center | justify | match-parent",
+		"id": "propdef-text-align-all",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-align-last",
+		"value": "auto | start | end | left | right | center | justify | match-parent",
+		"id": "propdef-text-align-last",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "text-align-last",
+		"value": "auto | start | end | left | right | center | justify | match-parent",
+		"id": "propdef-text-align-last",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-anchor",
+		"value": "start | middle | end",
+		"id": "TextAnchorProperty",
+		"spec": "https://svgwg.org/svg2-draft/text.html"
+	},
+	{
+		"name": "text-autospace",
+		"value": "normal | <autospace> | auto",
+		"id": "propdef-text-autospace",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-box-edge",
+		"value": "leading | [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?",
+		"id": "propdef-text-box-edge",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "text-box-trim",
+		"value": "none | start | end | both",
+		"id": "propdef-text-box-trim",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "text-combine-upright",
+		"value": "none | all",
+		"id": "propdef-text-combine-upright",
+		"spec": "https://drafts.csswg.org/css-writing-modes-3/"
+	},
+	{
+		"name": "text-combine-upright",
+		"value": "none | all | [ digits <integer [2,4]>? ]",
+		"id": "propdef-text-combine-upright",
+		"spec": "https://drafts.csswg.org/css-writing-modes-4/"
+	},
+	{
+		"name": "text-decoration",
+		"value": "<'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'>",
+		"id": "propdef-text-decoration",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-decoration",
+		"value": "<'text-decoration-line'> || <'text-decoration-thickness'> || <'text-decoration-style'> || <'text-decoration-color'>",
+		"id": "propdef-text-decoration",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-color",
+		"value": "<color>",
+		"id": "propdef-text-decoration-color",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-decoration-color",
+		"value": "<color>",
+		"id": "propdef-text-decoration-color",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-line",
+		"value": "none | [ underline || overline || line-through || blink ]",
+		"id": "propdef-text-decoration-line",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-decoration-line",
+		"value": "none | [ underline || overline || line-through || blink ] | spelling-error | grammar-error",
+		"id": "propdef-text-decoration-line",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-skip",
+		"value": "none | auto",
+		"id": "propdef-text-decoration-skip",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-skip-box",
+		"value": "none | all",
+		"id": "propdef-text-decoration-skip-box",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-skip-ink",
+		"value": "auto | none | all",
+		"id": "propdef-text-decoration-skip-ink",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-skip-self",
+		"value": "auto | skip-all | [ skip-underline || skip-overline || skip-line-through ] | no-skip",
+		"id": "propdef-text-decoration-skip-self",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-skip-spaces",
+		"value": "none | all | [ start || end ]",
+		"id": "propdef-text-decoration-skip-spaces",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-style",
+		"value": "solid | double | dotted | dashed | wavy",
+		"id": "propdef-text-decoration-style",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-decoration-style",
+		"value": "solid | double | dotted | dashed | wavy",
+		"id": "propdef-text-decoration-style",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-thickness",
+		"value": "auto | from-font | <length> | <percentage>",
+		"id": "propdef-text-decoration-thickness",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-decoration-trim",
+		"value": "<length>{1,2} | auto",
+		"id": "propdef-text-decoration-trim",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-emphasis",
+		"value": "<'text-emphasis-style'> || <'text-emphasis-color'>",
+		"id": "propdef-text-emphasis",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-emphasis",
+		"value": "<'text-emphasis-style'> || <'text-emphasis-color'>",
+		"id": "propdef-text-emphasis",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-emphasis-color",
+		"value": "<color>",
+		"id": "propdef-text-emphasis-color",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-emphasis-color",
+		"value": "<color>",
+		"id": "propdef-text-emphasis-color",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-emphasis-position",
+		"value": "[ over | under ] && [ right | left ]?",
+		"id": "propdef-text-emphasis-position",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-emphasis-position",
+		"value": "[ over | under ] && [ right | left ]?",
+		"id": "propdef-text-emphasis-position",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-emphasis-skip",
+		"value": "spaces || punctuation || symbols || narrow",
+		"id": "propdef-text-emphasis-skip",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-emphasis-style",
+		"value": "none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>",
+		"id": "propdef-text-emphasis-style",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-emphasis-style",
+		"value": "none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>",
+		"id": "propdef-text-emphasis-style",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-group-align",
+		"value": "none | start | end | left | right | center",
+		"id": "propdef-text-group-align",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-indent",
+		"value": "[ <length-percentage> ] && hanging? && each-line?",
+		"id": "propdef-text-indent",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "text-indent",
+		"value": "[ <length-percentage> ] && hanging? && each-line?",
+		"id": "propdef-text-indent",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-justify",
+		"value": "auto | none | inter-word | inter-character",
+		"id": "propdef-text-justify",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "text-justify",
+		"value": "[ auto | none | inter-word | inter-character ] || no-compress",
+		"id": "propdef-text-justify",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-orientation",
+		"value": "mixed | upright | sideways",
+		"id": "propdef-text-orientation",
+		"spec": "https://drafts.csswg.org/css-writing-modes-3/"
+	},
+	{
+		"name": "text-orientation",
+		"value": "mixed | upright | sideways",
+		"id": "propdef-text-orientation",
+		"spec": "https://drafts.csswg.org/css-writing-modes-4/"
+	},
+	{
+		"name": "text-overflow",
+		"value": "clip | ellipsis",
+		"id": "propdef-text-overflow",
+		"spec": "https://drafts.csswg.org/css-overflow-3/"
+	},
+	{
+		"name": "text-overflow",
+		"value": "[ clip | ellipsis | <string> | fade | <fade()> ]{1,2}",
+		"id": "propdef-text-overflow",
+		"spec": "https://drafts.csswg.org/css-overflow-4/"
+	},
+	{
+		"name": "text-overflow",
+		"value": "clip | ellipsis",
+		"id": "propdef-text-overflow",
+		"spec": "https://drafts.csswg.org/css-ui-3/"
+	},
+	{
+		"name": "text-rendering",
+		"value": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision",
+		"id": "TextRenderingProperty",
+		"spec": "https://svgwg.org/svg2-draft/painting.html"
+	},
+	{
+		"name": "text-shadow",
+		"value": "none | [ <color>? && <length>{2,3} ]#",
+		"id": "propdef-text-shadow",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-shadow",
+		"value": "none | <shadow>#",
+		"id": "propdef-text-shadow",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-size-adjust",
+		"value": "auto | none | <percentage [0,∞]>",
+		"id": "propdef-text-size-adjust",
+		"spec": "https://drafts.csswg.org/css-size-adjust-1/"
+	},
+	{
+		"name": "text-spacing",
+		"value": "normal | none | auto | <autospace> || <spacing-trim>",
+		"id": "propdef-text-spacing",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-spacing-trim",
+		"value": "<spacing-trim> | auto",
+		"id": "propdef-text-spacing-trim",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-transform",
+		"value": "none | [capitalize | uppercase | lowercase ] || full-width || full-size-kana",
+		"id": "propdef-text-transform",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "text-transform",
+		"value": "none | [capitalize | uppercase | lowercase ] || full-width || full-size-kana",
+		"id": "propdef-text-transform",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "text-transform",
+		"value": "math-auto",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-text-transform",
+		"spec": "https://w3c.github.io/mathml-core/"
+	},
+	{
+		"name": "text-underline-offset",
+		"value": "auto | <length> | <percentage>",
+		"id": "propdef-text-underline-offset",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-underline-position",
+		"value": "auto | [ under || [ left | right ] ]",
+		"id": "propdef-text-underline-position",
+		"spec": "https://drafts.csswg.org/css-text-decor-3/"
+	},
+	{
+		"name": "text-underline-position",
+		"value": "auto | [ from-font | under ] || [ left | right ]",
+		"id": "propdef-text-underline-position",
+		"spec": "https://drafts.csswg.org/css-text-decor-4/"
+	},
+	{
+		"name": "text-wrap",
+		"value": "wrap | nowrap | balance | stable | pretty",
+		"id": "propdef-text-wrap",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "timeline-scope",
+		"value": "none | <dashed-ident>#",
+		"id": "propdef-timeline-scope",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "toggle",
+		"value": "<'toggle-root'>",
+		"id": "propdef-toggle",
+		"spec": "https://tabatkins.github.io/css-toggle/"
+	},
+	{
+		"name": "toggle-group",
+		"value": "none | [ <dashed-ident> self? ]#",
+		"id": "propdef-toggle-group",
+		"spec": "https://tabatkins.github.io/css-toggle/"
+	},
+	{
+		"name": "toggle-root",
+		"value": "none | <toggle-specifier>#",
+		"id": "propdef-toggle-root",
+		"spec": "https://tabatkins.github.io/css-toggle/"
+	},
+	{
+		"name": "toggle-trigger",
+		"value": "none | <toggle-trigger>#",
+		"id": "propdef-toggle-trigger",
+		"spec": "https://tabatkins.github.io/css-toggle/"
+	},
+	{
+		"name": "toggle-visibility",
+		"value": "normal | <dashed-ident>",
+		"id": "propdef-toggle-visibility",
+		"spec": "https://tabatkins.github.io/css-toggle/"
+	},
+	{
+		"name": "top",
+		"value": "auto | <length-percentage>",
+		"id": "propdef-top",
+		"spec": "https://drafts.csswg.org/css-position-3/"
+	},
+	{
+		"name": "touch-action",
+		"value": "auto | none | [ [ pan-x | pan-left | pan-right ] || [ pan-y | pan-up | pan-down ] ] | manipulation",
+		"id": "the-touch-action-css-property",
+		"spec": "https://w3c.github.io/pointerevents/"
+	},
+	{
+		"name": "touch-action",
+		"value": "auto | none | [ [ pan-x | pan-left | pan-right ] || [ pan-y | pan-up | pan-down ] || pinch-zoom ] | manipulation",
+		"id": "propdef-touch-action",
+		"spec": "https://compat.spec.whatwg.org/"
+	},
+	{
+		"name": "transform",
+		"value": "none | <transform-list>",
+		"id": "propdef-transform",
+		"spec": "https://drafts.csswg.org/css-transforms-1/"
+	},
+	{
+		"name": "transform-box",
+		"value": "content-box | border-box | fill-box | stroke-box | view-box",
+		"id": "propdef-transform-box",
+		"spec": "https://drafts.csswg.org/css-transforms-1/"
+	},
+	{
+		"name": "transform-origin",
+		"value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] <length>? | [[ center | left | right ] && [ center | top | bottom ]] <length>?",
+		"id": "propdef-transform-origin",
+		"spec": "https://drafts.csswg.org/css-transforms-1/"
+	},
+	{
+		"name": "transform-style",
+		"value": "flat | preserve-3d",
+		"id": "propdef-transform-style",
+		"spec": "https://drafts.csswg.org/css-transforms-2/"
+	},
+	{
+		"name": "transition",
+		"value": "<single-transition>#",
+		"id": "propdef-transition",
+		"spec": "https://drafts.csswg.org/css-transitions-1/"
+	},
+	{
+		"name": "transition-behavior",
+		"value": "<transition-behavior-value>#",
+		"id": "propdef-transition-behavior",
+		"spec": "https://drafts.csswg.org/css-transitions-2/"
+	},
+	{
+		"name": "transition-delay",
+		"value": "<time>#",
+		"id": "propdef-transition-delay",
+		"spec": "https://drafts.csswg.org/css-transitions-1/"
+	},
+	{
+		"name": "transition-duration",
+		"value": "<time [0s,∞]>#",
+		"id": "propdef-transition-duration",
+		"spec": "https://drafts.csswg.org/css-transitions-1/"
+	},
+	{
+		"name": "transition-property",
+		"value": "none | <single-transition-property>#",
+		"id": "propdef-transition-property",
+		"spec": "https://drafts.csswg.org/css-transitions-1/"
+	},
+	{
+		"name": "transition-timing-function",
+		"value": "<easing-function>#",
+		"id": "propdef-transition-timing-function",
+		"spec": "https://drafts.csswg.org/css-transitions-1/"
+	},
+	{
+		"name": "translate",
+		"value": "none | <length-percentage> [ <length-percentage> <length>? ]?",
+		"id": "propdef-translate",
+		"spec": "https://drafts.csswg.org/css-transforms-2/"
+	},
+	{
+		"name": "unicode-bidi",
+		"value": "normal | embed | isolate | bidi-override | isolate-override | plaintext",
+		"id": "propdef-unicode-bidi",
+		"spec": "https://drafts.csswg.org/css-writing-modes-3/"
+	},
+	{
+		"name": "unicode-bidi",
+		"value": "normal | embed | isolate | bidi-override | isolate-override | plaintext",
+		"id": "propdef-unicode-bidi",
+		"spec": "https://drafts.csswg.org/css-writing-modes-4/"
+	},
+	{
+		"name": "user-select",
+		"value": "auto | text | none | contain | all",
+		"id": "propdef-user-select",
+		"spec": "https://drafts.csswg.org/css-ui-4/"
+	},
+	{
+		"name": "vector-effect",
+		"value": "none | non-scaling-stroke | non-scaling-size | non-rotation | fixed-position",
+		"id": "VectorEffectProperty",
+		"spec": "https://svgwg.org/svg2-draft/coords.html"
+	},
+	{
+		"name": "vertical-align",
+		"value": "[ first | last] || <'alignment-baseline'> || <'baseline-shift'>",
+		"id": "propdef-vertical-align",
+		"spec": "https://drafts.csswg.org/css-inline-3/"
+	},
+	{
+		"name": "view-timeline",
+		"value": "[ <'view-timeline-name'> <'view-timeline-axis'>? ]#",
+		"id": "propdef-view-timeline",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "view-timeline-axis",
+		"value": "[ block | inline | x | y ]#",
+		"id": "propdef-view-timeline-axis",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "view-timeline-inset",
+		"value": "[ [ auto | <length-percentage> ]{1,2} ]#",
+		"id": "propdef-view-timeline-inset",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "view-timeline-name",
+		"value": "[ none | <dashed-ident> ]#",
+		"id": "propdef-view-timeline-name",
+		"spec": "https://drafts.csswg.org/scroll-animations-1/"
+	},
+	{
+		"name": "view-transition-name",
+		"value": "none | <custom-ident>",
+		"id": "propdef-view-transition-name",
+		"spec": "https://drafts.csswg.org/css-view-transitions-1/"
+	},
+	{
+		"name": "visibility",
+		"value": "visible | hidden | collapse",
+		"id": "propdef-visibility",
+		"spec": "https://drafts.csswg.org/css-display-4/"
+	},
+	{
+		"name": "visibility",
+		"value": "visible | hidden | collapse",
+		"id": "propdef-visibility",
+		"spec": "https://drafts.csswg.org/css-display-3/"
+	},
+	{
+		"name": "voice-balance",
+		"value": "<number> | left | center | right | leftwards | rightwards",
+		"id": "propdef-voice-balance",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "voice-duration",
+		"value": "auto | <time [0s,∞]>",
+		"id": "propdef-voice-duration",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "voice-family",
+		"value": "[[<family-name> | <generic-voice>],]* [<family-name> | <generic-voice>] | preserve",
+		"id": "propdef-voice-family",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "voice-pitch",
+		"value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+		"id": "propdef-voice-pitch",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "voice-range",
+		"value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+		"id": "propdef-voice-range",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "voice-rate",
+		"value": "[normal | x-slow | slow | medium | fast | x-fast] || <percentage [0,∞]>",
+		"id": "propdef-voice-rate",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "voice-stress",
+		"value": "normal | strong | moderate | none | reduced",
+		"id": "propdef-voice-stress",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "voice-volume",
+		"value": "silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]",
+		"id": "propdef-voice-volume",
+		"spec": "https://drafts.csswg.org/css-speech-1/"
+	},
+	{
+		"name": "white-space",
+		"value": "normal | pre | nowrap | pre-wrap | break-spaces | pre-line",
+		"id": "propdef-white-space",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "white-space",
+		"value": "normal | pre | nowrap | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap'> || <'white-space-trim'>",
+		"id": "propdef-white-space",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "white-space-collapse",
+		"value": "collapse | discard | preserve | preserve-breaks | preserve-spaces | break-spaces",
+		"id": "propdef-white-space-collapse",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "white-space-trim",
+		"value": "none | discard-before || discard-after || discard-inner",
+		"id": "propdef-white-space-trim",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "widows",
+		"value": "<integer [1,∞]>",
+		"id": "propdef-widows",
+		"spec": "https://drafts.csswg.org/css-break-3/"
+	},
+	{
+		"name": "widows",
+		"value": "<integer [1,∞]>",
+		"id": "propdef-widows",
+		"spec": "https://drafts.csswg.org/css-break-4/"
+	},
+	{
+		"name": "width",
+		"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+		"id": "propdef-width",
+		"spec": "https://drafts.csswg.org/css-sizing-3/"
+	},
+	{
+		"name": "width",
+		"value": "stretch | fit-content | contain",
+		"onlyNewValues": true,
+		"id": "ref-for-propdef-width①",
+		"spec": "https://drafts.csswg.org/css-sizing-4/"
+	},
+	{
+		"name": "will-change",
+		"value": "auto | <animateable-feature>#",
+		"id": "propdef-will-change",
+		"spec": "https://drafts.csswg.org/css-will-change-1/"
+	},
+	{
+		"name": "word-boundary-detection",
+		"value": "normal | manual | auto(<lang>)",
+		"id": "propdef-word-boundary-detection",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "word-boundary-expansion",
+		"value": "none | space | ideographic-space",
+		"id": "propdef-word-boundary-expansion",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "word-break",
+		"value": "normal | keep-all | break-all | break-word",
+		"id": "propdef-word-break",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "word-break",
+		"value": "normal | keep-all | break-all | break-word",
+		"id": "propdef-word-break",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "word-spacing",
+		"value": "normal | <length>",
+		"id": "propdef-word-spacing",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "word-spacing",
+		"value": "normal | <length-percentage>",
+		"id": "propdef-word-spacing",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "word-wrap",
+		"value": "normal | break-word | anywhere",
+		"id": "propdef-word-wrap",
+		"spec": "https://drafts.csswg.org/css-text-3/"
+	},
+	{
+		"name": "word-wrap",
+		"value": "normal | break-word | anywhere",
+		"id": "propdef-word-wrap",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "wrap-after",
+		"value": "auto | avoid | avoid-line | avoid-flex | line | flex",
+		"id": "propdef-wrap-after",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "wrap-before",
+		"value": "auto | avoid | avoid-line | avoid-flex | line | flex",
+		"id": "propdef-wrap-before",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "wrap-flow",
+		"value": "auto | both | start | end | minimum | maximum | clear",
+		"id": "propdef-wrap-flow",
+		"spec": "https://drafts.csswg.org/css-exclusions-1/"
+	},
+	{
+		"name": "wrap-inside",
+		"value": "auto | avoid",
+		"id": "propdef-wrap-inside",
+		"spec": "https://drafts.csswg.org/css-text-4/"
+	},
+	{
+		"name": "wrap-through",
+		"value": "wrap | none",
+		"id": "propdef-wrap-through",
+		"spec": "https://drafts.csswg.org/css-exclusions-1/"
+	},
+	{
+		"name": "writing-mode",
+		"value": "horizontal-tb | vertical-rl | vertical-lr",
+		"id": "propdef-writing-mode",
+		"spec": "https://drafts.csswg.org/css-writing-modes-3/"
+	},
+	{
+		"name": "writing-mode",
+		"value": "horizontal-tb | vertical-rl | vertical-lr | sideways-rl | sideways-lr",
+		"id": "propdef-writing-mode",
+		"spec": "https://drafts.csswg.org/css-writing-modes-4/"
+	},
+	{
+		"name": "x",
+		"value": "<length-percentage>",
+		"id": "XProperty",
+		"spec": "https://svgwg.org/svg2-draft/geometry.html"
+	},
+	{
+		"name": "y",
+		"value": "<length-percentage>",
+		"id": "YProperty",
+		"spec": "https://svgwg.org/svg2-draft/geometry.html"
+	},
+	{
+		"name": "z-index",
+		"value": "auto | <integer>",
+		"id": "propdef-z-index",
+		"spec": "https://drafts.csswg.org/css2/"
+	}
+]

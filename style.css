@@ -52,7 +52,7 @@
 	--scrollbar-color: oklch(var(--accent-lightness) var(--accent-chroma) var(--accent-hue));
 	--scrollbar-hover-color: oklch(calc(var(--accent-lightness) + 0.1) var(--accent-chroma) var(--accent-hue));
 	scrollbar-color: var(--scrollbar-color) transparent;
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
 
 body {
