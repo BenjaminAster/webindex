@@ -15,7 +15,7 @@ import { DOMParser as _DOMParser } from "https://deno.land/x/deno_dom@v0.1.38/de
 const DOMParser: typeof globalThis.DOMParser = _DOMParser;
 
 import {
-	exfiltrateIDL,
+	extractIDL,
 	analyzeDocument,
 	analyzeIDL,
 	collectedCSSStuff,
@@ -89,7 +89,21 @@ $specs: {
 		...rest
 	}) => ({ ...rest, url, repo, groupHomepage, cssPath, idlPath, pages }));
 
-	$specLoop: for (let { url, categories, repo, groupHomepage, title, cssPath, idlPath, pages, group, tests, shortname, generator } of [...results, ...manualData.additionalSpecs]) {
+	$specLoop: for (let {
+		url,
+		categories,
+		repo,
+		groupHomepage,
+		title,
+		cssPath,
+		idlPath,
+		pages,
+		group,
+		tests,
+		shortname,
+		generator,
+		organization,
+	} of [...results, ...manualData.additionalSpecs]) {
 		let manuallyAdded = !groupHomepage;
 
 		// if (url === "https://streams.spec.whatwg.org/") break $specLoop;
@@ -108,6 +122,8 @@ $specs: {
 			({ shortname } = url.match(/\/(?<shortname>[^\/]+)(\/|\.html|\.md)?$/).groups);
 		}
 
+		if (organization === "WHATWG") group = "whatwg";
+
 		group ||= manualData.groupRewrites[url];
 
 		let groupInfo = group ? groups.find((item) => item.identifier === group) : groups.find((group) => group.homepage === groupHomepage);
@@ -116,7 +132,7 @@ $specs: {
 		// console.log(groupInfo, group)
 
 		if (!group) {
-			console.error(`Group with homepage ${groupHomepage} not found (spec: ${url})`);
+			console.error(`[ERROR] group with homepage ${groupHomepage} not found (spec: ${url})`);
 		}
 
 		$: {
@@ -164,7 +180,7 @@ $specs: {
 				const text = await fetchCached(pageURL);
 				doc = domParser.parseFromString(text, "text/html");
 				if (analyzeCSS) analyzeDocument(doc, { url: pageURL });
-				if (analyzeJavaScript) idl = exfiltrateIDL(doc, { url: pageURL });
+				if (analyzeJavaScript) idl = extractIDL(doc, { url: pageURL });
 			}
 			if (idl) analyzeIDL(idl, { url: pageURL, generator });
 			if (doc) return doc;

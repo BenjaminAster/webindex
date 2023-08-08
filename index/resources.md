@@ -9,6 +9,7 @@
 - https://github.com/w3c/spec-families
 - https://github.com/mdn/data/tree/main/css
 - https://github.com/mdn/data/blob/main/api/inheritance.json
+- https://drafts.csswg.org/indexes/
 
 ## Other stuff:
 - https://github.com/w3c/reffy

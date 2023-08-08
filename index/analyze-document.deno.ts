@@ -35,7 +35,7 @@ export const collectedJavaScriptStuff = {
 };
 
 const cssProperties = manualData.additionalCSSProperties;
-const cssTypes = [];
+const cssTypes = manualData.additionalCSSTypes;
 const cssValues = [];
 const cssDescriptors = [];
 const cssAtRules = [];
@@ -113,6 +113,8 @@ export const tidyUpCollectedStuff = () => {
 				for (const definition of definitions) {
 					propertiesToConsider.forEach((property) => delete definition[property]);
 				}
+				const firstActualDefIndex = definitions.findIndex(({ id }) => !id.startsWith("ref-for-"));
+				definitions.unshift(definitions.splice(firstActualDefIndex, 1)[0])
 				// console.log(Object.fromEntries(propertiesToConsider.map((property) => [property, current[property]])),current)
 				organizedArray.push({
 					...Object.fromEntries(propertiesToConsider.map((property) => [property, current[property]])),
@@ -253,10 +255,16 @@ export const analyzeDocument = (doc: Document, { url }: { url: string }) => {
 				const value = tbody.querySelector(":scope > tr:nth-of-type(2) > td:first-of-type")?.textContent.trim().replaceAll(/\s+/g, " ");
 				const onlyNewValues = tbody.querySelector(":scope > tr:nth-of-type(2) > th")?.textContent.trim().match(/^New value(s)?:/);
 				// console.log(value);
-				for (const propertyEl of propertyEls) {
+				$propertyElLoop: for (const propertyEl of propertyEls) {
 					if (!value) throw new Error(`[no value] ${propertyEl} ${url}`);
 					const propertyName = propertyEl.textContent.trim();
 					const linkId = propertyEl.getAttribute("id");
+					if (!linkId) {
+						if (propertyName !== "display" || url !== "https://w3c.github.io/mathml-core/") {
+							console.error(`[ERROR] CSS property ${propertyName} (${url}) has no id attribute`);
+						}
+						continue $propertyElLoop;
+					}
 
 					cssProperties.push({
 						name: propertyName,
@@ -307,6 +315,12 @@ export const analyzeDocument = (doc: Document, { url }: { url: string }) => {
 					}
 					definition ||= null;
 					const id = dfn.getAttribute("id");
+					if (!id) {
+						if (!manualData.additionalCSSTypes.some((item) => item.name === name)) {
+							console.error(`[ERROR] CSS type ${name} (${url}) has no id attribute`);
+						}
+						continue $loop;
+					}
 					cssTypes.push({
 						name,
 						id,
@@ -386,7 +400,7 @@ export const analyzeDocument = (doc: Document, { url }: { url: string }) => {
 	}
 };
 
-export const exfiltrateIDL = (doc: Document, { url }: { url: string }) => {
+export const extractIDL = (doc: Document, { url }: { url: string }) => {
 	let idl = "";
 
 	$idlLoop: for (const container of doc.querySelectorAll("pre > code.idl, pre.idl:not(.example)")) {

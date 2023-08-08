@@ -31,7 +31,6 @@ export default {
 			identifier: "wg/tracking",
 			homepage: "https://www.w3.org/2011/tracking-protection/",
 		},
-
 		{
 			name: "Web Hypertext Application Technology Working Group",
 			identifier: "whatwg",
@@ -134,25 +133,6 @@ export default {
 		},
 	],
 	groupRewrites: {
-		"https://compat.spec.whatwg.org/": "whatwg",
-		"https://console.spec.whatwg.org/": "whatwg",
-		"https://dom.spec.whatwg.org/": "whatwg",
-		"https://encoding.spec.whatwg.org/": "whatwg",
-		"https://fetch.spec.whatwg.org/": "whatwg",
-		"https://fs.spec.whatwg.org/": "whatwg",
-		"https://fullscreen.spec.whatwg.org/": "whatwg",
-		"https://html.spec.whatwg.org/multipage/": "whatwg",
-		"https://infra.spec.whatwg.org/": "whatwg",
-		"https://mimesniff.spec.whatwg.org/": "whatwg",
-		"https://notifications.spec.whatwg.org/": "whatwg",
-		"https://quirks.spec.whatwg.org/": "whatwg",
-		"https://storage.spec.whatwg.org/": "whatwg",
-		"https://streams.spec.whatwg.org/": "whatwg",
-		"https://testutils.spec.whatwg.org/": "whatwg",
-		"https://url.spec.whatwg.org/": "whatwg",
-		"https://webidl.spec.whatwg.org/": "whatwg",
-		"https://websockets.spec.whatwg.org/": "whatwg",
-		"https://xhr.spec.whatwg.org/": "whatwg",
 		"https://w3c.github.io/encrypted-media/": "wg/media",
 		"https://w3c.github.io/webcrypto/": "wg/webappsec",
 		"https://www.rfc-editor.org/rfc/rfc2397": "larrymasinter",
@@ -235,6 +215,7 @@ export default {
 		{ repo: "https://github.com/w3c/HTMLSourcingInbandTracks", url: "https://dev.w3.org/html5/html-sourcing-inband-tracks/", group: "cg/inbandtracks", shortname: "sourcing-inband-tracks" },
 		{ repo: "https://github.com/w3c/svgwg/tree/main/specs/streaming", url: "https://svgwg.org/specs/streaming/", group: "wg/svg", shortname: "svg-streaming" },
 		{ repo: "https://github.com/w3c/svgwg/tree/main/specs/markers", url: "https://svgwg.org/specs/markers/", group: "wg/svg", shortname: "svg-markers" },
+		{ repo: "https://github.com/w3c/svgwg/tree/main/specs/paths", url: "https://svgwg.org/specs/paths/", group: "wg/svg", shortname: "svg-paths" },
 		{ repo: null, url: "https://wiki.mozilla.org/APNG_Specification", group: "mozilla", shortname: "APNG" },
 		{ repo: "https://github.com/w3c/css-houdini-drafts/tree/main/box-tree-api", url: "https://drafts.css-houdini.org/box-tree-api-1/", group: "wg/css" },
 		{ repo: null, url: "https://www.w3.org/TR/xml11/", group: "wg/xml-core" },
@@ -409,6 +390,27 @@ export default {
 			value: "auto | <integer>",
 			id: "propdef-z-index",
 			spec: "https://drafts.csswg.org/css2/",
+		},
+		{
+			name: "display",
+			value: "<display-outside> || [ <display-inside> | math ]",
+			onlyNewValues: true,
+			id: "new-display-math-value",
+			spec: "https://w3c.github.io/mathml-core/",
+		}
+	],
+	additionalCSSTypes: [
+		{
+			name: "<feature-value-block>",
+			definition: "<font-feature-value-type> { <declaration-list> }",
+			id: "font-feature-values-syntax",
+			spec: "https://drafts.csswg.org/css-fonts-4/"
+		},
+		{
+			name: "<font-feature-value-type>",
+			definition: "@stylistic | @historical-forms | @styleset | @character-variant | @swash | @ornaments | @annotation",
+			id: "font-feature-values-syntax",
+			spec: "https://drafts.csswg.org/css-fonts-4/",
 		},
 	],
 	additionalCSSSelectors: [

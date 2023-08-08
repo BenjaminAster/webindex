@@ -19,16 +19,16 @@
 	<link rel="manifest" href="./app.webmanifest" />
 
 	<!-- JavaScript -->
-	<script type="module" src="./script.js"></script>
+	<!-- <script type="module" src="./script.js"></script> -->
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="preload" as="style" href="./icons.css" />
 
 	<!-- Preloads -->
-	<link rel="preload" as="fetch" crossorigin="anonymous" href="./index/specs.json" />
-	<link rel="preload" as="fetch" crossorigin="anonymous" href="./index/css.json" />
-	<link rel="preload" as="fetch" crossorigin="anonymous" href="./index/javascript.json" />
+	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/specs.json" /> -->
+	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/css.json" /> -->
+	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/javascript.json" /> -->
 </head>
 
 <body>
@@ -44,26 +44,17 @@
 	<header>
 		<!-- <input type="search" id="searchbox" title="Search" placeholder="Search..." /> -->
 
-		<fieldset id="tabs">
-			<label>
-				<input type="radio" name="tab" value="specifications" checked class="hide" />
-				<div>
-					Specifications
-				</div>
-			</label>
-			<label>
-				<input type="radio" name="tab" value="css" class="hide" />
-				<div>
-					CSS
-				</div>
-			</label>
-			<label>
-				<input type="radio" name="tab" value="javascript" class="hide" />
-				<div>
-					JavaScript
-				</div>
-			</label>
-		</fieldset>
+		<div id="tabs">
+			<a href="./">
+				Specifications
+			</a>
+			<a href="./css.html">
+				CSS
+			</a>
+			<a href="./javascript.html">
+				JavaScript
+			</a>
+		</div>
 	</header>
 
 	<main>
