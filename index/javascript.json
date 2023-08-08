@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Mon, 07 Aug 2023 22:30:19 GMT",
-		"iso": "2023-08-07T22:30:19.553Z",
-		"unixMillis": 1691447419553
+		"utc": "Tue, 08 Aug 2023 15:09:13 GMT",
+		"iso": "2023-08-08T15:09:13.911Z",
+		"unixMillis": 1691507353911
 	},
 	"jsInterfaces": [
 		{
@@ -106,14 +106,14 @@
 			"name": "Animation",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://drafts.csswg.org/web-animations-2/",
-					"id": "ref-for-animation"
-				},
-				{
 					"inheritance": "EventTarget",
 					"spec": "https://drafts.csswg.org/web-animations-1/",
 					"id": "animation"
+				},
+				{
+					"partial": true,
+					"spec": "https://drafts.csswg.org/web-animations-2/",
+					"id": "ref-for-animation"
 				}
 			]
 		},
@@ -121,13 +121,13 @@
 			"name": "AnimationEffect",
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/web-animations-1/",
+					"id": "animationeffect"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/web-animations-2/",
 					"id": "ref-for-animationeffect"
-				},
-				{
-					"spec": "https://drafts.csswg.org/web-animations-1/",
-					"id": "animationeffect"
 				}
 			]
 		},
@@ -174,13 +174,13 @@
 			"name": "AnimationTimeline",
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/web-animations-1/",
+					"id": "animationtimeline"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/web-animations-2/",
 					"id": "ref-for-animationtimeline"
-				},
-				{
-					"spec": "https://drafts.csswg.org/web-animations-1/",
-					"id": "animationtimeline"
 				}
 			]
 		},
@@ -841,14 +841,14 @@
 			"name": "BrowserCaptureMediaStreamTrack",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://screen-share.github.io/element-capture/",
-					"id": "ref-for-dom-browsercapturemediastreamtrack"
-				},
-				{
 					"inheritance": "MediaStreamTrack",
 					"spec": "https://w3c.github.io/mediacapture-region/",
 					"id": "dom-browsercapturemediastreamtrack"
+				},
+				{
+					"partial": true,
+					"spec": "https://screen-share.github.io/element-capture/",
+					"id": "ref-for-dom-browsercapturemediastreamtrack"
 				}
 			]
 		},
@@ -1100,14 +1100,14 @@
 			"name": "CaptureController",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://screen-share.github.io/captured-mouse-events/",
-					"id": "ref-for-dom-capturecontroller"
-				},
-				{
 					"inheritance": "EventTarget",
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
 					"id": "dom-capturecontroller"
+				},
+				{
+					"partial": true,
+					"spec": "https://screen-share.github.io/captured-mouse-events/",
+					"id": "ref-for-dom-capturecontroller"
 				}
 			]
 		},
@@ -1213,13 +1213,13 @@
 			"name": "Client",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/ServiceWorker/",
+					"id": "client"
+				},
+				{
 					"partial": true,
 					"spec": "https://wicg.github.io/page-lifecycle/",
 					"id": "ref-for-client"
-				},
-				{
-					"spec": "https://w3c.github.io/ServiceWorker/",
-					"id": "client"
 				}
 			]
 		},
@@ -1553,6 +1553,10 @@
 			"name": "CSS",
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/cssom-1/",
+					"id": "namespacedef-css"
+				},
+				{
 					"partial": true,
 					"spec": "https://wicg.github.io/css-parser-api/",
 					"id": "ref-for-namespacedef-css"
@@ -1596,10 +1600,6 @@
 					"partial": true,
 					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
 					"id": "ref-for-namespacedef-css"
-				},
-				{
-					"spec": "https://drafts.csswg.org/cssom-1/",
-					"id": "namespacedef-css"
 				}
 			]
 		},
@@ -2133,6 +2133,10 @@
 			"name": "CSSRule",
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/cssom-1/",
+					"id": "cssrule"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/css-animations-1/",
 					"id": "ref-for-cssrule"
@@ -2151,10 +2155,6 @@
 					"partial": true,
 					"spec": "https://drafts.csswg.org/css-fonts-4/",
 					"id": "ref-for-cssrule"
-				},
-				{
-					"spec": "https://drafts.csswg.org/cssom-1/",
-					"id": "cssrule"
 				}
 			]
 		},
@@ -2240,14 +2240,14 @@
 			"name": "CSSStyleRule",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
-					"id": "ref-for-cssstylerule"
-				},
-				{
 					"inheritance": "CSSGroupingRule",
 					"spec": "https://drafts.csswg.org/cssom-1/",
 					"id": "cssstylerule"
+				},
+				{
+					"partial": true,
+					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
+					"id": "ref-for-cssstylerule"
 				}
 			]
 		},
@@ -3035,13 +3035,13 @@
 			"mixin": true,
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/cssom-1/",
+					"id": "elementcssinlinestyle"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
 					"id": "ref-for-elementcssinlinestyle"
-				},
-				{
-					"spec": "https://drafts.csswg.org/cssom-1/",
-					"id": "elementcssinlinestyle"
 				}
 			]
 		},
@@ -3368,14 +3368,14 @@
 			"name": "File",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://wicg.github.io/entries-api/",
-					"id": "ref-for-file"
-				},
-				{
 					"inheritance": "Blob",
 					"spec": "https://w3c.github.io/FileAPI/",
 					"id": "file"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/entries-api/",
+					"id": "ref-for-file"
 				}
 			]
 		},
@@ -3694,13 +3694,13 @@
 			"name": "Gamepad",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/gamepad/",
+					"id": "dom-gamepad"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/gamepad/extensions.html",
 					"id": "ref-for-dom-gamepad"
-				},
-				{
-					"spec": "https://w3c.github.io/gamepad/",
-					"id": "dom-gamepad"
 				}
 			]
 		},
@@ -4537,14 +4537,14 @@
 			"name": "HTMLBodyElement",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://compat.spec.whatwg.org/",
-					"id": "ref-for-htmlbodyelement"
-				},
-				{
 					"inheritance": "HTMLElement",
 					"spec": "https://html.spec.whatwg.org/multipage/sections.html",
 					"id": "htmlbodyelement"
+				},
+				{
+					"partial": true,
+					"spec": "https://compat.spec.whatwg.org/",
+					"id": "ref-for-htmlbodyelement"
 				},
 				{
 					"partial": true,
@@ -5789,14 +5789,14 @@
 			"name": "InputEvent",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://w3c.github.io/input-events/",
-					"id": "ref-for-dom-inputevent"
-				},
-				{
 					"inheritance": "UIEvent",
 					"spec": "https://w3c.github.io/uievents/",
 					"id": "inputevent"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/input-events/",
+					"id": "ref-for-dom-inputevent"
 				}
 			]
 		},
@@ -5939,14 +5939,14 @@
 			"name": "KeyframeEffect",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://drafts.csswg.org/web-animations-2/",
-					"id": "ref-for-keyframeeffect"
-				},
-				{
 					"inheritance": "AnimationEffect",
 					"spec": "https://drafts.csswg.org/web-animations-1/",
 					"id": "keyframeeffect"
+				},
+				{
+					"partial": true,
+					"spec": "https://drafts.csswg.org/web-animations-2/",
+					"id": "ref-for-keyframeeffect"
 				}
 			]
 		},
@@ -6159,6 +6159,11 @@
 			"name": "MediaDevices",
 			"definitions": [
 				{
+					"inheritance": "EventTarget",
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediadevices"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-handle/actions/",
 					"id": "ref-for-dom-mediadevices"
@@ -6172,11 +6177,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-handle/identity/",
 					"id": "ref-for-dom-mediadevices"
-				},
-				{
-					"inheritance": "EventTarget",
-					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "dom-mediadevices"
 				},
 				{
 					"partial": true,
@@ -6396,6 +6396,11 @@
 			"name": "MediaStreamTrack",
 			"definitions": [
 				{
+					"inheritance": "EventTarget",
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediastreamtrack"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-handle/actions/",
 					"id": "ref-for-dom-mediastreamtrack"
@@ -6409,11 +6414,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-handle/identity/",
 					"id": "ref-for-dom-mediastreamtrack"
-				},
-				{
-					"inheritance": "EventTarget",
-					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "dom-mediastreamtrack"
 				},
 				{
 					"partial": true,
@@ -6957,6 +6957,11 @@
 			"name": "MouseEvent",
 			"definitions": [
 				{
+					"inheritance": "UIEvent",
+					"spec": "https://w3c.github.io/uievents/",
+					"id": "mouseevent"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/cssom-view-1/",
 					"id": "ref-for-mouseevent"
@@ -6965,11 +6970,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerlock/",
 					"id": "ref-for-dom-mouseevent"
-				},
-				{
-					"inheritance": "UIEvent",
-					"spec": "https://w3c.github.io/uievents/",
-					"id": "mouseevent"
 				},
 				{
 					"partial": true,
@@ -7115,13 +7115,13 @@
 			"name": "Navigator",
 			"definitions": [
 				{
+					"spec": "https://html.spec.whatwg.org/multipage/system-state.html",
+					"id": "navigator"
+				},
+				{
 					"partial": true,
 					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "ref-for-navigator"
-				},
-				{
-					"spec": "https://html.spec.whatwg.org/multipage/system-state.html",
-					"id": "navigator"
 				},
 				{
 					"partial": true,
@@ -8013,6 +8013,11 @@
 			"name": "Performance",
 			"definitions": [
 				{
+					"inheritance": "EventTarget",
+					"spec": "https://w3c.github.io/hr-time/",
+					"id": "dom-performance"
+				},
+				{
 					"partial": true,
 					"spec": "https://wicg.github.io/performance-measure-memory/",
 					"id": "ref-for-performance"
@@ -8021,11 +8026,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/event-timing/",
 					"id": "ref-for-performance"
-				},
-				{
-					"inheritance": "EventTarget",
-					"spec": "https://w3c.github.io/hr-time/",
-					"id": "dom-performance"
 				},
 				{
 					"partial": true,
@@ -8121,14 +8121,14 @@
 			"name": "PerformanceNavigationTiming",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://wicg.github.io/nav-speculation/prerendering.html",
-					"id": "ref-for-performancenavigationtiming"
-				},
-				{
 					"inheritance": "PerformanceResourceTiming",
 					"spec": "https://w3c.github.io/navigation-timing/",
 					"id": "dom-performancenavigationtiming"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/nav-speculation/prerendering.html",
+					"id": "ref-for-performancenavigationtiming"
 				}
 			]
 		},
@@ -8225,6 +8225,10 @@
 			"name": "Permissions",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/permissions/",
+					"id": "dom-permissions"
+				},
+				{
 					"partial": true,
 					"spec": "https://wicg.github.io/permissions-request/",
 					"id": "ref-for-permissions"
@@ -8233,10 +8237,6 @@
 					"partial": true,
 					"spec": "https://wicg.github.io/permissions-revoke/",
 					"id": "ref-for-permissions"
-				},
-				{
-					"spec": "https://w3c.github.io/permissions/",
-					"id": "dom-permissions"
 				}
 			]
 		},
@@ -8923,14 +8923,14 @@
 			"name": "RTCDataChannel",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webrtc-priority/",
-					"id": "ref-for-rtcdatachannel"
-				},
-				{
 					"inheritance": "EventTarget",
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcdatachannel"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/webrtc-priority/",
+					"id": "ref-for-rtcdatachannel"
 				},
 				{
 					"partial": true,
@@ -9040,14 +9040,14 @@
 			"name": "RTCError",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcerror"
-				},
-				{
 					"inheritance": "DOMException",
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcerror"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/webrtc-identity/",
+					"id": "ref-for-dom-rtcerror"
 				}
 			]
 		},
@@ -9114,14 +9114,14 @@
 			"name": "RTCIceTransport",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtcicetransport"
-				},
-				{
 					"inheritance": "EventTarget",
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcicetransport"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/webrtc-ice/",
+					"id": "ref-for-dom-rtcicetransport"
 				},
 				{
 					"inheritance": "RTCStatsProvider",
@@ -9180,14 +9180,14 @@
 			"name": "RTCPeerConnection",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcpeerconnection"
-				},
-				{
 					"inheritance": "EventTarget",
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcpeerconnection"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/webrtc-identity/",
+					"id": "ref-for-dom-rtcpeerconnection"
 				},
 				{
 					"partial": true,
@@ -9254,13 +9254,13 @@
 			"name": "RTCRtpReceiver",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcrtpreceiver"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
 					"id": "ref-for-rtcrtpreceiver"
-				},
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcrtpreceiver"
 				},
 				{
 					"partial": true,
@@ -9301,18 +9301,18 @@
 			"name": "RTCRtpSender",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
-					"id": "ref-for-rtcrtpsender"
-				},
-				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
-					"id": "ref-for-rtcrtpsender"
-				},
-				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcrtpsender"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
+					"id": "ref-for-rtcrtpsender"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
+					"id": "ref-for-rtcrtpsender"
 				},
 				{
 					"partial": true,
@@ -9655,6 +9655,11 @@
 			"name": "ServiceWorkerGlobalScope",
 			"definitions": [
 				{
+					"inheritance": "WorkerGlobalScope",
+					"spec": "https://w3c.github.io/ServiceWorker/",
+					"id": "serviceworkerglobalscope"
+				},
+				{
 					"partial": true,
 					"spec": "https://notifications.spec.whatwg.org/",
 					"id": "ref-for-serviceworkerglobalscope"
@@ -9698,11 +9703,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/push-api/",
 					"id": "ref-for-dom-serviceworkerglobalscope"
-				},
-				{
-					"inheritance": "WorkerGlobalScope",
-					"spec": "https://w3c.github.io/ServiceWorker/",
-					"id": "serviceworkerglobalscope"
 				}
 			]
 		},
@@ -9710,6 +9710,11 @@
 			"name": "ServiceWorkerRegistration",
 			"definitions": [
 				{
+					"inheritance": "EventTarget",
+					"spec": "https://w3c.github.io/ServiceWorker/",
+					"id": "serviceworkerregistration"
+				},
+				{
 					"partial": true,
 					"spec": "https://notifications.spec.whatwg.org/",
 					"id": "ref-for-serviceworkerregistration"
@@ -9748,11 +9753,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/push-api/",
 					"id": "ref-for-dom-serviceworkerregistration"
-				},
-				{
-					"inheritance": "EventTarget",
-					"spec": "https://w3c.github.io/ServiceWorker/",
-					"id": "serviceworkerregistration"
 				}
 			]
 		},
@@ -10131,13 +10131,13 @@
 			"name": "StorageManager",
 			"definitions": [
 				{
+					"spec": "https://storage.spec.whatwg.org/",
+					"id": "storagemanager"
+				},
+				{
 					"partial": true,
 					"spec": "https://fs.spec.whatwg.org/",
 					"id": "ref-for-storagemanager"
-				},
-				{
-					"spec": "https://storage.spec.whatwg.org/",
-					"id": "storagemanager"
 				}
 			]
 		},
@@ -11064,14 +11064,14 @@
 			"name": "SVGSVGElement",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://svgwg.org/specs/animations/",
-					"id": "ref-for-svgsvgelement"
-				},
-				{
 					"inheritance": "SVGGraphicsElement",
 					"spec": "https://svgwg.org/svg2-draft/struct.html",
 					"id": "svgsvgelement"
+				},
+				{
+					"partial": true,
+					"spec": "https://svgwg.org/specs/animations/",
+					"id": "ref-for-svgsvgelement"
 				}
 			]
 		},
@@ -11620,14 +11620,14 @@
 			"name": "UIEvent",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://wicg.github.io/input-device-capabilities/",
-					"id": "ref-for-dom-uievent"
-				},
-				{
 					"inheritance": "Event",
 					"spec": "https://w3c.github.io/uievents/",
 					"id": "uievent"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/input-device-capabilities/",
+					"id": "ref-for-dom-uievent"
 				},
 				{
 					"partial": true,
@@ -12522,6 +12522,11 @@
 			"name": "Window",
 			"definitions": [
 				{
+					"inheritance": "EventTarget",
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "window"
+				},
+				{
 					"partial": true,
 					"spec": "https://compat.spec.whatwg.org/",
 					"id": "ref-for-window"
@@ -12530,11 +12535,6 @@
 					"partial": true,
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "ref-for-window"
-				},
-				{
-					"inheritance": "EventTarget",
-					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
-					"id": "window"
 				},
 				{
 					"partial": true,
@@ -12718,13 +12718,13 @@
 			"mixin": true,
 			"definitions": [
 				{
+					"spec": "https://html.spec.whatwg.org/multipage/webappapis.html",
+					"id": "windoworworkerglobalscope"
+				},
+				{
 					"partial": true,
 					"spec": "https://fetch.spec.whatwg.org/",
 					"id": "ref-for-windoworworkerglobalscope"
-				},
-				{
-					"spec": "https://html.spec.whatwg.org/multipage/webappapis.html",
-					"id": "windoworworkerglobalscope"
 				},
 				{
 					"partial": true,
@@ -12948,6 +12948,11 @@
 			"name": "XMLHttpRequest",
 			"definitions": [
 				{
+					"inheritance": "XMLHttpRequestEventTarget",
+					"spec": "https://xhr.spec.whatwg.org/",
+					"id": "xmlhttprequest"
+				},
+				{
 					"partial": true,
 					"spec": "https://wicg.github.io/attribution-reporting-api/",
 					"id": "ref-for-xmlhttprequest"
@@ -12956,11 +12961,6 @@
 					"partial": true,
 					"spec": "https://wicg.github.io/trust-token-api/",
 					"id": "ref-for-xmlhttprequest"
-				},
-				{
-					"inheritance": "XMLHttpRequestEventTarget",
-					"spec": "https://xhr.spec.whatwg.org/",
-					"id": "xmlhttprequest"
 				},
 				{
 					"partial": true,
@@ -13135,6 +13135,10 @@
 			"name": "XRFrame",
 			"definitions": [
 				{
+					"spec": "https://immersive-web.github.io/webxr/",
+					"id": "xrframe"
+				},
+				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/anchors/",
 					"id": "ref-for-xrframe"
@@ -13170,10 +13174,6 @@
 					"id": "ref-for-xrframe"
 				},
 				{
-					"spec": "https://immersive-web.github.io/webxr/",
-					"id": "xrframe"
-				},
-				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/marker-tracking/",
 					"id": "ref-for-xrframe"
@@ -13203,13 +13203,13 @@
 			"name": "XRHitTestResult",
 			"definitions": [
 				{
+					"spec": "https://immersive-web.github.io/hit-test/",
+					"id": "xrhittestresult"
+				},
+				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/anchors/",
 					"id": "ref-for-xrhittestresult"
-				},
-				{
-					"spec": "https://immersive-web.github.io/hit-test/",
-					"id": "xrhittestresult"
 				}
 			]
 		},
@@ -13235,6 +13235,10 @@
 			"name": "XRInputSource",
 			"definitions": [
 				{
+					"spec": "https://immersive-web.github.io/webxr/",
+					"id": "xrinputsource"
+				},
+				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/webxr-gamepads-module/",
 					"id": "ref-for-xrinputsource"
@@ -13243,10 +13247,6 @@
 					"partial": true,
 					"spec": "https://immersive-web.github.io/webxr-hand-input/",
 					"id": "ref-for-xrinputsource"
-				},
-				{
-					"spec": "https://immersive-web.github.io/webxr/",
-					"id": "xrinputsource"
 				}
 			]
 		},
@@ -13487,6 +13487,11 @@
 			"name": "XRSession",
 			"definitions": [
 				{
+					"inheritance": "EventTarget",
+					"spec": "https://immersive-web.github.io/webxr/",
+					"id": "xrsession"
+				},
+				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/anchors/",
 					"id": "ref-for-xrsession"
@@ -13520,11 +13525,6 @@
 					"partial": true,
 					"spec": "https://immersive-web.github.io/lighting-estimation/",
 					"id": "ref-for-xrsession"
-				},
-				{
-					"inheritance": "EventTarget",
-					"spec": "https://immersive-web.github.io/webxr/",
-					"id": "xrsession"
 				},
 				{
 					"partial": true,
@@ -13599,6 +13599,10 @@
 			"name": "XRView",
 			"definitions": [
 				{
+					"spec": "https://immersive-web.github.io/webxr/",
+					"id": "xrview"
+				},
+				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/raw-camera-access/",
 					"id": "ref-for-xrview"
@@ -13607,10 +13611,6 @@
 					"partial": true,
 					"spec": "https://immersive-web.github.io/webxr-ar-module/",
 					"id": "ref-for-xrview"
-				},
-				{
-					"spec": "https://immersive-web.github.io/webxr/",
-					"id": "xrview"
 				}
 			]
 		},
@@ -13637,6 +13637,10 @@
 			"name": "XRWebGLBinding",
 			"definitions": [
 				{
+					"spec": "https://immersive-web.github.io/layers/",
+					"id": "xrwebglbinding"
+				},
+				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/raw-camera-access/",
 					"id": "ref-for-xrwebglbinding"
@@ -13650,10 +13654,6 @@
 					"partial": true,
 					"spec": "https://immersive-web.github.io/lighting-estimation/",
 					"id": "ref-for-xrwebglbinding"
-				},
-				{
-					"spec": "https://immersive-web.github.io/layers/",
-					"id": "xrwebglbinding"
 				}
 			]
 		},
@@ -14035,6 +14035,10 @@
 			"name": "AudioEncoderConfig",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webcodecs/",
+					"id": "dictdef-audioencoderconfig"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webcodecs/aac_codec_registration.html",
 					"id": "ref-for-dictdef-audioencoderconfig"
@@ -14048,10 +14052,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webcodecs/opus_codec_registration.html",
 					"id": "ref-for-dictdef-audioencoderconfig"
-				},
-				{
-					"spec": "https://w3c.github.io/webcodecs/",
-					"id": "dictdef-audioencoderconfig"
 				}
 			]
 		},
@@ -14158,6 +14158,10 @@
 			"name": "AuthenticationExtensionsClientInputs",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-authenticationextensionsclientinputs"
+				},
+				{
 					"partial": true,
 					"spec": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html",
 					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
@@ -14191,10 +14195,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/secure-payment-confirmation/",
 					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
-				},
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionsclientinputs"
 				},
 				{
 					"partial": true,
@@ -14246,18 +14246,18 @@
 			"name": "AuthenticationExtensionsClientOutputs",
 			"definitions": [
 				{
-					"partial": true,
-					"spec": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html",
-					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
-				},
-				{
-					"partial": true,
-					"spec": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html",
-					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
-				},
-				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-authenticationextensionsclientoutputs"
+				},
+				{
+					"partial": true,
+					"spec": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html",
+					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
+				},
+				{
+					"partial": true,
+					"spec": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html",
+					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
 				},
 				{
 					"partial": true,
@@ -14885,13 +14885,13 @@
 			"name": "ComputedEffectTiming",
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/web-animations-1/",
+					"id": "dictdef-computedeffecttiming"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/web-animations-2/",
 					"id": "ref-for-dictdef-computedeffecttiming"
-				},
-				{
-					"spec": "https://drafts.csswg.org/web-animations-1/",
-					"id": "dictdef-computedeffecttiming"
 				}
 			]
 		},
@@ -15130,6 +15130,10 @@
 			"name": "CredentialRequestOptions",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webappsec-credential-management/",
+					"id": "dictdef-credentialrequestoptions"
+				},
+				{
 					"partial": true,
 					"spec": "https://fedidcg.github.io/FedCM/",
 					"id": "ref-for-dictdef-credentialrequestoptions"
@@ -15138,10 +15142,6 @@
 					"partial": true,
 					"spec": "https://wicg.github.io/web-otp/",
 					"id": "ref-for-dictdef-credentialrequestoptions"
-				},
-				{
-					"spec": "https://w3c.github.io/webappsec-credential-management/",
-					"id": "dictdef-credentialrequestoptions"
 				},
 				{
 					"partial": true,
@@ -15497,13 +15497,13 @@
 			"name": "EffectTiming",
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/web-animations-1/",
+					"id": "dictdef-effecttiming"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/web-animations-2/",
 					"id": "ref-for-dictdef-effecttiming"
-				},
-				{
-					"spec": "https://drafts.csswg.org/web-animations-1/",
-					"id": "dictdef-effecttiming"
 				}
 			]
 		},
@@ -17064,13 +17064,13 @@
 			"name": "InputEventInit",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/uievents/",
+					"id": "dictdef-inputeventinit"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/input-events/",
 					"id": "ref-for-dom-inputeventinit"
-				},
-				{
-					"spec": "https://w3c.github.io/uievents/",
-					"id": "dictdef-inputeventinit"
 				}
 			]
 		},
@@ -17155,13 +17155,13 @@
 			"name": "KeyframeAnimationOptions",
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/web-animations-1/",
+					"id": "dictdef-keyframeanimationoptions"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/web-animations-2/",
 					"id": "ref-for-dictdef-keyframeanimationoptions"
-				},
-				{
-					"spec": "https://drafts.csswg.org/web-animations-1/",
-					"id": "dictdef-keyframeanimationoptions"
 				}
 			]
 		},
@@ -17169,13 +17169,13 @@
 			"name": "KeyframeEffectOptions",
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/web-animations-1/",
+					"id": "dictdef-keyframeeffectoptions"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/web-animations-2/",
 					"id": "ref-for-dictdef-keyframeeffectoptions"
-				},
-				{
-					"spec": "https://drafts.csswg.org/web-animations-1/",
-					"id": "dictdef-keyframeeffectoptions"
 				}
 			]
 		},
@@ -17453,13 +17453,13 @@
 			"name": "MediaStreamConstraints",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediastreamconstraints"
+				},
+				{
 					"partial": true,
 					"spec": "https://wicg.github.io/prefer-current-tab/",
 					"id": "ref-for-dom-mediastreamconstraints"
-				},
-				{
-					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "dom-mediastreamconstraints"
 				},
 				{
 					"partial": true,
@@ -17517,13 +17517,13 @@
 			"name": "MediaTrackCapabilities",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediatrackcapabilities"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-image/",
 					"id": "ref-for-dictdef-mediatrackcapabilities"
-				},
-				{
-					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "dom-mediatrackcapabilities"
 				},
 				{
 					"partial": true,
@@ -17570,13 +17570,13 @@
 			"name": "MediaTrackConstraintSet",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediatrackconstraintset"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-image/",
 					"id": "ref-for-dictdef-mediatrackconstraintset"
-				},
-				{
-					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "dom-mediatrackconstraintset"
 				},
 				{
 					"partial": true,
@@ -17618,13 +17618,13 @@
 			"name": "MediaTrackSettings",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediatracksettings"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-image/",
 					"id": "ref-for-dictdef-mediatracksettings"
-				},
-				{
-					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "dom-mediatracksettings"
 				},
 				{
 					"partial": true,
@@ -17662,13 +17662,13 @@
 			"name": "MediaTrackSupportedConstraints",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediatracksupportedconstraints"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-image/",
 					"id": "ref-for-dictdef-mediatracksupportedconstraints"
-				},
-				{
-					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "dom-mediatracksupportedconstraints"
 				},
 				{
 					"partial": true,
@@ -18155,13 +18155,13 @@
 			"name": "MouseEventInit",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/uievents/",
+					"id": "dictdef-mouseeventinit"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerlock/",
 					"id": "ref-for-dom-mouseeventinit"
-				},
-				{
-					"spec": "https://w3c.github.io/uievents/",
-					"id": "dictdef-mouseeventinit"
 				}
 			]
 		},
@@ -18403,13 +18403,13 @@
 			"name": "OptionalEffectTiming",
 			"definitions": [
 				{
+					"spec": "https://drafts.csswg.org/web-animations-1/",
+					"id": "dictdef-optionaleffecttiming"
+				},
+				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/web-animations-2/",
 					"id": "ref-for-dictdef-optionaleffecttiming"
-				},
-				{
-					"spec": "https://drafts.csswg.org/web-animations-1/",
-					"id": "dictdef-optionaleffecttiming"
 				}
 			]
 		},
@@ -18723,13 +18723,13 @@
 			"name": "PerformanceObserverInit",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/performance-timeline/",
+					"id": "dom-performanceobserverinit"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/event-timing/",
 					"id": "ref-for-dictdef-performanceobserverinit"
-				},
-				{
-					"spec": "https://w3c.github.io/performance-timeline/",
-					"id": "dom-performanceobserverinit"
 				}
 			]
 		},
@@ -19572,13 +19572,13 @@
 			"name": "RTCConfiguration",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcconfiguration"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-identity/",
 					"id": "ref-for-dom-rtcconfiguration"
-				},
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcconfiguration"
 				},
 				{
 					"partial": true,
@@ -19604,13 +19604,13 @@
 			"name": "RTCDataChannelInit",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcdatachannelinit"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-priority/",
 					"id": "ref-for-dictdef-rtcdatachannelinit"
-				},
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcdatachannelinit"
 				}
 			]
 		},
@@ -19707,13 +19707,13 @@
 			"name": "RTCErrorInit",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcerrorinit"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-identity/",
 					"id": "ref-for-dom-rtcerrorinit"
-				},
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcerrorinit"
 				}
 			]
 		},
@@ -19829,13 +19829,13 @@
 			"name": "RTCIceParameters",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtciceparameters"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-ice/",
 					"id": "ref-for-dom-rtciceparameters"
-				},
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtciceparameters"
 				},
 				{
 					"spec": "https://draft.ortc.org/",
@@ -20186,6 +20186,10 @@
 			"name": "RTCRtpEncodingParameters",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcrtpencodingparameters"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-priority/",
 					"id": "ref-for-dictdef-rtcrtpencodingparameters"
@@ -20194,10 +20198,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-svc/",
 					"id": "ref-for-dom-rtcrtpencodingparameters"
-				},
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcrtpencodingparameters"
 				},
 				{
 					"partial": true,
@@ -20312,13 +20312,13 @@
 			"name": "RTCRtpSendParameters",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcrtpsendparameters"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mst-content-hint/",
 					"id": "ref-for-dom-rtcrtpsendparameters"
-				},
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcrtpsendparameters"
 				},
 				{
 					"spec": "https://draft.ortc.org/",
@@ -21250,13 +21250,13 @@
 			"name": "UIEventInit",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/uievents/",
+					"id": "dictdef-uieventinit"
+				},
+				{
 					"partial": true,
 					"spec": "https://wicg.github.io/input-device-capabilities/",
 					"id": "ref-for-dom-uieventinit"
-				},
-				{
-					"spec": "https://w3c.github.io/uievents/",
-					"id": "dictdef-uieventinit"
 				},
 				{
 					"partial": true,
@@ -21458,6 +21458,10 @@
 			"name": "VideoEncoderConfig",
 			"definitions": [
 				{
+					"spec": "https://w3c.github.io/webcodecs/",
+					"id": "dictdef-videoencoderconfig"
+				},
+				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
 					"id": "ref-for-dictdef-videoencoderconfig"
@@ -21471,16 +21475,16 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
 					"id": "ref-for-dictdef-videoencoderconfig"
-				},
-				{
-					"spec": "https://w3c.github.io/webcodecs/",
-					"id": "dictdef-videoencoderconfig"
 				}
 			]
 		},
 		{
 			"name": "VideoEncoderEncodeOptions",
 			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webcodecs/",
+					"id": "dictdef-videoencoderencodeoptions"
+				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
@@ -21500,10 +21504,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
 					"id": "ref-for-dictdef-videoencoderencodeoptions"
-				},
-				{
-					"spec": "https://w3c.github.io/webcodecs/",
-					"id": "dictdef-videoencoderencodeoptions"
 				}
 			]
 		},
@@ -22052,6 +22052,10 @@
 			"name": "XRSessionInit",
 			"definitions": [
 				{
+					"spec": "https://immersive-web.github.io/webxr/",
+					"id": "dictdef-xrsessioninit"
+				},
+				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/depth-sensing/",
 					"id": "ref-for-dictdef-xrsessioninit"
@@ -22060,10 +22064,6 @@
 					"partial": true,
 					"spec": "https://immersive-web.github.io/dom-overlays/",
 					"id": "ref-for-dictdef-xrsessioninit"
-				},
-				{
-					"spec": "https://immersive-web.github.io/webxr/",
-					"id": "dictdef-xrsessioninit"
 				},
 				{
 					"partial": true,
@@ -28630,12 +28630,12 @@
 			"dictionary": "RTCRtpSendParameters",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/mst-content-hint/",
-					"id": "ref-for-dom-rtcrtpsendparameters"
-				},
-				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcrtpsendparameters"
+				},
+				{
+					"spec": "https://w3c.github.io/mst-content-hint/",
+					"id": "ref-for-dom-rtcrtpsendparameters"
 				}
 			]
 		},
@@ -34260,12 +34260,12 @@
 			"dictionary": "RTCIceParameters",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtciceparameters"
-				},
-				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtciceparameters"
+				},
+				{
+					"spec": "https://w3c.github.io/webrtc-ice/",
+					"id": "ref-for-dom-rtciceparameters"
 				}
 			]
 		},
@@ -64159,11 +64159,11 @@
 			"interface": "Document",
 			"definitions": [
 				{
-					"spec": "https://html.spec.whatwg.org/multipage/dom.html",
+					"spec": "https://svgwg.org/svg2-draft/struct.html",
 					"id": "ref-for-document"
 				},
 				{
-					"spec": "https://svgwg.org/svg2-draft/struct.html",
+					"spec": "https://html.spec.whatwg.org/multipage/dom.html",
 					"id": "ref-for-document"
 				}
 			]
@@ -103935,12 +103935,12 @@
 			"interface": "RTCIceTransport",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtcicetransport"
-				},
-				{
 					"spec": "https://draft.ortc.org/",
 					"id": "rtcicetransport"
+				},
+				{
+					"spec": "https://w3c.github.io/webrtc-ice/",
+					"id": "ref-for-dom-rtcicetransport"
 				}
 			]
 		},

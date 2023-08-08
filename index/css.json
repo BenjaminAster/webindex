@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Mon, 07 Aug 2023 22:30:19 GMT",
-		"iso": "2023-08-07T22:30:19.553Z",
-		"unixMillis": 1691447419553
+		"utc": "Tue, 08 Aug 2023 15:09:13 GMT",
+		"iso": "2023-08-08T15:09:13.911Z",
+		"unixMillis": 1691507353911
 	},
 	"cssProperties": [
 		{
@@ -1422,15 +1422,15 @@
 			"name": "caption-side",
 			"definitions": [
 				{
+					"value": "top | bottom",
+					"id": "propdef-caption-side",
+					"spec": "https://drafts.csswg.org/css-tables-3/"
+				},
+				{
 					"value": "inline-start | inline-end",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-caption-side①",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
-				},
-				{
-					"value": "top | bottom",
-					"id": "propdef-caption-side",
-					"spec": "https://drafts.csswg.org/css-tables-3/"
 				}
 			]
 		},
@@ -1473,15 +1473,15 @@
 			"name": "clear",
 			"definitions": [
 				{
+					"value": "inline-start | inline-end | block-start | block-end | left | right | top | bottom | none",
+					"id": "propdef-clear",
+					"spec": "https://drafts.csswg.org/css-page-floats-3/"
+				},
+				{
 					"value": "inline-start | inline-end",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-clear①",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
-				},
-				{
-					"value": "inline-start | inline-end | block-start | block-end | left | right | top | bottom | none",
-					"id": "propdef-clear",
-					"spec": "https://drafts.csswg.org/css-page-floats-3/"
 				}
 			]
 		},
@@ -1685,14 +1685,14 @@
 			"name": "contain",
 			"definitions": [
 				{
-					"value": "none | strict | content | [ [size | inline-size] || layout || style || paint ]",
-					"id": "ref-for-propdef-contain②",
-					"spec": "https://drafts.csswg.org/css-contain-3/"
-				},
-				{
 					"value": "none | strict | content | [ size || layout || style || paint ]",
 					"id": "propdef-contain",
 					"spec": "https://drafts.csswg.org/css-contain-2/"
+				},
+				{
+					"value": "none | strict | content | [ [size | inline-size] || layout || style || paint ]",
+					"id": "ref-for-propdef-contain②",
+					"spec": "https://drafts.csswg.org/css-contain-3/"
 				},
 				{
 					"value": "none | strict | content | [ size || layout || paint ]",
@@ -1816,14 +1816,14 @@
 			"name": "continue",
 			"definitions": [
 				{
-					"value": "-webkit-discard",
-					"onlyNewValues": true,
-					"id": "ref-for-propdef-continue④",
+					"value": "auto | discard",
+					"id": "propdef-continue",
 					"spec": "https://drafts.csswg.org/css-overflow-4/"
 				},
 				{
-					"value": "auto | discard",
-					"id": "propdef-continue",
+					"value": "-webkit-discard",
+					"onlyNewValues": true,
+					"id": "ref-for-propdef-continue④",
 					"spec": "https://drafts.csswg.org/css-overflow-4/"
 				},
 				{
@@ -1968,6 +1968,12 @@
 			"name": "display",
 			"definitions": [
 				{
+					"value": "<display-outside> || [ <display-inside> | math ]",
+					"onlyNewValues": true,
+					"id": "new-display-math-value",
+					"spec": "https://w3c.github.io/mathml-core/"
+				},
+				{
 					"value": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>",
 					"id": "propdef-display",
 					"spec": "https://drafts.csswg.org/css-display-4/"
@@ -2000,12 +2006,6 @@
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-display②",
 					"spec": "https://drafts.csswg.org/css-ruby-1/"
-				},
-				{
-					"value": "<display-outside> || [ <display-inside> | math ]",
-					"onlyNewValues": true,
-					"id": null,
-					"spec": "https://w3c.github.io/mathml-core/"
 				}
 			]
 		},
@@ -2228,6 +2228,11 @@
 			"name": "float",
 			"definitions": [
 				{
+					"value": "block-start | block-end | inline-start | inline-end | snap-block | <snap-block()> | snap-inline | <snap-inline()> | left | right | top | bottom | none",
+					"id": "propdef-float",
+					"spec": "https://drafts.csswg.org/css-page-floats-3/"
+				},
+				{
 					"value": "footnote",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-float①",
@@ -2238,11 +2243,6 @@
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-float①",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
-				},
-				{
-					"value": "block-start | block-end | inline-start | inline-end | snap-block | <snap-block()> | snap-inline | <snap-inline()> | left | right | top | bottom | none",
-					"id": "propdef-float",
-					"spec": "https://drafts.csswg.org/css-page-floats-3/"
 				}
 			]
 		},
@@ -2825,15 +2825,15 @@
 			"name": "grid-template-columns",
 			"definitions": [
 				{
+					"value": "none | <track-list> | <auto-track-list> | subgrid <line-name-list>?",
+					"id": "propdef-grid-template-columns",
+					"spec": "https://drafts.csswg.org/css-grid-2/"
+				},
+				{
 					"value": "masonry",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-grid-template-columns",
 					"spec": "https://drafts.csswg.org/css-grid-3/"
-				},
-				{
-					"value": "none | <track-list> | <auto-track-list> | subgrid <line-name-list>?",
-					"id": "propdef-grid-template-columns",
-					"spec": "https://drafts.csswg.org/css-grid-2/"
 				},
 				{
 					"value": "none | <track-list> | <auto-track-list>",
@@ -2846,15 +2846,15 @@
 			"name": "grid-template-rows",
 			"definitions": [
 				{
+					"value": "none | <track-list> | <auto-track-list> | subgrid <line-name-list>?",
+					"id": "propdef-grid-template-rows",
+					"spec": "https://drafts.csswg.org/css-grid-2/"
+				},
+				{
 					"value": "masonry",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-grid-template-rows",
 					"spec": "https://drafts.csswg.org/css-grid-3/"
-				},
-				{
-					"value": "none | <track-list> | <auto-track-list> | subgrid <line-name-list>?",
-					"id": "propdef-grid-template-rows",
-					"spec": "https://drafts.csswg.org/css-grid-2/"
 				},
 				{
 					"value": "none | <track-list> | <auto-track-list>",
@@ -2882,15 +2882,15 @@
 			"name": "height",
 			"definitions": [
 				{
+					"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+					"id": "propdef-height",
+					"spec": "https://drafts.csswg.org/css-sizing-3/"
+				},
+				{
 					"value": "stretch | fit-content | contain",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-height①",
 					"spec": "https://drafts.csswg.org/css-sizing-4/"
-				},
-				{
-					"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
-					"id": "propdef-height",
-					"spec": "https://drafts.csswg.org/css-sizing-3/"
 				}
 			]
 		},
@@ -3857,15 +3857,15 @@
 			"name": "max-height",
 			"definitions": [
 				{
+					"value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+					"id": "propdef-max-height",
+					"spec": "https://drafts.csswg.org/css-sizing-3/"
+				},
+				{
 					"value": "stretch | fit-content | contain",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-max-height①",
 					"spec": "https://drafts.csswg.org/css-sizing-4/"
-				},
-				{
-					"value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
-					"id": "propdef-max-height",
-					"spec": "https://drafts.csswg.org/css-sizing-3/"
 				}
 			]
 		},
@@ -3899,15 +3899,15 @@
 			"name": "max-width",
 			"definitions": [
 				{
+					"value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+					"id": "propdef-max-width",
+					"spec": "https://drafts.csswg.org/css-sizing-3/"
+				},
+				{
 					"value": "stretch | fit-content | contain",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-max-width①",
 					"spec": "https://drafts.csswg.org/css-sizing-4/"
-				},
-				{
-					"value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
-					"id": "propdef-max-width",
-					"spec": "https://drafts.csswg.org/css-sizing-3/"
 				}
 			]
 		},
@@ -3941,15 +3941,15 @@
 			"name": "min-height",
 			"definitions": [
 				{
+					"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+					"id": "propdef-min-height",
+					"spec": "https://drafts.csswg.org/css-sizing-3/"
+				},
+				{
 					"value": "stretch | fit-content | contain",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-min-height①",
 					"spec": "https://drafts.csswg.org/css-sizing-4/"
-				},
-				{
-					"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
-					"id": "propdef-min-height",
-					"spec": "https://drafts.csswg.org/css-sizing-3/"
 				}
 			]
 		},
@@ -3983,15 +3983,15 @@
 			"name": "min-width",
 			"definitions": [
 				{
+					"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+					"id": "propdef-min-width",
+					"spec": "https://drafts.csswg.org/css-sizing-3/"
+				},
+				{
 					"value": "stretch | fit-content | contain",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-min-width①",
 					"spec": "https://drafts.csswg.org/css-sizing-4/"
-				},
-				{
-					"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
-					"id": "propdef-min-width",
-					"spec": "https://drafts.csswg.org/css-sizing-3/"
 				}
 			]
 		},
@@ -4799,15 +4799,15 @@
 			"name": "position",
 			"definitions": [
 				{
+					"value": "static | relative | absolute | sticky | fixed",
+					"id": "propdef-position",
+					"spec": "https://drafts.csswg.org/css-position-3/"
+				},
+				{
 					"value": "running()",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-position",
 					"spec": "https://drafts.csswg.org/css-gcpm-3/"
-				},
-				{
-					"value": "static | relative | absolute | sticky | fixed",
-					"id": "propdef-position",
-					"spec": "https://drafts.csswg.org/css-position-3/"
 				}
 			]
 		},
@@ -5430,15 +5430,15 @@
 			"name": "scrollbar-gutter",
 			"definitions": [
 				{
+					"value": "auto | stable && both-edges?",
+					"id": "propdef-scrollbar-gutter",
+					"spec": "https://drafts.csswg.org/css-overflow-3/"
+				},
+				{
 					"value": "auto | [ [ stable | always ] && both-edges? && force? ] || match-parent",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-scrollbar-gutter⑤",
 					"spec": "https://drafts.csswg.org/css-overflow-4/"
-				},
-				{
-					"value": "auto | stable && both-edges?",
-					"id": "propdef-scrollbar-gutter",
-					"spec": "https://drafts.csswg.org/css-overflow-3/"
 				}
 			]
 		},
@@ -5851,15 +5851,15 @@
 			"name": "text-align",
 			"definitions": [
 				{
+					"value": "start | end | left | right | center | <string> | justify | match-parent | justify-all",
+					"id": "propdef-text-align",
+					"spec": "https://drafts.csswg.org/css-text-4/"
+				},
+				{
 					"value": "start | end",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-text-align①",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
-				},
-				{
-					"value": "start | end | left | right | center | <string> | justify | match-parent | justify-all",
-					"id": "propdef-text-align",
-					"spec": "https://drafts.csswg.org/css-text-4/"
 				},
 				{
 					"value": "start | end | left | right | center | justify | match-parent | justify-all",
@@ -6778,15 +6778,15 @@
 			"name": "width",
 			"definitions": [
 				{
+					"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
+					"id": "propdef-width",
+					"spec": "https://drafts.csswg.org/css-sizing-3/"
+				},
+				{
 					"value": "stretch | fit-content | contain",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-width①",
 					"spec": "https://drafts.csswg.org/css-sizing-4/"
-				},
-				{
-					"value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>)",
-					"id": "propdef-width",
-					"spec": "https://drafts.csswg.org/css-sizing-3/"
 				}
 			]
 		},
@@ -7191,13 +7191,13 @@
 			"name": "<arc-command>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-arc-command①",
-					"definition": "arc <by-to> <coordinate-pair> of <length-percentage>{1,2} [ <arc-sweep> || <arc-size> || rotate <angle> ]?",
+					"id": "typedef-shape-arc-command",
+					"definition": "arc <by-to> <coordinate-pair> of <length-percentage>{1,2} [ <arc-sweep> || <arc-size> || rotate <angle> ]",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-arc-command",
-					"definition": "arc <by-to> <coordinate-pair> of <length-percentage>{1,2} [ <arc-sweep> || <arc-size> || rotate <angle> ]",
+					"id": "ref-for-typedef-shape-arc-command①",
+					"definition": "arc <by-to> <coordinate-pair> of <length-percentage>{1,2} [ <arc-sweep> || <arc-size> || rotate <angle> ]?",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
 			]
@@ -7206,13 +7206,13 @@
 			"name": "<arc-size>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-arc-size①",
-					"definition": "large | small",
+					"id": "typedef-shape-arc-size",
+					"definition": null,
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-arc-size",
-					"definition": null,
+					"id": "ref-for-typedef-shape-arc-size①",
+					"definition": "large | small",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
 			]
@@ -7221,13 +7221,13 @@
 			"name": "<arc-sweep>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-arc-sweep①",
-					"definition": "cw | ccw",
+					"id": "typedef-shape-arc-sweep",
+					"definition": null,
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-arc-sweep",
-					"definition": null,
+					"id": "ref-for-typedef-shape-arc-sweep①",
+					"definition": "cw | ccw",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
 			]
@@ -7526,12 +7526,12 @@
 			"name": "<by-to>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-by-to",
+					"id": "typedef-shape-by-to",
 					"definition": "by | to",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-by-to",
+					"id": "ref-for-typedef-shape-by-to",
 					"definition": "by | to",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
@@ -7786,13 +7786,13 @@
 			"name": "<color-stripe>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-color-stripe①",
-					"definition": "<color> && [ <length-percentage> | <flex> ]?",
+					"id": "typedef-color-stripe",
+					"definition": null,
 					"spec": "https://drafts.csswg.org/css-images-4/"
 				},
 				{
-					"id": "typedef-color-stripe",
-					"definition": null,
+					"id": "ref-for-typedef-color-stripe①",
+					"definition": "<color> && [ <length-percentage> | <flex> ]?",
 					"spec": "https://drafts.csswg.org/css-images-4/"
 				}
 			]
@@ -8146,12 +8146,12 @@
 			"name": "<coordinate-pair>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-coordinate-pair③",
+					"id": "typedef-shape-coordinate-pair",
 					"definition": "<length-percentage>{2}",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-coordinate-pair",
+					"id": "ref-for-typedef-shape-coordinate-pair③",
 					"definition": "<length-percentage>{2}",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
@@ -8201,13 +8201,13 @@
 			"name": "<crossorigin-modifier>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-request-url-modifier-crossorigin-modifier①",
-					"definition": "crossorigin(anonymous | use-credentials)",
+					"id": "typedef-request-url-modifier-crossorigin-modifier",
+					"definition": null,
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				},
 				{
-					"id": "typedef-request-url-modifier-crossorigin-modifier",
-					"definition": null,
+					"id": "ref-for-typedef-request-url-modifier-crossorigin-modifier①",
+					"definition": "crossorigin(anonymous | use-credentials)",
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
@@ -8231,12 +8231,12 @@
 			"name": "<curve-command>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-curve-command①",
+					"id": "typedef-shape-curve-command",
 					"definition": "curve <by-to> <coordinate-pair> via <coordinate-pair>{1,2}",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-curve-command",
+					"id": "ref-for-typedef-shape-curve-command①",
 					"definition": "curve <by-to> <coordinate-pair> via <coordinate-pair>{1,2}",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
@@ -8631,8 +8631,8 @@
 			"name": "<feature-value-block>",
 			"definitions": [
 				{
-					"id": null,
 					"definition": "<font-feature-value-type> { <declaration-list> }",
+					"id": "font-feature-values-syntax",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -8751,8 +8751,8 @@
 			"name": "<font-feature-value-type>",
 			"definitions": [
 				{
-					"id": null,
 					"definition": "@stylistic | @historical-forms | @styleset | @character-variant | @swash | @ornaments | @annotation",
+					"id": "font-feature-values-syntax",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -9026,12 +9026,12 @@
 			"name": "<hv-line-command>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-hv-line-command①",
+					"id": "typedef-shape-hv-line-command",
 					"definition": "[hline | vline] <by-to> <length-percentage>",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-hv-line-command",
+					"id": "ref-for-typedef-shape-hv-line-command①",
 					"definition": "[hline | vline] <by-to> <length-percentage>",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
@@ -9196,13 +9196,13 @@
 			"name": "<integrity-modifier>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-request-url-modifier-integrity-modifier①",
-					"definition": "integrity(<string>)",
+					"id": "typedef-request-url-modifier-integrity-modifier",
+					"definition": null,
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				},
 				{
-					"id": "typedef-request-url-modifier-integrity-modifier",
-					"definition": null,
+					"id": "ref-for-typedef-request-url-modifier-integrity-modifier①",
+					"definition": "integrity(<string>)",
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
@@ -9396,12 +9396,12 @@
 			"name": "<line-command>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-line-command①",
+					"id": "typedef-shape-line-command",
 					"definition": "line <by-to> <coordinate-pair>",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-line-command",
+					"id": "ref-for-typedef-shape-line-command①",
 					"definition": "line <by-to> <coordinate-pair>",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
@@ -9946,12 +9946,12 @@
 			"name": "<move-command>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-move-command①",
+					"id": "typedef-shape-move-command",
 					"definition": "move <by-to> <coordinate-pair>",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-move-command",
+					"id": "ref-for-typedef-shape-move-command①",
 					"definition": "move <by-to> <coordinate-pair>",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
@@ -10536,13 +10536,13 @@
 			"name": "<referrerpolicy-modifier>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-request-url-modifier-referrerpolicy-modifier①",
-					"definition": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+					"id": "typedef-request-url-modifier-referrerpolicy-modifier",
+					"definition": null,
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				},
 				{
-					"id": "typedef-request-url-modifier-referrerpolicy-modifier",
-					"definition": null,
+					"id": "ref-for-typedef-request-url-modifier-referrerpolicy-modifier①",
+					"definition": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
@@ -10986,12 +10986,12 @@
 			"name": "<smooth-command>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-shape-smooth-command①",
+					"id": "typedef-shape-smooth-command",
 					"definition": "smooth <by-to> <coordinate-pair> [via <coordinate-pair>]?",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				},
 				{
-					"id": "typedef-shape-smooth-command",
+					"id": "ref-for-typedef-shape-smooth-command①",
 					"definition": "smooth <by-to> <coordinate-pair> [via <coordinate-pair>]?",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
@@ -11226,13 +11226,13 @@
 			"name": "<target-contrast>",
 			"definitions": [
 				{
-					"id": "ref-for-typedef-target-contrast②",
-					"definition": "<wcag2>",
+					"id": "typedef-target-contrast",
+					"definition": null,
 					"spec": "https://drafts.csswg.org/css-color-6/"
 				},
 				{
-					"id": "typedef-target-contrast",
-					"definition": null,
+					"id": "ref-for-typedef-target-contrast②",
+					"definition": "<wcag2>",
 					"spec": "https://drafts.csswg.org/css-color-6/"
 				}
 			]
@@ -39938,11 +39938,11 @@
 			"name": "stripes()",
 			"definitions": [
 				{
-					"id": "ref-for-funcdef-stripes③",
+					"id": "funcdef-stripes",
 					"spec": "https://drafts.csswg.org/css-images-4/"
 				},
 				{
-					"id": "funcdef-stripes",
+					"id": "ref-for-funcdef-stripes③",
 					"spec": "https://drafts.csswg.org/css-images-4/"
 				}
 			]

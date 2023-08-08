@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Mon, 07 Aug 2023 22:30:19 GMT",
-		"iso": "2023-08-07T22:30:19.553Z",
-		"unixMillis": 1691447419553
+		"utc": "Tue, 08 Aug 2023 15:09:13 GMT",
+		"iso": "2023-08-08T15:09:13.911Z",
+		"unixMillis": 1691507353911
 	},
 	"specs": [
 		{
@@ -2476,6 +2476,12 @@
 					"url": "https://svgwg.org/specs/markers/",
 					"repo": "https://github.com/w3c/svgwg/tree/main/specs/markers",
 					"shortname": "svg-markers"
+				},
+				{
+					"title": "SVG Paths",
+					"url": "https://svgwg.org/specs/paths/",
+					"repo": "https://github.com/w3c/svgwg/tree/main/specs/paths",
+					"shortname": "svg-paths"
 				}
 			]
 		},

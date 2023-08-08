@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content" />
+
+	<!-- SEO -->
+	<meta name="robots" content="all" />
+	<meta name="author" content="Benjamin Aster" />
+	<meta name="repository" content="https://github.com/BenjaminAster/webindex" />
+	<meta name="description" content="A list of web-related Specifications" />
+	<meta property="og:image" content="https://benjaminaster.com/webindex/assets/icon.png" />
+
+	<!-- App -->
+	<title>Index of web-related technical information</title>
+	<link rel="icon" href="./assets/icon.svg" type="image/svg+xml" sizes="any" />
+	<link rel="icon" href="./assets/icon.png" type="image/png" sizes="512x512" />
+	<link rel="manifest" href="./app.webmanifest" />
+
+	<!-- JavaScript -->
+	<!-- <script type="module" src="./script.js"></script> -->
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="preload" as="style" href="./icons.css" />
+
+	<!-- Preloads -->
+	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/specs.json" /> -->
+	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/css.json" /> -->
+	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/javascript.json" /> -->
+</head>
+
+<body>
+	<noscript>
+		Please enable JavaScript to view this site.
+		<hr />
+	</noscript>
+
+	<form id="theme">
+		<button type="button" id="theme-button" class="icon:moon" title="color theme"></button>
+	</form>
+
+	<header>
+		<!-- <input type="search" id="searchbox" title="Search" placeholder="Search..." /> -->
+
+		<div id="tabs">
+			<a href="./">
+				Specifications
+			</a>
+			<a href="./css.html">
+				CSS
+			</a>
+			<a href="./javascript.html">
+				JavaScript
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<section id="toc">
+			Jump to:
+			<ul id="toc-list">
+				<template>
+					<li>
+						<a href="#" class="link-to-list"></a>
+					</li>
+				</template>
+			</ul>
+		</section>
+
+		<ul id="main-list">
+			<template id="specifications-template">
+				<li>
+					<div class="header">
+						<h3><a href="#" class="group-name group-link"></a></h3>
+						<span class="group-idenfifier"></span>
+					</div>
+					<ul class="group-specs">
+						<template>
+							<li>
+								<a href="#" class="icon repo-link icon:github" title="View specification source"></a>
+								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
+								<a href="#" class="icon tests-link icon:wpt" title="View conformance tests"></a>
+								<div class="container">
+									<a href="#" class="spec-link">
+										<h4 class="spec-name"></h4>
+										<span class="spec-url"></span>
+									</a>
+								</div>
+							</li>
+						</template>
+					</ul>
+				</li>
+			</template>
+
+			<template id="css-template">
+				<li>
+					<div class="header">
+						<h3 class="category"></h3>
+					</div>
+					<ul class="list">
+						<template>
+							<li>
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="#" class="name"></a></code></h4>
+									<ul class="spec-list">
+										<template>
+											<li>
+												<a href="#" class="spec">
+													<span class="spec-identifier"></span>
+													<span class="spec-link-hash"></span>
+												</a>
+											</li>
+										</template>
+									</ul>
+								</div>
+							</li>
+						</template>
+					</ul>
+				</li>
+			</template>
+
+			<template id="javascript-template">
+				<li>
+					<div class="header">
+						<h3 class="category"></h3>
+					</div>
+					<ul class="list">
+						<template>
+							<li>
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="#" class="name"></a></code></h4>
+									<ul class="spec-list">
+										<template>
+											<li>
+												<a href="#" class="spec">
+													<span class="spec-identifier"></span>
+													<span class="spec-link-hash"></span>
+												</a>
+											</li>
+										</template>
+									</ul>
+								</div>
+							</li>
+						</template>
+					</ul>
+				</li>
+			</template>
+		</ul>
+	</main>
+</body>
+
+</html>

@@ -1276,6 +1276,13 @@
 	},
 	{
 		"name": "display",
+		"value": "<display-outside> || [ <display-inside> | math ]",
+		"onlyNewValues": true,
+		"id": "new-display-math-value",
+		"spec": "https://w3c.github.io/mathml-core/"
+	},
+	{
+		"name": "display",
 		"value": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>",
 		"id": "propdef-display",
 		"spec": "https://drafts.csswg.org/css-display-4/"
@@ -1313,13 +1320,6 @@
 		"onlyNewValues": true,
 		"id": "ref-for-propdef-display②",
 		"spec": "https://drafts.csswg.org/css-ruby-1/"
-	},
-	{
-		"name": "display",
-		"value": "<display-outside> || [ <display-inside> | math ]",
-		"onlyNewValues": true,
-		"id": null,
-		"spec": "https://w3c.github.io/mathml-core/"
 	},
 	{
 		"name": "dominant-baseline",
