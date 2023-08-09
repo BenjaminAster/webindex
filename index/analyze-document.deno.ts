@@ -113,8 +113,8 @@ export const tidyUpCollectedStuff = () => {
 				for (const definition of definitions) {
 					propertiesToConsider.forEach((property) => delete definition[property]);
 				}
-				const firstActualDefIndex = definitions.findIndex(({ id }) => !id.startsWith("ref-for-"));
-				definitions.unshift(definitions.splice(firstActualDefIndex, 1)[0])
+				const firstActualDefIndex = definitions.findIndex(({ id, onlyNewValues }) => !id.startsWith("ref-for-") && !onlyNewValues);
+				if (firstActualDefIndex >= 1) definitions.unshift(definitions.splice(firstActualDefIndex, 1)[0]);
 				// console.log(Object.fromEntries(propertiesToConsider.map((property) => [property, current[property]])),current)
 				organizedArray.push({
 					...Object.fromEntries(propertiesToConsider.map((property) => [property, current[property]])),
@@ -434,8 +434,26 @@ export const analyzeIDL = (idl: string, { url, generator }: { url: string, gener
 	for (const item of tree) {
 		if (["interface", "interface mixin", "namespace", "dictionary"].includes(item.type)) {
 			// TODO: reverse-engineer actual link ids better
-			const originalId = (generator === "respec" ? "dom-" : item.type === "dictionary" ? "dictdef-" : item.type === "namespace" ? "namespacedef-" : "") + item.name.toLowerCase();
-			const id = item.partial ? `ref-for-${originalId}` : originalId;
+			const lowercaseName = item.name.toLowerCase();
+			const id = (() => {
+				if (generator === "respec") {
+					if (item.partial) {
+						return `idl-def-${lowercaseName}-partial-1`;
+					} else {
+						return `dom-${lowercaseName}`;
+						// return `idl-def-${lowercaseName}`;
+					}
+				} else {
+					const prefix = (() => {
+						switch (item.type) {
+							case ("dictionary"): return "dictdef-";
+							case ("namespace"): return "namespacedef-";
+							default: return "";
+						}
+					})();
+					return prefix + (item.partial ? "ref-for-" : "") + lowercaseName;
+				}
+			})();
 			if (item.type === "dictionary") {
 				jsDictionaries.push({
 					name: item.name,
@@ -516,3 +534,16 @@ export const analyzeIDL = (idl: string, { url, generator }: { url: string, gener
 	// 	}
 	// }
 };
+
+/* 
+
+specs with special interface link id behavior
+
+not lowercased:
+- Khronos
+- webaudio
+
+idl-def-interfacename:
+- webcrypto
+
+ */

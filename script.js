@@ -46,222 +46,258 @@ export const storage = new class {
 	});
 }
 
-const tocList = document.querySelector("#toc-list");
-const tocFragment = tocList.querySelector(":scope > template").content;
-const mainList = document.querySelector("#main-list");
-const groupFragment = mainList.querySelector(":scope > template#specifications-template").content;
-const cssFragment = mainList.querySelector(":scope > template#css-template").content;
-const javaScriptFragment = mainList.querySelector(":scope > template#javascript-template").content;
-let currentTab = "specifications";
+{
+	// search
+	const searchbox = document.querySelector("input#searchbox");
 
-const openLinksInNewTab = window.matchMedia("(any-hover: none)").matches;
+	searchbox.addEventListener("keydown", ({ key }) => {
+		if (key === "Enter") {
+			const search = searchbox.value.trim().toLowerCase();
+			if (!search) return;
 
-document.querySelector("fieldset#tabs").addEventListener("change", ({ target }) => {
-	currentTab = target.value;
-	for (const child of [...mainList.children, ...tocList.children]) {
-		if (child.localName !== "template") child.remove();
-	}
-
-	console.log("change")
-	$switch: switch (currentTab) {
-		case ("specifications"): {
-			renderSpecs();
-			break $switch;
-		} case ("css"): {
-			renderCSS();
-			break $switch;
-		} case ("javascript"): {
-			renderJavaScript();
-			break $switch;
-		}
-	}
-});
-
-const nameToId = (/** @type {string} */ name) => name.toLowerCase().replaceAll(/\W+/g, "-");
-
-let shortnameMap = new Map();
-
-const { specs: specsData } = await (await globalThis.fetch("./index/specs.json")).json();
-
-const renderSpecs = () => {
-	for (const { groupName, groupHomepage, groupIdentifier, specs } of specsData) {
-		const groupLinkId = nameToId(groupName);
-
-		{
-			const clone = tocFragment.cloneNode(true);
-			clone.querySelector(".link-to-list").textContent = groupName;
-			clone.querySelector("a.link-to-list").href = "#" + groupLinkId;
-			tocList.append(clone);
-		}
-
-		const clone = groupFragment.cloneNode(true);
-		clone.querySelector(".group-name").textContent = groupName;
-		clone.querySelector(".header h3").id = groupLinkId;
-		clone.querySelector("a.group-link").href = groupHomepage;
-		clone.querySelector(".group-idenfifier").textContent = groupIdentifier;
-
-		const specsList = clone.querySelector(".group-specs");
-		const specFragment = specsList.querySelector(":scope > template").content;
-		for (const { title, url, repo, tests, shortname } of specs) {
-			shortnameMap.set(url, shortname);
-			const specClone = specFragment.cloneNode(true);
-			specClone.querySelector(".spec-name").textContent = title;
-			const urlObject = new URL(url);
-			specClone.querySelector(".spec-url").textContent = urlObject.host + urlObject.pathname.replace(/\/$/, "");
-			specClone.querySelector("a.spec-link").href = url;
-			if (openLinksInNewTab) specClone.querySelector("a.spec-link").target = "_blank";
-			if (repo) {
-				specClone.querySelector("a.repo-link").href = repo;
-			} else {
-				// specClone.querySelector("a.repo-link").style.visibility = "hidden";
-				specClone.querySelector("a.repo-link").classList.add("disabled");
-				specClone.querySelector("a.repo-link").inert = true;
+			const mainList = document.querySelector("#main-list");
+			$outerLoop: for (const categoryBlock of mainList.children) {
+				if (categoryBlock.localName !== "ul") continue $outerLoop;
+				const list = categoryBlock.querySelector("ul");
+				let categoryHasMatches = false;
+				$innerLoop: for (const child of list.children) {
+					if (child.localName !== "ul") continue $innerLoop;
+					const matches = child.dataset.searchableName?.includes(search);
+					child.hidden = !matches;
+					if (matches) {
+						categoryHasMatches = true;
+					}
+				}
+				categoryBlock.hidden = !categoryHasMatches;
 			}
-			if (tests) {
-				specClone.querySelector("a.tests-link").href = tests;
-			} else {
-				// specClone.querySelector("a.tests-link").style.visibility = "hidden";
-				specClone.querySelector("a.tests-link").classList.add("disabled");
-				specClone.querySelector("a.tests-link").inert = true;
+		}
+	});
+
+	searchbox.addEventListener("input", () => {
+		if (searchbox.value === "") {
+			for (const element of document.querySelectorAll(":is(ul#main-list > li, [data-searchable-name])[hidden]")) {
+				element.hidden = false;
 			}
-			specsList.append(specClone);
 		}
-		mainList.append(clone);
-	}
-};
-
-renderSpecs();
-
-const {
-	cssProperties,
-	cssTypes,
-	cssAtRules,
-	cssFunctions,
-	cssSelectors,
-	cssPseudoClasses,
-	cssPseudoElements,
-	cssDescriptors,
-	cssUnits,
-} = await (await window.fetch("./index/css.json")).json();
-
-const renderCSS = () => {
-	const allData = [
-		["Properties", cssProperties],
-		["Types", cssTypes],
-		["At-rules", cssAtRules],
-		["Functions", cssFunctions],
-		["Basic selectors", cssSelectors],
-		["Pseudo classes", cssPseudoClasses],
-		["Pseudo elements", cssPseudoElements],
-		["Descriptors", cssDescriptors],
-		["Units", cssUnits],
-	];
-	for (const [categoryName, data] of allData) {
-		const categoryId = nameToId(categoryName);
-
-		{
-			const clone = tocFragment.cloneNode(true);
-			clone.querySelector(".link-to-list").textContent = categoryName;
-			clone.querySelector("a.link-to-list").href = "#" + categoryId;
-			tocList.append(clone);
-		}
-
-		const clone = cssFragment.cloneNode(true);
-		clone.querySelector(".category").textContent = categoryName;
-		clone.querySelector(".category").id = categoryId;
-
-		const list = clone.querySelector(".list");
-		const itemFragment = list.querySelector(":scope > template").content;
-		let /** @type {HTMLElement} */ specList;
-		let /** @type {string} */ prevName;
-		for (const { name, definitions } of data) {
-			const itemClone = itemFragment.cloneNode(true);
-			itemClone.querySelector(".name").textContent = name;
-			specList = itemClone.querySelector(".spec-list");
-			const specFragment = specList.querySelector(":scope > template").content;
-			for (const [i, { spec, id }] of definitions.entries()) {
-				const url = `${spec}#${id}`;
-				if (i === 0) itemClone.querySelector("a.name").href = url;
-				const specClone = specFragment.cloneNode(true);
-				const shortname = shortnameMap.get(spec);
-				specClone.querySelector("a.spec").href = url;
-				specClone.querySelector(".spec-identifier").textContent = shortname;
-				specClone.querySelector(".spec-link-hash").textContent = "#" + id;
-				if (openLinksInNewTab) specClone.querySelector("a.spec").target = "_blank";
-				specList.append(specClone);
-			}
-			list.append(itemClone);
-		}
-		mainList.append(clone);
-	}
+	});
 }
 
+// const tocList = document.querySelector("#toc-list");
+// const tocFragment = tocList.querySelector(":scope > template").content;
+// const mainList = document.querySelector("#main-list");
+// const groupFragment = mainList.querySelector(":scope > template#specifications-template").content;
+// const cssFragment = mainList.querySelector(":scope > template#css-template").content;
+// const javaScriptFragment = mainList.querySelector(":scope > template#javascript-template").content;
+// let currentTab = "specifications";
 
-const {
-	jsInterfaces,
-	jsAttributes,
-	jsFunctions,
-	jsDictionaries,
-	jsDictionaryFields,
-} = await (await window.fetch("./index/javascript.json")).json();
+// const openLinksInNewTab = window.matchMedia("(any-hover: none)").matches;
 
-const renderJavaScript = () => {
-	const allData = [
-		["Interfaces", jsInterfaces],
-		["Attributes", jsAttributes],
-		["Functions", jsFunctions],
-		["Dictionaries", jsDictionaries],
-		["Dictionary fields", jsDictionaryFields],
-	];
-	for (const [categoryName, data] of allData) {
-		const categoryId = nameToId(categoryName);
+// document.querySelector("fieldset#tabs").addEventListener("change", ({ target }) => {
+// 	currentTab = target.value;
+// 	for (const child of [...mainList.children, ...tocList.children]) {
+// 		if (child.localName !== "template") child.remove();
+// 	}
 
-		{
-			const clone = tocFragment.cloneNode(true);
-			clone.querySelector(".link-to-list").textContent = categoryName;
-			clone.querySelector("a.link-to-list").href = "#" + categoryId;
-			tocList.append(clone);
-		}
+// 	console.log("change")
+// 	$switch: switch (currentTab) {
+// 		case ("specifications"): {
+// 			renderSpecs();
+// 			break $switch;
+// 		} case ("css"): {
+// 			renderCSS();
+// 			break $switch;
+// 		} case ("javascript"): {
+// 			renderJavaScript();
+// 			break $switch;
+// 		}
+// 	}
+// });
 
-		const clone = javaScriptFragment.cloneNode(true);
-		clone.querySelector(".category").textContent = categoryName;
-		clone.querySelector(".category").id = categoryId;
+// const nameToId = (/** @type {string} */ name) => name.toLowerCase().replaceAll(/\W+/g, "-");
 
-		const list = clone.querySelector(".list");
-		const itemFragment = list.querySelector(":scope > template").content;
-		let /** @type {HTMLElement} */ specList;
-		let /** @type {string} */ prevDisplayName;
-		$dataLoop: for (const { name, definitions, static: isStatic, interface: interfaceName, dictionary } of data) {
-			if (!name) continue $dataLoop;
-			let displayName = name;
-			if (categoryId === "attributes") {
-				if (interfaceName === "Window") displayName = `${name} (window)`;
-				else if (isStatic) displayName = `${name} (${interfaceName})`;
-				else displayName = `${name} (${interfaceName}.prototype)`;
-			} else if (categoryId === "functions") {
-				if (interfaceName === "Window") displayName = `${name}() (window)`;
-				else if (isStatic) displayName = `${name}() (${interfaceName})`;
-				else displayName = `${name}() (${interfaceName}.prototype)`;
-			} else if (categoryId === "dictionary-fields") {
-				displayName = `${name} (${dictionary})`;
-			}
-			const itemClone = itemFragment.cloneNode(true);
-			itemClone.querySelector(".name").textContent = displayName;
-			specList = itemClone.querySelector(".spec-list");
-			const specFragment = specList.querySelector(":scope > template").content;
-			for (const [i, { spec, id }] of definitions.entries()) {
-				const url = `${spec}#${id}`;
-				if (i === 0) itemClone.querySelector("a.name").href = url;
-				const specClone = specFragment.cloneNode(true);
-				const shortname = shortnameMap.get(spec);
-				specClone.querySelector("a.spec").href = url;
-				specClone.querySelector(".spec-identifier").textContent = shortname;
-				specClone.querySelector(".spec-link-hash").textContent = "#" + id;
-				if (openLinksInNewTab) specClone.querySelector("a.spec").target = "_blank";
-				specList.append(specClone);
-			}
-			list.append(itemClone);
-		}
-		mainList.append(clone);
-	}
-}
+// let shortnameMap = new Map();
+
+// const { specs: specsData } = await (await globalThis.fetch("./index/specs.json")).json();
+
+// const renderSpecs = () => {
+// 	for (const { groupName, groupHomepage, groupIdentifier, specs } of specsData) {
+// 		const groupLinkId = nameToId(groupName);
+
+// 		{
+// 			const clone = tocFragment.cloneNode(true);
+// 			clone.querySelector(".link-to-list").textContent = groupName;
+// 			clone.querySelector("a.link-to-list").href = "#" + groupLinkId;
+// 			tocList.append(clone);
+// 		}
+
+// 		const clone = groupFragment.cloneNode(true);
+// 		clone.querySelector(".group-name").textContent = groupName;
+// 		clone.querySelector(".header h3").id = groupLinkId;
+// 		clone.querySelector("a.group-link").href = groupHomepage;
+// 		clone.querySelector(".group-idenfifier").textContent = groupIdentifier;
+
+// 		const specsList = clone.querySelector(".group-specs");
+// 		const specFragment = specsList.querySelector(":scope > template").content;
+// 		for (const { title, url, repo, tests, shortname } of specs) {
+// 			shortnameMap.set(url, shortname);
+// 			const specClone = specFragment.cloneNode(true);
+// 			specClone.querySelector(".spec-name").textContent = title;
+// 			const urlObject = new URL(url);
+// 			specClone.querySelector(".spec-url").textContent = urlObject.host + urlObject.pathname.replace(/\/$/, "");
+// 			specClone.querySelector("a.spec-link").href = url;
+// 			if (openLinksInNewTab) specClone.querySelector("a.spec-link").target = "_blank";
+// 			if (repo) {
+// 				specClone.querySelector("a.repo-link").href = repo;
+// 			} else {
+// 				// specClone.querySelector("a.repo-link").style.visibility = "hidden";
+// 				specClone.querySelector("a.repo-link").classList.add("disabled");
+// 				specClone.querySelector("a.repo-link").inert = true;
+// 			}
+// 			if (tests) {
+// 				specClone.querySelector("a.tests-link").href = tests;
+// 			} else {
+// 				// specClone.querySelector("a.tests-link").style.visibility = "hidden";
+// 				specClone.querySelector("a.tests-link").classList.add("disabled");
+// 				specClone.querySelector("a.tests-link").inert = true;
+// 			}
+// 			specsList.append(specClone);
+// 		}
+// 		mainList.append(clone);
+// 	}
+// };
+
+// renderSpecs();
+
+// const {
+// 	cssProperties,
+// 	cssTypes,
+// 	cssAtRules,
+// 	cssFunctions,
+// 	cssSelectors,
+// 	cssPseudoClasses,
+// 	cssPseudoElements,
+// 	cssDescriptors,
+// 	cssUnits,
+// } = await (await window.fetch("./index/css.json")).json();
+
+// const renderCSS = () => {
+// 	const allData = [
+// 		["Properties", cssProperties],
+// 		["Types", cssTypes],
+// 		["At-rules", cssAtRules],
+// 		["Functions", cssFunctions],
+// 		["Basic selectors", cssSelectors],
+// 		["Pseudo classes", cssPseudoClasses],
+// 		["Pseudo elements", cssPseudoElements],
+// 		["Descriptors", cssDescriptors],
+// 		["Units", cssUnits],
+// 	];
+// 	for (const [categoryName, data] of allData) {
+// 		const categoryId = nameToId(categoryName);
+
+// 		{
+// 			const clone = tocFragment.cloneNode(true);
+// 			clone.querySelector(".link-to-list").textContent = categoryName;
+// 			clone.querySelector("a.link-to-list").href = "#" + categoryId;
+// 			tocList.append(clone);
+// 		}
+
+// 		const clone = cssFragment.cloneNode(true);
+// 		clone.querySelector(".category").textContent = categoryName;
+// 		clone.querySelector(".category").id = categoryId;
+
+// 		const list = clone.querySelector(".list");
+// 		const itemFragment = list.querySelector(":scope > template").content;
+// 		let /** @type {HTMLElement} */ specList;
+// 		let /** @type {string} */ prevName;
+// 		for (const { name, definitions } of data) {
+// 			const itemClone = itemFragment.cloneNode(true);
+// 			itemClone.querySelector(".name").textContent = name;
+// 			specList = itemClone.querySelector(".spec-list");
+// 			const specFragment = specList.querySelector(":scope > template").content;
+// 			for (const [i, { spec, id }] of definitions.entries()) {
+// 				const url = `${spec}#${id}`;
+// 				if (i === 0) itemClone.querySelector("a.name").href = url;
+// 				const specClone = specFragment.cloneNode(true);
+// 				const shortname = shortnameMap.get(spec);
+// 				specClone.querySelector("a.spec").href = url;
+// 				specClone.querySelector(".spec-identifier").textContent = shortname;
+// 				specClone.querySelector(".spec-link-hash").textContent = "#" + id;
+// 				if (openLinksInNewTab) specClone.querySelector("a.spec").target = "_blank";
+// 				specList.append(specClone);
+// 			}
+// 			list.append(itemClone);
+// 		}
+// 		mainList.append(clone);
+// 	}
+// }
+
+
+// const {
+// 	jsInterfaces,
+// 	jsAttributes,
+// 	jsFunctions,
+// 	jsDictionaries,
+// 	jsDictionaryFields,
+// } = await (await window.fetch("./index/javascript.json")).json();
+
+// const renderJavaScript = () => {
+// 	const allData = [
+// 		["Interfaces", jsInterfaces],
+// 		["Attributes", jsAttributes],
+// 		["Functions", jsFunctions],
+// 		["Dictionaries", jsDictionaries],
+// 		["Dictionary fields", jsDictionaryFields],
+// 	];
+// 	for (const [categoryName, data] of allData) {
+// 		const categoryId = nameToId(categoryName);
+
+// 		{
+// 			const clone = tocFragment.cloneNode(true);
+// 			clone.querySelector(".link-to-list").textContent = categoryName;
+// 			clone.querySelector("a.link-to-list").href = "#" + categoryId;
+// 			tocList.append(clone);
+// 		}
+
+// 		const clone = javaScriptFragment.cloneNode(true);
+// 		clone.querySelector(".category").textContent = categoryName;
+// 		clone.querySelector(".category").id = categoryId;
+
+// 		const list = clone.querySelector(".list");
+// 		const itemFragment = list.querySelector(":scope > template").content;
+// 		let /** @type {HTMLElement} */ specList;
+// 		let /** @type {string} */ prevDisplayName;
+// 		$dataLoop: for (const { name, definitions, static: isStatic, interface: interfaceName, dictionary } of data) {
+// 			if (!name) continue $dataLoop;
+// 			let displayName = name;
+// 			if (categoryId === "attributes") {
+// 				if (interfaceName === "Window") displayName = `${name} (window)`;
+// 				else if (isStatic) displayName = `${name} (${interfaceName})`;
+// 				else displayName = `${name} (${interfaceName}.prototype)`;
+// 			} else if (categoryId === "functions") {
+// 				if (interfaceName === "Window") displayName = `${name}() (window)`;
+// 				else if (isStatic) displayName = `${name}() (${interfaceName})`;
+// 				else displayName = `${name}() (${interfaceName}.prototype)`;
+// 			} else if (categoryId === "dictionary-fields") {
+// 				displayName = `${name} (${dictionary})`;
+// 			}
+// 			const itemClone = itemFragment.cloneNode(true);
+// 			itemClone.querySelector(".name").textContent = displayName;
+// 			specList = itemClone.querySelector(".spec-list");
+// 			const specFragment = specList.querySelector(":scope > template").content;
+// 			for (const [i, { spec, id }] of definitions.entries()) {
+// 				const url = `${spec}#${id}`;
+// 				if (i === 0) itemClone.querySelector("a.name").href = url;
+// 				const specClone = specFragment.cloneNode(true);
+// 				const shortname = shortnameMap.get(spec);
+// 				specClone.querySelector("a.spec").href = url;
+// 				specClone.querySelector(".spec-identifier").textContent = shortname;
+// 				specClone.querySelector(".spec-link-hash").textContent = "#" + id;
+// 				if (openLinksInNewTab) specClone.querySelector("a.spec").target = "_blank";
+// 				specList.append(specClone);
+// 			}
+// 			list.append(itemClone);
+// 		}
+// 		mainList.append(clone);
+// 	}
+// }

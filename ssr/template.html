@@ -19,7 +19,7 @@
 	<link rel="manifest" href="./app.webmanifest" />
 
 	<!-- JavaScript -->
-	<!-- <script type="module" src="./script.js"></script> -->
+	<script type="module" src="./script.js"></script>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="./style.css" />
@@ -32,29 +32,24 @@
 </head>
 
 <body>
-	<noscript>
-		Please enable JavaScript to view this site.
-		<hr />
-	</noscript>
-
 	<form id="theme">
 		<button type="button" id="theme-button" class="icon:moon" title="color theme"></button>
 	</form>
 
 	<header>
-		<!-- <input type="search" id="searchbox" title="Search" placeholder="Search..." /> -->
-
 		<div id="tabs">
-			<a href="./">
+			<a data-tab="specifications" href="./">
 				Specifications
 			</a>
-			<a href="./css.html">
+			<a data-tab="css" href="./css.html">
 				CSS
 			</a>
-			<a href="./javascript.html">
+			<a data-tab="javascript" href="./javascript.html">
 				JavaScript
 			</a>
 		</div>
+
+		<input type="search" id="searchbox" title="Search" placeholder="Type and press enter to search..." />
 	</header>
 
 	<main>

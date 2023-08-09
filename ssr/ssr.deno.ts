@@ -23,7 +23,7 @@ for (const { fileName, tab } of [
 	{ tab: "javascript", fileName: "javascript.html" },
 ]) {
 	const doc = templateDocument.cloneNode(true);
-	doc.documentElement.setAttribute("data-tab", tab);
+	doc.documentElement.setAttribute("data-current-tab", tab);
 	const tocList = doc.querySelector("#toc-list");
 	const tocTemplate = tocList.querySelector(":scope > template");
 	const mainList = doc.querySelector("#main-list");
@@ -90,6 +90,7 @@ for (const { fileName, tab } of [
 						const urlObject = new URL(url);
 						specClone.querySelector(".spec-url").textContent = urlObject.host + urlObject.pathname.replace(/\/$/, "");
 						specClone.querySelector("a.spec-link").setAttribute("href", url);
+						specClone.setAttribute("data-searchable-name", `${title} ${url} ${shortname}`.toLowerCase());
 						if (openLinksInNewTab) specClone.querySelector("a.spec-link").target = "_blank";
 						if (repo) {
 							specClone.querySelector("a.repo-link").setAttribute("href", repo);
@@ -161,6 +162,7 @@ for (const { fileName, tab } of [
 					for (const { name, definitions } of data) {
 						const itemClone = itemTemplate.cloneNode(true).content;
 						itemClone.querySelector(".name").textContent = name;
+						itemClone.setAttribute("data-searchable-name", name.toLowerCase());
 						specList = itemClone.querySelector(".spec-list");
 						const specTemplate = specList.querySelector(":scope > template");
 						for (const [i, { spec, id }] of definitions.entries()) {
@@ -195,7 +197,7 @@ for (const { fileName, tab } of [
 				} = JSON.parse(await Deno.readTextFile(new URL("../index/javascript.json", import.meta.url)));
 
 				const allData = [
-					["Interfaces", jsInterfaces],
+					["Interfaces and mixins", jsInterfaces],
 					["Attributes", jsAttributes],
 					["Functions", jsFunctions],
 					["Dictionaries", jsDictionaries],
@@ -219,10 +221,13 @@ for (const { fileName, tab } of [
 					const itemTemplate = list.querySelector(":scope > template");
 					let /** @type {HTMLElement} */ specList;
 					let /** @type {string} */ prevDisplayName;
-					$dataLoop: for (const { name, definitions, static: isStatic, interface: interfaceName, dictionary } of data) {
+					$dataLoop: for (const { name, definitions, static: isStatic, interface: interfaceName, dictionary, mixin, namespace } of data) {
 						if (!name) continue $dataLoop;
 						let displayName = name;
-						if (categoryId === "attributes") {
+						if (categoryId === "interfaces-and-mixins") {
+							if (mixin) displayName = `${name} (mixin)`;
+							else if (namespace) displayName = `${name} (${namespace} namespace)`;
+						} else if (categoryId === "attributes") {
 							if (interfaceName === "Window") displayName = `${name} (window)`;
 							else if (isStatic) displayName = `${name} (${interfaceName})`;
 							else displayName = `${name} (${interfaceName}.prototype)`;
@@ -235,6 +240,7 @@ for (const { fileName, tab } of [
 						}
 						const itemClone = itemTemplate.cloneNode(true).content;
 						itemClone.querySelector(".name").textContent = displayName;
+						itemClone.setAttribute("data-searchable-name", displayName.toLowerCase());
 						specList = itemClone.querySelector(".spec-list");
 						const specTemplate = specList.querySelector(":scope > template");
 						for (const [i, { spec, id }] of definitions.entries()) {

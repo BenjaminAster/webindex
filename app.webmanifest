@@ -1,7 +1,7 @@
 {
 	"name": "Web Index",
 	"short_name": "Web Index",
-	"display": "browser",
+	"display": "standalone",
 	"start_url": "./",
 	"scope": "./",
 	"background_color": "#2f3034",
