@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Tue, 08 Aug 2023 15:09:13 GMT",
-		"iso": "2023-08-08T15:09:13.911Z",
-		"unixMillis": 1691507353911
+		"utc": "Wed, 09 Aug 2023 17:21:41 GMT",
+		"iso": "2023-08-09T17:21:41.093Z",
+		"unixMillis": 1691601701093
 	},
 	"cssProperties": [
 		{
@@ -1968,15 +1968,15 @@
 			"name": "display",
 			"definitions": [
 				{
+					"value": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>",
+					"id": "propdef-display",
+					"spec": "https://drafts.csswg.org/css-display-4/"
+				},
+				{
 					"value": "<display-outside> || [ <display-inside> | math ]",
 					"onlyNewValues": true,
 					"id": "new-display-math-value",
 					"spec": "https://w3c.github.io/mathml-core/"
-				},
-				{
-					"value": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>",
-					"id": "propdef-display",
-					"spec": "https://drafts.csswg.org/css-display-4/"
 				},
 				{
 					"value": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>",

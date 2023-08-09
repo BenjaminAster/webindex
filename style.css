@@ -5,7 +5,6 @@
 	font-family: system-ui, sans-serif;
 	overflow-wrap: anywhere;
 	line-height: 1.5;
-	background-color: var(--background);
 	color: var(--text);
 	-webkit-tap-highlight-color: transparent;
 }
@@ -41,20 +40,16 @@
 	--gray-3: oklch(calc(var(--background-lightness) + 3 * var(--gray-lightness-step)) var(--chroma) var(--hue));
 	--gray-4: oklch(calc(var(--background-lightness) + 4 * var(--gray-lightness-step)) var(--chroma) var(--hue));
 	--gray-5: oklch(calc(var(--background-lightness) + 5 * var(--gray-lightness-step)) var(--chroma) var(--hue));
-	/* --transparent-background: oklch(calc(var(--background-lightness) + 2 * var(--gray-lightness-step)) var(--chroma) var(--hue) / 30%); */
-	/* --transparent-gray-1: oklch(calc(var(--background-lightness) + 4 * var(--gray-lightness-step)) var(--chroma) var(--hue) / 30%); */
-	/* --transparent-gray-2: oklch(calc(var(--background-lightness) + 6 * var(--gray-lightness-step)) var(--chroma) var(--hue) / 30%); */
-	/* --transparent-gray-3: oklch(calc(var(--background-lightness) + 8 * var(--gray-lightness-step)) var(--chroma) var(--hue) / 30%); */
 	--text: oklch(var(--text-lightness) var(--chroma) var(--hue));
 	--gray-text: oklch(calc(var(--text-lightness) + var(--gray-text-lightness-step)) var(--chroma) var(--hue));
-	/* --separation-border-color: oklch(calc(var(--text-lightness) - 5 * var(--gray-lightness-step)) var(--chroma) var(--hue)); */
 
 	--px: calc(1rem / 16);
+
+	background-color: color-mix(in srgb, var(--gray-1) 20%, var(--black-or-white));
 
 	--scrollbar-color: oklch(var(--accent-lightness) var(--accent-chroma) var(--accent-hue));
 	--scrollbar-hover-color: oklch(calc(var(--accent-lightness) + 0.1) var(--accent-chroma) var(--accent-hue));
 	scrollbar-color: var(--scrollbar-color) transparent;
-	/* scroll-behavior: smooth; */
 }
 
 body {
@@ -65,28 +60,6 @@ body {
 	flex-direction: column;
 }
 
-/* @media screen {
-	:root:not([data-theme="light"]) {
-		color-scheme: dark;
-		--background: oklch(0.223 0.005 286deg);
-		--text: oklch(0.913 0.005 286deg);
-		--heading: oklch(0.829 0.005 286deg);
-		--gray-text: oklch(0.819 0.005 286deg);
-		--group-background: color-mix(in srgb, Canvas, CanvasText 10%);
-		--highlight-text: black;
-		--highlight-background: white;
-		--separation-border-color: oklch(0.395 0.014 286deg);
-		--separation-border-color: oklch(0.395 0.004 286deg);
-	}
-}
-
-:root {
-	color-scheme: light;
-	--group-background: color-mix(in srgb, Canvas, CanvasText 0%);
-	--highlight-text: white;
-	--highlight-background: black;
-} */
-
 @layer global {
 	[hidden] {
 		display: none !important;
@@ -96,8 +69,6 @@ body {
 		margin: 0;
 		font-weight: 600;
 		letter-spacing: .02em;
-		/* word-spacing: .03em; */
-		/* color: var(--heading); */
 	}
 
 	a {
@@ -174,6 +145,17 @@ header {
 	backdrop-filter: var(--backdrop-filter);
 }
 
+.top-bar {
+	display: flex;
+	align-items: center;
+}
+
+.github {
+	margin-inline-start: auto;
+	margin-inline-end: .6rem;
+	--icon-size: 1.3rem;
+}
+
 input[type=search]#searchbox {
 	border: 1px solid color-mix(in srgb, Canvas, CanvasText 20%);
 	border: 1px solid var(--gray-2);
@@ -191,16 +173,12 @@ input[type=search]#searchbox {
 #tabs {
 	display: flex;
 	flex-wrap: wrap;
-	/* padding: .3rem; */
 	padding-inline: .5rem;
-	/* gap: .3rem; */
 }
 
 #tabs > a {
 	display: block;
-	/* border-radius: .3rem; */
 	padding: .3rem .8rem;
-	/* border: 1px solid transparent; */
 	border-block-start: 1px solid transparent;
 	text-decoration: none;
 }
@@ -224,75 +202,43 @@ input[type=search]#searchbox {
 	gap: .3rem;
 	padding-block: .5rem;
 	border-block-end: var(--gray-1) solid 1px;
+	background-color: var(--background);
 }
 
 ul#toc-list {
-	/* display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	gap: .3rem; */
+	gap: .3rem;
 	display: contents;
 }
 
 ul#toc-list > li > a {
 	background-color: var(--gray-1);
-	padding: 0em .4em;
+	padding: 0 .4em;
 	border-radius: .3em;
-}
-
-ul#main-list {
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* gap: .7rem; */
-	/* padding: .5rem; */
-	padding-block-start: .5rem;
-
-	/* background-color: var(--black-or-white); */
-	background-color: color-mix(in srgb, var(--gray-1) 20%, var(--black-or-white));
-	/* gap: .5rem; */
 }
 
 ul#main-list > li {
 	display: flex;
 	flex-direction: column;
 	gap: .3rem;
-	/* background-color: var(--group-background); */
-	/* border: 1px solid color-mix(in srgb, Canvas, CanvasText 15%); */
-	/* border-radius: .7rem; */
 	background-color: var(--background);
 	border-block: var(--gray-1) solid 1px;
 	padding: .7rem;
 }
 
-ul#main-list > li:not(:first-of-type) {
+ul#main-list > li {
 	margin-block-start: .5rem;
-}
-
-ul#main-list > li:not(:last-of-type) {
-	/* border-block-end: var(--gray-2) solid calc(1.1 * (1rem / 16)); */
-}
-
-ul#main-list > li:first-of-type {
-	/* border-block-start: none; */
 }
 
 ul#main-list > li:last-of-type {
 	border-block-end: none;
 }
 
-ul#main-list > li > .header {
-	/* display: flex; */
-	/* flex-wrap: wrap; */
-	/* column-gap: .5rem; */
-	/* align-items: baseline; */
-}
-
 ul#main-list > li > .header .group-idenfifier {
 	color: var(--gray-text);
 	font-size: .9rem;
 	margin-inline-start: .1rem;
-	/* text-transform: uppercase; */
-	/* font-variant: small-caps; */
 }
 
 ul#main-list > li > .header h3 {
@@ -301,18 +247,13 @@ ul#main-list > li > .header h3 {
 }
 
 ul#main-list > li > ul {
-	/* display: flex; */
-	/* flex-direction: column; */
 }
 
 ul#main-list > li > ul > li {
 	display: flex;
-	/* align-items: center; */
 	align-items: start;
-	/* align-items: first baseline; */
 	gap: .5rem;
 	--icon-size: 1.1rem;
-	/* --line-color: var(--transparent-background); */
 	--line-color: var(--gray-1);
 }
 
@@ -323,13 +264,9 @@ ul#main-list > li > ul > li:nth-of-type(even) {
 }
 
 ul#main-list > li > ul > li:not(:last-of-type) {
-	/* border-block-end: 1px solid var(--gray-2); */
-	/* border-block-end: 1px solid var(--gray-1); */
-	/* border-block-end: 1px solid color-mix(in srgb, var(--gray-1) 20%, var(--black-or-white)); */
 }
 
 ul#main-list > li > ul > li > .icon {
-	/* align-self: center; */
 	margin-block-start: .2rem;
 }
 
@@ -374,11 +311,6 @@ ul#main-list > li > ul > li > .container > ul > li:not(:last-of-type) {
 	border-block-end: 1px solid var(--line-color);
 }
 
-ul#main-list > li > ul > li > a.repo-link {
-	/* margin-inline-start: auto; */
-	/* --icon-size: 1.1rem; */
-}
-
 ul#main-list > li > ul > li > .disabled {
 	--icon-color: var(--gray-3);
 }
@@ -403,9 +335,4 @@ ul#main-list > li > ul > li > .disabled {
 
 :root[data-theme=light] #theme #theme-button {
 	--icon: var(--icon-sun);
-}
-
-::highlight(search) {
-	color: black;
-	background-color: gold;
 }

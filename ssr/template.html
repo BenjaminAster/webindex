@@ -9,7 +9,7 @@
 	<meta name="robots" content="all" />
 	<meta name="author" content="Benjamin Aster" />
 	<meta name="repository" content="https://github.com/BenjaminAster/webindex" />
-	<meta name="description" content="A list of web-related Specifications" />
+	<meta name="description" content="An index of web-related specifications, CSS properties, JavaScript interfaces, etc." />
 	<meta property="og:image" content="https://benjaminaster.com/webindex/assets/icon.png" />
 
 	<!-- App -->
@@ -24,11 +24,6 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="preload" as="style" href="./icons.css" />
-
-	<!-- Preloads -->
-	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/specs.json" /> -->
-	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/css.json" /> -->
-	<!-- <link rel="preload" as="fetch" crossorigin="anonymous" href="./index/javascript.json" /> -->
 </head>
 
 <body>
@@ -37,16 +32,20 @@
 	</form>
 
 	<header>
-		<div id="tabs">
-			<a data-tab="specifications" href="./">
-				Specifications
-			</a>
-			<a data-tab="css" href="./css.html">
-				CSS
-			</a>
-			<a data-tab="javascript" href="./javascript.html">
-				JavaScript
-			</a>
+		<div class="top-bar">
+			<div id="tabs">
+				<a data-tab="specifications" href="./">
+					Specifications
+				</a>
+				<a data-tab="css" href="./css.html">
+					CSS
+				</a>
+				<a data-tab="javascript" href="./javascript.html">
+					JavaScript
+				</a>
+			</div>
+
+			<a href="https://github.com/BenjaminAster/webindex" title="View project on GitHub" class="github icon:github"></a>
 		</div>
 
 		<input type="search" id="searchbox" title="Search" placeholder="Type and press enter to search..." />

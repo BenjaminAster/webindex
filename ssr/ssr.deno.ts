@@ -90,7 +90,7 @@ for (const { fileName, tab } of [
 						const urlObject = new URL(url);
 						specClone.querySelector(".spec-url").textContent = urlObject.host + urlObject.pathname.replace(/\/$/, "");
 						specClone.querySelector("a.spec-link").setAttribute("href", url);
-						specClone.setAttribute("data-searchable-name", `${title} ${url} ${shortname}`.toLowerCase());
+						specClone.firstElementChild.setAttribute("data-searchable-name", `${title} ${shortname}`.toLowerCase());
 						if (openLinksInNewTab) specClone.querySelector("a.spec-link").target = "_blank";
 						if (repo) {
 							specClone.querySelector("a.repo-link").setAttribute("href", repo);
@@ -132,14 +132,14 @@ for (const { fileName, tab } of [
 
 				const allData = [
 					["Properties", cssProperties],
-					["Types", cssTypes],
-					["At-rules", cssAtRules],
 					["Functions", cssFunctions],
 					["Basic selectors", cssSelectors],
 					["Pseudo classes", cssPseudoClasses],
 					["Pseudo elements", cssPseudoElements],
-					["Descriptors", cssDescriptors],
 					["Units", cssUnits],
+					["At-rules", cssAtRules],
+					["Descriptors", cssDescriptors],
+					["Types", cssTypes],
 				];
 				for (const [categoryName, data] of allData) {
 					const categoryId = nameToId(categoryName);
@@ -162,7 +162,7 @@ for (const { fileName, tab } of [
 					for (const { name, definitions } of data) {
 						const itemClone = itemTemplate.cloneNode(true).content;
 						itemClone.querySelector(".name").textContent = name;
-						itemClone.setAttribute("data-searchable-name", name.toLowerCase());
+						itemClone.firstElementChild.setAttribute("data-searchable-name", name.toLowerCase());
 						specList = itemClone.querySelector(".spec-list");
 						const specTemplate = specList.querySelector(":scope > template");
 						for (const [i, { spec, id }] of definitions.entries()) {
@@ -198,9 +198,9 @@ for (const { fileName, tab } of [
 
 				const allData = [
 					["Interfaces and mixins", jsInterfaces],
+					["Dictionaries", jsDictionaries],
 					["Attributes", jsAttributes],
 					["Functions", jsFunctions],
-					["Dictionaries", jsDictionaries],
 					["Dictionary fields", jsDictionaryFields],
 				];
 				for (const [categoryName, data] of allData) {
@@ -240,7 +240,7 @@ for (const { fileName, tab } of [
 						}
 						const itemClone = itemTemplate.cloneNode(true).content;
 						itemClone.querySelector(".name").textContent = displayName;
-						itemClone.setAttribute("data-searchable-name", displayName.toLowerCase());
+						itemClone.firstElementChild.setAttribute("data-searchable-name", displayName.toLowerCase());
 						specList = itemClone.querySelector(".spec-list");
 						const specTemplate = specList.querySelector(":scope > template");
 						for (const [i, { spec, id }] of definitions.entries()) {

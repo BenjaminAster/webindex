@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Tue, 08 Aug 2023 15:09:13 GMT",
-		"iso": "2023-08-08T15:09:13.911Z",
-		"unixMillis": 1691507353911
+		"utc": "Wed, 09 Aug 2023 17:21:41 GMT",
+		"iso": "2023-08-09T17:21:41.093Z",
+		"unixMillis": 1691601701093
 	},
 	"jsInterfaces": [
 		{
@@ -388,7 +388,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/media-source/",
-					"id": "ref-for-dom-audiotrack"
+					"id": "idl-def-audiotrack-partial-1"
 				}
 			]
 		},
@@ -848,7 +848,7 @@
 				{
 					"partial": true,
 					"spec": "https://screen-share.github.io/element-capture/",
-					"id": "ref-for-dom-browsercapturemediastreamtrack"
+					"id": "idl-def-browsercapturemediastreamtrack-partial-1"
 				}
 			]
 		},
@@ -1107,7 +1107,7 @@
 				{
 					"partial": true,
 					"spec": "https://screen-share.github.io/captured-mouse-events/",
-					"id": "ref-for-dom-capturecontroller"
+					"id": "idl-def-capturecontroller-partial-1"
 				}
 			]
 		},
@@ -2662,12 +2662,12 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-document"
+					"id": "idl-def-document-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/selection-api/",
-					"id": "ref-for-dom-document"
+					"id": "idl-def-document-partial-1"
 				},
 				{
 					"partial": true,
@@ -2732,7 +2732,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-documentorshadowroot"
+					"id": "idl-def-documentorshadowroot-partial-1"
 				},
 				{
 					"partial": true,
@@ -2991,17 +2991,17 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/DOM-Parsing/",
-					"id": "ref-for-dom-element"
+					"id": "idl-def-element-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-element"
+					"id": "idl-def-element-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-element"
+					"id": "idl-def-element-partial-1"
 				},
 				{
 					"partial": true,
@@ -3026,7 +3026,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/virtual-keyboard/",
-					"id": "ref-for-dom-elementcontenteditable"
+					"id": "idl-def-elementcontenteditable-partial-1"
 				}
 			]
 		},
@@ -3700,7 +3700,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "ref-for-dom-gamepad"
+					"id": "idl-def-gamepad-partial-1"
 				}
 			]
 		},
@@ -3857,17 +3857,17 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/selection-api/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/touch-events/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				},
 				{
 					"partial": true,
@@ -4589,7 +4589,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-fromelement/",
-					"id": "ref-for-dom-htmlcanvaselement"
+					"id": "idl-def-htmlcanvaselement-partial-1"
 				}
 			]
 		},
@@ -4698,7 +4698,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/edit-context/",
-					"id": "ref-for-dom-htmlelement"
+					"id": "idl-def-htmlelement-partial-1"
 				}
 			]
 		},
@@ -4933,7 +4933,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/html-media-capture/",
-					"id": "ref-for-dom-htmlinputelement"
+					"id": "idl-def-htmlinputelement-partial-1"
 				}
 			]
 		},
@@ -5023,22 +5023,22 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-output/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/encrypted-media/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-fromelement/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/remote-playback/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -5508,7 +5508,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/media-playback-quality/",
-					"id": "ref-for-dom-htmlvideoelement"
+					"id": "idl-def-htmlvideoelement-partial-1"
 				},
 				{
 					"partial": true,
@@ -5796,7 +5796,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/input-events/",
-					"id": "ref-for-dom-inputevent"
+					"id": "idl-def-inputevent-partial-1"
 				}
 			]
 		},
@@ -6166,32 +6166,32 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-handle/actions/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-output/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-handle/identity/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-viewport/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				},
 				{
 					"partial": true,
@@ -6403,27 +6403,27 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-handle/actions/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-handle/identity/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-handle/identity/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mst-content-hint/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				},
 				{
 					"partial": true,
@@ -6969,7 +6969,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-mouseevent"
+					"id": "idl-def-mouseevent-partial-1"
 				},
 				{
 					"partial": true,
@@ -7141,7 +7141,7 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/is-input-pending/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -7151,7 +7151,7 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/serial/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -7176,7 +7176,7 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/webhid/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -7186,7 +7186,7 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/window-controls-overlay/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -7196,12 +7196,12 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/battery/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/beacon/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -7221,22 +7221,22 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/device-posture/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/encrypted-media/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/gamepad/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/geolocation-api/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -7246,12 +7246,12 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -7261,22 +7261,22 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/permissions/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/presentation-api/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/screen-wake-lock/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -7286,22 +7286,22 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/vibration/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/virtual-keyboard/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/web-share/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://webaudio.github.io/web-midi-api/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -8030,22 +8030,22 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/navigation-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/performance-timeline/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/resource-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/user-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -8171,7 +8171,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/server-timing/",
-					"id": "ref-for-dom-performanceresourcetiming"
+					"id": "idl-def-performanceresourcetiming-partial-1"
 				}
 			]
 		},
@@ -8367,12 +8367,12 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/presentation-api/",
-					"id": "ref-for-dom-presentation"
+					"id": "idl-def-presentation-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/presentation-api/",
-					"id": "ref-for-dom-presentation"
+					"id": "idl-def-presentation-partial-1"
 				}
 			]
 		},
@@ -8726,7 +8726,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/DOM-Parsing/",
-					"id": "ref-for-dom-range"
+					"id": "idl-def-range-partial-1"
 				}
 			]
 		},
@@ -9047,7 +9047,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcerror"
+					"id": "idl-def-rtcerror-partial-1"
 				}
 			]
 		},
@@ -9121,7 +9121,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtcicetransport"
+					"id": "idl-def-rtcicetransport-partial-1"
 				},
 				{
 					"inheritance": "RTCStatsProvider",
@@ -9187,27 +9187,27 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -9317,7 +9317,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcrtpsender"
+					"id": "idl-def-rtcrtpsender-partial-1"
 				},
 				{
 					"partial": true,
@@ -9473,7 +9473,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/screen-orientation/",
-					"id": "ref-for-dom-screen"
+					"id": "idl-def-screen-partial-1"
 				},
 				{
 					"partial": true,
@@ -9692,17 +9692,17 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/payment-handler/",
-					"id": "ref-for-dom-serviceworkerglobalscope"
+					"id": "idl-def-serviceworkerglobalscope-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/payment-handler/",
-					"id": "ref-for-dom-serviceworkerglobalscope"
+					"id": "idl-def-serviceworkerglobalscope-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/push-api/",
-					"id": "ref-for-dom-serviceworkerglobalscope"
+					"id": "idl-def-serviceworkerglobalscope-partial-1"
 				}
 			]
 		},
@@ -9747,12 +9747,12 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/payment-handler/",
-					"id": "ref-for-dom-serviceworkerregistration"
+					"id": "idl-def-serviceworkerregistration-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/push-api/",
-					"id": "ref-for-dom-serviceworkerregistration"
+					"id": "idl-def-serviceworkerregistration-partial-1"
 				}
 			]
 		},
@@ -11424,7 +11424,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/media-source/",
-					"id": "ref-for-dom-texttrack"
+					"id": "idl-def-texttrack-partial-1"
 				}
 			]
 		},
@@ -11627,7 +11627,7 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/input-device-capabilities/",
-					"id": "ref-for-dom-uievent"
+					"id": "idl-def-uievent-partial-1"
 				},
 				{
 					"partial": true,
@@ -11897,7 +11897,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/media-source/",
-					"id": "ref-for-dom-videotrack"
+					"id": "idl-def-videotrack-partial-1"
 				}
 			]
 		},
@@ -12579,7 +12579,7 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/manifest-incubations/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				},
 				{
 					"partial": true,
@@ -12594,7 +12594,7 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/web-app-launch/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				},
 				{
 					"partial": true,
@@ -12629,12 +12629,12 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/requestidlecallback/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/selection-api/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				},
 				{
 					"partial": true,
@@ -12699,7 +12699,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/gamepad/",
-					"id": "ref-for-dom-windoweventhandlers"
+					"id": "idl-def-windoweventhandlers-partial-1"
 				}
 			]
 		},
@@ -12734,7 +12734,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/hr-time/",
-					"id": "ref-for-dom-windoworworkerglobalscope"
+					"id": "idl-def-windoworworkerglobalscope-partial-1"
 				},
 				{
 					"partial": true,
@@ -12754,7 +12754,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webcrypto/",
-					"id": "ref-for-dom-windoworworkerglobalscope"
+					"id": "idl-def-windoworworkerglobalscope-partial-1"
 				}
 			]
 		},
@@ -12817,12 +12817,12 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/serial/",
-					"id": "ref-for-dom-workernavigator"
+					"id": "idl-def-workernavigator-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/webhid/",
-					"id": "ref-for-dom-workernavigator"
+					"id": "idl-def-workernavigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -12837,7 +12837,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/permissions/",
-					"id": "ref-for-dom-workernavigator"
+					"id": "idl-def-workernavigator-partial-1"
 				},
 				{
 					"partial": true,
@@ -17070,7 +17070,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/input-events/",
-					"id": "ref-for-dom-inputeventinit"
+					"id": "idl-def-inputeventinit-partial-1"
 				}
 			]
 		},
@@ -17459,12 +17459,12 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/prefer-current-tab/",
-					"id": "ref-for-dom-mediastreamconstraints"
+					"id": "idl-def-mediastreamconstraints-partial-1"
 				},
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-mediastreamconstraints"
+					"id": "idl-def-mediastreamconstraints-partial-1"
 				},
 				{
 					"partial": true,
@@ -17528,7 +17528,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackcapabilities"
+					"id": "idl-def-mediatrackcapabilities-partial-1"
 				},
 				{
 					"partial": true,
@@ -17581,7 +17581,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackconstraintset"
+					"id": "idl-def-mediatrackconstraintset-partial-1"
 				},
 				{
 					"partial": true,
@@ -17629,7 +17629,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksettings"
+					"id": "idl-def-mediatracksettings-partial-1"
 				},
 				{
 					"partial": true,
@@ -17673,7 +17673,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksupportedconstraints"
+					"id": "idl-def-mediatracksupportedconstraints-partial-1"
 				},
 				{
 					"partial": true,
@@ -18161,7 +18161,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-mouseeventinit"
+					"id": "idl-def-mouseeventinit-partial-1"
 				}
 			]
 		},
@@ -19578,7 +19578,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcconfiguration"
+					"id": "idl-def-rtcconfiguration-partial-1"
 				},
 				{
 					"partial": true,
@@ -19713,7 +19713,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcerrorinit"
+					"id": "idl-def-rtcerrorinit-partial-1"
 				}
 			]
 		},
@@ -19835,7 +19835,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtciceparameters"
+					"id": "idl-def-rtciceparameters-partial-1"
 				},
 				{
 					"spec": "https://draft.ortc.org/",
@@ -19967,7 +19967,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcofferoptions"
+					"id": "idl-def-rtcofferoptions-partial-1"
 				}
 			]
 		},
@@ -20197,7 +20197,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-svc/",
-					"id": "ref-for-dom-rtcrtpencodingparameters"
+					"id": "idl-def-rtcrtpencodingparameters-partial-1"
 				},
 				{
 					"partial": true,
@@ -20318,7 +20318,7 @@
 				{
 					"partial": true,
 					"spec": "https://w3c.github.io/mst-content-hint/",
-					"id": "ref-for-dom-rtcrtpsendparameters"
+					"id": "idl-def-rtcrtpsendparameters-partial-1"
 				},
 				{
 					"spec": "https://draft.ortc.org/",
@@ -21256,7 +21256,7 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/input-device-capabilities/",
-					"id": "ref-for-dom-uieventinit"
+					"id": "idl-def-uieventinit-partial-1"
 				},
 				{
 					"partial": true,
@@ -28001,7 +28001,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksupportedconstraints"
+					"id": "idl-def-mediatracksupportedconstraints-partial-1"
 				}
 			]
 		},
@@ -28011,7 +28011,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackconstraintset"
+					"id": "idl-def-mediatrackconstraintset-partial-1"
 				}
 			]
 		},
@@ -28021,7 +28021,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksettings"
+					"id": "idl-def-mediatracksettings-partial-1"
 				}
 			]
 		},
@@ -28031,7 +28031,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackcapabilities"
+					"id": "idl-def-mediatrackcapabilities-partial-1"
 				}
 			]
 		},
@@ -28491,7 +28491,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/input-events/",
-					"id": "ref-for-dom-inputeventinit"
+					"id": "idl-def-inputeventinit-partial-1"
 				}
 			]
 		},
@@ -28630,12 +28630,12 @@
 			"dictionary": "RTCRtpSendParameters",
 			"definitions": [
 				{
-					"spec": "https://draft.ortc.org/",
-					"id": "dictdef-rtcrtpsendparameters"
+					"spec": "https://w3c.github.io/mst-content-hint/",
+					"id": "idl-def-rtcrtpsendparameters-partial-1"
 				},
 				{
-					"spec": "https://w3c.github.io/mst-content-hint/",
-					"id": "ref-for-dom-rtcrtpsendparameters"
+					"spec": "https://draft.ortc.org/",
+					"id": "dictdef-rtcrtpsendparameters"
 				}
 			]
 		},
@@ -29815,7 +29815,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksupportedconstraints"
+					"id": "idl-def-mediatracksupportedconstraints-partial-1"
 				}
 			]
 		},
@@ -29825,7 +29825,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackconstraintset"
+					"id": "idl-def-mediatrackconstraintset-partial-1"
 				}
 			]
 		},
@@ -29835,7 +29835,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksettings"
+					"id": "idl-def-mediatracksettings-partial-1"
 				}
 			]
 		},
@@ -29845,7 +29845,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackcapabilities"
+					"id": "idl-def-mediatrackcapabilities-partial-1"
 				}
 			]
 		},
@@ -34191,7 +34191,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcerrorinit"
+					"id": "idl-def-rtcerrorinit-partial-1"
 				}
 			]
 		},
@@ -34260,12 +34260,12 @@
 			"dictionary": "RTCIceParameters",
 			"definitions": [
 				{
-					"spec": "https://draft.ortc.org/",
-					"id": "dictdef-rtciceparameters"
+					"spec": "https://w3c.github.io/webrtc-ice/",
+					"id": "idl-def-rtciceparameters-partial-1"
 				},
 				{
-					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtciceparameters"
+					"spec": "https://draft.ortc.org/",
+					"id": "dictdef-rtciceparameters"
 				}
 			]
 		},
@@ -37179,7 +37179,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksupportedconstraints"
+					"id": "idl-def-mediatracksupportedconstraints-partial-1"
 				}
 			]
 		},
@@ -37189,7 +37189,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackconstraintset"
+					"id": "idl-def-mediatrackconstraintset-partial-1"
 				}
 			]
 		},
@@ -37199,7 +37199,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksettings"
+					"id": "idl-def-mediatracksettings-partial-1"
 				}
 			]
 		},
@@ -37209,7 +37209,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackcapabilities"
+					"id": "idl-def-mediatrackcapabilities-partial-1"
 				}
 			]
 		},
@@ -38911,7 +38911,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-mouseeventinit"
+					"id": "idl-def-mouseeventinit-partial-1"
 				}
 			]
 		},
@@ -38921,7 +38921,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-mouseeventinit"
+					"id": "idl-def-mouseeventinit-partial-1"
 				}
 			]
 		},
@@ -39811,7 +39811,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcofferoptions"
+					"id": "idl-def-rtcofferoptions-partial-1"
 				}
 			]
 		},
@@ -39821,7 +39821,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcofferoptions"
+					"id": "idl-def-rtcofferoptions-partial-1"
 				}
 			]
 		},
@@ -41495,7 +41495,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcconfiguration"
+					"id": "idl-def-rtcconfiguration-partial-1"
 				}
 			]
 		},
@@ -41515,7 +41515,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-mediastreamconstraints"
+					"id": "idl-def-mediastreamconstraints-partial-1"
 				}
 			]
 		},
@@ -42289,7 +42289,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/prefer-current-tab/",
-					"id": "ref-for-dom-mediastreamconstraints"
+					"id": "idl-def-mediastreamconstraints-partial-1"
 				}
 			]
 		},
@@ -44957,7 +44957,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksupportedconstraints"
+					"id": "idl-def-mediatracksupportedconstraints-partial-1"
 				}
 			]
 		},
@@ -44967,7 +44967,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackconstraintset"
+					"id": "idl-def-mediatrackconstraintset-partial-1"
 				}
 			]
 		},
@@ -44977,7 +44977,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksettings"
+					"id": "idl-def-mediatracksettings-partial-1"
 				}
 			]
 		},
@@ -45975,7 +45975,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-svc/",
-					"id": "ref-for-dom-rtcrtpencodingparameters"
+					"id": "idl-def-rtcrtpencodingparameters-partial-1"
 				}
 			]
 		},
@@ -47305,7 +47305,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/input-device-capabilities/",
-					"id": "ref-for-dom-uieventinit"
+					"id": "idl-def-uieventinit-partial-1"
 				}
 			]
 		},
@@ -48415,7 +48415,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksupportedconstraints"
+					"id": "idl-def-mediatracksupportedconstraints-partial-1"
 				}
 			]
 		},
@@ -48425,7 +48425,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatrackconstraintset"
+					"id": "idl-def-mediatrackconstraintset-partial-1"
 				}
 			]
 		},
@@ -48435,7 +48435,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediatracksettings"
+					"id": "idl-def-mediatracksettings-partial-1"
 				}
 			]
 		},
@@ -48705,7 +48705,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/input-events/",
-					"id": "ref-for-dom-inputeventinit"
+					"id": "idl-def-inputeventinit-partial-1"
 				}
 			]
 		},
@@ -57902,7 +57902,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/html-media-capture/",
-					"id": "ref-for-dom-htmlinputelement"
+					"id": "idl-def-htmlinputelement-partial-1"
 				}
 			]
 		},
@@ -60971,7 +60971,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mst-content-hint/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				}
 			]
 		},
@@ -61541,7 +61541,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webcrypto/",
-					"id": "ref-for-dom-windoworworkerglobalscope"
+					"id": "idl-def-windoworworkerglobalscope-partial-1"
 				}
 			]
 		},
@@ -62382,7 +62382,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/input-events/",
-					"id": "ref-for-dom-inputevent"
+					"id": "idl-def-inputevent-partial-1"
 				}
 			]
 		},
@@ -62564,7 +62564,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/presentation-api/",
-					"id": "ref-for-dom-presentation"
+					"id": "idl-def-presentation-partial-1"
 				}
 			]
 		},
@@ -63432,7 +63432,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/device-posture/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -63793,7 +63793,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/remote-playback/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -64159,11 +64159,11 @@
 			"interface": "Document",
 			"definitions": [
 				{
-					"spec": "https://svgwg.org/svg2-draft/struct.html",
+					"spec": "https://html.spec.whatwg.org/multipage/dom.html",
 					"id": "ref-for-document"
 				},
 				{
-					"spec": "https://html.spec.whatwg.org/multipage/dom.html",
+					"spec": "https://svgwg.org/svg2-draft/struct.html",
 					"id": "ref-for-document"
 				}
 			]
@@ -64914,7 +64914,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcrtpsender"
+					"id": "idl-def-rtcrtpsender-partial-1"
 				}
 			]
 		},
@@ -65187,7 +65187,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/edit-context/",
-					"id": "ref-for-dom-htmlelement"
+					"id": "idl-def-htmlelement-partial-1"
 				}
 			]
 		},
@@ -68111,7 +68111,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/geolocation-api/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -68369,7 +68369,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "ref-for-dom-gamepad"
+					"id": "idl-def-gamepad-partial-1"
 				}
 			]
 		},
@@ -68429,7 +68429,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "ref-for-dom-gamepad"
+					"id": "idl-def-gamepad-partial-1"
 				}
 			]
 		},
@@ -69056,7 +69056,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/webhid/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -69066,7 +69066,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/webhid/",
-					"id": "ref-for-dom-workernavigator"
+					"id": "idl-def-workernavigator-partial-1"
 				}
 			]
 		},
@@ -69524,7 +69524,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcerror"
+					"id": "idl-def-rtcerror-partial-1"
 				}
 			]
 		},
@@ -69894,7 +69894,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -69914,7 +69914,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -71475,7 +71475,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				}
 			]
 		},
@@ -72489,7 +72489,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/web-app-launch/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				}
 			]
 		},
@@ -75675,7 +75675,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -75940,7 +75940,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -75960,7 +75960,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/encrypted-media/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -76717,7 +76717,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-mouseevent"
+					"id": "idl-def-mouseevent-partial-1"
 				}
 			]
 		},
@@ -76727,7 +76727,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-mouseevent"
+					"id": "idl-def-mouseevent-partial-1"
 				}
 			]
 		},
@@ -77631,7 +77631,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/navigation-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -78863,7 +78863,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/manifest-incubations/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				}
 			]
 		},
@@ -78973,7 +78973,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/manifest-incubations/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				}
 			]
 		},
@@ -79127,7 +79127,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/payment-handler/",
-					"id": "ref-for-dom-serviceworkerglobalscope"
+					"id": "idl-def-serviceworkerglobalscope-partial-1"
 				}
 			]
 		},
@@ -79157,7 +79157,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-handle/actions/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				}
 			]
 		},
@@ -79167,7 +79167,7 @@
 			"definitions": [
 				{
 					"spec": "https://screen-share.github.io/captured-mouse-events/",
-					"id": "ref-for-dom-capturecontroller"
+					"id": "idl-def-capturecontroller-partial-1"
 				}
 			]
 		},
@@ -79177,7 +79177,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-handle/identity/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				}
 			]
 		},
@@ -79761,7 +79761,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -80118,7 +80118,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/encrypted-media/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -80278,7 +80278,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtcicetransport"
+					"id": "idl-def-rtcicetransport-partial-1"
 				}
 			]
 		},
@@ -80578,7 +80578,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/gamepad/",
-					"id": "ref-for-dom-windoweventhandlers"
+					"id": "idl-def-windoweventhandlers-partial-1"
 				}
 			]
 		},
@@ -80588,7 +80588,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/gamepad/",
-					"id": "ref-for-dom-windoweventhandlers"
+					"id": "idl-def-windoweventhandlers-partial-1"
 				}
 			]
 		},
@@ -80638,7 +80638,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -80658,7 +80658,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtcicetransport"
+					"id": "idl-def-rtcicetransport-partial-1"
 				}
 			]
 		},
@@ -80758,7 +80758,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				}
 			]
 		},
@@ -81008,7 +81008,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81606,7 +81606,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/payment-handler/",
-					"id": "ref-for-dom-serviceworkerglobalscope"
+					"id": "idl-def-serviceworkerglobalscope-partial-1"
 				}
 			]
 		},
@@ -81646,7 +81646,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81656,7 +81656,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81666,7 +81666,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81676,7 +81676,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81686,7 +81686,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-document"
+					"id": "idl-def-document-partial-1"
 				}
 			]
 		},
@@ -81696,7 +81696,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-document"
+					"id": "idl-def-document-partial-1"
 				}
 			]
 		},
@@ -81706,7 +81706,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81716,7 +81716,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81726,7 +81726,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81736,7 +81736,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81746,7 +81746,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -81846,7 +81846,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/push-api/",
-					"id": "ref-for-dom-serviceworkerglobalscope"
+					"id": "idl-def-serviceworkerglobalscope-partial-1"
 				}
 			]
 		},
@@ -81856,7 +81856,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/push-api/",
-					"id": "ref-for-dom-serviceworkerglobalscope"
+					"id": "idl-def-serviceworkerglobalscope-partial-1"
 				}
 			]
 		},
@@ -82136,7 +82136,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/resource-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -82316,7 +82316,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/selection-api/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -82326,7 +82326,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/selection-api/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -82846,7 +82846,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/touch-events/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -82856,7 +82856,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/touch-events/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -82866,7 +82866,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/touch-events/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -82876,7 +82876,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/touch-events/",
-					"id": "ref-for-dom-globaleventhandlers"
+					"id": "idl-def-globaleventhandlers-partial-1"
 				}
 			]
 		},
@@ -82886,7 +82886,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -83116,7 +83116,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/encrypted-media/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -83459,7 +83459,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/screen-orientation/",
-					"id": "ref-for-dom-screen"
+					"id": "idl-def-screen-partial-1"
 				}
 			]
 		},
@@ -83704,7 +83704,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/DOM-Parsing/",
-					"id": "ref-for-dom-element"
+					"id": "idl-def-element-partial-1"
 				}
 			]
 		},
@@ -84461,7 +84461,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/payment-handler/",
-					"id": "ref-for-dom-serviceworkerregistration"
+					"id": "idl-def-serviceworkerregistration-partial-1"
 				}
 			]
 		},
@@ -84531,7 +84531,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -84621,7 +84621,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/hr-time/",
-					"id": "ref-for-dom-windoworworkerglobalscope"
+					"id": "idl-def-windoworworkerglobalscope-partial-1"
 				}
 			]
 		},
@@ -84663,7 +84663,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/permissions/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -84673,7 +84673,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/permissions/",
-					"id": "ref-for-dom-workernavigator"
+					"id": "idl-def-workernavigator-partial-1"
 				}
 			]
 		},
@@ -85047,7 +85047,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-documentorshadowroot"
+					"id": "idl-def-documentorshadowroot-partial-1"
 				}
 			]
 		},
@@ -85391,7 +85391,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "ref-for-dom-gamepad"
+					"id": "idl-def-gamepad-partial-1"
 				}
 			]
 		},
@@ -85692,7 +85692,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/presentation-api/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -86325,7 +86325,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/push-api/",
-					"id": "ref-for-dom-serviceworkerregistration"
+					"id": "idl-def-serviceworkerregistration-partial-1"
 				}
 			]
 		},
@@ -87321,7 +87321,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/presentation-api/",
-					"id": "ref-for-dom-presentation"
+					"id": "idl-def-presentation-partial-1"
 				}
 			]
 		},
@@ -88023,7 +88023,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/remote-playback/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -89989,7 +89989,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/is-input-pending/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -90342,7 +90342,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -90834,7 +90834,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/serial/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -90844,7 +90844,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/serial/",
-					"id": "ref-for-dom-workernavigator"
+					"id": "idl-def-workernavigator-partial-1"
 				}
 			]
 		},
@@ -90874,7 +90874,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/server-timing/",
-					"id": "ref-for-dom-performanceresourcetiming"
+					"id": "idl-def-performanceresourcetiming-partial-1"
 				}
 			]
 		},
@@ -91269,7 +91269,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-output/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -91660,7 +91660,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/media-source/",
-					"id": "ref-for-dom-audiotrack"
+					"id": "idl-def-audiotrack-partial-1"
 				}
 			]
 		},
@@ -91670,7 +91670,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/media-source/",
-					"id": "ref-for-dom-videotrack"
+					"id": "idl-def-videotrack-partial-1"
 				}
 			]
 		},
@@ -91680,7 +91680,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/media-source/",
-					"id": "ref-for-dom-texttrack"
+					"id": "idl-def-texttrack-partial-1"
 				}
 			]
 		},
@@ -91700,7 +91700,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/input-device-capabilities/",
-					"id": "ref-for-dom-uievent"
+					"id": "idl-def-uievent-partial-1"
 				}
 			]
 		},
@@ -96712,7 +96712,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/navigation-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -97006,7 +97006,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "ref-for-dom-gamepad"
+					"id": "idl-def-gamepad-partial-1"
 				}
 			]
 		},
@@ -100880,7 +100880,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "ref-for-dom-gamepad"
+					"id": "idl-def-gamepad-partial-1"
 				}
 			]
 		},
@@ -101081,7 +101081,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/virtual-keyboard/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -101091,7 +101091,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/virtual-keyboard/",
-					"id": "ref-for-dom-elementcontenteditable"
+					"id": "idl-def-elementcontenteditable-partial-1"
 				}
 			]
 		},
@@ -101322,7 +101322,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/screen-wake-lock/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -102022,7 +102022,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/window-controls-overlay/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -103935,12 +103935,12 @@
 			"interface": "RTCIceTransport",
 			"definitions": [
 				{
-					"spec": "https://draft.ortc.org/",
-					"id": "rtcicetransport"
+					"spec": "https://w3c.github.io/webrtc-ice/",
+					"id": "idl-def-rtcicetransport-partial-1"
 				},
 				{
-					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtcicetransport"
+					"spec": "https://draft.ortc.org/",
+					"id": "rtcicetransport"
 				}
 			]
 		},
@@ -104010,7 +104010,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -104020,7 +104020,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -105158,7 +105158,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/requestidlecallback/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				}
 			]
 		},
@@ -105270,7 +105270,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/web-share/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -105300,7 +105300,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-fromelement/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -105310,7 +105310,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-fromelement/",
-					"id": "ref-for-dom-htmlcanvaselement"
+					"id": "idl-def-htmlcanvaselement-partial-1"
 				}
 			]
 		},
@@ -105886,7 +105886,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/user-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -105896,7 +105896,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/user-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -105926,7 +105926,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/resource-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -107782,7 +107782,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/DOM-Parsing/",
-					"id": "ref-for-dom-range"
+					"id": "idl-def-range-partial-1"
 				}
 			]
 		},
@@ -107832,7 +107832,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -110640,7 +110640,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-document"
+					"id": "idl-def-document-partial-1"
 				}
 			]
 		},
@@ -111415,7 +111415,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtcicetransport"
+					"id": "idl-def-rtcicetransport-partial-1"
 				}
 			]
 		},
@@ -111457,7 +111457,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -112109,7 +112109,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/battery/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -112304,7 +112304,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-handle/identity/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				}
 			]
 		},
@@ -112872,7 +112872,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				}
 			]
 		},
@@ -113002,7 +113002,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/performance-timeline/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -113022,7 +113022,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/performance-timeline/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -113042,7 +113042,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/performance-timeline/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -113226,7 +113226,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/gamepad/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -113286,7 +113286,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -114127,7 +114127,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -114365,7 +114365,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/selection-api/",
-					"id": "ref-for-dom-document"
+					"id": "idl-def-document-partial-1"
 				}
 			]
 		},
@@ -114375,7 +114375,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/selection-api/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				}
 			]
 		},
@@ -114385,7 +114385,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -114596,7 +114596,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -114717,7 +114717,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-handle/actions/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				}
 			]
 		},
@@ -114727,7 +114727,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				}
 			]
 		},
@@ -114852,7 +114852,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/input-events/",
-					"id": "ref-for-dom-inputevent"
+					"id": "idl-def-inputevent-partial-1"
 				}
 			]
 		},
@@ -114972,7 +114972,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -115093,7 +115093,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				}
 			]
 		},
@@ -115103,7 +115103,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -115133,7 +115133,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/media-playback-quality/",
-					"id": "ref-for-dom-htmlvideoelement"
+					"id": "idl-def-htmlvideoelement-partial-1"
 				}
 			]
 		},
@@ -115173,7 +115173,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-viewport/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				}
 			]
 		},
@@ -115485,7 +115485,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-element"
+					"id": "idl-def-element-partial-1"
 				}
 			]
 		},
@@ -115894,7 +115894,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/DOM-Parsing/",
-					"id": "ref-for-dom-element"
+					"id": "idl-def-element-partial-1"
 				}
 			]
 		},
@@ -117419,7 +117419,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/user-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -117559,7 +117559,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/user-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -119941,7 +119941,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-element"
+					"id": "idl-def-element-partial-1"
 				}
 			]
 		},
@@ -120370,7 +120370,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -120838,7 +120838,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/requestidlecallback/",
-					"id": "ref-for-dom-window"
+					"id": "idl-def-window-partial-1"
 				}
 			]
 		},
@@ -120868,7 +120868,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/encrypted-media/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -120878,7 +120878,7 @@
 			"definitions": [
 				{
 					"spec": "https://webaudio.github.io/web-midi-api/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -120962,7 +120962,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerlock/",
-					"id": "ref-for-dom-element"
+					"id": "idl-def-element-partial-1"
 				}
 			]
 		},
@@ -121332,7 +121332,7 @@
 			"definitions": [
 				{
 					"spec": "https://screen-share.github.io/element-capture/",
-					"id": "ref-for-dom-browsercapturemediastreamtrack"
+					"id": "idl-def-browsercapturemediastreamtrack-partial-1"
 				}
 			]
 		},
@@ -121903,7 +121903,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-output/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				}
 			]
 		},
@@ -122073,7 +122073,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/beacon/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -122083,7 +122083,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-handle/actions/",
-					"id": "ref-for-dom-mediastreamtrack"
+					"id": "idl-def-mediastreamtrack-partial-1"
 				}
 			]
 		},
@@ -122427,7 +122427,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-handle/identity/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				}
 			]
 		},
@@ -122677,7 +122677,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-identity/",
-					"id": "ref-for-dom-rtcpeerconnection"
+					"id": "idl-def-rtcpeerconnection-partial-1"
 				}
 			]
 		},
@@ -122791,7 +122791,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/encrypted-media/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -122929,7 +122929,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
-					"id": "ref-for-dom-element"
+					"id": "idl-def-element-partial-1"
 				}
 			]
 		},
@@ -123101,7 +123101,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/resource-timing/",
-					"id": "ref-for-dom-performance"
+					"id": "idl-def-performance-partial-1"
 				}
 			]
 		},
@@ -123191,7 +123191,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-output/",
-					"id": "ref-for-dom-htmlmediaelement"
+					"id": "idl-def-htmlmediaelement-partial-1"
 				}
 			]
 		},
@@ -123301,7 +123301,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-handle/actions/",
-					"id": "ref-for-dom-mediadevices"
+					"id": "idl-def-mediadevices-partial-1"
 				}
 			]
 		},
@@ -123475,7 +123475,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/web-share/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},
@@ -123841,7 +123841,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtcicetransport"
+					"id": "idl-def-rtcicetransport-partial-1"
 				}
 			]
 		},
@@ -124141,7 +124141,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webrtc-ice/",
-					"id": "ref-for-dom-rtcicetransport"
+					"id": "idl-def-rtcicetransport-partial-1"
 				}
 			]
 		},
@@ -126853,7 +126853,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/vibration/",
-					"id": "ref-for-dom-navigator"
+					"id": "idl-def-navigator-partial-1"
 				}
 			]
 		},

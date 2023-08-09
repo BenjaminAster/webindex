@@ -34,7 +34,7 @@ export const collectedJavaScriptStuff = {
 	jsFunctions: [],
 };
 
-const cssProperties = manualData.additionalCSSProperties;
+const cssProperties: any[] = manualData.additionalCSSProperties;
 const cssTypes = manualData.additionalCSSTypes;
 const cssValues = [];
 const cssDescriptors = [];
@@ -113,7 +113,7 @@ export const tidyUpCollectedStuff = () => {
 				for (const definition of definitions) {
 					propertiesToConsider.forEach((property) => delete definition[property]);
 				}
-				const firstActualDefIndex = definitions.findIndex(({ id, onlyNewValues }) => !id.startsWith("ref-for-") && !onlyNewValues);
+				const firstActualDefIndex = definitions.findIndex(({ id, onlyNewValues, partial }) => !id.startsWith("ref-for-") && !onlyNewValues && !partial);
 				if (firstActualDefIndex >= 1) definitions.unshift(definitions.splice(firstActualDefIndex, 1)[0]);
 				// console.log(Object.fromEntries(propertiesToConsider.map((property) => [property, current[property]])),current)
 				organizedArray.push({
@@ -139,7 +139,7 @@ export const tidyUpCollectedStuff = () => {
 
 	// collectedStuff.cssProperties = organizedArray;
 
-	Deno.writeTextFile("tmp.json", JSON.stringify(cssProperties, null, "\t"));
+	// Deno.writeTextFile("tmp.json", JSON.stringify(cssProperties, null, "\t"));
 
 	collectedCSSStuff.cssProperties = group(cssProperties);
 	collectedCSSStuff.cssTypes = group(cssTypes, { propertiesToConsider: ["name"] });
@@ -451,7 +451,7 @@ export const analyzeIDL = (idl: string, { url, generator }: { url: string, gener
 							default: return "";
 						}
 					})();
-					return prefix + (item.partial ? "ref-for-" : "") + lowercaseName;
+					return (item.partial ? "ref-for-" : "") + prefix + lowercaseName;
 				}
 			})();
 			if (item.type === "dictionary") {

@@ -15,7 +15,7 @@
 		{
 			"src": "./assets/maskable.png",
 			"type": "image/png",
-			"sizes": "768x768",
+			"sizes": "1024x1024",
 			"purpose": "maskable"
 		}
 	]
