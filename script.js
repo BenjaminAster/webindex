@@ -46,6 +46,8 @@ export const storage = new class {
 	});
 }
 
+let tab = document.documentElement.dataset.currentTab;
+
 {
 	// search
 	const searchbox = document.querySelector("input#searchbox");
@@ -54,7 +56,7 @@ export const storage = new class {
 		if (key === "Enter") {
 			const search = searchbox.value.trim().toLowerCase();
 			if (!search) return;
-			console.log(search)
+			if (tab === "specifications") document.querySelector("#toc").hidden = true;
 
 			const mainList = document.querySelector("ul#main-list");
 			$outerLoop: for (const categoryBlock of mainList.children) {
@@ -76,7 +78,7 @@ export const storage = new class {
 
 	searchbox.addEventListener("input", () => {
 		if (searchbox.value.trim() === "") {
-			for (const element of document.querySelectorAll(":is(ul#main-list > li, [data-searchable-name])[hidden]")) {
+			for (const element of document.querySelectorAll(":is(#toc, ul#main-list > li, [data-searchable-name])[hidden]")) {
 				element.hidden = false;
 			}
 		}
