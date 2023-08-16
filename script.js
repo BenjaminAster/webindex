@@ -2,7 +2,7 @@
 /// <reference types="better-typescript" />
 
 export const storage = new class {
-	#pathname = new URL(document.baseURI).pathname;
+	#pathname = new URL("./", document.baseURI).pathname;
 	get(/** @type {string} */ key) {
 		try {
 			return JSON.parse(localStorage.getItem(`${this.#pathname}:${key}`));
