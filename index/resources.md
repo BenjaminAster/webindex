@@ -4,12 +4,14 @@
 - https://github.com/w3c/groups
 - https://github.com/w3c/webref
 - https://github.com/dontcallmedom/webidlpedia
+- https://github.com/dontcallmedom/webdex
 - https://github.com/w3c/mdn-spec-links
 - https://github.com/tobie/specref
 - https://github.com/w3c/spec-families
 - https://github.com/mdn/data/tree/main/css
 - https://github.com/mdn/data/blob/main/api/inheritance.json
 - https://drafts.csswg.org/indexes/
+- https://dontcallmedom.github.io/wg-dashboard/
 
 ## Other stuff:
 - https://github.com/w3c/reffy
@@ -31,6 +33,7 @@
 - https://github.com/w3c/specberus
 - https://github.com/w3c/snapshot-generator
 - https://github.com/w3c/note-respec-repo-template
+- https://github.com/w3c/validate-repos
 - https://github.com/csstree/csstree
 - https://github.com/w3c/spec-dashboard
 - https://github.com/html-now/html-now.github.io

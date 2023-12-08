@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Wed, 09 Aug 2023 17:21:41 GMT",
-		"iso": "2023-08-09T17:21:41.093Z",
-		"unixMillis": 1691601701093
+		"utc": "Fri, 08 Dec 2023 11:06:35 GMT",
+		"iso": "2023-12-08T11:06:35.467Z",
+		"unixMillis": 1702033595467
 	},
 	"cssProperties": [
 		{
@@ -158,16 +158,6 @@
 			]
 		},
 		{
-			"name": "align-tracks",
-			"definitions": [
-				{
-					"value": "[normal | <baseline-position> | <content-distribution> | <overflow-position>? <content-position>]#",
-					"id": "propdef-align-tracks",
-					"spec": "https://drafts.csswg.org/css-grid-3/"
-				}
-			]
-		},
-		{
 			"name": "alignment-baseline",
 			"definitions": [
 				{
@@ -211,7 +201,7 @@
 			"name": "anchor-name",
 			"definitions": [
 				{
-					"value": "none | <dashed-ident>",
+					"value": "none | <dashed-ident>#",
 					"id": "propdef-anchor-name",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
@@ -416,7 +406,7 @@
 			"name": "background",
 			"definitions": [
 				{
-					"value": "[<bg-layer># ,]? <final-bg-layer>",
+					"value": "<bg-layer>#? , <final-bg-layer>",
 					"id": "propdef-background",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
@@ -456,7 +446,7 @@
 					"spec": "https://drafts.csswg.org/css-backgrounds-4/"
 				},
 				{
-					"value": "<box>#",
+					"value": "<visual-box>#",
 					"id": "propdef-background-clip",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
@@ -486,7 +476,7 @@
 			"name": "background-origin",
 			"definitions": [
 				{
-					"value": "<box>#",
+					"value": "<visual-box>#",
 					"id": "propdef-background-origin",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
@@ -564,6 +554,16 @@
 					"value": "<bg-size>#",
 					"id": "propdef-background-size",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+				}
+			]
+		},
+		{
+			"name": "background-tbd",
+			"definitions": [
+				{
+					"value": "<bg-layer>#",
+					"id": "propdef-background-tbd",
+					"spec": "https://drafts.csswg.org/css-backgrounds-4/"
 				}
 			]
 		},
@@ -744,6 +744,16 @@
 			]
 		},
 		{
+			"name": "border-block-end-radius",
+			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+					"id": "propdef-border-block-end-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
 			"name": "border-block-end-style",
 			"definitions": [
 				{
@@ -780,6 +790,16 @@
 					"value": "<'border-top-color'>",
 					"id": "propdef-border-block-start-color",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
+				}
+			]
+		},
+		{
+			"name": "border-block-start-radius",
+			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+					"id": "propdef-border-block-start-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -837,6 +857,11 @@
 			"name": "border-bottom-color",
 			"definitions": [
 				{
+					"value": "<color> | <image-1D>",
+					"id": "propdef-border-bottom-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<color>",
 					"id": "propdef-border-bottom-color",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
@@ -850,6 +875,16 @@
 					"value": "<length-percentage [0,∞]>{1,2}",
 					"id": "propdef-border-bottom-left-radius",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+				}
+			]
+		},
+		{
+			"name": "border-bottom-radius",
+			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+					"id": "propdef-border-bottom-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -894,6 +929,56 @@
 			]
 		},
 		{
+			"name": "border-clip",
+			"definitions": [
+				{
+					"value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+					"id": "propdef-border-clip",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "border-clip-bottom",
+			"definitions": [
+				{
+					"value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+					"id": "propdef-border-clip-bottom",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "border-clip-left",
+			"definitions": [
+				{
+					"value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+					"id": "propdef-border-clip-left",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "border-clip-right",
+			"definitions": [
+				{
+					"value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+					"id": "propdef-border-clip-right",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "border-clip-top",
+			"definitions": [
+				{
+					"value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+					"id": "propdef-border-clip-top",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
 			"name": "border-collapse",
 			"definitions": [
 				{
@@ -906,6 +991,11 @@
 		{
 			"name": "border-color",
 			"definitions": [
+				{
+					"value": "[ <color> | <image-1D> ]{1,4}",
+					"id": "propdef-border-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<color>{1,4}",
 					"id": "propdef-border-color",
@@ -1034,6 +1124,16 @@
 			]
 		},
 		{
+			"name": "border-inline-end-radius",
+			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+					"id": "propdef-border-inline-end-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
 			"name": "border-inline-end-style",
 			"definitions": [
 				{
@@ -1070,6 +1170,16 @@
 					"value": "<'border-top-color'>",
 					"id": "propdef-border-inline-start-color",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
+				}
+			]
+		},
+		{
+			"name": "border-inline-start-radius",
+			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+					"id": "propdef-border-inline-start-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -1127,9 +1237,24 @@
 			"name": "border-left-color",
 			"definitions": [
 				{
+					"value": "<color> | <image-1D>",
+					"id": "propdef-border-left-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<color>",
 					"id": "propdef-border-left-color",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+				}
+			]
+		},
+		{
+			"name": "border-left-radius",
+			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+					"id": "propdef-border-left-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -1154,8 +1279,23 @@
 			]
 		},
 		{
+			"name": "border-limit",
+			"definitions": [
+				{
+					"value": "all | [ sides | corners ] <length-percentage [0,∞]>? | [ top | right | bottom | left ] <length-percentage [0,∞]>",
+					"id": "propdef-border-limit",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
 			"name": "border-radius",
 			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
+					"id": "propdef-border-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
 					"id": "propdef-border-radius",
@@ -1177,9 +1317,24 @@
 			"name": "border-right-color",
 			"definitions": [
 				{
+					"value": "<color> | <image-1D>",
+					"id": "propdef-border-right-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<color>",
 					"id": "propdef-border-right-color",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+				}
+			]
+		},
+		{
+			"name": "border-right-radius",
+			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+					"id": "propdef-border-right-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -1257,6 +1412,11 @@
 			"name": "border-top-color",
 			"definitions": [
 				{
+					"value": "<color> | <image-1D>",
+					"id": "propdef-border-top-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<color>",
 					"id": "propdef-border-top-color",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
@@ -1270,6 +1430,16 @@
 					"value": "<length-percentage [0,∞]>{1,2}",
 					"id": "propdef-border-top-left-radius",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+				}
+			]
+		},
+		{
+			"name": "border-top-radius",
+			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+					"id": "propdef-border-top-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -1342,9 +1512,64 @@
 			"name": "box-shadow",
 			"definitions": [
 				{
+					"value": "<spread-shadow>#",
+					"id": "propdef-box-shadow",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "none | <shadow>#",
 					"id": "propdef-box-shadow",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+				}
+			]
+		},
+		{
+			"name": "box-shadow-blur",
+			"definitions": [
+				{
+					"value": "<length [0,∞]>#",
+					"id": "propdef-box-shadow-blur",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "box-shadow-color",
+			"definitions": [
+				{
+					"value": "<color>#",
+					"id": "propdef-box-shadow-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "box-shadow-offset",
+			"definitions": [
+				{
+					"value": "[ none | <length>{2} ]#",
+					"id": "propdef-box-shadow-offset",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "box-shadow-position",
+			"definitions": [
+				{
+					"value": "[ outset | inset ]#",
+					"id": "propdef-box-shadow-position",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "box-shadow-spread",
+			"definitions": [
+				{
+					"value": "<length>#",
+					"id": "propdef-box-shadow-spread",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -1473,7 +1698,7 @@
 			"name": "clear",
 			"definitions": [
 				{
-					"value": "inline-start | inline-end | block-start | block-end | left | right | top | bottom | none",
+					"value": "inline-start | inline-end | block-start | block-end | left | right | top | bottom | both-inline | both-block | both | none",
 					"id": "propdef-clear",
 					"spec": "https://drafts.csswg.org/css-page-floats-3/"
 				},
@@ -1790,7 +2015,7 @@
 					"spec": "https://drafts.csswg.org/css-content-3/"
 				},
 				{
-					"value": "element()",
+					"value": "<element()>",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-content①",
 					"spec": "https://drafts.csswg.org/css-gcpm-3/"
@@ -1841,6 +2066,26 @@
 					"value": "none | [ [ <custom-ident> <content-level>] [, <custom-ident> <content-level>]* ]?",
 					"id": "propdef-copy-into",
 					"spec": "https://drafts.csswg.org/css-gcpm-4/"
+				}
+			]
+		},
+		{
+			"name": "corner-shape",
+			"definitions": [
+				{
+					"value": "[ round | angle ]{1,4}",
+					"id": "propdef-corner-shape",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "corners",
+			"definitions": [
+				{
+					"value": "<'corner-shape'> || <'border-radius'>",
+					"id": "propdef-corners",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -2026,6 +2271,16 @@
 					"value": "show | hide",
 					"id": "propdef-empty-cells",
 					"spec": "https://drafts.csswg.org/css-tables-3/"
+				}
+			]
+		},
+		{
+			"name": "field-sizing",
+			"definitions": [
+				{
+					"value": "fixed | content",
+					"id": "propdef-field-sizing",
+					"spec": "https://drafts.csswg.org/css-ui-4/"
 				}
 			]
 		},
@@ -2320,7 +2575,7 @@
 			"name": "font",
 			"definitions": [
 				{
-					"value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar",
+					"value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | <system-family-name>",
 					"id": "propdef-font",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
@@ -2380,7 +2635,7 @@
 			"name": "font-palette",
 			"definitions": [
 				{
-					"value": "normal | light | dark | <palette-identifier>",
+					"value": "normal | light | dark | <palette-identifier> | <palette-mix()>",
 					"id": "propdef-font-palette",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
@@ -2400,7 +2655,7 @@
 			"name": "font-size-adjust",
 			"definitions": [
 				{
-					"value": "none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number> ]",
+					"value": "none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number [0,∞]> ]",
 					"id": "propdef-font-size-adjust",
 					"spec": "https://drafts.csswg.org/css-fonts-5/"
 				},
@@ -2435,8 +2690,18 @@
 			"name": "font-synthesis",
 			"definitions": [
 				{
-					"value": "none | [ weight || style || small-caps]",
+					"value": "none | [ weight || style || small-caps || position]",
 					"id": "propdef-font-synthesis",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "font-synthesis-position",
+			"definitions": [
+				{
+					"value": "auto | none",
+					"id": "propdef-font-synthesis-position",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -2555,7 +2820,7 @@
 			"name": "font-variation-settings",
 			"definitions": [
 				{
-					"value": "normal | [ <string> <number>]#",
+					"value": "normal | [ <opentype-tag> <number>]#",
 					"id": "propdef-font-variation-settings",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
@@ -3074,9 +3339,19 @@
 					"spec": "https://drafts.csswg.org/css-logical-1/"
 				},
 				{
-					"value": "<top>{1,4}",
+					"value": "<'top'>{1,4}",
 					"id": "propdef-inset",
 					"spec": "https://drafts.csswg.org/css-position-3/"
+				}
+			]
+		},
+		{
+			"name": "inset-area",
+			"definitions": [
+				{
+					"value": "none | <inset-area-span> [ / <inset-area-span> ]?",
+					"id": "propdef-inset-area",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -3089,7 +3364,7 @@
 					"spec": "https://drafts.csswg.org/css-logical-1/"
 				},
 				{
-					"value": "<top>{1,2}",
+					"value": "<'top'>{1,2}",
 					"id": "propdef-inset-block",
 					"spec": "https://drafts.csswg.org/css-position-3/"
 				}
@@ -3134,7 +3409,7 @@
 					"spec": "https://drafts.csswg.org/css-logical-1/"
 				},
 				{
-					"value": "<top>{1,2}",
+					"value": "<'top'>{1,2}",
 					"id": "propdef-inset-inline",
 					"spec": "https://drafts.csswg.org/css-position-3/"
 				}
@@ -3233,16 +3508,6 @@
 			]
 		},
 		{
-			"name": "justify-tracks",
-			"definitions": [
-				{
-					"value": "[normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ] ]#",
-					"id": "propdef-justify-tracks",
-					"spec": "https://drafts.csswg.org/css-grid-3/"
-				}
-			]
-		},
-		{
 			"name": "layout-order",
 			"definitions": [
 				{
@@ -3326,7 +3591,7 @@
 			"name": "line-height",
 			"definitions": [
 				{
-					"value": "normal | <number> | <length-percentage>",
+					"value": "normal | <number [0,∞]> | <length-percentage [0,∞]>",
 					"id": "propdef-line-height",
 					"spec": "https://drafts.csswg.org/css-inline-3/"
 				}
@@ -3701,7 +3966,7 @@
 			"name": "mask-clip",
 			"definitions": [
 				{
-					"value": "[ <geometry-box> | no-clip ]#",
+					"value": "[ <coord-box> | no-clip ]#",
 					"id": "propdef-mask-clip",
 					"spec": "https://drafts.fxtf.org/css-masking-1/"
 				}
@@ -3741,7 +4006,7 @@
 			"name": "mask-origin",
 			"definitions": [
 				{
-					"value": "<geometry-box>#",
+					"value": "<coord-box>#",
 					"id": "propdef-mask-origin",
 					"spec": "https://drafts.fxtf.org/css-masking-1/"
 				}
@@ -4209,7 +4474,7 @@
 			"name": "outline-color",
 			"definitions": [
 				{
-					"value": "[ <color> | <image-1D> ] | invert",
+					"value": "auto | [ <color> | <image-1D> ]",
 					"id": "propdef-outline-color",
 					"spec": "https://drafts.csswg.org/css-ui-4/"
 				},
@@ -4804,7 +5069,7 @@
 					"spec": "https://drafts.csswg.org/css-position-3/"
 				},
 				{
-					"value": "running()",
+					"value": "<running()>",
 					"onlyNewValues": true,
 					"id": "ref-for-propdef-position",
 					"spec": "https://drafts.csswg.org/css-gcpm-3/"
@@ -5511,7 +5776,7 @@
 			"name": "shape-padding",
 			"definitions": [
 				{
-					"value": "<length>",
+					"value": "<length-percentage [0,∞]>",
 					"id": "propdef-shape-padding",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
@@ -5584,6 +5849,26 @@
 					"value": "normal | spell-out || digits || [ literal-punctuation | no-punctuation ]",
 					"id": "propdef-speak-as",
 					"spec": "https://drafts.csswg.org/css-speech-1/"
+				}
+			]
+		},
+		{
+			"name": "stop-color",
+			"definitions": [
+				{
+					"value": "<'color'>",
+					"id": "StopColorProperty",
+					"spec": "https://svgwg.org/svg2-draft/pservers.html"
+				}
+			]
+		},
+		{
+			"name": "stop-opacity",
+			"definitions": [
+				{
+					"value": "<'opacity'>",
+					"id": "StopOpacityProperty",
+					"spec": "https://svgwg.org/svg2-draft/pservers.html"
 				}
 			]
 		},
@@ -5826,12 +6111,12 @@
 			"name": "tab-size",
 			"definitions": [
 				{
-					"value": "<number> | <length>",
+					"value": "<number [0,∞]> | <length [0,∞]>",
 					"id": "propdef-tab-size",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				},
 				{
-					"value": "<number> | <length>",
+					"value": "<number [0,∞]> | <length [0,∞]>",
 					"id": "propdef-tab-size",
 					"spec": "https://drafts.csswg.org/css-text-3/"
 				}
@@ -5872,7 +6157,7 @@
 			"name": "text-align-all",
 			"definitions": [
 				{
-					"value": "start | end | left | right | center | justify | match-parent",
+					"value": "start | end | left | right | center | <string> | justify | match-parent",
 					"id": "propdef-text-align-all",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				},
@@ -6067,7 +6352,7 @@
 			"name": "text-decoration-thickness",
 			"definitions": [
 				{
-					"value": "auto | from-font | <length> | <percentage>",
+					"value": "auto | from-font | <length-percentage>",
 					"id": "propdef-text-decoration-thickness",
 					"spec": "https://drafts.csswg.org/css-text-decor-4/"
 				}
@@ -6182,7 +6467,7 @@
 			"name": "text-justify",
 			"definitions": [
 				{
-					"value": "[ auto | none | inter-word | inter-character ] || no-compress",
+					"value": "[ auto | none | inter-word | inter-character | ruby ] || no-compress",
 					"id": "propdef-text-justify",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				},
@@ -6267,7 +6552,7 @@
 			"name": "text-spacing",
 			"definitions": [
 				{
-					"value": "normal | none | auto | <autospace> || <spacing-trim>",
+					"value": "normal | none | auto | <spacing-trim> || <autospace>",
 					"id": "propdef-text-spacing",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
@@ -6308,7 +6593,7 @@
 			"name": "text-underline-offset",
 			"definitions": [
 				{
-					"value": "auto | <length> | <percentage>",
+					"value": "auto | <length-percentage>",
 					"id": "propdef-text-underline-offset",
 					"spec": "https://drafts.csswg.org/css-text-decor-4/"
 				}
@@ -6333,8 +6618,28 @@
 			"name": "text-wrap",
 			"definitions": [
 				{
-					"value": "wrap | nowrap | balance | stable | pretty",
+					"value": "<'text-wrap-mode'> || <'text-wrap-style'>",
 					"id": "propdef-text-wrap",
+					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
+			"name": "text-wrap-mode",
+			"definitions": [
+				{
+					"value": "wrap | nowrap",
+					"id": "propdef-text-wrap-mode",
+					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
+			"name": "text-wrap-style",
+			"definitions": [
+				{
+					"value": "auto| balance | stable | pretty",
+					"id": "propdef-text-wrap-style",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -6583,7 +6888,7 @@
 			"name": "view-timeline",
 			"definitions": [
 				{
-					"value": "[ <'view-timeline-name'> <'view-timeline-axis'>? ]#",
+					"value": "[ <'view-timeline-name'> [ <'view-timeline-axis'> || <'view-timeline-inset'> ]? ]#",
 					"id": "propdef-view-timeline",
 					"spec": "https://drafts.csswg.org/scroll-animations-1/"
 				}
@@ -6678,7 +6983,7 @@
 			"name": "voice-pitch",
 			"definitions": [
 				{
-					"value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+					"value": "<frequency [0Hz,∞]> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
 					"id": "propdef-voice-pitch",
 					"spec": "https://drafts.csswg.org/css-speech-1/"
 				}
@@ -6688,7 +6993,7 @@
 			"name": "voice-range",
 			"definitions": [
 				{
-					"value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+					"value": "<frequency [0Hz,∞]> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
 					"id": "propdef-voice-range",
 					"spec": "https://drafts.csswg.org/css-speech-1/"
 				}
@@ -6728,7 +7033,7 @@
 			"name": "white-space",
 			"definitions": [
 				{
-					"value": "normal | pre | nowrap | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap'> || <'white-space-trim'>",
+					"value": "normal | pre | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'> || <'white-space-trim'>",
 					"id": "propdef-white-space",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				},
@@ -6801,30 +7106,10 @@
 			]
 		},
 		{
-			"name": "word-boundary-detection",
-			"definitions": [
-				{
-					"value": "normal | manual | auto(<lang>)",
-					"id": "propdef-word-boundary-detection",
-					"spec": "https://drafts.csswg.org/css-text-4/"
-				}
-			]
-		},
-		{
-			"name": "word-boundary-expansion",
-			"definitions": [
-				{
-					"value": "none | space | ideographic-space",
-					"id": "propdef-word-boundary-expansion",
-					"spec": "https://drafts.csswg.org/css-text-4/"
-				}
-			]
-		},
-		{
 			"name": "word-break",
 			"definitions": [
 				{
-					"value": "normal | keep-all | break-all | break-word",
+					"value": "normal | break-all | keep-all | manual | auto-phrase | break-word",
 					"id": "propdef-word-break",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				},
@@ -6832,6 +7117,16 @@
 					"value": "normal | keep-all | break-all | break-word",
 					"id": "propdef-word-break",
 					"spec": "https://drafts.csswg.org/css-text-3/"
+				}
+			]
+		},
+		{
+			"name": "word-space-transform",
+			"definitions": [
+				{
+					"value": "none | [ space | ideographic-space ] && auto-phrase?",
+					"id": "propdef-word-space-transform",
+					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
 		},
@@ -7046,7 +7341,12 @@
 			"name": "<alpha-value>",
 			"definitions": [
 				{
-					"id": "typedef-alpha-value",
+					"id": "typedef-opacity-alpha-value",
+					"definition": null,
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				},
+				{
+					"id": "typedef-color-alpha-value",
 					"definition": "<number> | <percentage>",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
@@ -7077,7 +7377,7 @@
 			"definitions": [
 				{
 					"id": "typedef-anchor-side",
-					"definition": "auto | auto-same | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center",
+					"definition": "inside | outside | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -7147,7 +7447,7 @@
 			"definitions": [
 				{
 					"id": "typedef-angular-color-stop",
-					"definition": "<color> && <color-stop-angle>?",
+					"definition": "<color> <color-stop-angle>?",
 					"spec": "https://drafts.csswg.org/css-images-4/"
 				}
 			]
@@ -7293,6 +7593,16 @@
 			]
 		},
 		{
+			"name": "<attr-name>",
+			"definitions": [
+				{
+					"id": "typedef-attr-name",
+					"definition": "[ <ident-token> '|' ]? <ident-token>",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
 			"name": "<attr-type>",
 			"definitions": [
 				{
@@ -7417,7 +7727,7 @@
 			"definitions": [
 				{
 					"id": "typedef-bg-clip",
-					"definition": "<box> | border | text",
+					"definition": "<visual-box> | border | text",
 					"spec": "https://drafts.csswg.org/css-backgrounds-4/"
 				}
 			]
@@ -7437,7 +7747,7 @@
 			"definitions": [
 				{
 					"id": "typedef-bg-layer",
-					"definition": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>",
+					"definition": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box>",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -7452,7 +7762,7 @@
 				},
 				{
 					"id": "typedef-bg-position",
-					"definition": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ]",
+					"definition": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] ]",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -7517,8 +7827,13 @@
 			"definitions": [
 				{
 					"id": "typedef-box",
-					"definition": "border-box | padding-box | content-box",
-					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+					"definition": null,
+					"spec": "https://drafts.csswg.org/css-box-4/"
+				},
+				{
+					"id": "typedef-box",
+					"definition": null,
+					"spec": "https://drafts.csswg.org/css-box-3/"
 				}
 			]
 		},
@@ -7538,12 +7853,22 @@
 			]
 		},
 		{
-			"name": "<calc-constant>",
+			"name": "<calc-keyword>",
 			"definitions": [
 				{
-					"id": "typedef-calc-constant",
+					"id": "typedef-calc-keyword",
 					"definition": "e | pi | infinity | -infinity | NaN",
 					"spec": "https://drafts.csswg.org/css-values-4/"
+				}
+			]
+		},
+		{
+			"name": "<calc-mix()>",
+			"definitions": [
+				{
+					"id": "typedef-calc-mix",
+					"definition": "calc-mix( <progress>, <calc-sum>, <calc-sum> )",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -7612,7 +7937,7 @@
 			"definitions": [
 				{
 					"id": "typedef-calc-value",
-					"definition": "<number> | <dimension> | <percentage> | <calc-constant> | ( <calc-sum> )",
+					"definition": "<number> | <dimension> | <percentage> | <calc-keyword> | ( <calc-sum> )",
 					"spec": "https://drafts.csswg.org/css-values-4/"
 				},
 				{
@@ -7677,7 +8002,7 @@
 			"definitions": [
 				{
 					"id": "typedef-cmyk-component",
-					"definition": "<number> | <percentage>",
+					"definition": "<number> | <percentage> | none",
 					"spec": "https://drafts.csswg.org/css-color-5/"
 				}
 			]
@@ -7832,7 +8157,7 @@
 			"definitions": [
 				{
 					"id": "typedef-combinator",
-					"definition": "'>' | '+' | '~' | [ '|' '|' ]",
+					"definition": "'>' | '+' | '~'",
 					"spec": "https://drafts.csswg.org/selectors-4/"
 				}
 			]
@@ -8068,6 +8393,16 @@
 			]
 		},
 		{
+			"name": "<container-progress()>",
+			"definitions": [
+				{
+					"id": "typedef-container-progress",
+					"definition": "container-progress(<size-feature> [ of <container-name> ]? from <calc-sum> to <calc-sum>)",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
 			"name": "<container-query>",
 			"definitions": [
 				{
@@ -8088,12 +8423,27 @@
 			]
 		},
 		{
+			"name": "<content-level>",
+			"definitions": [
+				{
+					"id": "typedef-content-level",
+					"definition": "element | content | text | <attr()> | <counter>",
+					"spec": "https://drafts.csswg.org/css-gcpm-4/"
+				}
+			]
+		},
+		{
 			"name": "<content-list>",
 			"definitions": [
 				{
 					"id": "typedef-content-content-list",
 					"definition": null,
 					"spec": "https://drafts.csswg.org/css-content-3/"
+				},
+				{
+					"id": "content-list",
+					"definition": "[ <string> | <counter()> | <counters()> | <content()> | <attr()> ]+",
+					"spec": "https://drafts.csswg.org/css-gcpm-3/"
 				}
 			]
 		},
@@ -8132,12 +8482,12 @@
 			"definitions": [
 				{
 					"id": "typedef-coord-box",
-					"definition": "content-box | padding-box | border-box | fill-box | stroke-box | view-box",
+					"definition": "<paint-box> | view-box",
 					"spec": "https://drafts.csswg.org/css-box-4/"
 				},
 				{
 					"id": "typedef-coord-box",
-					"definition": "content-box | padding-box | border-box | fill-box | stroke-box | view-box",
+					"definition": "<paint-box> | view-box",
 					"spec": "https://drafts.csswg.org/css-box-3/"
 				}
 			]
@@ -8292,7 +8642,7 @@
 			"definitions": [
 				{
 					"id": "typedef-custom-params",
-					"definition": "<dashed-ident> [ <number> | <percentage> | none ]#",
+					"definition": "<dashed-ident> [ <number> | <percentage> | none ]+",
 					"spec": "https://drafts.csswg.org/css-color-5/"
 				}
 			]
@@ -8682,8 +9032,18 @@
 			"definitions": [
 				{
 					"id": "typedef-final-bg-layer",
-					"definition": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> || <'background-color'>",
+					"definition": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box> || <'background-color'>",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
+				}
+			]
+		},
+		{
+			"name": "<first-valid()>",
+			"definitions": [
+				{
+					"id": "typedef-first-valid",
+					"definition": "first-valid( <declaration-value> [ ';' <declaration-value> ]* )",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -8783,6 +9143,26 @@
 				{
 					"id": "font-format-values",
 					"definition": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "<font-src-list>",
+			"definitions": [
+				{
+					"id": "typedef-font-src-list",
+					"definition": null,
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "<font-src>",
+			"definitions": [
+				{
+					"id": "typedef-font-src",
+					"definition": "<url> [ format(<font-format>)]? [ tech( <font-tech>#)]? | local(<family-name>)",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -9097,7 +9477,7 @@
 			"definitions": [
 				{
 					"id": "typedef-image-set-option",
-					"definition": "[ <image> | <string> ] [ <resolution> || type(<string>) ]",
+					"definition": "[ <image> | <string> ] [ <resolution> || type(<string>) ]?",
 					"spec": "https://drafts.csswg.org/css-images-4/"
 				}
 			]
@@ -9164,6 +9544,16 @@
 					"id": "typedef-inflexible-breadth",
 					"definition": "<length-percentage [0,∞]> | min-content | max-content | auto",
 					"spec": "https://drafts.csswg.org/css-grid-1/"
+				}
+			]
+		},
+		{
+			"name": "<inset-area-span>",
+			"definitions": [
+				{
+					"id": "typedef-inset-area-span",
+					"definition": "[ start || end || center ] | [ self-start || self-end || center ] | [ top || bottom || center ] | [ left || right || center ] | [ x-start || x-end || center ] | [ y-start || y-end || center ] | [ x-self-start || x-self-end || center ] | [ y-self-start || y-self-end || center ] | all",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -9258,16 +9648,6 @@
 			]
 		},
 		{
-			"name": "<lang>",
-			"definitions": [
-				{
-					"id": "typedef-word-boundary-detection-lang",
-					"definition": null,
-					"spec": "https://drafts.csswg.org/css-text-4/"
-				}
-			]
-		},
-		{
 			"name": "<layer-name>",
 			"definitions": [
 				{
@@ -9282,12 +9662,12 @@
 			"definitions": [
 				{
 					"id": "typedef-layout-box",
-					"definition": "content-box | padding-box | border-box | margin-box",
+					"definition": "<visual-box> | margin-box",
 					"spec": "https://drafts.csswg.org/css-box-4/"
 				},
 				{
 					"id": "typedef-layout-box",
-					"definition": "content-box | padding-box | border-box | margin-box",
+					"definition": "<visual-box> | margin-box",
 					"spec": "https://drafts.csswg.org/css-box-3/"
 				}
 			]
@@ -9309,6 +9689,16 @@
 					"id": "typedef-clip-left",
 					"definition": null,
 					"spec": "https://drafts.fxtf.org/css-masking-1/"
+				}
+			]
+		},
+		{
+			"name": "<legacy-device-cmyk-syntax>",
+			"definitions": [
+				{
+					"id": "typedef-legacy-device-cmyk-syntax",
+					"definition": "device-cmyk( <number>#{4} )",
+					"spec": "https://drafts.csswg.org/css-color-5/"
 				}
 			]
 		},
@@ -9472,7 +9862,7 @@
 			"definitions": [
 				{
 					"id": "typedef-linear-color-stop",
-					"definition": "<color> && <color-stop-length>?",
+					"definition": "<color> <color-stop-length>?",
 					"spec": "https://drafts.csswg.org/css-images-4/"
 				},
 				{
@@ -9703,6 +10093,16 @@
 			]
 		},
 		{
+			"name": "<media-progress()>",
+			"definitions": [
+				{
+					"id": "typedef-media-progress",
+					"definition": "media-progress(<media-feature> from <calc-sum> to <calc-sum>)",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
 			"name": "<media-query-list>",
 			"definitions": [
 				{
@@ -9879,6 +10279,26 @@
 					"id": "typedef-mf-value",
 					"definition": "<number> | <dimension> | <ident> | <ratio>",
 					"spec": "https://drafts.csswg.org/mediaqueries-4/"
+				}
+			]
+		},
+		{
+			"name": "<mix()>",
+			"definitions": [
+				{
+					"id": "typedef-mix",
+					"definition": "mix( <progress> ';' <whole-value> ';' <whole-value> ) | mix( <progress> && of <'animation-name'> )",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
+			"name": "<modern-device-cmyk-syntax>",
+			"definitions": [
+				{
+					"id": "typedef-modern-device-cmyk-syntax",
+					"definition": "device-cmyk( <cmyk-component>{4} [ / [ <alpha-value> | none ] ]? )",
+					"spec": "https://drafts.csswg.org/css-color-5/"
 				}
 			]
 		},
@@ -10163,6 +10583,16 @@
 			]
 		},
 		{
+			"name": "<opentype-tag>",
+			"definitions": [
+				{
+					"id": "typedef-opentype-tag",
+					"definition": "<string>",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
 			"name": "<outline-line-style>",
 			"definitions": [
 				{
@@ -10217,12 +10647,12 @@
 			"definitions": [
 				{
 					"id": "typedef-paint-box",
-					"definition": "content-box | padding-box | border-box | fill-box | stroke-box",
+					"definition": "<visual-box> | fill-box | stroke-box",
 					"spec": "https://drafts.csswg.org/css-box-4/"
 				},
 				{
 					"id": "typedef-paint-box",
-					"definition": "content-box | padding-box | border-box | fill-box | stroke-box",
+					"definition": "<visual-box> | fill-box | stroke-box",
 					"spec": "https://drafts.csswg.org/css-box-3/"
 				}
 			]
@@ -10247,6 +10677,16 @@
 			"definitions": [
 				{
 					"id": "typedef-font-palette-palette-identifier",
+					"definition": null,
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "<palette-mix()>",
+			"definitions": [
+				{
+					"id": "typedef-font-palette-palette-mix",
 					"definition": null,
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
@@ -10311,8 +10751,8 @@
 					"spec": "https://drafts.csswg.org/css-values-4/"
 				},
 				{
-					"id": "ref-for-typedef-position②",
-					"definition": "[ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]",
+					"id": "ref-for-typedef-position③",
+					"definition": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right ] && [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]",
 					"spec": "https://drafts.csswg.org/css-values-4/"
 				},
 				{
@@ -10354,6 +10794,31 @@
 					"id": "typedef-predefined-rgb",
 					"definition": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020",
 					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "<progress()>",
+			"definitions": [
+				{
+					"id": "typedef-progress-fn",
+					"definition": "progress(<calc-sum> from <calc-sum> to <calc-sum>)",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
+			"name": "<progress>",
+			"definitions": [
+				{
+					"id": "typedef-progress",
+					"definition": null,
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				},
+				{
+					"id": "ref-for-typedef-progress④",
+					"definition": "[ <percentage> | <number> | <'animation-timeline'> ]? && by <easing-function>",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -10522,7 +10987,7 @@
 			"definitions": [
 				{
 					"id": "typedef-rectangular-color-space",
-					"definition": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65",
+					"definition": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65",
 					"spec": "https://drafts.csswg.org/css-color-5/"
 				},
 				{
@@ -10787,7 +11252,7 @@
 			"definitions": [
 				{
 					"id": "typedef-shape-box",
-					"definition": "<box> | margin-box",
+					"definition": "<visual-box> | margin-box",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
 			]
@@ -11002,8 +11467,18 @@
 			"definitions": [
 				{
 					"id": "typedef-spacing-trim",
-					"definition": "space-all | trim-auto | [ allow-end || space-first ]",
+					"definition": "space-all | trim-auto | [ allow-end || space-first ] | trim-all",
 					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
+			"name": "<spread-shadow>",
+			"definitions": [
+				{
+					"id": "typedef-spread-shadow",
+					"definition": "<'box-shadow-color'>? && [ <'box-shadow-offset'> [ <'box-shadow-blur'> <'box-shadow-spread'>? ]? ] && <'box-shadow-position'>?",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -11012,12 +11487,12 @@
 			"definitions": [
 				{
 					"id": "typedef-step-easing-function",
-					"definition": "step-start | step-end | steps(<integer>[, <step-position>]?)",
+					"definition": "step-start | step-end | steps(<integer> , <step-position>?)",
 					"spec": "https://drafts.csswg.org/css-easing-2/"
 				},
 				{
 					"id": "typedef-step-easing-function",
-					"definition": "step-start | step-end | steps(<integer>[, <step-position>]?)",
+					"definition": "step-start | step-end | steps(<integer> , <step-position>?)",
 					"spec": "https://drafts.csswg.org/css-easing-1/"
 				}
 			]
@@ -11223,6 +11698,16 @@
 			]
 		},
 		{
+			"name": "<system-family-name>",
+			"definitions": [
+				{
+					"id": "system-family-name-value",
+					"definition": null,
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
 			"name": "<target-contrast>",
 			"definitions": [
 				{
@@ -11308,6 +11793,16 @@
 			]
 		},
 		{
+			"name": "<toggle()>",
+			"definitions": [
+				{
+					"id": "typedef-toggle",
+					"definition": "toggle( <whole-value> [ ';' <whole-value> ]+ )",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
 			"name": "<toggle-overflow>",
 			"definitions": [
 				{
@@ -11350,11 +11845,6 @@
 		{
 			"name": "<toggle-value>",
 			"definitions": [
-				{
-					"id": "typedef-toggle-value",
-					"definition": null,
-					"spec": "https://drafts.csswg.org/css-values-5/"
-				},
 				{
 					"id": "typedef-toggle-value",
 					"definition": "<integer [0,∞]> | <custom-ident>",
@@ -11454,6 +11944,16 @@
 					"id": "typedef-transform-list",
 					"definition": "<transform-function>+",
 					"spec": "https://drafts.csswg.org/css-transforms-1/"
+				}
+			]
+		},
+		{
+			"name": "<transform-mix()>",
+			"definitions": [
+				{
+					"id": "typedef-transform-mix",
+					"definition": "transform-mix( <progress>, <transform-list>, <transform-list> )",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -11564,6 +12064,16 @@
 					"id": "typedef-visual-box",
 					"definition": "content-box | padding-box | border-box",
 					"spec": "https://drafts.csswg.org/css-box-3/"
+				}
+			]
+		},
+		{
+			"name": "<vt-type-selector>",
+			"definitions": [
+				{
+					"id": "typedef-vt-type-selector",
+					"definition": "'*' | <custom-ident>#",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
 				}
 			]
 		},
@@ -11749,6 +12259,30 @@
 			]
 		},
 		{
+			"name": "1st <length>",
+			"valueFor": [
+				"box-shadow-offset"
+			],
+			"definitions": [
+				{
+					"id": "shadow-offset-x",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "2nd <length>",
+			"valueFor": [
+				"box-shadow-offset"
+			],
+			"definitions": [
+				{
+					"id": "shadow-offset-y",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
 			"name": ":blank",
 			"valueFor": [
 				"@page"
@@ -11817,6 +12351,18 @@
 				{
 					"id": "valdef-logical-page-selector-verso",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
+				}
+			]
+		},
+		{
+			"name": "<'animation-timeline'>",
+			"valueFor": [
+				"<progress>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-progress-animation-timeline",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -12022,19 +12568,6 @@
 				{
 					"id": "valdef-offset-path-basic-shape",
 					"spec": "https://drafts.fxtf.org/motion-1/"
-				}
-			]
-		},
-		{
-			"name": "<box>",
-			"valueFor": [
-				"background-clip",
-				"<bg-clip>"
-			],
-			"definitions": [
-				{
-					"id": "valdef-background-clip-box",
-					"spec": "https://drafts.csswg.org/css-backgrounds-4/"
 				}
 			]
 		},
@@ -12247,18 +12780,6 @@
 		{
 			"name": "<dashed-ident>",
 			"valueFor": [
-				"anchor-name"
-			],
-			"definitions": [
-				{
-					"id": "valdef-anchor-name-dashed-ident",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
-				}
-			]
-		},
-		{
-			"name": "<dashed-ident>",
-			"valueFor": [
 				"anchor()"
 			],
 			"definitions": [
@@ -12305,6 +12826,18 @@
 			]
 		},
 		{
+			"name": "<dashed-ident>#",
+			"valueFor": [
+				"anchor-name"
+			],
+			"definitions": [
+				{
+					"id": "valdef-anchor-name-dashed-ident",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "<decibel>",
 			"valueFor": [
 				"voice-volume"
@@ -12317,18 +12850,6 @@
 			]
 		},
 		{
-			"name": "<declaration-value>",
-			"valueFor": [
-				"mix()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-mix-declaration-value",
-					"spec": "https://drafts.csswg.org/css-values-4/"
-				}
-			]
-		},
-		{
 			"name": "<dimension-unit>",
 			"valueFor": [
 				"attr()"
@@ -12336,6 +12857,18 @@
 			"definitions": [
 				{
 					"id": "valdef-attr-dimension-unit",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
+			"name": "<easing-function>",
+			"valueFor": [
+				"<progress>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-progress-easing-function",
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
@@ -12447,6 +12980,30 @@
 				{
 					"id": "valdef-shape-outside-image",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
+				}
+			]
+		},
+		{
+			"name": "<inset-area-span>",
+			"valueFor": [
+				"inset-area"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-inset-area-span",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "<inset-area-span> [ / <inset-area-span> ]?",
+			"valueFor": [
+				"inset-area"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-inset-area-span--inset-area-span",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -12611,6 +13168,18 @@
 		{
 			"name": "<length [0,∞]>",
 			"valueFor": [
+				"line-height"
+			],
+			"definitions": [
+				{
+					"id": "valdef-line-height-length-0",
+					"spec": "https://drafts.csswg.org/css-inline-3/"
+				}
+			]
+		},
+		{
+			"name": "<length [0,∞]>",
+			"valueFor": [
 				"column-width"
 			],
 			"definitions": [
@@ -12647,6 +13216,18 @@
 		{
 			"name": "<length [0,∞]>",
 			"valueFor": [
+				"@page/size"
+			],
+			"definitions": [
+				{
+					"id": "valdef-page-size-length-0",
+					"spec": "https://drafts.csswg.org/css-page-3/"
+				}
+			]
+		},
+		{
+			"name": "<length [0,∞]>",
+			"valueFor": [
 				"perspective"
 			],
 			"definitions": [
@@ -12669,6 +13250,18 @@
 				{
 					"id": "valdef-scroll-start-length-percentage-0",
 					"spec": "https://drafts.csswg.org/css-scroll-snap-2/"
+				}
+			]
+		},
+		{
+			"name": "<length-percentage [0,∞]>",
+			"valueFor": [
+				"shape-padding"
+			],
+			"definitions": [
+				{
+					"id": "valdef-shape-padding-length-percentage-0",
+					"spec": "https://drafts.csswg.org/css-shapes-2/"
 				}
 			]
 		},
@@ -12883,36 +13476,12 @@
 		{
 			"name": "<length>",
 			"valueFor": [
-				"line-height"
-			],
-			"definitions": [
-				{
-					"id": "valdef-line-height-length",
-					"spec": "https://drafts.csswg.org/css-inline-3/"
-				}
-			]
-		},
-		{
-			"name": "<length>",
-			"valueFor": [
 				"initial-letter-wrap"
 			],
 			"definitions": [
 				{
 					"id": "valdef-initial-letter-wrap-length",
 					"spec": "https://drafts.csswg.org/css-inline-3/"
-				}
-			]
-		},
-		{
-			"name": "<length>",
-			"valueFor": [
-				"@page/size"
-			],
-			"definitions": [
-				{
-					"id": "valdef-page-size-length",
-					"spec": "https://drafts.csswg.org/css-page-3/"
 				}
 			]
 		},
@@ -13132,6 +13701,30 @@
 			]
 		},
 		{
+			"name": "<number [0,∞]>",
+			"valueFor": [
+				"font-size-adjust"
+			],
+			"definitions": [
+				{
+					"id": "valdef-font-size-adjust-number-0",
+					"spec": "https://drafts.csswg.org/css-fonts-5/"
+				}
+			]
+		},
+		{
+			"name": "<number [0,∞]>",
+			"valueFor": [
+				"line-height"
+			],
+			"definitions": [
+				{
+					"id": "valdef-line-height-number-0",
+					"spec": "https://drafts.csswg.org/css-inline-3/"
+				}
+			]
+		},
+		{
 			"name": "<number [1,1000]>",
 			"valueFor": [
 				"font-weight"
@@ -13152,6 +13745,18 @@
 				{
 					"id": "valdef-initial-letter-number-1",
 					"spec": "https://drafts.csswg.org/css-inline-3/"
+				}
+			]
+		},
+		{
+			"name": "<number>",
+			"valueFor": [
+				"<progress>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-progress-number",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -13182,36 +13787,12 @@
 		{
 			"name": "<number>",
 			"valueFor": [
-				"font-size-adjust"
-			],
-			"definitions": [
-				{
-					"id": "valdef-font-size-adjust-number",
-					"spec": "https://drafts.csswg.org/css-fonts-5/"
-				}
-			]
-		},
-		{
-			"name": "<number>",
-			"valueFor": [
 				"@font-face/font-size"
 			],
 			"definitions": [
 				{
 					"id": "valdef-font-face-font-size-number",
 					"spec": "https://drafts.csswg.org/css-fonts-5/"
-				}
-			]
-		},
-		{
-			"name": "<number>",
-			"valueFor": [
-				"line-height"
-			],
-			"definitions": [
-				{
-					"id": "valdef-line-height-number",
-					"spec": "https://drafts.csswg.org/css-inline-3/"
 				}
 			]
 		},
@@ -13314,12 +13895,36 @@
 		{
 			"name": "<percentage [0,∞]>",
 			"valueFor": [
+				"line-height"
+			],
+			"definitions": [
+				{
+					"id": "valdef-line-height-percentage-0",
+					"spec": "https://drafts.csswg.org/css-inline-3/"
+				}
+			]
+		},
+		{
+			"name": "<percentage [0,∞]>",
+			"valueFor": [
 				"voice-rate"
 			],
 			"definitions": [
 				{
 					"id": "valdef-voice-rate-percentage-0",
 					"spec": "https://drafts.csswg.org/css-speech-1/"
+				}
+			]
+		},
+		{
+			"name": "<percentage>",
+			"valueFor": [
+				"<progress>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-progress-percentage",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -13385,18 +13990,6 @@
 			"definitions": [
 				{
 					"id": "valdef-baseline-shift-percentage",
-					"spec": "https://drafts.csswg.org/css-inline-3/"
-				}
-			]
-		},
-		{
-			"name": "<percentage>",
-			"valueFor": [
-				"line-height"
-			],
-			"definitions": [
-				{
-					"id": "valdef-line-height-percentage",
 					"spec": "https://drafts.csswg.org/css-inline-3/"
 				}
 			]
@@ -13516,18 +14109,6 @@
 				{
 					"id": "valdef-perspective-origin-percentage",
 					"spec": "https://drafts.csswg.org/css-transforms-2/"
-				}
-			]
-		},
-		{
-			"name": "<percentage>",
-			"valueFor": [
-				"mix()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-mix-percentage",
-					"spec": "https://drafts.csswg.org/css-values-4/"
 				}
 			]
 		},
@@ -14062,6 +14643,19 @@
 		{
 			"name": "<visual-box>",
 			"valueFor": [
+				"background-clip",
+				"<bg-clip>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-background-clip-visual-box",
+					"spec": "https://drafts.csswg.org/css-backgrounds-4/"
+				}
+			]
+		},
+		{
+			"name": "<visual-box>",
+			"valueFor": [
 				"overflow-clip-margin"
 			],
 			"definitions": [
@@ -14290,11 +14884,12 @@
 		{
 			"name": "AccentColor",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-accentcolor",
+					"id": "valdef-color-accentcolor",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -14302,11 +14897,12 @@
 		{
 			"name": "AccentColorText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-accentcolortext",
+					"id": "valdef-color-accentcolortext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -14324,13 +14920,40 @@
 			]
 		},
 		{
+			"name": "ActiveBorder",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-activeborder",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "ActiveCaption",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-activecaption",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
 			"name": "ActiveText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-activetext",
+					"id": "valdef-color-activetext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -14410,7 +15033,8 @@
 		{
 			"name": "aliceblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -14434,12 +15058,37 @@
 		{
 			"name": "all",
 			"valueFor": [
+				"border-limit"
+			],
+			"definitions": [
+				{
+					"id": "valdef-border-limit-all",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "all",
+			"valueFor": [
 				"column-span"
 			],
 			"definitions": [
 				{
 					"id": "valdef-column-span-all",
 					"spec": "https://drafts.csswg.org/css-multicol-2/"
+				}
+			]
+		},
+		{
+			"name": "all",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-all",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -14992,6 +15641,18 @@
 		{
 			"name": "angle",
 			"valueFor": [
+				"corner-shape"
+			],
+			"definitions": [
+				{
+					"id": "valdef-corner-shape-angle",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "angle",
+			"valueFor": [
 				"attr()"
 			],
 			"definitions": [
@@ -15028,7 +15689,8 @@
 		{
 			"name": "antiquewhite",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -15086,9 +15748,23 @@
 			]
 		},
 		{
+			"name": "AppWorkspace",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-appworkspace",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
 			"name": "aqua",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -15100,7 +15776,8 @@
 		{
 			"name": "aquamarine",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -15276,6 +15953,18 @@
 		{
 			"name": "auto",
 			"valueFor": [
+				"@view-transition/navigation"
+			],
+			"definitions": [
+				{
+					"id": "valdef-view-transition-navigation-auto",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
+				}
+			]
+		},
+		{
+			"name": "auto",
+			"valueFor": [
 				"justify-self"
 			],
 			"definitions": [
@@ -15294,18 +15983,6 @@
 				{
 					"id": "valdef-align-self-auto",
 					"spec": "https://drafts.csswg.org/css-align-3/"
-				}
-			]
-		},
-		{
-			"name": "auto",
-			"valueFor": [
-				"anchor()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-anchor-auto",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -15539,6 +16216,18 @@
 			"definitions": [
 				{
 					"id": "valdef-font-synthesis-small-caps-auto",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "auto",
+			"valueFor": [
+				"font-synthesis-position"
+			],
+			"definitions": [
+				{
+					"id": "valdef-font-synthesis-position-auto",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -16094,6 +16783,43 @@
 		{
 			"name": "auto",
 			"valueFor": [
+				"wrap-inside"
+			],
+			"definitions": [
+				{
+					"id": "valdef-wrap-inside-auto",
+					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
+			"name": "auto",
+			"valueFor": [
+				"wrap-before",
+				"wrap-after"
+			],
+			"definitions": [
+				{
+					"id": "valdef-wrap-before-auto",
+					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
+			"name": "auto",
+			"valueFor": [
+				"text-wrap-style"
+			],
+			"definitions": [
+				{
+					"id": "valdef-text-wrap-style-auto",
+					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
+			"name": "auto",
+			"valueFor": [
 				"line-break"
 			],
 			"definitions": [
@@ -16135,31 +16861,6 @@
 			"definitions": [
 				{
 					"id": "valdef-hyphenate-limit-chars-auto",
-					"spec": "https://drafts.csswg.org/css-text-4/"
-				}
-			]
-		},
-		{
-			"name": "auto",
-			"valueFor": [
-				"wrap-before",
-				"wrap-after"
-			],
-			"definitions": [
-				{
-					"id": "valdef-wrap-before-auto",
-					"spec": "https://drafts.csswg.org/css-text-4/"
-				}
-			]
-		},
-		{
-			"name": "auto",
-			"valueFor": [
-				"wrap-inside"
-			],
-			"definitions": [
-				{
-					"id": "valdef-wrap-inside-auto",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -16341,6 +17042,18 @@
 				{
 					"id": "valdef-caret-color-auto",
 					"spec": "https://drafts.csswg.org/css-ui-3/"
+				}
+			]
+		},
+		{
+			"name": "auto",
+			"valueFor": [
+				"outline-color"
+			],
+			"definitions": [
+				{
+					"id": "valdef-outline-color-auto",
+					"spec": "https://drafts.csswg.org/css-ui-4/"
 				}
 			]
 		},
@@ -16538,74 +17251,74 @@
 			]
 		},
 		{
-			"name": "auto(<lang>)",
+			"name": "auto-fill",
 			"valueFor": [
-				"word-boundary-detection"
+				"repeat()"
 			],
 			"definitions": [
 				{
-					"id": "valdef-word-boundary-detection-auto-lang",
+					"id": "valdef-repeat-auto-fill",
+					"spec": "https://drafts.csswg.org/css-grid-1/"
+				}
+			]
+		},
+		{
+			"name": "auto-fill",
+			"valueFor": [
+				"repeat()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-repeat-auto-fill",
+					"spec": "https://drafts.csswg.org/css-grid-2/"
+				}
+			]
+		},
+		{
+			"name": "auto-fit",
+			"valueFor": [
+				"repeat()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-repeat-auto-fit",
+					"spec": "https://drafts.csswg.org/css-grid-1/"
+				}
+			]
+		},
+		{
+			"name": "auto-fit",
+			"valueFor": [
+				"repeat()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-repeat-auto-fit",
+					"spec": "https://drafts.csswg.org/css-grid-2/"
+				}
+			]
+		},
+		{
+			"name": "auto-phrase",
+			"valueFor": [
+				"word-space-transform"
+			],
+			"definitions": [
+				{
+					"id": "valdef-word-space-transform-auto-phrase",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
 		},
 		{
-			"name": "auto-fill",
+			"name": "auto-phrase",
 			"valueFor": [
-				"repeat()"
+				"word-break"
 			],
 			"definitions": [
 				{
-					"id": "valdef-repeat-auto-fill",
-					"spec": "https://drafts.csswg.org/css-grid-1/"
-				}
-			]
-		},
-		{
-			"name": "auto-fill",
-			"valueFor": [
-				"repeat()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-repeat-auto-fill",
-					"spec": "https://drafts.csswg.org/css-grid-2/"
-				}
-			]
-		},
-		{
-			"name": "auto-fit",
-			"valueFor": [
-				"repeat()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-repeat-auto-fit",
-					"spec": "https://drafts.csswg.org/css-grid-1/"
-				}
-			]
-		},
-		{
-			"name": "auto-fit",
-			"valueFor": [
-				"repeat()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-repeat-auto-fit",
-					"spec": "https://drafts.csswg.org/css-grid-2/"
-				}
-			]
-		},
-		{
-			"name": "auto-same",
-			"valueFor": [
-				"anchor()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-anchor-auto-same",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+					"id": "valdef-word-break-auto-phrase",
+					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
 		},
@@ -16658,6 +17371,18 @@
 				{
 					"id": "valdef-break-inside-avoid",
 					"spec": "https://drafts.csswg.org/css-break-4/"
+				}
+			]
+		},
+		{
+			"name": "avoid",
+			"valueFor": [
+				"wrap-inside"
+			],
+			"definitions": [
+				{
+					"id": "valdef-wrap-inside-avoid",
+					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
 		},
@@ -16670,18 +17395,6 @@
 			"definitions": [
 				{
 					"id": "valdef-wrap-before-avoid",
-					"spec": "https://drafts.csswg.org/css-text-4/"
-				}
-			]
-		},
-		{
-			"name": "avoid",
-			"valueFor": [
-				"wrap-inside"
-			],
-			"definitions": [
-				{
-					"id": "valdef-wrap-inside-avoid",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -16871,7 +17584,8 @@
 		{
 			"name": "azure",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -16977,6 +17691,19 @@
 			]
 		},
 		{
+			"name": "Background",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-background",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
 			"name": "backwards",
 			"valueFor": [
 				"animation-fill-mode"
@@ -17003,11 +17730,11 @@
 		{
 			"name": "balance",
 			"valueFor": [
-				"text-wrap"
+				"text-wrap-style"
 			],
 			"definitions": [
 				{
-					"id": "valdef-text-wrap-balance",
+					"id": "valdef-text-wrap-style-balance",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -17130,7 +17857,8 @@
 		{
 			"name": "beige",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -17190,7 +17918,8 @@
 		{
 			"name": "bisque",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -17202,7 +17931,8 @@
 		{
 			"name": "black",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -17214,7 +17944,8 @@
 		{
 			"name": "blanchedalmond",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -17470,7 +18201,8 @@
 		{
 			"name": "blue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -17482,7 +18214,8 @@
 		{
 			"name": "blueviolet",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -17556,8 +18289,12 @@
 			"name": "border-box",
 			"valueFor": [
 				"<box>",
+				"<visual-box>",
+				"<layout-box>",
 				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -17570,8 +18307,12 @@
 			"name": "border-box",
 			"valueFor": [
 				"<box>",
+				"<visual-box>",
+				"<layout-box>",
 				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -17788,6 +18529,31 @@
 		{
 			"name": "bottom",
 			"valueFor": [
+				"border-limit"
+			],
+			"definitions": [
+				{
+					"id": "valdef-border-limit-bottom",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "bottom",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-bottom",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "bottom",
+			"valueFor": [
 				"anchor()"
 			],
 			"definitions": [
@@ -17993,7 +18759,8 @@
 		{
 			"name": "brown",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -18017,7 +18784,8 @@
 		{
 			"name": "burlywood",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -18053,11 +18821,12 @@
 		{
 			"name": "ButtonBorder",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-buttonborder",
+					"id": "valdef-color-buttonborder",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -18065,11 +18834,38 @@
 		{
 			"name": "ButtonFace",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-buttonface",
+					"id": "valdef-color-buttonface",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "ButtonHighlight",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-buttonhighlight",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "ButtonShadow",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-buttonshadow",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -18077,11 +18873,12 @@
 		{
 			"name": "ButtonText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-buttontext",
+					"id": "valdef-color-buttontext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -18126,7 +18923,8 @@
 		{
 			"name": "cadetblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -18150,11 +18948,12 @@
 		{
 			"name": "Canvas",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-canvas",
+					"id": "valdef-color-canvas",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -18162,11 +18961,12 @@
 		{
 			"name": "CanvasText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-canvastext",
+					"id": "valdef-color-canvastext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -18228,6 +19028,19 @@
 				{
 					"id": "valdef-font-caption",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "CaptionText",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-captiontext",
+					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
 		},
@@ -18298,6 +19111,19 @@
 				{
 					"id": "valdef-self-position-center",
 					"spec": "https://drafts.csswg.org/css-align-3/"
+				}
+			]
+		},
+		{
+			"name": "center",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-center",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -18559,7 +19385,8 @@
 		{
 			"name": "chartreuse",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -18619,7 +19446,8 @@
 		{
 			"name": "chocolate",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -19398,6 +20226,18 @@
 			]
 		},
 		{
+			"name": "content",
+			"valueFor": [
+				"field-sizing"
+			],
+			"definitions": [
+				{
+					"id": "valdef-field-sizing-content",
+					"spec": "https://drafts.csswg.org/css-ui-4/"
+				}
+			]
+		},
+		{
 			"name": "content-box",
 			"valueFor": [
 				"background-clip"
@@ -19425,8 +20265,12 @@
 			"name": "content-box",
 			"valueFor": [
 				"<box>",
+				"<visual-box>",
+				"<layout-box>",
 				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -19439,8 +20283,12 @@
 			"name": "content-box",
 			"valueFor": [
 				"<box>",
+				"<visual-box>",
+				"<layout-box>",
 				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -19673,7 +20521,8 @@
 		{
 			"name": "coral",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -19683,9 +20532,22 @@
 			]
 		},
 		{
+			"name": "corners",
+			"valueFor": [
+				"border-limit"
+			],
+			"definitions": [
+				{
+					"id": "valdef-border-limit-corners",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
 			"name": "cornflowerblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -19697,7 +20559,8 @@
 		{
 			"name": "cornsilk",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -19781,7 +20644,8 @@
 		{
 			"name": "crimson",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -19927,7 +20791,8 @@
 		{
 			"name": "cyan",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -19999,7 +20864,8 @@
 		{
 			"name": "darkblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20011,7 +20877,8 @@
 		{
 			"name": "darkcyan",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20047,7 +20914,8 @@
 		{
 			"name": "darkgoldenrod",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20059,7 +20927,8 @@
 		{
 			"name": "darkgray",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20071,7 +20940,8 @@
 		{
 			"name": "darkgreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20083,7 +20953,8 @@
 		{
 			"name": "darkgrey",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20095,7 +20966,8 @@
 		{
 			"name": "darkkhaki",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20107,7 +20979,8 @@
 		{
 			"name": "darkmagenta",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20119,7 +20992,8 @@
 		{
 			"name": "darkolivegreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20131,7 +21005,8 @@
 		{
 			"name": "darkorange",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20143,7 +21018,8 @@
 		{
 			"name": "darkorchid",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20155,7 +21031,8 @@
 		{
 			"name": "darkred",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20167,7 +21044,8 @@
 		{
 			"name": "darksalmon",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20179,7 +21057,8 @@
 		{
 			"name": "darkseagreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20191,7 +21070,8 @@
 		{
 			"name": "darkslateblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20203,7 +21083,8 @@
 		{
 			"name": "darkslategray",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20215,7 +21096,8 @@
 		{
 			"name": "darkslategrey",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20227,7 +21109,8 @@
 		{
 			"name": "darkturquoise",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20239,7 +21122,8 @@
 		{
 			"name": "darkviolet",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20305,7 +21189,8 @@
 		{
 			"name": "deeppink",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20317,7 +21202,8 @@
 		{
 			"name": "deepskyblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20449,7 +21335,8 @@
 		{
 			"name": "dimgray",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20461,7 +21348,8 @@
 		{
 			"name": "dimgrey",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -20641,7 +21529,8 @@
 		{
 			"name": "dodgerblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -21049,19 +21938,6 @@
 		{
 			"name": "emoji",
 			"valueFor": [
-				"font-family",
-				"<generic-family>"
-			],
-			"definitions": [
-				{
-					"id": "valdef-font-family-emoji",
-					"spec": "https://drafts.csswg.org/css-fonts-4/"
-				}
-			]
-		},
-		{
-			"name": "emoji",
-			"valueFor": [
 				"font-variant-emoji"
 			],
 			"definitions": [
@@ -21125,6 +22001,19 @@
 				{
 					"id": "valdef-self-position-end",
 					"spec": "https://drafts.csswg.org/css-align-3/"
+				}
+			]
+		},
+		{
+			"name": "end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -21537,19 +22426,6 @@
 			]
 		},
 		{
-			"name": "fangsong",
-			"valueFor": [
-				"font-family",
-				"<generic-family>"
-			],
-			"definitions": [
-				{
-					"id": "valdef-font-family-fangsong",
-					"spec": "https://drafts.csswg.org/css-fonts-4/"
-				}
-			]
-		},
-		{
 			"name": "fantasy",
 			"valueFor": [
 				"font-family",
@@ -21665,11 +22541,12 @@
 		{
 			"name": "Field",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-field",
+					"id": "valdef-color-field",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -21677,11 +22554,12 @@
 		{
 			"name": "FieldText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-fieldtext",
+					"id": "valdef-color-fieldtext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -21738,8 +22616,9 @@
 			"name": "fill-box",
 			"valueFor": [
 				"<box>",
-				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -21752,8 +22631,9 @@
 			"name": "fill-box",
 			"valueFor": [
 				"<box>",
-				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -21885,7 +22765,8 @@
 		{
 			"name": "firebrick",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22068,6 +22949,18 @@
 			]
 		},
 		{
+			"name": "fixed",
+			"valueFor": [
+				"field-sizing"
+			],
+			"definitions": [
+				{
+					"id": "valdef-field-sizing-fixed",
+					"spec": "https://drafts.csswg.org/css-ui-4/"
+				}
+			]
+		},
+		{
 			"name": "flex",
 			"valueFor": [
 				"display",
@@ -22241,7 +23134,8 @@
 		{
 			"name": "floralwhite",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22365,7 +23259,8 @@
 		{
 			"name": "forestgreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22512,7 +23407,8 @@
 		{
 			"name": "fuchsia",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22608,7 +23504,8 @@
 		{
 			"name": "gainsboro",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22630,6 +23527,45 @@
 			]
 		},
 		{
+			"name": "generic(fangsong)",
+			"valueFor": [
+				"font-family",
+				"<generic-family>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-font-family-generic-fangsong",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "generic(kai)",
+			"valueFor": [
+				"font-family",
+				"<generic-family>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-font-family-generic-kai",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "generic(nastaliq)",
+			"valueFor": [
+				"font-family",
+				"<generic-family>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-font-family-generic-nastaliq",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
 			"name": "georgian",
 			"valueFor": [
 				"<counter-style-name>"
@@ -22644,7 +23580,8 @@
 		{
 			"name": "ghostwhite",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22656,7 +23593,8 @@
 		{
 			"name": "gold",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22668,7 +23606,8 @@
 		{
 			"name": "goldenrod",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22740,7 +23679,8 @@
 		{
 			"name": "gray",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22752,11 +23692,12 @@
 		{
 			"name": "GrayText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-graytext",
+					"id": "valdef-color-graytext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -22764,7 +23705,8 @@
 		{
 			"name": "green",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22776,7 +23718,8 @@
 		{
 			"name": "greenyellow",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -22788,7 +23731,8 @@
 		{
 			"name": "grey",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -23236,11 +24180,12 @@
 		{
 			"name": "Highlight",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-highlight",
+					"id": "valdef-color-highlight",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -23248,11 +24193,12 @@
 		{
 			"name": "HighlightText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-highlighttext",
+					"id": "valdef-color-highlighttext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -23320,12 +24266,25 @@
 		{
 			"name": "honeydew",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
 					"id": "valdef-color-honeydew",
 					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "horizontal offset",
+			"valueFor": [
+				"box-shadow-offset"
+			],
+			"definitions": [
+				{
+					"id": "valdef-box-shadow-offset-horizontal-offset",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -23356,7 +24315,8 @@
 		{
 			"name": "hotpink",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -23573,11 +24533,11 @@
 		{
 			"name": "ideographic-space",
 			"valueFor": [
-				"word-boundary-expansion"
+				"word-space-transform"
 			],
 			"definitions": [
 				{
-					"id": "valdef-word-boundary-expansion-ideographic-space",
+					"id": "valdef-word-space-transform-ideographic-space",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -23595,9 +24555,49 @@
 			]
 		},
 		{
+			"name": "InactiveBorder",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-inactiveborder",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "InactiveCaption",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-inactivecaption",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "InactiveCaptionText",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-inactivecaptiontext",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
 			"name": "indianred",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -23609,7 +24609,8 @@
 		{
 			"name": "indigo",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -23663,6 +24664,32 @@
 				{
 					"id": "valdef-calc-infinity",
 					"spec": "https://drafts.csswg.org/css-values-4/"
+				}
+			]
+		},
+		{
+			"name": "InfoBackground",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-infobackground",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "InfoText",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-infotext",
+					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
 		},
@@ -24087,6 +25114,18 @@
 			]
 		},
 		{
+			"name": "inner box-shadow",
+			"valueFor": [
+				"box-shadow-position"
+			],
+			"definitions": [
+				{
+					"id": "valdef-box-shadow-position-inner-box-shadow",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
 			"name": "insert",
 			"valueFor": [
 				"text-autospace"
@@ -24095,6 +25134,18 @@
 				{
 					"id": "valdef-text-autospace-insert",
 					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
+			"name": "inset",
+			"valueFor": [
+				"box-shadow-position"
+			],
+			"definitions": [
+				{
+					"id": "valdef-box-shadow-position-inset",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -24137,6 +25188,18 @@
 				{
 					"id": "valdef-stroke-align-inset",
 					"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+				}
+			]
+		},
+		{
+			"name": "inside",
+			"valueFor": [
+				"anchor()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-anchor-inside",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -24261,18 +25324,6 @@
 			]
 		},
 		{
-			"name": "invert",
-			"valueFor": [
-				"outline-color"
-			],
-			"definitions": [
-				{
-					"id": "valdef-outline-color-invert",
-					"spec": "https://drafts.csswg.org/css-ui-4/"
-				}
-			]
-		},
-		{
 			"name": "inverted",
 			"valueFor": [
 				"@media/inverted-colors"
@@ -24347,7 +25398,8 @@
 		{
 			"name": "ivory",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -24671,7 +25723,8 @@
 		{
 			"name": "khaki",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -24954,7 +26007,8 @@
 		{
 			"name": "lavender",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -24966,7 +26020,8 @@
 		{
 			"name": "lavenderblush",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -24978,7 +26033,8 @@
 		{
 			"name": "lawngreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25086,6 +26142,18 @@
 		{
 			"name": "left",
 			"valueFor": [
+				"border-limit"
+			],
+			"definitions": [
+				{
+					"id": "valdef-border-limit-left",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "left",
+			"valueFor": [
 				"justify-content",
 				"justify-self",
 				"justify-items"
@@ -25094,6 +26162,19 @@
 				{
 					"id": "valdef-justify-content-left",
 					"spec": "https://drafts.csswg.org/css-align-3/"
+				}
+			]
+		},
+		{
+			"name": "left",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-left",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -25342,7 +26423,8 @@
 		{
 			"name": "lemonchiffon",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25438,7 +26520,8 @@
 		{
 			"name": "lightblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25450,7 +26533,8 @@
 		{
 			"name": "lightcoral",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25462,7 +26546,8 @@
 		{
 			"name": "lightcyan",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25510,7 +26595,8 @@
 		{
 			"name": "lightgoldenrodyellow",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25522,7 +26608,8 @@
 		{
 			"name": "lightgray",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25534,7 +26621,8 @@
 		{
 			"name": "lightgreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25546,7 +26634,8 @@
 		{
 			"name": "lightgrey",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25558,7 +26647,8 @@
 		{
 			"name": "lightpink",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25570,7 +26660,8 @@
 		{
 			"name": "lightsalmon",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25582,7 +26673,8 @@
 		{
 			"name": "lightseagreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25594,7 +26686,8 @@
 		{
 			"name": "lightskyblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25606,7 +26699,8 @@
 		{
 			"name": "lightslategray",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25618,7 +26712,8 @@
 		{
 			"name": "lightslategrey",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25630,7 +26725,8 @@
 		{
 			"name": "lightsteelblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25642,7 +26738,8 @@
 		{
 			"name": "lightyellow",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25654,7 +26751,8 @@
 		{
 			"name": "lime",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25666,7 +26764,8 @@
 		{
 			"name": "limegreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25775,7 +26874,8 @@
 		{
 			"name": "linen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -25799,11 +26899,12 @@
 		{
 			"name": "LinkText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-linktext",
+					"id": "valdef-color-linktext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -26133,7 +27234,8 @@
 		{
 			"name": "magenta",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26193,11 +27295,11 @@
 		{
 			"name": "manual",
 			"valueFor": [
-				"word-boundary-detection"
+				"word-break"
 			],
 			"definitions": [
 				{
-					"id": "valdef-word-boundary-detection-manual",
+					"id": "valdef-word-break-manual",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -26230,6 +27332,7 @@
 			"name": "margin-box",
 			"valueFor": [
 				"<box>",
+				"<layout-box>",
 				"<shape-box>",
 				"<geometry-box>"
 			],
@@ -26244,6 +27347,7 @@
 			"name": "margin-box",
 			"valueFor": [
 				"<box>",
+				"<layout-box>",
 				"<shape-box>",
 				"<geometry-box>"
 			],
@@ -26270,11 +27374,12 @@
 		{
 			"name": "Mark",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-mark",
+					"id": "valdef-color-mark",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -26294,11 +27399,12 @@
 		{
 			"name": "MarkText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-marktext",
+					"id": "valdef-color-marktext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -26306,7 +27412,8 @@
 		{
 			"name": "maroon",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26635,7 +27742,8 @@
 		{
 			"name": "mediumaquamarine",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26647,7 +27755,8 @@
 		{
 			"name": "mediumblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26659,7 +27768,8 @@
 		{
 			"name": "mediumorchid",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26671,7 +27781,8 @@
 		{
 			"name": "mediumpurple",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26683,7 +27794,8 @@
 		{
 			"name": "mediumseagreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26695,7 +27807,8 @@
 		{
 			"name": "mediumslateblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26707,7 +27820,8 @@
 		{
 			"name": "mediumspringgreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26719,7 +27833,8 @@
 		{
 			"name": "mediumturquoise",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26731,7 +27846,8 @@
 		{
 			"name": "mediumvioletred",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26749,6 +27865,19 @@
 				{
 					"id": "valdef-font-menu",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "Menu",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-menu",
+					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
 		},
@@ -26773,6 +27902,19 @@
 				{
 					"id": "valdef-appearance-menulist-button",
 					"spec": "https://drafts.csswg.org/css-ui-4/"
+				}
+			]
+		},
+		{
+			"name": "MenuText",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-menutext",
+					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
 		},
@@ -26840,7 +27982,8 @@
 		{
 			"name": "midnightblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26919,7 +28062,8 @@
 		{
 			"name": "mintcream",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26931,7 +28075,8 @@
 		{
 			"name": "mistyrose",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -26979,7 +28124,8 @@
 		{
 			"name": "moccasin",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -27160,7 +28306,8 @@
 		{
 			"name": "navajowhite",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -27172,7 +28319,8 @@
 		{
 			"name": "navy",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -27538,6 +28686,18 @@
 		{
 			"name": "none",
 			"valueFor": [
+				"box-shadow-offset"
+			],
+			"definitions": [
+				{
+					"id": "shadow-offset-none",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "none",
+			"valueFor": [
 				"display",
 				"<display-box>"
 			],
@@ -27627,11 +28787,35 @@
 		{
 			"name": "none",
 			"valueFor": [
+				"@view-transition/navigation"
+			],
+			"definitions": [
+				{
+					"id": "valdef-view-transition-navigation-none",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
+				}
+			]
+		},
+		{
+			"name": "none",
+			"valueFor": [
 				"anchor-name"
 			],
 			"definitions": [
 				{
 					"id": "valdef-anchor-name-none",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "none",
+			"valueFor": [
+				"inset-area"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-none",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -27916,6 +29100,18 @@
 			"definitions": [
 				{
 					"id": "valdef-font-synthesis-small-caps-none",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "none",
+			"valueFor": [
+				"font-synthesis-position"
+			],
+			"definitions": [
+				{
+					"id": "valdef-font-synthesis-position-none",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -28477,11 +29673,11 @@
 		{
 			"name": "none",
 			"valueFor": [
-				"word-boundary-expansion"
+				"word-space-transform"
 			],
 			"definitions": [
 				{
-					"id": "valdef-word-boundary-expansion-none",
+					"id": "valdef-word-space-transform-none",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -29639,18 +30835,6 @@
 		{
 			"name": "normal",
 			"valueFor": [
-				"word-boundary-detection"
-			],
-			"definitions": [
-				{
-					"id": "valdef-word-boundary-detection-normal",
-					"spec": "https://drafts.csswg.org/css-text-4/"
-				}
-			]
-		},
-		{
-			"name": "normal",
-			"valueFor": [
 				"white-space"
 			],
 			"definitions": [
@@ -29891,11 +31075,11 @@
 		{
 			"name": "nowrap",
 			"valueFor": [
-				"text-wrap"
+				"text-wrap-mode"
 			],
 			"definitions": [
 				{
-					"id": "valdef-text-wrap-nowrap",
+					"id": "valdef-text-wrap-mode-nowrap",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -30095,7 +31279,8 @@
 		{
 			"name": "oldlace",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30119,7 +31304,8 @@
 		{
 			"name": "olive",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30131,7 +31317,8 @@
 		{
 			"name": "olivedrab",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30253,7 +31440,8 @@
 		{
 			"name": "orange",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30265,7 +31453,8 @@
 		{
 			"name": "orangered",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30277,7 +31466,8 @@
 		{
 			"name": "orchid",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30347,6 +31537,30 @@
 			]
 		},
 		{
+			"name": "outer box-shadow",
+			"valueFor": [
+				"box-shadow-position"
+			],
+			"definitions": [
+				{
+					"id": "valdef-box-shadow-position-outer-box-shadow",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "outset",
+			"valueFor": [
+				"box-shadow-position"
+			],
+			"definitions": [
+				{
+					"id": "valdef-box-shadow-position-outset",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
 			"name": "outset",
 			"valueFor": [
 				"<line-style>",
@@ -30373,6 +31587,18 @@
 				{
 					"id": "valdef-stroke-align-outset",
 					"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+				}
+			]
+		},
+		{
+			"name": "outside",
+			"valueFor": [
+				"anchor()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-anchor-outside",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -30576,8 +31802,12 @@
 			"name": "padding-box",
 			"valueFor": [
 				"<box>",
+				"<visual-box>",
+				"<layout-box>",
 				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -30590,8 +31820,12 @@
 			"name": "padding-box",
 			"valueFor": [
 				"<box>",
+				"<visual-box>",
+				"<layout-box>",
 				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -30774,7 +32008,8 @@
 		{
 			"name": "palegoldenrod",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30786,7 +32021,8 @@
 		{
 			"name": "palegreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30798,7 +32034,8 @@
 		{
 			"name": "paleturquoise",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30810,7 +32047,8 @@
 		{
 			"name": "palevioletred",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30822,7 +32060,8 @@
 		{
 			"name": "papayawhip",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30846,7 +32085,8 @@
 		{
 			"name": "peachpuff",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30894,7 +32134,8 @@
 		{
 			"name": "peru",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30930,7 +32171,8 @@
 		{
 			"name": "pink",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -30978,7 +32220,8 @@
 		{
 			"name": "plum",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -31062,7 +32305,8 @@
 		{
 			"name": "powderblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -31206,11 +32450,11 @@
 		{
 			"name": "pretty",
 			"valueFor": [
-				"text-wrap"
+				"text-wrap-style"
 			],
 			"definitions": [
 				{
-					"id": "valdef-text-wrap-pretty",
+					"id": "valdef-text-wrap-style-pretty",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -31398,7 +32642,8 @@
 		{
 			"name": "purple",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -31470,7 +32715,8 @@
 		{
 			"name": "rebeccapurple",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -31568,7 +32814,8 @@
 		{
 			"name": "red",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -31828,6 +33075,18 @@
 		{
 			"name": "right",
 			"valueFor": [
+				"border-limit"
+			],
+			"definitions": [
+				{
+					"id": "valdef-border-limit-right",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "right",
+			"valueFor": [
 				"justify-content",
 				"justify-self",
 				"justify-items"
@@ -31836,6 +33095,19 @@
 				{
 					"id": "valdef-justify-content-right",
 					"spec": "https://drafts.csswg.org/css-align-3/"
+				}
+			]
+		},
+		{
+			"name": "right",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-right",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -32062,7 +33334,8 @@
 		{
 			"name": "rosybrown",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -32092,6 +33365,18 @@
 				{
 					"id": "valdef-page-orientation-rotate-right",
 					"spec": "https://drafts.csswg.org/css-page-3/"
+				}
+			]
+		},
+		{
+			"name": "round",
+			"valueFor": [
+				"corner-shape"
+			],
+			"definitions": [
+				{
+					"id": "valdef-corner-shape-round",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
 				}
 			]
 		},
@@ -32230,7 +33515,8 @@
 		{
 			"name": "royalblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -32554,7 +33840,8 @@
 		{
 			"name": "saddlebrown",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -32626,7 +33913,8 @@
 		{
 			"name": "salmon",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -32650,7 +33938,8 @@
 		{
 			"name": "sandybrown",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -32879,6 +34168,19 @@
 			]
 		},
 		{
+			"name": "Scrollbar",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-scrollbar",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
 			"name": "se-resize",
 			"valueFor": [
 				"cursor"
@@ -32905,7 +34207,8 @@
 		{
 			"name": "seagreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -32929,7 +34232,8 @@
 		{
 			"name": "seashell",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -32941,11 +34245,12 @@
 		{
 			"name": "SelectedItem",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-selecteditem",
+					"id": "valdef-color-selecteditem",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -32953,11 +34258,12 @@
 		{
 			"name": "SelectedItemText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-selecteditemtext",
+					"id": "valdef-color-selecteditemtext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -33017,6 +34323,19 @@
 		{
 			"name": "self-end",
 			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-self-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "self-end",
+			"valueFor": [
 				"anchor()"
 			],
 			"definitions": [
@@ -33049,6 +34368,19 @@
 				{
 					"id": "valdef-self-position-self-start",
 					"spec": "https://drafts.csswg.org/css-align-3/"
+				}
+			]
+		},
+		{
+			"name": "self-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-self-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -33140,6 +34472,18 @@
 		{
 			"name": "sides",
 			"valueFor": [
+				"border-limit"
+			],
+			"definitions": [
+				{
+					"id": "valdef-border-limit-sides",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "sides",
+			"valueFor": [
 				"<ray-size>"
 			],
 			"definitions": [
@@ -33224,7 +34568,8 @@
 		{
 			"name": "sienna",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -33248,7 +34593,8 @@
 		{
 			"name": "silver",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -33380,7 +34726,8 @@
 		{
 			"name": "skyblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -33404,7 +34751,8 @@
 		{
 			"name": "slateblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -33416,7 +34764,8 @@
 		{
 			"name": "slategray",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -33428,7 +34777,8 @@
 		{
 			"name": "slategrey",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -33609,7 +34959,8 @@
 		{
 			"name": "snow",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -33723,11 +35074,11 @@
 		{
 			"name": "space",
 			"valueFor": [
-				"word-boundary-expansion"
+				"word-space-transform"
 			],
 			"definitions": [
 				{
-					"id": "valdef-word-boundary-expansion-space",
+					"id": "valdef-word-space-transform-space",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -33981,7 +35332,8 @@
 		{
 			"name": "springgreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -34089,11 +35441,11 @@
 		{
 			"name": "stable",
 			"valueFor": [
-				"text-wrap"
+				"text-wrap-style"
 			],
 			"definitions": [
 				{
-					"id": "valdef-text-wrap-stable",
+					"id": "valdef-text-wrap-style-stable",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -34164,6 +35516,19 @@
 				{
 					"id": "valdef-self-position-start",
 					"spec": "https://drafts.csswg.org/css-align-3/"
+				}
+			]
+		},
+		{
+			"name": "start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -34338,7 +35703,8 @@
 		{
 			"name": "steelblue",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -34617,8 +35983,9 @@
 			"name": "stroke-box",
 			"valueFor": [
 				"<box>",
-				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -34631,8 +35998,9 @@
 			"name": "stroke-box",
 			"valueFor": [
 				"<box>",
-				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<paint-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -35233,7 +36601,8 @@
 		{
 			"name": "tan",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -35245,7 +36614,8 @@
 		{
 			"name": "teal",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -35524,11 +36894,77 @@
 		{
 			"name": "thistle",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
 					"id": "valdef-color-thistle",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "ThreeDDarkShadow",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-threeddarkshadow",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "ThreeDFace",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-threedface",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "ThreeDHighlight",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-threedhighlight",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "ThreeDLightShadow",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-threedlightshadow",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "ThreeDShadow",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-threedshadow",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -35597,12 +37033,38 @@
 		{
 			"name": "tomato",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
 					"id": "valdef-color-tomato",
 					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "top",
+			"valueFor": [
+				"border-limit"
+			],
+			"definitions": [
+				{
+					"id": "valdef-border-limit-top",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
+			"name": "top",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-top",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -35764,6 +37226,18 @@
 			]
 		},
 		{
+			"name": "trim-all",
+			"valueFor": [
+				"text-spacing-trim"
+			],
+			"definitions": [
+				{
+					"id": "valdef-text-spacing-trim-trim-all",
+					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
 			"name": "trim-auto",
 			"valueFor": [
 				"text-spacing-trim"
@@ -35814,7 +37288,8 @@
 		{
 			"name": "turquoise",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -36373,6 +37848,18 @@
 			]
 		},
 		{
+			"name": "vertical offset",
+			"valueFor": [
+				"box-shadow-offset"
+			],
+			"definitions": [
+				{
+					"id": "valdef-box-shadow-offset-vertical-offset",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				}
+			]
+		},
+		{
 			"name": "vertical-lr",
 			"valueFor": [
 				"writing-mode"
@@ -36448,8 +37935,8 @@
 			"name": "view-box",
 			"valueFor": [
 				"<box>",
-				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -36462,8 +37949,8 @@
 			"name": "view-box",
 			"valueFor": [
 				"<box>",
-				"<shape-box>",
-				"<geometry-box>"
+				"<geometry-box>",
+				"<coord-box>"
 			],
 			"definitions": [
 				{
@@ -36595,7 +38082,8 @@
 		{
 			"name": "violet",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -36657,11 +38145,12 @@
 		{
 			"name": "VisitedText",
 			"valueFor": [
+				"<color>",
 				"<system-color>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-system-color-visitedtext",
+					"id": "valdef-color-visitedtext",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
@@ -36791,7 +38280,8 @@
 		{
 			"name": "wheat",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -36803,7 +38293,8 @@
 		{
 			"name": "white",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -36815,7 +38306,8 @@
 		{
 			"name": "whitesmoke",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -36833,6 +38325,45 @@
 				{
 					"id": "valdef-anchor-size-width",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "Window",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-window",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "WindowFrame",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-windowframe",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "WindowText",
+			"valueFor": [
+				"<color>",
+				"<deprecated-color>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-color-windowtext",
+					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
 		},
@@ -36863,11 +38394,11 @@
 		{
 			"name": "wrap",
 			"valueFor": [
-				"text-wrap"
+				"text-wrap-mode"
 			],
 			"definitions": [
 				{
-					"id": "valdef-text-wrap-wrap",
+					"id": "valdef-text-wrap-mode-wrap",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -36947,6 +38478,19 @@
 			]
 		},
 		{
+			"name": "x-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-x-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "x-fast",
 			"valueFor": [
 				"voice-rate"
@@ -37019,6 +38563,32 @@
 			]
 		},
 		{
+			"name": "x-self-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-x-self-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "x-self-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-x-self-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "x-slow",
 			"valueFor": [
 				"voice-rate"
@@ -37039,6 +38609,19 @@
 				{
 					"id": "valdef-voice-volume-x-soft",
 					"spec": "https://drafts.csswg.org/css-speech-1/"
+				}
+			]
+		},
+		{
+			"name": "x-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-x-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -37194,9 +38777,62 @@
 			]
 		},
 		{
+			"name": "y-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-y-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "y-self-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-y-self-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "y-self-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-y-self-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "y-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area-span>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-y-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "yellow",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -37208,7 +38844,8 @@
 		{
 			"name": "yellowgreen",
 			"valueFor": [
-				"<color>"
+				"<color>",
+				"<named-color>"
 			],
 			"definitions": [
 				{
@@ -37902,6 +39539,16 @@
 			]
 		},
 		{
+			"name": "navigation",
+			"descriptorFor": "@view-transition",
+			"definitions": [
+				{
+					"id": "descdef-view-transition-navigation",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
+				}
+			]
+		},
+		{
 			"name": "negative",
 			"descriptorFor": "@counter-style",
 			"definitions": [
@@ -38266,6 +39913,16 @@
 			]
 		},
 		{
+			"name": "type",
+			"descriptorFor": "@view-transition",
+			"definitions": [
+				{
+					"id": "descdef-view-transition-type",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
+				}
+			]
+		},
+		{
 			"name": "unicode-range",
 			"descriptorFor": "@font-face",
 			"definitions": [
@@ -38365,6 +40022,15 @@
 			]
 		},
 		{
+			"name": "@annotation",
+			"definitions": [
+				{
+					"id": "at-ruledef-font-feature-values-annotation",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
 			"name": "@bottom-center",
 			"definitions": [
 				{
@@ -38406,6 +40072,15 @@
 				{
 					"id": "at-ruledef-bottom-right-corner",
 					"spec": "https://drafts.csswg.org/css-page-3/"
+				}
+			]
+		},
+		{
+			"name": "@character-variant",
+			"definitions": [
+				{
+					"id": "at-ruledef-font-feature-values-character-variant",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
 		},
@@ -38504,6 +40179,15 @@
 			]
 		},
 		{
+			"name": "@historical-forms",
+			"definitions": [
+				{
+					"id": "at-ruledef-font-feature-values-historical-forms",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
 			"name": "@import",
 			"definitions": [
 				{
@@ -38571,6 +40255,24 @@
 				{
 					"id": "at-ruledef-media",
 					"spec": "https://drafts.csswg.org/css-conditional-3/"
+				}
+			]
+		},
+		{
+			"name": "@namespace",
+			"definitions": [
+				{
+					"id": "at-ruledef-namespace",
+					"spec": "https://drafts.csswg.org/css-namespaces-3/"
+				}
+			]
+		},
+		{
+			"name": "@ornaments",
+			"definitions": [
+				{
+					"id": "at-ruledef-font-feature-values-ornaments",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
 		},
@@ -38647,11 +40349,38 @@
 			]
 		},
 		{
+			"name": "@styleset",
+			"definitions": [
+				{
+					"id": "at-ruledef-font-feature-values-styleset",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "@stylistic",
+			"definitions": [
+				{
+					"id": "at-ruledef-font-feature-values-stylistic",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
 			"name": "@supports",
 			"definitions": [
 				{
 					"id": "at-ruledef-supports",
 					"spec": "https://drafts.csswg.org/css-conditional-3/"
+				}
+			]
+		},
+		{
+			"name": "@swash",
+			"definitions": [
+				{
+					"id": "at-ruledef-font-feature-values-swash",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
 		},
@@ -38706,6 +40435,15 @@
 				{
 					"id": "at-ruledef-try",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "@view-transition",
+			"definitions": [
+				{
+					"id": "at-view-transition-rule",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
 				}
 			]
 		},
@@ -38847,7 +40585,7 @@
 					"spec": "https://drafts.csswg.org/css-values-4/"
 				},
 				{
-					"id": "ref-for-funcdef-calc①③",
+					"id": "ref-for-funcdef-calc①④",
 					"spec": "https://drafts.csswg.org/css-values-4/"
 				},
 				{
@@ -38857,6 +40595,15 @@
 				{
 					"id": "ref-for-funcdef-calc⑧",
 					"spec": "https://drafts.csswg.org/css-values-3/"
+				}
+			]
+		},
+		{
+			"name": "calc-mix()",
+			"definitions": [
+				{
+					"id": "funcdef-calc-mix",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -38901,6 +40648,10 @@
 				{
 					"id": "funcdef-color-mix",
 					"spec": "https://drafts.csswg.org/css-color-5/"
+				},
+				{
+					"id": "ref-for-funcdef-color-mix③",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -38910,6 +40661,15 @@
 				{
 					"id": "funcdef-conic-gradient",
 					"spec": "https://drafts.csswg.org/css-images-4/"
+				}
+			]
+		},
+		{
+			"name": "container-progress()",
+			"definitions": [
+				{
+					"id": "funcdef-container-progress",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -38967,6 +40727,10 @@
 				{
 					"id": "funcdef-counter",
 					"spec": "https://drafts.csswg.org/css-lists-3/"
+				},
+				{
+					"id": "ref-for-funcdef-counter⑥",
+					"spec": "https://drafts.csswg.org/css-lists-3/"
 				}
 			]
 		},
@@ -38975,6 +40739,10 @@
 			"definitions": [
 				{
 					"id": "funcdef-counters",
+					"spec": "https://drafts.csswg.org/css-lists-3/"
+				},
+				{
+					"id": "ref-for-funcdef-counters⑥",
 					"spec": "https://drafts.csswg.org/css-lists-3/"
 				}
 			]
@@ -38985,6 +40753,10 @@
 				{
 					"id": "funcdef-cross-fade",
 					"spec": "https://drafts.csswg.org/css-images-4/"
+				},
+				{
+					"id": "ref-for-funcdef-cross-fade④",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -39087,6 +40859,15 @@
 				{
 					"id": "funcdef-filter",
 					"spec": "https://drafts.fxtf.org/filter-effects-1/"
+				}
+			]
+		},
+		{
+			"name": "first-valid()",
+			"definitions": [
+				{
+					"id": "funcdef-first-valid",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -39275,6 +41056,15 @@
 			]
 		},
 		{
+			"name": "light-dark()",
+			"definitions": [
+				{
+					"id": "funcdef-light-dark",
+					"spec": "https://drafts.csswg.org/css-color-5/"
+				}
+			]
+		},
+		{
 			"name": "linear()",
 			"definitions": [
 				{
@@ -39350,6 +41140,15 @@
 			]
 		},
 		{
+			"name": "media-progress()",
+			"definitions": [
+				{
+					"id": "funcdef-media-progress",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
 			"name": "min()",
 			"definitions": [
 				{
@@ -39380,7 +41179,7 @@
 			"definitions": [
 				{
 					"id": "funcdef-mix",
-					"spec": "https://drafts.csswg.org/css-values-4/"
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -39394,15 +41193,6 @@
 				{
 					"id": "ref-for-funcdef-mod⑥",
 					"spec": "https://drafts.csswg.org/css-values-4/"
-				}
-			]
-		},
-		{
-			"name": "nth()",
-			"definitions": [
-				{
-					"id": "funcdef-nth",
-					"spec": "https://drafts.csswg.org/css-gcpm-3/"
 				}
 			]
 		},
@@ -39487,6 +41277,15 @@
 				{
 					"id": "ref-for-funcdef-pow④",
 					"spec": "https://drafts.csswg.org/css-values-4/"
+				}
+			]
+		},
+		{
+			"name": "progress()",
+			"definitions": [
+				{
+					"id": "funcdef-progress",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -39816,6 +41615,24 @@
 			]
 		},
 		{
+			"name": "sibling-count()",
+			"definitions": [
+				{
+					"id": "funcdef-sibling-count",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
+			"name": "sibling-index()",
+			"definitions": [
+				{
+					"id": "funcdef-sibling-index",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
 			"name": "sign()",
 			"definitions": [
 				{
@@ -39927,10 +41744,6 @@
 				{
 					"id": "funcdef-string",
 					"spec": "https://drafts.csswg.org/css-content-3/"
-				},
-				{
-					"id": "funcdef-string",
-					"spec": "https://drafts.csswg.org/css-gcpm-3/"
 				}
 			]
 		},
@@ -40010,6 +41823,15 @@
 			"definitions": [
 				{
 					"id": "funcdef-toggle",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
+			"name": "transform-mix()",
+			"definitions": [
+				{
+					"id": "funcdef-transform-mix",
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
@@ -40210,6 +42032,15 @@
 				{
 					"id": "sel-active",
 					"spec": "https://drafts.csswg.org/selectors-3/"
+				}
+			]
+		},
+		{
+			"name": ":active-view-transition()",
+			"definitions": [
+				{
+					"id": "active-view-transition-pseudo",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
 				}
 			]
 		},
@@ -40703,6 +42534,15 @@
 			]
 		},
 		{
+			"name": ":nth()",
+			"definitions": [
+				{
+					"id": "selectordef-nth",
+					"spec": "https://drafts.csswg.org/css-gcpm-3/"
+				}
+			]
+		},
+		{
 			"name": ":nth-child()",
 			"definitions": [
 				{
@@ -41076,6 +42916,10 @@
 			"name": ":user-invalid",
 			"definitions": [
 				{
+					"id": "selector-user-invalid",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
+				},
+				{
 					"id": "user-invalid-pseudo",
 					"spec": "https://drafts.csswg.org/selectors-4/"
 				}
@@ -41084,6 +42928,10 @@
 		{
 			"name": ":user-valid",
 			"definitions": [
+				{
+					"id": "selector-user-valid",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
+				},
 				{
 					"id": "user-valid-pseudo",
 					"spec": "https://drafts.csswg.org/selectors-4/"

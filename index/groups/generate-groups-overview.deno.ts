@@ -9,7 +9,7 @@ import { DOMParser as _DOMParser } from "https://deno.land/x/deno_dom@v0.1.38/de
 const DOMParser: typeof globalThis.DOMParser = _DOMParser;
 
 /*
-deno run --allow-net --allow-read --allow-write=. index/new/groups/generate-groups-overview.deno.ts
+deno run --allow-net --allow-read --allow-write=. index/groups/generate-groups-overview.deno.ts
 */
 
 const fetchOptions: RequestInit = { cache: "default" };

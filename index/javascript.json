@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Wed, 09 Aug 2023 17:21:41 GMT",
-		"iso": "2023-08-09T17:21:41.093Z",
-		"unixMillis": 1691601701093
+		"utc": "Fri, 08 Dec 2023 11:06:35 GMT",
+		"iso": "2023-12-08T11:06:35.467Z",
+		"unixMillis": 1702033595467
 	},
 	"jsInterfaces": [
 		{
@@ -1272,6 +1272,16 @@
 			]
 		},
 		{
+			"name": "CloseWatcher",
+			"definitions": [
+				{
+					"inheritance": "EventTarget",
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
+					"id": "closewatcher"
+				}
+			]
+		},
+		{
 			"name": "Color",
 			"definitions": [
 				{
@@ -1402,7 +1412,7 @@
 			"name": "ContextMenus",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "contextmenus"
 				}
 			]
@@ -1412,7 +1422,7 @@
 			"definitions": [
 				{
 					"inheritance": "HTMLElement",
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -2138,6 +2148,11 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "ref-for-cssrule"
+				},
+				{
+					"partial": true,
 					"spec": "https://drafts.csswg.org/css-animations-1/",
 					"id": "ref-for-cssrule"
 				},
@@ -2392,6 +2407,16 @@
 			]
 		},
 		{
+			"name": "CSSViewTransitionRule",
+			"definitions": [
+				{
+					"inheritance": "CSSRule",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "cssviewtransitionrule"
+				}
+			]
+		},
+		{
 			"name": "CustomElementRegistry",
 			"definitions": [
 				{
@@ -2591,6 +2616,11 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "ref-for-document"
+				},
+				{
+					"partial": true,
 					"spec": "https://fullscreen.spec.whatwg.org/",
 					"id": "ref-for-document"
 				},
@@ -2637,11 +2667,6 @@
 				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/css-regions-1/",
-					"id": "ref-for-document"
-				},
-				{
-					"partial": true,
-					"spec": "https://drafts.csswg.org/css-view-transitions-1/",
 					"id": "ref-for-document"
 				},
 				{
@@ -2955,12 +2980,12 @@
 				},
 				{
 					"partial": true,
-					"spec": "https://wicg.github.io/element-timing/",
+					"spec": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html",
 					"id": "ref-for-element"
 				},
 				{
 					"partial": true,
-					"spec": "https://wicg.github.io/sanitizer-api/",
+					"spec": "https://wicg.github.io/element-timing/",
 					"id": "ref-for-element"
 				},
 				{
@@ -3074,15 +3099,6 @@
 				{
 					"spec": "https://w3c.github.io/webcodecs/",
 					"id": "encodedvideochunk"
-				}
-			]
-		},
-		{
-			"name": "EnvironmentIntegrity",
-			"definitions": [
-				{
-					"spec": "https://rupertbenwiser.github.io/Web-Environment-Integrity/",
-					"id": "environmentintegrity"
 				}
 			]
 		},
@@ -4867,6 +4883,16 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://wicg.github.io/anonymous-iframe/",
+					"id": "ref-for-htmliframeelement"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/anonymous-iframe/",
+					"id": "ref-for-htmliframeelement"
+				},
+				{
+					"partial": true,
 					"spec": "https://wicg.github.io/trust-token-api/",
 					"id": "ref-for-htmliframeelement"
 				},
@@ -4884,11 +4910,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webappsec-cowl/",
 					"id": "ref-for-htmliframeelement"
-				},
-				{
-					"inheritance": "HTMLElement",
-					"spec": "https://wicg.github.io/anonymous-iframe/",
-					"id": "htmliframeelement"
 				}
 			]
 		},
@@ -5284,6 +5305,16 @@
 					"inheritance": "HTMLElement",
 					"spec": "https://html.spec.whatwg.org/multipage/form-elements.html",
 					"id": "htmlselectelement"
+				}
+			]
+		},
+		{
+			"name": "HTMLSharedStorageWritableElementUtils",
+			"mixin": true,
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/shared-storage/",
+					"id": "htmlsharedstoragewritableelementutils"
 				}
 			]
 		},
@@ -6453,6 +6484,15 @@
 			]
 		},
 		{
+			"name": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
+				}
+			]
+		},
+		{
 			"name": "MediaStreamTrackEvent",
 			"definitions": [
 				{
@@ -6482,6 +6522,15 @@
 				{
 					"spec": "https://alvestrand.github.io/mediacapture-transform/chrome-96.html",
 					"id": "mediastreamtrackprocessor"
+				}
+			]
+		},
+		{
+			"name": "MediaStreamTrackVideoStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackvideostats"
 				}
 			]
 		},
@@ -7120,12 +7169,27 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
 					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "ref-for-navigator"
 				},
 				{
 					"partial": true,
+					"spec": "https://w3c.github.io/audio-session/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
 					"spec": "https://webbluetoothcg.github.io/web-bluetooth/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/fenced-frame/",
 					"id": "ref-for-navigator"
 				},
 				{
@@ -7171,6 +7235,21 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/WebApiDevice/managed_config/",
 					"id": "ref-for-navigator"
 				},
 				{
@@ -7310,16 +7389,6 @@
 				},
 				{
 					"partial": true,
-					"spec": "https://w3c.github.io/audio-session/",
-					"id": "ref-for-navigator"
-				},
-				{
-					"partial": true,
-					"spec": "https://wicg.github.io/WebApiDevice/managed_config/",
-					"id": "ref-for-navigator"
-				},
-				{
-					"partial": true,
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "ref-for-navigator"
 				},
@@ -7331,11 +7400,6 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/web-smart-card/",
-					"id": "ref-for-navigator"
-				},
-				{
-					"partial": true,
-					"spec": "https://rupertbenwiser.github.io/Web-Environment-Integrity/",
 					"id": "ref-for-navigator"
 				}
 			]
@@ -7442,6 +7506,15 @@
 				{
 					"spec": "https://w3c.github.io/web-locks/",
 					"id": "navigatorlocks"
+				}
+			]
+		},
+		{
+			"name": "NavigatorLogin",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "navigatorlogin"
 				}
 			]
 		},
@@ -7835,6 +7908,16 @@
 			]
 		},
 		{
+			"name": "PageRevealEvent",
+			"definitions": [
+				{
+					"inheritance": "Event",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "pagerevealevent"
+				}
+			]
+		},
+		{
 			"name": "PageTransitionEvent",
 			"definitions": [
 				{
@@ -8075,6 +8158,16 @@
 					"inheritance": "PerformanceEntry",
 					"spec": "https://w3c.github.io/event-timing/",
 					"id": "performanceeventtiming"
+				}
+			]
+		},
+		{
+			"name": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"inheritance": "PerformanceEntry",
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
 				}
 			]
 		},
@@ -8867,6 +8960,11 @@
 				{
 					"spec": "https://fetch.spec.whatwg.org/",
 					"id": "request"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/private-network-access/",
+					"id": "ref-for-request"
 				}
 			]
 		},
@@ -8903,6 +9001,15 @@
 				{
 					"spec": "https://fetch.spec.whatwg.org/",
 					"id": "response"
+				}
+			]
+		},
+		{
+			"name": "RestrictionTarget",
+			"definitions": [
+				{
+					"spec": "https://screen-share.github.io/element-capture/",
+					"id": "dom-restrictiontarget"
 				}
 			]
 		},
@@ -9081,6 +9188,16 @@
 			]
 		},
 		{
+			"name": "RTCIceCandidatePairEvent",
+			"definitions": [
+				{
+					"inheritance": "Event",
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "rtcicecandidatepairevent"
+				}
+			]
+		},
+		{
 			"name": "RTCIceGatherer",
 			"definitions": [
 				{
@@ -9122,6 +9239,11 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webrtc-ice/",
 					"id": "idl-def-rtcicetransport-partial-1"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "ref-for-rtcicetransport"
 				},
 				{
 					"inheritance": "RTCStatsProvider",
@@ -9433,15 +9555,6 @@
 					"inheritance": "Event",
 					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
 					"id": "rtctransformevent"
-				}
-			]
-		},
-		{
-			"name": "Sanitizer",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "sanitizer"
 				}
 			]
 		},
@@ -9793,6 +9906,11 @@
 					"inheritance": "DocumentFragment",
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "shadowroot"
+				},
+				{
+					"partial": true,
+					"spec": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html",
+					"id": "ref-for-shadowroot"
 				}
 			]
 		},
@@ -11491,7 +11609,7 @@
 			"definitions": [
 				{
 					"inheritance": "Event",
-					"spec": "https://html.spec.whatwg.org/multipage/popover.html",
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "toggleevent"
 				}
 			]
@@ -11669,7 +11787,11 @@
 			"name": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -12490,6 +12612,15 @@
 			]
 		},
 		{
+			"name": "WebTransportSendGroup",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webtransport/",
+					"id": "webtransportsendgroup"
+				}
+			]
+		},
+		{
 			"name": "WebTransportSendStream",
 			"definitions": [
 				{
@@ -12548,6 +12679,16 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://wicg.github.io/anonymous-iframe/",
+					"id": "ref-for-window"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/anonymous-iframe/",
+					"id": "ref-for-window"
+				},
+				{
+					"partial": true,
 					"spec": "https://wicg.github.io/cookie-store/",
 					"id": "ref-for-window"
 				},
@@ -12584,6 +12725,11 @@
 				{
 					"partial": true,
 					"spec": "https://wicg.github.io/portals/",
+					"id": "ref-for-window"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/shared-storage/",
 					"id": "ref-for-window"
 				},
 				{
@@ -12645,11 +12791,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webappsec-suborigins/",
 					"id": "ref-for-window"
-				},
-				{
-					"inheritance": "EventTarget",
-					"spec": "https://wicg.github.io/anonymous-iframe/",
-					"id": "window"
 				}
 			]
 		},
@@ -13150,6 +13291,11 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
+					"id": "ref-for-xrframe"
+				},
+				{
+					"partial": true,
 					"spec": "https://immersive-web.github.io/real-world-meshing/",
 					"id": "ref-for-xrframe"
 				},
@@ -13176,16 +13322,6 @@
 				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/marker-tracking/",
-					"id": "ref-for-xrframe"
-				},
-				{
-					"partial": true,
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "ref-for-xrframe"
-				},
-				{
-					"partial": true,
-					"spec": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
 					"id": "ref-for-xrframe"
 				}
 			]
@@ -13366,15 +13502,6 @@
 			]
 		},
 		{
-			"name": "XRNearMesh",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "xrnearmesh"
-				}
-			]
-		},
-		{
 			"name": "XRPermissionStatus",
 			"definitions": [
 				{
@@ -13498,6 +13625,11 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
+					"id": "ref-for-xrsession"
+				},
+				{
+					"partial": true,
 					"spec": "https://immersive-web.github.io/webxr-ar-module/",
 					"id": "ref-for-xrsession"
 				},
@@ -13529,11 +13661,6 @@
 				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/marker-tracking/",
-					"id": "ref-for-xrsession"
-				},
-				{
-					"partial": true,
-					"spec": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
 					"id": "ref-for-xrsession"
 				}
 			]
@@ -13688,15 +13815,6 @@
 			]
 		},
 		{
-			"name": "XRWorldMesh",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "xrworldmesh"
-				}
-			]
-		},
-		{
 			"name": "XSLTProcessor",
 			"definitions": [
 				{
@@ -13713,24 +13831,6 @@
 				{
 					"spec": "https://w3c.github.io/webcodecs/aac_codec_registration.html",
 					"id": "dictdef-aacencoderconfig"
-				}
-			]
-		},
-		{
-			"name": "AbsoluteOrientationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/orientation-sensor/",
-					"id": "dictdef-absoluteorientationreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "AccelerometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/accelerometer/",
-					"id": "dictdef-accelerometerreadingvalues"
 				}
 			]
 		},
@@ -13861,15 +13961,6 @@
 			]
 		},
 		{
-			"name": "AmbientLightReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/ambient-light/",
-					"id": "dictdef-ambientlightreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "AnalyserOptions",
 			"definitions": [
 				{
@@ -13929,6 +14020,11 @@
 				{
 					"spec": "https://wicg.github.io/turtledove/",
 					"id": "dictdef-auctionadconfig"
+				},
+				{
+					"partial": true,
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "ref-for-dictdef-auctionadconfig"
 				}
 			]
 		},
@@ -13938,6 +14034,11 @@
 				{
 					"spec": "https://wicg.github.io/turtledove/",
 					"id": "dictdef-auctionadinterestgroup"
+				},
+				{
+					"partial": true,
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "ref-for-dictdef-auctionadinterestgroup"
 				}
 			]
 		},
@@ -14306,24 +14407,6 @@
 			]
 		},
 		{
-			"name": "AuthenticationExtensionsDevicePublicKeyInputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionsdevicepublickeyinputs"
-				}
-			]
-		},
-		{
-			"name": "AuthenticationExtensionsDevicePublicKeyOutputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionsdevicepublickeyoutputs"
-				}
-			]
-		},
-		{
 			"name": "AuthenticationExtensionsLargeBlobInputs",
 			"definitions": [
 				{
@@ -14374,6 +14457,24 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-authenticationextensionsprfvalues"
+				}
+			]
+		},
+		{
+			"name": "AuthenticationExtensionsSupplementalPubKeysInputs",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-authenticationextensionssupplementalpubkeysinputs"
+				}
+			]
+		},
+		{
+			"name": "AuthenticationExtensionsSupplementalPubKeysOutputs",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-authenticationextensionssupplementalpubkeysoutputs"
 				}
 			]
 		},
@@ -14792,11 +14893,29 @@
 			]
 		},
 		{
+			"name": "ClipboardUnsanitizedFormats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/clipboard-apis/",
+					"id": "dictdef-clipboardunsanitizedformats"
+				}
+			]
+		},
+		{
 			"name": "CloseEventInit",
 			"definitions": [
 				{
 					"spec": "https://websockets.spec.whatwg.org/",
 					"id": "dictdef-closeeventinit"
+				}
+			]
+		},
+		{
+			"name": "CloseWatcherOptions",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
+					"id": "dictdef-closewatcheroptions"
 				}
 			]
 		},
@@ -14998,7 +15117,7 @@
 			"name": "ContextMenusCreateProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenuscreateproperties"
 				}
 			]
@@ -15007,7 +15126,7 @@
 			"name": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -15305,11 +15424,20 @@
 			]
 		},
 		{
-			"name": "DevicePermissionDescriptor",
+			"name": "DirectFromSellerSignalsForBuyer",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "dom-devicepermissiondescriptor"
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-directfromsellersignalsforbuyer"
+				}
+			]
+		},
+		{
+			"name": "DirectFromSellerSignalsForSeller",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-directfromsellersignalsforseller"
 				}
 			]
 		},
@@ -15319,6 +15447,15 @@
 				{
 					"spec": "https://wicg.github.io/file-system-access/",
 					"id": "dictdef-directorypickeroptions"
+				}
+			]
+		},
+		{
+			"name": "DisconnectedAccount",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "dictdef-disconnectedaccount"
 				}
 			]
 		},
@@ -15945,15 +16082,6 @@
 			]
 		},
 		{
-			"name": "GeolocationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/geolocation-sensor/",
-					"id": "dictdef-geolocationreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "GeolocationSensorOptions",
 			"definitions": [
 				{
@@ -16557,24 +16685,6 @@
 			]
 		},
 		{
-			"name": "GravityReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/accelerometer/",
-					"id": "dictdef-gravityreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "GyroscopeReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/gyroscope/",
-					"id": "dictdef-gyroscopereadingvalues"
-				}
-			]
-		},
-		{
 			"name": "GyroscopeSensorOptions",
 			"definitions": [
 				{
@@ -16836,6 +16946,15 @@
 			]
 		},
 		{
+			"name": "IdentityCredentialDisconnectOptions",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "dictdef-identitycredentialdisconnectoptions"
+				}
+			]
+		},
+		{
 			"name": "IdentityCredentialRequestOptions",
 			"definitions": [
 				{
@@ -16904,6 +17023,15 @@
 				{
 					"spec": "https://fedidcg.github.io/FedCM/",
 					"id": "dictdef-identityprovidericon"
+				}
+			]
+		},
+		{
+			"name": "IdentityProviderRequestOptions",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "dictdef-identityproviderrequestoptions"
 				}
 			]
 		},
@@ -17216,15 +17344,6 @@
 			]
 		},
 		{
-			"name": "LinearAccelerationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/accelerometer/",
-					"id": "dictdef-linearaccelerationreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "LockInfo",
 			"definitions": [
 				{
@@ -17248,15 +17367,6 @@
 				{
 					"spec": "https://w3c.github.io/web-locks/",
 					"id": "dictdef-lockoptions"
-				}
-			]
-		},
-		{
-			"name": "MagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-magnetometerreadingvalues"
 				}
 			]
 		},
@@ -17365,6 +17475,15 @@
 				{
 					"spec": "https://w3c.github.io/encrypted-media/",
 					"id": "dom-mediakeymessageeventinit"
+				}
+			]
+		},
+		{
+			"name": "MediaKeysPolicy",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/encrypted-media/",
+					"id": "dom-mediakeyspolicy"
 				}
 			]
 		},
@@ -17554,6 +17673,11 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-extensions/",
 					"id": "ref-for-dictdef-mediatrackcapabilities"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatrackcapabilities"
 				}
 			]
 		},
@@ -17602,15 +17726,11 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-extensions/",
 					"id": "ref-for-dictdef-mediatrackconstraintset"
-				}
-			]
-		},
-		{
-			"name": "MediaTrackFrameStats",
-			"definitions": [
+				},
 				{
+					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "dictdef-mediatrackframestats"
+					"id": "ref-for-dictdef-mediatrackconstraintset"
 				}
 			]
 		},
@@ -17655,6 +17775,11 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-extensions/",
 					"id": "ref-for-dictdef-mediatracksettings"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatracksettings"
 				}
 			]
 		},
@@ -17674,6 +17799,11 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
 					"id": "idl-def-mediatracksupportedconstraints-partial-1"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatracksupportedconstraints"
 				},
 				{
 					"partial": true,
@@ -18098,33 +18228,6 @@
 			]
 		},
 		{
-			"name": "MockSensor",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensor"
-				}
-			]
-		},
-		{
-			"name": "MockSensorConfiguration",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensorconfiguration"
-				}
-			]
-		},
-		{
-			"name": "MockSensorReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensorreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "ModuleExportDescriptor",
 			"definitions": [
 				{
@@ -18385,7 +18488,7 @@
 			"name": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -19004,11 +19107,11 @@
 			]
 		},
 		{
-			"name": "ProximityReadingValues",
+			"name": "ProtectedAudiencePrivateAggregationConfig",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/proximity/",
-					"id": "dictdef-proximityreadingvalues"
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "dictdef-protectedaudienceprivateaggregationconfig"
 				}
 			]
 		},
@@ -19238,6 +19341,15 @@
 			]
 		},
 		{
+			"name": "ReadableStreamBYOBReaderReadOptions",
+			"definitions": [
+				{
+					"spec": "https://streams.spec.whatwg.org/",
+					"id": "dictdef-readablestreambyobreaderreadoptions"
+				}
+			]
+		},
+		{
 			"name": "ReadableStreamGetReaderOptions",
 			"definitions": [
 				{
@@ -19328,15 +19440,6 @@
 			]
 		},
 		{
-			"name": "RelativeOrientationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/orientation-sensor/",
-					"id": "dictdef-relativeorientationreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "ReportingBrowserSignals",
 			"definitions": [
 				{
@@ -19400,7 +19503,17 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://wicg.github.io/shared-storage/",
+					"id": "ref-for-dictdef-requestinit"
+				},
+				{
+					"partial": true,
 					"spec": "https://wicg.github.io/trust-token-api/",
+					"id": "ref-for-dictdef-requestinit"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/turtledove/",
 					"id": "ref-for-dictdef-requestinit"
 				}
 			]
@@ -19763,6 +19876,15 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcicecandidatepairchangedeventinit"
+				}
+			]
+		},
+		{
+			"name": "RTCIceCandidatePairEventInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "dictdef-rtcicecandidatepaireventinit"
 				}
 			]
 		},
@@ -20495,15 +20617,6 @@
 			]
 		},
 		{
-			"name": "SanitizerConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sanitizerconfig"
-				}
-			]
-		},
-		{
 			"name": "SaveFilePickerOptions",
 			"definitions": [
 				{
@@ -20675,15 +20788,6 @@
 			]
 		},
 		{
-			"name": "SetHTMLOptions",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sethtmloptions"
-				}
-			]
-		},
-		{
 			"name": "SFrameTransformErrorEventInit",
 			"definitions": [
 				{
@@ -20770,6 +20874,15 @@
 			]
 		},
 		{
+			"name": "SmartCardConnectOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/web-smart-card/",
+					"id": "dictdef-smartcardconnectoptions"
+				}
+			]
+		},
+		{
 			"name": "SmartCardConnectResult",
 			"definitions": [
 				{
@@ -20842,6 +20955,15 @@
 			]
 		},
 		{
+			"name": "SmartCardTransmitOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/web-smart-card/",
+					"id": "dictdef-smartcardtransmitoptions"
+				}
+			]
+		},
+		{
 			"name": "SpatialNavigationSearchOptions",
 			"definitions": [
 				{
@@ -20883,6 +21005,15 @@
 				{
 					"spec": "https://wicg.github.io/speech-api/",
 					"id": "dictdef-speechsynthesiseventinit"
+				}
+			]
+		},
+		{
+			"name": "StartViewTransitionOptions",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "dictdef-startviewtransitionoptions"
 				}
 			]
 		},
@@ -21097,7 +21228,7 @@
 			"name": "ToggleEventInit",
 			"definitions": [
 				{
-					"spec": "https://html.spec.whatwg.org/multipage/popover.html",
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "dictdef-toggleeventinit"
 				}
 			]
@@ -21275,15 +21406,6 @@
 			]
 		},
 		{
-			"name": "UncalibratedMagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-uncalibratedmagnetometerreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "UnderlyingSink",
 			"definitions": [
 				{
@@ -21305,7 +21427,11 @@
 			"name": "URLPatternComponentResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterncomponentresult"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterncomponentresult"
 				}
 			]
@@ -21314,7 +21440,11 @@
 			"name": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -21323,7 +21453,11 @@
 			"name": "URLPatternOptions",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternoptions"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternoptions"
 				}
 			]
@@ -21332,8 +21466,21 @@
 			"name": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
+				}
+			]
+		},
+		{
+			"name": "USBBlocklistEntry",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/webusb/",
+					"id": "dictdef-usbblocklistentry"
 				}
 			]
 		},
@@ -21689,6 +21836,15 @@
 			]
 		},
 		{
+			"name": "WebTransportConnectionStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webtransport/",
+					"id": "dictdef-webtransportconnectionstats"
+				}
+			]
+		},
+		{
 			"name": "WebTransportDatagramStats",
 			"definitions": [
 				{
@@ -21748,15 +21904,6 @@
 				{
 					"spec": "https://w3c.github.io/webtransport/",
 					"id": "dictdef-webtransportsendstreamstats"
-				}
-			]
-		},
-		{
-			"name": "WebTransportStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
 				}
 			]
 		},
@@ -21959,33 +22106,6 @@
 			]
 		},
 		{
-			"name": "XRMeshBlock",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrmeshblock"
-				}
-			]
-		},
-		{
-			"name": "XRMetadata",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrmetadata"
-				}
-			]
-		},
-		{
-			"name": "XRNearMeshFeature",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrnearmeshfeature"
-				}
-			]
-		},
-		{
 			"name": "XRPermissionDescriptor",
 			"definitions": [
 				{
@@ -22105,15 +22225,6 @@
 				{
 					"spec": "https://immersive-web.github.io/webxr/",
 					"id": "dictdef-xrwebgllayerinit"
-				}
-			]
-		},
-		{
-			"name": "XRWorldMeshFeature",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrworldmeshfeature"
 				}
 			]
 		}
@@ -22250,6 +22361,26 @@
 			]
 		},
 		{
+			"name": "account_id",
+			"dictionary": "DisconnectedAccount",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "dictdef-disconnectedaccount"
+				}
+			]
+		},
+		{
+			"name": "accountHint",
+			"dictionary": "IdentityCredentialDisconnectOptions",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "dictdef-identitycredentialdisconnectoptions"
+				}
+			]
+		},
+		{
 			"name": "accounts",
 			"dictionary": "IdentityProviderAccountList",
 			"definitions": [
@@ -22276,16 +22407,6 @@
 				{
 					"spec": "https://w3c.github.io/geolocation-sensor/",
 					"id": "dictdef-geolocationsensorreading"
-				}
-			]
-		},
-		{
-			"name": "accuracy",
-			"dictionary": "GeolocationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/geolocation-sensor/",
-					"id": "dictdef-geolocationreadingvalues"
 				}
 			]
 		},
@@ -22480,6 +22601,16 @@
 			]
 		},
 		{
+			"name": "adAuctionHeaders",
+			"dictionary": "RequestInit",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-dictdef-requestinit"
+				}
+			]
+		},
+		{
 			"name": "adComponents",
 			"dictionary": "GenerateBidInterestGroup",
 			"definitions": [
@@ -22536,6 +22667,26 @@
 				{
 					"spec": "https://immersive-web.github.io/webxr/",
 					"id": "dictdef-xrinputsourceschangeeventinit"
+				}
+			]
+		},
+		{
+			"name": "additionalBidKey",
+			"dictionary": "AuctionAdInterestGroup",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadinterestgroup"
+				}
+			]
+		},
+		{
+			"name": "additionalBids",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadconfig"
 				}
 			]
 		},
@@ -22670,6 +22821,26 @@
 			]
 		},
 		{
+			"name": "aggregationCoordinatorOrigin",
+			"dictionary": "SharedStoragePrivateAggregationConfig",
+			"definitions": [
+				{
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "dictdef-sharedstorageprivateaggregationconfig"
+				}
+			]
+		},
+		{
+			"name": "aggregationCoordinatorOrigin",
+			"dictionary": "ProtectedAudiencePrivateAggregationConfig",
+			"definitions": [
+				{
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "dictdef-protectedaudienceprivateaggregationconfig"
+				}
+			]
+		},
+		{
 			"name": "album",
 			"dictionary": "MediaMetadataInit",
 			"definitions": [
@@ -22730,26 +22901,6 @@
 			]
 		},
 		{
-			"name": "allowAttributes",
-			"dictionary": "SanitizerConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sanitizerconfig"
-				}
-			]
-		},
-		{
-			"name": "allowComments",
-			"dictionary": "SanitizerConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sanitizerconfig"
-				}
-			]
-		},
-		{
 			"name": "allowComponentAuction",
 			"dictionary": "GenerateBidOutput",
 			"definitions": [
@@ -22786,16 +22937,6 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-publickeycredentialrequestoptions"
-				}
-			]
-		},
-		{
-			"name": "allowCustomElements",
-			"dictionary": "SanitizerConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sanitizerconfig"
 				}
 			]
 		},
@@ -22840,6 +22981,16 @@
 			]
 		},
 		{
+			"name": "allowedReportingOrigins",
+			"dictionary": "AuctionAd",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionad"
+				}
+			]
+		},
+		{
 			"name": "allowedServices",
 			"dictionary": "AllowedBluetoothDevice",
 			"definitions": [
@@ -22850,32 +23001,12 @@
 			]
 		},
 		{
-			"name": "allowElements",
-			"dictionary": "SanitizerConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sanitizerconfig"
-				}
-			]
-		},
-		{
 			"name": "allowPooling",
 			"dictionary": "WebTransportOptions",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
 					"id": "dictdef-webtransportoptions"
-				}
-			]
-		},
-		{
-			"name": "allowUnknownMarkup",
-			"dictionary": "SanitizerConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sanitizerconfig"
 				}
 			]
 		},
@@ -23110,32 +23241,12 @@
 			]
 		},
 		{
-			"name": "altitude",
-			"dictionary": "GeolocationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/geolocation-sensor/",
-					"id": "dictdef-geolocationreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "altitudeAccuracy",
 			"dictionary": "GeolocationSensorReading",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/geolocation-sensor/",
 					"id": "dictdef-geolocationsensorreading"
-				}
-			]
-		},
-		{
-			"name": "altitudeAccuracy",
-			"dictionary": "GeolocationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/geolocation-sensor/",
-					"id": "dictdef-geolocationreadingvalues"
 				}
 			]
 		},
@@ -23571,6 +23682,16 @@
 		},
 		{
 			"name": "attestation",
+			"dictionary": "PublicKeyCredentialRequestOptionsJSON",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-publickeycredentialrequestoptionsjson"
+				}
+			]
+		},
+		{
+			"name": "attestation",
 			"dictionary": "PublicKeyCredentialCreationOptions",
 			"definitions": [
 				{
@@ -23591,11 +23712,31 @@
 		},
 		{
 			"name": "attestation",
-			"dictionary": "AuthenticationExtensionsDevicePublicKeyInputs",
+			"dictionary": "AuthenticationExtensionsSupplementalPubKeysInputs",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionsdevicepublickeyinputs"
+					"id": "dictdef-authenticationextensionssupplementalpubkeysinputs"
+				}
+			]
+		},
+		{
+			"name": "attestationFormats",
+			"dictionary": "PublicKeyCredentialCreationOptionsJSON",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-publickeycredentialcreationoptionsjson"
+				}
+			]
+		},
+		{
+			"name": "attestationFormats",
+			"dictionary": "PublicKeyCredentialRequestOptionsJSON",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-publickeycredentialrequestoptionsjson"
 				}
 			]
 		},
@@ -23621,11 +23762,11 @@
 		},
 		{
 			"name": "attestationFormats",
-			"dictionary": "AuthenticationExtensionsDevicePublicKeyInputs",
+			"dictionary": "AuthenticationExtensionsSupplementalPubKeysInputs",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionsdevicepublickeyinputs"
+					"id": "dictdef-authenticationextensionssupplementalpubkeysinputs"
 				}
 			]
 		},
@@ -23636,6 +23777,16 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-authenticatorattestationresponsejson"
+				}
+			]
+		},
+		{
+			"name": "attestationObject",
+			"dictionary": "AuthenticatorAssertionResponseJSON",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-authenticatorassertionresponsejson"
 				}
 			]
 		},
@@ -23700,12 +23851,42 @@
 			]
 		},
 		{
+			"name": "auctionNonce",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
 			"name": "auctionSignals",
 			"dictionary": "AuctionAdConfig",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/turtledove/",
 					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
+			"name": "auctionSignals",
+			"dictionary": "DirectFromSellerSignalsForBuyer",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-directfromsellersignalsforbuyer"
+				}
+			]
+		},
+		{
+			"name": "auctionSignals",
+			"dictionary": "DirectFromSellerSignalsForSeller",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-directfromsellersignalsforseller"
 				}
 			]
 		},
@@ -23886,6 +24067,16 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-authenticatorassertionresponsejson"
+				}
+			]
+		},
+		{
+			"name": "authenticatorDisplayName",
+			"dictionary": "CredentialPropertiesOutput",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-credentialpropertiesoutput"
 				}
 			]
 		},
@@ -24290,16 +24481,6 @@
 			]
 		},
 		{
-			"name": "backgroundColor",
-			"dictionary": "TextFormatInit",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-textformatinit"
-				}
-			]
-		},
-		{
 			"name": "backgroundTimeout",
 			"dictionary": "PendingBeaconOptions",
 			"definitions": [
@@ -24384,7 +24565,7 @@
 			"dictionary": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -24396,6 +24577,16 @@
 				{
 					"spec": "https://drafts.csswg.org/cssom-1/",
 					"id": "dictdef-cssstylesheetinit"
+				}
+			]
+		},
+		{
+			"name": "baseURL",
+			"dictionary": "URLPatternInit",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
 				}
 			]
 		},
@@ -24416,6 +24607,16 @@
 				{
 					"spec": "https://wicg.github.io/serial/",
 					"id": "dom-serialoptions"
+				}
+			]
+		},
+		{
+			"name": "bcdDevice",
+			"dictionary": "USBBlocklistEntry",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/webusb/",
+					"id": "dictdef-usbblocklistentry"
 				}
 			]
 		},
@@ -24880,16 +25081,6 @@
 			]
 		},
 		{
-			"name": "blockElements",
-			"dictionary": "SanitizerConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sanitizerconfig"
-				}
-			]
-		},
-		{
 			"name": "blockFragmentationOffset",
 			"dictionary": "LayoutConstraintsOptions",
 			"definitions": [
@@ -25076,16 +25267,6 @@
 				{
 					"spec": "https://wicg.github.io/ua-client-hints/",
 					"id": "dictdef-ualowentropyjson"
-				}
-			]
-		},
-		{
-			"name": "breadth",
-			"dictionary": "XRWorldMeshFeature",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrworldmeshfeature"
 				}
 			]
 		},
@@ -25470,6 +25651,16 @@
 			]
 		},
 		{
+			"name": "bytesLost",
+			"dictionary": "WebTransportConnectionStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webtransport/",
+					"id": "dictdef-webtransportconnectionstats"
+				}
+			]
+		},
+		{
 			"name": "bytesPerRow",
 			"dictionary": "GPUImageDataLayout",
 			"definitions": [
@@ -25531,11 +25722,11 @@
 		},
 		{
 			"name": "bytesReceived",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -25591,11 +25782,11 @@
 		},
 		{
 			"name": "bytesSent",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -25666,6 +25857,16 @@
 				{
 					"spec": "https://streams.spec.whatwg.org/",
 					"id": "dictdef-underlyingsource"
+				}
+			]
+		},
+		{
+			"name": "cancel",
+			"dictionary": "Transformer",
+			"definitions": [
+				{
+					"spec": "https://streams.spec.whatwg.org/",
+					"id": "dictdef-transformer"
 				}
 			]
 		},
@@ -26148,7 +26349,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -26158,7 +26359,7 @@
 			"dictionary": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -26490,6 +26691,16 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcrtpcodecparameters"
+				}
+			]
+		},
+		{
+			"name": "clonable",
+			"dictionary": "ShadowRootInit",
+			"definitions": [
+				{
+					"spec": "https://dom.spec.whatwg.org/",
+					"id": "dictdef-shadowrootinit"
 				}
 			]
 		},
@@ -27022,6 +27233,16 @@
 			]
 		},
 		{
+			"name": "compilationHints",
+			"dictionary": "GPUShaderModuleDescriptor",
+			"definitions": [
+				{
+					"spec": "https://gpuweb.github.io/gpuweb/",
+					"id": "dictdef-gpushadermoduledescriptor"
+				}
+			]
+		},
+		{
 			"name": "complete",
 			"dictionary": "ImageDecodeResult",
 			"definitions": [
@@ -27342,16 +27563,6 @@
 			]
 		},
 		{
-			"name": "connected",
-			"dictionary": "MockSensorConfiguration",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensorconfiguration"
-				}
-			]
-		},
-		{
 			"name": "connection",
 			"dictionary": "PresentationConnectionAvailableEventInit",
 			"definitions": [
@@ -27428,6 +27639,16 @@
 				{
 					"spec": "https://drafts.csswg.org/css-nav-1/",
 					"id": "dictdef-spatialnavigationsearchoptions"
+				}
+			]
+		},
+		{
+			"name": "contentHint",
+			"dictionary": "VideoEncoderConfig",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webcodecs/",
+					"id": "dictdef-videoencoderconfig"
 				}
 			]
 		},
@@ -27516,7 +27737,7 @@
 			"dictionary": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -28437,11 +28658,11 @@
 		},
 		{
 			"name": "datagrams",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -28492,6 +28713,16 @@
 				{
 					"spec": "https://w3c.github.io/input-events/",
 					"id": "idl-def-inputeventinit-partial-1"
+				}
+			]
+		},
+		{
+			"name": "dataType",
+			"dictionary": "MLOperandDescriptor",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mloperanddescriptor"
 				}
 			]
 		},
@@ -28706,16 +28937,6 @@
 				{
 					"spec": "https://wicg.github.io/cookie-store/",
 					"id": "dictdef-extendablecookiechangeeventinit"
-				}
-			]
-		},
-		{
-			"name": "deliveredFrames",
-			"dictionary": "MediaTrackFrameStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "dictdef-mediatrackframestats"
 				}
 			]
 		},
@@ -28970,6 +29191,16 @@
 			]
 		},
 		{
+			"name": "depthSlice",
+			"dictionary": "GPURenderPassColorAttachment",
+			"definitions": [
+				{
+					"spec": "https://gpuweb.github.io/gpuweb/",
+					"id": "dictdef-gpurenderpasscolorattachment"
+				}
+			]
+		},
+		{
 			"name": "depthStencil",
 			"dictionary": "GPURenderPipelineDescriptor",
 			"definitions": [
@@ -29141,6 +29372,16 @@
 		},
 		{
 			"name": "destination",
+			"dictionary": "FenceEvent",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/fenced-frame/",
+					"id": "dictdef-fenceevent"
+				}
+			]
+		},
+		{
+			"name": "destinationURL",
 			"dictionary": "FenceEvent",
 			"definitions": [
 				{
@@ -29380,42 +29621,12 @@
 			]
 		},
 		{
-			"name": "deviceId",
-			"dictionary": "DevicePermissionDescriptor",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/mediacapture-main/",
-					"id": "dom-devicepermissiondescriptor"
-				}
-			]
-		},
-		{
 			"name": "devicePreference",
 			"dictionary": "MLContextOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/model-loader/",
 					"id": "dictdef-mlcontextoptions"
-				}
-			]
-		},
-		{
-			"name": "devicePubKey",
-			"dictionary": "AuthenticationExtensionsClientInputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
-				}
-			]
-		},
-		{
-			"name": "devicePubKey",
-			"dictionary": "AuthenticationExtensionsClientOutputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
 				}
 			]
 		},
@@ -29540,7 +29751,7 @@
 			]
 		},
 		{
-			"name": "directFromSellerSignals",
+			"name": "directFromSellerSignalsHeaderAdSlot",
 			"dictionary": "AuctionAdConfig",
 			"definitions": [
 				{
@@ -29650,12 +29861,12 @@
 			]
 		},
 		{
-			"name": "discardedFrames",
-			"dictionary": "MediaTrackFrameStats",
+			"name": "disconnect_endpoint",
+			"dictionary": "IdentityProviderAPIConfig",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "dictdef-mediatrackframestats"
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "dictdef-identityproviderapiconfig"
 				}
 			]
 		},
@@ -29890,16 +30101,6 @@
 			]
 		},
 		{
-			"name": "distance",
-			"dictionary": "ProximityReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/proximity/",
-					"id": "dictdef-proximityreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "distanceModel",
 			"dictionary": "PannerOptions",
 			"definitions": [
@@ -29944,7 +30145,7 @@
 			"dictionary": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -30060,26 +30261,6 @@
 			]
 		},
 		{
-			"name": "dropAttributes",
-			"dictionary": "SanitizerConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sanitizerconfig"
-				}
-			]
-		},
-		{
-			"name": "dropElements",
-			"dictionary": "SanitizerConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sanitizerconfig"
-				}
-			]
-		},
-		{
 			"name": "droppedEntriesCount",
 			"dictionary": "PerformanceObserverCallbackOptions",
 			"definitions": [
@@ -30176,16 +30357,6 @@
 				{
 					"spec": "https://fetch.spec.whatwg.org/",
 					"id": "dictdef-requestinit"
-				}
-			]
-		},
-		{
-			"name": "durability",
-			"dictionary": "StorageBucketOptions",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/storage-buckets/",
-					"id": "dictdef-storagebucketoptions"
 				}
 			]
 		},
@@ -30454,7 +30625,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -30594,7 +30765,7 @@
 			"dictionary": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -30905,6 +31076,16 @@
 		},
 		{
 			"name": "entryPoint",
+			"dictionary": "GPUShaderModuleCompilationHint",
+			"definitions": [
+				{
+					"spec": "https://gpuweb.github.io/gpuweb/",
+					"id": "dictdef-gpushadermodulecompilationhint"
+				}
+			]
+		},
+		{
+			"name": "entryPoint",
 			"dictionary": "GPUProgrammableStage",
 			"definitions": [
 				{
@@ -31155,11 +31336,11 @@
 		},
 		{
 			"name": "estimatedSendRate",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -31708,6 +31889,46 @@
 			]
 		},
 		{
+			"name": "eyeGazeCorrection",
+			"dictionary": "MediaTrackSupportedConstraints",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatracksupportedconstraints"
+				}
+			]
+		},
+		{
+			"name": "eyeGazeCorrection",
+			"dictionary": "MediaTrackCapabilities",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatrackcapabilities"
+				}
+			]
+		},
+		{
+			"name": "eyeGazeCorrection",
+			"dictionary": "MediaTrackConstraintSet",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatrackconstraintset"
+				}
+			]
+		},
+		{
+			"name": "eyeGazeCorrection",
+			"dictionary": "MediaTrackSettings",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatracksettings"
+				}
+			]
+		},
+		{
 			"name": "f",
 			"dictionary": "DOMMatrix2DInit",
 			"definitions": [
@@ -32109,6 +32330,26 @@
 		},
 		{
 			"name": "filters",
+			"dictionary": "BluetoothLEScanOptions",
+			"definitions": [
+				{
+					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
+					"id": "dictdef-bluetoothlescanoptions"
+				}
+			]
+		},
+		{
+			"name": "filters",
+			"dictionary": "BluetoothLEScanPermissionDescriptor",
+			"definitions": [
+				{
+					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
+					"id": "dictdef-bluetoothlescanpermissiondescriptor"
+				}
+			]
+		},
+		{
+			"name": "filters",
 			"dictionary": "SerialPortRequestOptions",
 			"definitions": [
 				{
@@ -32144,26 +32385,6 @@
 				{
 					"spec": "https://wicg.github.io/webusb/",
 					"id": "dictdef-usbpermissiondescriptor"
-				}
-			]
-		},
-		{
-			"name": "filters",
-			"dictionary": "BluetoothLEScanOptions",
-			"definitions": [
-				{
-					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
-					"id": "dictdef-bluetoothlescanoptions"
-				}
-			]
-		},
-		{
-			"name": "filters",
-			"dictionary": "BluetoothLEScanPermissionDescriptor",
-			"definitions": [
-				{
-					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
-					"id": "dictdef-bluetoothlescanpermissiondescriptor"
 				}
 			]
 		},
@@ -32852,7 +33073,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -33082,7 +33303,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -33476,7 +33697,7 @@
 			"dictionary": "URLPatternComponentResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterncomponentresult"
 				}
 			]
@@ -33498,6 +33719,16 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlconvtranspose2doptions"
+				}
+			]
+		},
+		{
+			"name": "groups",
+			"dictionary": "URLPatternComponentResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterncomponentresult"
 				}
 			]
 		},
@@ -33596,7 +33827,7 @@
 			"dictionary": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -33606,7 +33837,7 @@
 			"dictionary": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
 				}
 			]
@@ -33702,6 +33933,26 @@
 			]
 		},
 		{
+			"name": "hash",
+			"dictionary": "URLPatternInit",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
+				}
+			]
+		},
+		{
+			"name": "hash",
+			"dictionary": "URLPatternResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
+				}
+			]
+		},
+		{
 			"name": "hashChange",
 			"dictionary": "NavigateEventInit",
 			"definitions": [
@@ -33728,6 +33979,26 @@
 				{
 					"spec": "https://wicg.github.io/webhid/",
 					"id": "dom-hidreportitem"
+				}
+			]
+		},
+		{
+			"name": "hasUAVisualTransition",
+			"dictionary": "NavigateEventInit",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "dictdef-navigateeventinit"
+				}
+			]
+		},
+		{
+			"name": "hasUAVisualTransition",
+			"dictionary": "PopStateEventInit",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "dictdef-popstateeventinit"
 				}
 			]
 		},
@@ -33832,16 +34103,6 @@
 				{
 					"spec": "https://w3c.github.io/geolocation-sensor/",
 					"id": "dictdef-geolocationsensorreading"
-				}
-			]
-		},
-		{
-			"name": "heading",
-			"dictionary": "GeolocationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/geolocation-sensor/",
-					"id": "dictdef-geolocationreadingvalues"
 				}
 			]
 		},
@@ -34006,16 +34267,6 @@
 			]
 		},
 		{
-			"name": "height",
-			"dictionary": "XRWorldMeshFeature",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrworldmeshfeature"
-				}
-			]
-		},
-		{
 			"name": "held",
 			"dictionary": "LockManagerSnapshot",
 			"definitions": [
@@ -34087,11 +34338,41 @@
 		},
 		{
 			"name": "hints",
-			"dictionary": "GPUShaderModuleDescriptor",
+			"dictionary": "PublicKeyCredentialCreationOptionsJSON",
 			"definitions": [
 				{
-					"spec": "https://gpuweb.github.io/gpuweb/",
-					"id": "dictdef-gpushadermoduledescriptor"
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-publickeycredentialcreationoptionsjson"
+				}
+			]
+		},
+		{
+			"name": "hints",
+			"dictionary": "PublicKeyCredentialRequestOptionsJSON",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-publickeycredentialrequestoptionsjson"
+				}
+			]
+		},
+		{
+			"name": "hints",
+			"dictionary": "PublicKeyCredentialCreationOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-publickeycredentialcreationoptions"
+				}
+			]
+		},
+		{
+			"name": "hints",
+			"dictionary": "PublicKeyCredentialRequestOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-publickeycredentialrequestoptions"
 				}
 			]
 		},
@@ -34170,7 +34451,7 @@
 			"dictionary": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -34180,7 +34461,27 @@
 			"dictionary": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
+				}
+			]
+		},
+		{
+			"name": "hostname",
+			"dictionary": "URLPatternInit",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
+				}
+			]
+		},
+		{
+			"name": "hostname",
+			"dictionary": "URLPatternResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
 				}
 			]
@@ -34744,7 +35045,7 @@
 			"dictionary": "ContextMenusCreateProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenuscreateproperties"
 				}
 			]
@@ -34850,6 +35151,26 @@
 			]
 		},
 		{
+			"name": "idProduct",
+			"dictionary": "USBBlocklistEntry",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/webusb/",
+					"id": "dictdef-usbblocklistentry"
+				}
+			]
+		},
+		{
+			"name": "idVendor",
+			"dictionary": "USBBlocklistEntry",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/webusb/",
+					"id": "dictdef-usbblocklistentry"
+				}
+			]
+		},
+		{
 			"name": "ifAvailable",
 			"dictionary": "LockOptions",
 			"definitions": [
@@ -34894,7 +35215,11 @@
 			"dictionary": "URLPatternOptions",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternoptions"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternoptions"
 				}
 			]
@@ -34946,16 +35271,6 @@
 				{
 					"spec": "https://w3c.github.io/ServiceWorker/",
 					"id": "dictdef-cachequeryoptions"
-				}
-			]
-		},
-		{
-			"name": "illuminance",
-			"dictionary": "AmbientLightReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/ambient-light/",
-					"id": "dictdef-ambientlightreadingvalues"
 				}
 			]
 		},
@@ -35106,16 +35421,6 @@
 				{
 					"spec": "https://wicg.github.io/webusb/",
 					"id": "dictdef-usbcontroltransferparameters"
-				}
-			]
-		},
-		{
-			"name": "indices",
-			"dictionary": "XRMeshBlock",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrmeshblock"
 				}
 			]
 		},
@@ -35304,7 +35609,11 @@
 			"dictionary": "URLPatternComponentResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterncomponentresult"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterncomponentresult"
 				}
 			]
@@ -35354,7 +35663,7 @@
 			"dictionary": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
 				}
 			]
@@ -35366,6 +35675,16 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlcomputeresult"
+				}
+			]
+		},
+		{
+			"name": "inputs",
+			"dictionary": "URLPatternResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -36040,6 +36359,16 @@
 			]
 		},
 		{
+			"name": "kAnonStatus",
+			"dictionary": "ReportWinBrowserSignals",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-reportwinbrowsersignals"
+				}
+			]
+		},
+		{
 			"name": "keepAlive",
 			"dictionary": "SharedStorageRunOperationMethodOptions",
 			"definitions": [
@@ -36680,16 +37009,6 @@
 			]
 		},
 		{
-			"name": "latitude",
-			"dictionary": "GeolocationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/geolocation-sensor/",
-					"id": "dictdef-geolocationreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "layer",
 			"dictionary": "XRLayerEventInit",
 			"definitions": [
@@ -37014,7 +37333,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -37046,7 +37365,23 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcicecandidatepair"
-				},
+				}
+			]
+		},
+		{
+			"name": "local",
+			"dictionary": "RTCIceCandidatePairEventInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "dictdef-rtcicecandidatepaireventinit"
+				}
+			]
+		},
+		{
+			"name": "local",
+			"dictionary": "RTCIceCandidatePair",
+			"definitions": [
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcicecandidatepair"
@@ -37224,12 +37559,22 @@
 			]
 		},
 		{
-			"name": "loginHint",
-			"dictionary": "IdentityProviderConfig",
+			"name": "login_url",
+			"dictionary": "IdentityProviderAPIConfig",
 			"definitions": [
 				{
 					"spec": "https://fedidcg.github.io/FedCM/",
-					"id": "dictdef-identityproviderconfig"
+					"id": "dictdef-identityproviderapiconfig"
+				}
+			]
+		},
+		{
+			"name": "loginHint",
+			"dictionary": "IdentityProviderRequestOptions",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "dictdef-identityproviderrequestoptions"
 				}
 			]
 		},
@@ -37240,16 +37585,6 @@
 				{
 					"spec": "https://w3c.github.io/geolocation-sensor/",
 					"id": "dictdef-geolocationsensorreading"
-				}
-			]
-		},
-		{
-			"name": "longitude",
-			"dictionary": "GeolocationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/geolocation-sensor/",
-					"id": "dictdef-geolocationreadingvalues"
 				}
 			]
 		},
@@ -37605,16 +37940,6 @@
 		},
 		{
 			"name": "max",
-			"dictionary": "ProximityReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/proximity/",
-					"id": "dictdef-proximityreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "max",
 			"dictionary": "ColorSpaceCoordinate",
 			"definitions": [
 				{
@@ -37846,26 +38171,6 @@
 			]
 		},
 		{
-			"name": "maxSamplingFrequency",
-			"dictionary": "MockSensorConfiguration",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensorconfiguration"
-				}
-			]
-		},
-		{
-			"name": "maxSamplingFrequency",
-			"dictionary": "MockSensor",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensor"
-				}
-			]
-		},
-		{
 			"name": "maxSpatialLayers",
 			"dictionary": "RTCRtpCodecCapability",
 			"definitions": [
@@ -38030,7 +38335,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -38040,7 +38345,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -38277,6 +38582,26 @@
 		},
 		{
 			"name": "mimeType",
+			"dictionary": "RTCEncodedVideoFrameMetadata",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
+					"id": "dictdef-rtcencodedvideoframemetadata"
+				}
+			]
+		},
+		{
+			"name": "mimeType",
+			"dictionary": "RTCEncodedAudioFrameMetadata",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
+					"id": "dictdef-rtcencodedaudioframemetadata"
+				}
+			]
+		},
+		{
+			"name": "mimeType",
 			"dictionary": "RTCCodecStats",
 			"definitions": [
 				{
@@ -38312,6 +38637,16 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcrtpcodecparameters"
+				}
+			]
+		},
+		{
+			"name": "min",
+			"dictionary": "ReadableStreamBYOBReaderReadOptions",
+			"definitions": [
+				{
+					"spec": "https://streams.spec.whatwg.org/",
+					"id": "dictdef-readablestreambyobreaderreadoptions"
 				}
 			]
 		},
@@ -38396,6 +38731,16 @@
 			]
 		},
 		{
+			"name": "minHdcpVersion",
+			"dictionary": "MediaKeysPolicy",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/encrypted-media/",
+					"id": "dom-mediakeyspolicy"
+				}
+			]
+		},
+		{
 			"name": "minInterval",
 			"dictionary": "BackgroundSyncOptions",
 			"definitions": [
@@ -38417,31 +38762,11 @@
 		},
 		{
 			"name": "minRtt",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
-				}
-			]
-		},
-		{
-			"name": "minSamplingFrequency",
-			"dictionary": "MockSensorConfiguration",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensorconfiguration"
-				}
-			]
-		},
-		{
-			"name": "minSamplingFrequency",
-			"dictionary": "MockSensor",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensor"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -38532,16 +38857,6 @@
 				{
 					"spec": "https://wicg.github.io/ua-client-hints/",
 					"id": "dictdef-ualowentropyjson"
-				}
-			]
-		},
-		{
-			"name": "mockSensorType",
-			"dictionary": "MockSensorConfiguration",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensorconfiguration"
 				}
 			]
 		},
@@ -38902,6 +39217,16 @@
 				{
 					"spec": "https://w3c.github.io/webcrypto/",
 					"id": "dom-rsakeyalgorithm"
+				}
+			]
+		},
+		{
+			"name": "monitorTypeSurfaces",
+			"dictionary": "DisplayMediaStreamOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-screen-share/",
+					"id": "dom-displaymediastreamoptions"
 				}
 			]
 		},
@@ -39466,26 +39791,6 @@
 			]
 		},
 		{
-			"name": "near",
-			"dictionary": "ProximityReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/proximity/",
-					"id": "dictdef-proximityreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "nearMesh",
-			"dictionary": "XRMetadata",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrmetadata"
-				}
-			]
-		},
-		{
 			"name": "negotiated",
 			"dictionary": "RTCDataChannelInit",
 			"definitions": [
@@ -39540,7 +39845,7 @@
 			"dictionary": "ToggleEventInit",
 			"definitions": [
 				{
-					"spec": "https://html.spec.whatwg.org/multipage/popover.html",
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "dictdef-toggleeventinit"
 				}
 			]
@@ -39637,21 +39942,11 @@
 		},
 		{
 			"name": "nonce",
-			"dictionary": "IdentityProviderConfig",
+			"dictionary": "IdentityProviderRequestOptions",
 			"definitions": [
 				{
 					"spec": "https://fedidcg.github.io/FedCM/",
-					"id": "dictdef-identityproviderconfig"
-				}
-			]
-		},
-		{
-			"name": "normals",
-			"dictionary": "XRMeshBlock",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrmeshblock"
+					"id": "dictdef-identityproviderrequestoptions"
 				}
 			]
 		},
@@ -39762,26 +40057,6 @@
 				{
 					"spec": "https://webaudio.github.io/web-audio-api/",
 					"id": "dictdef-audioworkletnodeoptions"
-				}
-			]
-		},
-		{
-			"name": "numIncomingStreamsCreated",
-			"dictionary": "WebTransportStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
-				}
-			]
-		},
-		{
-			"name": "numOutgoingStreamsCreated",
-			"dictionary": "WebTransportStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
 				}
 			]
 		},
@@ -39960,7 +40235,7 @@
 			"dictionary": "ToggleEventInit",
 			"definitions": [
 				{
-					"spec": "https://html.spec.whatwg.org/multipage/popover.html",
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "dictdef-toggleeventinit"
 				}
 			]
@@ -40016,11 +40291,21 @@
 			]
 		},
 		{
+			"name": "once",
+			"dictionary": "FenceEvent",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/fenced-frame/",
+					"id": "dictdef-fenceevent"
+				}
+			]
+		},
+		{
 			"name": "onclick",
 			"dictionary": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -40657,11 +40942,11 @@
 		},
 		{
 			"name": "packetsLost",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -40697,11 +40982,11 @@
 		},
 		{
 			"name": "packetsReceived",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -40747,11 +41032,11 @@
 		},
 		{
 			"name": "packetsSent",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -40790,7 +41075,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -40970,7 +41255,7 @@
 			"dictionary": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -40980,7 +41265,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -41070,7 +41355,7 @@
 			"dictionary": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -41080,7 +41365,7 @@
 			"dictionary": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
 				}
 			]
@@ -41130,6 +41415,26 @@
 			]
 		},
 		{
+			"name": "password",
+			"dictionary": "URLPatternInit",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
+				}
+			]
+		},
+		{
+			"name": "password",
+			"dictionary": "URLPatternResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
+				}
+			]
+		},
+		{
 			"name": "path",
 			"dictionary": "CookieInit",
 			"definitions": [
@@ -41164,7 +41469,7 @@
 			"dictionary": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -41174,7 +41479,27 @@
 			"dictionary": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
+				}
+			]
+		},
+		{
+			"name": "pathname",
+			"dictionary": "URLPatternInit",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
+				}
+			]
+		},
+		{
+			"name": "pathname",
+			"dictionary": "URLPatternResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
 				}
 			]
@@ -41540,6 +41865,16 @@
 			]
 		},
 		{
+			"name": "perBuyerCumulativeTimeouts",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
 			"name": "perBuyerCurrencies",
 			"dictionary": "AuctionAdConfig",
 			"definitions": [
@@ -41586,6 +41921,16 @@
 				{
 					"spec": "https://wicg.github.io/turtledove/",
 					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
+			"name": "perBuyerSignals",
+			"dictionary": "DirectFromSellerSignalsForBuyer",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-directfromsellersignalsforbuyer"
 				}
 			]
 		},
@@ -42004,7 +42349,7 @@
 			"dictionary": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -42014,7 +42359,7 @@
 			"dictionary": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
 				}
 			]
@@ -42066,6 +42411,26 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcicecandidate"
+				}
+			]
+		},
+		{
+			"name": "port",
+			"dictionary": "URLPatternInit",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
+				}
+			]
+		},
+		{
+			"name": "port",
+			"dictionary": "URLPatternResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -42320,6 +42685,16 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcrtpcodeccapability"
+				}
+			]
+		},
+		{
+			"name": "preferredProtocols",
+			"dictionary": "SmartCardConnectOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/web-smart-card/",
+					"id": "dictdef-smartcardconnectoptions"
 				}
 			]
 		},
@@ -42714,6 +43089,26 @@
 			]
 		},
 		{
+			"name": "privateAggregationConfig",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "ref-for-dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
+			"name": "privateAggregationConfig",
+			"dictionary": "AuctionAdInterestGroup",
+			"definitions": [
+				{
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "ref-for-dictdef-auctionadinterestgroup"
+				}
+			]
+		},
+		{
 			"name": "privateKey",
 			"dictionary": "CryptoKeyPair",
 			"definitions": [
@@ -42838,7 +43233,7 @@
 			"dictionary": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -42848,7 +43243,7 @@
 			"dictionary": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
 				}
 			]
@@ -42930,6 +43325,36 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcdatachannelparameters"
+				}
+			]
+		},
+		{
+			"name": "protocol",
+			"dictionary": "SmartCardTransmitOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/web-smart-card/",
+					"id": "dictdef-smartcardtransmitoptions"
+				}
+			]
+		},
+		{
+			"name": "protocol",
+			"dictionary": "URLPatternInit",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
+				}
+			]
+		},
+		{
+			"name": "protocol",
+			"dictionary": "URLPatternResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -43234,26 +43659,6 @@
 			]
 		},
 		{
-			"name": "quality",
-			"dictionary": "XRWorldMeshFeature",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrworldmeshfeature"
-				}
-			]
-		},
-		{
-			"name": "quality",
-			"dictionary": "XRNearMeshFeature",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrnearmeshfeature"
-				}
-			]
-		},
-		{
 			"name": "qualityLimitationDurations",
 			"dictionary": "RTCOutboundRtpStreamStats",
 			"definitions": [
@@ -43320,16 +43725,6 @@
 				{
 					"spec": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
 					"id": "dictdef-videoencoderencodeoptionsforvp9"
-				}
-			]
-		},
-		{
-			"name": "quaternion",
-			"dictionary": "AbsoluteOrientationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/orientation-sensor/",
-					"id": "dictdef-absoluteorientationreadingvalues"
 				}
 			]
 		},
@@ -44264,7 +44659,23 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcicecandidatepair"
-				},
+				}
+			]
+		},
+		{
+			"name": "remote",
+			"dictionary": "RTCIceCandidatePairEventInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "dictdef-rtcicecandidatepaireventinit"
+				}
+			]
+		},
+		{
+			"name": "remote",
+			"dictionary": "RTCIceCandidatePair",
+			"definitions": [
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcicecandidatepair"
@@ -44358,6 +44769,26 @@
 				{
 					"spec": "https://webaudio.github.io/web-audio-api/",
 					"id": "dictdef-offlineaudiocompletioneventinit"
+				}
+			]
+		},
+		{
+			"name": "renderSizeHint",
+			"dictionary": "AudioContextOptions",
+			"definitions": [
+				{
+					"spec": "https://webaudio.github.io/web-audio-api/",
+					"id": "dictdef-audiocontextoptions"
+				}
+			]
+		},
+		{
+			"name": "renderSizeHint",
+			"dictionary": "OfflineAudioContextOptions",
+			"definitions": [
+				{
+					"spec": "https://webaudio.github.io/web-audio-api/",
+					"id": "dictdef-offlineaudiocontextoptions"
 				}
 			]
 		},
@@ -44538,16 +44969,6 @@
 				{
 					"spec": "https://privacycg.github.io/requestStorageAccessFor/",
 					"id": "dictdef-toplevelstorageaccesspermissiondescriptor"
-				}
-			]
-		},
-		{
-			"name": "requestedSamplingFrequency",
-			"dictionary": "MockSensor",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/sensors/",
-					"id": "dictdef-mocksensor"
 				}
 			]
 		},
@@ -45497,6 +45918,26 @@
 		},
 		{
 			"name": "rtpTimestamp",
+			"dictionary": "RTCEncodedVideoFrameMetadata",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
+					"id": "dictdef-rtcencodedvideoframemetadata"
+				}
+			]
+		},
+		{
+			"name": "rtpTimestamp",
+			"dictionary": "RTCEncodedAudioFrameMetadata",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
+					"id": "dictdef-rtcencodedaudioframemetadata"
+				}
+			]
+		},
+		{
+			"name": "rtpTimestamp",
 			"dictionary": "RTCRtpContributingSource",
 			"definitions": [
 				{
@@ -45507,11 +45948,11 @@
 		},
 		{
 			"name": "rttVariation",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -45542,10 +45983,6 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-stats/",
 					"id": "dom-rtcoutboundrtpstreamstats"
-				},
-				{
-					"spec": "https://w3c.github.io/webrtc-provisional-stats/",
-					"id": "ref-for-dictdef-rtcoutboundrtpstreamstats"
 				}
 			]
 		},
@@ -45890,16 +46327,6 @@
 			]
 		},
 		{
-			"name": "sanitizer",
-			"dictionary": "SetHTMLOptions",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "dictdef-sethtmloptions"
-				}
-			]
-		},
-		{
 			"name": "saturation",
 			"dictionary": "MediaTrackSupportedConstraints",
 			"definitions": [
@@ -46070,6 +46497,16 @@
 			]
 		},
 		{
+			"name": "scopes",
+			"dictionary": "AuthenticationExtensionsSupplementalPubKeysInputs",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-authenticationextensionssupplementalpubkeysinputs"
+				}
+			]
+		},
+		{
 			"name": "screen",
 			"dictionary": "FullscreenOptions",
 			"definitions": [
@@ -46126,6 +46563,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
 					"id": "dictdef-navigationinterceptoptions"
+				}
+			]
+		},
+		{
+			"name": "scrollMargin",
+			"dictionary": "IntersectionObserverInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/IntersectionObserver/",
+					"id": "dictdef-intersectionobserverinit"
 				}
 			]
 		},
@@ -46214,7 +46661,7 @@
 			"dictionary": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -46224,7 +46671,27 @@
 			"dictionary": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
+				}
+			]
+		},
+		{
+			"name": "search",
+			"dictionary": "URLPatternInit",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
+				}
+			]
+		},
+		{
+			"name": "search",
+			"dictionary": "URLPatternResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
 				}
 			]
@@ -46364,7 +46831,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -46440,6 +46907,16 @@
 			]
 		},
 		{
+			"name": "sellerSignals",
+			"dictionary": "DirectFromSellerSignalsForSeller",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-directfromsellersignalsforseller"
+				}
+			]
+		},
+		{
 			"name": "sellerTimeout",
 			"dictionary": "AuctionAdConfig",
 			"definitions": [
@@ -46486,6 +46963,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-provisional-stats/",
 					"id": "dictdef-rtcrtptransceiverstats"
+				}
+			]
+		},
+		{
+			"name": "sendGroup",
+			"dictionary": "WebTransportSendStreamOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webtransport/",
+					"id": "dictdef-webtransportsendstreamoptions"
 				}
 			]
 		},
@@ -46650,6 +47137,16 @@
 			]
 		},
 		{
+			"name": "sharedStorageWritable",
+			"dictionary": "RequestInit",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/shared-storage/",
+					"id": "ref-for-dictdef-requestinit"
+				}
+			]
+		},
+		{
 			"name": "sharpness",
 			"dictionary": "MediaTrackSupportedConstraints",
 			"definitions": [
@@ -46786,6 +47283,16 @@
 				{
 					"spec": "https://fetch.spec.whatwg.org/",
 					"id": "dictdef-requestinit"
+				}
+			]
+		},
+		{
+			"name": "signal",
+			"dictionary": "CloseWatcherOptions",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
+					"id": "dictdef-closewatcheroptions"
 				}
 			]
 		},
@@ -46960,12 +47467,12 @@
 			]
 		},
 		{
-			"name": "signature",
-			"dictionary": "AuthenticationExtensionsDevicePublicKeyOutputs",
+			"name": "signatures",
+			"dictionary": "AuthenticationExtensionsSupplementalPubKeysOutputs",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionsdevicepublickeyoutputs"
+					"id": "dictdef-authenticationextensionssupplementalpubkeysoutputs"
 				}
 			]
 		},
@@ -47171,11 +47678,11 @@
 		},
 		{
 			"name": "smoothedRtt",
-			"dictionary": "WebTransportStats",
+			"dictionary": "WebTransportConnectionStats",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
+					"id": "dictdef-webtransportconnectionstats"
 				}
 			]
 		},
@@ -47400,16 +47907,6 @@
 			]
 		},
 		{
-			"name": "speed",
-			"dictionary": "GeolocationReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/geolocation-sensor/",
-					"id": "dictdef-geolocationreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "src",
 			"dictionary": "MemoryAttributionContainer",
 			"definitions": [
@@ -47454,7 +47951,7 @@
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -48280,6 +48777,26 @@
 			]
 		},
 		{
+			"name": "supplementalPubKeys",
+			"dictionary": "AuthenticationExtensionsClientInputs",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
+				}
+			]
+		},
+		{
+			"name": "supplementalPubKeys",
+			"dictionary": "AuthenticationExtensionsClientOutputs",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
+				}
+			]
+		},
+		{
 			"name": "support",
 			"dictionary": "AuthenticationExtensionsLargeBlobInputs",
 			"definitions": [
@@ -48734,7 +49251,7 @@
 			"dictionary": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -48846,16 +49363,6 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingrecognizerqueryresult"
-				}
-			]
-		},
-		{
-			"name": "textColor",
-			"dictionary": "TextFormatInit",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-textformatinit"
 				}
 			]
 		},
@@ -49321,56 +49828,6 @@
 		},
 		{
 			"name": "timestamp",
-			"dictionary": "WebTransportStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportstats"
-				}
-			]
-		},
-		{
-			"name": "timestamp",
-			"dictionary": "WebTransportDatagramStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportdatagramstats"
-				}
-			]
-		},
-		{
-			"name": "timestamp",
-			"dictionary": "WebTransportSendStreamStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportsendstreamstats"
-				}
-			]
-		},
-		{
-			"name": "timestamp",
-			"dictionary": "WebTransportReceiveStreamStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webtransport/",
-					"id": "dictdef-webtransportreceivestreamstats"
-				}
-			]
-		},
-		{
-			"name": "timestamp",
-			"dictionary": "MediaTrackFrameStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "dictdef-mediatrackframestats"
-				}
-			]
-		},
-		{
-			"name": "timestamp",
 			"dictionary": "RTCRtpContributingSource",
 			"definitions": [
 				{
@@ -49474,7 +49931,7 @@
 			"dictionary": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -49954,16 +50411,6 @@
 			]
 		},
 		{
-			"name": "totalFrames",
-			"dictionary": "MediaTrackFrameStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "dictdef-mediatrackframestats"
-				}
-			]
-		},
-		{
 			"name": "totalFramesDuration",
 			"dictionary": "RTCVideoReceiverStats",
 			"definitions": [
@@ -50325,6 +50772,26 @@
 		},
 		{
 			"name": "transfer",
+			"dictionary": "EncodedAudioChunkInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webcodecs/",
+					"id": "dictdef-encodedaudiochunkinit"
+				}
+			]
+		},
+		{
+			"name": "transfer",
+			"dictionary": "EncodedVideoChunkInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webcodecs/",
+					"id": "dictdef-encodedvideochunkinit"
+				}
+			]
+		},
+		{
+			"name": "transfer",
 			"dictionary": "AudioDataInit",
 			"definitions": [
 				{
@@ -50620,6 +51087,16 @@
 				{
 					"spec": "https://webbluetoothcg.github.io/web-bluetooth/",
 					"id": "dictdef-bluetoothadvertisingeventinit"
+				}
+			]
+		},
+		{
+			"name": "type",
+			"dictionary": "StartViewTransitionOptions",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "dictdef-startviewtransitionoptions"
 				}
 			]
 		},
@@ -50935,16 +51412,6 @@
 		},
 		{
 			"name": "type",
-			"dictionary": "MLOperandDescriptor",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "dictdef-mloperanddescriptor"
-				}
-			]
-		},
-		{
-			"name": "type",
 			"dictionary": "RTCSessionDescriptionInit",
 			"definitions": [
 				{
@@ -51048,7 +51515,7 @@
 			"dictionary": "ContextMenusProperties",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
 				}
 			]
@@ -51170,16 +51637,6 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "dictdef-gpuprimitivestate"
-				}
-			]
-		},
-		{
-			"name": "underlineColor",
-			"dictionary": "TextFormatInit",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-textformatinit"
 				}
 			]
 		},
@@ -51320,6 +51777,46 @@
 				{
 					"spec": "https://wicg.github.io/web-smart-card/",
 					"id": "dictdef-smartcardreaderstateflagsout"
+				}
+			]
+		},
+		{
+			"name": "unpowered",
+			"dictionary": "SmartCardReaderStateFlagsIn",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/web-smart-card/",
+					"id": "dictdef-smartcardreaderstateflagsin"
+				}
+			]
+		},
+		{
+			"name": "unpowered",
+			"dictionary": "SmartCardReaderStateFlagsOut",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/web-smart-card/",
+					"id": "dictdef-smartcardreaderstateflagsout"
+				}
+			]
+		},
+		{
+			"name": "unsanitized",
+			"dictionary": "ClipboardUnsanitizedFormats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/clipboard-apis/",
+					"id": "dictdef-clipboardunsanitizedformats"
+				}
+			]
+		},
+		{
+			"name": "update",
+			"dictionary": "StartViewTransitionOptions",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "dictdef-startviewtransitionoptions"
 				}
 			]
 		},
@@ -51872,7 +52369,7 @@
 			"dictionary": "URLPatternInit",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
 				}
 			]
@@ -51882,7 +52379,7 @@
 			"dictionary": "URLPatternResult",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
 				}
 			]
@@ -51898,6 +52395,26 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtciceserver"
+				}
+			]
+		},
+		{
+			"name": "username",
+			"dictionary": "URLPatternInit",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatterninit"
+				}
+			]
+		},
+		{
+			"name": "username",
+			"dictionary": "URLPatternResult",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -52206,16 +52723,6 @@
 			]
 		},
 		{
-			"name": "variant",
-			"dictionary": "FontFaceDescriptors",
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-font-loading-3/",
-					"id": "dictdef-fontfacedescriptors"
-				}
-			]
-		},
-		{
 			"name": "variationSettings",
 			"dictionary": "FontFaceDescriptors",
 			"definitions": [
@@ -52302,16 +52809,6 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "dictdef-gpurenderpipelinedescriptor"
-				}
-			]
-		},
-		{
-			"name": "vertices",
-			"dictionary": "XRMeshBlock",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrmeshblock"
 				}
 			]
 		},
@@ -52656,11 +53153,21 @@
 			]
 		},
 		{
+			"name": "waitUntilAvailable",
+			"dictionary": "WebTransportSendStreamOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webtransport/",
+					"id": "dictdef-webtransportsendstreamoptions"
+				}
+			]
+		},
+		{
 			"name": "wasChecked",
 			"dictionary": "OnClickData",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
 				}
 			]
@@ -52926,16 +53433,6 @@
 			]
 		},
 		{
-			"name": "width",
-			"dictionary": "XRWorldMeshFeature",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrworldmeshfeature"
-				}
-			]
-		},
-		{
 			"name": "widthInMeters",
 			"dictionary": "XRTrackedImageInit",
 			"definitions": [
@@ -52992,16 +53489,6 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/server-sent-events.html",
 					"id": "dictdef-eventsourceinit"
-				}
-			]
-		},
-		{
-			"name": "worldMesh",
-			"dictionary": "XRMetadata",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "dictdef-xrmetadata"
 				}
 			]
 		},
@@ -53097,16 +53584,6 @@
 		},
 		{
 			"name": "x",
-			"dictionary": "AccelerometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/accelerometer/",
-					"id": "dictdef-accelerometerreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "x",
 			"dictionary": "DOMPointInit",
 			"definitions": [
 				{
@@ -53127,41 +53604,11 @@
 		},
 		{
 			"name": "x",
-			"dictionary": "GyroscopeReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/gyroscope/",
-					"id": "dictdef-gyroscopereadingvalues"
-				}
-			]
-		},
-		{
-			"name": "x",
 			"dictionary": "Point2D",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-image/",
 					"id": "dictdef-point2d"
-				}
-			]
-		},
-		{
-			"name": "x",
-			"dictionary": "MagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-magnetometerreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "x",
-			"dictionary": "UncalibratedMagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-uncalibratedmagnetometerreadingvalues"
 				}
 			]
 		},
@@ -53222,16 +53669,6 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingpoint"
-				}
-			]
-		},
-		{
-			"name": "xBias",
-			"dictionary": "UncalibratedMagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-uncalibratedmagnetometerreadingvalues"
 				}
 			]
 		},
@@ -53247,16 +53684,6 @@
 		},
 		{
 			"name": "y",
-			"dictionary": "AccelerometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/accelerometer/",
-					"id": "dictdef-accelerometerreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "y",
 			"dictionary": "DOMPointInit",
 			"definitions": [
 				{
@@ -53277,41 +53704,11 @@
 		},
 		{
 			"name": "y",
-			"dictionary": "GyroscopeReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/gyroscope/",
-					"id": "dictdef-gyroscopereadingvalues"
-				}
-			]
-		},
-		{
-			"name": "y",
 			"dictionary": "Point2D",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/mediacapture-image/",
 					"id": "dictdef-point2d"
-				}
-			]
-		},
-		{
-			"name": "y",
-			"dictionary": "MagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-magnetometerreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "y",
-			"dictionary": "UncalibratedMagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-uncalibratedmagnetometerreadingvalues"
 				}
 			]
 		},
@@ -53376,62 +53773,12 @@
 			]
 		},
 		{
-			"name": "yBias",
-			"dictionary": "UncalibratedMagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-uncalibratedmagnetometerreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "z",
-			"dictionary": "AccelerometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/accelerometer/",
-					"id": "dictdef-accelerometerreadingvalues"
-				}
-			]
-		},
-		{
 			"name": "z",
 			"dictionary": "DOMPointInit",
 			"definitions": [
 				{
 					"spec": "https://drafts.fxtf.org/geometry-1/",
 					"id": "dictdef-dompointinit"
-				}
-			]
-		},
-		{
-			"name": "z",
-			"dictionary": "GyroscopeReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/gyroscope/",
-					"id": "dictdef-gyroscopereadingvalues"
-				}
-			]
-		},
-		{
-			"name": "z",
-			"dictionary": "MagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-magnetometerreadingvalues"
-				}
-			]
-		},
-		{
-			"name": "z",
-			"dictionary": "UncalibratedMagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-uncalibratedmagnetometerreadingvalues"
 				}
 			]
 		},
@@ -53462,16 +53809,6 @@
 				{
 					"spec": "https://immersive-web.github.io/hit-test/",
 					"id": "dictdef-xrraydirectioninit"
-				}
-			]
-		},
-		{
-			"name": "zBias",
-			"dictionary": "UncalibratedMagnetometerReadingValues",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/magnetometer/",
-					"id": "dictdef-uncalibratedmagnetometerreadingvalues"
 				}
 			]
 		},
@@ -53750,6 +54087,16 @@
 		},
 		{
 			"name": "active",
+			"interface": "BluetoothLEScan",
+			"definitions": [
+				{
+					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
+					"id": "bluetoothlescan"
+				}
+			]
+		},
+		{
+			"name": "active",
 			"interface": "MediaStream",
 			"definitions": [
 				{
@@ -53765,16 +54112,6 @@
 				{
 					"spec": "https://w3c.github.io/ServiceWorker/",
 					"id": "serviceworkerregistration"
-				}
-			]
-		},
-		{
-			"name": "active",
-			"interface": "BluetoothLEScan",
-			"definitions": [
-				{
-					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
-					"id": "bluetoothlescan"
 				}
 			]
 		},
@@ -54281,7 +54618,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -54301,7 +54638,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -54311,7 +54648,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -55831,16 +56168,6 @@
 			]
 		},
 		{
-			"name": "attestationToken",
-			"interface": "EnvironmentIntegrity",
-			"definitions": [
-				{
-					"spec": "https://rupertbenwiser.github.io/Web-Environment-Integrity/",
-					"id": "environmentintegrity"
-				}
-			]
-		},
-		{
 			"name": "attrChange",
 			"interface": "MutationEvent",
 			"definitions": [
@@ -56126,7 +56453,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -56188,6 +56515,16 @@
 				{
 					"spec": "https://drafts.csswg.org/cssom-view-1/",
 					"id": "screen"
+				}
+			]
+		},
+		{
+			"name": "averageLatency",
+			"interface": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
 				}
 			]
 		},
@@ -56389,16 +56726,6 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/obsolete.html",
 					"id": "ref-for-htmlbodyelement"
-				}
-			]
-		},
-		{
-			"name": "backgroundColor",
-			"interface": "TextFormat",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-textformat"
 				}
 			]
 		},
@@ -56972,6 +57299,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/scripting.html",
 					"id": "htmlscriptelement"
+				}
+			]
+		},
+		{
+			"name": "blockingDuration",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
 				}
 			]
 		},
@@ -59769,46 +60106,6 @@
 			]
 		},
 		{
-			"name": "compositionEnd",
-			"interface": "TextUpdateEvent",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-textupdateevent"
-				}
-			]
-		},
-		{
-			"name": "compositionRangeEnd",
-			"interface": "EditContext",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-editcontext"
-				}
-			]
-		},
-		{
-			"name": "compositionRangeStart",
-			"interface": "EditContext",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-editcontext"
-				}
-			]
-		},
-		{
-			"name": "compositionStart",
-			"interface": "TextUpdateEvent",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-textupdateevent"
-				}
-			]
-		},
-		{
 			"name": "COMPRESSED_R11_EAC",
 			"interface": "WEBGL_compressed_texture_etc",
 			"static": true,
@@ -61050,7 +61347,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -61081,7 +61378,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -61103,16 +61400,6 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/forms.html",
 					"id": "htmllabelelement"
-				}
-			]
-		},
-		{
-			"name": "controlBounds",
-			"interface": "EditContext",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-editcontext"
 				}
 			]
 		},
@@ -61411,7 +61698,7 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/anonymous-iframe/",
-					"id": "htmliframeelement"
+					"id": "ref-for-htmliframeelement"
 				}
 			]
 		},
@@ -61421,7 +61708,27 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/anonymous-iframe/",
-					"id": "window"
+					"id": "ref-for-window"
+				}
+			]
+		},
+		{
+			"name": "credentialless",
+			"interface": "HTMLIFrameElement",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/anonymous-iframe/",
+					"id": "ref-for-htmliframeelement"
+				}
+			]
+		},
+		{
+			"name": "credentialless",
+			"interface": "Window",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/anonymous-iframe/",
+					"id": "ref-for-window"
 				}
 			]
 		},
@@ -62710,6 +63017,36 @@
 			]
 		},
 		{
+			"name": "deliveredFrames",
+			"interface": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
+				}
+			]
+		},
+		{
+			"name": "deliveredFrames",
+			"interface": "MediaStreamTrackVideoStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackvideostats"
+				}
+			]
+		},
+		{
+			"name": "deliveredFramesDuration",
+			"interface": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
+				}
+			]
+		},
+		{
 			"name": "deliveryType",
 			"interface": "PerformanceResourceTiming",
 			"definitions": [
@@ -63237,7 +63574,7 @@
 			]
 		},
 		{
-			"name": "detectedMeshs",
+			"name": "detectedMeshes",
 			"interface": "XRFrame",
 			"definitions": [
 				{
@@ -63794,6 +64131,16 @@
 				{
 					"spec": "https://w3c.github.io/remote-playback/",
 					"id": "idl-def-htmlmediaelement-partial-1"
+				}
+			]
+		},
+		{
+			"name": "discardedFrames",
+			"interface": "MediaStreamTrackVideoStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackvideostats"
 				}
 			]
 		},
@@ -68509,7 +68856,11 @@
 			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -68551,6 +68902,40 @@
 				{
 					"spec": "https://w3c.github.io/sensors/",
 					"id": "sensor"
+				}
+			]
+		},
+		{
+			"name": "hasRegExpGroups",
+			"interface": "URLPattern",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				}
+			]
+		},
+		{
+			"name": "hasUAVisualTransition",
+			"interface": "NavigateEvent",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "navigateevent"
+				}
+			]
+		},
+		{
+			"name": "hasUAVisualTransition",
+			"interface": "PopStateEvent",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "popstateevent"
 				}
 			]
 		},
@@ -69279,7 +69664,11 @@
 			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -69785,6 +70174,16 @@
 				{
 					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentrequest"
+				}
+			]
+		},
+		{
+			"name": "id",
+			"interface": "PerformanceEntry",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/performance-timeline/",
+					"id": "dom-performanceentry"
 				}
 			]
 		},
@@ -71311,16 +71710,6 @@
 		},
 		{
 			"name": "isComposing",
-			"interface": "EditContext",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-editcontext"
-				}
-			]
-		},
-		{
-			"name": "isComposing",
 			"interface": "InputEvent",
 			"definitions": [
 				{
@@ -72365,21 +72754,21 @@
 		},
 		{
 			"name": "lastChangedTime",
-			"interface": "XRMesh",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-meshing/",
-					"id": "xrmesh"
-				}
-			]
-		},
-		{
-			"name": "lastChangedTime",
 			"interface": "XRPlane",
 			"definitions": [
 				{
 					"spec": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
 					"id": "xrplane"
+				}
+			]
+		},
+		{
+			"name": "lastChangedTime",
+			"interface": "XRMesh",
+			"definitions": [
+				{
+					"spec": "https://immersive-web.github.io/real-world-meshing/",
+					"id": "xrmesh"
 				}
 			]
 		},
@@ -72464,6 +72853,16 @@
 			]
 		},
 		{
+			"name": "latency",
+			"interface": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
+				}
+			]
+		},
+		{
 			"name": "latitude",
 			"interface": "GeolocationSensor",
 			"definitions": [
@@ -72520,6 +72919,26 @@
 				{
 					"spec": "https://immersive-web.github.io/layers/",
 					"id": "ref-for-xrrenderstate"
+				}
+			]
+		},
+		{
+			"name": "layerX",
+			"interface": "MouseEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/uievents/",
+					"id": "mouseevent"
+				}
+			]
+		},
+		{
+			"name": "layerY",
+			"interface": "MouseEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/uievents/",
+					"id": "mouseevent"
 				}
 			]
 		},
@@ -73733,6 +74152,16 @@
 			]
 		},
 		{
+			"name": "local",
+			"interface": "RTCIceCandidatePairEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "rtcicecandidatepairevent"
+				}
+			]
+		},
+		{
 			"name": "localDescription",
 			"interface": "RTCPeerConnection",
 			"definitions": [
@@ -73869,6 +74298,16 @@
 				{
 					"spec": "https://w3c.github.io/web-locks/",
 					"id": "navigatorlocks"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"interface": "Navigator",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "ref-for-navigator"
 				}
 			]
 		},
@@ -75494,8 +75933,18 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
+				}
+			]
+		},
+		{
+			"name": "maximumLatency",
+			"interface": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
 				}
 			]
 		},
@@ -75744,7 +76193,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -76207,16 +76656,6 @@
 			]
 		},
 		{
-			"name": "metaData",
-			"interface": "XRFrame",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-					"id": "ref-for-xrframe"
-				}
-			]
-		},
-		{
 			"name": "metadata",
 			"interface": "MediaSession",
 			"definitions": [
@@ -76454,8 +76893,18 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
+				}
+			]
+		},
+		{
+			"name": "minimumLatency",
+			"interface": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
 				}
 			]
 		},
@@ -76524,7 +76973,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -76974,6 +77423,16 @@
 		},
 		{
 			"name": "name",
+			"interface": "HTMLDetailsElement",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html",
+					"id": "htmldetailselement"
+				}
+			]
+		},
+		{
+			"name": "name",
 			"interface": "HTMLSlotElement",
 			"definitions": [
 				{
@@ -77119,6 +77578,16 @@
 				{
 					"spec": "https://webbluetoothcg.github.io/web-bluetooth/",
 					"id": "bluetoothadvertisingevent"
+				}
+			]
+		},
+		{
+			"name": "name",
+			"interface": "BluetoothLEScanFilter",
+			"definitions": [
+				{
+					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
+					"id": "bluetoothlescanfilter"
 				}
 			]
 		},
@@ -77444,16 +77913,6 @@
 		},
 		{
 			"name": "name",
-			"interface": "BluetoothLEScanFilter",
-			"definitions": [
-				{
-					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
-					"id": "bluetoothlescanfilter"
-				}
-			]
-		},
-		{
-			"name": "name",
 			"interface": "ColorSpace",
 			"definitions": [
 				{
@@ -77467,7 +77926,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -77617,6 +78076,16 @@
 		},
 		{
 			"name": "navigation",
+			"interface": "CSSViewTransitionRule",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "cssviewtransitionrule"
+				}
+			]
+		},
+		{
+			"name": "navigation",
 			"interface": "Window",
 			"definitions": [
 				{
@@ -77632,6 +78101,16 @@
 				{
 					"spec": "https://w3c.github.io/navigation-timing/",
 					"id": "idl-def-performance-partial-1"
+				}
+			]
+		},
+		{
+			"name": "navigationId",
+			"interface": "PerformanceEntry",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/performance-timeline/",
+					"id": "dom-performanceentry"
 				}
 			]
 		},
@@ -77859,7 +78338,7 @@
 			"interface": "ToggleEvent",
 			"definitions": [
 				{
-					"spec": "https://html.spec.whatwg.org/multipage/popover.html",
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "toggleevent"
 				}
 			]
@@ -78602,7 +79081,7 @@
 			"interface": "ToggleEvent",
 			"definitions": [
 				{
-					"spec": "https://html.spec.whatwg.org/multipage/popover.html",
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "toggleevent"
 				}
 			]
@@ -79093,6 +79572,16 @@
 		},
 		{
 			"name": "oncancel",
+			"interface": "CloseWatcher",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
+					"id": "closewatcher"
+				}
+			]
+		},
+		{
+			"name": "oncancel",
 			"interface": "GlobalEventHandlers",
 			"definitions": [
 				{
@@ -79368,6 +79857,16 @@
 				{
 					"spec": "https://notifications.spec.whatwg.org/",
 					"id": "notification"
+				}
+			]
+		},
+		{
+			"name": "onclose",
+			"interface": "CloseWatcher",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
+					"id": "closewatcher"
 				}
 			]
 		},
@@ -80679,6 +81178,36 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcpeerconnection"
+				}
+			]
+		},
+		{
+			"name": "onicecandidatepairadd",
+			"interface": "RTCIceTransport",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "ref-for-rtcicetransport"
+				}
+			]
+		},
+		{
+			"name": "onicecandidatepairnominate",
+			"interface": "RTCIceTransport",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "ref-for-rtcicetransport"
+				}
+			]
+		},
+		{
+			"name": "onicecandidatepairremove",
+			"interface": "RTCIceTransport",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "ref-for-rtcicetransport"
 				}
 			]
 		},
@@ -82572,6 +83101,16 @@
 		},
 		{
 			"name": "onstatechange",
+			"interface": "AudioSession",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/audio-session/",
+					"id": "audiosession"
+				}
+			]
+		},
+		{
+			"name": "onstatechange",
 			"interface": "ServiceWorker",
 			"definitions": [
 				{
@@ -82637,16 +83176,6 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcsctptransport"
-				}
-			]
-		},
-		{
-			"name": "onstatechange",
-			"interface": "AudioSession",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/audio-session/",
-					"id": "audiosession"
 				}
 			]
 		},
@@ -83445,6 +83974,16 @@
 		},
 		{
 			"name": "orientation",
+			"interface": "XRPlane",
+			"definitions": [
+				{
+					"spec": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
+					"id": "xrplane"
+				}
+			]
+		},
+		{
+			"name": "orientation",
 			"interface": "GamepadPose",
 			"definitions": [
 				{
@@ -83480,16 +84019,6 @@
 				{
 					"spec": "https://immersive-web.github.io/layers/",
 					"id": "xrcubelayer"
-				}
-			]
-		},
-		{
-			"name": "orientation",
-			"interface": "XRPlane",
-			"definitions": [
-				{
-					"spec": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
-					"id": "xrplane"
 				}
 			]
 		},
@@ -84260,7 +84789,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -84290,7 +84819,7 @@
 			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -84302,6 +84831,16 @@
 				{
 					"spec": "https://w3c.github.io/webappsec-credential-management/",
 					"id": "passwordcredential"
+				}
+			]
+		},
+		{
+			"name": "password",
+			"interface": "URLPattern",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
 				}
 			]
 		},
@@ -84360,7 +84899,11 @@
 			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -85250,7 +85793,7 @@
 			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -85332,6 +85875,16 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "rtcsctptransport"
+				}
+			]
+		},
+		{
+			"name": "port",
+			"interface": "URLPattern",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
 				}
 			]
 		},
@@ -86210,21 +86763,21 @@
 		},
 		{
 			"name": "protocol",
-			"interface": "WebSocket",
+			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://websockets.spec.whatwg.org/",
-					"id": "websocket"
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
 				}
 			]
 		},
 		{
 			"name": "protocol",
-			"interface": "URLPattern",
+			"interface": "WebSocket",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
-					"id": "urlpattern"
+					"spec": "https://websockets.spec.whatwg.org/",
+					"id": "websocket"
 				}
 			]
 		},
@@ -86255,6 +86808,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcdatachannel"
+				}
+			]
+		},
+		{
+			"name": "protocol",
+			"interface": "URLPattern",
+			"definitions": [
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
 				}
 			]
 		},
@@ -88028,6 +88591,16 @@
 			]
 		},
 		{
+			"name": "remote",
+			"interface": "RTCIceCandidatePairEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "rtcicecandidatepairevent"
+				}
+			]
+		},
+		{
 			"name": "remoteDescription",
 			"interface": "RTCPeerConnection",
 			"definitions": [
@@ -88259,6 +88832,36 @@
 				{
 					"spec": "https://drafts.csswg.org/css-color-5/",
 					"id": "csscolorprofilerule"
+				}
+			]
+		},
+		{
+			"name": "renderQuantumSize",
+			"interface": "BaseAudioContext",
+			"definitions": [
+				{
+					"spec": "https://webaudio.github.io/web-audio-api/",
+					"id": "baseaudiocontext"
+				}
+			]
+		},
+		{
+			"name": "renderQuantumSize",
+			"interface": "AudioWorkletGlobalScope",
+			"definitions": [
+				{
+					"spec": "https://webaudio.github.io/web-audio-api/",
+					"id": "audioworkletglobalscope"
+				}
+			]
+		},
+		{
+			"name": "renderStart",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
 				}
 			]
 		},
@@ -90287,6 +90890,16 @@
 			]
 		},
 		{
+			"name": "scrollMargin",
+			"interface": "IntersectionObserver",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/IntersectionObserver/",
+					"id": "intersectionobserver"
+				}
+			]
+		},
+		{
 			"name": "scrollRestoration",
 			"interface": "History",
 			"definitions": [
@@ -90441,7 +91054,11 @@
 			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -90618,16 +91235,6 @@
 			]
 		},
 		{
-			"name": "selectionBounds",
-			"interface": "EditContext",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-editcontext"
-				}
-			]
-		},
-		{
 			"name": "selectionDirection",
 			"interface": "HTMLInputElement",
 			"definitions": [
@@ -90769,6 +91376,16 @@
 		},
 		{
 			"name": "semanticLabel",
+			"interface": "XRPlane",
+			"definitions": [
+				{
+					"spec": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
+					"id": "xrplane"
+				}
+			]
+		},
+		{
+			"name": "semanticLabel",
 			"interface": "XRMesh",
 			"definitions": [
 				{
@@ -90794,6 +91411,16 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "rtcdtmfsender"
+				}
+			]
+		},
+		{
+			"name": "sendGroup",
+			"interface": "WebTransportSendStream",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webtransport/",
+					"id": "webtransportsendstream"
 				}
 			]
 		},
@@ -91081,6 +91708,26 @@
 			]
 		},
 		{
+			"name": "shadowRootDelegatesFocus",
+			"interface": "HTMLTemplateElement",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/scripting.html",
+					"id": "htmltemplateelement"
+				}
+			]
+		},
+		{
+			"name": "shadowRootMode",
+			"interface": "HTMLTemplateElement",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/scripting.html",
+					"id": "htmltemplateelement"
+				}
+			]
+		},
+		{
 			"name": "shape",
 			"interface": "HTMLAreaElement",
 			"definitions": [
@@ -91097,6 +91744,36 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/obsolete.html",
 					"id": "ref-for-htmlanchorelement"
+				}
+			]
+		},
+		{
+			"name": "sharedStorage",
+			"interface": "SharedStorageWorkletGlobalScope",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/shared-storage/",
+					"id": "sharedstorageworkletglobalscope"
+				}
+			]
+		},
+		{
+			"name": "sharedStorage",
+			"interface": "Window",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/shared-storage/",
+					"id": "ref-for-window"
+				}
+			]
+		},
+		{
+			"name": "sharedStorageWritable",
+			"interface": "HTMLSharedStorageWritableElementUtils",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/shared-storage/",
+					"id": "htmlsharedstoragewritableelementutils"
 				}
 			]
 		},
@@ -92069,7 +92746,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -92407,6 +93084,16 @@
 		},
 		{
 			"name": "state",
+			"interface": "AudioSession",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/audio-session/",
+					"id": "audiosession"
+				}
+			]
+		},
+		{
+			"name": "state",
 			"interface": "PressureRecord",
 			"definitions": [
 				{
@@ -92557,16 +93244,6 @@
 		},
 		{
 			"name": "state",
-			"interface": "AudioSession",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/audio-session/",
-					"id": "audiosession"
-				}
-			]
-		},
-		{
-			"name": "state",
 			"interface": "QuicTransportBase",
 			"definitions": [
 				{
@@ -92665,6 +93342,16 @@
 				{
 					"spec": "https://registry.khronos.org/webgl/specs/latest/2.0/",
 					"id": "webgl2renderingcontextbase"
+				}
+			]
+		},
+		{
+			"name": "stats",
+			"interface": "MediaStreamTrack",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-mediastreamtrack"
 				}
 			]
 		},
@@ -93437,6 +94124,16 @@
 			]
 		},
 		{
+			"name": "styleAndLayoutStart",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
+				}
+			]
+		},
+		{
 			"name": "styleMap",
 			"interface": "LayoutChild",
 			"definitions": [
@@ -93618,6 +94315,17 @@
 				{
 					"spec": "https://drafts.csswg.org/css-conditional-3/",
 					"id": "ref-for-cssrule"
+				}
+			]
+		},
+		{
+			"name": "supportsReliableOnly",
+			"interface": "WebTransport",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webtransport/",
+					"id": "webtransport"
 				}
 			]
 		},
@@ -95260,6 +95968,16 @@
 			]
 		},
 		{
+			"name": "targetAddressSpace",
+			"interface": "Request",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/private-network-access/",
+					"id": "ref-for-request"
+				}
+			]
+		},
+		{
 			"name": "targetElement",
 			"interface": "SVGAnimationElement",
 			"definitions": [
@@ -95477,16 +96195,6 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/canvas.html",
 					"id": "canvastextdrawingstyles"
-				}
-			]
-		},
-		{
-			"name": "textColor",
-			"interface": "TextFormat",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-textformat"
 				}
 			]
 		},
@@ -96645,26 +97353,6 @@
 			]
 		},
 		{
-			"name": "timestamp",
-			"interface": "RTCEncodedVideoFrame",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
-					"id": "rtcencodedvideoframe"
-				}
-			]
-		},
-		{
-			"name": "timestamp",
-			"interface": "RTCEncodedAudioFrame",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
-					"id": "rtcencodedaudioframe"
-				}
-			]
-		},
-		{
 			"name": "timeStamp",
 			"interface": "Event",
 			"definitions": [
@@ -96967,6 +97655,36 @@
 				{
 					"spec": "https://xhr.spec.whatwg.org/",
 					"id": "progressevent"
+				}
+			]
+		},
+		{
+			"name": "totalFrames",
+			"interface": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
+				}
+			]
+		},
+		{
+			"name": "totalFrames",
+			"interface": "MediaStreamTrackVideoStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackvideostats"
+				}
+			]
+		},
+		{
+			"name": "totalFramesDuration",
+			"interface": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
 				}
 			]
 		},
@@ -97706,6 +98424,16 @@
 		},
 		{
 			"name": "type",
+			"interface": "CSSViewTransitionRule",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "cssviewtransitionrule"
+				}
+			]
+		},
+		{
+			"name": "type",
 			"interface": "Response",
 			"definitions": [
 				{
@@ -97911,6 +98639,16 @@
 				{
 					"spec": "https://registry.khronos.org/webgl/specs/latest/1.0/",
 					"id": "webglactiveinfo"
+				}
+			]
+		},
+		{
+			"name": "type",
+			"interface": "AudioSession",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/audio-session/",
+					"id": "audiosession"
 				}
 			]
 		},
@@ -98295,16 +99033,6 @@
 			]
 		},
 		{
-			"name": "type",
-			"interface": "AudioSession",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/audio-session/",
-					"id": "audiosession"
-				}
-			]
-		},
-		{
 			"name": "TYPE_BACK_FORWARD",
 			"interface": "PerformanceNavigation",
 			"static": true,
@@ -98386,16 +99114,6 @@
 				{
 					"spec": "https://w3c.github.io/clipboard-apis/",
 					"id": "clipboarditem"
-				}
-			]
-		},
-		{
-			"name": "underlineColor",
-			"interface": "TextFormat",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/edit-context/",
-					"id": "dom-textformat"
 				}
 			]
 		},
@@ -99700,7 +100418,11 @@
 			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -100548,16 +101270,6 @@
 			]
 		},
 		{
-			"name": "variant",
-			"interface": "FontFace",
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-font-loading-3/",
-					"id": "fontface"
-				}
-			]
-		},
-		{
 			"name": "variations",
 			"interface": "FontFace",
 			"definitions": [
@@ -100965,6 +101677,17 @@
 			]
 		},
 		{
+			"name": "VIEW_TRANSITION_RULE",
+			"interface": "CSSRule",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "ref-for-cssrule"
+				}
+			]
+		},
+		{
 			"name": "viewBox",
 			"interface": "SVGFitToViewBox",
 			"definitions": [
@@ -101032,6 +101755,16 @@
 				{
 					"spec": "https://immersive-web.github.io/webxr/",
 					"id": "xrviewerpose"
+				}
+			]
+		},
+		{
+			"name": "viewTransition",
+			"interface": "PageRevealEvent",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "pagerevealevent"
 				}
 			]
 		},
@@ -103821,7 +104554,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -104570,7 +105303,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -105197,7 +105930,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -105207,7 +105940,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -105275,6 +106008,17 @@
 			]
 		},
 		{
+			"name": "cap",
+			"interface": "CSS",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
+					"id": "ref-for-namespacedef-css"
+				}
+			]
+		},
+		{
 			"name": "captureEvents",
 			"interface": "Document",
 			"definitions": [
@@ -105319,7 +106063,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -105835,7 +106579,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -105897,6 +106641,16 @@
 				{
 					"spec": "https://w3c.github.io/user-timing/",
 					"id": "idl-def-performance-partial-1"
+				}
+			]
+		},
+		{
+			"name": "clearOriginJoinedAdInterestGroups",
+			"interface": "Navigator",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-navigator"
 				}
 			]
 		},
@@ -106126,6 +106880,17 @@
 		},
 		{
 			"name": "close",
+			"interface": "IdentityProvider",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "identityprovider"
+				}
+			]
+		},
+		{
+			"name": "close",
 			"interface": "FileSystemSyncAccessHandle",
 			"definitions": [
 				{
@@ -106151,6 +106916,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html",
 					"id": "htmldialogelement"
+				}
+			]
+		},
+		{
+			"name": "close",
+			"interface": "CloseWatcher",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
+					"id": "closewatcher"
 				}
 			]
 		},
@@ -107455,7 +108230,7 @@
 			"interface": "ContextMenus",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "contextmenus"
 				}
 			]
@@ -107541,6 +108316,16 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "document"
+				}
+			]
+		},
+		{
+			"name": "createAuctionNonce",
+			"interface": "Navigator",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-navigator"
 				}
 			]
 		},
@@ -108416,6 +109201,16 @@
 				{
 					"spec": "https://w3c.github.io/trusted-types/dist/spec/",
 					"id": "trustedtypepolicy"
+				}
+			]
+		},
+		{
+			"name": "createSendGroup",
+			"interface": "WebTransport",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webtransport/",
+					"id": "webtransport"
 				}
 			]
 		},
@@ -109337,6 +110132,16 @@
 			]
 		},
 		{
+			"name": "deprecatedReplaceInURN",
+			"interface": "Navigator",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/fenced-frame/",
+					"id": "ref-for-navigator"
+				}
+			]
+		},
+		{
 			"name": "depthFunc",
 			"interface": "WebGLRenderingContextBase",
 			"definitions": [
@@ -109393,6 +110198,16 @@
 				{
 					"spec": "https://svgwg.org/svg2-draft/struct.html",
 					"id": "svgsvgelement"
+				}
+			]
+		},
+		{
+			"name": "destroy",
+			"interface": "CloseWatcher",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
+					"id": "closewatcher"
 				}
 			]
 		},
@@ -109607,6 +110422,17 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "mutationobserver"
+				}
+			]
+		},
+		{
+			"name": "disconnect",
+			"interface": "IdentityCredential",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "identitycredential"
 				}
 			]
 		},
@@ -109990,16 +110816,6 @@
 			]
 		},
 		{
-			"name": "durability",
-			"interface": "StorageBucket",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/storage-buckets/",
-					"id": "storagebucket"
-				}
-			]
-		},
-		{
 			"name": "dvb",
 			"interface": "CSS",
 			"static": true,
@@ -110217,16 +111033,6 @@
 				{
 					"spec": "https://w3c.github.io/webcodecs/",
 					"id": "videoencoder"
-				}
-			]
-		},
-		{
-			"name": "encode",
-			"interface": "EnvironmentIntegrity",
-			"definitions": [
-				{
-					"spec": "https://rupertbenwiser.github.io/Web-Environment-Integrity/",
-					"id": "environmentintegrity"
 				}
 			]
 		},
@@ -110579,7 +111385,11 @@
 			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -110609,7 +111419,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -111134,7 +111944,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -111209,6 +112019,17 @@
 				{
 					"spec": "https://streams.spec.whatwg.org/",
 					"id": "readablestream"
+				}
+			]
+		},
+		{
+			"name": "fromElement",
+			"interface": "RestrictionTarget",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://screen-share.github.io/element-capture/",
+					"id": "dom-restrictiontarget"
 				}
 			]
 		},
@@ -112040,7 +112861,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -112501,16 +113322,6 @@
 		},
 		{
 			"name": "getConfiguration",
-			"interface": "Sanitizer",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "sanitizer"
-				}
-			]
-		},
-		{
-			"name": "getConfiguration",
 			"interface": "MediaKeySystemAccess",
 			"definitions": [
 				{
@@ -112680,17 +113491,6 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/dnd.html",
 					"id": "datatransfer"
-				}
-			]
-		},
-		{
-			"name": "getDefaultConfiguration",
-			"interface": "Sanitizer",
-			"static": true,
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "sanitizer"
 				}
 			]
 		},
@@ -113057,16 +113857,6 @@
 			]
 		},
 		{
-			"name": "getEnvironmentIntegrity",
-			"interface": "Navigator",
-			"definitions": [
-				{
-					"spec": "https://rupertbenwiser.github.io/Web-Environment-Integrity/",
-					"id": "ref-for-navigator"
-				}
-			]
-		},
-		{
 			"name": "getError",
 			"interface": "WebGLRenderingContextBase",
 			"definitions": [
@@ -113187,16 +113977,6 @@
 				{
 					"spec": "https://registry.khronos.org/webgl/specs/latest/1.0/",
 					"id": "webglrenderingcontextbase"
-				}
-			]
-		},
-		{
-			"name": "getFrameStats",
-			"interface": "MediaStreamTrack",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "ref-for-mediastreamtrack"
 				}
 			]
 		},
@@ -114622,6 +115402,16 @@
 		},
 		{
 			"name": "getStats",
+			"interface": "WebTransportSendGroup",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webtransport/",
+					"id": "webtransportsendgroup"
+				}
+			]
+		},
+		{
+			"name": "getStats",
 			"interface": "WebTransportReceiveStream",
 			"definitions": [
 				{
@@ -114647,6 +115437,16 @@
 				{
 					"spec": "https://wicg.github.io/web-smart-card/",
 					"id": "smartcardcontext"
+				}
+			]
+		},
+		{
+			"name": "getStatusForPolicy",
+			"interface": "MediaKeys",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/encrypted-media/",
+					"id": "dom-mediakeys"
 				}
 			]
 		},
@@ -115212,7 +116012,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -115232,7 +116032,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -115933,7 +116733,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -116189,7 +116989,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -118404,6 +119204,17 @@
 			]
 		},
 		{
+			"name": "parseHTMLUnsafe",
+			"interface": "Document",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/dom.html",
+					"id": "ref-for-document"
+				}
+			]
+		},
+		{
 			"name": "parseRequestOptionsFromJSON",
 			"interface": "PublicKeyCredential",
 			"static": true,
@@ -118970,7 +119781,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -119320,6 +120131,28 @@
 				{
 					"spec": "https://w3c.github.io/webcrypto/",
 					"id": "dom-crypto"
+				}
+			]
+		},
+		{
+			"name": "rcap",
+			"interface": "CSS",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
+					"id": "ref-for-namespacedef-css"
+				}
+			]
+		},
+		{
+			"name": "rch",
+			"interface": "CSS",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
+					"id": "ref-for-namespacedef-css"
 				}
 			]
 		},
@@ -119795,6 +120628,16 @@
 			]
 		},
 		{
+			"name": "registerAdMacro",
+			"interface": "InterestGroupReportingScriptRunnerGlobalScope",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "interestgroupreportingscriptrunnerglobalscope"
+				}
+			]
+		},
+		{
 			"name": "registerAnimator",
 			"interface": "AnimationWorkletGlobalScope",
 			"definitions": [
@@ -119970,7 +120813,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -120099,7 +120942,7 @@
 			"interface": "ContextMenus",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "contextmenus"
 				}
 			]
@@ -120109,7 +120952,7 @@
 			"interface": "ContextMenus",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "contextmenus"
 				}
 			]
@@ -120169,7 +121012,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -120743,6 +121586,16 @@
 			]
 		},
 		{
+			"name": "requestClose",
+			"interface": "CloseWatcher",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
+					"id": "closewatcher"
+				}
+			]
+		},
+		{
 			"name": "requestData",
 			"interface": "MediaRecorder",
 			"definitions": [
@@ -121177,6 +122030,16 @@
 			]
 		},
 		{
+			"name": "resetLatency",
+			"interface": "MediaStreamTrackAudioStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
+				}
+			]
+		},
+		{
 			"name": "resetTransform",
 			"interface": "CanvasTransform",
 			"definitions": [
@@ -121428,6 +122291,28 @@
 			]
 		},
 		{
+			"name": "rex",
+			"interface": "CSS",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
+					"id": "ref-for-namespacedef-css"
+				}
+			]
+		},
+		{
+			"name": "ric",
+			"interface": "CSS",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
+					"id": "ref-for-namespacedef-css"
+				}
+			]
+		},
+		{
 			"name": "rlh",
 			"interface": "CSS",
 			"static": true,
@@ -121596,26 +122481,6 @@
 				{
 					"spec": "https://registry.khronos.org/webgl/specs/latest/2.0/",
 					"id": "webgl2renderingcontextbase"
-				}
-			]
-		},
-		{
-			"name": "sanitize",
-			"interface": "Sanitizer",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "sanitizer"
-				}
-			]
-		},
-		{
-			"name": "sanitizeFor",
-			"interface": "Sanitizer",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
-					"id": "sanitizer"
 				}
 			]
 		},
@@ -121904,6 +122769,16 @@
 				{
 					"spec": "https://w3c.github.io/mediacapture-output/",
 					"id": "idl-def-mediadevices-partial-1"
+				}
+			]
+		},
+		{
+			"name": "selectCandidatePair",
+			"interface": "RTCIceTransport",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "ref-for-rtcicetransport"
 				}
 			]
 		},
@@ -122362,7 +123237,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -122662,12 +123537,22 @@
 			]
 		},
 		{
-			"name": "setHTML",
+			"name": "setHTMLUnsafe",
 			"interface": "Element",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/sanitizer-api/",
+					"spec": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html",
 					"id": "ref-for-element"
+				}
+			]
+		},
+		{
+			"name": "setHTMLUnsafe",
+			"interface": "ShadowRoot",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html",
+					"id": "ref-for-shadowroot"
 				}
 			]
 		},
@@ -123256,6 +124141,16 @@
 			]
 		},
 		{
+			"name": "setStatus",
+			"interface": "NavigatorLogin",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "navigatorlogin"
+				}
+			]
+		},
+		{
 			"name": "setStdDeviation",
 			"interface": "SVGFEDropShadowElement",
 			"definitions": [
@@ -123454,7 +124349,7 @@
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -123556,6 +124451,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/input.html",
 					"id": "htmlinputelement"
+				}
+			]
+		},
+		{
+			"name": "showPicker",
+			"interface": "HTMLSelectElement",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/form-elements.html",
+					"id": "htmlselectelement"
 				}
 			]
 		},
@@ -124020,7 +124925,7 @@
 			"interface": "Document",
 			"definitions": [
 				{
-					"spec": "https://drafts.csswg.org/css-view-transitions-1/",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
 					"id": "ref-for-document"
 				}
 			]
@@ -124142,6 +125047,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-ice/",
 					"id": "idl-def-rtcicetransport-partial-1"
+				}
+			]
+		},
+		{
+			"name": "stop",
+			"interface": "BluetoothLEScan",
+			"definitions": [
+				{
+					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
+					"id": "bluetoothlescan"
 				}
 			]
 		},
@@ -124287,20 +125202,10 @@
 		},
 		{
 			"name": "stop",
-			"interface": "BluetoothLEScan",
-			"definitions": [
-				{
-					"spec": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
-					"id": "bluetoothlescan"
-				}
-			]
-		},
-		{
-			"name": "stop",
 			"interface": "ControlledFrame",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
 				}
 			]
@@ -124497,6 +125402,17 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/scripting.html",
 					"id": "htmlscriptelement"
+				}
+			]
+		},
+		{
+			"name": "supports",
+			"interface": "ClipboardItem",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/clipboard-apis/",
+					"id": "clipboarditem"
 				}
 			]
 		},
@@ -124771,7 +125687,11 @@
 			"interface": "URLPattern",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/urlpattern/",
+					"spec": "https://urlpattern.spec.whatwg.org/",
+					"id": "urlpattern"
+				},
+				{
+					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
 				}
 			]
@@ -125332,6 +126252,16 @@
 		},
 		{
 			"name": "toJSON",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
+				}
+			]
+		},
+		{
+			"name": "toJSON",
 			"interface": "MediaDeviceInfo",
 			"definitions": [
 				{
@@ -125512,11 +126442,21 @@
 		},
 		{
 			"name": "toJSON",
-			"interface": "EnvironmentIntegrity",
+			"interface": "MediaStreamTrackAudioStats",
 			"definitions": [
 				{
-					"spec": "https://rupertbenwiser.github.io/Web-Environment-Integrity/",
-					"id": "environmentintegrity"
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackaudiostats"
+				}
+			]
+		},
+		{
+			"name": "toJSON",
+			"interface": "MediaStreamTrackVideoStats",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "mediastreamtrackvideostats"
 				}
 			]
 		},
@@ -126437,7 +127377,7 @@
 			"interface": "ContextMenus",
 			"definitions": [
 				{
-					"spec": "https://chasephillips.github.io/controlled-frame/",
+					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "contextmenus"
 				}
 			]
@@ -127128,16 +128068,6 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "gpuqueue"
-				}
-			]
-		},
-		{
-			"name": "writeTimestamp",
-			"interface": "GPUCommandEncoder",
-			"definitions": [
-				{
-					"spec": "https://gpuweb.github.io/gpuweb/",
-					"id": "gpucommandencoder"
 				}
 			]
 		},

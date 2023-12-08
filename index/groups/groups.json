@@ -81,6 +81,11 @@
 			"homepage": "https://www.w3.org/Member/Board/"
 		},
 		{
+			"name": "Advisory Board Elected Members",
+			"identifier": "tf/ab-elected",
+			"homepage": "https://www.w3.org/groups/tf/ab-elected/"
+		},
+		{
 			"name": "Advisory Committee",
 			"identifier": "other/ac",
 			"homepage": "https://www.w3.org/groups/other/ac/"
@@ -191,6 +196,11 @@
 			"homepage": "https://www.w3.org/community/blockchain/"
 		},
 		{
+			"name": "Board Audit Committee",
+			"identifier": "tf/board-audit",
+			"homepage": "https://www.w3.org/groups/tf/board-audit/"
+		},
+		{
 			"name": "Board Directors",
 			"identifier": "tf/board-directors",
 			"homepage": "https://www.w3.org/groups/tf/board-directors/"
@@ -204,6 +214,11 @@
 			"name": "Board Governance Committee",
 			"identifier": "tf/board-governance",
 			"homepage": "https://www.w3.org/groups/tf/board-governance/"
+		},
+		{
+			"name": "Board Officers",
+			"identifier": "tf/board-officers",
+			"homepage": "https://www.w3.org/groups/tf/board-officers/"
 		},
 		{
 			"name": "Board Personnel Committee",
@@ -261,6 +276,11 @@
 			"homepage": "https://www.w3.org/community/chem-web-pub/"
 		},
 		{
+			"name": "Chinese DID & VC Best Practices Community Group",
+			"identifier": "cg/cndid",
+			"homepage": "https://www.w3.org/community/cndid/"
+		},
+		{
 			"name": "Chinese Text Layout Task Force | 中文排版需求",
 			"identifier": "tf/i18n-clreq",
 			"homepage": "https://github.com/w3c/clreq/"
@@ -299,6 +319,11 @@
 			"name": "Community Council",
 			"identifier": "cg/council",
 			"homepage": "https://www.w3.org/community/council/"
+		},
+		{
+			"name": "Computational Intelligence Community Group",
+			"identifier": "cg/computationalicg",
+			"homepage": "https://www.w3.org/community/computationalicg/"
 		},
 		{
 			"name": "Consent Community Group",
@@ -466,11 +491,6 @@
 			"homepage": "https://www.w3.org/community/fibo/"
 		},
 		{
-			"name": "Font and Text Community Group",
-			"identifier": "cg/font-text",
-			"homepage": "https://www.w3.org/community/font-text/"
-		},
-		{
 			"name": "GPU for the Web Community Group",
 			"identifier": "cg/gpu",
 			"homepage": "https://www.w3.org/community/gpu/"
@@ -484,6 +504,11 @@
 			"name": "Games Community Group",
 			"identifier": "cg/games",
 			"homepage": "https://www.w3.org/community/games/"
+		},
+		{
+			"name": "Generative AI Community Group",
+			"identifier": "cg/gai",
+			"homepage": "https://www.w3.org/community/gai/"
 		},
 		{
 			"name": "HTML Working Group",
@@ -594,11 +619,6 @@
 			"name": "Knowledge Graph Construction Community Group",
 			"identifier": "cg/kg-construct",
 			"homepage": "https://www.w3.org/community/kg-construct/"
-		},
-		{
-			"name": "LDP Next Community Group",
-			"identifier": "cg/ldpnext",
-			"homepage": "https://www.w3.org/community/ldpnext/"
 		},
 		{
 			"name": "Linked Building Data Community Group",
@@ -741,6 +761,11 @@
 			"homepage": "https://www.w3.org/community/ontolex/"
 		},
 		{
+			"name": "Open Cloud Mesh Community Group",
+			"identifier": "cg/ocm",
+			"homepage": "https://www.w3.org/community/ocm/"
+		},
+		{
 			"name": "Open Educational Resources Schema Community Group",
 			"identifier": "cg/oerschema",
 			"homepage": "https://www.w3.org/community/oerschema/"
@@ -779,11 +804,6 @@
 			"name": "Permanent Identifier Community Group",
 			"identifier": "cg/perma-id",
 			"homepage": "https://www.w3.org/community/perma-id/"
-		},
-		{
-			"name": "Philosophy of the Web Community Group",
-			"identifier": "cg/philoweb",
-			"homepage": "https://www.w3.org/community/philoweb/"
 		},
 		{
 			"name": "Pointer Events Working Group",
@@ -1101,11 +1121,6 @@
 			"homepage": "https://www.w3.org/community/talent-signal/"
 		},
 		{
-			"name": "Technical Architecture Community Group",
-			"identifier": "cg/opentag",
-			"homepage": "https://www.w3.org/community/opentag/"
-		},
-		{
 			"name": "Technical Architecture Group",
 			"identifier": "other/tag",
 			"homepage": "https://www.w3.org/2001/tag/"
@@ -1184,6 +1199,11 @@
 			"name": "WAI-Engage: Web Accessibility Community Group",
 			"identifier": "cg/wai-engage",
 			"homepage": "https://www.w3.org/community/wai-engage/"
+		},
+		{
+			"name": "WCAG 2.x Backlog Task Force",
+			"identifier": "tf/wcag2x-backlog",
+			"homepage": "https://www.w3.org/WAI/GL/task-forces/"
 		},
 		{
 			"name": "WCAG2ICT Task Force",
@@ -1273,7 +1293,7 @@
 		{
 			"name": "Web Performance Working Group",
 			"identifier": "wg/webperf",
-			"homepage": "https://www.w3.org/webperf/"
+			"homepage": "https://www.w3.org/groups/wg/webperf/"
 		},
 		{
 			"name": "Web Platform Incubator Community Group",
@@ -1471,11 +1491,6 @@
 			"homepage": "https://datatracker.ietf.org/wg/jmap/"
 		},
 		{
-			"name": "JSON Path Working Group",
-			"identifier": "ietf/jsonpath",
-			"homepage": "https://datatracker.ietf.org/wg/jsonpath/"
-		},
-		{
 			"name": "Media Type Maintenance Working Group",
 			"identifier": "ietf/mediaman",
 			"homepage": "https://datatracker.ietf.org/wg/mediaman/"
@@ -1511,11 +1526,6 @@
 			"homepage": "https://datatracker.ietf.org/wg/rtcweb/"
 		},
 		{
-			"name": "Relay User Machine Working Group",
-			"identifier": "ietf/rum",
-			"homepage": "https://datatracker.ietf.org/wg/rum/"
-		},
-		{
 			"name": "Secure Asset Transfer Protocol Working Group",
 			"identifier": "ietf/satp",
 			"homepage": "https://datatracker.ietf.org/wg/satp/"
@@ -1541,6 +1551,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/sipcore/"
 		},
 		{
+			"name": "Structured Email Working Group",
+			"identifier": "ietf/sml",
+			"homepage": "https://datatracker.ietf.org/wg/sml/"
+		},
+		{
 			"name": "Secure Telephone Identity Revisited Working Group",
 			"identifier": "ietf/stir",
 			"homepage": "https://datatracker.ietf.org/wg/stir/"
@@ -1561,6 +1576,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/uuidrev/"
 		},
 		{
+			"name": "Virtualized Conversations Working Group",
+			"identifier": "ietf/vcon",
+			"homepage": "https://datatracker.ietf.org/wg/vcon/"
+		},
+		{
 			"name": "WebTransport Working Group",
 			"identifier": "ietf/webtrans",
 			"homepage": "https://datatracker.ietf.org/wg/webtrans/"
@@ -1569,11 +1589,6 @@
 			"name": "WebRTC Ingest Signaling over HTTPS Working Group",
 			"identifier": "ietf/wish",
 			"homepage": "https://datatracker.ietf.org/wg/wish/"
-		},
-		{
-			"name": "NomCom Eligibility Update Working Group",
-			"identifier": "ietf/elegy",
-			"homepage": "https://datatracker.ietf.org/wg/elegy/"
 		},
 		{
 			"name": "General Area Dispatch Working Group",
@@ -1634,11 +1649,6 @@
 			"name": "Internet Area Working Group",
 			"identifier": "ietf/intarea",
 			"homepage": "https://datatracker.ietf.org/wg/intarea/"
-		},
-		{
-			"name": "IPv6 over Low Power Wide-Area Networks Working Group",
-			"identifier": "ietf/lpwan",
-			"homepage": "https://datatracker.ietf.org/wg/lpwan/"
 		},
 		{
 			"name": "Light-Weight Implementation Guidance Working Group",
@@ -1831,11 +1841,6 @@
 			"homepage": "https://datatracker.ietf.org/wg/pim/"
 		},
 		{
-			"name": "Reliable and Available Wireless Working Group",
-			"identifier": "ietf/raw",
-			"homepage": "https://datatracker.ietf.org/wg/raw/"
-		},
-		{
 			"name": "Routing In Fat Trees Working Group",
 			"identifier": "ietf/rift",
 			"homepage": "https://datatracker.ietf.org/wg/rift/"
@@ -1909,6 +1914,11 @@
 			"name": "Javascript Object Signing and Encryption Working Group",
 			"identifier": "ietf/jose",
 			"homepage": "https://datatracker.ietf.org/wg/jose/"
+		},
+		{
+			"name": "Key Transparency Working Group",
+			"identifier": "ietf/keytrans",
+			"homepage": "https://datatracker.ietf.org/wg/keytrans/"
 		},
 		{
 			"name": "Common Authentication Technology Next Generation Working Group",
@@ -2041,7 +2051,7 @@
 			"homepage": "https://datatracker.ietf.org/wg/tcpm/"
 		},
 		{
-			"name": "Transport Area Working Group",
+			"name": "Transport and Services Working Group",
 			"identifier": "ietf/tsvwg",
 			"homepage": "https://datatracker.ietf.org/wg/tsvwg/"
 		},
@@ -2174,6 +2184,11 @@
 			"name": "Preparation and Comparison of Internationalized Strings Working Group",
 			"identifier": "ietf/precis",
 			"homepage": "https://datatracker.ietf.org/wg/precis/"
+		},
+		{
+			"name": "Relay User Machine Working Group",
+			"identifier": "ietf/rum",
+			"homepage": "https://datatracker.ietf.org/wg/rum/"
 		},
 		{
 			"name": "SIP Best-practice Recommendations Against Network Dangers to privacY Working Group",
@@ -3036,6 +3051,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/coach/"
 		},
 		{
+			"name": "NomCom Eligibility Update Working Group",
+			"identifier": "ietf/elegy",
+			"homepage": "https://datatracker.ietf.org/wg/elegy/"
+		},
+		{
 			"name": "GitHub Integration and Tooling Working Group",
 			"identifier": "ietf/git",
 			"homepage": "https://datatracker.ietf.org/wg/git/"
@@ -3369,6 +3389,11 @@
 			"name": "Layer 2 Control Protocol Working Group",
 			"identifier": "ietf/l2cp",
 			"homepage": "https://datatracker.ietf.org/wg/l2cp/"
+		},
+		{
+			"name": "IPv6 over Low Power Wide-Area Networks Working Group",
+			"identifier": "ietf/lpwan",
+			"homepage": "https://datatracker.ietf.org/wg/lpwan/"
 		},
 		{
 			"name": "Lightweight Reachability softWires Working Group",
@@ -4421,6 +4446,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/qosr/"
 		},
 		{
+			"name": "Reliable and Available Wireless Working Group",
+			"identifier": "ietf/raw",
+			"homepage": "https://datatracker.ietf.org/wg/raw/"
+		},
+		{
 			"name": "Routing Information Protocol Working Group",
 			"identifier": "ietf/rip",
 			"homepage": "https://datatracker.ietf.org/wg/rip/"
@@ -5366,6 +5396,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/nfvrg/"
 		},
 		{
+			"name": "Coding for efficient NetWork Communications Research Group Working Group",
+			"identifier": "ietf/nwcrg",
+			"homepage": "https://datatracker.ietf.org/wg/nwcrg/"
+		},
+		{
 			"name": "Peer-to-Peer Research Group Working Group",
 			"identifier": "ietf/p2prg",
 			"homepage": "https://datatracker.ietf.org/wg/p2prg/"
@@ -5434,16 +5469,6 @@
 			"name": "Secure Credential Transfer Working Group",
 			"identifier": "ietf/secret",
 			"homepage": "https://datatracker.ietf.org/wg/secret/"
-		},
-		{
-			"name": "Structured Email Working Group",
-			"identifier": "ietf/sml",
-			"homepage": "https://datatracker.ietf.org/wg/sml/"
-		},
-		{
-			"name": "vCon Working Group",
-			"identifier": "ietf/vcon",
-			"homepage": "https://datatracker.ietf.org/wg/vcon/"
 		},
 		{
 			"name": "Aggregated Service Discovery Working Group",
@@ -6906,6 +6931,11 @@
 			"homepage": "https://www.w3.org/2011/tracking-protection/"
 		},
 		{
+			"name": "Second Screen Working Group",
+			"identifier": "wg/secondscreen",
+			"homepage": "https://www.w3.org/groups/wg/secondscreen/"
+		},
+		{
 			"name": "Web Hypertext Application Technology Working Group",
 			"identifier": "whatwg",
 			"homepage": "https://whatwg.org/"
@@ -6931,14 +6961,14 @@
 			"homepage": "https://aomedia.org/"
 		},
 		{
-			"name": "Ben Wiser",
-			"identifier": "benwiser",
-			"homepage": "https://github.com/RupertBenWiser"
+			"name": "Codec Working Group",
+			"identifier": "aomedia/cwg",
+			"homepage": "https://aomedia.org/about/#codec-working-group"
 		},
 		{
-			"name": "Chase Phillips",
-			"identifier": "chasephillips",
-			"homepage": "https://github.com/chasephillips"
+			"name": "Storage and Transport Formats Working Group",
+			"identifier": "aomedia/stfwg",
+			"homepage": "https://aomedia.org/about/#storage-and-transport-formats-working-group"
 		},
 		{
 			"name": "Tab Atkins",
@@ -7004,6 +7034,16 @@
 			"name": "Larry Masinter",
 			"identifier": "larrymasinter",
 			"homepage": "https://datatracker.ietf.org/person/lmm@acm.org"
+		},
+		{
+			"name": "Dylan Cutler",
+			"identifier": "dylancutler",
+			"homepage": "https://datatracker.ietf.org/person/dylancutler@google.com"
+		},
+		{
+			"name": "David Benjamin",
+			"identifier": "davidbenjamin",
+			"homepage": "https://datatracker.ietf.org/person/davidben@google.com"
 		}
 	]
 }

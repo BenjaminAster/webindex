@@ -11,7 +11,7 @@ import manualData from "./manual-data.ts";
 import { sortArrayByObjectValue } from "./utils.deno.ts";
 
 // @ts-ignore
-import { DOMParser as _DOMParser } from "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts";
+import { DOMParser as _DOMParser } from "https://deno.land/x/deno_dom@v0.1.42/deno-dom-wasm.ts";
 const DOMParser: typeof globalThis.DOMParser = _DOMParser;
 
 import {
@@ -27,7 +27,7 @@ const { groups } = JSON.parse(await Deno.readTextFile(new URL("./groups/groups.j
 
 const fetchOptions: RequestInit = { cache: "default", redirect: "error", headers: { "accept": "text/html;q=0.9", "accept-language": "en-US,en;q=0.9" } };
 
-const fetchJSON = async (url: string) => await (await globalThis.fetch(url, fetchOptions)).json();
+const fetchJSON = async (url: string) => await (await globalThis.fetch(url, { ...fetchOptions, cache: "reload" })).json();
 
 const cachedResources = await (async () => {
 	try {
@@ -78,16 +78,28 @@ let specsByURL: Record<string, any> = {};
 
 $specs: {
 	const indexURL = "https://w3c.github.io/webref/ed/index.json";
+	// const indexURL = "https://w3c.github.io/browser-specs/index.json";
 
 	let { results, date } = await fetchJSON(indexURL);
+
+	{
+		const browserSpecs = await fetchJSON("https://w3c.github.io/browser-specs/index.json");
+		for (const spec of browserSpecs) {
+			if (!results.some(i => i.shortname === spec.shortname)) {
+				results.push(spec);
+			}
+		}
+	}
+
+	// let results = await fetchJSON(indexURL);
 	results = results.map(({
 		nightly: { url, repository: repo, pages },
-		groups: [{ url: groupHomepage }],
+		groups: [{ url: groupHomepage, name: groupName, }],
 		css: cssPath,
 		idl: idlPath,
 		// url: tr,
 		...rest
-	}) => ({ ...rest, url, repo, groupHomepage, cssPath, idlPath, pages }));
+	}) => ({ ...rest, url, repo, groupHomepage, groupName, cssPath, idlPath, pages }));
 
 	$specLoop: for (let {
 		url,
@@ -103,6 +115,7 @@ $specs: {
 		shortname,
 		generator,
 		organization,
+		groupName,
 	} of [...results, ...manualData.additionalSpecs]) {
 		let manuallyAdded = !groupHomepage;
 
@@ -126,8 +139,10 @@ $specs: {
 
 		group ||= manualData.groupRewrites[url];
 
-		let groupInfo = group ? groups.find((item) => item.identifier === group) : groups.find((group) => group.homepage === groupHomepage);
-		group ||= groupInfo.identifier;
+		let groupInfo = group ? groups.find((item) => item.identifier === group) : (
+			groups.find((group) => group.homepage === groupHomepage) ?? groups.find((group) => group.name === groupName)
+		);
+		group ||= groupInfo?.identifier;
 
 		// console.log(groupInfo, group)
 
@@ -158,7 +173,7 @@ $specs: {
 		let testsURL: string;
 		if (tests) {
 			if (tests.repository === "https://github.com/web-platform-tests/wpt") {
-				testsURL = `https://wpt.fyi/results/${tests.testPaths[0]}?label=master&product=chrome&product=safari&product=firefox&product=servo`;
+				testsURL = `https://wpt.fyi/results/${tests.testPaths[0]}?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow`;
 			} else {
 				testsURL = `${tests.repository}/tree/main/${tests.testPaths[0]}`;
 			}
