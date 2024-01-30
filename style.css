@@ -92,7 +92,16 @@ body {
 
 	button, input {
 		all: unset;
+		outline: revert;
+	}
+
+	input {
+		all: unset;
 		display: inline-block;
+	}
+
+	search {
+		display: block;
 	}
 
 	input:is([type=checkbox], [type=radio]) {
@@ -156,18 +165,39 @@ header {
 	--icon-size: 1.3rem;
 }
 
-input[type=search]#searchbox {
+.searchbox-container {
 	border: 1px solid color-mix(in srgb, Canvas, CanvasText 20%);
-	border: 1px solid var(--gray-2);
+	/* display: flex; */
+	margin: .5rem;
+	border-radius: .3em;
+	box-sizing: border-box;
+	position: relative;
+}
+
+input[type=search]#searchbox {
 	padding: .2em .4em;
 	font-size: 1.1rem;
-	border-radius: .3em;
-	display: block;
-	inline-size: -moz-available;
-	inline-size: -webkit-fill-available;
-	inline-size: stretch;
+	/* flex-grow: 1; */
+	inline-size: 100%;
 	box-sizing: border-box;
-	margin: .5rem;
+}
+
+#clear-searchbox {
+	height: 100%;
+	/* height: -webkit-fill-available; */
+	aspect-ratio: 1;
+	display: block;
+	position: absolute;
+	inset-block: 0;
+	inset-inline-end: 0;
+	display: grid;
+	place-content: center;
+	font-size: 1.2rem;
+	box-sizing: border-box;
+}
+
+input[type=search]#searchbox:placeholder-shown ~ #clear-searchbox {
+	display: none;
 }
 
 #tabs {

@@ -75,6 +75,12 @@ for (let { identifier, name, homepage } of initialGroupsData) {
 	console.log(`added ${name} (${identifier})`);
 }
 
-await Deno.writeTextFile(new URL("./groups.json", import.meta.url), JSON.stringify({ groups }, null, "\t"));
+const timestamp = {
+	utc: new Date().toUTCString(),
+	iso: new Date().toISOString(),
+	unixMillis: Date.now(),
+};
+
+await Deno.writeTextFile(new URL("./groups.json", import.meta.url), JSON.stringify({ timestamp, groups }, null, "\t"));
 
 export { };

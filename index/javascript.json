@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Fri, 08 Dec 2023 11:06:35 GMT",
-		"iso": "2023-12-08T11:06:35.467Z",
-		"unixMillis": 1702033595467
+		"utc": "Tue, 30 Jan 2024 19:16:26 GMT",
+		"iso": "2024-01-30T19:16:26.992Z",
+		"unixMillis": 1706642186992
 	},
 	"jsInterfaces": [
 		{
@@ -849,6 +849,16 @@
 					"partial": true,
 					"spec": "https://screen-share.github.io/element-capture/",
 					"id": "idl-def-browsercapturemediastreamtrack-partial-1"
+				}
+			]
+		},
+		{
+			"name": "BufferedChangeEvent",
+			"definitions": [
+				{
+					"inheritance": "Event",
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-bufferedchangeevent"
 				}
 			]
 		},
@@ -2439,7 +2449,7 @@
 			"name": "CustomStateSet",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/custom-state-pseudo-class/",
+					"spec": "https://html.spec.whatwg.org/multipage/custom-elements.html",
 					"id": "customstateset"
 				}
 			]
@@ -3076,11 +3086,6 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/custom-elements.html",
 					"id": "elementinternals"
-				},
-				{
-					"partial": true,
-					"spec": "https://wicg.github.io/custom-state-pseudo-class/",
-					"id": "ref-for-elementinternals"
 				}
 			]
 		},
@@ -3146,6 +3151,11 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "eventtarget"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/observable/",
+					"id": "ref-for-eventtarget"
 				}
 			]
 		},
@@ -3743,8 +3753,13 @@
 			"name": "GamepadHapticActuator",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
+					"spec": "https://w3c.github.io/gamepad/",
 					"id": "dom-gamepadhapticactuator"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/gamepad/extensions.html",
+					"id": "idl-def-gamepadhapticactuator-partial-1"
 				}
 			]
 		},
@@ -4898,6 +4913,11 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-htmliframeelement"
+				},
+				{
+					"partial": true,
 					"spec": "https://w3c.github.io/webappsec-cspee/",
 					"id": "ref-for-htmliframeelement"
 				},
@@ -5982,6 +6002,16 @@
 			]
 		},
 		{
+			"name": "KeyFrameRequestEvent",
+			"definitions": [
+				{
+					"inheritance": "Event",
+					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
+					"id": "keyframerequestevent"
+				}
+			]
+		},
+		{
 			"name": "KHR_parallel_shader_compile",
 			"definitions": [
 				{
@@ -6155,6 +6185,26 @@
 					"inheritance": "Sensor",
 					"spec": "https://w3c.github.io/magnetometer/",
 					"id": "magnetometer"
+				}
+			]
+		},
+		{
+			"name": "ManagedMediaSource",
+			"definitions": [
+				{
+					"inheritance": "MediaSource",
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-managedmediasource"
+				}
+			]
+		},
+		{
+			"name": "ManagedSourceBuffer",
+			"definitions": [
+				{
+					"inheritance": "SourceBuffer",
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-managedsourcebuffer"
 				}
 			]
 		},
@@ -6943,6 +6993,41 @@
 					"partial": true,
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -6970,6 +7055,16 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "mloperand"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mloperand"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mloperand"
 				}
 			]
 		},
@@ -7100,6 +7195,15 @@
 					"inheritance": "EventTarget",
 					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
 					"id": "navigation"
+				}
+			]
+		},
+		{
+			"name": "NavigationActivation",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "navigationactivation"
 				}
 			]
 		},
@@ -7739,6 +7843,15 @@
 			]
 		},
 		{
+			"name": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
 			"name": "OES_draw_buffers_indexed",
 			"definitions": [
 				{
@@ -7912,7 +8025,7 @@
 			"definitions": [
 				{
 					"inheritance": "Event",
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
 					"id": "pagerevealevent"
 				}
 			]
@@ -8265,6 +8378,16 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/server-timing/",
 					"id": "idl-def-performanceresourcetiming-partial-1"
+				}
+			]
+		},
+		{
+			"name": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"inheritance": "PerformanceEntry",
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
 				}
 			]
 		},
@@ -9414,6 +9537,7 @@
 			"name": "RTCRtpScriptTransformer",
 			"definitions": [
 				{
+					"inheritance": "EventTarget",
 					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
 					"id": "rtcrtpscripttransformer"
 				}
@@ -10045,6 +10169,34 @@
 			]
 		},
 		{
+			"name": "SnapEvent",
+			"definitions": [
+				{
+					"inheritance": "Event",
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snapevent"
+				}
+			]
+		},
+		{
+			"name": "SnapTargetArray",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snaptargetarray"
+				}
+			]
+		},
+		{
+			"name": "SnapTargetList",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snaptargetlist"
+				}
+			]
+		},
+		{
 			"name": "SourceBuffer",
 			"definitions": [
 				{
@@ -10303,6 +10455,15 @@
 					"inheritance": "Event",
 					"spec": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html",
 					"id": "submitevent"
+				}
+			]
+		},
+		{
+			"name": "Subscriber",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "subscriber"
 				}
 			]
 		},
@@ -11786,10 +11947,6 @@
 		{
 			"name": "URLPattern",
 			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
-				},
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
@@ -14749,6 +14906,15 @@
 			]
 		},
 		{
+			"name": "BufferedChangeEventInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-bufferedchangeeventinit"
+				}
+			]
+		},
+		{
 			"name": "CacheQueryOptions",
 			"definitions": [
 				{
@@ -16040,7 +16206,7 @@
 			"name": "GamepadEffectParameters",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
+					"spec": "https://w3c.github.io/gamepad/",
 					"id": "dom-gamepadeffectparameters"
 				}
 			]
@@ -17936,6 +18102,15 @@
 			]
 		},
 		{
+			"name": "MLArgMinMaxOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlargminmaxoptions"
+				}
+			]
+		},
+		{
 			"name": "MLBatchNormalizationOptions",
 			"definitions": [
 				{
@@ -18012,6 +18187,15 @@
 			]
 		},
 		{
+			"name": "MLGatherOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgatheroptions"
+				}
+			]
+		},
+		{
 			"name": "MLGemmOptions",
 			"definitions": [
 				{
@@ -18053,6 +18237,15 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlinstancenormalizationoptions"
+				}
+			]
+		},
+		{
+			"name": "MLLayerNormalizationOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllayernormalizationoptions"
 				}
 			]
 		},
@@ -18156,15 +18349,6 @@
 			]
 		},
 		{
-			"name": "MLSqueezeOptions",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "dictdef-mlsqueezeoptions"
-				}
-			]
-		},
-		{
 			"name": "MLTensor",
 			"definitions": [
 				{
@@ -18188,6 +18372,15 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mltransposeoptions"
+				}
+			]
+		},
+		{
+			"name": "MLTriangularOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mltriangularoptions"
 				}
 			]
 		},
@@ -18467,6 +18660,15 @@
 			]
 		},
 		{
+			"name": "ObservableEventListenerOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-observableeventlisteneroptions"
+				}
+			]
+		},
+		{
 			"name": "OfflineAudioCompletionEventInit",
 			"definitions": [
 				{
@@ -18567,6 +18769,15 @@
 				{
 					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
 					"id": "dictdef-paextendedhistogramcontribution"
+				}
+			]
+		},
+		{
+			"name": "PageRevealEventInit",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "dictdef-pagerevealeventinit"
 				}
 			]
 		},
@@ -20964,6 +21175,15 @@
 			]
 		},
 		{
+			"name": "SnapEventInit",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "dictdef-snapeventinit"
+				}
+			]
+		},
+		{
 			"name": "SpatialNavigationSearchOptions",
 			"definitions": [
 				{
@@ -21086,6 +21306,24 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html",
 					"id": "dictdef-submiteventinit"
+				}
+			]
+		},
+		{
+			"name": "SubscribeOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-subscribeoptions"
+				}
+			]
+		},
+		{
+			"name": "SubscriptionObserver",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-subscriptionobserver"
 				}
 			]
 		},
@@ -21429,20 +21667,12 @@
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterncomponentresult"
-				},
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterncomponentresult"
 				}
 			]
 		},
 		{
 			"name": "URLPatternInit",
 			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				},
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterninit"
@@ -21455,20 +21685,12 @@
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternoptions"
-				},
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternoptions"
 				}
 			]
 		},
 		{
 			"name": "URLPatternResult",
 			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
-				},
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternresult"
@@ -22671,6 +22893,16 @@
 			]
 		},
 		{
+			"name": "addedRanges",
+			"dictionary": "BufferedChangeEventInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-bufferedchangeeventinit"
+				}
+			]
+		},
+		{
 			"name": "additionalBidKey",
 			"dictionary": "AuctionAdInterestGroup",
 			"definitions": [
@@ -23682,31 +23914,11 @@
 		},
 		{
 			"name": "attestation",
-			"dictionary": "PublicKeyCredentialRequestOptionsJSON",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-publickeycredentialrequestoptionsjson"
-				}
-			]
-		},
-		{
-			"name": "attestation",
 			"dictionary": "PublicKeyCredentialCreationOptions",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-publickeycredentialcreationoptions"
-				}
-			]
-		},
-		{
-			"name": "attestation",
-			"dictionary": "PublicKeyCredentialRequestOptions",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-publickeycredentialrequestoptions"
 				}
 			]
 		},
@@ -23732,31 +23944,11 @@
 		},
 		{
 			"name": "attestationFormats",
-			"dictionary": "PublicKeyCredentialRequestOptionsJSON",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-publickeycredentialrequestoptionsjson"
-				}
-			]
-		},
-		{
-			"name": "attestationFormats",
 			"dictionary": "PublicKeyCredentialCreationOptions",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-publickeycredentialcreationoptions"
-				}
-			]
-		},
-		{
-			"name": "attestationFormats",
-			"dictionary": "PublicKeyCredentialRequestOptions",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-publickeycredentialrequestoptions"
 				}
 			]
 		},
@@ -23777,16 +23969,6 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-authenticatorattestationresponsejson"
-				}
-			]
-		},
-		{
-			"name": "attestationObject",
-			"dictionary": "AuthenticatorAssertionResponseJSON",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticatorassertionresponsejson"
 				}
 			]
 		},
@@ -24322,6 +24504,26 @@
 		},
 		{
 			"name": "axes",
+			"dictionary": "MLArgMinMaxOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlargminmaxoptions"
+				}
+			]
+		},
+		{
+			"name": "axes",
+			"dictionary": "MLLayerNormalizationOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllayernormalizationoptions"
+				}
+			]
+		},
+		{
+			"name": "axes",
 			"dictionary": "MLReduceOptions",
 			"definitions": [
 				{
@@ -24337,16 +24539,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlresample2doptions"
-				}
-			]
-		},
-		{
-			"name": "axes",
-			"dictionary": "MLSqueezeOptions",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "dictdef-mlsqueezeoptions"
 				}
 			]
 		},
@@ -24377,6 +24569,16 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlbatchnormalizationoptions"
+				}
+			]
+		},
+		{
+			"name": "axis",
+			"dictionary": "MLGatherOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgatheroptions"
 				}
 			]
 		},
@@ -24581,16 +24783,6 @@
 			]
 		},
 		{
-			"name": "baseURL",
-			"dictionary": "URLPatternInit",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				}
-			]
-		},
-		{
 			"name": "baseValue",
 			"dictionary": "PASignalValue",
 			"definitions": [
@@ -24777,6 +24969,16 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlinstancenormalizationoptions"
+				}
+			]
+		},
+		{
+			"name": "bias",
+			"dictionary": "MLLayerNormalizationOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllayernormalizationoptions"
 				}
 			]
 		},
@@ -25947,6 +26149,16 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "dictdef-eventlisteneroptions"
+				}
+			]
+		},
+		{
+			"name": "capture",
+			"dictionary": "ObservableEventListenerOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-observableeventlisteneroptions"
 				}
 			]
 		},
@@ -27263,6 +27475,16 @@
 			]
 		},
 		{
+			"name": "complete",
+			"dictionary": "SubscriptionObserver",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-subscriptionobserver"
+				}
+			]
+		},
+		{
 			"name": "completeFramesOnly",
 			"dictionary": "ImageDecodeOptions",
 			"definitions": [
@@ -27713,6 +27935,16 @@
 			]
 		},
 		{
+			"name": "contentVisibilityAuto",
+			"dictionary": "CheckVisibilityOptions",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/cssom-view-1/",
+					"id": "dictdef-checkvisibilityoptions"
+				}
+			]
+		},
+		{
 			"name": "context",
 			"dictionary": "IdentityCredentialRequestOptions",
 			"definitions": [
@@ -28103,6 +28335,16 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-collectedclientdata"
+				}
+			]
+		},
+		{
+			"name": "crossOriginExposed",
+			"dictionary": "FenceEvent",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/fenced-frame/",
+					"id": "dictdef-fenceevent"
 				}
 			]
 		},
@@ -29641,6 +29883,16 @@
 			]
 		},
 		{
+			"name": "diagonal",
+			"dictionary": "MLTriangularOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mltriangularoptions"
+				}
+			]
+		},
+		{
 			"name": "diameter",
 			"dictionary": "InkTrailStyle",
 			"definitions": [
@@ -30191,6 +30443,26 @@
 			]
 		},
 		{
+			"name": "domain_hints",
+			"dictionary": "IdentityProviderAccount",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "dictdef-identityprovideraccount"
+				}
+			]
+		},
+		{
+			"name": "domainHint",
+			"dictionary": "IdentityProviderRequestOptions",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "dictdef-identityproviderrequestoptions"
+				}
+			]
+		},
+		{
 			"name": "domOverlay",
 			"dictionary": "XRSessionInit",
 			"definitions": [
@@ -30281,26 +30553,6 @@
 			]
 		},
 		{
-			"name": "droppedSamplesDuration",
-			"dictionary": "RTCAudioSourceStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webrtc-stats/",
-					"id": "dom-rtcaudiosourcestats"
-				}
-			]
-		},
-		{
-			"name": "droppedSamplesEvents",
-			"dictionary": "RTCAudioSourceStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webrtc-stats/",
-					"id": "dom-rtcaudiosourcestats"
-				}
-			]
-		},
-		{
 			"name": "dstFactor",
 			"dictionary": "GPUBlendComponent",
 			"definitions": [
@@ -30375,7 +30627,7 @@
 			"dictionary": "GamepadEffectParameters",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
+					"spec": "https://w3c.github.io/gamepad/",
 					"id": "dom-gamepadeffectparameters"
 				}
 			]
@@ -31125,6 +31377,16 @@
 			]
 		},
 		{
+			"name": "epsilon",
+			"dictionary": "MLLayerNormalizationOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllayernormalizationoptions"
+				}
+			]
+		},
+		{
 			"name": "error",
 			"dictionary": "ErrorEventInit",
 			"definitions": [
@@ -31241,6 +31503,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcerroreventinit"
+				}
+			]
+		},
+		{
+			"name": "error",
+			"dictionary": "SubscriptionObserver",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-subscriptionobserver"
 				}
 			]
 		},
@@ -33723,16 +33995,6 @@
 			]
 		},
 		{
-			"name": "groups",
-			"dictionary": "URLPatternComponentResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterncomponentresult"
-				}
-			]
-		},
-		{
 			"name": "handle",
 			"dictionary": "FileSystemPermissionDescriptor",
 			"definitions": [
@@ -33929,26 +34191,6 @@
 				{
 					"spec": "https://w3c.github.io/webcrypto/",
 					"id": "dom-pbkdf2params"
-				}
-			]
-		},
-		{
-			"name": "hash",
-			"dictionary": "URLPatternInit",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				}
-			]
-		},
-		{
-			"name": "hash",
-			"dictionary": "URLPatternResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -34443,26 +34685,6 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcicegatherericeerroreventinit"
-				}
-			]
-		},
-		{
-			"name": "hostname",
-			"dictionary": "URLPatternInit",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				}
-			]
-		},
-		{
-			"name": "hostname",
-			"dictionary": "URLPatternResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -35217,10 +35439,6 @@
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatternoptions"
-				},
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternoptions"
 				}
 			]
 		},
@@ -35611,10 +35829,6 @@
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterncomponentresult"
-				},
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterncomponentresult"
 				}
 			]
 		},
@@ -35675,16 +35889,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlcomputeresult"
-				}
-			]
-		},
-		{
-			"name": "inputs",
-			"dictionary": "URLPatternResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -36385,6 +36589,16 @@
 				{
 					"spec": "https://fetch.spec.whatwg.org/",
 					"id": "dictdef-requestinit"
+				}
+			]
+		},
+		{
+			"name": "keepDimensions",
+			"dictionary": "MLArgMinMaxOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlargminmaxoptions"
 				}
 			]
 		},
@@ -39891,6 +40105,16 @@
 			]
 		},
 		{
+			"name": "next",
+			"dictionary": "SubscriptionObserver",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-subscriptionobserver"
+				}
+			]
+		},
+		{
 			"name": "noiseSuppression",
 			"dictionary": "MediaTrackSupportedConstraints",
 			"definitions": [
@@ -40307,6 +40531,16 @@
 				{
 					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contextmenusproperties"
+				}
+			]
+		},
+		{
+			"name": "opacityProperty",
+			"dictionary": "CheckVisibilityOptions",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/cssom-view-1/",
+					"id": "dictdef-checkvisibilityoptions"
 				}
 			]
 		},
@@ -41341,6 +41575,16 @@
 			]
 		},
 		{
+			"name": "passive",
+			"dictionary": "ObservableEventListenerOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-observableeventlisteneroptions"
+				}
+			]
+		},
+		{
 			"name": "passOp",
 			"dictionary": "GPUStencilFaceState",
 			"definitions": [
@@ -41415,26 +41659,6 @@
 			]
 		},
 		{
-			"name": "password",
-			"dictionary": "URLPatternInit",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				}
-			]
-		},
-		{
-			"name": "password",
-			"dictionary": "URLPatternResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
-				}
-			]
-		},
-		{
 			"name": "path",
 			"dictionary": "CookieInit",
 			"definitions": [
@@ -41461,26 +41685,6 @@
 				{
 					"spec": "https://wicg.github.io/cookie-store/",
 					"id": "dictdef-cookielistitem"
-				}
-			]
-		},
-		{
-			"name": "pathname",
-			"dictionary": "URLPatternInit",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				}
-			]
-		},
-		{
-			"name": "pathname",
-			"dictionary": "URLPatternResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -42415,26 +42619,6 @@
 			]
 		},
 		{
-			"name": "port",
-			"dictionary": "URLPatternInit",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				}
-			]
-		},
-		{
-			"name": "port",
-			"dictionary": "URLPatternResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
-				}
-			]
-		},
-		{
 			"name": "ports",
 			"dictionary": "MessageEventInit",
 			"definitions": [
@@ -43335,26 +43519,6 @@
 				{
 					"spec": "https://wicg.github.io/web-smart-card/",
 					"id": "dictdef-smartcardtransmitoptions"
-				}
-			]
-		},
-		{
-			"name": "protocol",
-			"dictionary": "URLPatternInit",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				}
-			]
-		},
-		{
-			"name": "protocol",
-			"dictionary": "URLPatternResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -44743,6 +44907,16 @@
 			]
 		},
 		{
+			"name": "removedRanges",
+			"dictionary": "BufferedChangeEventInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-bufferedchangeeventinit"
+				}
+			]
+		},
+		{
 			"name": "removedSamplesForAcceleration",
 			"dictionary": "RTCInboundRtpStreamStats",
 			"definitions": [
@@ -44969,6 +45143,16 @@
 				{
 					"spec": "https://privacycg.github.io/requestStorageAccessFor/",
 					"id": "dictdef-toplevelstorageaccesspermissiondescriptor"
+				}
+			]
+		},
+		{
+			"name": "requestedSize",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadconfig"
 				}
 			]
 		},
@@ -46167,16 +46351,6 @@
 			]
 		},
 		{
-			"name": "sampleRate",
-			"dictionary": "AudioBufferOptions",
-			"definitions": [
-				{
-					"spec": "https://webaudio.github.io/web-audio-api/",
-					"id": "dictdef-audiobufferoptions"
-				}
-			]
-		},
-		{
 			"name": "samplerate",
 			"dictionary": "AudioConfiguration",
 			"definitions": [
@@ -46193,6 +46367,16 @@
 				{
 					"spec": "https://w3c.github.io/compute-pressure/",
 					"id": "dom-pressureobserveroptions"
+				}
+			]
+		},
+		{
+			"name": "sampleRate",
+			"dictionary": "AudioBufferOptions",
+			"definitions": [
+				{
+					"spec": "https://webaudio.github.io/web-audio-api/",
+					"id": "dictdef-audiobufferoptions"
 				}
 			]
 		},
@@ -46423,6 +46607,16 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlinstancenormalizationoptions"
+				}
+			]
+		},
+		{
+			"name": "scale",
+			"dictionary": "MLLayerNormalizationOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllayernormalizationoptions"
 				}
 			]
 		},
@@ -46677,26 +46871,6 @@
 			]
 		},
 		{
-			"name": "search",
-			"dictionary": "URLPatternInit",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				}
-			]
-		},
-		{
-			"name": "search",
-			"dictionary": "URLPatternResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
-				}
-			]
-		},
-		{
 			"name": "second",
 			"dictionary": "AuthenticationExtensionsPRFValues",
 			"definitions": [
@@ -46833,6 +47007,16 @@
 				{
 					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-onclickdata"
+				}
+			]
+		},
+		{
+			"name": "selectLastIndex",
+			"dictionary": "MLArgMinMaxOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlargminmaxoptions"
 				}
 			]
 		},
@@ -47457,6 +47641,16 @@
 			]
 		},
 		{
+			"name": "signal",
+			"dictionary": "SubscribeOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-subscribeoptions"
+				}
+			]
+		},
+		{
 			"name": "signature",
 			"dictionary": "AuthenticatorAssertionResponseJSON",
 			"definitions": [
@@ -47693,6 +47887,46 @@
 				{
 					"spec": "https://webaudio.github.io/web-audio-api/",
 					"id": "dictdef-analyseroptions"
+				}
+			]
+		},
+		{
+			"name": "snappedTargetsX",
+			"dictionary": "SnapEventInit",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "dictdef-snapeventinit"
+				}
+			]
+		},
+		{
+			"name": "snappedTargetsY",
+			"dictionary": "SnapEventInit",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "dictdef-snapeventinit"
+				}
+			]
+		},
+		{
+			"name": "snapTargetsListX",
+			"dictionary": "SnapEventInit",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "dictdef-snapeventinit"
+				}
+			]
+		},
+		{
+			"name": "snapTargetsListY",
+			"dictionary": "SnapEventInit",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "dictdef-snapeventinit"
 				}
 			]
 		},
@@ -48121,7 +48355,7 @@
 			"dictionary": "GamepadEffectParameters",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
+					"spec": "https://w3c.github.io/gamepad/",
 					"id": "dom-gamepadeffectparameters"
 				}
 			]
@@ -48671,7 +48905,7 @@
 			"dictionary": "GamepadEffectParameters",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
+					"spec": "https://w3c.github.io/gamepad/",
 					"id": "dom-gamepadeffectparameters"
 				}
 			]
@@ -50371,16 +50605,6 @@
 			]
 		},
 		{
-			"name": "totalCaptureDelay",
-			"dictionary": "RTCAudioSourceStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webrtc-stats/",
-					"id": "dom-rtcaudiosourcestats"
-				}
-			]
-		},
-		{
 			"name": "totalDecodeTime",
 			"dictionary": "RTCInboundRtpStreamStats",
 			"definitions": [
@@ -50537,16 +50761,6 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-provisional-stats/",
 					"id": "ref-for-dictdef-rtciceserverstats"
-				}
-			]
-		},
-		{
-			"name": "totalSamplesCaptured",
-			"dictionary": "RTCAudioSourceStats",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webrtc-stats/",
-					"id": "dom-rtcaudiosourcestats"
 				}
 			]
 		},
@@ -51871,6 +52085,16 @@
 			]
 		},
 		{
+			"name": "upper",
+			"dictionary": "MLTriangularOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mltriangularoptions"
+				}
+			]
+		},
+		{
 			"name": "upperVerticalAngle",
 			"dictionary": "XREquirectLayerInit",
 			"definitions": [
@@ -52395,26 +52619,6 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtciceserver"
-				}
-			]
-		},
-		{
-			"name": "username",
-			"dictionary": "URLPatternInit",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatterninit"
-				}
-			]
-		},
-		{
-			"name": "username",
-			"dictionary": "URLPatternResult",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "dictdef-urlpatternresult"
 				}
 			]
 		},
@@ -53003,6 +53207,16 @@
 			]
 		},
 		{
+			"name": "viewTransition",
+			"dictionary": "PageRevealEventInit",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "dictdef-pagerevealeventinit"
+				}
+			]
+		},
+		{
 			"name": "violatedDirective",
 			"dictionary": "SecurityPolicyViolationEventInit",
 			"definitions": [
@@ -53019,6 +53233,16 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "dictdef-gpubindgrouplayoutentry"
+				}
+			]
+		},
+		{
+			"name": "visibilityProperty",
+			"dictionary": "CheckVisibilityOptions",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/cssom-view-1/",
+					"id": "dictdef-checkvisibilityoptions"
 				}
 			]
 		},
@@ -53197,7 +53421,7 @@
 			"dictionary": "GamepadEffectParameters",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
+					"spec": "https://w3c.github.io/gamepad/",
 					"id": "dom-gamepadeffectparameters"
 				}
 			]
@@ -54076,6 +54300,16 @@
 			]
 		},
 		{
+			"name": "activation",
+			"interface": "Navigation",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "navigation"
+				}
+			]
+		},
+		{
 			"name": "activationStart",
 			"interface": "PerformanceNavigationTiming",
 			"definitions": [
@@ -54112,6 +54346,16 @@
 				{
 					"spec": "https://w3c.github.io/ServiceWorker/",
 					"id": "serviceworkerregistration"
+				}
+			]
+		},
+		{
+			"name": "active",
+			"interface": "Subscriber",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "subscriber"
 				}
 			]
 		},
@@ -54240,6 +54484,16 @@
 			]
 		},
 		{
+			"name": "adAuctionHeaders",
+			"interface": "HTMLIFrameElement",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-htmliframeelement"
+				}
+			]
+		},
+		{
 			"name": "added",
 			"interface": "XRInputSourcesChangeEvent",
 			"definitions": [
@@ -54256,6 +54510,16 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "mutationrecord"
+				}
+			]
+		},
+		{
+			"name": "addedRanges",
+			"interface": "BufferedChangeEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-bufferedchangeevent"
 				}
 			]
 		},
@@ -55554,6 +55818,26 @@
 			]
 		},
 		{
+			"name": "ariaBrailleLabel",
+			"interface": "ARIAMixin",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/aria/",
+					"id": "dom-ariamixin"
+				}
+			]
+		},
+		{
+			"name": "ariaBrailleRoleDescription",
+			"interface": "ARIAMixin",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/aria/",
+					"id": "dom-ariamixin"
+				}
+			]
+		},
+		{
 			"name": "ariaBusy",
 			"interface": "ARIAMixin",
 			"definitions": [
@@ -56154,16 +56438,6 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "authenticatorattestationresponse"
-				}
-			]
-		},
-		{
-			"name": "attestationObject",
-			"interface": "AuthenticatorAssertionResponse",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "authenticatorassertionresponse"
 				}
 			]
 		},
@@ -59051,6 +59325,16 @@
 			]
 		},
 		{
+			"name": "clonable",
+			"interface": "ShadowRoot",
+			"definitions": [
+				{
+					"spec": "https://dom.spec.whatwg.org/",
+					"id": "shadowroot"
+				}
+			]
+		},
+		{
 			"name": "CLOSED",
 			"interface": "EventSource",
 			"static": true,
@@ -60925,6 +61209,16 @@
 				{
 					"spec": "https://webbluetoothcg.github.io/web-bluetooth/",
 					"id": "bluetoothremotegattserver"
+				}
+			]
+		},
+		{
+			"name": "connected",
+			"interface": "SerialPort",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/serial/",
+					"id": "dom-serialport"
 				}
 			]
 		},
@@ -65194,6 +65488,16 @@
 			]
 		},
 		{
+			"name": "drawingBufferFormat",
+			"interface": "WebGLRenderingContextBase",
+			"definitions": [
+				{
+					"spec": "https://registry.khronos.org/webgl/specs/latest/1.0/",
+					"id": "webglrenderingcontextbase"
+				}
+			]
+		},
+		{
 			"name": "drawingBufferHeight",
 			"interface": "WebGLRenderingContextBase",
 			"definitions": [
@@ -65302,6 +65606,46 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "visibilitystateentry"
+				}
+			]
+		},
+		{
+			"name": "duration",
+			"interface": "PerformanceLongTaskTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelongtasktiming"
+				}
+			]
+		},
+		{
+			"name": "duration",
+			"interface": "TaskAttributionTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "taskattributiontiming"
+				}
+			]
+		},
+		{
+			"name": "duration",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
+				}
+			]
+		},
+		{
+			"name": "duration",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
 				}
 			]
 		},
@@ -65585,6 +65929,16 @@
 				{
 					"spec": "https://wicg.github.io/netinfo/",
 					"id": "dom-networkinformation"
+				}
+			]
+		},
+		{
+			"name": "effects",
+			"interface": "GamepadHapticActuator",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/gamepad/",
+					"id": "dom-gamepadhapticactuator"
 				}
 			]
 		},
@@ -66098,12 +66452,62 @@
 			]
 		},
 		{
+			"name": "entry",
+			"interface": "NavigationActivation",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "navigationactivation"
+				}
+			]
+		},
+		{
 			"name": "entryType",
 			"interface": "VisibilityStateEntry",
 			"definitions": [
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "visibilitystateentry"
+				}
+			]
+		},
+		{
+			"name": "entryType",
+			"interface": "PerformanceLongTaskTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelongtasktiming"
+				}
+			]
+		},
+		{
+			"name": "entryType",
+			"interface": "TaskAttributionTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "taskattributiontiming"
+				}
+			]
+		},
+		{
+			"name": "entryType",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
+				}
+			]
+		},
+		{
+			"name": "entryType",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
 				}
 			]
 		},
@@ -66347,6 +66751,16 @@
 				{
 					"spec": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
 					"id": "webgl_blend_equation_advanced_coherent"
+				}
+			]
+		},
+		{
+			"name": "executionStart",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
 				}
 			]
 		},
@@ -66948,6 +67362,16 @@
 			]
 		},
 		{
+			"name": "firstUIEventTimestamp",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
+				}
+			]
+		},
+		{
 			"name": "fixedBlockSize",
 			"interface": "LayoutConstraints",
 			"definitions": [
@@ -67330,6 +67754,16 @@
 				{
 					"spec": "https://w3c.github.io/touch-events/",
 					"id": "dom-touch"
+				}
+			]
+		},
+		{
+			"name": "forcedStyleAndLayoutDuration",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
 				}
 			]
 		},
@@ -68197,6 +68631,16 @@
 		},
 		{
 			"name": "from",
+			"interface": "NavigationActivation",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "navigationactivation"
+				}
+			]
+		},
+		{
+			"name": "from",
 			"interface": "NavigationCurrentEntryChangeEvent",
 			"definitions": [
 				{
@@ -68858,10 +69302,6 @@
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
-				},
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
 				}
 			]
 		},
@@ -68909,10 +69349,6 @@
 			"name": "hasRegExpGroups",
 			"interface": "URLPattern",
 			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
-				},
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
@@ -69663,10 +70099,6 @@
 			"name": "hostname",
 			"interface": "URLPattern",
 			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
-				},
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
@@ -71659,6 +72091,36 @@
 			]
 		},
 		{
+			"name": "invokedProgrammatically",
+			"interface": "SnapEvent",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snapevent"
+				}
+			]
+		},
+		{
+			"name": "invoker",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
+				}
+			]
+		},
+		{
+			"name": "invokerType",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
+				}
+			]
+		},
+		{
 			"name": "is2D",
 			"interface": "CSSTransformValue",
 			"definitions": [
@@ -71695,6 +72157,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/interaction.html",
 					"id": "useractivation"
+				}
+			]
+		},
+		{
+			"name": "isAutoSelected",
+			"interface": "IdentityCredential",
+			"definitions": [
+				{
+					"spec": "https://fedidcg.github.io/FedCM/",
+					"id": "identitycredential"
 				}
 			]
 		},
@@ -73040,6 +73512,16 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "domtokenlist"
+				}
+			]
+		},
+		{
+			"name": "length",
+			"interface": "SnapTargetArray",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snaptargetarray"
 				}
 			]
 		},
@@ -75141,16 +75623,6 @@
 			]
 		},
 		{
-			"name": "max",
-			"interface": "ProximitySensor",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/proximity/",
-					"id": "proximitysensor"
-				}
-			]
-		},
-		{
 			"name": "MAX",
 			"interface": "WebGL2RenderingContextBase",
 			"static": true,
@@ -75188,6 +75660,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/form-elements.html",
 					"id": "htmlmeterelement"
+				}
+			]
+		},
+		{
+			"name": "max",
+			"interface": "ProximitySensor",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/proximity/",
+					"id": "proximitysensor"
 				}
 			]
 		},
@@ -77843,6 +78325,46 @@
 		},
 		{
 			"name": "name",
+			"interface": "PerformanceLongTaskTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelongtasktiming"
+				}
+			]
+		},
+		{
+			"name": "name",
+			"interface": "TaskAttributionTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "taskattributiontiming"
+				}
+			]
+		},
+		{
+			"name": "name",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
+				}
+			]
+		},
+		{
+			"name": "name",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
+				}
+			]
+		},
+		{
+			"name": "name",
 			"interface": "PerformanceEntry",
 			"definitions": [
 				{
@@ -78141,6 +78663,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
 					"id": "navigationtransition"
+				}
+			]
+		},
+		{
+			"name": "navigationType",
+			"interface": "NavigationActivation",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+					"id": "navigationactivation"
 				}
 			]
 		},
@@ -79571,6 +80103,16 @@
 			]
 		},
 		{
+			"name": "onbufferedchange",
+			"interface": "ManagedSourceBuffer",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-managedsourcebuffer"
+				}
+			]
+		},
+		{
 			"name": "oncancel",
 			"interface": "CloseWatcher",
 			"definitions": [
@@ -79877,6 +80419,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/webappapis.html",
 					"id": "globaleventhandlers"
+				}
+			]
+		},
+		{
+			"name": "onclose",
+			"interface": "MessagePort",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/web-messaging.html",
+					"id": "messageport"
 				}
 			]
 		},
@@ -80692,6 +81244,16 @@
 			]
 		},
 		{
+			"name": "onendstreaming",
+			"interface": "ManagedMediaSource",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-managedmediasource"
+				}
+			]
+		},
+		{
 			"name": "onenter",
 			"interface": "TextTrackCue",
 			"definitions": [
@@ -81298,6 +81860,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/webappapis.html",
 					"id": "globaleventhandlers"
+				}
+			]
+		},
+		{
+			"name": "onkeyframerequest",
+			"interface": "RTCRtpScriptTransformer",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
+					"id": "rtcrtpscripttransformer"
 				}
 			]
 		},
@@ -82061,6 +82633,16 @@
 		},
 		{
 			"name": "onpagehide",
+			"interface": "WindowEventHandlers",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/webappapis.html",
+					"id": "windoweventhandlers"
+				}
+			]
+		},
+		{
+			"name": "onpagereveal",
 			"interface": "WindowEventHandlers",
 			"definitions": [
 				{
@@ -83096,6 +83678,16 @@
 				{
 					"spec": "https://w3c.github.io/mediacapture-record/",
 					"id": "mediarecorder"
+				}
+			]
+		},
+		{
+			"name": "onstartstreaming",
+			"interface": "ManagedMediaSource",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-managedmediasource"
 				}
 			]
 		},
@@ -84835,16 +85427,6 @@
 			]
 		},
 		{
-			"name": "password",
-			"interface": "URLPattern",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
-				}
-			]
-		},
-		{
 			"name": "pathLength",
 			"interface": "SVGGeometryElement",
 			"definitions": [
@@ -84898,10 +85480,6 @@
 			"name": "pathname",
 			"interface": "URLPattern",
 			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
-				},
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
@@ -84975,6 +85553,16 @@
 				{
 					"spec": "https://wicg.github.io/speech-api/",
 					"id": "speechsynthesis"
+				}
+			]
+		},
+		{
+			"name": "pauseDuration",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
 				}
 			]
 		},
@@ -85875,16 +86463,6 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "rtcsctptransport"
-				}
-			]
-		},
-		{
-			"name": "port",
-			"interface": "URLPattern",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
 				}
 			]
 		},
@@ -86808,16 +87386,6 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-pc/",
 					"id": "dom-rtcdatachannel"
-				}
-			]
-		},
-		{
-			"name": "protocol",
-			"interface": "URLPattern",
-			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
 				}
 			]
 		},
@@ -88642,6 +89210,16 @@
 			]
 		},
 		{
+			"name": "removedRanges",
+			"interface": "BufferedChangeEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-bufferedchangeevent"
+				}
+			]
+		},
+		{
 			"name": "RENDER_ATTACHMENT",
 			"interface": "GPUTextureUsage",
 			"static": true,
@@ -89875,12 +90453,12 @@
 		},
 		{
 			"name": "RGBA8",
-			"interface": "WebGL2RenderingContextBase",
+			"interface": "WebGLRenderingContextBase",
 			"static": true,
 			"definitions": [
 				{
-					"spec": "https://registry.khronos.org/webgl/specs/latest/2.0/",
-					"id": "webgl2renderingcontextbase"
+					"spec": "https://registry.khronos.org/webgl/specs/latest/1.0/",
+					"id": "webglrenderingcontextbase"
 				}
 			]
 		},
@@ -89925,6 +90503,16 @@
 				{
 					"spec": "https://registry.khronos.org/webgl/specs/latest/2.0/",
 					"id": "webgl2renderingcontextbase"
+				}
+			]
+		},
+		{
+			"name": "rid",
+			"interface": "KeyFrameRequestEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
+					"id": "keyframerequestevent"
 				}
 			]
 		},
@@ -90790,6 +91378,16 @@
 			]
 		},
 		{
+			"name": "scripts",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
+				}
+			]
+		},
+		{
 			"name": "scriptURL",
 			"interface": "ServiceWorker",
 			"definitions": [
@@ -91053,10 +91651,6 @@
 			"name": "search",
 			"interface": "URLPattern",
 			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
-				},
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
@@ -91879,6 +92473,16 @@
 			]
 		},
 		{
+			"name": "signal",
+			"interface": "Subscriber",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "subscriber"
+				}
+			]
+		},
+		{
 			"name": "SIGNALED",
 			"interface": "WebGL2RenderingContextBase",
 			"static": true,
@@ -92211,12 +92815,42 @@
 			]
 		},
 		{
+			"name": "smoothlyScrolled",
+			"interface": "SnapEvent",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snapevent"
+				}
+			]
+		},
+		{
+			"name": "snappedTargets",
+			"interface": "SnapEvent",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snapevent"
+				}
+			]
+		},
+		{
 			"name": "snapshotLength",
 			"interface": "XPathResult",
 			"definitions": [
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "xpathresult"
+				}
+			]
+		},
+		{
+			"name": "snapTargets",
+			"interface": "SnapEvent",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snapevent"
 				}
 			]
 		},
@@ -92428,6 +93062,16 @@
 				{
 					"spec": "https://w3c.github.io/webappsec-permissions-policy/",
 					"id": "permissionspolicyviolationreportbody"
+				}
+			]
+		},
+		{
+			"name": "sourceLocation",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
 				}
 			]
 		},
@@ -93044,6 +93688,46 @@
 		},
 		{
 			"name": "startTime",
+			"interface": "PerformanceLongTaskTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelongtasktiming"
+				}
+			]
+		},
+		{
+			"name": "startTime",
+			"interface": "TaskAttributionTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "taskattributiontiming"
+				}
+			]
+		},
+		{
+			"name": "startTime",
+			"interface": "PerformanceLongAnimationFrameTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancelonganimationframetiming"
+				}
+			]
+		},
+		{
+			"name": "startTime",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
+				}
+			]
+		},
+		{
+			"name": "startTime",
 			"interface": "PerformanceEntry",
 			"definitions": [
 				{
@@ -93297,8 +93981,8 @@
 			"interface": "ElementInternals",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/custom-state-pseudo-class/",
-					"id": "ref-for-elementinternals"
+					"spec": "https://html.spec.whatwg.org/multipage/custom-elements.html",
+					"id": "elementinternals"
 				}
 			]
 		},
@@ -93968,6 +94652,16 @@
 				{
 					"spec": "https://w3c.github.io/p2p-webtransport/cs.html",
 					"id": "quicstream"
+				}
+			]
+		},
+		{
+			"name": "streaming",
+			"interface": "ManagedMediaSource",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/media-source/",
+					"id": "dom-managedmediasource"
 				}
 			]
 		},
@@ -95854,6 +96548,16 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "processinginstruction"
+				}
+			]
+		},
+		{
+			"name": "target",
+			"interface": "SnapEvent",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snapevent"
 				}
 			]
 		},
@@ -98654,16 +99358,6 @@
 		},
 		{
 			"name": "type",
-			"interface": "GamepadHapticActuator",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "dom-gamepadhapticactuator"
-				}
-			]
-		},
-		{
-			"name": "type",
 			"interface": "DataCue",
 			"definitions": [
 				{
@@ -100420,10 +101114,6 @@
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
-				},
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
 				}
 			]
 		},
@@ -101591,8 +102281,8 @@
 			"interface": "Gamepad",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "idl-def-gamepad-partial-1"
+					"spec": "https://w3c.github.io/gamepad/",
+					"id": "dom-gamepad"
 				}
 			]
 		},
@@ -101763,7 +102453,7 @@
 			"interface": "PageRevealEvent",
 			"definitions": [
 				{
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
 					"id": "pagerevealevent"
 				}
 			]
@@ -102750,6 +103440,26 @@
 			]
 		},
 		{
+			"name": "window",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
+				}
+			]
+		},
+		{
+			"name": "windowAttribution",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
+				}
+			]
+		},
+		{
 			"name": "windowControlsOverlay",
 			"interface": "Navigator",
 			"definitions": [
@@ -102978,6 +103688,16 @@
 				{
 					"spec": "https://webidl.spec.whatwg.org/",
 					"id": "domexception"
+				}
+			]
+		},
+		{
+			"name": "x",
+			"interface": "SnapTargetList",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snaptargetlist"
 				}
 			]
 		},
@@ -103328,6 +104048,16 @@
 				{
 					"spec": "https://immersive-web.github.io/webxr/",
 					"id": "ref-for-navigator"
+				}
+			]
+		},
+		{
+			"name": "y",
+			"interface": "SnapTargetList",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snaptargetlist"
 				}
 			]
 		},
@@ -104471,16 +105201,6 @@
 		},
 		{
 			"name": "add",
-			"interface": "CustomStateSet",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/custom-state-pseudo-class/",
-					"id": "customstateset"
-				}
-			]
-		},
-		{
-			"name": "add",
 			"interface": "FontFaceSet",
 			"definitions": [
 				{
@@ -104714,6 +105434,16 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingdrawing"
+				}
+			]
+		},
+		{
+			"name": "addTeardown",
+			"interface": "Subscriber",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "subscriber"
 				}
 			]
 		},
@@ -105124,6 +105854,26 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/canvas.html",
 					"id": "canvaspath"
+				}
+			]
+		},
+		{
+			"name": "argMax",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
+			"name": "argMin",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -105978,16 +106728,6 @@
 			]
 		},
 		{
-			"name": "canPlayEffectType",
-			"interface": "GamepadHapticActuator",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "dom-gamepadhapticactuator"
-				}
-			]
-		},
-		{
 			"name": "canPlayType",
 			"interface": "HTMLMediaElement",
 			"definitions": [
@@ -106075,6 +106815,16 @@
 				{
 					"spec": "https://drafts.csswg.org/cssom-view-1/",
 					"id": "ref-for-document"
+				}
+			]
+		},
+		{
+			"name": "cast",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -107479,6 +108229,16 @@
 				{
 					"spec": "https://w3c.github.io/merchant-validation/",
 					"id": "merchantvalidationevent"
+				}
+			]
+		},
+		{
+			"name": "complete",
+			"interface": "Subscriber",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "subscriber"
 				}
 			]
 		},
@@ -109546,6 +110306,16 @@
 			]
 		},
 		{
+			"name": "dataType",
+			"interface": "MLOperand",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mloperand"
+				}
+			]
+		},
+		{
 			"name": "deactivate",
 			"interface": "PendingBeacon",
 			"definitions": [
@@ -110806,12 +111576,32 @@
 			]
 		},
 		{
+			"name": "drawingBufferStorage",
+			"interface": "WebGLRenderingContextBase",
+			"definitions": [
+				{
+					"spec": "https://registry.khronos.org/webgl/specs/latest/1.0/",
+					"id": "webglrenderingcontextbase"
+				}
+			]
+		},
+		{
 			"name": "drawRangeElements",
 			"interface": "WebGL2RenderingContextBase",
 			"definitions": [
 				{
 					"spec": "https://registry.khronos.org/webgl/specs/latest/2.0/",
 					"id": "webgl2renderingcontextbase"
+				}
+			]
+		},
+		{
+			"name": "drop",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -111227,6 +112017,16 @@
 			]
 		},
 		{
+			"name": "equal",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
 			"name": "equals",
 			"interface": "CSSNumericValue",
 			"definitions": [
@@ -111243,6 +112043,16 @@
 				{
 					"spec": "https://w3c.github.io/webappsec-cowl/",
 					"id": "label"
+				}
+			]
+		},
+		{
+			"name": "erf",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -111309,6 +112119,16 @@
 			]
 		},
 		{
+			"name": "error",
+			"interface": "Subscriber",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "subscriber"
+				}
+			]
+		},
+		{
 			"name": "escape",
 			"interface": "CSS",
 			"static": true,
@@ -111370,6 +112190,16 @@
 			]
 		},
 		{
+			"name": "every",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
 			"name": "ex",
 			"interface": "CSS",
 			"static": true,
@@ -111384,10 +112214,6 @@
 			"name": "exec",
 			"interface": "URLPattern",
 			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
-				},
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
@@ -111456,6 +112282,16 @@
 		},
 		{
 			"name": "exp",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
+			"name": "expand",
 			"interface": "MLGraphBuilder",
 			"definitions": [
 				{
@@ -111640,6 +112476,36 @@
 			]
 		},
 		{
+			"name": "filter",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
+			"name": "finally",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
+			"name": "find",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
 			"name": "findRule",
 			"interface": "CSSKeyframesRule",
 			"definitions": [
@@ -111716,6 +112582,16 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "treewalker"
+				}
+			]
+		},
+		{
+			"name": "flatMap",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -111870,6 +112746,16 @@
 			]
 		},
 		{
+			"name": "forEach",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
 			"name": "forget",
 			"interface": "BluetoothDevice",
 			"definitions": [
@@ -112019,6 +112905,17 @@
 				{
 					"spec": "https://streams.spec.whatwg.org/",
 					"id": "readablestream"
+				}
+			]
+		},
+		{
+			"name": "from",
+			"interface": "Observable",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -112237,6 +113134,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-ice/",
 					"id": "idl-def-rtcicetransport-partial-1"
+				}
+			]
+		},
+		{
+			"name": "gather",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -113207,6 +114114,17 @@
 				{
 					"spec": "https://drafts.css-houdini.org/css-animation-worklet-1/",
 					"id": "workletgroupeffect"
+				}
+			]
+		},
+		{
+			"name": "getClientCapabilities",
+			"interface": "PublicKeyCredential",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "ref-for-publickeycredential"
 				}
 			]
 		},
@@ -116059,6 +116977,26 @@
 			]
 		},
 		{
+			"name": "greater",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
+			"name": "greaterOrEqual",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
 			"name": "group",
 			"interface": "console",
 			"static": true,
@@ -116290,7 +117228,7 @@
 			]
 		},
 		{
-			"name": "hasPrivateTokens",
+			"name": "hasPrivateToken",
 			"interface": "Document",
 			"definitions": [
 				{
@@ -116368,6 +117306,16 @@
 				{
 					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
 					"id": "ref-for-namespacedef-css"
+				}
+			]
+		},
+		{
+			"name": "identity",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -117171,17 +118119,6 @@
 			]
 		},
 		{
-			"name": "isPasskeyPlatformAuthenticatorAvailable",
-			"interface": "PublicKeyCredential",
-			"static": true,
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "ref-for-publickeycredential"
-				}
-			]
-		},
-		{
 			"name": "isPointInFill",
 			"interface": "SVGGeometryElement",
 			"definitions": [
@@ -117506,6 +118443,16 @@
 		},
 		{
 			"name": "item",
+			"interface": "SnapTargetArray",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "snaptargetarray"
+				}
+			]
+		},
+		{
+			"name": "item",
 			"interface": "HTMLAllCollection",
 			"definitions": [
 				{
@@ -117817,6 +118764,16 @@
 			]
 		},
 		{
+			"name": "layerNormalization",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
 			"name": "layoutNextFragment",
 			"interface": "LayoutChild",
 			"definitions": [
@@ -117867,6 +118824,26 @@
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
 					"id": "workletsharedstorage"
+				}
+			]
+		},
+		{
+			"name": "lesser",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
+			"name": "lesserOrEqual",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -118200,6 +119177,16 @@
 				{
 					"spec": "https://immersive-web.github.io/webxr/",
 					"id": "ref-for-webglrenderingcontextbase"
+				}
+			]
+		},
+		{
+			"name": "map",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -118726,6 +119713,16 @@
 			]
 		},
 		{
+			"name": "next",
+			"interface": "Subscriber",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "subscriber"
+				}
+			]
+		},
+		{
 			"name": "nextNode",
 			"interface": "NodeIterator",
 			"definitions": [
@@ -118762,6 +119759,16 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "node"
+				}
+			]
+		},
+		{
+			"name": "not",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -118853,6 +119860,16 @@
 				{
 					"spec": "https://drafts.csswg.org/resize-observer-1/",
 					"id": "resizeobserver"
+				}
+			]
+		},
+		{
+			"name": "on",
+			"interface": "EventTarget",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "ref-for-eventtarget"
 				}
 			]
 		},
@@ -119487,7 +120504,7 @@
 			"interface": "GamepadHapticActuator",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
+					"spec": "https://w3c.github.io/gamepad/",
 					"id": "dom-gamepadhapticactuator"
 				}
 			]
@@ -119863,7 +120880,7 @@
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "dom-gamepadhapticactuator"
+					"id": "idl-def-gamepadhapticactuator-partial-1"
 				}
 			]
 		},
@@ -120416,6 +121433,16 @@
 			]
 		},
 		{
+			"name": "reciprocal",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
 			"name": "reconnect",
 			"interface": "PresentationRequest",
 			"definitions": [
@@ -120443,6 +121470,16 @@
 				{
 					"spec": "https://fetch.spec.whatwg.org/",
 					"id": "response"
+				}
+			]
+		},
+		{
+			"name": "reduce",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -120994,6 +122031,16 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "element"
+				}
+			]
+		},
+		{
+			"name": "removeCandidatePair",
+			"interface": "RTCIceTransport",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-extensions/",
+					"id": "ref-for-rtcicetransport"
 				}
 			]
 		},
@@ -121961,21 +123008,21 @@
 		},
 		{
 			"name": "reset",
-			"interface": "GamepadHapticActuator",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/gamepad/extensions.html",
-					"id": "dom-gamepadhapticactuator"
-				}
-			]
-		},
-		{
-			"name": "reset",
 			"interface": "USBDevice",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/webusb/",
 					"id": "usbdevice"
+				}
+			]
+		},
+		{
+			"name": "reset",
+			"interface": "GamepadHapticActuator",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/gamepad/",
+					"id": "dom-gamepadhapticactuator"
 				}
 			]
 		},
@@ -124365,6 +125412,16 @@
 			]
 		},
 		{
+			"name": "shape",
+			"interface": "MLOperand",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mloperand"
+				}
+			]
+		},
+		{
 			"name": "share",
 			"interface": "Navigator",
 			"definitions": [
@@ -124651,6 +125708,16 @@
 			]
 		},
 		{
+			"name": "some",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
 			"name": "sort",
 			"interface": "URLSearchParams",
 			"definitions": [
@@ -124701,7 +125768,7 @@
 			]
 		},
 		{
-			"name": "squeeze",
+			"name": "sqrt",
 			"interface": "MLGraphBuilder",
 			"definitions": [
 				{
@@ -125365,6 +126432,16 @@
 			]
 		},
 		{
+			"name": "subscribe",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
 			"name": "substringData",
 			"interface": "CharacterData",
 			"definitions": [
@@ -125559,6 +126636,16 @@
 			]
 		},
 		{
+			"name": "take",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
 			"name": "takePhoto",
 			"interface": "ImageCapture",
 			"definitions": [
@@ -125615,6 +126702,16 @@
 				{
 					"spec": "https://w3c.github.io/reporting/",
 					"id": "reportingobserver"
+				}
+			]
+		},
+		{
+			"name": "takeUntil",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -125686,10 +126783,6 @@
 			"name": "test",
 			"interface": "URLPattern",
 			"definitions": [
-				{
-					"spec": "https://urlpattern.spec.whatwg.org/",
-					"id": "urlpattern"
-				},
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "urlpattern"
@@ -125967,6 +127060,16 @@
 				{
 					"spec": "https://wicg.github.io/color-api/",
 					"id": "color"
+				}
+			]
+		},
+		{
+			"name": "toArray",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -126257,6 +127360,16 @@
 				{
 					"spec": "https://w3c.github.io/longtasks/",
 					"id": "performancelonganimationframetiming"
+				}
+			]
+		},
+		{
+			"name": "toJSON",
+			"interface": "PerformanceScriptTiming",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/longtasks/",
+					"id": "performancescripttiming"
 				}
 			]
 		},
@@ -126688,6 +127801,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
 					"id": "navigation"
+				}
+			]
+		},
+		{
+			"name": "triangular",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -127948,6 +129071,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/custom-elements.html",
 					"id": "customelementregistry"
+				}
+			]
+		},
+		{
+			"name": "where",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},

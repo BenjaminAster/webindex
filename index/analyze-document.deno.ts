@@ -112,8 +112,9 @@ export const tidyUpCollectedStuff = () => {
 				// console.log(definitions)
 				for (const definition of definitions) {
 					propertiesToConsider.forEach((property) => delete definition[property]);
+					if (!definition.id) console.log(`[ERROR]: ${current.name} has no id (spec: ${definition.spec})`);
 				}
-				const firstActualDefIndex = definitions.findIndex(({ id, onlyNewValues, partial }) => !id.startsWith("ref-for-") && !onlyNewValues && !partial);
+				const firstActualDefIndex = definitions.findIndex(({ id, onlyNewValues, partial }) => !id?.startsWith("ref-for-") && !onlyNewValues && !partial);
 				if (firstActualDefIndex >= 1) definitions.unshift(definitions.splice(firstActualDefIndex, 1)[0]);
 				// console.log(Object.fromEntries(propertiesToConsider.map((property) => [property, current[property]])),current)
 				organizedArray.push({

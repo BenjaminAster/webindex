@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Fri, 08 Dec 2023 11:06:35 GMT",
-		"iso": "2023-12-08T11:06:35.467Z",
-		"unixMillis": 1702033595467
+		"utc": "Tue, 30 Jan 2024 19:16:26 GMT",
+		"iso": "2024-01-30T19:16:26.992Z",
+		"unixMillis": 1706642186992
 	},
 	"cssProperties": [
 		{
@@ -17,6 +17,16 @@
 					"value": "<declaration-value>?",
 					"id": "propdef-",
 					"spec": "https://drafts.csswg.org/css-variables-1/"
+				}
+			]
+		},
+		{
+			"name": "-webkit-app-region",
+			"definitions": [
+				{
+					"value": "drag | no-drag",
+					"id": "dfn-webkit-app-region",
+					"spec": "https://wicg.github.io/manifest-incubations/"
 				}
 			]
 		},
@@ -501,7 +511,7 @@
 			"name": "background-position-block",
 			"definitions": [
 				{
-					"value": "[ center | [ start | end ]? <length-percentage>? ]#",
+					"value": "[ center | [ [ start | end ]? <length-percentage>? ]! ]#",
 					"id": "propdef-background-position-block",
 					"spec": "https://drafts.csswg.org/css-backgrounds-4/"
 				}
@@ -511,7 +521,7 @@
 			"name": "background-position-inline",
 			"definitions": [
 				{
-					"value": "[ center | [ start | end ]? <length-percentage>? ]#",
+					"value": "[ center | [ [ start | end ]? <length-percentage>? ]! ]#",
 					"id": "propdef-background-position-inline",
 					"spec": "https://drafts.csswg.org/css-backgrounds-4/"
 				}
@@ -709,6 +719,11 @@
 				{
 					"value": "<'border-block-start'>",
 					"id": "propdef-border-block",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<'border-block-start'>",
+					"id": "propdef-border-block",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
 				}
 			]
@@ -716,6 +731,11 @@
 		{
 			"name": "border-block-color",
 			"definitions": [
+				{
+					"value": "<'border-top-color'>{1,2}",
+					"id": "propdef-border-block-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-color'>{1,2}",
 					"id": "propdef-border-block-color",
@@ -727,6 +747,11 @@
 			"name": "border-block-end",
 			"definitions": [
 				{
+					"value": "<line-width> || <line-style> || <color>",
+					"id": "propdef-border-block-end",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-width'> || <'border-top-style'> || <color>",
 					"id": "propdef-border-block-end",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -736,6 +761,11 @@
 		{
 			"name": "border-block-end-color",
 			"definitions": [
+				{
+					"value": "<color> | <image-1D>",
+					"id": "propdef-border-block-end-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-color'>",
 					"id": "propdef-border-block-end-color",
@@ -757,6 +787,11 @@
 			"name": "border-block-end-style",
 			"definitions": [
 				{
+					"value": "<line-style>",
+					"id": "propdef-border-block-end-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-style'>",
 					"id": "propdef-border-block-end-style",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -766,6 +801,11 @@
 		{
 			"name": "border-block-end-width",
 			"definitions": [
+				{
+					"value": "<line-width>",
+					"id": "propdef-border-block-end-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-width'>",
 					"id": "propdef-border-block-end-width",
@@ -777,6 +817,11 @@
 			"name": "border-block-start",
 			"definitions": [
 				{
+					"value": "<line-width> || <line-style> || <color>",
+					"id": "propdef-border-block-start",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-width'> || <'border-top-style'> || <color>",
 					"id": "propdef-border-block-start",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -786,6 +831,11 @@
 		{
 			"name": "border-block-start-color",
 			"definitions": [
+				{
+					"value": "<color> | <image-1D>",
+					"id": "propdef-border-block-start-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-color'>",
 					"id": "propdef-border-block-start-color",
@@ -807,6 +857,11 @@
 			"name": "border-block-start-style",
 			"definitions": [
 				{
+					"value": "<line-style>",
+					"id": "propdef-border-block-start-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-style'>",
 					"id": "propdef-border-block-start-style",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -816,6 +871,11 @@
 		{
 			"name": "border-block-start-width",
 			"definitions": [
+				{
+					"value": "<line-width>",
+					"id": "propdef-border-block-start-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-width'>",
 					"id": "propdef-border-block-start-width",
@@ -829,6 +889,11 @@
 				{
 					"value": "<'border-top-style'>{1,2}",
 					"id": "propdef-border-block-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<'border-top-style'>{1,2}",
+					"id": "propdef-border-block-style",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
 				}
 			]
@@ -839,6 +904,11 @@
 				{
 					"value": "<'border-top-width'>{1,2}",
 					"id": "propdef-border-block-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<'border-top-width'>{1,2}",
+					"id": "propdef-border-block-width",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
 				}
 			]
@@ -846,6 +916,11 @@
 		{
 			"name": "border-bottom",
 			"definitions": [
+				{
+					"value": "<line-width> || <line-style> || <color>",
+					"id": "propdef-border-bottom",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<line-width> || <line-style> || <color>",
 					"id": "propdef-border-bottom",
@@ -874,6 +949,11 @@
 				{
 					"value": "<length-percentage [0,∞]>{1,2}",
 					"id": "propdef-border-bottom-left-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<length-percentage [0,∞]>{1,2}",
+					"id": "propdef-border-bottom-left-radius",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -894,6 +974,11 @@
 				{
 					"value": "<length-percentage [0,∞]>{1,2}",
 					"id": "propdef-border-bottom-right-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<length-percentage [0,∞]>{1,2}",
+					"id": "propdef-border-bottom-right-radius",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -904,6 +989,11 @@
 				{
 					"value": "<line-style>",
 					"id": "propdef-border-bottom-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<line-style>",
+					"id": "propdef-border-bottom-style",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -911,6 +1001,11 @@
 		{
 			"name": "border-bottom-width",
 			"definitions": [
+				{
+					"value": "<line-width>",
+					"id": "propdef-border-bottom-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<line-width>",
 					"id": "propdef-border-bottom-width",
@@ -1007,6 +1102,11 @@
 			"name": "border-end-end-radius",
 			"definitions": [
 				{
+					"value": "<length-percentage [0,∞]>{1,2}",
+					"id": "propdef-border-end-end-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-left-radius'>",
 					"id": "propdef-border-end-end-radius",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -1016,6 +1116,11 @@
 		{
 			"name": "border-end-start-radius",
 			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2}",
+					"id": "propdef-border-end-start-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-left-radius'>",
 					"id": "propdef-border-end-start-radius",
@@ -1089,6 +1194,11 @@
 				{
 					"value": "<'border-block-start'>",
 					"id": "propdef-border-inline",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<'border-block-start'>",
+					"id": "propdef-border-inline",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
 				}
 			]
@@ -1096,6 +1206,11 @@
 		{
 			"name": "border-inline-color",
 			"definitions": [
+				{
+					"value": "<'border-top-color'>{1,2}",
+					"id": "propdef-border-inline-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-color'>{1,2}",
 					"id": "propdef-border-inline-color",
@@ -1107,6 +1222,11 @@
 			"name": "border-inline-end",
 			"definitions": [
 				{
+					"value": "<line-width> || <line-style> || <color>",
+					"id": "propdef-border-inline-end",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-width'> || <'border-top-style'> || <color>",
 					"id": "propdef-border-inline-end",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -1116,6 +1236,11 @@
 		{
 			"name": "border-inline-end-color",
 			"definitions": [
+				{
+					"value": "<color> | <image-1D>",
+					"id": "propdef-border-inline-end-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-color'>",
 					"id": "propdef-border-inline-end-color",
@@ -1137,6 +1262,11 @@
 			"name": "border-inline-end-style",
 			"definitions": [
 				{
+					"value": "<line-style>",
+					"id": "propdef-border-inline-end-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-style'>",
 					"id": "propdef-border-inline-end-style",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -1146,6 +1276,11 @@
 		{
 			"name": "border-inline-end-width",
 			"definitions": [
+				{
+					"value": "<line-width>",
+					"id": "propdef-border-inline-end-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-width'>",
 					"id": "propdef-border-inline-end-width",
@@ -1157,6 +1292,11 @@
 			"name": "border-inline-start",
 			"definitions": [
 				{
+					"value": "<line-width> || <line-style> || <color>",
+					"id": "propdef-border-inline-start",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-width'> || <'border-top-style'> || <color>",
 					"id": "propdef-border-inline-start",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -1166,6 +1306,11 @@
 		{
 			"name": "border-inline-start-color",
 			"definitions": [
+				{
+					"value": "<color> | <image-1D>",
+					"id": "propdef-border-inline-start-color",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-color'>",
 					"id": "propdef-border-inline-start-color",
@@ -1187,6 +1332,11 @@
 			"name": "border-inline-start-style",
 			"definitions": [
 				{
+					"value": "<line-style>",
+					"id": "propdef-border-inline-start-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-style'>",
 					"id": "propdef-border-inline-start-style",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -1196,6 +1346,11 @@
 		{
 			"name": "border-inline-start-width",
 			"definitions": [
+				{
+					"value": "<line-width>",
+					"id": "propdef-border-inline-start-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-width'>",
 					"id": "propdef-border-inline-start-width",
@@ -1209,6 +1364,11 @@
 				{
 					"value": "<'border-top-style'>{1,2}",
 					"id": "propdef-border-inline-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<'border-top-style'>{1,2}",
+					"id": "propdef-border-inline-style",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
 				}
 			]
@@ -1219,6 +1379,11 @@
 				{
 					"value": "<'border-top-width'>{1,2}",
 					"id": "propdef-border-inline-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<'border-top-width'>{1,2}",
+					"id": "propdef-border-inline-width",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
 				}
 			]
@@ -1226,6 +1391,11 @@
 		{
 			"name": "border-left",
 			"definitions": [
+				{
+					"value": "<line-width> || <line-style> || <color>",
+					"id": "propdef-border-left",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<line-width> || <line-style> || <color>",
 					"id": "propdef-border-left",
@@ -1264,6 +1434,11 @@
 				{
 					"value": "<line-style>",
 					"id": "propdef-border-left-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<line-style>",
+					"id": "propdef-border-left-style",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -1271,6 +1446,11 @@
 		{
 			"name": "border-left-width",
 			"definitions": [
+				{
+					"value": "<line-width>",
+					"id": "propdef-border-left-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<line-width>",
 					"id": "propdef-border-left-width",
@@ -1309,6 +1489,11 @@
 				{
 					"value": "<line-width> || <line-style> || <color>",
 					"id": "propdef-border-right",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<line-width> || <line-style> || <color>",
+					"id": "propdef-border-right",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -1344,6 +1529,11 @@
 				{
 					"value": "<line-style>",
 					"id": "propdef-border-right-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<line-style>",
+					"id": "propdef-border-right-style",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -1351,6 +1541,11 @@
 		{
 			"name": "border-right-width",
 			"definitions": [
+				{
+					"value": "<line-width>",
+					"id": "propdef-border-right-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<line-width>",
 					"id": "propdef-border-right-width",
@@ -1372,6 +1567,11 @@
 			"name": "border-start-end-radius",
 			"definitions": [
 				{
+					"value": "<length-percentage [0,∞]>{1,2}",
+					"id": "propdef-border-start-end-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
 					"value": "<'border-top-left-radius'>",
 					"id": "propdef-border-start-end-radius",
 					"spec": "https://drafts.csswg.org/css-logical-1/"
@@ -1381,6 +1581,11 @@
 		{
 			"name": "border-start-start-radius",
 			"definitions": [
+				{
+					"value": "<length-percentage [0,∞]>{1,2}",
+					"id": "propdef-border-start-start-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<'border-top-left-radius'>",
 					"id": "propdef-border-start-start-radius",
@@ -1401,6 +1606,11 @@
 		{
 			"name": "border-top",
 			"definitions": [
+				{
+					"value": "<line-width> || <line-style> || <color>",
+					"id": "propdef-border-top",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<line-width> || <line-style> || <color>",
 					"id": "propdef-border-top",
@@ -1429,6 +1639,11 @@
 				{
 					"value": "<length-percentage [0,∞]>{1,2}",
 					"id": "propdef-border-top-left-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<length-percentage [0,∞]>{1,2}",
+					"id": "propdef-border-top-left-radius",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -1449,6 +1664,11 @@
 				{
 					"value": "<length-percentage [0,∞]>{1,2}",
 					"id": "propdef-border-top-right-radius",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<length-percentage [0,∞]>{1,2}",
+					"id": "propdef-border-top-right-radius",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -1459,6 +1679,11 @@
 				{
 					"value": "<line-style>",
 					"id": "propdef-border-top-style",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
+				{
+					"value": "<line-style>",
+					"id": "propdef-border-top-style",
 					"spec": "https://drafts.csswg.org/css-backgrounds-3/"
 				}
 			]
@@ -1466,6 +1691,11 @@
 		{
 			"name": "border-top-width",
 			"definitions": [
+				{
+					"value": "<line-width>",
+					"id": "propdef-border-top-width",
+					"spec": "https://drafts.csswg.org/css-borders-4/"
+				},
 				{
 					"value": "<line-width>",
 					"id": "propdef-border-top-width",
@@ -2545,7 +2775,7 @@
 			"name": "flood-opacity",
 			"definitions": [
 				{
-					"value": "<alpha-value>",
+					"value": "<'opacity'>",
 					"id": "propdef-flood-opacity",
 					"spec": "https://drafts.fxtf.org/filter-effects-1/"
 				}
@@ -2575,7 +2805,7 @@
 			"name": "font",
 			"definitions": [
 				{
-					"value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | <system-family-name>",
+					"value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | <system-family-name>",
 					"id": "propdef-font",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
@@ -2662,16 +2892,6 @@
 				{
 					"value": "none | <number [0,∞]>",
 					"id": "propdef-font-size-adjust",
-					"spec": "https://drafts.csswg.org/css-fonts-4/"
-				}
-			]
-		},
-		{
-			"name": "font-stretch",
-			"definitions": [
-				{
-					"value": "normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
-					"id": "propdef-font-stretch",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -2832,6 +3052,16 @@
 				{
 					"value": "<font-weight-absolute> | bolder | lighter",
 					"id": "propdef-font-weight",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "font-width",
+			"definitions": [
+				{
+					"value": "normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
+					"id": "propdef-font-width",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -3571,7 +3801,7 @@
 			"name": "line-clamp",
 			"definitions": [
 				{
-					"value": "none | <integer [1,∞]> <'block-ellipsis'>?",
+					"value": "none | <integer [1,∞]>? <'block-ellipsis'>?",
 					"id": "propdef-line-clamp",
 					"spec": "https://drafts.csswg.org/css-overflow-4/"
 				}
@@ -4414,7 +4644,7 @@
 			"name": "opacity",
 			"definitions": [
 				{
-					"value": "<alpha-value>",
+					"value": "<opacity-value>",
 					"id": "propdef-opacity",
 					"spec": "https://drafts.csswg.org/css-color-4/"
 				},
@@ -5077,21 +5307,41 @@
 			]
 		},
 		{
-			"name": "position-fallback",
-			"definitions": [
-				{
-					"value": "none | <dashed-ident>",
-					"id": "propdef-position-fallback",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
-				}
-			]
-		},
-		{
 			"name": "position-fallback-bounds",
 			"definitions": [
 				{
 					"value": "normal | <dashed-ident>",
 					"id": "propdef-position-fallback-bounds",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "position-try-final",
+			"definitions": [
+				{
+					"value": "[ always? && [ first | <try-size> ] ] | hide",
+					"id": "propdef-position-try-final",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "position-try-options",
+			"definitions": [
+				{
+					"value": "none | [ <dashed-ident> | <try-tactic> ]#",
+					"id": "propdef-position-try-options",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "position-try-order",
+			"definitions": [
+				{
+					"value": "normal | <try-size>",
+					"id": "propdef-position-try-order",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -5721,7 +5971,7 @@
 			"name": "shape-image-threshold",
 			"definitions": [
 				{
-					"value": "<alpha-value>",
+					"value": "<'opacity'>",
 					"id": "propdef-shape-image-threshold",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
@@ -6552,7 +6802,7 @@
 			"name": "text-spacing",
 			"definitions": [
 				{
-					"value": "normal | none | auto | <spacing-trim> || <autospace>",
+					"value": "none | auto | <spacing-trim> || <autospace>",
 					"id": "propdef-text-spacing",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
@@ -6648,7 +6898,7 @@
 			"name": "timeline-scope",
 			"definitions": [
 				{
-					"value": "none | <dashed-ident>#",
+					"value": "none | all | <dashed-ident>#",
 					"id": "propdef-timeline-scope",
 					"spec": "https://drafts.csswg.org/scroll-animations-1/"
 				}
@@ -6928,7 +7178,7 @@
 			"name": "view-transition-name",
 			"definitions": [
 				{
-					"value": "none | <custom-ident>",
+					"value": "none | auto | <custom-ident>",
 					"id": "propdef-view-transition-name",
 					"spec": "https://drafts.csswg.org/css-view-transitions-1/"
 				}
@@ -7254,6 +7504,16 @@
 					"spec": "https://drafts.csswg.org/css2/"
 				}
 			]
+		},
+		{
+			"name": "zoom",
+			"definitions": [
+				{
+					"value": "<number> || <percentage>",
+					"id": "propdef-zoom",
+					"spec": "https://drafts.csswg.org/css-viewport-1/"
+				}
+			]
 		}
 	],
 	"cssTypes": [
@@ -7298,36 +7558,6 @@
 			]
 		},
 		{
-			"name": "<absolute-color-base>",
-			"definitions": [
-				{
-					"id": "typedef-absolute-color-base",
-					"definition": "<hex-color> | <absolute-color-function> | <named-color> | transparent",
-					"spec": "https://drafts.csswg.org/css-color-5/"
-				},
-				{
-					"id": "typedef-absolute-color-base",
-					"definition": "<hex-color> | <absolute-color-function> | <named-color> | transparent",
-					"spec": "https://drafts.csswg.org/css-color-4/"
-				}
-			]
-		},
-		{
-			"name": "<absolute-color-function>",
-			"definitions": [
-				{
-					"id": "typedef-absolute-color-function",
-					"definition": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>",
-					"spec": "https://drafts.csswg.org/css-color-5/"
-				},
-				{
-					"id": "typedef-absolute-color-function",
-					"definition": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>",
-					"spec": "https://drafts.csswg.org/css-color-4/"
-				}
-			]
-		},
-		{
 			"name": "<age>",
 			"definitions": [
 				{
@@ -7340,11 +7570,6 @@
 		{
 			"name": "<alpha-value>",
 			"definitions": [
-				{
-					"id": "typedef-opacity-alpha-value",
-					"definition": null,
-					"spec": "https://drafts.csswg.org/css-color-4/"
-				},
 				{
 					"id": "typedef-color-alpha-value",
 					"definition": "<number> | <percentage>",
@@ -8018,6 +8243,21 @@
 			]
 		},
 		{
+			"name": "<color-base>",
+			"definitions": [
+				{
+					"id": "typedef-color-base",
+					"definition": "<hex-color> | <color-function> | <named-color> | <color-mix()> | transparent",
+					"spec": "https://drafts.csswg.org/css-color-5/"
+				},
+				{
+					"id": "typedef-color-base",
+					"definition": "<hex-color> | <color-function> | <named-color> | transparent",
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
 			"name": "<color-font-tech>",
 			"definitions": [
 				{
@@ -8029,6 +8269,21 @@
 					"id": "color-font-tech-values",
 					"definition": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "<color-function>",
+			"definitions": [
+				{
+					"id": "typedef-color-function",
+					"definition": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>",
+					"spec": "https://drafts.csswg.org/css-color-5/"
+				},
+				{
+					"id": "typedef-color-function",
+					"definition": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>",
+					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
 		},
@@ -8157,7 +8412,7 @@
 			"definitions": [
 				{
 					"id": "typedef-combinator",
-					"definition": "'>' | '+' | '~'",
+					"definition": "'>' | '+' | '~' | [ '|' '|' ]",
 					"spec": "https://drafts.csswg.org/selectors-4/"
 				}
 			]
@@ -8974,6 +9229,11 @@
 					"id": "family-name-value",
 					"definition": null,
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				},
+				{
+					"id": "ref-for-family-name-value④",
+					"definition": "<string> | <custom-ident>+",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
 		},
@@ -9168,16 +9428,6 @@
 			]
 		},
 		{
-			"name": "<font-stretch-css3>",
-			"definitions": [
-				{
-					"id": "font-stretch-css3-values",
-					"definition": "[normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]",
-					"spec": "https://drafts.csswg.org/css-fonts-4/"
-				}
-			]
-		},
-		{
 			"name": "<font-tech>",
 			"definitions": [
 				{
@@ -9208,6 +9458,16 @@
 				{
 					"id": "font-weight-absolute-values",
 					"definition": "[normal | bold | <number [1,1000]>]",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "<font-width-css3>",
+			"definitions": [
+				{
+					"id": "font-width-css3-values",
+					"definition": "[normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -9293,6 +9553,11 @@
 				{
 					"id": "generic-family-value",
 					"definition": null,
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				},
+				{
+					"id": "ref-for-generic-family-value⑨",
+					"definition": "generic( <custom-ident>+ ) | <string> | <custom-ident>+",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -10583,6 +10848,16 @@
 			]
 		},
 		{
+			"name": "<opacity-value>",
+			"definitions": [
+				{
+					"id": "typedef-opacity-opacity-value",
+					"definition": null,
+					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
 			"name": "<opentype-tag>",
 			"definitions": [
 				{
@@ -10923,17 +11198,52 @@
 			]
 		},
 		{
+			"name": "<radial-extent>",
+			"definitions": [
+				{
+					"id": "typedef-radial-extent",
+					"definition": "closest-corner | closest-side | farthest-corner | farthest-side",
+					"spec": "https://drafts.csswg.org/css-images-3/"
+				}
+			]
+		},
+		{
 			"name": "<radial-gradient-syntax>",
 			"definitions": [
 				{
 					"id": "typedef-radial-gradient-syntax",
-					"definition": "[ [ [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list>",
+					"definition": "[ [ [ <radial-shape> || <radial-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list>",
 					"spec": "https://drafts.csswg.org/css-images-4/"
 				},
 				{
 					"id": "typedef-radial-gradient-syntax",
-					"definition": "[ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? , <color-stop-list>",
+					"definition": "[ <radial-shape> || <radial-size> ]? [ at <position> ]? , <color-stop-list>",
 					"spec": "https://drafts.csswg.org/css-images-3/"
+				}
+			]
+		},
+		{
+			"name": "<radial-shape>",
+			"definitions": [
+				{
+					"id": "typedef-radial-shape",
+					"definition": "circle | ellipse",
+					"spec": "https://drafts.csswg.org/css-images-3/"
+				}
+			]
+		},
+		{
+			"name": "<radial-size>",
+			"definitions": [
+				{
+					"id": "typedef-radial-size",
+					"definition": "<radial-extent> | <length [0,∞]> | <length-percentage [0,∞]>{2}",
+					"spec": "https://drafts.csswg.org/css-images-3/"
+				},
+				{
+					"id": "ref-for-typedef-radial-size③",
+					"definition": "<radial-extent>{1,2} | <length-percentage [0,∞]>{1,2}",
+					"spec": "https://drafts.csswg.org/css-images-4/"
 				}
 			]
 		},
@@ -11103,36 +11413,6 @@
 			]
 		},
 		{
-			"name": "<rg-ending-shape>",
-			"definitions": [
-				{
-					"id": "typedef-rg-ending-shape",
-					"definition": "circle | ellipse",
-					"spec": "https://drafts.csswg.org/css-images-3/"
-				}
-			]
-		},
-		{
-			"name": "<rg-extent-keyword>",
-			"definitions": [
-				{
-					"id": "typedef-rg-extent-keyword",
-					"definition": "closest-corner | closest-side | farthest-corner | farthest-side",
-					"spec": "https://drafts.csswg.org/css-images-3/"
-				}
-			]
-		},
-		{
-			"name": "<rg-size>",
-			"definitions": [
-				{
-					"id": "typedef-rg-size",
-					"definition": "<rg-extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2}",
-					"spec": "https://drafts.csswg.org/css-images-3/"
-				}
-			]
-		},
-		{
 			"name": "<right>",
 			"definitions": [
 				{
@@ -11269,16 +11549,6 @@
 					"id": "ref-for-typedef-shape-command②",
 					"definition": "<move-command> | <line-command> | <hv-line-command> | <curve-command> | <smooth-command> | <arc-command> | close",
 					"spec": "https://drafts.csswg.org/css-shapes-2/"
-				}
-			]
-		},
-		{
-			"name": "<shape-radius>",
-			"definitions": [
-				{
-					"id": "typedef-shape-radius",
-					"definition": "<length-percentage [0,∞]> | closest-side | farthest-side",
-					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
 			]
 		},
@@ -11467,7 +11737,7 @@
 			"definitions": [
 				{
 					"id": "typedef-spacing-trim",
-					"definition": "space-all | trim-auto | [ allow-end || space-first ] | trim-all",
+					"definition": "space-all | normal | trim-auto | trim-start | space-first | trim-all",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -11704,6 +11974,11 @@
 					"id": "system-family-name-value",
 					"definition": null,
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				},
+				{
+					"id": "ref-for-system-family-name-value②",
+					"definition": "caption | icon | menu | message-box | small-caption | status-bar",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
 		},
@@ -11739,16 +12014,6 @@
 					"id": "typedef-target",
 					"definition": "<target-counter()> | <target-counters()> | <target-text()>",
 					"spec": "https://drafts.csswg.org/css-content-3/"
-				}
-			]
-		},
-		{
-			"name": "<time [0s,∞]>",
-			"definitions": [
-				{
-					"id": "typedef-animation-duration-time-0s",
-					"definition": null,
-					"spec": "https://drafts.csswg.org/css-animations-1/"
 				}
 			]
 		},
@@ -11974,6 +12239,26 @@
 					"id": "typedef-trigger-action",
 					"definition": "[prev | next] <integer [1,∞]>? | set <toggle-value>",
 					"spec": "https://tabatkins.github.io/css-toggle/"
+				}
+			]
+		},
+		{
+			"name": "<try-size>",
+			"definitions": [
+				{
+					"id": "typedef-try-size",
+					"definition": "most-width | most-height | most-block-size | most-inline-size",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "<try-tactic>",
+			"definitions": [
+				{
+					"id": "typedef-position-try-options-try-tactic",
+					"definition": "flip-block || flip-inline || flip-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -12792,11 +13077,11 @@
 		{
 			"name": "<dashed-ident>",
 			"valueFor": [
-				"position-fallback"
+				"position-try-options"
 			],
 			"definitions": [
 				{
-					"id": "valdef-position-fallback-dashed-ident",
+					"id": "valdef-position-try-options-dashed-ident",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -13142,13 +13427,13 @@
 		{
 			"name": "<length [0,∞]>",
 			"valueFor": [
-				"<rg-size>",
+				"<radial-size>",
 				"radial-gradient()",
 				"repeating-radial-gradient()"
 			],
 			"definitions": [
 				{
-					"id": "valdef-rg-size-length-0",
+					"id": "valdef-radial-size-length-0",
 					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
@@ -13377,13 +13662,13 @@
 		{
 			"name": "<length-percentage [0,∞]>{2}",
 			"valueFor": [
-				"<rg-size>",
+				"<radial-size>",
 				"radial-gradient()",
 				"repeating-radial-gradient()"
 			],
 			"definitions": [
 				{
-					"id": "valdef-rg-size-length-percentage-0-2",
+					"id": "valdef-radial-size-length-percentage-0-2",
 					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
@@ -13823,6 +14108,18 @@
 		{
 			"name": "<number>",
 			"valueFor": [
+				"zoom"
+			],
+			"definitions": [
+				{
+					"id": "valdef-zoom-number",
+					"spec": "https://drafts.csswg.org/css-viewport-1/"
+				}
+			]
+		},
+		{
+			"name": "<number>",
+			"valueFor": [
 				"stroke-miterlimit"
 			],
 			"definitions": [
@@ -13883,11 +14180,11 @@
 		{
 			"name": "<percentage [0,∞]>",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-percentage-0",
+					"id": "valdef-font-width-percentage-0",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -14113,6 +14410,18 @@
 			]
 		},
 		{
+			"name": "<percentage>",
+			"valueFor": [
+				"zoom"
+			],
+			"definitions": [
+				{
+					"id": "valdef-zoom-percentage",
+					"spec": "https://drafts.csswg.org/css-viewport-1/"
+				}
+			]
+		},
+		{
 			"name": "<position>",
 			"valueFor": [
 				"radial-gradient()",
@@ -14159,6 +14468,32 @@
 				{
 					"id": "valdef-offset-anchor-position",
 					"spec": "https://drafts.fxtf.org/motion-1/"
+				}
+			]
+		},
+		{
+			"name": "<radial-shape>",
+			"valueFor": [
+				"radial-gradient()",
+				"repeating-radial-gradient()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-radial-gradient-radial-shape",
+					"spec": "https://drafts.csswg.org/css-images-3/"
+				}
+			]
+		},
+		{
+			"name": "<radial-size>",
+			"valueFor": [
+				"radial-gradient()",
+				"repeating-radial-gradient()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-radial-gradient-radial-size",
+					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
 		},
@@ -14231,32 +14566,6 @@
 				{
 					"id": "valdef-counter-reset-reversed-counter-name-integer",
 					"spec": "https://drafts.csswg.org/css-lists-3/"
-				}
-			]
-		},
-		{
-			"name": "<rg-ending-shape>",
-			"valueFor": [
-				"radial-gradient()",
-				"repeating-radial-gradient()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-radial-gradient-rg-ending-shape",
-					"spec": "https://drafts.csswg.org/css-images-3/"
-				}
-			]
-		},
-		{
-			"name": "<rg-size>",
-			"valueFor": [
-				"radial-gradient()",
-				"repeating-radial-gradient()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-radial-gradient-rg-size",
-					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
 		},
@@ -14373,18 +14682,6 @@
 		{
 			"name": "<string>",
 			"valueFor": [
-				"path()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-path-string",
-					"spec": "https://drafts.csswg.org/css-shapes-1/"
-				}
-			]
-		},
-		{
-			"name": "<string>",
-			"valueFor": [
 				"hyphenate-character"
 			],
 			"definitions": [
@@ -14451,6 +14748,18 @@
 				{
 					"id": "valdef-grid-template-areas-string",
 					"spec": "https://drafts.csswg.org/css-grid-2/"
+				}
+			]
+		},
+		{
+			"name": "<time [0s,∞]>",
+			"valueFor": [
+				"animation-duration"
+			],
+			"definitions": [
+				{
+					"id": "valdef-animation-duration-time-0s",
+					"spec": "https://drafts.csswg.org/css-animations-1/"
 				}
 			]
 		},
@@ -14575,6 +14884,30 @@
 				{
 					"id": "track-listing",
 					"spec": "https://drafts.csswg.org/css-grid-2/"
+				}
+			]
+		},
+		{
+			"name": "<try-size>",
+			"valueFor": [
+				"position-try-final"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-final-try-size",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "<try-tactic>",
+			"valueFor": [
+				"position-try-options"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-options-try-tactic",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -15250,6 +15583,18 @@
 			]
 		},
 		{
+			"name": "all",
+			"valueFor": [
+				"timeline-scope"
+			],
+			"definitions": [
+				{
+					"id": "valdef-timeline-scope-all",
+					"spec": "https://drafts.csswg.org/scroll-animations-1/"
+				}
+			]
+		},
+		{
 			"name": "all-petite-caps",
 			"valueFor": [
 				"font-variant-caps"
@@ -15306,18 +15651,6 @@
 				{
 					"id": "valdef-hanging-punctuation-allow-end",
 					"spec": "https://drafts.csswg.org/css-text-3/"
-				}
-			]
-		},
-		{
-			"name": "allow-end",
-			"valueFor": [
-				"text-spacing-trim"
-			],
-			"definitions": [
-				{
-					"id": "valdef-text-spacing-trim-allow-end",
-					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
 		},
@@ -15559,6 +15892,18 @@
 				{
 					"id": "valdef-animation-direction-alternate-reverse",
 					"spec": "https://drafts.csswg.org/css-animations-1/"
+				}
+			]
+		},
+		{
+			"name": "always",
+			"valueFor": [
+				"position-try-final"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-final-always",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -17138,6 +17483,18 @@
 				{
 					"id": "valdef-input-security-auto",
 					"spec": "https://drafts.csswg.org/css-ui-4/"
+				}
+			]
+		},
+		{
+			"name": "auto",
+			"valueFor": [
+				"view-transition-name"
+			],
+			"definitions": [
+				{
+					"id": "valdef-view-transition-name-auto",
+					"spec": "https://drafts.csswg.org/css-view-transitions-1/"
 				}
 			]
 		},
@@ -19471,11 +19828,11 @@
 		{
 			"name": "circle",
 			"valueFor": [
-				"<rg-ending-shape>"
+				"<radial-shape>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-rg-ending-shape-circle",
+					"id": "valdef-radial-shape-circle",
 					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
@@ -19679,13 +20036,13 @@
 		{
 			"name": "closest-corner",
 			"valueFor": [
-				"<rg-extent-keyword>",
+				"<radial-extent>",
 				"radial-gradient()",
 				"repeating-radial-gradient()"
 			],
 			"definitions": [
 				{
-					"id": "valdef-rg-extent-keyword-closest-corner",
+					"id": "valdef-radial-extent-closest-corner",
 					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
@@ -19705,13 +20062,13 @@
 		{
 			"name": "closest-side",
 			"valueFor": [
-				"<rg-extent-keyword>",
+				"<radial-extent>",
 				"radial-gradient()",
 				"repeating-radial-gradient()"
 			],
 			"definitions": [
 				{
-					"id": "valdef-rg-extent-keyword-closest-side",
+					"id": "valdef-radial-extent-closest-side",
 					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
@@ -20033,11 +20390,11 @@
 		{
 			"name": "condensed",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-condensed",
+					"id": "valdef-font-width-condensed",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -21842,11 +22199,11 @@
 		{
 			"name": "ellipse",
 			"valueFor": [
-				"<rg-ending-shape>"
+				"<radial-shape>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-rg-ending-shape-ellipse",
+					"id": "valdef-radial-shape-ellipse",
 					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
@@ -22332,11 +22689,11 @@
 		{
 			"name": "expanded",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-expanded",
+					"id": "valdef-font-width-expanded",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -22356,11 +22713,11 @@
 		{
 			"name": "extra-condensed",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-extra-condensed",
+					"id": "valdef-font-width-extra-condensed",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -22368,11 +22725,11 @@
 		{
 			"name": "extra-expanded",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-extra-expanded",
+					"id": "valdef-font-width-extra-expanded",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -22441,13 +22798,13 @@
 		{
 			"name": "farthest-corner",
 			"valueFor": [
-				"<rg-extent-keyword>",
+				"<radial-extent>",
 				"radial-gradient()",
 				"repeating-radial-gradient()"
 			],
 			"definitions": [
 				{
-					"id": "valdef-rg-extent-keyword-farthest-corner",
+					"id": "valdef-radial-extent-farthest-corner",
 					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
@@ -22467,13 +22824,13 @@
 		{
 			"name": "farthest-side",
 			"valueFor": [
-				"<rg-extent-keyword>",
+				"<radial-extent>",
 				"radial-gradient()",
 				"repeating-radial-gradient()"
 			],
 			"definitions": [
 				{
-					"id": "valdef-rg-extent-keyword-farthest-side",
+					"id": "valdef-radial-extent-farthest-side",
 					"spec": "https://drafts.csswg.org/css-images-3/"
 				}
 			]
@@ -22772,6 +23129,18 @@
 				{
 					"id": "valdef-color-firebrick",
 					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "first",
+			"valueFor": [
+				"position-try-final"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-final-first",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -23128,6 +23497,42 @@
 				{
 					"id": "valdef-align-content-flex-start",
 					"spec": "https://drafts.csswg.org/css-flexbox-1/"
+				}
+			]
+		},
+		{
+			"name": "flip-block",
+			"valueFor": [
+				"position-try-options"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-options-flip-block",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "flip-inline",
+			"valueFor": [
+				"position-try-options"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-options-flip-inline",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "flip-start",
+			"valueFor": [
+				"position-try-options"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-options-flip-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -24126,6 +24531,18 @@
 				{
 					"id": "valdef-overflow-hidden",
 					"spec": "https://drafts.csswg.org/css-overflow-3/"
+				}
+			]
+		},
+		{
+			"name": "hide",
+			"valueFor": [
+				"position-try-final"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-final-hide",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -28184,6 +28601,54 @@
 			]
 		},
 		{
+			"name": "most-block-size",
+			"valueFor": [
+				"position-try-order"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-order-most-block-size",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "most-height",
+			"valueFor": [
+				"position-try-order"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-order-most-height",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "most-inline-size",
+			"valueFor": [
+				"position-try-order"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-order-most-inline-size",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "most-width",
+			"valueFor": [
+				"position-try-order"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-order-most-width",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "move",
 			"valueFor": [
 				"shape()"
@@ -28823,11 +29288,11 @@
 		{
 			"name": "none",
 			"valueFor": [
-				"position-fallback"
+				"position-try-options"
 			],
 			"definitions": [
 				{
-					"id": "valdef-position-fallback-none",
+					"id": "valdef-position-try-options-none",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -30398,6 +30863,18 @@
 		{
 			"name": "normal",
 			"valueFor": [
+				"position-try-order"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-order-normal",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "normal",
+			"valueFor": [
 				"position-fallback-bounds"
 			],
 			"definitions": [
@@ -30470,11 +30947,11 @@
 		{
 			"name": "normal",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-normal",
+					"id": "valdef-font-width-normal",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -30919,11 +31396,11 @@
 		{
 			"name": "normal",
 			"valueFor": [
-				"text-spacing"
+				"text-spacing-trim"
 			],
 			"definitions": [
 				{
-					"id": "valdef-text-spacing-normal",
+					"id": "valdef-text-spacing-trim-normal",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -34399,11 +34876,11 @@
 		{
 			"name": "semi-condensed",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-semi-condensed",
+					"id": "valdef-font-width-semi-condensed",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -34411,11 +34888,11 @@
 		{
 			"name": "semi-expanded",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-semi-expanded",
+					"id": "valdef-font-width-semi-expanded",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -37250,6 +37727,18 @@
 			]
 		},
 		{
+			"name": "trim-start",
+			"valueFor": [
+				"text-spacing-trim"
+			],
+			"definitions": [
+				{
+					"id": "valdef-text-spacing-trim-trim-start",
+					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
 			"name": "true",
 			"valueFor": [
 				"@custom-media"
@@ -37377,11 +37866,11 @@
 		{
 			"name": "ultra-condensed",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-ultra-condensed",
+					"id": "valdef-font-width-ultra-condensed",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -37389,11 +37878,11 @@
 		{
 			"name": "ultra-expanded",
 			"valueFor": [
-				"font-stretch"
+				"font-width"
 			],
 			"definitions": [
 				{
-					"id": "valdef-font-stretch-ultra-expanded",
+					"id": "valdef-font-width-ultra-expanded",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -39339,16 +39828,6 @@
 			]
 		},
 		{
-			"name": "font-stretch",
-			"descriptorFor": "@font-face",
-			"definitions": [
-				{
-					"id": "descdef-font-face-font-stretch",
-					"spec": "https://drafts.csswg.org/css-fonts-4/"
-				}
-			]
-		},
-		{
 			"name": "font-style",
 			"descriptorFor": "@font-face",
 			"definitions": [
@@ -39374,6 +39853,16 @@
 			"definitions": [
 				{
 					"id": "descdef-font-face-font-weight",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "font-width",
+			"descriptorFor": "@font-face",
+			"definitions": [
+				{
+					"id": "descdef-font-face-font-width",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -40286,10 +40775,10 @@
 			]
 		},
 		{
-			"name": "@position-fallback",
+			"name": "@position-try",
 			"definitions": [
 				{
-					"id": "at-ruledef-position-fallback",
+					"id": "at-ruledef-position-try",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -40426,15 +40915,6 @@
 				{
 					"id": "at-ruledef-top-right-corner",
 					"spec": "https://drafts.csswg.org/css-page-3/"
-				}
-			]
-		},
-		{
-			"name": "@try",
-			"definitions": [
-				{
-					"id": "at-ruledef-try",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -40612,6 +41092,10 @@
 			"definitions": [
 				{
 					"id": "funcdef-basic-shape-circle",
+					"spec": "https://drafts.csswg.org/css-shapes-1/"
+				},
+				{
+					"id": "ref-for-funcdef-basic-shape-circle",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
 			]
@@ -40819,6 +41303,10 @@
 				{
 					"id": "funcdef-basic-shape-ellipse",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
+				},
+				{
+					"id": "ref-for-funcdef-basic-shape-ellipse",
+					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
 			]
 		},
@@ -40994,6 +41482,10 @@
 			"definitions": [
 				{
 					"id": "funcdef-basic-shape-inset",
+					"spec": "https://drafts.csswg.org/css-shapes-1/"
+				},
+				{
+					"id": "ref-for-funcdef-basic-shape-inset",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
 			]
@@ -41241,10 +41733,23 @@
 			]
 		},
 		{
+			"name": "palette-mix()",
+			"definitions": [
+				{
+					"id": null,
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
 			"name": "path()",
 			"definitions": [
 				{
 					"id": "funcdef-basic-shape-path",
+					"spec": "https://drafts.csswg.org/css-shapes-1/"
+				},
+				{
+					"id": "ref-for-funcdef-basic-shape-path",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
 			]
@@ -41263,6 +41768,10 @@
 			"definitions": [
 				{
 					"id": "funcdef-basic-shape-polygon",
+					"spec": "https://drafts.csswg.org/css-shapes-1/"
+				},
+				{
+					"id": "ref-for-funcdef-basic-shape-polygon",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
 			]
@@ -41335,6 +41844,10 @@
 				{
 					"id": "funcdef-clip-rect",
 					"spec": "https://drafts.fxtf.org/css-masking-1/"
+				},
+				{
+					"id": "ref-for-funcdef-basic-shape-rect",
+					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				},
 				{
 					"id": "funcdef-basic-shape-rect",
@@ -41944,6 +42457,10 @@
 				{
 					"id": "funcdef-basic-shape-xywh",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
+				},
+				{
+					"id": "ref-for-funcdef-basic-shape-xywh",
+					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
 			]
 		}
@@ -41986,6 +42503,15 @@
 				{
 					"id": "selectordef-child",
 					"spec": "https://drafts.csswg.org/selectors-4/"
+				}
+			]
+		},
+		{
+			"name": "Custom state pseudo-class",
+			"definitions": [
+				{
+					"id": "selector-custom",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
 				}
 			]
 		},
@@ -42078,6 +42604,10 @@
 		{
 			"name": ":buffering",
 			"definitions": [
+				{
+					"id": "selector-buffering",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
+				},
 				{
 					"id": "selectordef-buffering",
 					"spec": "https://drafts.csswg.org/selectors-4/"
@@ -42515,6 +43045,10 @@
 			"name": ":muted",
 			"definitions": [
 				{
+					"id": "selector-muted",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
+				},
+				{
 					"id": "selectordef-muted",
 					"spec": "https://drafts.csswg.org/selectors-4/"
 				}
@@ -42699,6 +43233,10 @@
 			"name": ":paused",
 			"definitions": [
 				{
+					"id": "selector-paused",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
+				},
+				{
 					"id": "selectordef-paused",
 					"spec": "https://drafts.csswg.org/selectors-4/"
 				}
@@ -42729,6 +43267,10 @@
 		{
 			"name": ":playing",
 			"definitions": [
+				{
+					"id": "selector-playing",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
+				},
 				{
 					"id": "selectordef-playing",
 					"spec": "https://drafts.csswg.org/selectors-4/"
@@ -42809,6 +43351,10 @@
 			"name": ":seeking",
 			"definitions": [
 				{
+					"id": "selector-seeking",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
+				},
+				{
 					"id": "selectordef-seeking",
 					"spec": "https://drafts.csswg.org/selectors-4/"
 				}
@@ -42862,6 +43408,10 @@
 		{
 			"name": ":stalled",
 			"definitions": [
+				{
+					"id": "selector-stalled",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
+				},
 				{
 					"id": "selectordef-stalled",
 					"spec": "https://drafts.csswg.org/selectors-4/"
@@ -42971,6 +43521,10 @@
 		{
 			"name": ":volume-locked",
 			"definitions": [
+				{
+					"id": "selector-volume-locked",
+					"spec": "https://html.spec.whatwg.org/multipage/semantics-other.html"
+				},
 				{
 					"id": "selectordef-volume-locked",
 					"spec": "https://drafts.csswg.org/selectors-4/"

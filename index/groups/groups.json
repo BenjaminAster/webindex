@@ -1,10 +1,10 @@
 {
+	"timestamp": {
+		"utc": "Mon, 29 Jan 2024 17:33:52 GMT",
+		"iso": "2024-01-29T17:33:52.728Z",
+		"unixMillis": 1706549632728
+	},
 	"groups": [
-		{
-			"name": "3D FOSS Web Development Community Group",
-			"identifier": "cg/foss-3d",
-			"homepage": "https://www.w3.org/community/foss-3d/"
-		},
 		{
 			"name": "ACT Rules Community Group",
 			"identifier": "cg/act-r",
@@ -61,11 +61,6 @@
 			"homepage": "https://www.w3.org/community/accessibility4children/"
 		},
 		{
-			"name": "Accessible Online Learning Community Group",
-			"identifier": "cg/accesslearn",
-			"homepage": "https://www.w3.org/community/accesslearn/"
-		},
-		{
 			"name": "Accessible Platform Architectures Working Group",
 			"identifier": "wg/apa",
 			"homepage": "https://www.w3.org/WAI/APA/"
@@ -106,16 +101,6 @@
 			"homepage": "https://github.com/w3c/alreq/"
 		},
 		{
-			"name": "Argumentation Community Group",
-			"identifier": "cg/argumentation",
-			"homepage": "https://www.w3.org/community/argumentation/"
-		},
-		{
-			"name": "Atomic Data Community Group",
-			"identifier": "cg/atomic-data",
-			"homepage": "https://www.w3.org/community/atomic-data/"
-		},
-		{
 			"name": "Audio Community Group",
 			"identifier": "cg/audio-comgp",
 			"homepage": "https://www.w3.org/community/audio-comgp/"
@@ -136,11 +121,6 @@
 			"homepage": "https://www.w3.org/community/av4browsers/"
 		},
 		{
-			"name": "Automated Planning and Scheduling Community Group",
-			"identifier": "cg/planning",
-			"homepage": "https://www.w3.org/community/planning/"
-		},
-		{
 			"name": "Automotive Ontology Community Group",
 			"identifier": "cg/gao",
 			"homepage": "https://www.w3.org/community/gao/"
@@ -149,6 +129,11 @@
 			"name": "Automotive Payments Task Force",
 			"identifier": "tf/automotive-pay",
 			"homepage": "https://www.w3.org/groups/tf/automotive-pay/"
+		},
+		{
+			"name": "Automotive Privacy Principles Community Group",
+			"identifier": "cg/autoprivacy",
+			"homepage": "https://www.w3.org/community/autoprivacy/"
 		},
 		{
 			"name": "Automotive Privacy and Security Task Force",
@@ -191,14 +176,14 @@
 			"homepage": "https://www.w3.org/community/bitcoin/"
 		},
 		{
-			"name": "Blockchain Community Group",
-			"identifier": "cg/blockchain",
-			"homepage": "https://www.w3.org/community/blockchain/"
-		},
-		{
 			"name": "Board Audit Committee",
 			"identifier": "tf/board-audit",
 			"homepage": "https://www.w3.org/groups/tf/board-audit/"
+		},
+		{
+			"name": "Board Development Committee",
+			"identifier": "tf/board-development",
+			"homepage": "https://www.w3.org/groups/tf/board-development/"
 		},
 		{
 			"name": "Board Directors",
@@ -231,11 +216,6 @@
 			"homepage": "https://www.w3.org/groups/other/board/"
 		},
 		{
-			"name": "Brand Identity Tokens Community Group",
-			"identifier": "cg/bits",
-			"homepage": "https://www.w3.org/community/bits/"
-		},
-		{
 			"name": "Browser Testing and Tools Working Group",
 			"identifier": "wg/browser-tools-testing",
 			"homepage": "https://www.w3.org/testing/browser/"
@@ -246,11 +226,6 @@
 			"homepage": "https://www.w3.org/community/bdns/"
 		},
 		{
-			"name": "CSS Print Community Group",
-			"identifier": "cg/cssprint",
-			"homepage": "https://www.w3.org/community/cssprint/"
-		},
-		{
 			"name": "CSS4 Community Group",
 			"identifier": "cg/css4",
 			"homepage": "https://www.w3.org/community/css4/"
@@ -259,11 +234,6 @@
 			"name": "CSV on the Web Community Group",
 			"identifier": "cg/csvw",
 			"homepage": "https://www.w3.org/community/csvw/"
-		},
-		{
-			"name": "CV 3.0 - Global Resume Community Group",
-			"identifier": "cg/cv3",
-			"homepage": "https://www.w3.org/community/cv3/"
 		},
 		{
 			"name": "Cascading Style Sheets (CSS) Working Group",
@@ -336,11 +306,6 @@
 			"homepage": "https://www.w3.org/community/cns/"
 		},
 		{
-			"name": "Conversational Interfaces Community Group",
-			"identifier": "cg/conv",
-			"homepage": "https://www.w3.org/community/conv/"
-		},
-		{
 			"name": "Credentials Community Group",
 			"identifier": "cg/credentials",
 			"homepage": "https://www.w3.org/community/credentials/"
@@ -359,11 +324,6 @@
 			"name": "Data Privacy Vocabularies and Controls Community Group",
 			"identifier": "cg/dpvcg",
 			"homepage": "https://www.w3.org/community/dpvcg/"
-		},
-		{
-			"name": "Data Visualization Community Group",
-			"identifier": "cg/datavis",
-			"homepage": "https://www.w3.org/community/datavis/"
 		},
 		{
 			"name": "Data-Centric Digital Rights (DCDR) Framework Community Group",
@@ -386,19 +346,9 @@
 			"homepage": "https://www.w3.org/community/applied-did-and-vc/"
 		},
 		{
-			"name": "Decentralized Sharing Community Group",
-			"identifier": "cg/decsharing",
-			"homepage": "https://www.w3.org/community/decsharing/"
-		},
-		{
 			"name": "Declarative 3D for the Web Architecture Community Group",
 			"identifier": "cg/declarative3d",
 			"homepage": "https://www.w3.org/community/declarative3d/"
-		},
-		{
-			"name": "Declarative Dynamic Extensions to HTML Community Group",
-			"identifier": "cg/html-dynamic-extensions",
-			"homepage": "https://www.w3.org/community/html-dynamic-extensions/"
 		},
 		{
 			"name": "Design Tokens Community Group",
@@ -409,11 +359,6 @@
 			"name": "Devices and Sensors Working Group",
 			"identifier": "wg/das",
 			"homepage": "https://www.w3.org/das/"
-		},
-		{
-			"name": "Digital Asset Management Industry Business Ontology Community Group",
-			"identifier": "cg/digitalassetmanagement",
-			"homepage": "https://www.w3.org/community/digitalassetmanagement/"
 		},
 		{
 			"name": "Distributed Tracing Working Group",
@@ -461,11 +406,6 @@
 			"homepage": "https://github.com/w3c/eurlreq/"
 		},
 		{
-			"name": "Experience API (xAPI) Vocabulary & Semantic Interoperability Community Group",
-			"identifier": "cg/xapivocabulary",
-			"homepage": "https://www.w3.org/community/xapivocabulary/"
-		},
-		{
 			"name": "FAST Task Force",
 			"identifier": "tf/fast",
 			"homepage": "https://www.w3.org/groups/tf/fast/"
@@ -479,11 +419,6 @@
 			"name": "Federated Learning Community Group",
 			"identifier": "cg/federated-learning",
 			"homepage": "https://www.w3.org/community/federated-learning/"
-		},
-		{
-			"name": "Federated Timesheets Community Group",
-			"identifier": "cg/timesh",
-			"homepage": "https://www.w3.org/community/timesh/"
 		},
 		{
 			"name": "Financial Industry Business Ontology Community Group",
@@ -514,11 +449,6 @@
 			"name": "HTML Working Group",
 			"identifier": "wg/htmlwg",
 			"homepage": "https://www.w3.org/groups/wg/htmlwg/"
-		},
-		{
-			"name": "HTML5 Specifications Community Group",
-			"identifier": "cg/html5spec",
-			"homepage": "https://www.w3.org/community/html5spec/"
 		},
 		{
 			"name": "Healthcare Schema Vocabulary Community Group",
@@ -571,11 +501,6 @@
 			"homepage": "https://www.github.com/w3c/iip"
 		},
 		{
-			"name": "Information Architecture Community Group",
-			"identifier": "cg/informationarchitecture",
-			"homepage": "https://www.w3.org/community/informationarchitecture/"
-		},
-		{
 			"name": "Inter-Platform Validation for Confidential Computing Community Group",
 			"identifier": "cg/inter-cc",
 			"homepage": "https://www.w3.org/community/inter-cc/"
@@ -609,6 +534,11 @@
 			"name": "JSON-LD Working Group",
 			"identifier": "wg/json-ld",
 			"homepage": "https://www.w3.org/groups/wg/json-ld/"
+		},
+		{
+			"name": "JSX as markup language Community Group",
+			"identifier": "cg/jsxml",
+			"homepage": "https://www.w3.org/community/jsxml/"
 		},
 		{
 			"name": "Japanese Layout Task Force | 日本語組版タスクフォース",
@@ -646,11 +576,6 @@
 			"homepage": "https://www.w3.org/community/low-vision/"
 		},
 		{
-			"name": "Machine Learning Schema Community Group",
-			"identifier": "cg/ml-schema",
-			"homepage": "https://www.w3.org/community/ml-schema/"
-		},
-		{
 			"name": "Managed Components Community Group",
 			"identifier": "cg/managed-components",
 			"homepage": "https://www.w3.org/community/managed-components/"
@@ -664,11 +589,6 @@
 			"name": "Math Working Group",
 			"identifier": "wg/math",
 			"homepage": "https://www.w3.org/Math/"
-		},
-		{
-			"name": "MathML Refresh Community Group",
-			"identifier": "cg/mathml4",
-			"homepage": "https://www.w3.org/community/mathml4/"
 		},
 		{
 			"name": "Maturity Model Task Force",
@@ -701,11 +621,6 @@
 			"homepage": "https://www.w3.org/2021/miniapps/"
 		},
 		{
-			"name": "Mixed Reality Service Community Group",
-			"identifier": "cg/mixedreality",
-			"homepage": "https://www.w3.org/community/mixedreality/"
-		},
-		{
 			"name": "Mobile Accessibility Task Force",
 			"identifier": "tf/mobile-a11y-tf",
 			"homepage": "https://www.w3.org/WAI/GL/mobile-a11y-tf/"
@@ -719,11 +634,6 @@
 			"name": "Multi-device Timing Community Group",
 			"identifier": "cg/webtiming",
 			"homepage": "https://www.w3.org/community/webtiming/"
-		},
-		{
-			"name": "Multicast Community Group",
-			"identifier": "cg/multicast",
-			"homepage": "https://www.w3.org/community/multicast/"
 		},
 		{
 			"name": "Music Notation Community Group",
@@ -764,11 +674,6 @@
 			"name": "Open Cloud Mesh Community Group",
 			"identifier": "cg/ocm",
 			"homepage": "https://www.w3.org/community/ocm/"
-		},
-		{
-			"name": "Open Educational Resources Schema Community Group",
-			"identifier": "cg/oerschema",
-			"homepage": "https://www.w3.org/community/oerschema/"
 		},
 		{
 			"name": "Open UI Community Group",
@@ -926,21 +831,6 @@
 			"homepage": "https://www.w3.org/groups/wg/rdf-star/"
 		},
 		{
-			"name": "Read Write Web Community Group",
-			"identifier": "cg/rww",
-			"homepage": "https://www.w3.org/community/rww/"
-		},
-		{
-			"name": "Real Time Interaction Ecosystem Community Group",
-			"identifier": "cg/rtie",
-			"homepage": "https://www.w3.org/community/rtie/"
-		},
-		{
-			"name": "Research Object for Scholarly Communication Community Group",
-			"identifier": "cg/rosc",
-			"homepage": "https://www.w3.org/community/rosc/"
-		},
-		{
 			"name": "Research Questions Task Force",
 			"identifier": "tf/rqtf",
 			"homepage": "https://www.w3.org/WAI/APA/task-forces/research-questions/"
@@ -1001,11 +891,6 @@
 			"homepage": "https://www.w3.org/community/schemaorg4datasets/"
 		},
 		{
-			"name": "Scholarly HTML Community Group",
-			"identifier": "cg/scholarlyhtml",
-			"homepage": "https://www.w3.org/community/scholarlyhtml/"
-		},
-		{
 			"name": "Screen Capture Community Group",
 			"identifier": "cg/sccg",
 			"homepage": "https://www.w3.org/community/sccg/"
@@ -1026,19 +911,9 @@
 			"homepage": "https://www.w3.org/community/htmlvoc/"
 		},
 		{
-			"name": "Semantic Industries Community Group",
-			"identifier": "cg/semind",
-			"homepage": "https://www.w3.org/community/semind/"
-		},
-		{
 			"name": "Semantic Web in Health Care and Life Sciences Community Group",
 			"identifier": "cg/hclscg",
 			"homepage": "https://www.w3.org/community/hclscg/"
-		},
-		{
-			"name": "Service Discovery Community Group",
-			"identifier": "cg/service-disco",
-			"homepage": "https://www.w3.org/community/service-disco/"
 		},
 		{
 			"name": "Service Workers Working Group",
@@ -1401,9 +1276,239 @@
 			"homepage": "https://www.w3.org/community/nostr/"
 		},
 		{
-			"name": "zot protocol Community Group",
-			"identifier": "cg/zot",
-			"homepage": "https://www.w3.org/community/zot/"
+			"name": "HTML Media Extensions Working Group",
+			"identifier": "wg/html",
+			"homepage": "https://www.w3.org/html/wg/"
+		},
+		{
+			"name": "Web Platform Working Group",
+			"identifier": "wg/webplatform",
+			"homepage": "https://www.w3.org/WebPlatform/WG/"
+		},
+		{
+			"name": "Social Web Working Group",
+			"identifier": "wg/social",
+			"homepage": "https://www.w3.org/Social/WG"
+		},
+		{
+			"name": "User Agent Accessibility Guidelines Working Group",
+			"identifier": "wg/uaag",
+			"homepage": "https://www.w3.org/WAI/UA/"
+		},
+		{
+			"name": "Audiobooks Working Group",
+			"identifier": "wg/publishing",
+			"homepage": "https://www.w3.org/publishing/groups/publ-wg/"
+		},
+		{
+			"name": "BD Comics Manga Community Group",
+			"identifier": "cg/bdcomacg",
+			"homepage": "https://www.w3.org/community/bdcomacg/"
+		},
+		{
+			"name": "Blockchain Community Group",
+			"identifier": "cg/blockchain",
+			"homepage": "https://www.w3.org/community/blockchain/"
+		},
+		{
+			"name": "CSS Accessibility Task Force",
+			"identifier": "tf/css-a11y",
+			"homepage": "https://www.w3.org/groups/tf/css-a11y/"
+		},
+		{
+			"name": "CSS Print Community Group",
+			"identifier": "cg/cssprint",
+			"homepage": "https://www.w3.org/community/cssprint/"
+		},
+		{
+			"name": "CSV on the Web Working Group",
+			"identifier": "wg/csv",
+			"homepage": "https://www.w3.org/2013/csvw/"
+		},
+		{
+			"name": "RDF Data Shapes Working Group",
+			"identifier": "wg/data-shapes",
+			"homepage": "https://www.w3.org/2014/data-shapes/"
+		},
+		{
+			"name": "Decentralized Identity Korean Community Group",
+			"identifier": "cg/did-kr",
+			"homepage": "https://www.w3.org/community/did-kr/"
+		},
+		{
+			"name": "Conversational Interfaces Community Group",
+			"identifier": "cg/conv",
+			"homepage": "https://www.w3.org/community/conv/"
+		},
+		{
+			"name": "Tracking Protection Working Group",
+			"identifier": "wg/tracking",
+			"homepage": "https://www.w3.org/2011/tracking-protection/"
+		},
+		{
+			"name": "Document Services Community Group",
+			"identifier": "cg/services",
+			"homepage": "https://www.w3.org/community/services/"
+		},
+		{
+			"name": "Digital Publishing Interest Group",
+			"identifier": "ig/publishing",
+			"homepage": "https://www.w3.org/dpub/IG/"
+		},
+		{
+			"name": "Data on the Web Best Practices Working Group",
+			"identifier": "wg/dwbp",
+			"homepage": "https://www.w3.org/2013/dwbp/"
+		},
+		{
+			"name": "Multimodal Interaction Working Group",
+			"identifier": "wg/mmi",
+			"homepage": "https://www.w3.org/2002/mmi/"
+		},
+		{
+			"name": "EPUB 3 Working Group",
+			"identifier": "wg/epub",
+			"homepage": "https://www.w3.org/publishing/groups/epub-wg/"
+		},
+		{
+			"name": "Efficient Extensible Interchange  Working Group",
+			"identifier": "wg/exi",
+			"homepage": "https://www.w3.org/XML/EXI/"
+		},
+		{
+			"name": "Web Annotation Working Group",
+			"identifier": "wg/annotation",
+			"homepage": "https://www.w3.org/annotation/"
+		},
+		{
+			"name": "Font and Text Community Group",
+			"identifier": "cg/font-text",
+			"homepage": "https://www.w3.org/community/font-text/"
+		},
+		{
+			"name": "Bridging GraphQL and RDF Community Group",
+			"identifier": "cg/graphql-rdf",
+			"homepage": "https://www.w3.org/community/graphql-rdf/"
+		},
+		{
+			"name": "Handshake Protocol Community Group",
+			"identifier": "cg/hns",
+			"homepage": "https://www.w3.org/community/hns/"
+		},
+		{
+			"name": "Inclusion and Diversity Community Group",
+			"identifier": "cg/idcg",
+			"homepage": "https://www.w3.org/community/idcg/"
+		},
+		{
+			"name": "Independent User Interface Task Force",
+			"identifier": "tf/indie-ui-tf",
+			"homepage": "https://www.w3.org/groups/tf/indie-ui-tf/"
+		},
+		{
+			"name": "Interactive Media Community Group",
+			"identifier": "cg/interactive-media",
+			"homepage": "https://www.w3.org/community/interactive-media/"
+		},
+		{
+			"name": "Internationalization Tag Set (ITS) Interest Group",
+			"identifier": "ig/i18n-its",
+			"homepage": "https://www.w3.org/International/its/ig/"
+		},
+		{
+			"name": "Open knowledge-driven service-oriented system architectures and APIs (KiSS) Community Group",
+			"identifier": "cg/kiss",
+			"homepage": "https://www.w3.org/community/kiss/"
+		},
+		{
+			"name": "Getting Math onto Web Pages Community Group",
+			"identifier": "cg/mathonwebpages",
+			"homepage": "https://www.w3.org/community/mathonwebpages/"
+		},
+		{
+			"name": "MathML Refresh Community Group",
+			"identifier": "cg/mathml4",
+			"homepage": "https://www.w3.org/community/mathml4/"
+		},
+		{
+			"name": "Merchant Community Group",
+			"identifier": "cg/merchant",
+			"homepage": "https://www.w3.org/community/merchant/"
+		},
+		{
+			"name": "Multicast Community Group",
+			"identifier": "cg/multicast",
+			"homepage": "https://www.w3.org/community/multicast/"
+		},
+		{
+			"name": "Network Maintenance Notifications Community Group",
+			"identifier": "cg/net-maint",
+			"homepage": "https://www.w3.org/community/net-maint/"
+		},
+		{
+			"name": "ORTC (Object Real-time Communications) Community Group",
+			"identifier": "cg/ortc",
+			"homepage": "https://www.w3.org/community/ortc/"
+		},
+		{
+			"name": "Protocols and Formats Working Group",
+			"identifier": "wg/pf",
+			"homepage": "https://www.w3.org/WAI/PF/"
+		},
+		{
+			"name": "Permissions and Obligations Expression Working Group",
+			"identifier": "wg/poe",
+			"homepage": "https://www.w3.org/2016/poe/"
+		},
+		{
+			"name": "XML Query Working Group",
+			"identifier": "wg/xml-query",
+			"homepage": "https://www.w3.org/XML/Query/"
+		},
+		{
+			"name": "XSLT Working Group",
+			"identifier": "wg/xslt",
+			"homepage": "https://www.w3.org/Style/XSL/"
+		},
+		{
+			"name": "Scholarly HTML Community Group",
+			"identifier": "cg/scholarlyhtml",
+			"homepage": "https://www.w3.org/community/scholarlyhtml/"
+		},
+		{
+			"name": "Voice Browser Working Group",
+			"identifier": "wg/voice",
+			"homepage": "https://www.w3.org/Voice/"
+		},
+		{
+			"name": "Semantic Web Interest Group",
+			"identifier": "ig/semweb",
+			"homepage": "https://www.w3.org/2001/sw/interest/"
+		},
+		{
+			"name": "TV Control Working Group",
+			"identifier": "wg/tvcontrol",
+			"homepage": "https://www.w3.org/2016/tvcontrol/"
+		},
+		{
+			"name": "Web-based Signage Business Group",
+			"identifier": "bg/websignage",
+			"homepage": "https://www.w3.org/community/websignage/"
+		},
+		{
+			"name": "Web Certificate API Community Group",
+			"identifier": "cg/web-cert-api",
+			"homepage": "https://www.w3.org/community/web-cert-api/"
+		},
+		{
+			"name": "XML Core Working Group",
+			"identifier": "wg/xml-core",
+			"homepage": "https://www.w3.org/XML/Core/"
+		},
+		{
+			"name": "XML Schema Working Group",
+			"identifier": "wg/schema",
+			"homepage": "https://www.w3.org/XML/Schema"
 		},
 		{
 			"name": "Automatic SIP trunking And Peering Working Group",
@@ -1416,11 +1521,6 @@
 			"homepage": "https://datatracker.ietf.org/wg/asdf/"
 		},
 		{
-			"name": "Audio/Video Transport Core Maintenance Working Group",
-			"identifier": "ietf/avtcore",
-			"homepage": "https://datatracker.ietf.org/wg/avtcore/"
-		},
-		{
 			"name": "Calendaring Extensions Working Group",
 			"identifier": "ietf/calext",
 			"homepage": "https://datatracker.ietf.org/wg/calext/"
@@ -1431,29 +1531,14 @@
 			"homepage": "https://datatracker.ietf.org/wg/cbor/"
 		},
 		{
-			"name": "Content Delivery Networks Interconnection Working Group",
-			"identifier": "ietf/cdni",
-			"homepage": "https://datatracker.ietf.org/wg/cdni/"
-		},
-		{
 			"name": "Codec Encoding for LossLess Archiving and Realtime transmission Working Group",
 			"identifier": "ietf/cellar",
 			"homepage": "https://datatracker.ietf.org/wg/cellar/"
 		},
 		{
-			"name": "Constrained RESTful Environments Working Group",
-			"identifier": "ietf/core",
-			"homepage": "https://datatracker.ietf.org/wg/core/"
-		},
-		{
 			"name": "Dispatch Working Group",
 			"identifier": "ietf/dispatch",
 			"homepage": "https://datatracker.ietf.org/wg/dispatch/"
-		},
-		{
-			"name": "Domain Keys Identified Mail Working Group",
-			"identifier": "ietf/dkim",
-			"homepage": "https://datatracker.ietf.org/wg/dkim/"
 		},
 		{
 			"name": "Domain-based Message Authentication, Reporting & Conformance Working Group",
@@ -1474,16 +1559,6 @@
 			"name": "Email mailstore and eXtensions To Revise or Amend Working Group",
 			"identifier": "ietf/extra",
 			"homepage": "https://datatracker.ietf.org/wg/extra/"
-		},
-		{
-			"name": "Building Blocks for HTTP APIs Working Group",
-			"identifier": "ietf/httpapi",
-			"homepage": "https://datatracker.ietf.org/wg/httpapi/"
-		},
-		{
-			"name": "HTTP Working Group",
-			"identifier": "ietf/httpbis",
-			"homepage": "https://datatracker.ietf.org/wg/httpbis/"
 		},
 		{
 			"name": "JSON Mail Access Protocol Working Group",
@@ -1511,29 +1586,14 @@
 			"homepage": "https://datatracker.ietf.org/wg/mmusic/"
 		},
 		{
-			"name": "Media Over QUIC Working Group",
-			"identifier": "ietf/moq",
-			"homepage": "https://datatracker.ietf.org/wg/moq/"
-		},
-		{
 			"name": "Registration Protocols Extensions Working Group",
 			"identifier": "ietf/regext",
 			"homepage": "https://datatracker.ietf.org/wg/regext/"
 		},
 		{
-			"name": "Real-Time Communication in WEB-browsers Working Group",
-			"identifier": "ietf/rtcweb",
-			"homepage": "https://datatracker.ietf.org/wg/rtcweb/"
-		},
-		{
 			"name": "Secure Asset Transfer Protocol Working Group",
 			"identifier": "ietf/satp",
 			"homepage": "https://datatracker.ietf.org/wg/satp/"
-		},
-		{
-			"name": "System for Cross-domain Identity Management Working Group",
-			"identifier": "ietf/scim",
-			"homepage": "https://datatracker.ietf.org/wg/scim/"
 		},
 		{
 			"name": "Serialising Extended Data About Times and Events Working Group",
@@ -1561,16 +1621,6 @@
 			"homepage": "https://datatracker.ietf.org/wg/stir/"
 		},
 		{
-			"name": "Transfer dIGital cREdentialS Securely Working Group",
-			"identifier": "ietf/tigress",
-			"homepage": "https://datatracker.ietf.org/wg/tigress/"
-		},
-		{
-			"name": "Using TLS in Applications Working Group",
-			"identifier": "ietf/uta",
-			"homepage": "https://datatracker.ietf.org/wg/uta/"
-		},
-		{
 			"name": "Revise Universally Unique Identifier Definitions Working Group",
 			"identifier": "ietf/uuidrev",
 			"homepage": "https://datatracker.ietf.org/wg/uuidrev/"
@@ -1581,24 +1631,9 @@
 			"homepage": "https://datatracker.ietf.org/wg/vcon/"
 		},
 		{
-			"name": "WebTransport Working Group",
-			"identifier": "ietf/webtrans",
-			"homepage": "https://datatracker.ietf.org/wg/webtrans/"
-		},
-		{
-			"name": "WebRTC Ingest Signaling over HTTPS Working Group",
-			"identifier": "ietf/wish",
-			"homepage": "https://datatracker.ietf.org/wg/wish/"
-		},
-		{
 			"name": "General Area Dispatch Working Group",
 			"identifier": "ietf/gendispatch",
 			"homepage": "https://datatracker.ietf.org/wg/gendispatch/"
-		},
-		{
-			"name": "Stay Home Meet Occasionally Online Working Group",
-			"identifier": "ietf/shmoo",
-			"homepage": "https://datatracker.ietf.org/wg/shmoo/"
 		},
 		{
 			"name": "IPv6 over Networks of Resource-constrained Nodes Working Group",
@@ -1646,14 +1681,14 @@
 			"homepage": "https://datatracker.ietf.org/wg/drip/"
 		},
 		{
+			"name": "Delay/Disruption Tolerant Networking Working Group",
+			"identifier": "ietf/dtn",
+			"homepage": "https://datatracker.ietf.org/wg/dtn/"
+		},
+		{
 			"name": "Internet Area Working Group",
 			"identifier": "ietf/intarea",
 			"homepage": "https://datatracker.ietf.org/wg/intarea/"
-		},
-		{
-			"name": "Light-Weight Implementation Guidance Working Group",
-			"identifier": "ietf/lwig",
-			"homepage": "https://datatracker.ietf.org/wg/lwig/"
 		},
 		{
 			"name": "MAC Address Device Identification for Network and Application Services Working Group",
@@ -1709,6 +1744,11 @@
 			"name": "IOT Operations Working Group",
 			"identifier": "ietf/iotops",
 			"homepage": "https://datatracker.ietf.org/wg/iotops/"
+		},
+		{
+			"name": "IP Performance Measurement Working Group",
+			"identifier": "ietf/ippm",
+			"homepage": "https://datatracker.ietf.org/wg/ippm/"
 		},
 		{
 			"name": "Network Inventory YANG Working Group",
@@ -1981,6 +2021,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/rats/"
 		},
 		{
+			"name": "System for Cross-domain Identity Management Working Group",
+			"identifier": "ietf/scim",
+			"homepage": "https://datatracker.ietf.org/wg/scim/"
+		},
+		{
 			"name": "Supply Chain Integrity, Transparency, and Trust Working Group",
 			"identifier": "ietf/scitt",
 			"homepage": "https://datatracker.ietf.org/wg/scitt/"
@@ -2001,14 +2046,24 @@
 			"homepage": "https://datatracker.ietf.org/wg/teep/"
 		},
 		{
+			"name": "Transfer dIGital cREdentialS Securely Working Group",
+			"identifier": "ietf/tigress",
+			"homepage": "https://datatracker.ietf.org/wg/tigress/"
+		},
+		{
 			"name": "Transport Layer Security Working Group",
 			"identifier": "ietf/tls",
 			"homepage": "https://datatracker.ietf.org/wg/tls/"
 		},
 		{
-			"name": "Application-Layer Traffic Optimization Working Group",
-			"identifier": "ietf/alto",
-			"homepage": "https://datatracker.ietf.org/wg/alto/"
+			"name": "Using TLS in Applications Working Group",
+			"identifier": "ietf/uta",
+			"homepage": "https://datatracker.ietf.org/wg/uta/"
+		},
+		{
+			"name": "Audio/Video Transport Core Maintenance Working Group",
+			"identifier": "ietf/avtcore",
+			"homepage": "https://datatracker.ietf.org/wg/avtcore/"
 		},
 		{
 			"name": "Congestion Control Working Group",
@@ -2016,19 +2071,34 @@
 			"homepage": "https://datatracker.ietf.org/wg/ccwg/"
 		},
 		{
-			"name": "Delay/Disruption Tolerant Networking Working Group",
-			"identifier": "ietf/dtn",
-			"homepage": "https://datatracker.ietf.org/wg/dtn/"
+			"name": "Content Delivery Networks Interconnection Working Group",
+			"identifier": "ietf/cdni",
+			"homepage": "https://datatracker.ietf.org/wg/cdni/"
 		},
 		{
-			"name": "IP Performance Measurement Working Group",
-			"identifier": "ietf/ippm",
-			"homepage": "https://datatracker.ietf.org/wg/ippm/"
+			"name": "Constrained RESTful Environments Working Group",
+			"identifier": "ietf/core",
+			"homepage": "https://datatracker.ietf.org/wg/core/"
+		},
+		{
+			"name": "Building Blocks for HTTP APIs Working Group",
+			"identifier": "ietf/httpapi",
+			"homepage": "https://datatracker.ietf.org/wg/httpapi/"
+		},
+		{
+			"name": "HTTP Working Group",
+			"identifier": "ietf/httpbis",
+			"homepage": "https://datatracker.ietf.org/wg/httpbis/"
 		},
 		{
 			"name": "Multiplexed Application Substrate over QUIC Encryption Working Group",
 			"identifier": "ietf/masque",
 			"homepage": "https://datatracker.ietf.org/wg/masque/"
+		},
+		{
+			"name": "Media Over QUIC Working Group",
+			"identifier": "ietf/moq",
+			"homepage": "https://datatracker.ietf.org/wg/moq/"
 		},
 		{
 			"name": "Network File System Version 4 Working Group",
@@ -2039,6 +2109,11 @@
 			"name": "QUIC Working Group",
 			"identifier": "ietf/quic",
 			"homepage": "https://datatracker.ietf.org/wg/quic/"
+		},
+		{
+			"name": "Real-Time Communication in WEB-browsers Working Group",
+			"identifier": "ietf/rtcweb",
+			"homepage": "https://datatracker.ietf.org/wg/rtcweb/"
 		},
 		{
 			"name": "Transport Services Working Group",
@@ -2054,6 +2129,16 @@
 			"name": "Transport and Services Working Group",
 			"identifier": "ietf/tsvwg",
 			"homepage": "https://datatracker.ietf.org/wg/tsvwg/"
+		},
+		{
+			"name": "WebTransport Working Group",
+			"identifier": "ietf/webtrans",
+			"homepage": "https://datatracker.ietf.org/wg/webtrans/"
+		},
+		{
+			"name": "WebRTC Ingest Signaling over HTTPS Working Group",
+			"identifier": "ietf/wish",
+			"homepage": "https://datatracker.ietf.org/wg/wish/"
 		},
 		{
 			"name": "ART Area General Applications Working Group",
@@ -2099,6 +2184,11 @@
 			"name": "DKIM Crypto Update Working Group",
 			"identifier": "ietf/dcrup",
 			"homepage": "https://datatracker.ietf.org/wg/dcrup/"
+		},
+		{
+			"name": "Domain Keys Identified Mail Working Group",
+			"identifier": "ietf/dkim",
+			"homepage": "https://datatracker.ietf.org/wg/dkim/"
 		},
 		{
 			"name": "DNS Over HTTPS Working Group",
@@ -3146,6 +3236,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/pufi/"
 		},
 		{
+			"name": "Stay Home Meet Occasionally Online Working Group",
+			"identifier": "ietf/shmoo",
+			"homepage": "https://datatracker.ietf.org/wg/shmoo/"
+		},
+		{
 			"name": "Requirements for IETF Technical Specificaiton Publication Working Group",
 			"identifier": "ietf/techspec",
 			"homepage": "https://datatracker.ietf.org/wg/techspec/"
@@ -3399,6 +3494,11 @@
 			"name": "Lightweight Reachability softWires Working Group",
 			"identifier": "ietf/lrw",
 			"homepage": "https://datatracker.ietf.org/wg/lrw/"
+		},
+		{
+			"name": "Light-Weight Implementation Guidance Working Group",
+			"identifier": "ietf/lwig",
+			"homepage": "https://datatracker.ietf.org/wg/lwig/"
 		},
 		{
 			"name": "Multicast & Anycast Group Membership Working Group",
@@ -3849,6 +3949,11 @@
 			"name": "SNMP Agent Extensibility Working Group",
 			"identifier": "ietf/agentx",
 			"homepage": "https://datatracker.ietf.org/wg/agentx/"
+		},
+		{
+			"name": "Application-Layer Traffic Optimization Working Group",
+			"identifier": "ietf/alto",
+			"homepage": "https://datatracker.ietf.org/wg/alto/"
 		},
 		{
 			"name": "Address Resolution for Massive numbers of hosts in the Data center Working Group",
@@ -6754,6 +6859,11 @@
 			"name": "User Services Area Open Meeting Working Group",
 			"identifier": "ietf/usvarea",
 			"homepage": "https://datatracker.ietf.org/wg/usvarea/"
+		},
+		{
+			"name": "Transport Area Open Meeting Working Group",
+			"identifier": "ietf/tsvarea",
+			"homepage": "https://datatracker.ietf.org/wg/tsvarea/"
 		},
 		{
 			"name": "Network Management Area Open Meeting Working Group",

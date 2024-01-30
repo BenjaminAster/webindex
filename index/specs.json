@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Fri, 08 Dec 2023 11:06:35 GMT",
-		"iso": "2023-12-08T11:06:35.467Z",
-		"unixMillis": 1702033595467
+		"utc": "Tue, 30 Jan 2024 19:16:26 GMT",
+		"iso": "2024-01-30T19:16:26.992Z",
+		"unixMillis": 1706642186992
 	},
 	"specs": [
 		{
@@ -16,6 +16,13 @@
 					"repo": "https://github.com/w3c/accname",
 					"shortname": "accname-1.2",
 					"tests": "https://wpt.fyi/results/accname?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
+				},
+				{
+					"title": "Accessible Rich Internet Applications (WAI-ARIA)",
+					"url": "https://w3c.github.io/aria/",
+					"repo": "https://github.com/w3c/aria",
+					"shortname": "wai-aria-1.3",
+					"tests": "https://wpt.fyi/results/wai-aria?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
 					"title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
@@ -54,7 +61,8 @@
 					"title": "HTML Accessibility API Mappings 1.0",
 					"url": "https://w3c.github.io/html-aam/",
 					"repo": "https://github.com/w3c/html-aam",
-					"shortname": "html-aam-1.0"
+					"shortname": "html-aam-1.0",
+					"tests": "https://wpt.fyi/results/html-aam?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
 					"title": "MathML Accessiblity API Mappings 1.0",
@@ -883,7 +891,7 @@
 					"tests": "https://wpt.fyi/results/css/css-transforms?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
-					"title": "CSS Transitions",
+					"title": "CSS Transitions Level 1",
 					"url": "https://drafts.csswg.org/css-transitions-1/",
 					"repo": "https://github.com/w3c/csswg-drafts",
 					"shortname": "css-transitions-1",
@@ -947,7 +955,8 @@
 					"title": "CSS Viewport Module Level 1",
 					"url": "https://drafts.csswg.org/css-viewport-1/",
 					"repo": "https://github.com/w3c/csswg-drafts",
-					"shortname": "css-viewport"
+					"shortname": "css-viewport-1",
+					"tests": "https://wpt.fyi/results/css/css-viewport?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
 					"title": "CSS Will Change Module Level 1",
@@ -1116,13 +1125,11 @@
 				{
 					"title": "Graphics Interchange Format (GIF) version 87a",
 					"url": "https://www.w3.org/Graphics/GIF/spec-gif87.txt",
-					"repo": null,
 					"shortname": "GIF-87a"
 				},
 				{
 					"title": "Graphics Interchange Format (GIF) version 89a",
 					"url": "https://www.w3.org/Graphics/GIF/spec-gif89a.txt",
-					"repo": null,
 					"shortname": "GIF-89a"
 				}
 			]
@@ -1141,7 +1148,6 @@
 				{
 					"title": "More Precise Definitions of Intrinsic Widths and Table Layout (Proposal)",
 					"url": "https://dbaron.org/css/intrinsic/",
-					"repo": null,
 					"shortname": "intrinsic"
 				},
 				{
@@ -1345,7 +1351,6 @@
 				{
 					"title": "WebP Container Specification",
 					"url": "https://developers.google.com/speed/webp/docs/riff_container",
-					"repo": null,
 					"shortname": "webp-container"
 				},
 				{
@@ -1356,7 +1361,6 @@
 				{
 					"title": "WebP Lossles Bitstream Specification",
 					"url": "https://developers.google.com/speed/webp/docs/webp_lossless_bitstream_specification",
-					"repo": null,
 					"shortname": "webp-lossles-bitstream"
 				}
 			]
@@ -1690,19 +1694,16 @@
 				{
 					"title": "Digital compression and coding of continuous-tone still images",
 					"url": "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
-					"repo": null,
 					"shortname": "JPEG-compression"
 				},
 				{
 					"title": "JPEG File Interchange Format",
 					"url": "https://www.w3.org/Graphics/JPEG/jfif3.pdf",
-					"repo": null,
 					"shortname": "JPEG-file-format"
 				},
 				{
 					"title": "JPEG XL image coding system",
 					"url": "https://arxiv.org/ftp/arxiv/papers/1908/1908.03565.pdf",
-					"repo": null,
 					"shortname": "JPEG-XL"
 				}
 			]
@@ -2005,7 +2006,6 @@
 				{
 					"title": "APNG Specification",
 					"url": "https://wiki.mozilla.org/APNG_Specification",
-					"repo": null,
 					"shortname": "APNG"
 				}
 			]
@@ -2018,7 +2018,6 @@
 				{
 					"title": "Netscape Looping Application GIF Extension",
 					"url": "http://www.vurdalakov.net/misc/gif/netscape-looping-application-extension/",
-					"repo": null,
 					"shortname": "GIF-extension-looping"
 				}
 			]
@@ -2808,12 +2807,6 @@
 					"shortname": "tc39-array-from-async"
 				},
 				{
-					"title": "Array Grouping",
-					"url": "https://tc39.es/proposal-array-grouping/",
-					"repo": "https://github.com/tc39/proposal-array-grouping",
-					"shortname": "tc39-array-grouping"
-				},
-				{
 					"title": "ArrayBuffer transfer",
 					"url": "https://tc39.es/proposal-arraybuffer-transfer/",
 					"repo": "https://github.com/tc39/proposal-arraybuffer-transfer",
@@ -2956,6 +2949,11 @@
 					"url": "https://tc39.es/proposal-resizablearraybuffer/",
 					"repo": "https://github.com/tc39/proposal-resizablearraybuffer",
 					"shortname": "tc39-resizablearraybuffer"
+				},
+				{
+					"title": "The JSON Data Interchange Syntax",
+					"url": "https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf",
+					"shortname": "json"
 				}
 			]
 		},
@@ -3923,12 +3921,6 @@
 					"repo": "https://github.com/whatwg/xhr",
 					"shortname": "xhr",
 					"tests": "https://wpt.fyi/results/xhr?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
-				},
-				{
-					"title": "URL Pattern Standard",
-					"url": "https://urlpattern.spec.whatwg.org/",
-					"repo": "https://github.com/whatwg/urlpattern",
-					"shortname": "urlpattern"
 				}
 			]
 		},
@@ -4073,6 +4065,13 @@
 					"title": "The MerchantValidationEvent interface",
 					"url": "https://w3c.github.io/merchant-validation/",
 					"repo": "https://github.com/w3c/merchant-validation",
+					"shortname": "merchant-validation",
+					"tests": "https://wpt.fyi/results/merchant-validation?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
+				},
+				{
+					"title": "The MerchantValidationEvent interface",
+					"url": "https://w3c.github.io/merchant-validation/",
+					"repo": "https://github.com/w3c/merchant-validation",
 					"shortname": "merchant-validation"
 				},
 				{
@@ -4156,7 +4155,7 @@
 					"shortname": "network-reporting"
 				},
 				{
-					"title": "Paint Timing 1",
+					"title": "Paint Timing",
 					"url": "https://w3c.github.io/paint-timing/",
 					"repo": "https://github.com/w3c/paint-timing",
 					"shortname": "paint-timing",
@@ -4576,6 +4575,12 @@
 					"shortname": "no-vary-search"
 				},
 				{
+					"title": "Observable",
+					"url": "https://wicg.github.io/observable/",
+					"repo": "https://github.com/WICG/observable",
+					"shortname": "observable"
+				},
+				{
 					"title": "Origin-bound one-time codes delivered via SMS",
 					"url": "https://wicg.github.io/sms-one-time-codes/",
 					"repo": "https://github.com/WICG/sms-one-time-codes",
@@ -4923,7 +4928,8 @@
 					"title": "MediaStreamTrack Insertable Media Processing using Streams",
 					"url": "https://w3c.github.io/mediacapture-transform/",
 					"repo": "https://github.com/w3c/mediacapture-transform",
-					"shortname": "mediacapture-transform"
+					"shortname": "mediacapture-transform",
+					"tests": "https://wpt.fyi/results/mediacapture-insertable-streams?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
 					"title": "Provisional Identifiers for WebRTC's Statistics API",
@@ -5410,13 +5416,11 @@
 				{
 					"title": "Extensible Markup Language (XML) 1.1 (Second Edition)",
 					"url": "https://www.w3.org/TR/xml11/",
-					"repo": null,
 					"shortname": "xml11"
 				},
 				{
 					"title": "Namespaces in XML 1.1 (Second Edition)",
 					"url": "https://www.w3.org/TR/xml-names11/",
-					"repo": null,
 					"shortname": "xml-names11"
 				}
 			]

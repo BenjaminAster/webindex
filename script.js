@@ -52,35 +52,62 @@ let tab = document.documentElement.dataset.currentTab;
 	// search
 	const searchbox = document.querySelector("input#searchbox");
 
+	const search = (/** @type {string} */ query) => {
+		if (tab === "specifications") document.querySelector("#toc").hidden = true;
+
+		const mainList = document.querySelector("ul#main-list");
+		$outerLoop: for (const categoryBlock of mainList.children) {
+			if (categoryBlock.localName !== "li") continue $outerLoop;
+			const list = categoryBlock.querySelector("ul");
+			let categoryHasMatches = false;
+			$innerLoop: for (const child of list.children) {
+				if (child.localName !== "li") continue $innerLoop;
+				const matches = child.dataset.searchableName?.includes(query);
+				child.hidden = !matches;
+				if (matches) {
+					categoryHasMatches = true;
+				}
+			}
+			categoryBlock.hidden = !categoryHasMatches;
+		}
+	}
+
 	searchbox.addEventListener("keydown", ({ key }) => {
 		if (key === "Enter") {
-			const search = searchbox.value.trim().toLowerCase();
-			if (!search) return;
-			if (tab === "specifications") document.querySelector("#toc").hidden = true;
-
-			const mainList = document.querySelector("ul#main-list");
-			$outerLoop: for (const categoryBlock of mainList.children) {
-				if (categoryBlock.localName !== "li") continue $outerLoop;
-				const list = categoryBlock.querySelector("ul");
-				let categoryHasMatches = false;
-				$innerLoop: for (const child of list.children) {
-					if (child.localName !== "li") continue $innerLoop;
-					const matches = child.dataset.searchableName?.includes(search);
-					child.hidden = !matches;
-					if (matches) {
-						categoryHasMatches = true;
-					}
-				}
-				categoryBlock.hidden = !categoryHasMatches;
-			}
+			const query = searchbox.value.trim().toLowerCase();
+			if (!query) return;
+			search(query)
 		}
 	});
 
-	searchbox.addEventListener("input", () => {
-		if (searchbox.value.trim() === "") {
+	{
+		const clearSeachbox = () => {
 			for (const element of document.querySelectorAll(":is(#toc, ul#main-list > li, [data-searchable-name])[hidden]")) {
 				element.hidden = false;
 			}
+		};
+
+		searchbox.addEventListener("input", () => {
+			if (searchbox.value.trim() === "") {
+				clearSeachbox();
+			}
+		});
+
+		document.querySelector("#clear-searchbox").addEventListener("click", () => {
+			searchbox.value = "";
+			clearSeachbox();
+			searchbox.focus();
+		});
+	}
+
+	{
+		const params = new URLSearchParams(location.search);
+		{
+			const query = params.get("q")?.trim();
+			if (query) {
+				searchbox.value = query;
+				search(query);
+			}
 		}
-	});
+	}
 }

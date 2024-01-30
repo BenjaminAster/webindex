@@ -48,7 +48,10 @@ See ssr/template.html instead. -->
 			<a href="https://github.com/BenjaminAster/webindex" title="View project on GitHub" class="github icon:github"></a>
 		</div>
 
-		<input type="search" id="searchbox" title="Search" placeholder="Type and press enter to search...">
+		<div class="searchbox-container">
+			<input type="search" id="searchbox" title="Search" placeholder="Type and press enter to search...">
+			<button id="clear-searchbox" class="icon:x" title="clear search query"></button>
+		</div>
 	</header>
 
 	<main>
@@ -370,6 +373,18 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li data-searchable-name="accessible rich internet applications (wai-aria) wai-aria-1.3">
+								<a href="https://github.com/w3c/aria" class="icon repo-link icon:github" title="View specification source"></a>
+								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
+								<a href="https://wpt.fyi/results/wai-aria?label=master&amp;product=chrome&amp;product=safari&amp;product=firefox&amp;product=servo&amp;product=flow" class="icon tests-link icon:wpt" title="View conformance tests"></a>
+								<div class="container">
+									<a href="https://w3c.github.io/aria/" class="spec-link">
+										<h4 class="spec-name">Accessible Rich Internet Applications (WAI-ARIA)</h4>
+										<span class="spec-url">w3c.github.io/aria</span>
+									</a>
+								</div>
+							</li>
+						
 							<li data-searchable-name="accessible rich internet applications (wai-aria) 1.3 wai-aria-1.2">
 								<a href="https://github.com/w3c/aria" class="icon repo-link icon:github" title="View specification source"></a>
 								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
@@ -433,7 +448,7 @@ See ssr/template.html instead. -->
 							<li data-searchable-name="html accessibility api mappings 1.0 html-aam-1.0">
 								<a href="https://github.com/w3c/html-aam" class="icon repo-link icon:github" title="View specification source"></a>
 								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
-								<a href="#" class="icon tests-link icon:wpt disabled" title="View conformance tests"></a>
+								<a href="https://wpt.fyi/results/html-aam?label=master&amp;product=chrome&amp;product=safari&amp;product=firefox&amp;product=servo&amp;product=flow" class="icon tests-link icon:wpt" title="View conformance tests"></a>
 								<div class="container">
 									<a href="https://w3c.github.io/html-aam/" class="spec-link">
 										<h4 class="spec-name">HTML Accessibility API Mappings 1.0</h4>
@@ -1886,13 +1901,13 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
-							<li data-searchable-name="css transitions css-transitions-1">
+							<li data-searchable-name="css transitions level 1 css-transitions-1">
 								<a href="https://github.com/w3c/csswg-drafts" class="icon repo-link icon:github" title="View specification source"></a>
 								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
 								<a href="https://wpt.fyi/results/css/css-transitions?label=master&amp;product=chrome&amp;product=safari&amp;product=firefox&amp;product=servo&amp;product=flow" class="icon tests-link icon:wpt" title="View conformance tests"></a>
 								<div class="container">
 									<a href="https://drafts.csswg.org/css-transitions-1/" class="spec-link">
-										<h4 class="spec-name">CSS Transitions</h4>
+										<h4 class="spec-name">CSS Transitions Level 1</h4>
 										<span class="spec-url">drafts.csswg.org/css-transitions-1</span>
 									</a>
 								</div>
@@ -1994,10 +2009,10 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
-							<li data-searchable-name="css viewport module level 1 css-viewport">
+							<li data-searchable-name="css viewport module level 1 css-viewport-1">
 								<a href="https://github.com/w3c/csswg-drafts" class="icon repo-link icon:github" title="View specification source"></a>
 								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
-								<a href="#" class="icon tests-link icon:wpt disabled" title="View conformance tests"></a>
+								<a href="https://wpt.fyi/results/css/css-viewport?label=master&amp;product=chrome&amp;product=safari&amp;product=firefox&amp;product=servo&amp;product=flow" class="icon tests-link icon:wpt" title="View conformance tests"></a>
 								<div class="container">
 									<a href="https://drafts.csswg.org/css-viewport-1/" class="spec-link">
 										<h4 class="spec-name">CSS Viewport Module Level 1</h4>
@@ -5322,18 +5337,6 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
-							<li data-searchable-name="array grouping tc39-array-grouping">
-								<a href="https://github.com/tc39/proposal-array-grouping" class="icon repo-link icon:github" title="View specification source"></a>
-								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
-								<a href="#" class="icon tests-link icon:wpt disabled" title="View conformance tests"></a>
-								<div class="container">
-									<a href="https://tc39.es/proposal-array-grouping/" class="spec-link">
-										<h4 class="spec-name">Array Grouping</h4>
-										<span class="spec-url">tc39.es/proposal-array-grouping</span>
-									</a>
-								</div>
-							</li>
-						
 							<li data-searchable-name="arraybuffer transfer tc39-arraybuffer-transfer">
 								<a href="https://github.com/tc39/proposal-arraybuffer-transfer" class="icon repo-link icon:github" title="View specification source"></a>
 								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
@@ -5618,6 +5621,18 @@ See ssr/template.html instead. -->
 									<a href="https://tc39.es/proposal-resizablearraybuffer/" class="spec-link">
 										<h4 class="spec-name">Resizable ArrayBuffer and growable SharedArrayBuffer</h4>
 										<span class="spec-url">tc39.es/proposal-resizablearraybuffer</span>
+									</a>
+								</div>
+							</li>
+						
+							<li data-searchable-name="the json data interchange syntax json">
+								<a href="#" class="icon repo-link icon:github disabled" title="View specification source"></a>
+								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
+								<a href="#" class="icon tests-link icon:wpt disabled" title="View conformance tests"></a>
+								<div class="container">
+									<a href="https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf" class="spec-link">
+										<h4 class="spec-name">The JSON Data Interchange Syntax</h4>
+										<span class="spec-url">ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf</span>
 									</a>
 								</div>
 							</li>
@@ -7301,18 +7316,6 @@ See ssr/template.html instead. -->
 									</a>
 								</div>
 							</li>
-						
-							<li data-searchable-name="url pattern standard urlpattern">
-								<a href="https://github.com/whatwg/urlpattern" class="icon repo-link icon:github" title="View specification source"></a>
-								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
-								<a href="#" class="icon tests-link icon:wpt disabled" title="View conformance tests"></a>
-								<div class="container">
-									<a href="https://urlpattern.spec.whatwg.org/" class="spec-link">
-										<h4 class="spec-name">URL Pattern Standard</h4>
-										<span class="spec-url">urlpattern.spec.whatwg.org</span>
-									</a>
-								</div>
-							</li>
 						</ul>
 				</li>
 			
@@ -7557,6 +7560,18 @@ See ssr/template.html instead. -->
 							<li data-searchable-name="the merchantvalidationevent interface merchant-validation">
 								<a href="https://github.com/w3c/merchant-validation" class="icon repo-link icon:github" title="View specification source"></a>
 								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
+								<a href="https://wpt.fyi/results/merchant-validation?label=master&amp;product=chrome&amp;product=safari&amp;product=firefox&amp;product=servo&amp;product=flow" class="icon tests-link icon:wpt" title="View conformance tests"></a>
+								<div class="container">
+									<a href="https://w3c.github.io/merchant-validation/" class="spec-link">
+										<h4 class="spec-name">The MerchantValidationEvent interface</h4>
+										<span class="spec-url">w3c.github.io/merchant-validation</span>
+									</a>
+								</div>
+							</li>
+						
+							<li data-searchable-name="the merchantvalidationevent interface merchant-validation">
+								<a href="https://github.com/w3c/merchant-validation" class="icon repo-link icon:github" title="View specification source"></a>
+								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
 								<a href="#" class="icon tests-link icon:wpt disabled" title="View conformance tests"></a>
 								<div class="container">
 									<a href="https://w3c.github.io/merchant-validation/" class="spec-link">
@@ -7708,13 +7723,13 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
-							<li data-searchable-name="paint timing 1 paint-timing">
+							<li data-searchable-name="paint timing paint-timing">
 								<a href="https://github.com/w3c/paint-timing" class="icon repo-link icon:github" title="View specification source"></a>
 								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
 								<a href="https://wpt.fyi/results/paint-timing?label=master&amp;product=chrome&amp;product=safari&amp;product=firefox&amp;product=servo&amp;product=flow" class="icon tests-link icon:wpt" title="View conformance tests"></a>
 								<div class="container">
 									<a href="https://w3c.github.io/paint-timing/" class="spec-link">
-										<h4 class="spec-name">Paint Timing 1</h4>
+										<h4 class="spec-name">Paint Timing</h4>
 										<span class="spec-url">w3c.github.io/paint-timing</span>
 									</a>
 								</div>
@@ -8474,6 +8489,18 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li data-searchable-name="observable observable">
+								<a href="https://github.com/WICG/observable" class="icon repo-link icon:github" title="View specification source"></a>
+								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
+								<a href="#" class="icon tests-link icon:wpt disabled" title="View conformance tests"></a>
+								<div class="container">
+									<a href="https://wicg.github.io/observable/" class="spec-link">
+										<h4 class="spec-name">Observable</h4>
+										<span class="spec-url">wicg.github.io/observable</span>
+									</a>
+								</div>
+							</li>
+						
 							<li data-searchable-name="origin-bound one-time codes delivered via sms sms-one-time-codes">
 								<a href="https://github.com/WICG/sms-one-time-codes" class="icon repo-link icon:github" title="View specification source"></a>
 								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
@@ -9111,7 +9138,7 @@ See ssr/template.html instead. -->
 							<li data-searchable-name="mediastreamtrack insertable media processing using streams mediacapture-transform">
 								<a href="https://github.com/w3c/mediacapture-transform" class="icon repo-link icon:github" title="View specification source"></a>
 								<!-- <a href="#" class="icon icon:mdn" title="testtest"></a> -->
-								<a href="#" class="icon tests-link icon:wpt disabled" title="View conformance tests"></a>
+								<a href="https://wpt.fyi/results/mediacapture-insertable-streams?label=master&amp;product=chrome&amp;product=safari&amp;product=firefox&amp;product=servo&amp;product=flow" class="icon tests-link icon:wpt" title="View conformance tests"></a>
 								<div class="container">
 									<a href="https://w3c.github.io/mediacapture-transform/" class="spec-link">
 										<h4 class="spec-name">MediaStreamTrack Insertable Media Processing using Streams</h4>
