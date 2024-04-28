@@ -47,8 +47,8 @@
 
 	background-color: color-mix(in srgb, var(--gray-1) 20%, var(--black-or-white));
 
-	--scrollbar-color: oklch(var(--accent-lightness) var(--accent-chroma) var(--accent-hue));
-	--scrollbar-hover-color: oklch(calc(var(--accent-lightness) + 0.1) var(--accent-chroma) var(--accent-hue));
+	--scrollbar-color: var(--gray-3);
+	/* --scrollbar-hover-color: oklch(calc(var(--accent-lightness) + 0.1) var(--accent-chroma) var(--accent-hue)); */
 	scrollbar-color: var(--scrollbar-color) transparent;
 }
 

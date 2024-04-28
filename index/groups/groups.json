@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Mon, 29 Jan 2024 17:33:52 GMT",
-		"iso": "2024-01-29T17:33:52.728Z",
-		"unixMillis": 1706549632728
+		"utc": "Sun, 28 Apr 2024 08:19:22 GMT",
+		"iso": "2024-04-28T08:19:22.361Z",
+		"unixMillis": 1714292362361
 	},
 	"groups": [
 		{
@@ -49,6 +49,11 @@
 			"name": "Accessibility Guidelines Working Group",
 			"identifier": "wg/ag",
 			"homepage": "https://www.w3.org/WAI/GL/"
+		},
+		{
+			"name": "Accessibility Internationalization Community Group",
+			"identifier": "cg/global-inclusion",
+			"homepage": "https://www.w3.org/community/global-inclusion/"
 		},
 		{
 			"name": "Accessibility at the Edge Community Group",
@@ -139,11 +144,6 @@
 			"name": "Automotive Privacy and Security Task Force",
 			"identifier": "tf/auto-privacy-security",
 			"homepage": "https://www.w3.org/groups/tf/auto-privacy-security/"
-		},
-		{
-			"name": "Automotive Working Group",
-			"identifier": "wg/auto",
-			"homepage": "https://www.w3.org/groups/wg/auto/"
 		},
 		{
 			"name": "Automotive and Transportation Business Group",
@@ -246,7 +246,7 @@
 			"homepage": "https://www.w3.org/community/chem-web-pub/"
 		},
 		{
-			"name": "Chinese DID & VC Best Practices Community Group",
+			"name": "Chinese DID & VC Community Group",
 			"identifier": "cg/cndid",
 			"homepage": "https://www.w3.org/community/cndid/"
 		},
@@ -416,6 +416,11 @@
 			"homepage": "https://www.w3.org/community/fed-id/"
 		},
 		{
+			"name": "Federated Identity Working Group",
+			"identifier": "wg/fedid",
+			"homepage": "https://www.w3.org/groups/wg/fedid/"
+		},
+		{
 			"name": "Federated Learning Community Group",
 			"identifier": "cg/federated-learning",
 			"homepage": "https://www.w3.org/community/federated-learning/"
@@ -499,6 +504,11 @@
 			"name": "India International Program",
 			"identifier": "tf/iip",
 			"homepage": "https://www.github.com/w3c/iip"
+		},
+		{
+			"name": "Information Architecture Community Group",
+			"identifier": "cg/informationarchitecture",
+			"homepage": "https://www.w3.org/community/informationarchitecture/"
 		},
 		{
 			"name": "Inter-Platform Validation for Confidential Computing Community Group",
@@ -623,7 +633,7 @@
 		{
 			"name": "Mobile Accessibility Task Force",
 			"identifier": "tf/mobile-a11y-tf",
-			"homepage": "https://www.w3.org/WAI/GL/mobile-a11y-tf/"
+			"homepage": "https://www.w3.org/WAI/GL/task-forces/matf"
 		},
 		{
 			"name": "Mongolian Layout Task Force",
@@ -1036,6 +1046,11 @@
 			"homepage": "https://www.w3.org/community/unhosted/"
 		},
 		{
+			"name": "Update robots.txt standards Community Group",
+			"identifier": "cg/robotstxt",
+			"homepage": "https://www.w3.org/community/robotstxt/"
+		},
+		{
 			"name": "Verifiable Credentials Working Group",
 			"identifier": "wg/vc",
 			"homepage": "https://www.w3.org/2017/vc/"
@@ -1281,6 +1296,16 @@
 			"homepage": "https://www.w3.org/html/wg/"
 		},
 		{
+			"name": "XML Query Working Group",
+			"identifier": "wg/xml-query",
+			"homepage": "https://www.w3.org/XML/Query/"
+		},
+		{
+			"name": "XSLT Working Group",
+			"identifier": "wg/xslt",
+			"homepage": "https://www.w3.org/Style/XSL/"
+		},
+		{
 			"name": "Web Platform Working Group",
 			"identifier": "wg/webplatform",
 			"homepage": "https://www.w3.org/WebPlatform/WG/"
@@ -1299,6 +1324,11 @@
 			"name": "Audiobooks Working Group",
 			"identifier": "wg/publishing",
 			"homepage": "https://www.w3.org/publishing/groups/publ-wg/"
+		},
+		{
+			"name": "Automotive Working Group",
+			"identifier": "wg/auto",
+			"homepage": "https://www.w3.org/groups/wg/auto/"
 		},
 		{
 			"name": "BD Comics Manga Community Group",
@@ -1461,16 +1491,6 @@
 			"homepage": "https://www.w3.org/2016/poe/"
 		},
 		{
-			"name": "XML Query Working Group",
-			"identifier": "wg/xml-query",
-			"homepage": "https://www.w3.org/XML/Query/"
-		},
-		{
-			"name": "XSLT Working Group",
-			"identifier": "wg/xslt",
-			"homepage": "https://www.w3.org/Style/XSL/"
-		},
-		{
 			"name": "Scholarly HTML Community Group",
 			"identifier": "cg/scholarlyhtml",
 			"homepage": "https://www.w3.org/community/scholarlyhtml/"
@@ -1631,6 +1651,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/vcon/"
 		},
 		{
+			"name": "Workload Identity in Multi System Environments Working Group",
+			"identifier": "ietf/wimse",
+			"homepage": "https://datatracker.ietf.org/wg/wimse/"
+		},
+		{
 			"name": "General Area Dispatch Working Group",
 			"identifier": "ietf/gendispatch",
 			"homepage": "https://datatracker.ietf.org/wg/gendispatch/"
@@ -1726,11 +1751,6 @@
 			"homepage": "https://datatracker.ietf.org/wg/bmwg/"
 		},
 		{
-			"name": "Diameter Maintenance and Extensions Working Group",
-			"identifier": "ietf/dime",
-			"homepage": "https://datatracker.ietf.org/wg/dime/"
-		},
-		{
 			"name": "Domain Name System Operations Working Group",
 			"identifier": "ietf/dnsop",
 			"homepage": "https://datatracker.ietf.org/wg/dnsop/"
@@ -1774,6 +1794,11 @@
 			"name": "Network Modeling Working Group",
 			"identifier": "ietf/netmod",
 			"homepage": "https://datatracker.ietf.org/wg/netmod/"
+		},
+		{
+			"name": "Network Management Operations Working Group",
+			"identifier": "ietf/nmop",
+			"homepage": "https://datatracker.ietf.org/wg/nmop/"
 		},
 		{
 			"name": "Operations and Management Area Working Group",
@@ -1936,6 +1961,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/dance/"
 		},
 		{
+			"name": "Detecting Unwanted Location Trackers Working Group",
+			"identifier": "ietf/dult",
+			"homepage": "https://datatracker.ietf.org/wg/dult/"
+		},
+		{
 			"name": "EAP Method Update Working Group",
 			"identifier": "ietf/emu",
 			"homepage": "https://datatracker.ietf.org/wg/emu/"
@@ -2046,11 +2076,6 @@
 			"homepage": "https://datatracker.ietf.org/wg/teep/"
 		},
 		{
-			"name": "Transfer dIGital cREdentialS Securely Working Group",
-			"identifier": "ietf/tigress",
-			"homepage": "https://datatracker.ietf.org/wg/tigress/"
-		},
-		{
 			"name": "Transport Layer Security Working Group",
 			"identifier": "ietf/tls",
 			"homepage": "https://datatracker.ietf.org/wg/tls/"
@@ -2109,11 +2134,6 @@
 			"name": "QUIC Working Group",
 			"identifier": "ietf/quic",
 			"homepage": "https://datatracker.ietf.org/wg/quic/"
-		},
-		{
-			"name": "Real-Time Communication in WEB-browsers Working Group",
-			"identifier": "ietf/rtcweb",
-			"homepage": "https://datatracker.ietf.org/wg/rtcweb/"
 		},
 		{
 			"name": "Transport Services Working Group",
@@ -2234,6 +2254,11 @@
 			"name": "Javascript Object Notation Update Working Group",
 			"identifier": "ietf/jsonbis",
 			"homepage": "https://datatracker.ietf.org/wg/jsonbis/"
+		},
+		{
+			"name": "JSON Path Working Group",
+			"identifier": "ietf/jsonpath",
+			"homepage": "https://datatracker.ietf.org/wg/jsonpath/"
 		},
 		{
 			"name": "Font Top Level Media Type Working Group",
@@ -3996,6 +4021,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/ddniwg/"
 		},
 		{
+			"name": "Diameter Maintenance and Extensions Working Group",
+			"identifier": "ietf/dime",
+			"homepage": "https://datatracker.ietf.org/wg/dime/"
+		},
+		{
 			"name": "Distributed Management Working Group",
 			"identifier": "ietf/disman",
 			"homepage": "https://datatracker.ietf.org/wg/disman/"
@@ -4921,6 +4951,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/tfesp/"
 		},
 		{
+			"name": "Transfer dIGital cREdentialS Securely Working Group",
+			"identifier": "ietf/tigress",
+			"homepage": "https://datatracker.ietf.org/wg/tigress/"
+		},
+		{
 			"name": "Token Binding Working Group",
 			"identifier": "ietf/tokbind",
 			"homepage": "https://datatracker.ietf.org/wg/tokbind/"
@@ -5444,6 +5479,11 @@
 			"name": "Whois and Network Information Lookup Service Working Group",
 			"identifier": "ietf/wnils",
 			"homepage": "https://datatracker.ietf.org/wg/wnils/"
+		},
+		{
+			"name": "Real-Time Communication in WEB-browsers Working Group",
+			"identifier": "ietf/rtcweb",
+			"homepage": "https://datatracker.ietf.org/wg/rtcweb/"
 		},
 		{
 			"name": "Anti-Spam Research Group Working Group",

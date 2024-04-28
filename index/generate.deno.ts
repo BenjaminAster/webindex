@@ -93,16 +93,18 @@ $specs: {
 
 	// let results = await fetchJSON(indexURL);
 	results = results.map(({
-		nightly: { url, repository: repo, pages },
+		nightly: { url, repository: repo, pages } = {},
 		groups: [{ url: groupHomepage, name: groupName, }],
 		css: cssPath,
 		idl: idlPath,
 		// url: tr,
+		url: mainURL,
 		...rest
-	}) => ({ ...rest, url, repo, groupHomepage, groupName, cssPath, idlPath, pages }));
+	}) => ({ ...rest, url, mainURL, repo, groupHomepage, groupName, cssPath, idlPath, pages }));
 
 	$specLoop: for (let {
 		url,
+		mainURL,
 		categories,
 		repo,
 		groupHomepage,
@@ -122,10 +124,12 @@ $specs: {
 		// if (url === "https://streams.spec.whatwg.org/") break $specLoop;
 
 		if (!url) {
-			let { login, repoName, path, isFile } = repo.match(
-				/^https:\/\/github.com\/(?<login>[\w-]+)\/(?<repoName>[\w-]+)(\/(tree|(?<isFile>blob))\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/
-			).groups;
-			url = `https://${login.toLowerCase()}.github.io/${repoName}/${path ? (isFile ? path.replace(/(\.bs|\.md)$/, ".html") : `${path}/`) : ""}`;
+			if (repo) {
+				let { login, repoName, path, isFile } = repo.match(
+					/^https:\/\/github.com\/(?<login>[\w-]+)\/(?<repoName>[\w-]+)(\/(tree|(?<isFile>blob))\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/
+				).groups;
+				url = `https://${login.toLowerCase()}.github.io/${repoName}/${path ? (isFile ? path.replace(/(\.bs|\.md)$/, ".html") : `${path}/`) : ""}`;
+			} else url = mainURL;
 		}
 
 		if (manualData.excludedSpecs.includes(url)) continue $specLoop;
@@ -158,6 +162,11 @@ $specs: {
 		$: {
 			const titleRewrite = manualData.titleRewrites[group]?.[url];
 			if (titleRewrite) title = titleRewrite;
+		}
+
+		{
+			const repoRewrite = manualData.repoRewrites[group]?.[url];
+			if (repoRewrite) repo = repoRewrite;
 		}
 
 		let groupObject = specs.find((item) => item.groupIdentifier === group);

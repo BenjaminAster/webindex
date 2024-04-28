@@ -162,12 +162,15 @@ export default {
 		"https://w3c.github.io/mse-byte-stream-format-mp2t/": "wg/media",
 		"https://w3c.github.io/mse-byte-stream-format-mpeg-audio/": "wg/media",
 		"https://w3c.github.io/mse-byte-stream-format-webm/": "wg/media",
-		"https://dcthetall.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html": "dylancutler",
+		"https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html": "dylancutler",
 		"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html": "davidbenjamin",
-		"https://www.ietf.org/archive/id/draft-zern-webp-13.html": "google",
+		"https://www.ietf.org/archive/id/draft-zern-webp-15.html": "google",
 		"https://www.rfc-editor.org/rfc/rfc6386": "google",
 		"https://httpwg.org/specs/rfc8288.html": "marknottingham",
 		"https://w3c.github.io/openscreenprotocol/": "wg/secondscreen",
+		"https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html": "khronos",
+		"https://www.rfc-editor.org/rfc/rfc7932": "ietf/appsawg",
+		"https://www.rfc-editor.org/rfc/rfc8878": "ietf/appsawg",
 	},
 	additionalSpecs: [
 		{ repo: "https://github.com/w3c/editing/tree/gh-pages/docs/execCommand", group: "wg/webediting" },
@@ -187,7 +190,7 @@ export default {
 		{ repo: "https://github.com/w3c/p2p-webtransport", group: "cg/ortc" },
 		{ repo: "https://github.com/w3c/p2p-webtransport/blob/master/cs.html", group: "cg/ortc", shortname: "p2p-webtransport-cs" },
 		{ repo: "https://github.com/w3c/ortc", url: "https://draft.ortc.org/", group: "cg/ortc", shortname: "ortc" },
-		{ repo: "https://github.com/WICG/WebApiDevice/tree/main/device_attributes", group: "cg/wicg" },
+		// { repo: "https://github.com/WICG/WebApiDevice/tree/main/device_attributes", group: "cg/wicg" },
 		{ repo: "https://github.com/WICG/aom/tree/gh-pages/spec", group: "cg/wicg", shortname: "aom" },
 		{ repo: "https://github.com/WICG/aom/blob/gh-pages/spec/aria-reflection.bs", group: "cg/wicg", shortname: "aom/aria-reflection" },
 		{ repo: "https://github.com/WICG/aom/blob/gh-pages/spec/custom-element-semantics.bs", group: "cg/wicg", shortname: "aom/custom-element-semantics" },
@@ -223,11 +226,11 @@ export default {
 		{ repo: "https://github.com/w3c/svgwg/tree/main/specs/paths", url: "https://svgwg.org/specs/paths/", group: "wg/svg", shortname: "svg-paths" },
 		{ url: "https://wiki.mozilla.org/APNG_Specification", group: "mozilla", shortname: "APNG" },
 		{ repo: "https://github.com/w3c/css-houdini-drafts/tree/main/box-tree-api", url: "https://drafts.css-houdini.org/box-tree-api-1/", group: "wg/css" },
-		{ url: "https://www.w3.org/TR/xml11/", group: "wg/xml-core" },
-		{ url: "https://www.w3.org/TR/xml-names11/", group: "wg/xml-core" },
+		{ url: "https://www.w3.org/TR/xml/", group: "wg/xml-core" },
+		{ url: "https://www.w3.org/TR/xml-names/", group: "wg/xml-core" },
 		{ repo: "https://github.com/w3c/qtspecs/tree/master/specifications/xslt-30", url: "https://www.w3.org/TR/xslt-30/", group: "wg/xslt" },
 		{ repo: "https://github.com/w3c/qtspecs/tree/master/specifications/xpath-full-text-31", url: "https://www.w3.org/TR/xpath-31/", group: "wg/xml-query" },
-		{ repo: "https://github.com/KhronosGroup/OpenGL-Registry/tree/main/specs/es/3.2", url: "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html", group: "khronos", shortname: "GLSL-ES" },
+		// { repo: "https://github.com/KhronosGroup/OpenGL-Registry/tree/main/specs/es/3.2", url: "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html", group: "khronos", shortname: "GLSL-ES" },
 		{ repo: "https://github.com/KhronosGroup/glTF-Registry/tree/main/specs/2.0", url: "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html", group: "khronos", shortname: "glTF" },
 		{ repo: "https://github.com/dewitt/opensearch", url: "https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md", group: "dewittclinton", shortname: "opensearch" },
 		{ repo: "https://github.com/dbaron/css-intrinsic-isize-props", group: "davidbaron" },
@@ -240,7 +243,6 @@ export default {
 		{ url: "https://www.w3.org/Graphics/JPEG/itu-t81.pdf", group: "jpeg", shortname: "JPEG-compression" },
 		{ url: "https://arxiv.org/ftp/arxiv/papers/1908/1908.03565.pdf", group: "jpeg", shortname: "JPEG-XL" },
 		{ url: "https://www.w3.org/Graphics/GIF/spec-gif87.txt", group: "compuserve", shortname: "GIF-87a" },
-		{ url: "https://www.w3.org/Graphics/GIF/spec-gif89a.txt", group: "compuserve", shortname: "GIF-89a" },
 		{ url: "http://www.vurdalakov.net/misc/gif/netscape-looping-application-extension/", group: "netscape", shortname: "GIF-extension-looping" },
 		// TODO: more FIDO specs at https://fidoalliance.org/specs/
 		// TODO: more image, audio, video, font, ... formats
@@ -254,7 +256,6 @@ export default {
 		},
 		"compuserve": {
 			"https://www.w3.org/Graphics/GIF/spec-gif87.txt": "Graphics Interchange Format (GIF) version 87a",
-			"https://www.w3.org/Graphics/GIF/spec-gif89a.txt": "Graphics Interchange Format (GIF) version 89a",
 		},
 		"google": {
 			"https://developers.google.com/speed/webp/docs/riff_container": "WebP Container Specification",
@@ -283,6 +284,14 @@ export default {
 			"https://w3c.github.io/webauthn/": "Web Authentication",
 		},
 	},
+	repoRewrites: {
+		"khronos": {
+			"https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html": "https://github.com/KhronosGroup/OpenGL-Registry/tree/main/specs/es/3.2",
+		},
+		"cg/wicg": {
+			"https://wicg.github.io/WebApiDevice/device_attributes/": "https://github.com/WICG/WebApiDevice/tree/main/device_attributes",
+		},
+	},
 	excludedSpecs: [
 		"https://www.w3.org/TR/DOM-Level-2-Style/",
 		"https://tc39.es/proposal-change-array-by-copy/",
@@ -306,6 +315,9 @@ export default {
 		"https://wicg.github.io/close-watcher/",
 		"https://wicg.github.io/urlpattern/",
 		"https://wicg.github.io/sanitizer-api/",
+		"https://www.iso.org/standard/54989.html",
+		"https://www.iso.org/standard/85253.html",
+		"https://www.iso.org/standard/87621.html",
 	],
 	specURLRewrites: {
 		"wg/css": {
@@ -336,6 +348,14 @@ export default {
 		"http://www.vurdalakov.net/misc/gif/netscape-looping-application-extension/",
 		"https://nokiatech.github.io/heif/technical.html",
 		"https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf",
+		"https://webassembly.github.io/branch-hinting/core/bikeshed/",
+		"https://webassembly.github.io/extended-const/core/bikeshed/",
+		"https://webassembly.github.io/function-references/core/bikeshed/",
+		"https://webassembly.github.io/gc/core/bikeshed/",
+		"https://webassembly.github.io/memory64/core/bikeshed/",
+		"https://webassembly.github.io/multi-memory/core/bikeshed/",
+		"https://webassembly.github.io/tail-call/core/bikeshed/",
+		"https://webassembly.github.io/threads/core/bikeshed/",
 	],
 	specsExcludedFromJavaScript: [
 		"https://aomediacodec.github.io/av1-hdr10plus/",
@@ -353,6 +373,14 @@ export default {
 		"http://www.vurdalakov.net/misc/gif/netscape-looping-application-extension/",
 		"https://nokiatech.github.io/heif/technical.html",
 		"https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf",
+		"https://webassembly.github.io/branch-hinting/core/bikeshed/",
+		"https://webassembly.github.io/extended-const/core/bikeshed/",
+		"https://webassembly.github.io/function-references/core/bikeshed/",
+		"https://webassembly.github.io/gc/core/bikeshed/",
+		"https://webassembly.github.io/memory64/core/bikeshed/",
+		"https://webassembly.github.io/multi-memory/core/bikeshed/",
+		"https://webassembly.github.io/tail-call/core/bikeshed/",
+		"https://webassembly.github.io/threads/core/bikeshed/",
 	],
 	additionalCSSProperties: [
 		{
@@ -427,6 +455,36 @@ export default {
 			value: "<'opacity'>",
 			id: "StopOpacityProperty",
 			spec: "https://svgwg.org/svg2-draft/pservers.html",
+		},
+		{
+			name: "grid-row-gap",
+			value: "normal | <length-percentage [0,∞]>",
+			id: "propdef-grid-row-gap",
+			spec: "https://drafts.csswg.org/css-align-3/",
+		},
+		{
+			name: "grid-column-gap",
+			value: "normal | <length-percentage [0,∞]>",
+			id: "propdef-grid-column-gap",
+			spec: "https://drafts.csswg.org/css-align-3/",
+		},
+		{
+			name: "grid-gap",
+			value: "<'row-gap'> <'column-gap'>?",
+			id: "propdef-grid-gap",
+			spec: "https://drafts.csswg.org/css-align-3/",
+		},
+		{
+			name: "font-stretch",
+			value: "normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
+			id: "propdef-font-stretch",
+			spec: "https://drafts.csswg.org/css-fonts/",
+		},
+		{
+			name: "color-rendering",
+			value: "auto | optimizeSpeed | optimizeQuality",
+			id: "ColorRenderingProperty",
+			spec: "https://www.w3.org/TR/SVG2/painting.html",
 		},
 	],
 	additionalCSSTypes: [

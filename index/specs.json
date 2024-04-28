@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Tue, 30 Jan 2024 19:16:26 GMT",
-		"iso": "2024-01-30T19:16:26.992Z",
-		"unixMillis": 1706642186992
+		"utc": "Sun, 28 Apr 2024 09:47:21 GMT",
+		"iso": "2024-04-28T09:47:21.934Z",
+		"unixMillis": 1714297641934
 	},
 	"specs": [
 		{
@@ -18,17 +18,17 @@
 					"tests": "https://wpt.fyi/results/accname?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
-					"title": "Accessible Rich Internet Applications (WAI-ARIA)",
+					"title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
 					"url": "https://w3c.github.io/aria/",
 					"repo": "https://github.com/w3c/aria",
-					"shortname": "wai-aria-1.3",
+					"shortname": "wai-aria-1.2",
 					"tests": "https://wpt.fyi/results/wai-aria?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
 					"title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
 					"url": "https://w3c.github.io/aria/",
 					"repo": "https://github.com/w3c/aria",
-					"shortname": "wai-aria-1.2",
+					"shortname": "wai-aria-1.3",
 					"tests": "https://wpt.fyi/results/wai-aria?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
@@ -65,7 +65,7 @@
 					"tests": "https://wpt.fyi/results/html-aam?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
-					"title": "MathML Accessiblity API Mappings 1.0",
+					"title": "MathML Accessibility API Mappings 1.0",
 					"url": "https://w3c.github.io/mathml-aam/",
 					"repo": "https://github.com/w3c/mathml-aam",
 					"shortname": "mathml-aam"
@@ -93,6 +93,16 @@
 					"title": "RFC 7578: Returning Values from Forms: multipart/form-data",
 					"url": "https://www.rfc-editor.org/rfc/rfc7578",
 					"shortname": "rfc7578"
+				},
+				{
+					"title": "RFC 7932: Brotli Compressed Data Format",
+					"url": "https://www.rfc-editor.org/rfc/rfc7932",
+					"shortname": "rfc7932"
+				},
+				{
+					"title": "RFC 8878: Zstandard Compression and the 'application/zstd' Media Type",
+					"url": "https://www.rfc-editor.org/rfc/rfc8878",
+					"shortname": "rfc8878"
 				}
 			]
 		},
@@ -228,7 +238,8 @@
 					"title": "CSS Borders and Box Decorations Module Level 4",
 					"url": "https://drafts.csswg.org/css-borders-4/",
 					"repo": "https://github.com/w3c/csswg-drafts",
-					"shortname": "css-borders-4"
+					"shortname": "css-borders-4",
+					"tests": "https://wpt.fyi/results/css/css-borders?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
 					"title": "CSS Box Alignment Module Level 3",
@@ -1123,14 +1134,14 @@
 			"groupIdentifier": "compuserve",
 			"specs": [
 				{
+					"title": "Graphics Interchange Format",
+					"url": "https://www.w3.org/Graphics/GIF/spec-gif89a.txt",
+					"shortname": "GIF"
+				},
+				{
 					"title": "Graphics Interchange Format (GIF) version 87a",
 					"url": "https://www.w3.org/Graphics/GIF/spec-gif87.txt",
 					"shortname": "GIF-87a"
-				},
-				{
-					"title": "Graphics Interchange Format (GIF) version 89a",
-					"url": "https://www.w3.org/Graphics/GIF/spec-gif89a.txt",
-					"shortname": "GIF-89a"
 				}
 			]
 		},
@@ -1213,7 +1224,8 @@
 					"title": "Device Posture API",
 					"url": "https://w3c.github.io/device-posture/",
 					"repo": "https://github.com/w3c/device-posture",
-					"shortname": "device-posture"
+					"shortname": "device-posture",
+					"tests": "https://wpt.fyi/results/device-posture?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
 					"title": "DeviceOrientation Event Specification",
@@ -1314,8 +1326,8 @@
 			"specs": [
 				{
 					"title": "Cookies Having Independent Partitioned State specification",
-					"url": "https://dcthetall.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html",
-					"repo": "https://github.com/DCtheTall/CHIPS-spec",
+					"url": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html",
+					"repo": "https://github.com/explainers-by-googlers/CHIPS-spec",
 					"shortname": "partitioned-cookies"
 				}
 			]
@@ -1355,7 +1367,7 @@
 				},
 				{
 					"title": "WebP Image Format",
-					"url": "https://www.ietf.org/archive/id/draft-zern-webp-13.html",
+					"url": "https://www.ietf.org/archive/id/draft-zern-webp-15.html",
 					"shortname": "webp"
 				},
 				{
@@ -1421,12 +1433,6 @@
 					"url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
 					"repo": "https://github.com/httpwg/http-extensions",
 					"shortname": "rfc6265bis"
-				},
-				{
-					"title": "Digest Fields",
-					"url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html",
-					"repo": "https://github.com/httpwg/http-extensions",
-					"shortname": "digest-headers"
 				},
 				{
 					"title": "Hypertext Transfer Protocol Version 2 (HTTP/2)",
@@ -1540,6 +1546,12 @@
 					"url": "https://www.rfc-editor.org/rfc/rfc9163",
 					"repo": "https://github.com/httpwg/http-extensions",
 					"shortname": "rfc9163"
+				},
+				{
+					"title": "RFC 9530 - Digest Fields",
+					"url": "https://httpwg.org/specs/rfc9530.html",
+					"repo": "https://github.com/httpwg/httpwg.github.io",
+					"shortname": "rfc9530"
 				},
 				{
 					"title": "The Hypertext Transfer Protocol Status Code 308 (Permanent Redirect)",
@@ -1735,7 +1747,7 @@
 					"title": "The OpenGL ES® Shading Language, Version 3.20.8",
 					"url": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html",
 					"repo": "https://github.com/KhronosGroup/OpenGL-Registry/tree/main/specs/es/3.2",
-					"shortname": "GLSL-ES"
+					"shortname": "ESSL"
 				}
 			]
 		},
@@ -2521,273 +2533,273 @@
 			"groupIdentifier": "tc39",
 			"specs": [
 				{
-					"title": "ECMAScript® 2024 Language Specification: Table of Contents",
+					"title": "ECMAScript® 2025 Language Specification: Table of Contents",
 					"url": "https://tc39.es/ecma262/multipage/",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Scope",
+					"title": "ECMAScript® 2025 Language Specification: Scope",
 					"url": "https://tc39.es/ecma262/multipage/scope.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/scope",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Conformance",
+					"title": "ECMAScript® 2025 Language Specification: Conformance",
 					"url": "https://tc39.es/ecma262/multipage/conformance.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/conformance",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Normative References",
+					"title": "ECMAScript® 2025 Language Specification: Normative References",
 					"url": "https://tc39.es/ecma262/multipage/normative-references.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/normative-references",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Overview",
+					"title": "ECMAScript® 2025 Language Specification: Overview",
 					"url": "https://tc39.es/ecma262/multipage/overview.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/overview",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Notational Conventions",
+					"title": "ECMAScript® 2025 Language Specification: Notational Conventions",
 					"url": "https://tc39.es/ecma262/multipage/notational-conventions.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/notational-conventions",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: ECMAScript Data Types and Values",
+					"title": "ECMAScript® 2025 Language Specification: ECMAScript Data Types and Values",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-data-types-and-values",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Abstract Operations",
+					"title": "ECMAScript® 2025 Language Specification: Abstract Operations",
 					"url": "https://tc39.es/ecma262/multipage/abstract-operations.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/abstract-operations",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Syntax-Directed Operations",
+					"title": "ECMAScript® 2025 Language Specification: Syntax-Directed Operations",
 					"url": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/syntax-directed-operations",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Executable Code and Execution Contexts",
+					"title": "ECMAScript® 2025 Language Specification: Executable Code and Execution Contexts",
 					"url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/executable-code-and-execution-contexts",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Ordinary and Exotic Objects Behaviours",
+					"title": "ECMAScript® 2025 Language Specification: Ordinary and Exotic Objects Behaviours",
 					"url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ordinary-and-exotic-objects-behaviours",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: ECMAScript Language: Source Text",
+					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Source Text",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-source-code.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-source-code",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: ECMAScript Language: Lexical Grammar",
+					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Lexical Grammar",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-lexical-grammar",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: ECMAScript Language: Expressions",
+					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Expressions",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-expressions",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: ECMAScript Language: Statements and Declarations",
+					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Statements and Declarations",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-statements-and-declarations",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: ECMAScript Language: Functions and Classes",
+					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Functions and Classes",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-functions-and-classes",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: ECMAScript Language: Scripts and Modules",
+					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Scripts and Modules",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-scripts-and-modules",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Error Handling and Language Extensions",
+					"title": "ECMAScript® 2025 Language Specification: Error Handling and Language Extensions",
 					"url": "https://tc39.es/ecma262/multipage/error-handling-and-language-extensions.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/error-handling-and-language-extensions",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: ECMAScript Standard Built-in Objects",
+					"title": "ECMAScript® 2025 Language Specification: ECMAScript Standard Built-in Objects",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-standard-built-in-objects.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-standard-built-in-objects",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: The Global Object",
+					"title": "ECMAScript® 2025 Language Specification: The Global Object",
 					"url": "https://tc39.es/ecma262/multipage/global-object.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/global-object",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Fundamental Objects",
+					"title": "ECMAScript® 2025 Language Specification: Fundamental Objects",
 					"url": "https://tc39.es/ecma262/multipage/fundamental-objects.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/fundamental-objects",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Numbers and Dates",
+					"title": "ECMAScript® 2025 Language Specification: Numbers and Dates",
 					"url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/numbers-and-dates",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Text Processing",
+					"title": "ECMAScript® 2025 Language Specification: Text Processing",
 					"url": "https://tc39.es/ecma262/multipage/text-processing.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/text-processing",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Indexed Collections",
+					"title": "ECMAScript® 2025 Language Specification: Indexed Collections",
 					"url": "https://tc39.es/ecma262/multipage/indexed-collections.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/indexed-collections",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Keyed Collections",
+					"title": "ECMAScript® 2025 Language Specification: Keyed Collections",
 					"url": "https://tc39.es/ecma262/multipage/keyed-collections.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/keyed-collections",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Structured Data",
+					"title": "ECMAScript® 2025 Language Specification: Structured Data",
 					"url": "https://tc39.es/ecma262/multipage/structured-data.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/structured-data",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Managing Memory",
+					"title": "ECMAScript® 2025 Language Specification: Managing Memory",
 					"url": "https://tc39.es/ecma262/multipage/managing-memory.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/managing-memory",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Control Abstraction Objects",
+					"title": "ECMAScript® 2025 Language Specification: Control Abstraction Objects",
 					"url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/control-abstraction-objects",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Reflection",
+					"title": "ECMAScript® 2025 Language Specification: Reflection",
 					"url": "https://tc39.es/ecma262/multipage/reflection.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/reflection",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Memory Model",
+					"title": "ECMAScript® 2025 Language Specification: Memory Model",
 					"url": "https://tc39.es/ecma262/multipage/memory-model.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/memory-model",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Grammar Summary",
+					"title": "ECMAScript® 2025 Language Specification: Grammar Summary",
 					"url": "https://tc39.es/ecma262/multipage/grammar-summary.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/grammar-summary",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Additional ECMAScript Features for Web Browsers",
+					"title": "ECMAScript® 2025 Language Specification: Additional ECMAScript Features for Web Browsers",
 					"url": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/additional-ecmascript-features-for-web-browsers",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: The Strict Mode of ECMAScript",
+					"title": "ECMAScript® 2025 Language Specification: The Strict Mode of ECMAScript",
 					"url": "https://tc39.es/ecma262/multipage/strict-mode-of-ecmascript.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/strict-mode-of-ecmascript",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Host Layering Points",
+					"title": "ECMAScript® 2025 Language Specification: Host Layering Points",
 					"url": "https://tc39.es/ecma262/multipage/host-layering-points.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/host-layering-points",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Corrections and Clarifications in ECMAScript 2015 with Possible Compatibility Impact",
+					"title": "ECMAScript® 2025 Language Specification: Corrections and Clarifications in ECMAScript 2015 with Possible Compatibility Impact",
 					"url": "https://tc39.es/ecma262/multipage/corrections-and-clarifications-in-ecmascript-2015-with-possible-compatibility-impact.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/corrections-and-clarifications-in-ecmascript-2015-with-possible-compatibility-impact",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Additions and Changes That Introduce Incompatibilities with Prior Editions",
+					"title": "ECMAScript® 2025 Language Specification: Additions and Changes That Introduce Incompatibilities with Prior Editions",
 					"url": "https://tc39.es/ecma262/multipage/additions-and-changes-that-introduce-incompatibilities-with-prior-editions.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/additions-and-changes-that-introduce-incompatibilities-with-prior-editions",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Colophon",
+					"title": "ECMAScript® 2025 Language Specification: Colophon",
 					"url": "https://tc39.es/ecma262/multipage/colophon.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/colophon",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Bibliography",
+					"title": "ECMAScript® 2025 Language Specification: Bibliography",
 					"url": "https://tc39.es/ecma262/multipage/bibliography.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/bibliography",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Language Specification: Copyright & Software License",
+					"title": "ECMAScript® 2025 Language Specification: Copyright & Software License",
 					"url": "https://tc39.es/ecma262/multipage/copyright-and-software-license.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/copyright-and-software-license",
@@ -2807,6 +2819,12 @@
 					"shortname": "tc39-array-from-async"
 				},
 				{
+					"title": "Uint8Array to/from base64",
+					"url": "https://tc39.es/proposal-arraybuffer-base64/spec/",
+					"repo": "https://github.com/tc39/proposal-arraybuffer-base64",
+					"shortname": "tc39-arraybuffer-base64"
+				},
+				{
 					"title": "ArrayBuffer transfer",
 					"url": "https://tc39.es/proposal-arraybuffer-transfer/",
 					"repo": "https://github.com/tc39/proposal-arraybuffer-transfer",
@@ -2823,6 +2841,12 @@
 					"url": "https://tc39.es/proposal-decorators/",
 					"repo": "https://github.com/tc39/proposal-decorators",
 					"shortname": "tc39-decorators"
+				},
+				{
+					"title": "Dynamic Code Brand Checks",
+					"url": "https://tc39.es/proposal-dynamic-code-brand-checks/",
+					"repo": "https://github.com/tc39/proposal-dynamic-code-brand-checks",
+					"shortname": "tc39-dynamic-code-brand-checks"
 				},
 				{
 					"title": "ECMAScript Explicit Resource Management",
@@ -2994,6 +3018,12 @@
 					"url": "https://w3c.github.io/webappsec-change-password-url/",
 					"repo": "https://github.com/w3c/webappsec-change-password-url",
 					"shortname": "change-password-url"
+				},
+				{
+					"title": "A Well-Known URL for Passkey Endpoints",
+					"url": "https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html",
+					"repo": "https://github.com/w3c/webappsec-passkey-endpoints",
+					"shortname": "passkey-endpoints"
 				},
 				{
 					"title": "Clear Site Data",
@@ -4069,12 +4099,6 @@
 					"tests": "https://wpt.fyi/results/merchant-validation?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
-					"title": "The MerchantValidationEvent interface",
-					"url": "https://w3c.github.io/merchant-validation/",
-					"repo": "https://github.com/w3c/merchant-validation",
-					"shortname": "merchant-validation"
-				},
-				{
 					"title": "Tokenized Card Payment",
 					"url": "https://w3c.github.io/webpayments-methods-tokenization/",
 					"repo": "https://github.com/w3c/webpayments-methods-tokenization",
@@ -4126,6 +4150,12 @@
 					"repo": "https://github.com/w3c/largest-contentful-paint",
 					"shortname": "largest-contentful-paint",
 					"tests": "https://wpt.fyi/results/largest-contentful-paint?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
+				},
+				{
+					"title": "Long Animation Frames API",
+					"url": "https://w3c.github.io/long-animation-frames/",
+					"repo": "https://github.com/w3c/long-animation-frames",
+					"shortname": "long-animation-frames"
 				},
 				{
 					"title": "Long Tasks API",
@@ -4330,8 +4360,7 @@
 					"title": "Custom State Pseudo Class",
 					"url": "https://wicg.github.io/custom-state-pseudo-class/",
 					"repo": "https://github.com/WICG/custom-state-pseudo-class",
-					"shortname": "custom-state-pseudo-class",
-					"tests": "https://wpt.fyi/results/custom-state-pseudo-class?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
+					"shortname": "custom-state-pseudo-class"
 				},
 				{
 					"title": "DataCue API",
@@ -4356,7 +4385,13 @@
 					"title": "Device Attributes API",
 					"url": "https://wicg.github.io/WebApiDevice/device_attributes/",
 					"repo": "https://github.com/WICG/WebApiDevice/tree/main/device_attributes",
-					"shortname": "device_attributes"
+					"shortname": "device-attributes"
+				},
+				{
+					"title": "Digital Credentials",
+					"url": "https://wicg.github.io/digital-identities/",
+					"repo": "https://github.com/WICG/digital-identities",
+					"shortname": "digital-identities"
 				},
 				{
 					"title": "Digital Goods API",
@@ -5032,9 +5067,75 @@
 			"specs": [
 				{
 					"title": "WebAssembly Core Specification",
+					"url": "https://webassembly.github.io/branch-hinting/core/bikeshed/",
+					"repo": "https://github.com/WebAssembly/branch-hinting",
+					"shortname": "wasm-core-2-fork-branch-hinting"
+				},
+				{
+					"title": "WebAssembly Core Specification",
+					"url": "https://webassembly.github.io/extended-const/core/bikeshed/",
+					"repo": "https://github.com/WebAssembly/extended-const",
+					"shortname": "wasm-core-2-fork-extended-const"
+				},
+				{
+					"title": "WebAssembly Core Specification",
+					"url": "https://webassembly.github.io/function-references/core/bikeshed/",
+					"repo": "https://github.com/WebAssembly/function-references",
+					"shortname": "wasm-core-2-fork-function-references"
+				},
+				{
+					"title": "WebAssembly Core Specification",
 					"url": "https://webassembly.github.io/gc/core/bikeshed/",
 					"repo": "https://github.com/WebAssembly/gc",
-					"shortname": "wasm-core-1-fork-gc"
+					"shortname": "wasm-core-2-fork-gc"
+				},
+				{
+					"title": "WebAssembly Core Specification",
+					"url": "https://webassembly.github.io/memory64/core/bikeshed/",
+					"repo": "https://github.com/WebAssembly/memory64",
+					"shortname": "wasm-core-2-fork-memory64"
+				},
+				{
+					"title": "WebAssembly Core Specification",
+					"url": "https://webassembly.github.io/multi-memory/core/bikeshed/",
+					"repo": "https://github.com/WebAssembly/multi-memory",
+					"shortname": "wasm-core-2-fork-multi-memory"
+				},
+				{
+					"title": "WebAssembly Core Specification",
+					"url": "https://webassembly.github.io/tail-call/core/bikeshed/",
+					"repo": "https://github.com/WebAssembly/tail-call",
+					"shortname": "wasm-core-2-fork-tail-call"
+				},
+				{
+					"title": "WebAssembly Core Specification",
+					"url": "https://webassembly.github.io/threads/core/bikeshed/",
+					"repo": "https://github.com/WebAssembly/threads",
+					"shortname": "wasm-core-2-fork-threads"
+				},
+				{
+					"title": "WebAssembly JavaScript Interface",
+					"url": "https://webassembly.github.io/content-security-policy/js-api/",
+					"repo": "https://github.com/WebAssembly/content-security-policy",
+					"shortname": "wasm-js-api-2-fork-content-security-policy"
+				},
+				{
+					"title": "WebAssembly JavaScript Interface",
+					"url": "https://webassembly.github.io/js-promise-integration/js-api/",
+					"repo": "https://github.com/WebAssembly/js-promise-integration",
+					"shortname": "wasm-js-api-2-fork-js-promise-integration"
+				},
+				{
+					"title": "WebAssembly JavaScript Interface",
+					"url": "https://webassembly.github.io/js-types/js-api/",
+					"repo": "https://github.com/WebAssembly/js-types",
+					"shortname": "wasm-js-api-2-fork-js-types"
+				},
+				{
+					"title": "WebAssembly JavaScript Interface",
+					"url": "https://webassembly.github.io/threads/js-api/",
+					"repo": "https://github.com/WebAssembly/threads",
+					"shortname": "wasm-js-api-2-fork-threads"
 				},
 				{
 					"title": "WebAssembly JavaScript Interface: Exception Handling",
@@ -5053,7 +5154,7 @@
 					"title": "WebAssembly Core Specification",
 					"url": "https://webassembly.github.io/spec/core/bikeshed/",
 					"repo": "https://github.com/WebAssembly/spec",
-					"shortname": "wasm-core-1",
+					"shortname": "wasm-core-2",
 					"tests": "https://github.com/WebAssembly/spec//tree/main/test/core"
 				},
 				{
@@ -5414,14 +5515,14 @@
 			"groupIdentifier": "wg/xml-core",
 			"specs": [
 				{
-					"title": "Extensible Markup Language (XML) 1.1 (Second Edition)",
-					"url": "https://www.w3.org/TR/xml11/",
-					"shortname": "xml11"
+					"title": "Extensible Markup Language (XML) 1.0 (Fifth Edition)",
+					"url": "https://www.w3.org/TR/xml/",
+					"shortname": "xml"
 				},
 				{
-					"title": "Namespaces in XML 1.1 (Second Edition)",
-					"url": "https://www.w3.org/TR/xml-names11/",
-					"shortname": "xml-names11"
+					"title": "Namespaces in XML 1.0 (Third Edition)",
+					"url": "https://www.w3.org/TR/xml-names/",
+					"shortname": "xml-names"
 				}
 			]
 		},

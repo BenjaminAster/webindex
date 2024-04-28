@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Tue, 30 Jan 2024 19:16:26 GMT",
-		"iso": "2024-01-30T19:16:26.992Z",
-		"unixMillis": 1706642186992
+		"utc": "Sun, 28 Apr 2024 09:47:21 GMT",
+		"iso": "2024-04-28T09:47:21.934Z",
+		"unixMillis": 1714297641934
 	},
 	"cssProperties": [
 		{
@@ -157,7 +157,7 @@
 				{
 					"value": "anchor-center",
 					"onlyNewValues": true,
-					"id": "ref-for-propdef-align-self",
+					"id": "ref-for-propdef-align-self①",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				},
 				{
@@ -198,21 +198,21 @@
 			]
 		},
 		{
-			"name": "anchor-default",
-			"definitions": [
-				{
-					"value": "<anchor-element>",
-					"id": "propdef-anchor-default",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
-				}
-			]
-		},
-		{
 			"name": "anchor-name",
 			"definitions": [
 				{
 					"value": "none | <dashed-ident>#",
 					"id": "propdef-anchor-name",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "anchor-scope",
+			"definitions": [
+				{
+					"value": "none | all | <dashed-ident>#",
+					"id": "propdef-anchor-scope",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -1893,8 +1893,18 @@
 			"name": "caret",
 			"definitions": [
 				{
-					"value": "<'caret-color'> || <'caret-shape'>",
+					"value": "<'caret-color'> || <'caret-animation'> || <'caret-shape'>",
 					"id": "propdef-caret",
+					"spec": "https://drafts.csswg.org/css-ui-4/"
+				}
+			]
+		},
+		{
+			"name": "caret-animation",
+			"definitions": [
+				{
+					"value": "auto | manual",
+					"id": "propdef-caret-animation",
 					"spec": "https://drafts.csswg.org/css-ui-4/"
 				}
 			]
@@ -2012,6 +2022,16 @@
 					"value": "auto | sRGB | linearRGB",
 					"id": "propdef-color-interpolation-filters",
 					"spec": "https://drafts.fxtf.org/filter-effects-1/"
+				}
+			]
+		},
+		{
+			"name": "color-rendering",
+			"definitions": [
+				{
+					"value": "auto | optimizeSpeed | optimizeQuality",
+					"id": "ColorRenderingProperty",
+					"spec": "https://www.w3.org/TR/SVG2/painting.html"
 				}
 			]
 		},
@@ -2240,7 +2260,7 @@
 			"name": "content",
 			"definitions": [
 				{
-					"value": "normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> ]+ ]?",
+					"value": "normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> | <attr()> ]+ ]?",
 					"id": "propdef-content",
 					"spec": "https://drafts.csswg.org/css-content-3/"
 				},
@@ -2491,6 +2511,16 @@
 					"value": "auto | text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top",
 					"id": "propdef-dominant-baseline",
 					"spec": "https://drafts.csswg.org/css-inline-3/"
+				}
+			]
+		},
+		{
+			"name": "dynamic-range-limit",
+			"definitions": [
+				{
+					"value": "standard | high | constrained-high",
+					"id": "propdef-dynamic-range-limit",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
 				}
 			]
 		},
@@ -2897,6 +2927,16 @@
 			]
 		},
 		{
+			"name": "font-stretch",
+			"definitions": [
+				{
+					"value": "normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
+					"id": "propdef-font-stretch",
+					"spec": "https://drafts.csswg.org/css-fonts/"
+				}
+			]
+		},
+		{
 			"name": "font-style",
 			"definitions": [
 				{
@@ -3227,6 +3267,16 @@
 			]
 		},
 		{
+			"name": "grid-column-gap",
+			"definitions": [
+				{
+					"value": "normal | <length-percentage [0,∞]>",
+					"id": "propdef-grid-column-gap",
+					"spec": "https://drafts.csswg.org/css-align-3/"
+				}
+			]
+		},
+		{
 			"name": "grid-column-start",
 			"definitions": [
 				{
@@ -3238,6 +3288,16 @@
 					"value": "<grid-line>",
 					"id": "propdef-grid-column-start",
 					"spec": "https://drafts.csswg.org/css-grid-1/"
+				}
+			]
+		},
+		{
+			"name": "grid-gap",
+			"definitions": [
+				{
+					"value": "<'row-gap'> <'column-gap'>?",
+					"id": "propdef-grid-gap",
+					"spec": "https://drafts.csswg.org/css-align-3/"
 				}
 			]
 		},
@@ -3268,6 +3328,16 @@
 					"value": "<grid-line>",
 					"id": "propdef-grid-row-end",
 					"spec": "https://drafts.csswg.org/css-grid-1/"
+				}
+			]
+		},
+		{
+			"name": "grid-row-gap",
+			"definitions": [
+				{
+					"value": "normal | <length-percentage [0,∞]>",
+					"id": "propdef-grid-row-gap",
+					"spec": "https://drafts.csswg.org/css-align-3/"
 				}
 			]
 		},
@@ -3579,7 +3649,7 @@
 			"name": "inset-area",
 			"definitions": [
 				{
-					"value": "none | <inset-area-span> [ / <inset-area-span> ]?",
+					"value": "none | <inset-area>",
 					"id": "propdef-inset-area",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
@@ -3732,18 +3802,8 @@
 				{
 					"value": "anchor-center",
 					"onlyNewValues": true,
-					"id": "ref-for-propdef-justify-self",
+					"id": "ref-for-propdef-justify-self①",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
-				}
-			]
-		},
-		{
-			"name": "layout-order",
-			"definitions": [
-				{
-					"value": "<integer>",
-					"id": "propdef-layout-order",
-					"spec": "https://drafts.csswg.org/css-display-4/"
 				}
 			]
 		},
@@ -3801,7 +3861,7 @@
 			"name": "line-clamp",
 			"definitions": [
 				{
-					"value": "none | <integer [1,∞]>? <'block-ellipsis'>?",
+					"value": "none | <integer [1,∞]> || <'block-ellipsis'>",
 					"id": "propdef-line-clamp",
 					"spec": "https://drafts.csswg.org/css-overflow-4/"
 				}
@@ -4659,7 +4719,7 @@
 			"name": "order",
 			"definitions": [
 				{
-					"value": "[ <'layout-order'> <'reading-order'>? ] | [ [ reading || layout ] && <integer> ]",
+					"value": "<integer>",
 					"id": "propdef-order",
 					"spec": "https://drafts.csswg.org/css-display-4/"
 				},
@@ -5307,21 +5367,21 @@
 			]
 		},
 		{
-			"name": "position-fallback-bounds",
+			"name": "position-anchor",
 			"definitions": [
 				{
-					"value": "normal | <dashed-ident>",
-					"id": "propdef-position-fallback-bounds",
+					"value": "<anchor-element>",
+					"id": "propdef-position-anchor",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
 		{
-			"name": "position-try-final",
+			"name": "position-try",
 			"definitions": [
 				{
-					"value": "[ always? && [ first | <try-size> ] ] | hide",
-					"id": "propdef-position-try-final",
+					"value": "<'position-try-order'>? <'position-try-options'>",
+					"id": "propdef-position-try",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -5330,7 +5390,7 @@
 			"name": "position-try-options",
 			"definitions": [
 				{
-					"value": "none | [ <dashed-ident> | <try-tactic> ]#",
+					"value": "none | [ [<dashed-ident> || <try-tactic>] | inset-area( <'inset-area'> ) ]#",
 					"id": "propdef-position-try-options",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
@@ -5342,6 +5402,16 @@
 				{
 					"value": "normal | <try-size>",
 					"id": "propdef-position-try-order",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "position-visibility",
+			"definitions": [
+				{
+					"value": "always | [ anchors-valid || anchors-visible || no-overflow ]",
+					"id": "propdef-position-visibility",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -5360,7 +5430,7 @@
 			"name": "quotes",
 			"definitions": [
 				{
-					"value": "auto | none | [ <string> <string> ]+",
+					"value": "auto | none | match-parent | [ <string> <string> ]+",
 					"id": "propdef-quotes",
 					"spec": "https://drafts.csswg.org/css-content-3/"
 				}
@@ -5377,11 +5447,11 @@
 			]
 		},
 		{
-			"name": "reading-order",
+			"name": "reading-order-items",
 			"definitions": [
 				{
-					"value": "<integer>",
-					"id": "propdef-reading-order",
+					"value": "normal | flex-visual | flex-flow | grid-rows | grid-columns | grid-order",
+					"id": "propdef-reading-order-items",
 					"spec": "https://drafts.csswg.org/css-display-4/"
 				}
 			]
@@ -5950,9 +6020,9 @@
 					"spec": "https://drafts.csswg.org/css-overflow-3/"
 				},
 				{
-					"value": "auto | [ [ stable | always ] && both-edges? && force? ] || match-parent",
+					"value": "auto | [ [ stable | always ] && both-edges? ] || match-parent",
 					"onlyNewValues": true,
-					"id": "ref-for-propdef-scrollbar-gutter⑤",
+					"id": "ref-for-propdef-scrollbar-gutter④",
 					"spec": "https://drafts.csswg.org/css-overflow-4/"
 				}
 			]
@@ -5971,7 +6041,7 @@
 			"name": "shape-image-threshold",
 			"definitions": [
 				{
-					"value": "<'opacity'>",
+					"value": "<opacity-value>",
 					"id": "propdef-shape-image-threshold",
 					"spec": "https://drafts.csswg.org/css-shapes-1/"
 				}
@@ -6888,7 +6958,7 @@
 			"name": "text-wrap-style",
 			"definitions": [
 				{
-					"value": "auto| balance | stable | pretty",
+					"value": "auto | balance | stable | pretty",
 					"id": "propdef-text-wrap-style",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
@@ -7175,10 +7245,20 @@
 			]
 		},
 		{
+			"name": "view-transition-class",
+			"definitions": [
+				{
+					"value": "none | <custom-ident>+",
+					"id": "propdef-view-transition-class",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
+				}
+			]
+		},
+		{
 			"name": "view-transition-name",
 			"definitions": [
 				{
-					"value": "none | auto | <custom-ident>",
+					"value": "none | <custom-ident>",
 					"id": "propdef-view-transition-name",
 					"spec": "https://drafts.csswg.org/css-view-transitions-1/"
 				}
@@ -7509,7 +7589,7 @@
 			"name": "zoom",
 			"definitions": [
 				{
-					"value": "<number> || <percentage>",
+					"value": "<number [0,∞]> || <percentage [0,∞]>",
 					"id": "propdef-zoom",
 					"spec": "https://drafts.csswg.org/css-viewport-1/"
 				}
@@ -7832,7 +7912,7 @@
 			"definitions": [
 				{
 					"id": "typedef-attr-type",
-					"definition": "string | url | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>",
+					"definition": "string | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>",
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
@@ -8012,7 +8092,7 @@
 				},
 				{
 					"id": "ltblendmodegt",
-					"definition": "normal | multiply | screen | overlay | darken | lighten | color-dodge |color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity",
+					"definition": "normal | darken | multiply | color-burn | lighten | screen | color-dodge | overlay | soft-light | hard-light | difference | exclusion | hue | saturation | color | luminosity",
 					"spec": "https://drafts.fxtf.org/compositing-1/"
 				}
 			]
@@ -8143,6 +8223,16 @@
 			]
 		},
 		{
+			"name": "<calc-size-basis>",
+			"definitions": [
+				{
+					"id": "typedef-calc-size-basis",
+					"definition": "[ <intrinsic-size-keyword> | <calc-size()> | any | <calc-sum> ]",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
 			"name": "<calc-sum>",
 			"definitions": [
 				{
@@ -8197,7 +8287,7 @@
 			"definitions": [
 				{
 					"id": "typedef-cf-image",
-					"definition": "<percentage [0,100]>? && [ <image> | <color> ]",
+					"definition": "[ <image> | <color> ] && <percentage [0,100]>?",
 					"spec": "https://drafts.csswg.org/css-images-4/"
 				}
 			]
@@ -8395,6 +8485,11 @@
 		{
 			"name": "<colorspace-params>",
 			"definitions": [
+				{
+					"id": "typedef-colorspace-params",
+					"definition": "[<custom-params> | <predefined-rgb-params> | <predefined-polar-params> | <predefined-rectangular-params> | <xyz-params>]",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				},
 				{
 					"id": "typedef-colorspace-params",
 					"definition": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]",
@@ -8696,6 +8791,11 @@
 					"spec": "https://drafts.csswg.org/css-content-3/"
 				},
 				{
+					"id": "ref-for-typedef-content-content-list⑧",
+					"definition": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
+					"spec": "https://drafts.csswg.org/css-content-3/"
+				},
+				{
 					"id": "content-list",
 					"definition": "[ <string> | <counter()> | <counters()> | <content()> | <attr()> ]+",
 					"spec": "https://drafts.csswg.org/css-gcpm-3/"
@@ -8895,6 +8995,11 @@
 		{
 			"name": "<custom-params>",
 			"definitions": [
+				{
+					"id": "typedef-custom-params",
+					"definition": "<dashed-ident> [ <number> | <percentage> | none ]+",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				},
 				{
 					"id": "typedef-custom-params",
 					"definition": "<dashed-ident> [ <number> | <percentage> | none ]+",
@@ -9432,12 +9537,12 @@
 			"definitions": [
 				{
 					"id": "font-tech-values",
-					"definition": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental-patch | incremental-range | incremental-auto ]",
+					"definition": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]",
 					"spec": "https://drafts.csswg.org/css-fonts-5/"
 				},
 				{
 					"id": "font-tech-values",
-					"definition": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental-patch | incremental-range | incremental-auto ]",
+					"definition": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -9813,11 +9918,11 @@
 			]
 		},
 		{
-			"name": "<inset-area-span>",
+			"name": "<inset-area>",
 			"definitions": [
 				{
-					"id": "typedef-inset-area-span",
-					"definition": "[ start || end || center ] | [ self-start || self-end || center ] | [ top || bottom || center ] | [ left || right || center ] | [ x-start || x-end || center ] | [ y-start || y-end || center ] | [ x-self-start || x-self-end || center ] | [ y-self-start || y-self-end || center ] | all",
+					"id": "typedef-inset-area",
+					"definition": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | x-self-start | x-self-end | span-x-self-start | span-x-self-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | y-self-start | y-self-end | span-y-self-start | span-y-self-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -9858,6 +9963,16 @@
 				{
 					"id": "ref-for-typedef-request-url-modifier-integrity-modifier①",
 					"definition": "integrity(<string>)",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
+			"name": "<intrinsic-size-keyword>",
+			"definitions": [
+				{
+					"id": "typedef-intrinsic-size-keyword",
+					"definition": null,
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
@@ -10854,6 +10969,11 @@
 					"id": "typedef-opacity-opacity-value",
 					"definition": null,
 					"spec": "https://drafts.csswg.org/css-color-4/"
+				},
+				{
+					"id": "ref-for-typedef-opacity-opacity-value③",
+					"definition": "<number> | <percentage>",
+					"spec": "https://drafts.csswg.org/css-color-4/"
 				}
 			]
 		},
@@ -11037,14 +11157,49 @@
 				},
 				{
 					"id": "ref-for-typedef-position②",
-					"definition": "[ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]",
+					"definition": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right ] && [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]",
 					"spec": "https://drafts.csswg.org/css-values-3/"
+				}
+			]
+		},
+		{
+			"name": "<predefined-polar-params>",
+			"definitions": [
+				{
+					"id": "typedef-predefined-polar-params",
+					"definition": "jzczhz [ <number> | <percentage> | none ]{2} [ <hue> | none]",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				}
+			]
+		},
+		{
+			"name": "<predefined-rectangular-params>",
+			"definitions": [
+				{
+					"id": "typedef-predefined-rectangular-params",
+					"definition": "<predefined-rectangular> [ <number> | <percentage> | none ]{3}",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				}
+			]
+		},
+		{
+			"name": "<predefined-rectangular>",
+			"definitions": [
+				{
+					"id": "typedef-predefined-rectangular",
+					"definition": "jzazbz | ictcp",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
 				}
 			]
 		},
 		{
 			"name": "<predefined-rgb-params>",
 			"definitions": [
+				{
+					"id": "typedef-predefined-rgb-params",
+					"definition": "<predefined-rgb> [ <number> | <percentage> | none ]{3}",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				},
 				{
 					"id": "typedef-predefined-rgb-params",
 					"definition": "<predefined-rgb> [ <number> | <percentage> | none ]{3}",
@@ -11060,6 +11215,11 @@
 		{
 			"name": "<predefined-rgb>",
 			"definitions": [
+				{
+					"id": "typedef-predefined-rgb",
+					"definition": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				},
 				{
 					"id": "typedef-predefined-rgb",
 					"definition": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020",
@@ -11134,6 +11294,26 @@
 					"id": "typedef-pseudo-page",
 					"definition": "':' [ left | right | first | blank ] /* Margin rules */",
 					"spec": "https://drafts.csswg.org/css-page-3/"
+				}
+			]
+		},
+		{
+			"name": "<pt-class-selector>",
+			"definitions": [
+				{
+					"id": "typedef-pt-class-selector",
+					"definition": "['.' <custom-ident>]+",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
+				}
+			]
+		},
+		{
+			"name": "<pt-name-and-class-selector>",
+			"definitions": [
+				{
+					"id": "typedef-pt-name-and-class-selector",
+					"definition": "<pt-name-selector> <pt-class-selector>? | <pt-class-selector>",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
 				}
 			]
 		},
@@ -11737,7 +11917,7 @@
 			"definitions": [
 				{
 					"id": "typedef-spacing-trim",
-					"definition": "space-all | normal | trim-auto | trim-start | space-first | trim-all",
+					"definition": "space-all | normal | space-first | trim-start | trim-both | trim-all",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -12353,16 +12533,6 @@
 			]
 		},
 		{
-			"name": "<vt-type-selector>",
-			"definitions": [
-				{
-					"id": "typedef-vt-type-selector",
-					"definition": "'*' | <custom-ident>#",
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
-				}
-			]
-		},
-		{
 			"name": "<wcag2>",
 			"definitions": [
 				{
@@ -12398,6 +12568,11 @@
 				{
 					"id": "typedef-xyz-params",
 					"definition": "<xyz> [ <number> | <percentage> | none ]{3}",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				},
+				{
+					"id": "typedef-xyz-params",
+					"definition": "<xyz> [ <number> | <percentage> | none ]{3}",
 					"spec": "https://drafts.csswg.org/css-color-5/"
 				},
 				{
@@ -12420,6 +12595,11 @@
 		{
 			"name": "<xyz>",
 			"definitions": [
+				{
+					"id": "typedef-xyz",
+					"definition": "xyz | xyz-d50 | xyz-d65",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				},
 				{
 					"id": "typedef-xyz",
 					"definition": "xyz | xyz-d50 | xyz-d65",
@@ -12532,13 +12712,13 @@
 			]
 		},
 		{
-			"name": "/ [ <string> | <counter> ]+",
+			"name": "/ [ <string> | <counter> | <attr()> ]+",
 			"valueFor": [
 				"content"
 			],
 			"definitions": [
 				{
-					"id": "valdef-content---string--counter",
+					"id": "valdef-content---string--counter--attr",
 					"spec": "https://drafts.csswg.org/css-content-3/"
 				}
 			]
@@ -12857,6 +13037,18 @@
 			]
 		},
 		{
+			"name": "<block-ellipsis>",
+			"valueFor": [
+				"line-clamp"
+			],
+			"definitions": [
+				{
+					"id": "valdef-line-clamp-block-ellipsis",
+					"spec": "https://drafts.csswg.org/css-overflow-4/"
+				}
+			]
+		},
+		{
 			"name": "<color>",
 			"valueFor": [
 				"box-shadow"
@@ -13063,6 +13255,30 @@
 			]
 		},
 		{
+			"name": "<custom-ident>+",
+			"valueFor": [
+				"view-transition-class"
+			],
+			"definitions": [
+				{
+					"id": "valdef-view-transition-class-custom-ident",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
+				}
+			]
+		},
+		{
+			"name": "<dashed-ident>",
+			"valueFor": [
+				"anchor-scope"
+			],
+			"definitions": [
+				{
+					"id": "valdef-anchor-scope-dashed-ident",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "<dashed-ident>",
 			"valueFor": [
 				"anchor()"
@@ -13107,6 +13323,18 @@
 				{
 					"id": "valdef-toggle-visibility-toggle",
 					"spec": "https://tabatkins.github.io/css-toggle/"
+				}
+			]
+		},
+		{
+			"name": "<dashed-ident> || <try-tactic>",
+			"valueFor": [
+				"position-try-options"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-options-dashed-ident--try-tactic",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -13269,25 +13497,13 @@
 			]
 		},
 		{
-			"name": "<inset-area-span>",
+			"name": "<inset-area>",
 			"valueFor": [
 				"inset-area"
 			],
 			"definitions": [
 				{
-					"id": "valdef-inset-area-inset-area-span",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
-				}
-			]
-		},
-		{
-			"name": "<inset-area-span> [ / <inset-area-span> ]?",
-			"valueFor": [
-				"inset-area"
-			],
-			"definitions": [
-				{
-					"id": "valdef-inset-area-inset-area-span--inset-area-span",
+					"id": "valdef-inset-area-inset-area",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -13341,13 +13557,13 @@
 			]
 		},
 		{
-			"name": "<integer [1,∞]> <block-ellipsis>?",
+			"name": "<integer [1,∞]>",
 			"valueFor": [
 				"line-clamp"
 			],
 			"definitions": [
 				{
-					"id": "valdef-line-clamp-integer-1--block-ellipsis",
+					"id": "valdef-line-clamp-integer-1",
 					"spec": "https://drafts.csswg.org/css-overflow-4/"
 				}
 			]
@@ -13360,30 +13576,6 @@
 			"definitions": [
 				{
 					"id": "valdef-order-integer",
-					"spec": "https://drafts.csswg.org/css-display-4/"
-				}
-			]
-		},
-		{
-			"name": "<integer>",
-			"valueFor": [
-				"reading-order"
-			],
-			"definitions": [
-				{
-					"id": "valdef-reading-order-integer",
-					"spec": "https://drafts.csswg.org/css-display-4/"
-				}
-			]
-		},
-		{
-			"name": "<integer>",
-			"valueFor": [
-				"layout-order"
-			],
-			"definitions": [
-				{
-					"id": "valdef-layout-order-integer",
 					"spec": "https://drafts.csswg.org/css-display-4/"
 				}
 			]
@@ -14214,13 +14406,13 @@
 			]
 		},
 		{
-			"name": "<percentage>",
+			"name": "<percentage-token>",
 			"valueFor": [
 				"<progress>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-progress-percentage",
+					"id": "valdef-progress-percentage-token",
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
@@ -14888,18 +15080,6 @@
 			]
 		},
 		{
-			"name": "<try-size>",
-			"valueFor": [
-				"position-try-final"
-			],
-			"definitions": [
-				{
-					"id": "valdef-position-try-final-try-size",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
-				}
-			]
-		},
-		{
 			"name": "<try-tactic>",
 			"valueFor": [
 				"position-try-options"
@@ -15415,12 +15595,11 @@
 		{
 			"name": "all",
 			"valueFor": [
-				"inset-area",
-				"<inset-area-span>"
+				"anchor-scope"
 			],
 			"definitions": [
 				{
-					"id": "valdef-inset-area-all",
+					"id": "valdef-anchor-scope-all",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -15898,11 +16077,11 @@
 		{
 			"name": "always",
 			"valueFor": [
-				"position-try-final"
+				"position-visibility"
 			],
 			"definitions": [
 				{
-					"id": "valdef-position-try-final-always",
+					"id": "valdef-position-visibility-always",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -15984,6 +16163,30 @@
 			]
 		},
 		{
+			"name": "anchors-valid",
+			"valueFor": [
+				"position-visibility"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-visibility-anchors-valid",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "anchors-visible",
+			"valueFor": [
+				"position-visibility"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-visibility-anchors-visible",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "angle",
 			"valueFor": [
 				"corner-shape"
@@ -16041,6 +16244,18 @@
 				{
 					"id": "valdef-color-antiquewhite",
 					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "any",
+			"valueFor": [
+				"calc-size()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-calc-size-any",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -16188,6 +16403,19 @@
 				{
 					"id": "valdef-ray-at-position",
 					"spec": "https://drafts.fxtf.org/motion-1/"
+				}
+			]
+		},
+		{
+			"name": "attr()",
+			"valueFor": [
+				"content",
+				"<content-list>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-content-attr",
+					"spec": "https://drafts.csswg.org/css-content-3/"
 				}
 			]
 		},
@@ -17417,6 +17645,18 @@
 		{
 			"name": "auto",
 			"valueFor": [
+				"caret-animation"
+			],
+			"definitions": [
+				{
+					"id": "valdef-caret-animation-auto",
+					"spec": "https://drafts.csswg.org/css-ui-4/"
+				}
+			]
+		},
+		{
+			"name": "auto",
+			"valueFor": [
 				"caret-shape"
 			],
 			"definitions": [
@@ -17483,18 +17723,6 @@
 				{
 					"id": "valdef-input-security-auto",
 					"spec": "https://drafts.csswg.org/css-ui-4/"
-				}
-			]
-		},
-		{
-			"name": "auto",
-			"valueFor": [
-				"view-transition-name"
-			],
-			"definitions": [
-				{
-					"id": "valdef-view-transition-name-auto",
-					"spec": "https://drafts.csswg.org/css-view-transitions-1/"
 				}
 			]
 		},
@@ -18462,6 +18690,19 @@
 		{
 			"name": "block-end",
 			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-block-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "block-end",
+			"valueFor": [
 				"margin-trim"
 			],
 			"definitions": [
@@ -18504,6 +18745,45 @@
 				{
 					"id": "valdef-clear-block-end",
 					"spec": "https://drafts.csswg.org/css-page-floats-3/"
+				}
+			]
+		},
+		{
+			"name": "block-self-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-block-self-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "block-self-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-block-self-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "block-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-block-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -18899,7 +19179,7 @@
 			"name": "bottom",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -19123,6 +19403,18 @@
 				{
 					"id": "valdef-color-brown",
 					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "browser",
+			"valueFor": [
+				"@media/display-mode"
+			],
+			"definitions": [
+				{
+					"id": "valdef-media-display-mode-browser",
+					"spec": "https://drafts.csswg.org/mediaqueries-5/"
 				}
 			]
 		},
@@ -19475,7 +19767,7 @@
 			"name": "center",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -20396,6 +20688,18 @@
 				{
 					"id": "valdef-font-width-condensed",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "constrained-high",
+			"valueFor": [
+				"dynamic-range-limit"
+			],
+			"definitions": [
+				{
+					"id": "valdef-dynamic-range-limit-constrained-high",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
 				}
 			]
 		},
@@ -22365,7 +22669,7 @@
 			"name": "end",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -23135,18 +23439,6 @@
 		{
 			"name": "first",
 			"valueFor": [
-				"position-try-final"
-			],
-			"definitions": [
-				{
-					"id": "valdef-position-try-final-first",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
-				}
-			]
-		},
-		{
-			"name": "first",
-			"valueFor": [
 				"string()"
 			],
 			"definitions": [
@@ -23447,6 +23739,18 @@
 			]
 		},
 		{
+			"name": "flex-flow",
+			"valueFor": [
+				"reading-order-items"
+			],
+			"definitions": [
+				{
+					"id": "valdef-reading-order-items-flex-flow",
+					"spec": "https://drafts.csswg.org/css-display-4/"
+				}
+			]
+		},
+		{
 			"name": "flex-start",
 			"valueFor": [
 				"<self-position>",
@@ -23497,6 +23801,18 @@
 				{
 					"id": "valdef-align-content-flex-start",
 					"spec": "https://drafts.csswg.org/css-flexbox-1/"
+				}
+			]
+		},
+		{
+			"name": "flex-visual",
+			"valueFor": [
+				"reading-order-items"
+			],
+			"definitions": [
+				{
+					"id": "valdef-reading-order-items-flex-visual",
+					"spec": "https://drafts.csswg.org/css-display-4/"
 				}
 			]
 		},
@@ -23622,18 +23938,6 @@
 				{
 					"id": "valdef-float-footnote",
 					"spec": "https://drafts.csswg.org/css-gcpm-3/"
-				}
-			]
-		},
-		{
-			"name": "force",
-			"valueFor": [
-				"scrollbar-gutter"
-			],
-			"definitions": [
-				{
-					"id": "valdef-scrollbar-gutter-force",
-					"spec": "https://drafts.csswg.org/css-overflow-4/"
 				}
 			]
 		},
@@ -23879,6 +24183,18 @@
 				{
 					"id": "valdef-text-transform-full-width",
 					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
+			"name": "fullscreen",
+			"valueFor": [
+				"@media/display-mode"
+			],
+			"definitions": [
+				{
+					"id": "valdef-media-display-mode-fullscreen",
+					"spec": "https://drafts.csswg.org/mediaqueries-5/"
 				}
 			]
 		},
@@ -24221,6 +24537,42 @@
 			]
 		},
 		{
+			"name": "grid-columns",
+			"valueFor": [
+				"reading-order-items"
+			],
+			"definitions": [
+				{
+					"id": "valdef-reading-order-items-grid-columns",
+					"spec": "https://drafts.csswg.org/css-display-4/"
+				}
+			]
+		},
+		{
+			"name": "grid-order",
+			"valueFor": [
+				"reading-order-items"
+			],
+			"definitions": [
+				{
+					"id": "valdef-reading-order-items-grid-order",
+					"spec": "https://drafts.csswg.org/css-display-4/"
+				}
+			]
+		},
+		{
+			"name": "grid-rows",
+			"valueFor": [
+				"reading-order-items"
+			],
+			"definitions": [
+				{
+					"id": "valdef-reading-order-items-grid-rows",
+					"spec": "https://drafts.csswg.org/css-display-4/"
+				}
+			]
+		},
+		{
 			"name": "groove",
 			"valueFor": [
 				"<line-style>",
@@ -24535,14 +24887,14 @@
 			]
 		},
 		{
-			"name": "hide",
+			"name": "high",
 			"valueFor": [
-				"position-try-final"
+				"dynamic-range-limit"
 			],
 			"definitions": [
 				{
-					"id": "valdef-position-try-final-hide",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+					"id": "valdef-dynamic-range-limit-high",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
 				}
 			]
 		},
@@ -25323,6 +25675,19 @@
 		{
 			"name": "inline-end",
 			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-inline-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "inline-end",
+			"valueFor": [
 				"margin-trim"
 			],
 			"definitions": [
@@ -25445,6 +25810,32 @@
 			]
 		},
 		{
+			"name": "inline-self-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-inline-self-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "inline-self-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-inline-self-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "inline-size",
 			"valueFor": [
 				"contain"
@@ -25465,6 +25856,19 @@
 				{
 					"id": "valdef-container-type-inline-size",
 					"spec": "https://drafts.csswg.org/css-contain-3/"
+				}
+			]
+		},
+		{
+			"name": "inline-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-inline-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -25605,6 +26009,18 @@
 				{
 					"id": "valdef-stroke-align-inset",
 					"spec": "https://drafts.fxtf.org/fill-stroke-3/"
+				}
+			]
+		},
+		{
+			"name": "inset-area( <'inset-area'> )",
+			"valueFor": [
+				"position-try-options"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-try-options-inset-area-inset-area",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
 		},
@@ -26463,18 +26879,6 @@
 		{
 			"name": "layout",
 			"valueFor": [
-				"order"
-			],
-			"definitions": [
-				{
-					"id": "valdef-order-layout",
-					"spec": "https://drafts.csswg.org/css-display-4/"
-				}
-			]
-		},
-		{
-			"name": "layout",
-			"valueFor": [
 				"contain"
 			],
 			"definitions": [
@@ -26586,7 +26990,7 @@
 			"name": "left",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -27734,6 +28138,18 @@
 			]
 		},
 		{
+			"name": "manual",
+			"valueFor": [
+				"caret-animation"
+			],
+			"definitions": [
+				{
+					"id": "valdef-caret-animation-manual",
+					"spec": "https://drafts.csswg.org/css-ui-4/"
+				}
+			]
+		},
+		{
 			"name": "margin",
 			"valueFor": [
 				"block-step-insert"
@@ -27836,6 +28252,18 @@
 				{
 					"id": "valdef-color-maroon",
 					"spec": "https://drafts.csswg.org/css-color-4/"
+				}
+			]
+		},
+		{
+			"name": "match-parent",
+			"valueFor": [
+				"quotes"
+			],
+			"definitions": [
+				{
+					"id": "valdef-quotes-match-parent",
+					"spec": "https://drafts.csswg.org/css-content-3/"
 				}
 			]
 		},
@@ -28465,6 +28893,18 @@
 			]
 		},
 		{
+			"name": "minimal-ui",
+			"valueFor": [
+				"@media/display-mode"
+			],
+			"definitions": [
+				{
+					"id": "valdef-media-display-mode-minimal-ui",
+					"spec": "https://drafts.csswg.org/mediaqueries-5/"
+				}
+			]
+		},
+		{
 			"name": "minimum",
 			"valueFor": [
 				"wrap-flow"
@@ -29041,6 +29481,18 @@
 			]
 		},
 		{
+			"name": "no-overflow",
+			"valueFor": [
+				"position-visibility"
+			],
+			"definitions": [
+				{
+					"id": "valdef-position-visibility-no-overflow",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "no-preference",
 			"valueFor": [
 				"@media/prefers-reduced-motion"
@@ -29264,11 +29716,35 @@
 		{
 			"name": "none",
 			"valueFor": [
+				"view-transition-class"
+			],
+			"definitions": [
+				{
+					"id": "valdef-view-transition-class-none",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
+				}
+			]
+		},
+		{
+			"name": "none",
+			"valueFor": [
 				"anchor-name"
 			],
 			"definitions": [
 				{
 					"id": "valdef-anchor-name-none",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "none",
+			"valueFor": [
+				"anchor-scope"
+			],
+			"definitions": [
+				{
+					"id": "valdef-anchor-scope-none",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -30440,6 +30916,18 @@
 		{
 			"name": "none",
 			"valueFor": [
+				"clamp()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-clamp-none",
+					"spec": "https://drafts.csswg.org/css-values-4/"
+				}
+			]
+		},
+		{
+			"name": "none",
+			"valueFor": [
 				"view-transition-name"
 			],
 			"definitions": [
@@ -30788,6 +31276,18 @@
 		{
 			"name": "normal",
 			"valueFor": [
+				"reading-order-items"
+			],
+			"definitions": [
+				{
+					"id": "valdef-reading-order-items-normal",
+					"spec": "https://drafts.csswg.org/css-display-4/"
+				}
+			]
+		},
+		{
+			"name": "normal",
+			"valueFor": [
 				"<blend-mode>"
 			],
 			"definitions": [
@@ -30868,18 +31368,6 @@
 			"definitions": [
 				{
 					"id": "valdef-position-try-order-normal",
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
-				}
-			]
-		},
-		{
-			"name": "normal",
-			"valueFor": [
-				"position-fallback-bounds"
-			],
-			"definitions": [
-				{
-					"id": "valdef-position-fallback-bounds-normal",
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
 				}
 			]
@@ -32646,6 +33134,18 @@
 			]
 		},
 		{
+			"name": "picture-in-picture",
+			"valueFor": [
+				"@media/display-mode"
+			],
+			"definitions": [
+				{
+					"id": "valdef-media-display-mode-picture-in-picture",
+					"spec": "https://drafts.csswg.org/mediaqueries-5/"
+				}
+			]
+		},
+		{
 			"name": "pink",
 			"valueFor": [
 				"<color>",
@@ -33178,18 +33678,6 @@
 			]
 		},
 		{
-			"name": "reading",
-			"valueFor": [
-				"order"
-			],
-			"definitions": [
-				{
-					"id": "valdef-order-reading",
-					"spec": "https://drafts.csswg.org/css-display-4/"
-				}
-			]
-		},
-		{
 			"name": "rebeccapurple",
 			"valueFor": [
 				"<color>",
@@ -33579,7 +34067,7 @@
 			"name": "right",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -34801,7 +35289,7 @@
 			"name": "self-end",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -34852,7 +35340,7 @@
 			"name": "self-start",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -35113,6 +35601,18 @@
 				{
 					"id": "valdef-font-variant-east-asian-simplified",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				}
+			]
+		},
+		{
+			"name": "size",
+			"valueFor": [
+				"calc-size()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-calc-size-size",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -35735,6 +36235,175 @@
 			]
 		},
 		{
+			"name": "span-all",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-all",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-block-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-block-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-block-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-block-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-bottom",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-bottom",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-inline-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-inline-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-inline-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-inline-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-top",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-top",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-x-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-x-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-x-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-x-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-y-end",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-y-end",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
+			"name": "span-y-start",
+			"valueFor": [
+				"inset-area",
+				"<inset-area>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-inset-area-span-y-start",
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/"
+				}
+			]
+		},
+		{
 			"name": "speech",
 			"valueFor": [
 				"@media"
@@ -35940,6 +36609,30 @@
 			]
 		},
 		{
+			"name": "standalone",
+			"valueFor": [
+				"@media/display-mode"
+			],
+			"definitions": [
+				{
+					"id": "valdef-media-display-mode-standalone",
+					"spec": "https://drafts.csswg.org/mediaqueries-5/"
+				}
+			]
+		},
+		{
+			"name": "standard",
+			"valueFor": [
+				"dynamic-range-limit"
+			],
+			"definitions": [
+				{
+					"id": "valdef-dynamic-range-limit-standard",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				}
+			]
+		},
+		{
 			"name": "standard",
 			"valueFor": [
 				"@media/dynamic-range"
@@ -36000,7 +36693,7 @@
 			"name": "start",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -37536,7 +38229,7 @@
 			"name": "top",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -37715,13 +38408,13 @@
 			]
 		},
 		{
-			"name": "trim-auto",
+			"name": "trim-both",
 			"valueFor": [
 				"text-spacing-trim"
 			],
 			"definitions": [
 				{
-					"id": "valdef-text-spacing-trim-trim-auto",
+					"id": "valdef-text-spacing-trim-trim-both",
 					"spec": "https://drafts.csswg.org/css-text-4/"
 				}
 			]
@@ -38196,18 +38889,6 @@
 				{
 					"id": "valdef-text-orientation-upright",
 					"spec": "https://drafts.csswg.org/css-writing-modes-4/"
-				}
-			]
-		},
-		{
-			"name": "url",
-			"valueFor": [
-				"attr()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-attr-url",
-					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -38970,7 +39651,7 @@
 			"name": "x-end",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -39055,7 +39736,7 @@
 			"name": "x-self-end",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -39068,7 +39749,7 @@
 			"name": "x-self-start",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -39105,7 +39786,7 @@
 			"name": "x-start",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -39269,7 +39950,7 @@
 			"name": "y-end",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -39282,7 +39963,7 @@
 			"name": "y-self-end",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -39295,7 +39976,7 @@
 			"name": "y-self-start",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -39308,7 +39989,7 @@
 			"name": "y-start",
 			"valueFor": [
 				"inset-area",
-				"<inset-area-span>"
+				"<inset-area>"
 			],
 			"definitions": [
 				{
@@ -40402,11 +41083,11 @@
 			]
 		},
 		{
-			"name": "type",
+			"name": "types",
 			"descriptorFor": "@view-transition",
 			"definitions": [
 				{
-					"id": "descdef-view-transition-type",
+					"id": "descdef-view-transition-types",
 					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
 				}
 			]
@@ -40757,6 +41438,15 @@
 			]
 		},
 		{
+			"name": "@nest",
+			"definitions": [
+				{
+					"id": "at-ruledef-nest",
+					"spec": "https://drafts.csswg.org/css-nesting-1/"
+				}
+			]
+		},
+		{
 			"name": "@ornaments",
 			"definitions": [
 				{
@@ -41073,7 +41763,7 @@
 					"spec": "https://drafts.csswg.org/css-values-3/"
 				},
 				{
-					"id": "ref-for-funcdef-calc⑧",
+					"id": "ref-for-funcdef-calc⑨",
 					"spec": "https://drafts.csswg.org/css-values-3/"
 				}
 			]
@@ -41083,6 +41773,15 @@
 			"definitions": [
 				{
 					"id": "funcdef-calc-mix",
+					"spec": "https://drafts.csswg.org/css-values-5/"
+				}
+			]
+		},
+		{
+			"name": "calc-size()",
+			"definitions": [
+				{
+					"id": "funcdef-calc-size",
 					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
@@ -41116,6 +41815,10 @@
 		{
 			"name": "color()",
 			"definitions": [
+				{
+					"id": "funcdef-color",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
+				},
 				{
 					"id": "funcdef-color",
 					"spec": "https://drafts.csswg.org/css-color-5/"
@@ -41189,6 +41892,10 @@
 				{
 					"id": "ref-for-funcdef-contrast-color②",
 					"spec": "https://drafts.csswg.org/css-color-6/"
+				},
+				{
+					"id": "funcdef-contrast-color",
+					"spec": "https://drafts.csswg.org/css-color-5/"
 				}
 			]
 		},
@@ -41281,6 +41988,15 @@
 				{
 					"id": "funcdef-filter-drop-shadow",
 					"spec": "https://drafts.fxtf.org/filter-effects-1/"
+				}
+			]
+		},
+		{
+			"name": "dynamic-range-limit-mix()",
+			"definitions": [
+				{
+					"id": "funcdef-dynamic-range-limit-mix",
+					"spec": "https://drafts.csswg.org/css-color-hdr-1/"
 				}
 			]
 		},
@@ -41736,7 +42452,11 @@
 			"name": "palette-mix()",
 			"definitions": [
 				{
-					"id": null,
+					"id": "funcdef-palette-mix",
+					"spec": "https://drafts.csswg.org/css-fonts-4/"
+				},
+				{
+					"id": "ref-for-funcdef-palette-mix③",
 					"spec": "https://drafts.csswg.org/css-fonts-4/"
 				}
 			]
@@ -42562,10 +43282,19 @@
 			]
 		},
 		{
-			"name": ":active-view-transition()",
+			"name": ":active-view-transition",
 			"definitions": [
 				{
 					"id": "active-view-transition-pseudo",
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
+				}
+			]
+		},
+		{
+			"name": ":active-view-transition-type()",
+			"definitions": [
+				{
+					"id": "active-view-transition-type-pseudo",
 					"spec": "https://drafts.csswg.org/css-view-transitions-2/"
 				}
 			]
