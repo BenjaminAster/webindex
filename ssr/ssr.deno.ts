@@ -15,7 +15,7 @@ const templateDocument = new DOMParser().parseFromString(templateString, "text/h
 
 let shortnameMap = new Map();
 
-const nameToId = (/** @type {string} */ name) => name.toLowerCase().replaceAll(/\W+/g, "-");
+const nameToId = (/** @type {string} */ name) => name.toLowerCase().replaceAll(/\s+/g, "-").replaceAll(/[^\w-]/g, "");
 
 for (const { fileName, tab } of [
 	{ tab: "specifications", fileName: "index.html" },
@@ -90,6 +90,7 @@ for (const { fileName, tab } of [
 						const urlObject = new URL(url);
 						specClone.querySelector(".spec-url").textContent = urlObject.host + urlObject.pathname.replace(/\/$/, "");
 						specClone.querySelector("a.spec-link").setAttribute("href", url);
+						specClone.querySelector("a.spec-link").setAttribute("data-unique-name", shortname.toLowerCase());
 						specClone.firstElementChild.setAttribute("data-searchable-name", `${title} ${shortname}`.toLowerCase());
 						if (openLinksInNewTab) specClone.querySelector("a.spec-link").target = "_blank";
 						if (repo) {
@@ -131,17 +132,17 @@ for (const { fileName, tab } of [
 				} = JSON.parse(await Deno.readTextFile(new URL("../index/css.json", import.meta.url)));
 
 				const allData = [
-					["Properties", cssProperties],
-					["Functions", cssFunctions],
-					["Basic selectors", cssSelectors],
-					["Pseudo classes", cssPseudoClasses],
-					["Pseudo elements", cssPseudoElements],
-					["Units", cssUnits],
-					["At-rules", cssAtRules],
-					["Descriptors", cssDescriptors],
-					["Types", cssTypes],
+					["Properties", "property", cssProperties],
+					["Functions", "function", cssFunctions],
+					["Basic selectors", "basic-selector", cssSelectors],
+					["Pseudo classes", "pseudo-class", cssPseudoClasses],
+					["Pseudo elements", "pseudo-element", cssPseudoElements],
+					["Units", "unit", cssUnits],
+					["At-rules", "at-rule", cssAtRules],
+					["Descriptors", "descriptor", cssDescriptors],
+					["Types", "type", cssTypes],
 				];
-				for (const [categoryName, data] of allData) {
+				for (const [categoryName, categoryNameSingular, data] of allData) {
 					const categoryId = nameToId(categoryName);
 
 					{
@@ -161,11 +162,13 @@ for (const { fileName, tab } of [
 					let /** @type {string} */ prevName;
 					for (const { name, definitions } of data) {
 						const itemClone = itemTemplate.cloneNode(true).content;
-						itemClone.querySelector(".name").textContent = name;
+						itemClone.querySelector("li").id = `${categoryNameSingular}-${nameToId(name)}`;
+						itemClone.querySelector("a.name").textContent = name;
+						itemClone.querySelector("a.name").setAttribute("data-unique-name", name.toLowerCase());
 						itemClone.firstElementChild.setAttribute("data-searchable-name", name.toLowerCase());
 						specList = itemClone.querySelector(".spec-list");
 						const specTemplate = specList.querySelector(":scope > template");
-						for (const [i, { spec, id }] of definitions.entries()) {
+						for (const [i, { spec, id, syntax }] of definitions.entries()) {
 							const url = `${spec}#${id}`;
 							if (i === 0) itemClone.querySelector("a.name").setAttribute("href", url);
 							const specClone = specTemplate.cloneNode(true).content;
@@ -173,6 +176,17 @@ for (const { fileName, tab } of [
 							specClone.querySelector("a.spec").setAttribute("href", url);
 							specClone.querySelector(".spec-identifier").textContent = shortname;
 							specClone.querySelector(".spec-link-hash").textContent = "#" + id;
+							if (syntax) {
+								specClone.querySelector(".syntax").innerHTML = syntax
+									.replaceAll("&", "&amp;")
+									.replaceAll("<", "&lt;")
+									.replaceAll(">", "&gt;")
+									.replaceAll(/&lt;(?<name>[\w-]+)&gt;/g, `&lt;<a href="#type-$<name>">$<name></a>&gt;`)
+									.replaceAll(/&lt;(?<name>[\w-]+)\(\)&gt;/g, `&lt;<a href="#function-$<name>">$<name>()</a>&gt;`)
+									.replaceAll(/&lt;'(?<name>[\w-]+)'&gt;/g, `&lt;'<a href="#property-$<name>">$<name></a>'&gt;`);
+							} else {
+								specClone.querySelector(".syntax-container").remove();
+							}
 							if (openLinksInNewTab) specClone.querySelector("a.spec").target = "_blank";
 							specList.append(specClone);
 						}
@@ -239,7 +253,8 @@ for (const { fileName, tab } of [
 							displayName = `${name} (${dictionary})`;
 						}
 						const itemClone = itemTemplate.cloneNode(true).content;
-						itemClone.querySelector(".name").textContent = displayName;
+						itemClone.querySelector("a.name").textContent = displayName;
+						itemClone.querySelector("a.name").setAttribute("data-unique-name", name.toLowerCase());
 						itemClone.firstElementChild.setAttribute("data-searchable-name", displayName.toLowerCase());
 						specList = itemClone.querySelector(".spec-list");
 						const specTemplate = specList.querySelector(":scope > template");

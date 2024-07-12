@@ -6,7 +6,23 @@
 	overflow-wrap: anywhere;
 	line-height: 1.5;
 	color: var(--text);
+	font-size-adjust: ex-height from-font;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 	-webkit-tap-highlight-color: transparent;
+
+	scroll-padding-block-start: 6.5rem;
+}
+
+:root {
+	color-scheme: light;
+	--hue: 286deg;
+	--chroma: 0.004;
+	--background-lightness: 100%;
+	--text-lightness: 0%;
+	--gray-lightness-step: -7%;
+	--gray-text-lightness-step: 40%;
+	--black-or-white: white;
 }
 
 @media not print {
@@ -23,17 +39,6 @@
 }
 
 :root {
-	color-scheme: light;
-	--hue: 286deg;
-	--chroma: 0.004;
-	--background-lightness: 100%;
-	--text-lightness: 0%;
-	--gray-lightness-step: -7%;
-	--gray-text-lightness-step: 40%;
-	--black-or-white: white;
-}
-
-:root {
 	--background: oklch(var(--background-lightness) var(--chroma) var(--hue));
 	--gray-1: oklch(calc(var(--background-lightness) + 1 * var(--gray-lightness-step)) var(--chroma) var(--hue));
 	--gray-2: oklch(calc(var(--background-lightness) + 2 * var(--gray-lightness-step)) var(--chroma) var(--hue));
@@ -45,7 +50,8 @@
 
 	--px: calc(1rem / 16);
 
-	background-color: color-mix(in srgb, var(--gray-1) 20%, var(--black-or-white));
+	/* background-color: color-mix(in srgb, var(--gray-1) 20%, var(--black-or-white)); */
+	background-color: var(--background);
 
 	--scrollbar-color: var(--gray-3);
 	/* --scrollbar-hover-color: oklch(calc(var(--accent-lightness) + 0.1) var(--accent-chroma) var(--accent-hue)); */
@@ -211,6 +217,7 @@ input[type=search]#searchbox:placeholder-shown ~ #clear-searchbox {
 	padding: .3rem .8rem;
 	border-block-start: 1px solid transparent;
 	text-decoration: none;
+	margin-block-start: 1px;
 }
 
 #tabs > a:hover {
@@ -248,6 +255,13 @@ ul#toc-list > li > a {
 	border-radius: .3em;
 }
 
+main {
+	background-color: color-mix(in srgb, var(--gray-1) 20%, var(--black-or-white));
+}
+
+ul#main-list {
+}
+
 ul#main-list > li {
 	display: flex;
 	flex-direction: column;
@@ -273,7 +287,7 @@ ul#main-list > li > .header .group-idenfifier {
 
 ul#main-list > li > .header h3 {
 	display: inline-block;
-	scroll-margin-block-start: 7rem;
+	/* scroll-margin-block-start: 7rem; */
 }
 
 ul#main-list > li > ul {
@@ -283,14 +297,43 @@ ul#main-list > li > ul > li {
 	display: flex;
 	align-items: start;
 	gap: .5rem;
+	/* transition: background-color 2s; */
 	--icon-size: 1.1rem;
 	--line-color: var(--gray-1);
+
+	&:target {
+		animation: highlight-odd 1s ease-in;
+	}
 }
 
-ul#main-list > li > ul > li:nth-of-type(even) {
+ul#main-list > li > ul > li:nth-child(even of li:not([hidden])) {
 	background-color: color-mix(in srgb, var(--background), var(--gray-1));
 	--line-color: var(--background);
 	--line-color: var(--black-or-white);
+
+	&:target {
+		animation: highlight-even 1s ease-in;
+	}
+}
+
+@keyframes highlight-odd {
+	from {
+		background-color: color-mix(in srgb, yellow, transparent 60%);
+	}
+	to {
+		/* background-color: color-mix(in srgb, yellow, transparent 50%); */
+		background-color: color-mix(in srgb, var(--background), var(--gray-0));
+	}
+}
+
+@keyframes highlight-even {
+	from {
+		background-color: color-mix(in srgb, yellow, transparent 60%);
+	}
+	to {
+		/* background-color: color-mix(in srgb, yellow, transparent 50%); */
+		background-color: color-mix(in srgb, var(--background), var(--gray-1));
+	}
 }
 
 ul#main-list > li > ul > li:not(:last-of-type) {
@@ -317,6 +360,11 @@ ul#main-list > li > ul > li > .container {
 	align-items: first baseline;
 	gap: .5rem;
 	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+ul#main-list > li > ul > li > .container > h4 {
+	flex-shrink: 0;
 }
 
 ul#main-list > li > ul > li > .container > ul {
@@ -331,6 +379,12 @@ ul#main-list > li > ul > li > .container > ul > li {
 
 ul#main-list > li > ul > li > .container > ul > li > a {
 	padding-block: .1rem;
+}
+
+ul#main-list > li > ul > li > .container > ul > li .syntax {
+	font-family: ui-monospace, monospace;
+	font-size: .9em;
+	padding-inline-start: .2em;
 }
 
 ul#main-list > li > ul > li > .container > ul > li .spec-link-hash {

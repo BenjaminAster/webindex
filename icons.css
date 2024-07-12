@@ -1,17 +1,16 @@
 
-:where([class^="icon:"], [class*=" icon:"])::before {
-	content: "";
-}
+:where([class^="icon:"], [class*=" icon:"]) {
+	&::before {
+		content: "";
+	}
 
-:where([class^="icon:"], [class*=" icon:"])::before,
-:where([class^="icon:"], [class*=" icon:"])::after {
-	display: var(--icon-display, block);
-	inline-size: var(--icon-size, 1em);
-	aspect-ratio: 1;
-	background-color: var(--icon-color, currentColor);
-	--mask: var(--icon) center / contain no-repeat;
-	-webkit-mask: var(--mask);
-	mask: var(--mask);
+	&::before, &::after {
+		display: var(--icon-display, block);
+		inline-size: var(--icon-size, 1em);
+		aspect-ratio: 1;
+		background-color: var(--icon-color, currentColor);
+		mask: var(--icon) center / contain no-repeat;
+	}
 }
 
 :root {

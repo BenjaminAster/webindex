@@ -8,15 +8,17 @@
 	<!-- SEO -->
 	<meta name="robots" content="all" />
 	<meta name="author" content="Benjamin Aster" />
-	<meta name="repository" content="https://github.com/BenjaminAster/webindex" />
+	<link rel="code-repository" href="https://github.com/BenjaminAster/webindex" />
 	<meta name="description" content="An index of web-related specifications, CSS properties, JavaScript interfaces, etc." />
 	<meta property="og:image" content="https://benjaminaster.com/webindex/assets/icon.png" />
-
+	
 	<!-- App -->
 	<title>Index of web-related technical information</title>
 	<link rel="icon" href="./assets/icon.svg" type="image/svg+xml" sizes="any" />
+	<link rel="aster:icon-dark" href="./assets/icon-dark.svg" />
 	<link rel="icon" href="./assets/icon.png" type="image/png" sizes="512x512" />
 	<link rel="manifest" href="./app.webmanifest" />
+	<meta name="theme-color" content="#222" />
 
 	<!-- JavaScript -->
 	<script type="module" src="./script.js"></script>
@@ -107,8 +109,11 @@
 											<li>
 												<a href="#" class="spec">
 													<span class="spec-identifier"></span>
-													<span class="spec-link-hash"></span>
-												</a>
+													<span class="spec-link-hash"></span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax"></code>
+												</span>
 											</li>
 										</template>
 									</ul>

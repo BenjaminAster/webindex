@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Sun, 28 Apr 2024 09:47:21 GMT",
-		"iso": "2024-04-28T09:47:21.934Z",
-		"unixMillis": 1714297641934
+		"utc": "Fri, 12 Jul 2024 10:52:02 GMT",
+		"iso": "2024-07-12T10:52:02.953Z",
+		"unixMillis": 1720781522953
 	},
 	"jsInterfaces": [
 		{
@@ -1356,7 +1356,7 @@
 			"name": "CompressionStream",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/compression/",
+					"spec": "https://compression.spec.whatwg.org/",
 					"id": "compressionstream"
 				}
 			]
@@ -1687,7 +1687,7 @@
 			"definitions": [
 				{
 					"inheritance": "CSSConditionRule",
-					"spec": "https://drafts.csswg.org/css-contain-3/",
+					"spec": "https://drafts.csswg.org/css-conditional-5/",
 					"id": "csscontainerrule"
 				}
 			]
@@ -1992,12 +1992,12 @@
 			]
 		},
 		{
-			"name": "CSSNestRule",
+			"name": "CSSNestedDeclarations",
 			"definitions": [
 				{
-					"inheritance": "CSSGroupingRule",
+					"inheritance": "CSSRule",
 					"spec": "https://drafts.csswg.org/css-nesting-1/",
-					"id": "cssnestrule"
+					"id": "cssnesteddeclarations"
 				}
 			]
 		},
@@ -2207,11 +2207,6 @@
 				},
 				{
 					"partial": true,
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
-					"id": "ref-for-cssrule"
-				},
-				{
-					"partial": true,
 					"spec": "https://drafts.csswg.org/css-animations-1/",
 					"id": "ref-for-cssrule"
 				},
@@ -2228,6 +2223,11 @@
 				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/css-fonts-4/",
+					"id": "ref-for-cssrule"
+				},
+				{
+					"partial": true,
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
 					"id": "ref-for-cssrule"
 				}
 			]
@@ -2563,7 +2563,7 @@
 			"name": "DecompressionStream",
 			"definitions": [
 				{
-					"spec": "https://wicg.github.io/compression/",
+					"spec": "https://compression.spec.whatwg.org/",
 					"id": "decompressionstream"
 				}
 			]
@@ -2600,6 +2600,16 @@
 					"inheritance": "ReportBody",
 					"spec": "https://wicg.github.io/deprecation-reporting/",
 					"id": "deprecationreportbody"
+				}
+			]
+		},
+		{
+			"name": "DeviceChangeEvent",
+			"definitions": [
+				{
+					"inheritance": "Event",
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-devicechangeevent"
 				}
 			]
 		},
@@ -2685,11 +2695,6 @@
 				},
 				{
 					"partial": true,
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
-					"id": "ref-for-document"
-				},
-				{
-					"partial": true,
 					"spec": "https://fullscreen.spec.whatwg.org/",
 					"id": "ref-for-document"
 				},
@@ -2706,6 +2711,11 @@
 				{
 					"partial": true,
 					"spec": "https://privacycg.github.io/requestStorageAccessFor/",
+					"id": "ref-for-document"
+				},
+				{
+					"partial": true,
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
 					"id": "ref-for-document"
 				},
 				{
@@ -2736,6 +2746,11 @@
 				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/css-regions-1/",
+					"id": "ref-for-document"
+				},
+				{
+					"partial": true,
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
 					"id": "ref-for-document"
 				},
 				{
@@ -2776,6 +2791,11 @@
 				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/web-animations-1/",
+					"id": "ref-for-document"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/editing/docs/execCommand/",
 					"id": "ref-for-document"
 				},
 				{
@@ -3858,7 +3878,7 @@
 			"name": "Geolocation",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocation"
 				}
 			]
@@ -3867,7 +3887,7 @@
 			"name": "GeolocationCoordinates",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationcoordinates"
 				}
 			]
@@ -3876,7 +3896,7 @@
 			"name": "GeolocationPosition",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationposition"
 				}
 			]
@@ -3885,7 +3905,7 @@
 			"name": "GeolocationPositionError",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationpositionerror"
 				}
 			]
@@ -3937,6 +3957,11 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/webappapis.html",
 					"id": "globaleventhandlers"
+				},
+				{
+					"partial": true,
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "ref-for-globaleventhandlers"
 				},
 				{
 					"partial": true,
@@ -4446,6 +4471,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingdrawing"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingdrawing"
 				}
 			]
 		},
@@ -4455,12 +4484,20 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingrecognizer"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingrecognizer"
 				}
 			]
 		},
 		{
 			"name": "HandwritingStroke",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingstroke"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingstroke"
@@ -7332,6 +7369,26 @@
 				},
 				{
 					"partial": true,
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "ref-for-navigator"
+				},
+				{
+					"partial": true,
 					"spec": "https://wicg.github.io/ink-enhancement/",
 					"id": "ref-for-navigator"
 				},
@@ -7349,6 +7406,11 @@
 					"partial": true,
 					"spec": "https://wicg.github.io/serial/",
 					"id": "idl-def-navigator-partial-1"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-navigator"
 				},
 				{
 					"partial": true,
@@ -7452,7 +7514,7 @@
 				},
 				{
 					"partial": true,
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "idl-def-navigator-partial-1"
 				},
 				{
@@ -7518,16 +7580,6 @@
 				{
 					"partial": true,
 					"spec": "https://immersive-web.github.io/webxr/",
-					"id": "ref-for-navigator"
-				},
-				{
-					"partial": true,
-					"spec": "https://wicg.github.io/handwriting-recognition/",
-					"id": "ref-for-navigator"
-				},
-				{
-					"partial": true,
-					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "ref-for-navigator"
 				},
 				{
@@ -9362,6 +9414,15 @@
 			]
 		},
 		{
+			"name": "RTCIceCandidatePair",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcicecandidatepair"
+				}
+			]
+		},
+		{
 			"name": "RTCIceCandidatePairChangedEvent",
 			"definitions": [
 				{
@@ -10375,6 +10436,15 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/webstorage.html",
 					"id": "storage"
+				}
+			]
+		},
+		{
+			"name": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
 				}
 			]
 		},
@@ -12219,6 +12289,16 @@
 			]
 		},
 		{
+			"name": "Viewport",
+			"definitions": [
+				{
+					"inheritance": "EventTarget",
+					"spec": "https://drafts.csswg.org/css-viewport-1/",
+					"id": "viewport"
+				}
+			]
+		},
+		{
 			"name": "ViewTimeline",
 			"definitions": [
 				{
@@ -12945,6 +13025,11 @@
 				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/css-nav-1/",
+					"id": "ref-for-window"
+				},
+				{
+					"partial": true,
+					"spec": "https://drafts.csswg.org/css-viewport-1/",
 					"id": "ref-for-window"
 				},
 				{
@@ -14549,11 +14634,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
-				},
-				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
 				}
 			]
 		},
@@ -14581,11 +14661,6 @@
 				{
 					"partial": true,
 					"spec": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html",
-					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
-				},
-				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webauthn/",
 					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
 				},
 				{
@@ -14734,15 +14809,6 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-authenticatorselectioncriteria"
-				}
-			]
-		},
-		{
-			"name": "AV1EncoderConfig",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
-					"id": "dictdef-av1encoderconfig"
 				}
 			]
 		},
@@ -15040,6 +15106,15 @@
 				{
 					"spec": "https://w3c.github.io/mediacapture-handle/identity/",
 					"id": "dom-capturehandleconfig"
+				}
+			]
+		},
+		{
+			"name": "CaretPositionFromPointOptions",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/cssom-view-1/",
+					"id": "dictdef-caretpositionfrompointoptions"
 				}
 			]
 		},
@@ -15657,6 +15732,15 @@
 				{
 					"spec": "https://wicg.github.io/shape-detection-api/text.html",
 					"id": "dictdef-detectedtext"
+				}
+			]
+		},
+		{
+			"name": "DeviceChangeEventInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-devicechangeeventinit"
 				}
 			]
 		},
@@ -16517,6 +16601,15 @@
 			]
 		},
 		{
+			"name": "GPUCanvasToneMapping",
+			"definitions": [
+				{
+					"spec": "https://gpuweb.github.io/gpuweb/",
+					"id": "dictdef-gpucanvastonemapping"
+				}
+			]
+		},
+		{
 			"name": "GPUColorDict",
 			"definitions": [
 				{
@@ -16990,12 +17083,20 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingdrawingsegment"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingdrawingsegment"
 				}
 			]
 		},
 		{
 			"name": "HandwritingHints",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghints"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritinghints"
@@ -17008,12 +17109,20 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritinghintsqueryresult"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghintsqueryresult"
 				}
 			]
 		},
 		{
 			"name": "HandwritingModelConstraint",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingmodelconstraint"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingmodelconstraint"
@@ -17026,12 +17135,20 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingpoint"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingpoint"
 				}
 			]
 		},
 		{
 			"name": "HandwritingPrediction",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingprediction"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingprediction"
@@ -17044,12 +17161,20 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingrecognizerqueryresult"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingrecognizerqueryresult"
 				}
 			]
 		},
 		{
 			"name": "HandwritingSegment",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingsegment"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingsegment"
@@ -18056,11 +18181,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/mediacapture-screen-share/",
 					"id": "idl-def-mediatrackconstraintset-partial-1"
-				},
-				{
-					"partial": true,
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "ref-for-dictdef-mediatrackconstraintset"
 				},
 				{
 					"partial": true,
@@ -19328,6 +19448,15 @@
 			]
 		},
 		{
+			"name": "PointerLockOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/pointerlock/",
+					"id": "dom-pointerlockoptions"
+				}
+			]
+		},
+		{
 			"name": "PopStateEventInit",
 			"definitions": [
 				{
@@ -19358,7 +19487,7 @@
 			"name": "PositionOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-positionoptions"
 				}
 			]
@@ -20298,10 +20427,6 @@
 			"name": "RTCIceCandidatePair",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcicecandidatepair"
-				},
-				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcicecandidatepair"
 				}
@@ -20669,10 +20794,6 @@
 		{
 			"name": "RTCRtpCodecCapability",
 			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcrtpcodeccapability"
-				},
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcrtpcodeccapability"
@@ -21072,6 +21193,15 @@
 			]
 		},
 		{
+			"name": "SchedulerYieldOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/scheduling-apis/",
+					"id": "dictdef-scheduleryieldoptions"
+				}
+			]
+		},
+		{
 			"name": "ScoreAdOutput",
 			"definitions": [
 				{
@@ -21302,6 +21432,15 @@
 			]
 		},
 		{
+			"name": "SharedWorkerOptions",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-sharedworkeroptions"
+				}
+			]
+		},
+		{
 			"name": "SmartCardConnectionStatus",
 			"definitions": [
 				{
@@ -21478,6 +21617,15 @@
 				{
 					"spec": "https://webaudio.github.io/web-audio-api/",
 					"id": "dictdef-stereopanneroptions"
+				}
+			]
+		},
+		{
+			"name": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
 				}
 			]
 		},
@@ -22055,11 +22203,6 @@
 				{
 					"spec": "https://w3c.github.io/webcodecs/",
 					"id": "dictdef-videoencoderconfig"
-				},
-				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
-					"id": "ref-for-dictdef-videoencoderconfig"
 				},
 				{
 					"partial": true,
@@ -22919,36 +23062,6 @@
 			]
 		},
 		{
-			"name": "activation",
-			"dictionary": "MLBatchNormalizationOptions",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "dictdef-mlbatchnormalizationoptions"
-				}
-			]
-		},
-		{
-			"name": "activation",
-			"dictionary": "MLConv2dOptions",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "dictdef-mlconv2doptions"
-				}
-			]
-		},
-		{
-			"name": "activation",
-			"dictionary": "MLConvTranspose2dOptions",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "dictdef-mlconvtranspose2doptions"
-				}
-			]
-		},
-		{
 			"name": "activations",
 			"dictionary": "MLGruOptions",
 			"definitions": [
@@ -23379,6 +23492,16 @@
 			]
 		},
 		{
+			"name": "all",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
+				}
+			]
+		},
+		{
 			"name": "all_frames",
 			"dictionary": "ContentScriptDetails",
 			"definitions": [
@@ -23705,6 +23828,26 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "dictdef-gpumultisamplestate"
+				}
+			]
+		},
+		{
+			"name": "alternatives",
+			"dictionary": "HandwritingHintsQueryResult",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghintsqueryresult"
+				}
+			]
+		},
+		{
+			"name": "alternatives",
+			"dictionary": "HandwritingHints",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghints"
 				}
 			]
 		},
@@ -24710,16 +24853,6 @@
 		},
 		{
 			"name": "av1",
-			"dictionary": "VideoEncoderConfig",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
-					"id": "ref-for-dictdef-videoencoderconfig"
-				}
-			]
-		},
-		{
-			"name": "av1",
 			"dictionary": "VideoEncoderEncodeOptions",
 			"definitions": [
 				{
@@ -24963,28 +25096,8 @@
 			"dictionary": "MediaTrackSupportedConstraints",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "ref-for-dictdef-mediatracksupportedconstraints"
-				}
-			]
-		},
-		{
-			"name": "backgroundBlur",
-			"dictionary": "MediaTrackConstraintSet",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "ref-for-dictdef-mediatrackconstraintset"
-				}
-			]
-		},
-		{
-			"name": "backgroundBlur",
-			"dictionary": "MediaTrackSettings",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "ref-for-dictdef-mediatracksettings"
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediatracksupportedconstraints"
 				}
 			]
 		},
@@ -24993,8 +25106,28 @@
 			"dictionary": "MediaTrackCapabilities",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/mediacapture-extensions/",
-					"id": "ref-for-dictdef-mediatrackcapabilities"
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediatrackcapabilities"
+				}
+			]
+		},
+		{
+			"name": "backgroundBlur",
+			"dictionary": "MediaTrackConstraintSet",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediatrackconstraintset"
+				}
+			]
+		},
+		{
+			"name": "backgroundBlur",
+			"dictionary": "MediaTrackSettings",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-mediatracksettings"
 				}
 			]
 		},
@@ -25135,6 +25268,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingsegment"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingsegment"
 				}
 			]
 		},
@@ -25162,6 +25299,10 @@
 			"name": "beginPointIndex",
 			"dictionary": "HandwritingDrawingSegment",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingdrawingsegment"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingdrawingsegment"
@@ -25859,6 +26000,16 @@
 			]
 		},
 		{
+			"name": "BroadcastChannel",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
+				}
+			]
+		},
+		{
 			"name": "bTranspose",
 			"dictionary": "MLGemmOptions",
 			"definitions": [
@@ -26395,6 +26546,16 @@
 				{
 					"spec": "https://w3c.github.io/ServiceWorker/",
 					"id": "dictdef-multicachequeryoptions"
+				}
+			]
+		},
+		{
+			"name": "caches",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
 				}
 			]
 		},
@@ -28472,6 +28633,16 @@
 		},
 		{
 			"name": "cookies",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
+				}
+			]
+		},
+		{
+			"name": "cookies",
 			"dictionary": "ClearDataTypeSet",
 			"definitions": [
 				{
@@ -28607,6 +28778,16 @@
 				{
 					"spec": "https://w3c.github.io/trusted-types/dist/spec/",
 					"id": "dictdef-trustedtypepolicyoptions"
+				}
+			]
+		},
+		{
+			"name": "createObjectURL",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
 				}
 			]
 		},
@@ -29550,6 +29731,16 @@
 		},
 		{
 			"name": "delay",
+			"dictionary": "IntersectionObserverInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/IntersectionObserver/",
+					"id": "dictdef-intersectionobserverinit"
+				}
+			]
+		},
+		{
+			"name": "delay",
 			"dictionary": "OptionalEffectTiming",
 			"definitions": [
 				{
@@ -30309,6 +30500,16 @@
 			]
 		},
 		{
+			"name": "devices",
+			"dictionary": "DeviceChangeEventInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-devicechangeeventinit"
+				}
+			]
+		},
+		{
 			"name": "deviceType",
 			"dictionary": "MLContextOptions",
 			"definitions": [
@@ -30985,6 +31186,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingsegment"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingsegment"
 				}
 			]
 		},
@@ -31493,7 +31698,7 @@
 			"dictionary": "PositionOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-positionoptions"
 				}
 			]
@@ -31669,6 +31874,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingsegment"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingsegment"
 				}
 			]
 		},
@@ -31726,6 +31935,10 @@
 			"name": "endPointIndex",
 			"dictionary": "HandwritingDrawingSegment",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingdrawingsegment"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingdrawingsegment"
@@ -32059,6 +32272,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-encoded-transform/",
 					"id": "dictdef-sframetransformerroreventinit"
+				}
+			]
+		},
+		{
+			"name": "estimate",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
 				}
 			]
 		},
@@ -33087,6 +33310,36 @@
 			]
 		},
 		{
+			"name": "filteringId",
+			"dictionary": "PAHistogramContribution",
+			"definitions": [
+				{
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "dictdef-pahistogramcontribution"
+				}
+			]
+		},
+		{
+			"name": "filteringId",
+			"dictionary": "PAExtendedHistogramContribution",
+			"definitions": [
+				{
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "dictdef-paextendedhistogramcontribution"
+				}
+			]
+		},
+		{
+			"name": "filteringIdMaxBytes",
+			"dictionary": "SharedStoragePrivateAggregationConfig",
+			"definitions": [
+				{
+					"spec": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+					"id": "dictdef-sharedstorageprivateaggregationconfig"
+				}
+			]
+		},
+		{
 			"name": "filterLayout",
 			"dictionary": "MLConv2dOptions",
 			"definitions": [
@@ -33513,16 +33766,6 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "dictdef-gpurequestadapteroptions"
-				}
-			]
-		},
-		{
-			"name": "forceScreenContentTools",
-			"dictionary": "AV1EncoderConfig",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
-					"id": "dictdef-av1encoderconfig"
 				}
 			]
 		},
@@ -34441,6 +34684,16 @@
 			]
 		},
 		{
+			"name": "getDirectory",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
+				}
+			]
+		},
+		{
 			"name": "getDisplayMedia",
 			"dictionary": "MockCapturePromptResultConfiguration",
 			"definitions": [
@@ -34484,6 +34737,10 @@
 			"name": "grapheme",
 			"dictionary": "HandwritingSegment",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingsegment"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingsegment"
@@ -35171,6 +35428,16 @@
 				{
 					"spec": "https://streams.spec.whatwg.org/",
 					"id": "dictdef-queuingstrategyinit"
+				}
+			]
+		},
+		{
+			"name": "hints",
+			"dictionary": "HandwritingRecognizerQueryResult",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingrecognizerqueryresult"
 				}
 			]
 		},
@@ -36250,6 +36517,16 @@
 		},
 		{
 			"name": "indexedDB",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
+				}
+			]
+		},
+		{
+			"name": "indexedDB",
 			"dictionary": "ClearDataTypeSet",
 			"definitions": [
 				{
@@ -36515,6 +36792,26 @@
 				{
 					"spec": "https://immersive-web.github.io/webxr/",
 					"id": "dictdef-xrinputsourceeventinit"
+				}
+			]
+		},
+		{
+			"name": "inputType",
+			"dictionary": "HandwritingHintsQueryResult",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghintsqueryresult"
+				}
+			]
+		},
+		{
+			"name": "inputType",
+			"dictionary": "HandwritingHints",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghints"
 				}
 			]
 		},
@@ -36985,6 +37282,16 @@
 				{
 					"spec": "https://wicg.github.io/trust-token-api/",
 					"id": "dictdef-privatetoken"
+				}
+			]
+		},
+		{
+			"name": "isVisible",
+			"dictionary": "IntersectionObserverEntryInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/IntersectionObserver/",
+					"id": "dictdef-intersectionobserverentryinit"
 				}
 			]
 		},
@@ -37665,6 +37972,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingmodelconstraint"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingmodelconstraint"
 				}
 			]
 		},
@@ -38220,16 +38531,6 @@
 		},
 		{
 			"name": "local",
-			"dictionary": "RTCIceCandidatePair",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcicecandidatepair"
-				}
-			]
-		},
-		{
-			"name": "local",
 			"dictionary": "RTCIceCandidatePairEventInit",
 			"definitions": [
 				{
@@ -38300,6 +38601,16 @@
 		},
 		{
 			"name": "localStorage",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
+				}
+			]
+		},
+		{
+			"name": "localStorage",
 			"dictionary": "ClearDataTypeSet",
 			"definitions": [
 				{
@@ -38335,6 +38646,16 @@
 				{
 					"spec": "https://wicg.github.io/shape-detection-api/",
 					"id": "dictdef-landmark"
+				}
+			]
+		},
+		{
+			"name": "locks",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
 				}
 			]
 		},
@@ -38985,7 +39306,7 @@
 			"dictionary": "PositionOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-positionoptions"
 				}
 			]
@@ -39227,6 +39548,16 @@
 				{
 					"spec": "https://w3c.github.io/webappsec-credential-management/",
 					"id": "dictdef-credentialrequestoptions"
+				}
+			]
+		},
+		{
+			"name": "mediation",
+			"dictionary": "CredentialCreationOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webappsec-credential-management/",
+					"id": "dictdef-credentialcreationoptions"
 				}
 			]
 		},
@@ -39882,6 +40213,16 @@
 		},
 		{
 			"name": "mode",
+			"dictionary": "GPUCanvasToneMapping",
+			"definitions": [
+				{
+					"spec": "https://gpuweb.github.io/gpuweb/",
+					"id": "dictdef-gpucanvastonemapping"
+				}
+			]
+		},
+		{
+			"name": "mode",
 			"dictionary": "MLPadOptions",
 			"definitions": [
 				{
@@ -40187,6 +40528,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-provisional-stats/",
 					"id": "dictdef-rtcsctptransportstats"
+				}
+			]
+		},
+		{
+			"name": "multiBidLimit",
+			"dictionary": "BiddingBrowserSignals",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-biddingbrowsersignals"
 				}
 			]
 		},
@@ -41017,6 +41368,16 @@
 				{
 					"spec": "https://webaudio.github.io/web-audio-api/",
 					"id": "dictdef-audioworkletnodeoptions"
+				}
+			]
+		},
+		{
+			"name": "numMandatoryAdComponents",
+			"dictionary": "GenerateBidOutput",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-generatebidoutput"
 				}
 			]
 		},
@@ -42845,6 +43206,16 @@
 			]
 		},
 		{
+			"name": "perBuyerMultiBidLimits",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
 			"name": "perBuyerPrioritySignals",
 			"dictionary": "AuctionAdConfig",
 			"definitions": [
@@ -43475,6 +43846,36 @@
 			]
 		},
 		{
+			"name": "powerEfficient",
+			"dictionary": "MediaTrackSupportedConstraints",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatracksupportedconstraints"
+				}
+			]
+		},
+		{
+			"name": "powerEfficient",
+			"dictionary": "MediaTrackCapabilities",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatrackcapabilities"
+				}
+			]
+		},
+		{
+			"name": "powerEfficient",
+			"dictionary": "MediaTrackSettings",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-extensions/",
+					"id": "ref-for-dictdef-mediatracksettings"
+				}
+			]
+		},
+		{
 			"name": "powerEfficientDecoder",
 			"dictionary": "RTCInboundRtpStreamStats",
 			"definitions": [
@@ -43885,6 +44286,16 @@
 				{
 					"spec": "https://wicg.github.io/scheduling-apis/",
 					"id": "dictdef-schedulerposttaskoptions"
+				}
+			]
+		},
+		{
+			"name": "priority",
+			"dictionary": "SchedulerYieldOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/scheduling-apis/",
+					"id": "dictdef-scheduleryieldoptions"
 				}
 			]
 		},
@@ -45179,6 +45590,26 @@
 			]
 		},
 		{
+			"name": "recognitionType",
+			"dictionary": "HandwritingHintsQueryResult",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghintsqueryresult"
+				}
+			]
+		},
+		{
+			"name": "recognitionType",
+			"dictionary": "HandwritingHints",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghints"
+				}
+			]
+		},
+		{
 			"name": "records",
 			"dictionary": "NDEFMessageInit",
 			"definitions": [
@@ -45584,16 +46015,6 @@
 		},
 		{
 			"name": "remote",
-			"dictionary": "RTCIceCandidatePair",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webrtc-pc/",
-					"id": "dom-rtcicecandidatepair"
-				}
-			]
-		},
-		{
-			"name": "remote",
 			"dictionary": "RTCIceCandidatePairEventInit",
 			"definitions": [
 				{
@@ -45709,6 +46130,16 @@
 				{
 					"spec": "https://webaudio.github.io/web-audio-api/",
 					"id": "dictdef-offlineaudiocompletioneventinit"
+				}
+			]
+		},
+		{
+			"name": "renderSize",
+			"dictionary": "ScoringBrowserSignals",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-scoringbrowsersignals"
 				}
 			]
 		},
@@ -45949,6 +46380,16 @@
 				{
 					"spec": "https://wicg.github.io/turtledove/",
 					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
+			"name": "requestedSize",
+			"dictionary": "BiddingBrowserSignals",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-biddingbrowsersignals"
 				}
 			]
 		},
@@ -46523,6 +46964,16 @@
 			]
 		},
 		{
+			"name": "revokeObjectURL",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
+				}
+			]
+		},
+		{
 			"name": "rid",
 			"dictionary": "RTCOutboundRtpStreamStats",
 			"definitions": [
@@ -47083,6 +47534,16 @@
 				{
 					"spec": "https://wicg.github.io/cookie-store/",
 					"id": "dictdef-cookielistitem"
+				}
+			]
+		},
+		{
+			"name": "sameSiteCookies",
+			"dictionary": "SharedWorkerOptions",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-sharedworkeroptions"
 				}
 			]
 		},
@@ -47773,6 +48234,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingprediction"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingprediction"
 				}
 			]
 		},
@@ -48187,6 +48652,16 @@
 			]
 		},
 		{
+			"name": "sessionStorage",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
+				}
+			]
+		},
+		{
 			"name": "sessionTypes",
 			"dictionary": "MediaKeySystemConfiguration",
 			"definitions": [
@@ -48227,12 +48702,32 @@
 			]
 		},
 		{
+			"name": "shadowRoots",
+			"dictionary": "CaretPositionFromPointOptions",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/cssom-view-1/",
+					"id": "dictdef-caretpositionfrompointoptions"
+				}
+			]
+		},
+		{
 			"name": "sharedStorageWritable",
 			"dictionary": "RequestInit",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
 					"id": "ref-for-dictdef-requestinit"
+				}
+			]
+		},
+		{
+			"name": "SharedWorker",
+			"dictionary": "StorageAccessTypes",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "dictdef-storageaccesstypes"
 				}
 			]
 		},
@@ -48473,6 +48968,16 @@
 				{
 					"spec": "https://wicg.github.io/scheduling-apis/",
 					"id": "dictdef-schedulerposttaskoptions"
+				}
+			]
+		},
+		{
+			"name": "signal",
+			"dictionary": "SchedulerYieldOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/scheduling-apis/",
+					"id": "dictdef-scheduleryieldoptions"
 				}
 			]
 		},
@@ -49803,6 +50308,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingdrawingsegment"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingdrawingsegment"
 				}
 			]
 		},
@@ -50228,6 +50737,16 @@
 		},
 		{
 			"name": "t",
+			"dictionary": "HandwritingPoint",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingpoint"
+				}
+			]
+		},
+		{
+			"name": "t",
 			"dictionary": "RsaOtherPrimesInfo",
 			"definitions": [
 				{
@@ -50347,6 +50866,16 @@
 			]
 		},
 		{
+			"name": "targetNumAdComponents",
+			"dictionary": "GenerateBidOutput",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-generatebidoutput"
+				}
+			]
+		},
+		{
 			"name": "targetOrigin",
 			"dictionary": "WindowPostMessageOptions",
 			"definitions": [
@@ -50458,6 +50987,16 @@
 		},
 		{
 			"name": "text",
+			"dictionary": "HandwritingPrediction",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingprediction"
+				}
+			]
+		},
+		{
+			"name": "text",
 			"dictionary": "EditContextInit",
 			"definitions": [
 				{
@@ -50503,6 +51042,30 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingrecognizerqueryresult"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingrecognizerqueryresult"
+				}
+			]
+		},
+		{
+			"name": "textContext",
+			"dictionary": "HandwritingHintsQueryResult",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghintsqueryresult"
+				}
+			]
+		},
+		{
+			"name": "textContext",
+			"dictionary": "HandwritingHints",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritinghints"
 				}
 			]
 		},
@@ -50540,6 +51103,10 @@
 			"name": "textSegmentation",
 			"dictionary": "HandwritingRecognizerQueryResult",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingrecognizerqueryresult"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "dictdef-handwritingrecognizerqueryresult"
@@ -50761,7 +51328,7 @@
 			"dictionary": "PositionOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-positionoptions"
 				}
 			]
@@ -51227,6 +51794,16 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcdtmftonechangeeventinit"
+				}
+			]
+		},
+		{
+			"name": "toneMapping",
+			"dictionary": "GPUCanvasConfiguration",
+			"definitions": [
+				{
+					"spec": "https://gpuweb.github.io/gpuweb/",
+					"id": "dictdef-gpucanvasconfiguration"
 				}
 			]
 		},
@@ -51867,6 +52444,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-provisional-stats/",
 					"id": "dictdef-rtcrtpreceiverstats"
+				}
+			]
+		},
+		{
+			"name": "trackVisibility",
+			"dictionary": "IntersectionObserverInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/IntersectionObserver/",
+					"id": "dictdef-intersectionobserverinit"
 				}
 			]
 		},
@@ -52682,16 +53269,6 @@
 		},
 		{
 			"name": "types",
-			"dictionary": "StartViewTransitionOptions",
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
-					"id": "dictdef-startviewtransitionoptions"
-				}
-			]
-		},
-		{
-			"name": "types",
 			"dictionary": "FilePickerOptions",
 			"definitions": [
 				{
@@ -52707,6 +53284,16 @@
 				{
 					"spec": "https://wicg.github.io/performance-measure-memory/",
 					"id": "dictdef-memorybreakdownentry"
+				}
+			]
+		},
+		{
+			"name": "types",
+			"dictionary": "StartViewTransitionOptions",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "dictdef-startviewtransitionoptions"
 				}
 			]
 		},
@@ -52737,6 +53324,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-provisional-stats/",
 					"id": "dictdef-rtcsctptransportstats"
+				}
+			]
+		},
+		{
+			"name": "unadjustedMovement",
+			"dictionary": "PointerLockOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/pointerlock/",
+					"id": "dom-pointerlockoptions"
 				}
 			]
 		},
@@ -53669,26 +54266,6 @@
 				{
 					"spec": "https://webbluetoothcg.github.io/web-bluetooth/",
 					"id": "dictdef-bluetoothadvertisingeventinit"
-				}
-			]
-		},
-		{
-			"name": "uvm",
-			"dictionary": "AuthenticationExtensionsClientInputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
-				}
-			]
-		},
-		{
-			"name": "uvm",
-			"dictionary": "AuthenticationExtensionsClientOutputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
 				}
 			]
 		},
@@ -54754,6 +55331,16 @@
 		},
 		{
 			"name": "x",
+			"dictionary": "HandwritingPoint",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingpoint"
+				}
+			]
+		},
+		{
+			"name": "x",
 			"dictionary": "DOMPointInit",
 			"definitions": [
 				{
@@ -54849,6 +55436,16 @@
 				{
 					"spec": "https://immersive-web.github.io/webxr/",
 					"id": "ref-for-dictdef-webglcontextattributes"
+				}
+			]
+		},
+		{
+			"name": "y",
+			"dictionary": "HandwritingPoint",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "dictdef-handwritingpoint"
 				}
 			]
 		},
@@ -55190,7 +55787,7 @@
 			"interface": "GeolocationCoordinates",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationcoordinates"
 				}
 			]
@@ -56132,7 +56729,7 @@
 			"interface": "GeolocationCoordinates",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationcoordinates"
 				}
 			]
@@ -56152,7 +56749,7 @@
 			"interface": "GeolocationCoordinates",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationcoordinates"
 				}
 			]
@@ -59344,6 +59941,16 @@
 		},
 		{
 			"name": "caches",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
+				}
+			]
+		},
+		{
+			"name": "caches",
 			"interface": "StorageBucket",
 			"definitions": [
 				{
@@ -60558,7 +61165,7 @@
 			"interface": "GeolocationPositionError",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationpositionerror"
 				}
 			]
@@ -62507,7 +63114,7 @@
 			"interface": "CSSContainerRule",
 			"definitions": [
 				{
-					"spec": "https://drafts.csswg.org/css-contain-3/",
+					"spec": "https://drafts.csswg.org/css-conditional-5/",
 					"id": "csscontainerrule"
 				}
 			]
@@ -62527,7 +63134,7 @@
 			"interface": "CSSContainerRule",
 			"definitions": [
 				{
-					"spec": "https://drafts.csswg.org/css-contain-3/",
+					"spec": "https://drafts.csswg.org/css-conditional-5/",
 					"id": "csscontainerrule"
 				}
 			]
@@ -62878,7 +63485,7 @@
 			"interface": "GeolocationPosition",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationposition"
 				}
 			]
@@ -64376,6 +64983,16 @@
 			]
 		},
 		{
+			"name": "delay",
+			"interface": "IntersectionObserver",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/IntersectionObserver/",
+					"id": "intersectionobserver"
+				}
+			]
+		},
+		{
 			"name": "delayTime",
 			"interface": "DelayNode",
 			"definitions": [
@@ -64523,6 +65140,16 @@
 				{
 					"spec": "https://w3c.github.io/contact-picker/",
 					"id": "contactaddress"
+				}
+			]
+		},
+		{
+			"name": "deprecatedRunAdAuctionEnforcesKAnonymity",
+			"interface": "Navigator",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-navigator"
 				}
 			]
 		},
@@ -65230,6 +65857,16 @@
 				{
 					"spec": "https://wicg.github.io/webusb/",
 					"id": "usbpermissionresult"
+				}
+			]
+		},
+		{
+			"name": "devices",
+			"interface": "DeviceChangeEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-devicechangeevent"
 				}
 			]
 		},
@@ -70247,7 +70884,7 @@
 			"interface": "Navigator",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "idl-def-navigator-partial-1"
 				}
 			]
@@ -70842,7 +71479,7 @@
 			"interface": "GeolocationCoordinates",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationcoordinates"
 				}
 			]
@@ -72197,6 +72834,16 @@
 		},
 		{
 			"name": "imageIndex",
+			"interface": "XRWebGLDepthInformation",
+			"definitions": [
+				{
+					"spec": "https://immersive-web.github.io/depth-sensing/",
+					"id": "xrwebgldepthinformation"
+				}
+			]
+		},
+		{
+			"name": "imageIndex",
 			"interface": "XRWebGLSubImage",
 			"definitions": [
 				{
@@ -72654,6 +73301,16 @@
 		},
 		{
 			"name": "indexedDB",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
+				}
+			]
+		},
+		{
+			"name": "indexedDB",
 			"interface": "StorageBucket",
 			"definitions": [
 				{
@@ -72730,6 +73387,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
 					"id": "navigateevent"
+				}
+			]
+		},
+		{
+			"name": "info",
+			"interface": "GPUAdapter",
+			"definitions": [
+				{
+					"spec": "https://gpuweb.github.io/gpuweb/",
+					"id": "gpuadapter"
 				}
 			]
 		},
@@ -73977,6 +74644,16 @@
 			]
 		},
 		{
+			"name": "isVisible",
+			"interface": "IntersectionObserverEntry",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/IntersectionObserver/",
+					"id": "intersectionobserverentry"
+				}
+			]
+		},
+		{
 			"name": "items",
 			"interface": "DataTransfer",
 			"definitions": [
@@ -74426,6 +75103,17 @@
 				{
 					"spec": "https://webaudio.github.io/web-audio-api/",
 					"id": "dynamicscompressornode"
+				}
+			]
+		},
+		{
+			"name": "knownSources",
+			"interface": "PressureObserver",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/compute-pressure/",
+					"id": "dom-pressureobserver"
 				}
 			]
 		},
@@ -74935,7 +75623,7 @@
 			"interface": "GeolocationCoordinates",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationcoordinates"
 				}
 			]
@@ -76241,6 +76929,16 @@
 		},
 		{
 			"name": "local",
+			"interface": "RTCIceCandidatePair",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcicecandidatepair"
+				}
+			]
+		},
+		{
+			"name": "local",
 			"interface": "RTCIceCandidatePairEvent",
 			"definitions": [
 				{
@@ -76296,6 +76994,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/webstorage.html",
 					"id": "windowlocalstorage"
+				}
+			]
+		},
+		{
+			"name": "localStorage",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
 				}
 			]
 		},
@@ -76381,6 +77089,16 @@
 		},
 		{
 			"name": "locks",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
+				}
+			]
+		},
+		{
+			"name": "locks",
 			"interface": "NavigatorLocks",
 			"definitions": [
 				{
@@ -76444,7 +77162,7 @@
 			"interface": "GeolocationCoordinates",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationcoordinates"
 				}
 			]
@@ -79068,7 +79786,7 @@
 			"interface": "GeolocationPositionError",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationpositionerror"
 				}
 			]
@@ -80674,21 +81392,21 @@
 		},
 		{
 			"name": "navigation",
-			"interface": "CSSViewTransitionRule",
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
-					"id": "cssviewtransitionrule"
-				}
-			]
-		},
-		{
-			"name": "navigation",
 			"interface": "Window",
 			"definitions": [
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
 					"id": "window"
+				}
+			]
+		},
+		{
+			"name": "navigation",
+			"interface": "CSSViewTransitionRule",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "cssviewtransitionrule"
 				}
 			]
 		},
@@ -83531,6 +84249,16 @@
 		},
 		{
 			"name": "onerror",
+			"interface": "AudioContext",
+			"definitions": [
+				{
+					"spec": "https://webaudio.github.io/web-audio-api/",
+					"id": "audiocontext"
+				}
+			]
+		},
+		{
+			"name": "onerror",
 			"interface": "SFrameTransform",
 			"definitions": [
 				{
@@ -85618,6 +86346,26 @@
 			]
 		},
 		{
+			"name": "onsnapchanged",
+			"interface": "GlobalEventHandlers",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "ref-for-globaleventhandlers"
+				}
+			]
+		},
+		{
+			"name": "onsnapchanging",
+			"interface": "GlobalEventHandlers",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"id": "ref-for-globaleventhandlers"
+				}
+			]
+		},
+		{
 			"name": "onsoundend",
 			"interface": "SpeechRecognition",
 			"definitions": [
@@ -87211,6 +87959,16 @@
 			]
 		},
 		{
+			"name": "page-orientation",
+			"interface": "CSSPageDescriptors",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/cssom-1/",
+					"id": "csspagedescriptors"
+				}
+			]
+		},
+		{
 			"name": "PAGE_RULE",
 			"interface": "CSSRule",
 			"static": true,
@@ -87228,6 +87986,16 @@
 				{
 					"spec": "https://drafts.csswg.org/cssom-view-1/",
 					"id": "visualviewport"
+				}
+			]
+		},
+		{
+			"name": "pageOrientation",
+			"interface": "CSSPageDescriptors",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/cssom-1/",
+					"id": "csspagedescriptors"
 				}
 			]
 		},
@@ -87869,7 +88637,7 @@
 			"static": true,
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationpositionerror"
 				}
 			]
@@ -88708,7 +89476,7 @@
 			"static": true,
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationpositionerror"
 				}
 			]
@@ -91331,6 +92099,16 @@
 				{
 					"spec": "https://w3c.github.io/remote-playback/",
 					"id": "idl-def-htmlmediaelement-partial-1"
+				}
+			]
+		},
+		{
+			"name": "remote",
+			"interface": "RTCIceCandidatePair",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcicecandidatepair"
 				}
 			]
 		},
@@ -94416,6 +95194,16 @@
 			]
 		},
 		{
+			"name": "sessionStorage",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
+				}
+			]
+		},
+		{
 			"name": "SHADER_TYPE",
 			"interface": "WebGLRenderingContextBase",
 			"static": true,
@@ -95476,7 +96264,7 @@
 			"interface": "GeolocationCoordinates",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationcoordinates"
 				}
 			]
@@ -97044,11 +97832,11 @@
 		},
 		{
 			"name": "style",
-			"interface": "CSSNestRule",
+			"interface": "CSSNestedDeclarations",
 			"definitions": [
 				{
 					"spec": "https://drafts.csswg.org/css-nesting-1/",
-					"id": "cssnestrule"
+					"id": "cssnesteddeclarations"
 				}
 			]
 		},
@@ -97273,17 +98061,6 @@
 				{
 					"spec": "https://immersive-web.github.io/webxr/",
 					"id": "xrsession"
-				}
-			]
-		},
-		{
-			"name": "supportedSources",
-			"interface": "PressureObserver",
-			"static": true,
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/compute-pressure/",
-					"id": "dom-pressureobserver"
 				}
 			]
 		},
@@ -100017,6 +100794,16 @@
 			]
 		},
 		{
+			"name": "textureType",
+			"interface": "XRWebGLDepthInformation",
+			"definitions": [
+				{
+					"spec": "https://immersive-web.github.io/depth-sensing/",
+					"id": "xrwebgldepthinformation"
+				}
+			]
+		},
+		{
 			"name": "textureWidth",
 			"interface": "XRProjectionLayer",
 			"definitions": [
@@ -100204,7 +100991,7 @@
 			"static": true,
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationpositionerror"
 				}
 			]
@@ -100277,7 +101064,7 @@
 			"interface": "GeolocationPosition",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationposition"
 				}
 			]
@@ -100885,6 +101672,16 @@
 				{
 					"spec": "https://w3c.github.io/webcodecs/",
 					"id": "imagedecoder"
+				}
+			]
+		},
+		{
+			"name": "trackVisibility",
+			"interface": "IntersectionObserver",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/IntersectionObserver/",
+					"id": "intersectionobserver"
 				}
 			]
 		},
@@ -102079,26 +102876,6 @@
 		},
 		{
 			"name": "types",
-			"interface": "CSSViewTransitionRule",
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
-					"id": "cssviewtransitionrule"
-				}
-			]
-		},
-		{
-			"name": "types",
-			"interface": "ViewTransition",
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
-					"id": "ref-for-viewtransition"
-				}
-			]
-		},
-		{
-			"name": "types",
 			"interface": "DataTransfer",
 			"definitions": [
 				{
@@ -102114,6 +102891,26 @@
 				{
 					"spec": "https://w3c.github.io/clipboard-apis/",
 					"id": "clipboarditem"
+				}
+			]
+		},
+		{
+			"name": "types",
+			"interface": "CSSViewTransitionRule",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "cssviewtransitionrule"
+				}
+			]
+		},
+		{
+			"name": "types",
+			"interface": "ViewTransition",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
+					"id": "ref-for-viewtransition"
 				}
 			]
 		},
@@ -103424,6 +104221,16 @@
 			]
 		},
 		{
+			"name": "userInsertedDevices",
+			"interface": "DeviceChangeEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediacapture-main/",
+					"id": "dom-devicechangeevent"
+				}
+			]
+		},
+		{
 			"name": "username",
 			"interface": "HTMLHyperlinkElementUtils",
 			"definitions": [
@@ -104710,6 +105517,16 @@
 				{
 					"spec": "https://svgwg.org/svg2-draft/types.html",
 					"id": "svgfittoviewbox"
+				}
+			]
+		},
+		{
+			"name": "viewport",
+			"interface": "Window",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-viewport-1/",
+					"id": "ref-for-window"
 				}
 			]
 		},
@@ -106877,6 +107694,16 @@
 					"id": "webglrenderingcontextbase"
 				}
 			]
+		},
+		{
+			"name": "zoom",
+			"interface": "Viewport",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-viewport-1/",
+					"id": "viewport"
+				}
+			]
 		}
 	],
 	"jsFunctions": [
@@ -107482,6 +108309,16 @@
 			]
 		},
 		{
+			"name": "adAuctionComponents",
+			"interface": "Navigator",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/fenced-frame/",
+					"id": "ref-for-navigator"
+				}
+			]
+		},
+		{
 			"name": "add",
 			"interface": "DOMTokenList",
 			"definitions": [
@@ -107706,6 +108543,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingstroke"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingstroke"
 				}
 			]
 		},
@@ -107777,6 +108618,10 @@
 			"name": "addStroke",
 			"interface": "HandwritingDrawing",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingdrawing"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingdrawing"
@@ -108816,6 +109661,16 @@
 			]
 		},
 		{
+			"name": "BroadcastChannel",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
+				}
+			]
+		},
+		{
 			"name": "btoa",
 			"interface": "WindowOrWorkerGlobalScope",
 			"definitions": [
@@ -108888,6 +109743,36 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "mlgraphbuilder"
+				}
+			]
+		},
+		{
+			"name": "bytes",
+			"interface": "Body",
+			"definitions": [
+				{
+					"spec": "https://fetch.spec.whatwg.org/",
+					"id": "body"
+				}
+			]
+		},
+		{
+			"name": "bytes",
+			"interface": "Blob",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/FileAPI/",
+					"id": "blob"
+				}
+			]
+		},
+		{
+			"name": "bytes",
+			"interface": "PushMessageData",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/push-api/",
+					"id": "dom-pushmessagedata"
 				}
 			]
 		},
@@ -109038,6 +109923,16 @@
 				{
 					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "controlledframe"
+				}
+			]
+		},
+		{
+			"name": "canLoadAdAuctionFencedFrame",
+			"interface": "Navigator",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-navigator"
 				}
 			]
 		},
@@ -109412,10 +110307,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
-				},
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -109467,6 +110358,26 @@
 				{
 					"spec": "https://registry.khronos.org/webgl/specs/latest/1.0/",
 					"id": "webglrenderingcontextbase"
+				}
+			]
+		},
+		{
+			"name": "clear",
+			"interface": "HandwritingDrawing",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingdrawing"
+				}
+			]
+		},
+		{
+			"name": "clear",
+			"interface": "HandwritingStroke",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingstroke"
 				}
 			]
 		},
@@ -109805,7 +110716,7 @@
 			"interface": "Geolocation",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocation"
 				}
 			]
@@ -111810,6 +112721,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "ref-for-navigator"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "ref-for-navigator"
 				}
 			]
 		},
@@ -111968,6 +112883,16 @@
 				{
 					"spec": "https://w3c.github.io/IndexedDB/",
 					"id": "idbdatabase"
+				}
+			]
+		},
+		{
+			"name": "createObjectURL",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
 				}
 			]
 		},
@@ -113214,6 +114139,16 @@
 			]
 		},
 		{
+			"name": "deprecatedURNtoURL",
+			"interface": "Navigator",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/fenced-frame/",
+					"id": "ref-for-navigator"
+				}
+			]
+		},
+		{
 			"name": "depthFunc",
 			"interface": "WebGLRenderingContextBase",
 			"definitions": [
@@ -114443,6 +115378,16 @@
 		},
 		{
 			"name": "estimate",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
+				}
+			]
+		},
+		{
+			"name": "estimate",
 			"interface": "StorageManager",
 			"definitions": [
 				{
@@ -114518,6 +115463,10 @@
 			"definitions": [
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/dom.html",
+					"id": "ref-for-document"
+				},
+				{
+					"spec": "https://w3c.github.io/editing/docs/execCommand/",
 					"id": "ref-for-document"
 				}
 			]
@@ -114819,6 +115768,16 @@
 		},
 		{
 			"name": "finish",
+			"interface": "HandwritingRecognizer",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingrecognizer"
+				}
+			]
+		},
+		{
+			"name": "finish",
 			"interface": "Animation",
 			"definitions": [
 				{
@@ -114854,6 +115813,16 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingrecognizer"
+				}
+			]
+		},
+		{
+			"name": "first",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -116630,7 +117599,7 @@
 			"interface": "Geolocation",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocation"
 				}
 			]
@@ -116804,6 +117773,16 @@
 				{
 					"spec": "https://fs.spec.whatwg.org/",
 					"id": "ref-for-storagemanager"
+				}
+			]
+		},
+		{
+			"name": "getDirectory",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
 				}
 			]
 		},
@@ -117869,6 +118848,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingstroke"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingstroke"
 				}
 			]
 		},
@@ -117916,6 +118899,10 @@
 			"name": "getPrediction",
 			"interface": "HandwritingDrawing",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingdrawing"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingdrawing"
@@ -118655,6 +119642,10 @@
 			"name": "getStrokes",
 			"interface": "HandwritingDrawing",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingdrawing"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingdrawing"
@@ -119536,6 +120527,16 @@
 			"definitions": [
 				{
 					"spec": "https://privacycg.github.io/storage-access/",
+					"id": "ref-for-document"
+				}
+			]
+		},
+		{
+			"name": "hasUnpartitionedCookieAccess",
+			"interface": "Document",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
 					"id": "ref-for-document"
 				}
 			]
@@ -121027,6 +122028,16 @@
 			]
 		},
 		{
+			"name": "last",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
 			"name": "lastChild",
 			"interface": "TreeWalker",
 			"definitions": [
@@ -121298,6 +122309,16 @@
 		},
 		{
 			"name": "log",
+			"interface": "MLGraphBuilder",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
+			"name": "logicalNot",
 			"interface": "MLGraphBuilder",
 			"definitions": [
 				{
@@ -122032,16 +123053,6 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "node"
-				}
-			]
-		},
-		{
-			"name": "not",
-			"interface": "MLGraphBuilder",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -123371,6 +124382,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "ref-for-navigator"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "ref-for-navigator"
 				}
 			]
 		},
@@ -124535,6 +125550,10 @@
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingdrawing"
+				},
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingdrawing"
 				}
 			]
 		},
@@ -124913,16 +125932,6 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "gpu"
-				}
-			]
-		},
-		{
-			"name": "requestAdapterInfo",
-			"interface": "GPUAdapter",
-			"definitions": [
-				{
-					"spec": "https://gpuweb.github.io/gpuweb/",
-					"id": "gpuadapter"
 				}
 			]
 		},
@@ -125637,6 +126646,16 @@
 				{
 					"spec": "https://wicg.github.io/permissions-revoke/",
 					"id": "ref-for-permissions"
+				}
+			]
+		},
+		{
+			"name": "revokeObjectURL",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
 				}
 			]
 		},
@@ -127382,6 +128401,16 @@
 			]
 		},
 		{
+			"name": "setScreenshareActive",
+			"interface": "MediaSession",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/mediasession/",
+					"id": "mediasession"
+				}
+			]
+		},
+		{
 			"name": "setSelectionRange",
 			"interface": "HTMLInputElement",
 			"definitions": [
@@ -127746,6 +128775,16 @@
 			]
 		},
 		{
+			"name": "SharedWorker",
+			"interface": "StorageAccessHandle",
+			"definitions": [
+				{
+					"spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"id": "storageaccesshandle"
+				}
+			]
+		},
+		{
 			"name": "show",
 			"interface": "HTMLDialogElement",
 			"definitions": [
@@ -127983,10 +129022,6 @@
 			"name": "softmax",
 			"interface": "MLGraphBuilder",
 			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
-				},
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
@@ -128255,6 +129290,10 @@
 			"name": "startDrawing",
 			"interface": "HandwritingRecognizer",
 			"definitions": [
+				{
+					"spec": "https://wicg.github.io/handwriting-recognition/",
+					"id": "handwritingrecognizer"
+				},
 				{
 					"spec": "https://wicg.github.io/handwriting-recognition/",
 					"id": "handwritingrecognizer"
@@ -128925,6 +129964,16 @@
 				{
 					"spec": "https://drafts.css-houdini.org/css-typed-om-1/",
 					"id": "ref-for-namespacedef-css"
+				}
+			]
+		},
+		{
+			"name": "switchMap",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -129642,7 +130691,7 @@
 			"interface": "GeolocationPosition",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationposition"
 				}
 			]
@@ -129652,7 +130701,7 @@
 			"interface": "GeolocationCoordinates",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocationcoordinates"
 				}
 			]
@@ -129794,6 +130843,16 @@
 				{
 					"spec": "https://w3c.github.io/performance-timeline/",
 					"id": "dom-performanceentry"
+				}
+			]
+		},
+		{
+			"name": "toJSON",
+			"interface": "PermissionsPolicyViolationReportBody",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webappsec-permissions-policy/",
+					"id": "permissionspolicyviolationreportbody"
 				}
 			]
 		},
@@ -131413,7 +132472,7 @@
 			"interface": "Geolocation",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/geolocation-api/",
+					"spec": "https://w3c.github.io/geolocation/",
 					"id": "dom-geolocation"
 				}
 			]
@@ -131455,6 +132514,17 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
+				}
+			]
+		},
+		{
+			"name": "willRequestConditionalCreation",
+			"interface": "Credential",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webappsec-credential-management/",
+					"id": "credential"
 				}
 			]
 		},
@@ -131615,6 +132685,16 @@
 				{
 					"spec": "https://webbluetoothcg.github.io/web-bluetooth/",
 					"id": "bluetoothremotegattcharacteristic"
+				}
+			]
+		},
+		{
+			"name": "yield",
+			"interface": "Scheduler",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/scheduling-apis/",
+					"id": "scheduler"
 				}
 			]
 		}

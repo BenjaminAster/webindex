@@ -28,8 +28,8 @@ export const storage = new class {
 
 	const updateTheme = () => {
 		document.documentElement.dataset.theme = currentTheme;
-		// const themeColor = window.getComputedStyle(document.querySelector("c-header")).backgroundColor.trim();
-		// document.querySelector("meta[name=theme-color]").content = themeColor;
+		const themeColor = window.getComputedStyle(document.documentElement).backgroundColor.trim();
+		document.querySelector("meta[name=theme-color]").content = themeColor;
 	};
 	updateTheme();
 
@@ -52,8 +52,14 @@ let tab = document.documentElement.dataset.currentTab;
 	// search
 	const searchbox = document.querySelector("input#searchbox");
 
-	const search = (/** @type {string} */ query) => {
+	const search = async (/** @type {string} */ query) => {
 		if (tab === "specifications") document.querySelector("#toc").hidden = true;
+
+		let visitNextDirectMatch = false;
+		if (query.endsWith("!")) {
+			query = query.slice(0, -1);
+			visitNextDirectMatch = true;
+		}
 
 		const mainList = document.querySelector("ul#main-list");
 		$outerLoop: for (const categoryBlock of mainList.children) {
@@ -66,9 +72,17 @@ let tab = document.documentElement.dataset.currentTab;
 				child.hidden = !matches;
 				if (matches) {
 					categoryHasMatches = true;
+					if (visitNextDirectMatch) {
+						const anchor = child.querySelector("a[data-unique-name]");
+						if (anchor?.dataset.uniqueName === query) {
+							location.replace(anchor.href);
+							visitNextDirectMatch = false;
+						}
+					}
 				}
 			}
 			categoryBlock.hidden = !categoryHasMatches;
+			await new Promise(resolve => setTimeout(resolve));
 		}
 	}
 
@@ -103,7 +117,7 @@ let tab = document.documentElement.dataset.currentTab;
 	{
 		const params = new URLSearchParams(location.search);
 		{
-			const query = params.get("q")?.trim();
+			const query = params.get("q")?.trim().toLowerCase();
 			if (query) {
 				searchbox.value = query;
 				search(query);

@@ -93,7 +93,7 @@ $specs: {
 
 	// let results = await fetchJSON(indexURL);
 	results = results.map(({
-		nightly: { url, repository: repo, pages } = {},
+		nightly: { url, repository: repo, pages } = {} as any,
 		groups: [{ url: groupHomepage, name: groupName, }],
 		css: cssPath,
 		idl: idlPath,
@@ -210,7 +210,7 @@ $specs: {
 			if (doc) return doc;
 		};
 
-		if (pages) {
+		if (pages?.length) {
 			groupObject.specs.push({
 				title: `${title}: Table of Contents`,
 				url,

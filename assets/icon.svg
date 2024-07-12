@@ -2,7 +2,7 @@
 	<style>
 		:root {
 			color-scheme: dark light;
-			font-family: sans-serif;
+			font-family: "Arial", sans-serif;
 			--color: white;
 		}
 
@@ -20,11 +20,11 @@
 		}
 
 		.web {
-			font-size: 13rem;
+			font-size: 12.5rem;
 		}
 
 		.specs {
-			font-size: 10rem;
+			font-size: 9.5rem;
 		}
 	</style>
 

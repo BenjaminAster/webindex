@@ -1,6 +1,7 @@
 {
 	"name": "Web Index",
 	"short_name": "Web Index",
+	"description": "An index of web-related specifications, CSS properties, JavaScript interfaces, etc.",
 	"display": "standalone",
 	"start_url": "./",
 	"scope": "./",

@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Sun, 28 Apr 2024 09:47:21 GMT",
-		"iso": "2024-04-28T09:47:21.934Z",
-		"unixMillis": 1714297641934
+		"utc": "Fri, 12 Jul 2024 10:52:02 GMT",
+		"iso": "2024-07-12T10:52:02.953Z",
+		"unixMillis": 1720781522953
 	},
 	"specs": [
 		{
@@ -173,7 +173,7 @@
 					"tests": "https://wpt.fyi/results/css/compositing?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
-					"title": "CSS 2: Table of Contents",
+					"title": "CSS 2",
 					"url": "https://drafts.csswg.org/css2/",
 					"repo": "https://github.com/w3c/csswg-drafts",
 					"shortname": "CSS22",
@@ -524,6 +524,12 @@
 					"tests": "https://wpt.fyi/results/css/css-break?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
+					"title": "CSS Functions and Mixins Module",
+					"url": "https://drafts.csswg.org/css-mixins-1/",
+					"repo": "https://github.com/w3c/csswg-drafts",
+					"shortname": "css-mixins-1"
+				},
+				{
 					"title": "CSS Generated Content for Paged Media Module",
 					"url": "https://drafts.csswg.org/css-gcpm-3/",
 					"repo": "https://github.com/w3c/csswg-drafts",
@@ -686,6 +692,13 @@
 					"url": "https://drafts.csswg.org/css-overflow-4/",
 					"repo": "https://github.com/w3c/csswg-drafts",
 					"shortname": "css-overflow-4",
+					"tests": "https://wpt.fyi/results/css/css-overflow?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
+				},
+				{
+					"title": "CSS Overflow Module Level 5",
+					"url": "https://drafts.csswg.org/css-overflow-5/",
+					"repo": "https://github.com/w3c/csswg-drafts",
+					"shortname": "css-overflow-5",
 					"tests": "https://wpt.fyi/results/css/css-overflow?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
@@ -1221,18 +1234,18 @@
 					"shortname": "contact-picker"
 				},
 				{
+					"title": "Device Orientation and Motion",
+					"url": "https://w3c.github.io/deviceorientation/",
+					"repo": "https://github.com/w3c/deviceorientation",
+					"shortname": "orientation-event",
+					"tests": "https://wpt.fyi/results/orientation-event?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
+				},
+				{
 					"title": "Device Posture API",
 					"url": "https://w3c.github.io/device-posture/",
 					"repo": "https://github.com/w3c/device-posture",
 					"shortname": "device-posture",
 					"tests": "https://wpt.fyi/results/device-posture?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
-				},
-				{
-					"title": "DeviceOrientation Event Specification",
-					"url": "https://w3c.github.io/deviceorientation/",
-					"repo": "https://github.com/w3c/deviceorientation",
-					"shortname": "orientation-event",
-					"tests": "https://wpt.fyi/results/orientation-event?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
 					"title": "Generic Sensor API",
@@ -1242,11 +1255,10 @@
 					"tests": "https://wpt.fyi/results/generic-sensor?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
 				},
 				{
-					"title": "Geolocation API",
-					"url": "https://w3c.github.io/geolocation-api/",
-					"repo": "https://github.com/w3c/geolocation-api",
-					"shortname": "geolocation",
-					"tests": "https://wpt.fyi/results/geolocation-API?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
+					"title": "Geolocation",
+					"url": "https://w3c.github.io/geolocation/",
+					"repo": "https://github.com/w3c/geolocation",
+					"shortname": "geolocation"
 				},
 				{
 					"title": "Geolocation Sensor",
@@ -1546,6 +1558,12 @@
 					"url": "https://www.rfc-editor.org/rfc/rfc9163",
 					"repo": "https://github.com/httpwg/http-extensions",
 					"shortname": "rfc9163"
+				},
+				{
+					"title": "RFC 9218 - Extensible Prioritization Scheme for HTTP",
+					"url": "https://httpwg.org/specs/rfc9218.html",
+					"repo": "https://github.com/httpwg/httpwg.github.io",
+					"shortname": "rfc9218"
 				},
 				{
 					"title": "RFC 9530 - Digest Fields",
@@ -2011,30 +2029,6 @@
 			]
 		},
 		{
-			"groupName": "Mozilla",
-			"groupHomepage": "https://www.mozilla.org/en-US/about/",
-			"groupIdentifier": "mozilla",
-			"specs": [
-				{
-					"title": "APNG Specification",
-					"url": "https://wiki.mozilla.org/APNG_Specification",
-					"shortname": "APNG"
-				}
-			]
-		},
-		{
-			"groupName": "Netscape",
-			"groupHomepage": "https://connect.netscape.com/",
-			"groupIdentifier": "netscape",
-			"specs": [
-				{
-					"title": "Netscape Looping Application GIF Extension",
-					"url": "http://www.vurdalakov.net/misc/gif/netscape-looping-application-extension/",
-					"shortname": "GIF-extension-looping"
-				}
-			]
-		},
-		{
 			"groupName": "ORTC (Object Real-time Communications) Community Group",
 			"groupHomepage": "https://www.w3.org/community/ortc/",
 			"groupIdentifier": "cg/ortc",
@@ -2091,6 +2085,12 @@
 			"groupHomepage": "https://www.w3.org/community/privacycg/",
 			"groupIdentifier": "cg/privacycg",
 			"specs": [
+				{
+					"title": "Extending Storage Access API (SAA) to non-cookie storage",
+					"url": "https://privacycg.github.io/saa-non-cookie-storage/",
+					"repo": "https://github.com/privacycg/saa-non-cookie-storage",
+					"shortname": "saa-non-cookie-storage"
+				},
 				{
 					"title": "Global Privacy Control (GPC)",
 					"url": "https://privacycg.github.io/gpc-spec/",
@@ -2897,6 +2897,12 @@
 					"shortname": "tc39-json-parse-with-source"
 				},
 				{
+					"title": "Promise.try",
+					"url": "https://tc39.es/proposal-promise-try/",
+					"repo": "https://github.com/tc39/proposal-promise-try",
+					"shortname": "tc39-promise-try"
+				},
+				{
 					"title": "ES Promise.withResolvers (2023)",
 					"url": "https://tc39.es/proposal-promise-with-resolvers/",
 					"repo": "https://github.com/tc39/proposal-promise-with-resolvers",
@@ -3408,6 +3414,12 @@
 					"repo": "https://github.com/whatwg/compat",
 					"shortname": "compat",
 					"tests": "https://wpt.fyi/results/compat?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
+				},
+				{
+					"title": "Compression Standard",
+					"url": "https://compression.spec.whatwg.org/",
+					"repo": "https://github.com/whatwg/compression",
+					"shortname": "compression"
 				},
 				{
 					"title": "Console Standard",
@@ -4078,7 +4090,7 @@
 					"shortname": "payment-method-manifest"
 				},
 				{
-					"title": "Payment Request API 1.1",
+					"title": "Payment Request API",
 					"url": "https://w3c.github.io/payment-request/",
 					"repo": "https://github.com/w3c/payment-request",
 					"shortname": "payment-request-1.1",
@@ -4311,13 +4323,6 @@
 					"shortname": "color-api"
 				},
 				{
-					"title": "Compression Streams",
-					"url": "https://wicg.github.io/compression/",
-					"repo": "https://github.com/WICG/compression",
-					"shortname": "compression",
-					"tests": "https://wpt.fyi/results/compression?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
-				},
-				{
 					"title": "Conditional Focus",
 					"url": "https://wicg.github.io/conditional-focus/",
 					"repo": "https://github.com/WICG/conditional-focus",
@@ -4471,6 +4476,12 @@
 					"repo": "https://github.com/WICG/get-installed-related-apps",
 					"shortname": "get-installed-related-apps",
 					"tests": "https://wpt.fyi/results/installedapp?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow"
+				},
+				{
+					"title": "Handwriting Recognition API",
+					"url": "https://wicg.github.io/handwriting-recognition/",
+					"repo": "https://github.com/WICG/handwriting-recognition",
+					"shortname": "handwriting-recognition"
 				},
 				{
 					"title": "Handwriting Recognition API",
@@ -5497,7 +5508,7 @@
 		},
 		{
 			"groupName": "WebTransport Working Group",
-			"groupHomepage": "https://www.w3.org/webtransport/",
+			"groupHomepage": "https://www.w3.org/groups/wg/webtransport/",
 			"groupIdentifier": "wg/webtransport",
 			"specs": [
 				{

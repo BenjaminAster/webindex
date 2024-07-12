@@ -269,7 +269,7 @@ export const analyzeDocument = (doc: Document, { url }: { url: string }) => {
 
 					cssProperties.push({
 						name: propertyName,
-						value,
+						syntax: value,
 						...(onlyNewValues ? { onlyNewValues: true } : {}),
 						id: linkId,
 						spec: url,
@@ -325,7 +325,7 @@ export const analyzeDocument = (doc: Document, { url }: { url: string }) => {
 					cssTypes.push({
 						name,
 						id,
-						definition,
+						syntax: definition,
 						spec: url,
 					});
 				} else if (type === "descriptor") {
