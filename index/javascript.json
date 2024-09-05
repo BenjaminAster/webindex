@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Fri, 12 Jul 2024 10:52:02 GMT",
-		"iso": "2024-07-12T10:52:02.953Z",
-		"unixMillis": 1720781522953
+		"utc": "Thu, 05 Sep 2024 19:28:28 GMT",
+		"iso": "2024-09-05T19:28:28.233Z",
+		"unixMillis": 1725564508233
 	},
 	"jsInterfaces": [
 		{
@@ -1752,6 +1752,16 @@
 			]
 		},
 		{
+			"name": "CSSFunctionRule",
+			"definitions": [
+				{
+					"inheritance": "CSSGroupingRule",
+					"spec": "https://drafts.csswg.org/css-mixins-1/",
+					"id": "cssfunctionrule"
+				}
+			]
+		},
+		{
 			"name": "CSSGroupingRule",
 			"definitions": [
 				{
@@ -2223,11 +2233,6 @@
 				{
 					"partial": true,
 					"spec": "https://drafts.csswg.org/css-fonts-4/",
-					"id": "ref-for-cssrule"
-				},
-				{
-					"partial": true,
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
 					"id": "ref-for-cssrule"
 				}
 			]
@@ -3960,12 +3965,12 @@
 				},
 				{
 					"partial": true,
-					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+					"spec": "https://drafts.csswg.org/css-animations-1/",
 					"id": "ref-for-globaleventhandlers"
 				},
 				{
 					"partial": true,
-					"spec": "https://drafts.csswg.org/css-animations-1/",
+					"spec": "https://drafts.csswg.org/css-scroll-snap-2/",
 					"id": "ref-for-globaleventhandlers"
 				},
 				{
@@ -6852,15 +6857,6 @@
 			]
 		},
 		{
-			"name": "MLActivation",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "mlactivation"
-				}
-			]
-		},
-		{
 			"name": "MLContext",
 			"definitions": [
 				{
@@ -7406,6 +7402,11 @@
 					"partial": true,
 					"spec": "https://wicg.github.io/serial/",
 					"id": "idl-def-navigator-partial-1"
+				},
+				{
+					"partial": true,
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "ref-for-navigator"
 				},
 				{
 					"partial": true,
@@ -8892,6 +8893,11 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "ref-for-publickeycredential"
+				},
+				{
+					"partial": true,
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "ref-for-publickeycredential"
 				}
 			]
 		},
@@ -9120,6 +9126,15 @@
 				{
 					"spec": "https://streams.spec.whatwg.org/",
 					"id": "readablestreamgenericreader"
+				}
+			]
+		},
+		{
+			"name": "RealTimeReporting",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "realtimereporting"
 				}
 			]
 		},
@@ -12292,7 +12307,6 @@
 			"name": "Viewport",
 			"definitions": [
 				{
-					"inheritance": "EventTarget",
 					"spec": "https://drafts.csswg.org/css-viewport-1/",
 					"id": "viewport"
 				}
@@ -13195,16 +13209,6 @@
 			]
 		},
 		{
-			"name": "WindowSharedStorage",
-			"definitions": [
-				{
-					"inheritance": "SharedStorage",
-					"spec": "https://wicg.github.io/shared-storage/",
-					"id": "windowsharedstorage"
-				}
-			]
-		},
-		{
 			"name": "Worker",
 			"definitions": [
 				{
@@ -13320,16 +13324,6 @@
 				{
 					"spec": "https://drafts.css-houdini.org/css-animation-worklet-1/",
 					"id": "workletgroupeffect"
-				}
-			]
-		},
-		{
-			"name": "WorkletSharedStorage",
-			"definitions": [
-				{
-					"inheritance": "SharedStorage",
-					"spec": "https://wicg.github.io/shared-storage/",
-					"id": "workletsharedstorage"
 				}
 			]
 		},
@@ -14129,6 +14123,24 @@
 			]
 		},
 		{
+			"name": "AdAuctionData",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-adauctiondata"
+				}
+			]
+		},
+		{
+			"name": "AdAuctionDataConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-adauctiondataconfig"
+				}
+			]
+		},
+		{
 			"name": "AddEventListenerOptions",
 			"definitions": [
 				{
@@ -14141,7 +14153,7 @@
 			"name": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
 				}
 			]
@@ -14224,6 +14236,15 @@
 				{
 					"spec": "https://w3c.github.io/webcrypto/",
 					"id": "dom-algorithm"
+				}
+			]
+		},
+		{
+			"name": "AllAcceptedCredentialsOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-allacceptedcredentialsoptions"
 				}
 			]
 		},
@@ -14338,6 +14359,24 @@
 				{
 					"spec": "https://wicg.github.io/turtledove/",
 					"id": "dictdef-auctionadinterestgroupkey"
+				}
+			]
+		},
+		{
+			"name": "AuctionAdInterestGroupSize",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadinterestgroupsize"
+				}
+			]
+		},
+		{
+			"name": "AuctionRealTimeReportingConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionrealtimereportingconfig"
 				}
 			]
 		},
@@ -14629,11 +14668,6 @@
 					"partial": true,
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
-				},
-				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
 				}
 			]
 		},
@@ -14661,11 +14695,6 @@
 				{
 					"partial": true,
 					"spec": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html",
-					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
-				},
-				{
-					"partial": true,
-					"spec": "https://w3c.github.io/webauthn/",
 					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
 				},
 				{
@@ -14755,24 +14784,6 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-authenticationextensionsprfvalues"
-				}
-			]
-		},
-		{
-			"name": "AuthenticationExtensionsSupplementalPubKeysInputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionssupplementalpubkeysinputs"
-				}
-			]
-		},
-		{
-			"name": "AuthenticationExtensionsSupplementalPubKeysOutputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionssupplementalpubkeysoutputs"
 				}
 			]
 		},
@@ -15691,6 +15702,15 @@
 			]
 		},
 		{
+			"name": "CurrentUserDetailsOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-currentuserdetailsoptions"
+				}
+			]
+		},
+		{
 			"name": "CustomEventInit",
 			"definitions": [
 				{
@@ -15786,6 +15806,15 @@
 				{
 					"spec": "https://wicg.github.io/digital-identities/",
 					"id": "dom-digitalcredentialrequestoptions"
+				}
+			]
+		},
+		{
+			"name": "DigitalCredentialsProvider",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/digital-identities/",
+					"id": "dom-digitalcredentialsprovider"
 				}
 			]
 		},
@@ -17470,15 +17499,6 @@
 			]
 		},
 		{
-			"name": "IdentityRequestProvider",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/digital-identities/",
-					"id": "dom-identityrequestprovider"
-				}
-			]
-		},
-		{
 			"name": "IdentityUserInfo",
 			"definitions": [
 				{
@@ -18430,6 +18450,24 @@
 			]
 		},
 		{
+			"name": "MLBatchNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbatchnormalizationsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "MLBinarySupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbinarysupportlimits"
+				}
+			]
+		},
+		{
 			"name": "MLClampOptions",
 			"definitions": [
 				{
@@ -18444,6 +18482,15 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlcomputeresult"
+				}
+			]
+		},
+		{
+			"name": "MLConcatSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlconcatsupportlimits"
 				}
 			]
 		},
@@ -18466,6 +18513,15 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlconv2doptions"
+				}
+			]
+		},
+		{
+			"name": "MLConv2dSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlconv2dsupportlimits"
 				}
 			]
 		},
@@ -18497,11 +18553,29 @@
 			]
 		},
 		{
+			"name": "MLGatherSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgathersupportlimits"
+				}
+			]
+		},
+		{
 			"name": "MLGemmOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlgemmoptions"
+				}
+			]
+		},
+		{
+			"name": "MLGemmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgemmsupportlimits"
 				}
 			]
 		},
@@ -18515,11 +18589,29 @@
 			]
 		},
 		{
+			"name": "MLGruCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrucellsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "MLGruOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlgruoptions"
+				}
+			]
+		},
+		{
+			"name": "MLGruSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrusupportlimits"
 				}
 			]
 		},
@@ -18569,11 +18661,29 @@
 			]
 		},
 		{
+			"name": "MLLogicalNotSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllogicalnotsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "MLLstmCellOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mllstmcelloptions"
+				}
+			]
+		},
+		{
+			"name": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
 				}
 			]
 		},
@@ -18587,11 +18697,262 @@
 			]
 		},
 		{
+			"name": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "MLNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlnormalizationsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "MLOperandDescriptor",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mloperanddescriptor"
+				}
+			]
+		},
+		{
+			"name": "MLOperatorOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mloperatoroptions"
+				}
+			]
+		},
+		{
+			"name": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				},
+				{
+					"partial": true,
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -18614,6 +18975,15 @@
 			]
 		},
 		{
+			"name": "MLPreluSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlprelusupportlimits"
+				}
+			]
+		},
+		{
 			"name": "MLReduceOptions",
 			"definitions": [
 				{
@@ -18632,11 +19002,38 @@
 			]
 		},
 		{
+			"name": "MLSingleInputSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlsingleinputsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "MLSplitOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlsplitoptions"
+				}
+			]
+		},
+		{
+			"name": "MLSplitSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlsplitsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "MLSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlsupportlimits"
 				}
 			]
 		},
@@ -18673,6 +19070,15 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mltriangularoptions"
+				}
+			]
+		},
+		{
+			"name": "MLWhereSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlwheresupportlimits"
 				}
 			]
 		},
@@ -18961,6 +19367,15 @@
 			]
 		},
 		{
+			"name": "ObservableInspector",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-observableinspector"
+				}
+			]
+		},
+		{
 			"name": "OfflineAudioCompletionEventInit",
 			"definitions": [
 				{
@@ -19137,6 +19552,15 @@
 			]
 		},
 		{
+			"name": "PayerErrors",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-payererrors"
+				}
+			]
+		},
+		{
 			"name": "PaymentCompleteDetails",
 			"definitions": [
 				{
@@ -19239,7 +19663,7 @@
 			"name": "PaymentOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentoptions"
 				}
 			]
@@ -19275,7 +19699,7 @@
 			"name": "PaymentShippingOption",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentshippingoption"
 				}
 			]
@@ -19516,15 +19940,6 @@
 				{
 					"spec": "https://w3c.github.io/compute-pressure/",
 					"id": "dom-pressureobserveroptions"
-				}
-			]
-		},
-		{
-			"name": "PreviousWin",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/turtledove/",
-					"id": "dictdef-previouswin"
 				}
 			]
 		},
@@ -19912,6 +20327,15 @@
 				{
 					"spec": "https://w3c.github.io/geolocation-sensor/",
 					"id": "dictdef-readoptions"
+				}
+			]
+		},
+		{
+			"name": "RealTimeContribution",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-realtimecontribution"
 				}
 			]
 		},
@@ -21193,15 +21617,6 @@
 			]
 		},
 		{
-			"name": "SchedulerYieldOptions",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/scheduling-apis/",
-					"id": "dictdef-scheduleryieldoptions"
-				}
-			]
-		},
-		{
 			"name": "ScoreAdOutput",
 			"definitions": [
 				{
@@ -21428,6 +21843,15 @@
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
 					"id": "dictdef-sharedstorageurlwithmetadata"
+				}
+			]
+		},
+		{
+			"name": "SharedStorageWorkletOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/shared-storage/",
+					"id": "dictdef-sharedstorageworkletoptions"
 				}
 			]
 		},
@@ -22032,6 +22456,15 @@
 				{
 					"spec": "https://streams.spec.whatwg.org/",
 					"id": "dictdef-underlyingsource"
+				}
+			]
+		},
+		{
+			"name": "UnknownCredentialOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-unknowncredentialoptions"
 				}
 			]
 		},
@@ -22842,6 +23275,36 @@
 			]
 		},
 		{
+			"name": "a",
+			"dictionary": "MLBinarySupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbinarysupportlimits"
+				}
+			]
+		},
+		{
+			"name": "a",
+			"dictionary": "MLLogicalNotSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllogicalnotsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "a",
+			"dictionary": "MLGemmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgemmsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "aac",
 			"dictionary": "AudioEncoderConfig",
 			"definitions": [
@@ -22858,6 +23321,26 @@
 				{
 					"spec": "https://streams.spec.whatwg.org/",
 					"id": "dictdef-underlyingsink"
+				}
+			]
+		},
+		{
+			"name": "abort",
+			"dictionary": "ObservableInspector",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-observableinspector"
+				}
+			]
+		},
+		{
+			"name": "abs",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -23242,6 +23725,16 @@
 			]
 		},
 		{
+			"name": "add",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "added",
 			"dictionary": "XRInputSourcesChangeEventInit",
 			"definitions": [
@@ -23346,7 +23839,7 @@
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
 				}
 			]
@@ -23382,17 +23875,27 @@
 			]
 		},
 		{
-			"name": "adJSON",
-			"dictionary": "PreviousWin",
+			"name": "adRenderId",
+			"dictionary": "AuctionAd",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/turtledove/",
-					"id": "dictdef-previouswin"
+					"id": "dictdef-auctionad"
 				}
 			]
 		},
 		{
 			"name": "ads",
+			"dictionary": "GenerateBidInterestGroup",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-generatebidinterestgroup"
+				}
+			]
+		},
+		{
+			"name": "adSizes",
 			"dictionary": "GenerateBidInterestGroup",
 			"definitions": [
 				{
@@ -23508,6 +24011,16 @@
 				{
 					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-contentscriptdetails"
+				}
+			]
+		},
+		{
+			"name": "allAcceptedCredentialIds",
+			"dictionary": "AllAcceptedCredentialsOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-allacceptedcredentialsoptions"
 				}
 			]
 		},
@@ -23923,21 +24436,21 @@
 		},
 		{
 			"name": "amount",
-			"dictionary": "PaymentShippingOption",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/payment-handler/",
-					"id": "dom-paymentshippingoption"
-				}
-			]
-		},
-		{
-			"name": "amount",
 			"dictionary": "PaymentItem",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentitem"
+				}
+			]
+		},
+		{
+			"name": "amount",
+			"dictionary": "PaymentShippingOption",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentshippingoption"
 				}
 			]
 		},
@@ -24148,6 +24661,26 @@
 				{
 					"spec": "https://wicg.github.io/ua-client-hints/",
 					"id": "dictdef-uadatavalues"
+				}
+			]
+		},
+		{
+			"name": "argMax",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "argMin",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -24382,16 +24915,6 @@
 			]
 		},
 		{
-			"name": "attestation",
-			"dictionary": "AuthenticationExtensionsSupplementalPubKeysInputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionssupplementalpubkeysinputs"
-				}
-			]
-		},
-		{
 			"name": "attestationFormats",
 			"dictionary": "PublicKeyCredentialCreationOptionsJSON",
 			"definitions": [
@@ -24408,16 +24931,6 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-publickeycredentialcreationoptions"
-				}
-			]
-		},
-		{
-			"name": "attestationFormats",
-			"dictionary": "AuthenticationExtensionsSupplementalPubKeysInputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionssupplementalpubkeysinputs"
 				}
 			]
 		},
@@ -24932,6 +25445,16 @@
 			]
 		},
 		{
+			"name": "averagePool2d",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "averageRtcpInterval",
 			"dictionary": "RTCOutboundRtpStreamStats",
 			"definitions": [
@@ -24948,16 +25471,6 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-provisional-stats/",
 					"id": "ref-for-dictdef-rtcinboundrtpstreamstats"
-				}
-			]
-		},
-		{
-			"name": "axes",
-			"dictionary": "MLArgMinMaxOptions",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "dictdef-mlargminmaxoptions"
 				}
 			]
 		},
@@ -25078,6 +25591,26 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "dictdef-gpucolordict"
+				}
+			]
+		},
+		{
+			"name": "b",
+			"dictionary": "MLBinarySupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbinarysupportlimits"
+				}
+			]
+		},
+		{
+			"name": "b",
+			"dictionary": "MLGemmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgemmsupportlimits"
 				}
 			]
 		},
@@ -25242,6 +25775,16 @@
 			]
 		},
 		{
+			"name": "batchNormalization",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "baudRate",
 			"dictionary": "SerialOptions",
 			"definitions": [
@@ -25381,11 +25924,31 @@
 		},
 		{
 			"name": "bias",
+			"dictionary": "MLBatchNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbatchnormalizationsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "bias",
 			"dictionary": "MLConv2dOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlconv2doptions"
+				}
+			]
+		},
+		{
+			"name": "bias",
+			"dictionary": "MLConv2dSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlconv2dsupportlimits"
 				}
 			]
 		},
@@ -25411,6 +25974,16 @@
 		},
 		{
 			"name": "bias",
+			"dictionary": "MLGruSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrusupportlimits"
+				}
+			]
+		},
+		{
+			"name": "bias",
 			"dictionary": "MLGruCellOptions",
 			"definitions": [
 				{
@@ -25421,11 +25994,31 @@
 		},
 		{
 			"name": "bias",
+			"dictionary": "MLGruCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrucellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "bias",
 			"dictionary": "MLInstanceNormalizationOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlinstancenormalizationoptions"
+				}
+			]
+		},
+		{
+			"name": "bias",
+			"dictionary": "MLNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlnormalizationsupportlimits"
 				}
 			]
 		},
@@ -25451,11 +26044,31 @@
 		},
 		{
 			"name": "bias",
+			"dictionary": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "bias",
 			"dictionary": "MLLstmCellOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mllstmcelloptions"
+				}
+			]
+		},
+		{
+			"name": "bias",
+			"dictionary": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
 				}
 			]
 		},
@@ -26031,6 +26644,16 @@
 		},
 		{
 			"name": "bucket",
+			"dictionary": "RealTimeContribution",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-realtimecontribution"
+				}
+			]
+		},
+		{
+			"name": "bucket",
 			"dictionary": "PAHistogramContribution",
 			"definitions": [
 				{
@@ -26510,6 +27133,16 @@
 			]
 		},
 		{
+			"name": "c",
+			"dictionary": "MLGemmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgemmsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "cache",
 			"dictionary": "RequestInit",
 			"definitions": [
@@ -26710,12 +27343,42 @@
 			]
 		},
 		{
+			"name": "cast",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "category",
 			"dictionary": "ContentDescription",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/content-index/spec/",
 					"id": "dictdef-contentdescription"
+				}
+			]
+		},
+		{
+			"name": "ceil",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "cellState",
+			"dictionary": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
 				}
 			]
 		},
@@ -27188,8 +27851,18 @@
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
+				}
+			]
+		},
+		{
+			"name": "clamp",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -27572,8 +28245,8 @@
 			"dictionary": "RTCRtpEncodingParameters",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/webrtc-extensions/",
-					"id": "ref-for-dictdef-rtcrtpencodingparameters"
+					"spec": "https://w3c.github.io/webrtc-pc/",
+					"id": "dom-rtcrtpencodingparameters"
 				}
 			]
 		},
@@ -28032,6 +28705,16 @@
 			]
 		},
 		{
+			"name": "complete",
+			"dictionary": "ObservableInspector",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-observableinspector"
+				}
+			]
+		},
+		{
 			"name": "completeFramesOnly",
 			"dictionary": "ImageDecodeOptions",
 			"definitions": [
@@ -28182,6 +28865,16 @@
 			]
 		},
 		{
+			"name": "concat",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "concealedSamples",
 			"dictionary": "RTCInboundRtpStreamStats",
 			"definitions": [
@@ -28208,6 +28901,16 @@
 				{
 					"spec": "https://w3c.github.io/ServiceWorker/",
 					"id": "dictdef-routerrule"
+				}
+			]
+		},
+		{
+			"name": "condition",
+			"dictionary": "MLWhereSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlwheresupportlimits"
 				}
 			]
 		},
@@ -28388,6 +29091,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-stats/",
 					"id": "dom-rtcicecandidatepairstats"
+				}
+			]
+		},
+		{
+			"name": "constant",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -28632,6 +29345,26 @@
 			]
 		},
 		{
+			"name": "conv2d",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "convTranspose2d",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "cookies",
 			"dictionary": "StorageAccessTypes",
 			"definitions": [
@@ -28648,6 +29381,16 @@
 				{
 					"spec": "https://wicg.github.io/controlled-frame/",
 					"id": "dictdef-cleardatatypeset"
+				}
+			]
+		},
+		{
+			"name": "coordinatorOrigin",
+			"dictionary": "AdAuctionDataConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-adauctiondataconfig"
 				}
 			]
 		},
@@ -28688,6 +29431,16 @@
 				{
 					"spec": "https://wicg.github.io/shape-detection-api/text.html",
 					"id": "dictdef-detectedtext"
+				}
+			]
+		},
+		{
+			"name": "cos",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -28736,7 +29489,7 @@
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
 				}
 			]
@@ -28836,6 +29589,16 @@
 			]
 		},
 		{
+			"name": "credentialId",
+			"dictionary": "UnknownCredentialOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-unknowncredentialoptions"
+				}
+			]
+		},
+		{
 			"name": "credentialIds",
 			"dictionary": "SecurePaymentConfirmationRequest",
 			"definitions": [
@@ -28922,6 +29685,26 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-collectedclientdata"
+				}
+			]
+		},
+		{
+			"name": "crossOriginDataVersion",
+			"dictionary": "BiddingBrowserSignals",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-biddingbrowsersignals"
+				}
+			]
+		},
+		{
+			"name": "crossOriginDataVersion",
+			"dictionary": "ScoringBrowserSignals",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-scoringbrowsersignals"
 				}
 			]
 		},
@@ -29506,6 +30289,16 @@
 			]
 		},
 		{
+			"name": "dataOrigin",
+			"dictionary": "SharedStorageWorkletOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/shared-storage/",
+					"id": "dictdef-sharedstorageworkletoptions"
+				}
+			]
+		},
+		{
 			"name": "dataPrefix",
 			"dictionary": "BluetoothDataFilterInit",
 			"definitions": [
@@ -29562,6 +30355,16 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mloperanddescriptor"
+				}
+			]
+		},
+		{
+			"name": "dataTypes",
+			"dictionary": "MLSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlsupportlimits"
 				}
 			]
 		},
@@ -29874,7 +30677,7 @@
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
 				}
 			]
@@ -30911,6 +31714,16 @@
 		},
 		{
 			"name": "displayName",
+			"dictionary": "CurrentUserDetailsOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-currentuserdetailsoptions"
+				}
+			]
+		},
+		{
+			"name": "displayName",
 			"dictionary": "PublicKeyCredentialUserEntity",
 			"definitions": [
 				{
@@ -31036,6 +31849,16 @@
 				{
 					"spec": "https://w3c.github.io/media-capabilities/",
 					"id": "dictdef-mediacapabilitieskeysystemconfiguration"
+				}
+			]
+		},
+		{
+			"name": "div",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -31594,6 +32417,16 @@
 			]
 		},
 		{
+			"name": "elu",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "email",
 			"dictionary": "IdentityProviderAccount",
 			"definitions": [
@@ -31620,6 +32453,16 @@
 				{
 					"spec": "https://w3c.github.io/contact-picker/",
 					"id": "dictdef-contactinfo"
+				}
+			]
+		},
+		{
+			"name": "email",
+			"dictionary": "PayerErrors",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-payererrors"
 				}
 			]
 		},
@@ -32066,6 +32909,26 @@
 			]
 		},
 		{
+			"name": "equal",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "erf",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "error",
 			"dictionary": "ErrorEventInit",
 			"definitions": [
@@ -32112,6 +32975,16 @@
 				{
 					"spec": "https://w3c.github.io/payment-handler/",
 					"id": "dom-paymentrequestdetailsupdate"
+				}
+			]
+		},
+		{
+			"name": "error",
+			"dictionary": "PaymentDetailsUpdate",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentdetailsupdate"
 				}
 			]
 		},
@@ -32192,6 +33065,16 @@
 				{
 					"spec": "https://wicg.github.io/observable/",
 					"id": "dictdef-subscriptionobserver"
+				}
+			]
+		},
+		{
+			"name": "error",
+			"dictionary": "ObservableInspector",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-observableinspector"
 				}
 			]
 		},
@@ -32552,6 +33435,26 @@
 				{
 					"spec": "https://wicg.github.io/turtledove/",
 					"id": "dictdef-generatebidinterestgroup"
+				}
+			]
+		},
+		{
+			"name": "exp",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "expand",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -33040,6 +33943,16 @@
 			]
 		},
 		{
+			"name": "falseValue",
+			"dictionary": "MLWhereSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlwheresupportlimits"
+				}
+			]
+		},
+		{
 			"name": "fastMode",
 			"dictionary": "FaceDetectorOptions",
 			"definitions": [
@@ -33306,6 +34219,16 @@
 				{
 					"spec": "https://w3c.github.io/mediacapture-image/",
 					"id": "dictdef-photosettings"
+				}
+			]
+		},
+		{
+			"name": "filter",
+			"dictionary": "MLConv2dSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlconv2dsupportlimits"
 				}
 			]
 		},
@@ -33616,6 +34539,16 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "dictdef-gpuimagecopyexternalimage"
+				}
+			]
+		},
+		{
+			"name": "floor",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -34610,6 +35543,16 @@
 			]
 		},
 		{
+			"name": "gather",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "gatherPolicy",
 			"dictionary": "RTCIceGatherOptions",
 			"definitions": [
@@ -34620,6 +35563,26 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcicegatheroptions"
+				}
+			]
+		},
+		{
+			"name": "gelu",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "gemm",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -34748,6 +35711,26 @@
 			]
 		},
 		{
+			"name": "greater",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "greaterOrEqual",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "group",
 			"dictionary": "GenerateTestReportParameters",
 			"definitions": [
@@ -34848,6 +35831,26 @@
 			]
 		},
 		{
+			"name": "gru",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "gruCell",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "handle",
 			"dictionary": "FileSystemPermissionDescriptor",
 			"definitions": [
@@ -34894,6 +35897,26 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
 					"id": "dictdef-navigationinterceptoptions"
+				}
+			]
+		},
+		{
+			"name": "hardSigmoid",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "hardSwish",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -35213,6 +36236,16 @@
 		},
 		{
 			"name": "height",
+			"dictionary": "AuctionAdInterestGroupSize",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadinterestgroupsize"
+				}
+			]
+		},
+		{
+			"name": "height",
 			"dictionary": "AdRender",
 			"definitions": [
 				{
@@ -35388,6 +36421,26 @@
 				{
 					"spec": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
 					"id": "ref-for-dictdef-videoencoderencodeoptions"
+				}
+			]
+		},
+		{
+			"name": "hiddenState",
+			"dictionary": "MLGruCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrucellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "hiddenState",
+			"dictionary": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
 				}
 			]
 		},
@@ -35947,21 +37000,21 @@
 		},
 		{
 			"name": "id",
-			"dictionary": "PaymentShippingOption",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/payment-handler/",
-					"id": "dom-paymentshippingoption"
-				}
-			]
-		},
-		{
-			"name": "id",
 			"dictionary": "PaymentDetailsInit",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentdetailsinit"
+				}
+			]
+		},
+		{
+			"name": "id",
+			"dictionary": "PaymentShippingOption",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentshippingoption"
 				}
 			]
 		},
@@ -36212,6 +37265,16 @@
 				{
 					"spec": "https://fedidcg.github.io/FedCM/",
 					"id": "ref-for-dictdef-credentialrequestoptions"
+				}
+			]
+		},
+		{
+			"name": "identity",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -36536,6 +37599,16 @@
 			]
 		},
 		{
+			"name": "indices",
+			"dictionary": "MLGatherSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgathersupportlimits"
+				}
+			]
+		},
+		{
 			"name": "info",
 			"dictionary": "NavigationOptions",
 			"definitions": [
@@ -36656,6 +37729,16 @@
 			]
 		},
 		{
+			"name": "initialCellState",
+			"dictionary": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "initialHiddenState",
 			"dictionary": "MLGruOptions",
 			"definitions": [
@@ -36667,11 +37750,31 @@
 		},
 		{
 			"name": "initialHiddenState",
+			"dictionary": "MLGruSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrusupportlimits"
+				}
+			]
+		},
+		{
+			"name": "initialHiddenState",
 			"dictionary": "MLLstmOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mllstmoptions"
+				}
+			]
+		},
+		{
+			"name": "initialHiddenState",
+			"dictionary": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
 				}
 			]
 		},
@@ -36722,6 +37825,126 @@
 				{
 					"spec": "https://urlpattern.spec.whatwg.org/",
 					"id": "dictdef-urlpatterncomponentresult"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLSingleInputSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlsingleinputsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLBatchNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbatchnormalizationsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLConv2dSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlconv2dsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLGatherSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgathersupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLGruSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrusupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLGruCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrucellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlnormalizationsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLPreluSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlprelusupportlimits"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"dictionary": "MLSplitSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlsplitsupportlimits"
 				}
 			]
 		},
@@ -36782,6 +38005,16 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlcomputeresult"
+				}
+			]
+		},
+		{
+			"name": "inputs",
+			"dictionary": "MLConcatSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlconcatsupportlimits"
 				}
 			]
 		},
@@ -36872,6 +38105,16 @@
 				{
 					"spec": "https://webassembly.github.io/spec/js-api/",
 					"id": "dictdef-webassemblyinstantiatedsource"
+				}
+			]
+		},
+		{
+			"name": "instanceNormalization",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -37846,6 +39089,16 @@
 			]
 		},
 		{
+			"name": "l2Pool2d",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "label",
 			"dictionary": "MockCaptureDeviceConfiguration",
 			"definitions": [
@@ -37877,21 +39130,21 @@
 		},
 		{
 			"name": "label",
-			"dictionary": "PaymentShippingOption",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/payment-handler/",
-					"id": "dom-paymentshippingoption"
-				}
-			]
-		},
-		{
-			"name": "label",
 			"dictionary": "PaymentItem",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentitem"
+				}
+			]
+		},
+		{
+			"name": "label",
+			"dictionary": "PaymentShippingOption",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentshippingoption"
 				}
 			]
 		},
@@ -37912,6 +39165,16 @@
 				{
 					"spec": "https://gpuweb.github.io/gpuweb/",
 					"id": "dictdef-gpuobjectdescriptorbase"
+				}
+			]
+		},
+		{
+			"name": "label",
+			"dictionary": "MLOperatorOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mloperatoroptions"
 				}
 			]
 		},
@@ -38160,6 +39423,16 @@
 			]
 		},
 		{
+			"name": "latencyThreshold",
+			"dictionary": "RealTimeContribution",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-realtimecontribution"
+				}
+			]
+		},
+		{
 			"name": "latitude",
 			"dictionary": "GeolocationSensorReading",
 			"definitions": [
@@ -38176,6 +39449,16 @@
 				{
 					"spec": "https://immersive-web.github.io/layers/",
 					"id": "dictdef-xrlayereventinit"
+				}
+			]
+		},
+		{
+			"name": "layerNormalization",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -38320,6 +39603,16 @@
 			]
 		},
 		{
+			"name": "leakyRelu",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "left",
 			"dictionary": "ScrollToOptions",
 			"definitions": [
@@ -38450,12 +39743,32 @@
 			]
 		},
 		{
+			"name": "lesser",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "lesserOrEqual",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "lifetimeMs",
-			"dictionary": "GenerateBidInterestGroup",
+			"dictionary": "AuctionAdInterestGroup",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/turtledove/",
-					"id": "dictdef-generatebidinterestgroup"
+					"id": "dictdef-auctionadinterestgroup"
 				}
 			]
 		},
@@ -38466,6 +39779,16 @@
 				{
 					"spec": "https://wicg.github.io/js-self-profiling/",
 					"id": "dom-profilerframe"
+				}
+			]
+		},
+		{
+			"name": "linear",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -38680,6 +40003,16 @@
 			]
 		},
 		{
+			"name": "log",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "logicalMaximum",
 			"dictionary": "HIDReportItem",
 			"definitions": [
@@ -38696,6 +40029,16 @@
 				{
 					"spec": "https://wicg.github.io/webhid/",
 					"id": "dom-hidreportitem"
+				}
+			]
+		},
+		{
+			"name": "logicalNot",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -38836,6 +40179,26 @@
 				{
 					"spec": "https://immersive-web.github.io/layers/",
 					"id": "dictdef-xrmediaequirectlayerinit"
+				}
+			]
+		},
+		{
+			"name": "lstm",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "lstmCell",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -39110,6 +40473,16 @@
 			]
 		},
 		{
+			"name": "matmul",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "matrix",
 			"dictionary": "VideoColorSpaceInit",
 			"definitions": [
@@ -39146,6 +40519,16 @@
 				{
 					"spec": "https://w3c.github.io/mediacapture-main/",
 					"id": "dom-ulongrange"
+				}
+			]
+		},
+		{
+			"name": "max",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -39342,6 +40725,16 @@
 			]
 		},
 		{
+			"name": "maxPool2d",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "maxptime",
 			"dictionary": "RTCRtpCodecCapability",
 			"definitions": [
@@ -39448,6 +40841,16 @@
 				{
 					"spec": "https://webbluetoothcg.github.io/web-bluetooth/",
 					"id": "dictdef-allowedbluetoothdevice"
+				}
+			]
+		},
+		{
+			"name": "mean",
+			"dictionary": "MLBatchNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbatchnormalizationsupportlimits"
 				}
 			]
 		},
@@ -39938,6 +41341,16 @@
 				{
 					"spec": "https://w3c.github.io/mediacapture-main/",
 					"id": "dom-ulongrange"
+				}
+			]
+		},
+		{
+			"name": "min",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -40532,6 +41945,16 @@
 			]
 		},
 		{
+			"name": "mul",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "multiBidLimit",
 			"dictionary": "BiddingBrowserSignals",
 			"definitions": [
@@ -40873,6 +42296,16 @@
 		},
 		{
 			"name": "name",
+			"dictionary": "PayerErrors",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-payererrors"
+				}
+			]
+		},
+		{
+			"name": "name",
 			"dictionary": "PermissionDescriptor",
 			"definitions": [
 				{
@@ -40928,6 +42361,16 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-publickeycredentialuserentityjson"
+				}
+			]
+		},
+		{
+			"name": "name",
+			"dictionary": "CurrentUserDetailsOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-currentuserdetailsoptions"
 				}
 			]
 		},
@@ -41082,6 +42525,16 @@
 			]
 		},
 		{
+			"name": "neg",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "negotiated",
 			"dictionary": "RTCDataChannelInit",
 			"definitions": [
@@ -41188,6 +42641,16 @@
 				{
 					"spec": "https://wicg.github.io/observable/",
 					"id": "dictdef-subscriptionobserver"
+				}
+			]
+		},
+		{
+			"name": "next",
+			"dictionary": "ObservableInspector",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-observableinspector"
 				}
 			]
 		},
@@ -41786,7 +43249,7 @@
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
 				}
 			]
@@ -42002,6 +43465,146 @@
 			]
 		},
 		{
+			"name": "output",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLBinarySupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbinarysupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLSingleInputSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlsingleinputsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLBatchNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbatchnormalizationsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLConcatSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlconcatsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLConv2dSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlconv2dsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLLogicalNotSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllogicalnotsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLGatherSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgathersupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLGemmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgemmsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLGruCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrucellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlnormalizationsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLPreluSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlprelusupportlimits"
+				}
+			]
+		},
+		{
+			"name": "output",
+			"dictionary": "MLWhereSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlwheresupportlimits"
+				}
+			]
+		},
+		{
 			"name": "output1",
 			"dictionary": "HMACGetSecretOutput",
 			"definitions": [
@@ -42042,6 +43645,16 @@
 			]
 		},
 		{
+			"name": "outputDataType",
+			"dictionary": "MLArgMinMaxOptions",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlargminmaxoptions"
+				}
+			]
+		},
+		{
 			"name": "outputPadding",
 			"dictionary": "MLConvTranspose2dOptions",
 			"definitions": [
@@ -42068,6 +43681,36 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlcomputeresult"
+				}
+			]
+		},
+		{
+			"name": "outputs",
+			"dictionary": "MLGruSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrusupportlimits"
+				}
+			]
+		},
+		{
+			"name": "outputs",
+			"dictionary": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "outputs",
+			"dictionary": "MLSplitSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlsplitsupportlimits"
 				}
 			]
 		},
@@ -42368,6 +44011,16 @@
 				{
 					"spec": "https://w3c.github.io/webtransport/",
 					"id": "dictdef-webtransportconnectionstats"
+				}
+			]
+		},
+		{
+			"name": "pad",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -42906,12 +44559,32 @@
 			]
 		},
 		{
+			"name": "payer",
+			"dictionary": "PaymentValidationErrors",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentvalidationerrors"
+				}
+			]
+		},
+		{
 			"name": "payerEmail",
 			"dictionary": "PaymentHandlerResponse",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/payment-handler/",
 					"id": "dom-paymenthandlerresponse"
+				}
+			]
+		},
+		{
+			"name": "payerErrors",
+			"dictionary": "PaymentDetailsUpdate",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentdetailsupdate"
 				}
 			]
 		},
@@ -43107,11 +44780,31 @@
 		},
 		{
 			"name": "peepholeWeight",
+			"dictionary": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "peepholeWeight",
 			"dictionary": "MLLstmCellOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mllstmcelloptions"
+				}
+			]
+		},
+		{
+			"name": "peepholeWeight",
+			"dictionary": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
 				}
 			]
 		},
@@ -43217,6 +44910,16 @@
 		},
 		{
 			"name": "perBuyerPrioritySignals",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
+			"name": "perBuyerRealTimeReportingConfig",
 			"dictionary": "AuctionAdConfig",
 			"definitions": [
 				{
@@ -43386,6 +45089,16 @@
 			]
 		},
 		{
+			"name": "persistentDeviceId",
+			"dictionary": "PointerEventInit",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/pointerevents/",
+					"id": "dom-pointereventinit"
+				}
+			]
+		},
+		{
 			"name": "persistentState",
 			"dictionary": "MediaKeySystemConfiguration",
 			"definitions": [
@@ -43417,10 +45130,20 @@
 		},
 		{
 			"name": "phone",
+			"dictionary": "PayerErrors",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-payererrors"
+				}
+			]
+		},
+		{
+			"name": "phone",
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
 				}
 			]
@@ -43820,7 +45543,7 @@
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
 				}
 			]
@@ -43832,6 +45555,16 @@
 				{
 					"spec": "https://wicg.github.io/local-font-access/",
 					"id": "dictdef-queryoptions"
+				}
+			]
+		},
+		{
+			"name": "pow",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -43990,6 +45723,16 @@
 			]
 		},
 		{
+			"name": "preferInitialWindowPlacement",
+			"dictionary": "DocumentPictureInPictureOptions",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/document-picture-in-picture/",
+					"id": "dictdef-documentpictureinpictureoptions"
+				}
+			]
+		},
+		{
 			"name": "preferredEncrypt",
 			"dictionary": "RTCRtpHeaderExtension",
 			"definitions": [
@@ -44006,6 +45749,16 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcrtpheaderextension"
+				}
+			]
+		},
+		{
+			"name": "preferredInputLayout",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -44036,6 +45789,16 @@
 				{
 					"spec": "https://w3c.github.io/ServiceWorker/",
 					"id": "dictdef-fetcheventinit"
+				}
+			]
+		},
+		{
+			"name": "prelu",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -44291,16 +46054,6 @@
 		},
 		{
 			"name": "priority",
-			"dictionary": "SchedulerYieldOptions",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/scheduling-apis/",
-					"id": "dictdef-scheduleryieldoptions"
-				}
-			]
-		},
-		{
-			"name": "priority",
 			"dictionary": "TaskControllerInit",
 			"definitions": [
 				{
@@ -44406,6 +46159,16 @@
 				{
 					"spec": "https://wicg.github.io/turtledove/",
 					"id": "dictdef-generatebidinterestgroup"
+				}
+			]
+		},
+		{
+			"name": "priorityWeight",
+			"dictionary": "RealTimeContribution",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-realtimecontribution"
 				}
 			]
 		},
@@ -44591,11 +46354,11 @@
 		},
 		{
 			"name": "protocol",
-			"dictionary": "IdentityRequestProvider",
+			"dictionary": "DigitalCredentialsProvider",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/digital-identities/",
-					"id": "dom-identityrequestprovider"
+					"id": "dom-digitalcredentialsprovider"
 				}
 			]
 		},
@@ -45564,8 +47327,18 @@
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
+				}
+			]
+		},
+		{
+			"name": "reciprocal",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -45651,11 +47424,31 @@
 		},
 		{
 			"name": "recurrentBias",
+			"dictionary": "MLGruSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrusupportlimits"
+				}
+			]
+		},
+		{
+			"name": "recurrentBias",
 			"dictionary": "MLGruCellOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlgrucelloptions"
+				}
+			]
+		},
+		{
+			"name": "recurrentBias",
+			"dictionary": "MLGruCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrucellsupportlimits"
 				}
 			]
 		},
@@ -45671,11 +47464,71 @@
 		},
 		{
 			"name": "recurrentBias",
+			"dictionary": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "recurrentBias",
 			"dictionary": "MLLstmCellOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mllstmcelloptions"
+				}
+			]
+		},
+		{
+			"name": "recurrentBias",
+			"dictionary": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "recurrentWeight",
+			"dictionary": "MLGruSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrusupportlimits"
+				}
+			]
+		},
+		{
+			"name": "recurrentWeight",
+			"dictionary": "MLGruCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrucellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "recurrentWeight",
+			"dictionary": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "recurrentWeight",
+			"dictionary": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
 				}
 			]
 		},
@@ -45730,6 +47583,106 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "dictdef-rtcrtcpparameters"
+				}
+			]
+		},
+		{
+			"name": "reduceL1",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "reduceL2",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "reduceLogSum",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "reduceLogSumExp",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "reduceMax",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "reduceMean",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "reduceMin",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "reduceProduct",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "reduceSum",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "reduceSumSquare",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -45878,7 +47831,7 @@
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
 				}
 			]
@@ -46010,6 +47963,16 @@
 				{
 					"spec": "https://webaudio.github.io/web-audio-api/",
 					"id": "dictdef-dynamicscompressoroptions"
+				}
+			]
+		},
+		{
+			"name": "relu",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -46305,11 +48268,21 @@
 		},
 		{
 			"name": "request",
-			"dictionary": "IdentityRequestProvider",
+			"dictionary": "DigitalCredentialsProvider",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/digital-identities/",
-					"id": "dom-identityrequestprovider"
+					"id": "dom-digitalcredentialsprovider"
+				}
+			]
+		},
+		{
+			"name": "request",
+			"dictionary": "AdAuctionData",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-adauctiondata"
 				}
 			]
 		},
@@ -46338,7 +48311,7 @@
 			"dictionary": "PaymentOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentoptions"
 				}
 			]
@@ -46394,6 +48367,26 @@
 			]
 		},
 		{
+			"name": "requestId",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
+			"name": "requestId",
+			"dictionary": "AdAuctionData",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-adauctiondata"
+				}
+			]
+		},
+		{
 			"name": "requestMethod",
 			"dictionary": "RouterCondition",
 			"definitions": [
@@ -46418,7 +48411,7 @@
 			"dictionary": "PaymentOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentoptions"
 				}
 			]
@@ -46428,7 +48421,7 @@
 			"dictionary": "PaymentOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentoptions"
 				}
 			]
@@ -46438,7 +48431,7 @@
 			"dictionary": "PaymentOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentoptions"
 				}
 			]
@@ -46448,7 +48441,7 @@
 			"dictionary": "PaymentOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentoptions"
 				}
 			]
@@ -46574,6 +48567,16 @@
 			]
 		},
 		{
+			"name": "resample2d",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "resetAfter",
 			"dictionary": "MLGruOptions",
 			"definitions": [
@@ -46590,6 +48593,16 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlgrucelloptions"
+				}
+			]
+		},
+		{
+			"name": "reshape",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -47285,6 +49298,36 @@
 		},
 		{
 			"name": "rpId",
+			"dictionary": "UnknownCredentialOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-unknowncredentialoptions"
+				}
+			]
+		},
+		{
+			"name": "rpId",
+			"dictionary": "AllAcceptedCredentialsOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-allacceptedcredentialsoptions"
+				}
+			]
+		},
+		{
+			"name": "rpId",
+			"dictionary": "CurrentUserDetailsOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-currentuserdetailsoptions"
+				}
+			]
+		},
+		{
+			"name": "rpId",
 			"dictionary": "PublicKeyCredentialRequestOptions",
 			"definitions": [
 				{
@@ -47909,11 +49952,31 @@
 		},
 		{
 			"name": "scale",
+			"dictionary": "MLBatchNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbatchnormalizationsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "scale",
 			"dictionary": "MLInstanceNormalizationOptions",
 			"definitions": [
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "dictdef-mlinstancenormalizationoptions"
+				}
+			]
+		},
+		{
+			"name": "scale",
+			"dictionary": "MLNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlnormalizationsupportlimits"
 				}
 			]
 		},
@@ -48004,16 +50067,6 @@
 				{
 					"spec": "https://tabatkins.github.io/css-toggle/",
 					"id": "dictdef-csstoggledata"
-				}
-			]
-		},
-		{
-			"name": "scopes",
-			"dictionary": "AuthenticationExtensionsSupplementalPubKeysInputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionssupplementalpubkeysinputs"
 				}
 			]
 		},
@@ -48256,7 +50309,7 @@
 			"dictionary": "PaymentShippingOption",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentshippingoption"
 				}
 			]
@@ -48332,16 +50385,6 @@
 			]
 		},
 		{
-			"name": "selectLastIndex",
-			"dictionary": "MLArgMinMaxOptions",
-			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "dictdef-mlargminmaxoptions"
-				}
-			]
-		},
-		{
 			"name": "selfBrowserSurface",
 			"dictionary": "DisplayMediaStreamOptions",
 			"definitions": [
@@ -48358,6 +50401,16 @@
 				{
 					"spec": "https://wicg.github.io/turtledove/",
 					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
+			"name": "seller",
+			"dictionary": "AdAuctionDataConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-adauctiondataconfig"
 				}
 			]
 		},
@@ -48403,6 +50456,16 @@
 		},
 		{
 			"name": "sellerExperimentGroupId",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadconfig"
+				}
+			]
+		},
+		{
+			"name": "sellerRealTimeReportingConfig",
 			"dictionary": "AuctionAdConfig",
 			"definitions": [
 				{
@@ -48578,6 +50641,16 @@
 				{
 					"spec": "https://w3c.github.io/webtransport/",
 					"id": "dictdef-webtransportoptions"
+				}
+			]
+		},
+		{
+			"name": "serverResponse",
+			"dictionary": "AuctionAdConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadconfig"
 				}
 			]
 		},
@@ -48792,12 +50865,32 @@
 			]
 		},
 		{
+			"name": "shippingAddress",
+			"dictionary": "PaymentValidationErrors",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentvalidationerrors"
+				}
+			]
+		},
+		{
 			"name": "shippingAddressErrors",
 			"dictionary": "PaymentRequestDetailsUpdate",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/payment-handler/",
 					"id": "dom-paymentrequestdetailsupdate"
+				}
+			]
+		},
+		{
+			"name": "shippingAddressErrors",
+			"dictionary": "PaymentDetailsUpdate",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentdetailsupdate"
 				}
 			]
 		},
@@ -48832,11 +50925,21 @@
 			]
 		},
 		{
+			"name": "shippingOptions",
+			"dictionary": "PaymentDetailsBase",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentdetailsbase"
+				}
+			]
+		},
+		{
 			"name": "shippingType",
 			"dictionary": "PaymentOptions",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-paymentoptions"
 				}
 			]
@@ -48848,6 +50951,16 @@
 				{
 					"spec": "https://w3c.github.io/secure-payment-confirmation/",
 					"id": "dictdef-securepaymentconfirmationrequest"
+				}
+			]
+		},
+		{
+			"name": "sigmoid",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -48973,16 +51086,6 @@
 		},
 		{
 			"name": "signal",
-			"dictionary": "SchedulerYieldOptions",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/scheduling-apis/",
-					"id": "dictdef-scheduleryieldoptions"
-				}
-			]
-		},
-		{
-			"name": "signal",
 			"dictionary": "AuctionAdConfig",
 			"definitions": [
 				{
@@ -49082,16 +51185,6 @@
 			]
 		},
 		{
-			"name": "signatures",
-			"dictionary": "AuthenticationExtensionsSupplementalPubKeysOutputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "dictdef-authenticationextensionssupplementalpubkeysoutputs"
-				}
-			]
-		},
-		{
 			"name": "silent",
 			"dictionary": "NotificationOptions",
 			"definitions": [
@@ -49108,6 +51201,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-stats/",
 					"id": "dom-rtcinboundrtpstreamstats"
+				}
+			]
+		},
+		{
+			"name": "sin",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -49192,6 +51295,26 @@
 			]
 		},
 		{
+			"name": "sizeGroup",
+			"dictionary": "AuctionAd",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionad"
+				}
+			]
+		},
+		{
+			"name": "sizeGroups",
+			"dictionary": "GenerateBidInterestGroup",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-generatebidinterestgroup"
+				}
+			]
+		},
+		{
 			"name": "sizes",
 			"dictionary": "ImageResource",
 			"definitions": [
@@ -49242,6 +51365,16 @@
 			]
 		},
 		{
+			"name": "slice",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "sliCount",
 			"dictionary": "RTCOutboundRtpStreamStats",
 			"definitions": [
@@ -49258,6 +51391,16 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-provisional-stats/",
 					"id": "ref-for-dictdef-rtcinboundrtpstreamstats"
+				}
+			]
+		},
+		{
+			"name": "slope",
+			"dictionary": "MLPreluSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlprelusupportlimits"
 				}
 			]
 		},
@@ -49332,6 +51475,36 @@
 			]
 		},
 		{
+			"name": "softmax",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "softplus",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "softsign",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "software",
 			"dictionary": "MIDIOptions",
 			"definitions": [
@@ -49356,7 +51529,7 @@
 			"dictionary": "AddressErrors",
 			"definitions": [
 				{
-					"spec": "https://w3c.github.io/payment-handler/",
+					"spec": "https://w3c.github.io/payment-request/",
 					"id": "dom-addresserrors"
 				}
 			]
@@ -49472,16 +51645,6 @@
 			]
 		},
 		{
-			"name": "sourceMap",
-			"dictionary": "GPUShaderModuleDescriptor",
-			"definitions": [
-				{
-					"spec": "https://gpuweb.github.io/gpuweb/",
-					"id": "dictdef-gpushadermoduledescriptor"
-				}
-			]
-		},
-		{
 			"name": "space",
 			"dictionary": "XRHitTestOptionsInit",
 			"definitions": [
@@ -49548,6 +51711,26 @@
 				{
 					"spec": "https://w3c.github.io/geolocation-sensor/",
 					"id": "dictdef-geolocationsensorreading"
+				}
+			]
+		},
+		{
+			"name": "split",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "sqrt",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -50336,6 +52519,16 @@
 			]
 		},
 		{
+			"name": "sub",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "subclassCode",
 			"dictionary": "USBDeviceFilter",
 			"definitions": [
@@ -50372,6 +52565,16 @@
 				{
 					"spec": "https://w3c.github.io/webappsec-suborigins/",
 					"id": "dictdef-extendedorigin"
+				}
+			]
+		},
+		{
+			"name": "subscribe",
+			"dictionary": "ObservableInspector",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "dictdef-observableinspector"
 				}
 			]
 		},
@@ -50422,26 +52625,6 @@
 				{
 					"spec": "https://w3c.github.io/webrtc-provisional-stats/",
 					"id": "ref-for-dictdef-rtcvideoreceiverstats"
-				}
-			]
-		},
-		{
-			"name": "supplementalPubKeys",
-			"dictionary": "AuthenticationExtensionsClientInputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "ref-for-dictdef-authenticationextensionsclientinputs"
-				}
-			]
-		},
-		{
-			"name": "supplementalPubKeys",
-			"dictionary": "AuthenticationExtensionsClientOutputs",
-			"definitions": [
-				{
-					"spec": "https://w3c.github.io/webauthn/",
-					"id": "ref-for-dictdef-authenticationextensionsclientoutputs"
 				}
 			]
 		},
@@ -50816,12 +52999,32 @@
 			]
 		},
 		{
+			"name": "tan",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "tangentialPressure",
 			"dictionary": "PointerEventInit",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/pointerevents/",
 					"id": "dom-pointereventinit"
+				}
+			]
+		},
+		{
+			"name": "tanh",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
 				}
 			]
 		},
@@ -51290,16 +53493,6 @@
 				{
 					"spec": "https://w3c.github.io/mediacapture-record/",
 					"id": "dictdef-blobeventinit"
-				}
-			]
-		},
-		{
-			"name": "timeDelta",
-			"dictionary": "PreviousWin",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/turtledove/",
-					"id": "dictdef-previouswin"
 				}
 			]
 		},
@@ -52728,6 +54921,26 @@
 			]
 		},
 		{
+			"name": "transpose",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "triangular",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "trid",
 			"dictionary": "EncryptedTokenizedCard",
 			"definitions": [
@@ -52754,6 +54967,16 @@
 				{
 					"spec": "https://wicg.github.io/attribution-reporting-api/",
 					"id": "dictdef-attributionreportingrequestoptions"
+				}
+			]
+		},
+		{
+			"name": "trueValue",
+			"dictionary": "MLWhereSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlwheresupportlimits"
 				}
 			]
 		},
@@ -52884,6 +55107,16 @@
 				{
 					"spec": "https://wicg.github.io/shape-detection-api/",
 					"id": "dictdef-landmark"
+				}
+			]
+		},
+		{
+			"name": "type",
+			"dictionary": "AuctionRealTimeReportingConfig",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionrealtimereportingconfig"
 				}
 			]
 		},
@@ -53903,6 +56136,16 @@
 		},
 		{
 			"name": "usage",
+			"dictionary": "GPUTextureViewDescriptor",
+			"definitions": [
+				{
+					"spec": "https://gpuweb.github.io/gpuweb/",
+					"id": "dictdef-gputextureviewdescriptor"
+				}
+			]
+		},
+		{
+			"name": "usage",
 			"dictionary": "GPUCanvasConfiguration",
 			"definitions": [
 				{
@@ -54108,6 +56351,26 @@
 				{
 					"spec": "https://w3c.github.io/webauthn/",
 					"id": "dictdef-authenticatorassertionresponsejson"
+				}
+			]
+		},
+		{
+			"name": "userId",
+			"dictionary": "AllAcceptedCredentialsOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-allacceptedcredentialsoptions"
+				}
+			]
+		},
+		{
+			"name": "userId",
+			"dictionary": "CurrentUserDetailsOptions",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "dictdef-currentuserdetailsoptions"
 				}
 			]
 		},
@@ -54426,6 +56689,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/custom-elements.html",
 					"id": "dictdef-validitystateflags"
+				}
+			]
+		},
+		{
+			"name": "variance",
+			"dictionary": "MLBatchNormalizationSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlbatchnormalizationsupportlimits"
 				}
 			]
 		},
@@ -54960,6 +57233,56 @@
 			]
 		},
 		{
+			"name": "weight",
+			"dictionary": "MLGruSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrusupportlimits"
+				}
+			]
+		},
+		{
+			"name": "weight",
+			"dictionary": "MLGruCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mlgrucellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "weight",
+			"dictionary": "MLLstmSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "weight",
+			"dictionary": "MLLstmCellSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "dictdef-mllstmcellsupportlimits"
+				}
+			]
+		},
+		{
+			"name": "where",
+			"dictionary": "MLOpSupportLimits",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "ref-for-dictdef-mlopsupportlimits"
+				}
+			]
+		},
+		{
 			"name": "which",
 			"dictionary": "UIEventInit",
 			"definitions": [
@@ -55026,6 +57349,16 @@
 				{
 					"spec": "https://wicg.github.io/document-picture-in-picture/",
 					"id": "dictdef-documentpictureinpictureoptions"
+				}
+			]
+		},
+		{
+			"name": "width",
+			"dictionary": "AuctionAdInterestGroupSize",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "dictdef-auctionadinterestgroupsize"
 				}
 			]
 		},
@@ -58302,6 +60635,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/form-elements.html",
 					"id": "htmltextareaelement"
+				}
+			]
+		},
+		{
+			"name": "autocorrect",
+			"interface": "HTMLElement",
+			"definitions": [
+				{
+					"spec": "https://html.spec.whatwg.org/multipage/dom.html",
+					"id": "htmlelement"
 				}
 			]
 		},
@@ -63090,16 +65433,6 @@
 			]
 		},
 		{
-			"name": "containerHeight",
-			"interface": "FencedFrameConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/fenced-frame/",
-					"id": "fencedframeconfig"
-				}
-			]
-		},
-		{
 			"name": "containerId",
 			"interface": "TaskAttributionTiming",
 			"definitions": [
@@ -63156,16 +65489,6 @@
 				{
 					"spec": "https://w3c.github.io/longtasks/",
 					"id": "taskattributiontiming"
-				}
-			]
-		},
-		{
-			"name": "containerWidth",
-			"interface": "FencedFrameConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/fenced-frame/",
-					"id": "fencedframeconfig"
 				}
 			]
 		},
@@ -63240,16 +65563,6 @@
 			]
 		},
 		{
-			"name": "contentHeight",
-			"interface": "FencedFrameConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/fenced-frame/",
-					"id": "fencedframeconfig"
-				}
-			]
-		},
-		{
 			"name": "contentHint",
 			"interface": "MediaStreamTrack",
 			"definitions": [
@@ -63286,16 +65599,6 @@
 				{
 					"spec": "https://w3c.github.io/resource-timing/",
 					"id": "dom-performanceresourcetiming"
-				}
-			]
-		},
-		{
-			"name": "contentWidth",
-			"interface": "FencedFrameConfig",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/fenced-frame/",
-					"id": "fencedframeconfig"
 				}
 			]
 		},
@@ -68538,16 +70841,6 @@
 			]
 		},
 		{
-			"name": "expectedImprovement",
-			"interface": "InkPresenter",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/ink-enhancement/",
-					"id": "inkpresenter"
-				}
-			]
-		},
-		{
 			"name": "expiration",
 			"interface": "MediaKeySession",
 			"definitions": [
@@ -73701,16 +75994,6 @@
 			]
 		},
 		{
-			"name": "inset-area",
-			"interface": "CSSPositionTryDescriptors",
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/",
-					"id": "csspositiontrydescriptors"
-				}
-			]
-		},
-		{
 			"name": "inset-block",
 			"interface": "CSSPositionTryDescriptors",
 			"definitions": [
@@ -73762,16 +76045,6 @@
 		},
 		{
 			"name": "inset-inline-start",
-			"interface": "CSSPositionTryDescriptors",
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-anchor-position-1/",
-					"id": "csspositiontrydescriptors"
-				}
-			]
-		},
-		{
-			"name": "insetArea",
 			"interface": "CSSPositionTryDescriptors",
 			"definitions": [
 				{
@@ -78188,6 +80461,26 @@
 		},
 		{
 			"name": "matches",
+			"interface": "CSSMediaRule",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-conditional-3/",
+					"id": "cssmediarule"
+				}
+			]
+		},
+		{
+			"name": "matches",
+			"interface": "CSSSupportsRule",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-conditional-3/",
+					"id": "csssupportsrule"
+				}
+			]
+		},
+		{
+			"name": "matches",
 			"interface": "MediaQueryList",
 			"definitions": [
 				{
@@ -79141,16 +81434,6 @@
 				{
 					"spec": "https://drafts.csswg.org/css-anchor-position-1/",
 					"id": "csspositiontrydescriptors"
-				}
-			]
-		},
-		{
-			"name": "maxInterStageShaderComponents",
-			"interface": "GPUSupportedLimits",
-			"definitions": [
-				{
-					"spec": "https://gpuweb.github.io/gpuweb/",
-					"id": "gpusupportedlimits"
 				}
 			]
 		},
@@ -85516,6 +87799,16 @@
 			]
 		},
 		{
+			"name": "onpayerdetailchange",
+			"interface": "PaymentResponse",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentresponse"
+				}
+			]
+		},
+		{
 			"name": "onpaymentmethodchange",
 			"interface": "PaymentRequest",
 			"definitions": [
@@ -86292,6 +88585,26 @@
 				{
 					"spec": "https://webbluetoothcg.github.io/web-bluetooth/",
 					"id": "serviceeventhandlers"
+				}
+			]
+		},
+		{
+			"name": "onshippingaddresschange",
+			"interface": "PaymentRequest",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentrequest"
+				}
+			]
+		},
+		{
+			"name": "onshippingoptionchange",
+			"interface": "PaymentRequest",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentrequest"
 				}
 			]
 		},
@@ -88431,6 +90744,36 @@
 			]
 		},
 		{
+			"name": "payerEmail",
+			"interface": "PaymentResponse",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentresponse"
+				}
+			]
+		},
+		{
+			"name": "payerName",
+			"interface": "PaymentResponse",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentresponse"
+				}
+			]
+		},
+		{
+			"name": "payerPhone",
+			"interface": "PaymentResponse",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentresponse"
+				}
+			]
+		},
+		{
 			"name": "payloadType",
 			"interface": "RTCRtpUnhandledEvent",
 			"definitions": [
@@ -88699,6 +91042,16 @@
 				{
 					"spec": "https://immersive-web.github.io/anchors/",
 					"id": "ref-for-xrsession"
+				}
+			]
+		},
+		{
+			"name": "persistentDeviceId",
+			"interface": "PointerEvent",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/pointerevents/",
+					"id": "dom-pointerevent"
 				}
 			]
 		},
@@ -89471,6 +91824,16 @@
 			]
 		},
 		{
+			"name": "position-area",
+			"interface": "CSSPositionTryDescriptors",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/",
+					"id": "csspositiontrydescriptors"
+				}
+			]
+		},
+		{
 			"name": "POSITION_UNAVAILABLE",
 			"interface": "GeolocationPositionError",
 			"static": true,
@@ -89493,6 +91856,16 @@
 		},
 		{
 			"name": "positionAnchor",
+			"interface": "CSSPositionTryDescriptors",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-anchor-position-1/",
+					"id": "csspositiontrydescriptors"
+				}
+			]
+		},
+		{
+			"name": "positionArea",
 			"interface": "CSSPositionTryDescriptors",
 			"definitions": [
 				{
@@ -91277,6 +93650,16 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "rtcdatachannel"
+				}
+			]
+		},
+		{
+			"name": "realTimeReporting",
+			"interface": "InterestGroupBiddingAndScoringScriptRunnerGlobalScope",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "interestgroupbiddingandscoringscriptrunnerglobalscope"
 				}
 			]
 		},
@@ -94089,6 +96472,16 @@
 			]
 		},
 		{
+			"name": "sandbox",
+			"interface": "HTMLFencedFrameElement",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/fenced-frame/",
+					"id": "htmlfencedframeelement"
+				}
+			]
+		},
+		{
 			"name": "saveData",
 			"interface": "NetworkInformationSaveData",
 			"definitions": [
@@ -94699,6 +97092,16 @@
 				{
 					"spec": "https://html.spec.whatwg.org/multipage/media.html",
 					"id": "htmlmediaelement"
+				}
+			]
+		},
+		{
+			"name": "segments",
+			"interface": "Viewport",
+			"definitions": [
+				{
+					"spec": "https://drafts.csswg.org/css-viewport-1/",
+					"id": "viewport"
 				}
 			]
 		},
@@ -95416,12 +97819,62 @@
 			]
 		},
 		{
+			"name": "shippingAddress",
+			"interface": "PaymentRequest",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentrequest"
+				}
+			]
+		},
+		{
+			"name": "shippingAddress",
+			"interface": "PaymentResponse",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentresponse"
+				}
+			]
+		},
+		{
+			"name": "shippingOption",
+			"interface": "PaymentRequest",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentrequest"
+				}
+			]
+		},
+		{
+			"name": "shippingOption",
+			"interface": "PaymentResponse",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentresponse"
+				}
+			]
+		},
+		{
 			"name": "shippingOptions",
 			"interface": "PaymentRequestEvent",
 			"definitions": [
 				{
 					"spec": "https://w3c.github.io/payment-handler/",
 					"id": "dom-paymentrequestevent"
+				}
+			]
+		},
+		{
+			"name": "shippingType",
+			"interface": "PaymentRequest",
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/payment-request/",
+					"id": "dom-paymentrequest"
 				}
 			]
 		},
@@ -96625,6 +99078,16 @@
 				{
 					"spec": "https://draft.ortc.org/",
 					"id": "rtcrtpunhandledevent"
+				}
+			]
+		},
+		{
+			"name": "stack",
+			"interface": "CrashReportBody",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/crash-reporting/",
+					"id": "crashreportbody"
 				}
 			]
 		},
@@ -105500,17 +107963,6 @@
 			]
 		},
 		{
-			"name": "VIEW_TRANSITION_RULE",
-			"interface": "CSSRule",
-			"static": true,
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-view-transitions-2/",
-					"id": "ref-for-cssrule"
-				}
-			]
-		},
-		{
 			"name": "viewBox",
 			"interface": "SVGFitToViewBox",
 			"definitions": [
@@ -106674,11 +109126,11 @@
 		},
 		{
 			"name": "worklet",
-			"interface": "WindowSharedStorage",
+			"interface": "SharedStorage",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
-					"id": "windowsharedstorage"
+					"id": "sharedstorage"
 				}
 			]
 		},
@@ -107692,16 +110144,6 @@
 				{
 					"spec": "https://registry.khronos.org/webgl/specs/latest/1.0/",
 					"id": "webglrenderingcontextbase"
-				}
-			]
-		},
-		{
-			"name": "zoom",
-			"interface": "Viewport",
-			"definitions": [
-				{
-					"spec": "https://drafts.csswg.org/css-viewport-1/",
-					"id": "viewport"
 				}
 			]
 		}
@@ -110070,6 +112512,16 @@
 			]
 		},
 		{
+			"name": "catch",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
+				}
+			]
+		},
+		{
 			"name": "ceil",
 			"interface": "MLGraphBuilder",
 			"definitions": [
@@ -111795,6 +114247,16 @@
 		},
 		{
 			"name": "contributeToHistogram",
+			"interface": "RealTimeReporting",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
+					"id": "realtimereporting"
+				}
+			]
+		},
+		{
+			"name": "contributeToHistogram",
 			"interface": "PrivateAggregation",
 			"definitions": [
 				{
@@ -113473,11 +115935,11 @@
 		},
 		{
 			"name": "createWorklet",
-			"interface": "WindowSharedStorage",
+			"interface": "SharedStorage",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
-					"id": "windowsharedstorage"
+					"id": "sharedstorage"
 				}
 			]
 		},
@@ -114935,10 +117397,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
-				},
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -116393,10 +118851,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
-				},
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -116538,11 +118992,11 @@
 		},
 		{
 			"name": "get",
-			"interface": "WorkletSharedStorage",
+			"interface": "SharedStorage",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
-					"id": "workletsharedstorage"
+					"id": "sharedstorage"
 				}
 			]
 		},
@@ -118346,6 +120800,16 @@
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/get-installed-related-apps/spec/",
+					"id": "ref-for-navigator"
+				}
+			]
+		},
+		{
+			"name": "getInterestGroupAdAuctionData",
+			"interface": "Navigator",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/turtledove/",
 					"id": "ref-for-navigator"
 				}
 			]
@@ -120350,10 +122814,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
-				},
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -120361,10 +122821,6 @@
 			"name": "hardSwish",
 			"interface": "MLGraphBuilder",
 			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
-				},
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
@@ -121107,6 +123563,16 @@
 				{
 					"spec": "https://drafts.csswg.org/cssom-1/",
 					"id": "cssgroupingrule"
+				}
+			]
+		},
+		{
+			"name": "inspect",
+			"interface": "Observable",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "observable"
 				}
 			]
 		},
@@ -122084,10 +124550,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
-				},
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -122103,11 +124565,11 @@
 		},
 		{
 			"name": "length",
-			"interface": "WorkletSharedStorage",
+			"interface": "SharedStorage",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
-					"id": "workletsharedstorage"
+					"id": "sharedstorage"
 				}
 			]
 		},
@@ -122146,10 +124608,6 @@
 			"name": "linear",
 			"interface": "MLGraphBuilder",
 			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
-				},
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
@@ -123148,16 +125606,6 @@
 			]
 		},
 		{
-			"name": "on",
-			"interface": "EventTarget",
-			"definitions": [
-				{
-					"spec": "https://wicg.github.io/observable/",
-					"id": "ref-for-eventtarget"
-				}
-			]
-		},
-		{
 			"name": "only",
 			"interface": "IDBKeyRange",
 			"static": true,
@@ -123353,6 +125801,16 @@
 				{
 					"spec": "https://w3c.github.io/ServiceWorker/",
 					"id": "clients"
+				}
+			]
+		},
+		{
+			"name": "opSupportLimits",
+			"interface": "MLContext",
+			"definitions": [
+				{
+					"spec": "https://webmachinelearning.github.io/webnn/",
+					"id": "mlcontext"
 				}
 			]
 		},
@@ -125171,10 +127629,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
-				},
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -125191,11 +127645,11 @@
 		},
 		{
 			"name": "remainingBudget",
-			"interface": "WorkletSharedStorage",
+			"interface": "SharedStorage",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
-					"id": "workletsharedstorage"
+					"id": "sharedstorage"
 				}
 			]
 		},
@@ -126795,11 +129249,11 @@
 		},
 		{
 			"name": "run",
-			"interface": "WindowSharedStorage",
+			"interface": "SharedStorage",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
-					"id": "windowsharedstorage"
+					"id": "sharedstorage"
 				}
 			]
 		},
@@ -127031,20 +129485,6 @@
 			]
 		},
 		{
-			"name": "scrollPathIntoView",
-			"interface": "CanvasUserInterface",
-			"definitions": [
-				{
-					"spec": "https://html.spec.whatwg.org/multipage/canvas.html",
-					"id": "canvasuserinterface"
-				},
-				{
-					"spec": "https://html.spec.whatwg.org/multipage/canvas.html",
-					"id": "canvasuserinterface"
-				}
-			]
-		},
-		{
 			"name": "scrollTo",
 			"interface": "Window",
 			"definitions": [
@@ -127204,11 +129644,11 @@
 		},
 		{
 			"name": "selectURL",
-			"interface": "WindowSharedStorage",
+			"interface": "SharedStorage",
 			"definitions": [
 				{
 					"spec": "https://wicg.github.io/shared-storage/",
-					"id": "windowsharedstorage"
+					"id": "sharedstorage"
 				}
 			]
 		},
@@ -128901,10 +131341,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
-				},
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -128915,6 +131351,39 @@
 				{
 					"spec": "https://w3c.github.io/webcrypto/",
 					"id": "dom-subtlecrypto"
+				}
+			]
+		},
+		{
+			"name": "signalAllAcceptedCredentials",
+			"interface": "PublicKeyCredential",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "ref-for-publickeycredential"
+				}
+			]
+		},
+		{
+			"name": "signalCurrentUserDetails",
+			"interface": "PublicKeyCredential",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "ref-for-publickeycredential"
+				}
+			]
+		},
+		{
+			"name": "signalUnknownCredential",
+			"interface": "PublicKeyCredential",
+			"static": true,
+			"definitions": [
+				{
+					"spec": "https://w3c.github.io/webauthn/",
+					"id": "ref-for-publickeycredential"
 				}
 			]
 		},
@@ -129035,10 +131504,6 @@
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
-				},
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
 				}
 			]
 		},
@@ -129046,10 +131511,6 @@
 			"name": "softsign",
 			"interface": "MLGraphBuilder",
 			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
-				},
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
@@ -130092,10 +132553,6 @@
 			"name": "tanh",
 			"interface": "MLGraphBuilder",
 			"definitions": [
-				{
-					"spec": "https://webmachinelearning.github.io/webnn/",
-					"id": "ref-for-mlgraphbuilder"
-				},
 				{
 					"spec": "https://webmachinelearning.github.io/webnn/",
 					"id": "ref-for-mlgraphbuilder"
@@ -132494,6 +134951,16 @@
 				{
 					"spec": "https://dom.spec.whatwg.org/",
 					"id": "element"
+				}
+			]
+		},
+		{
+			"name": "when",
+			"interface": "EventTarget",
+			"definitions": [
+				{
+					"spec": "https://wicg.github.io/observable/",
+					"id": "ref-for-eventtarget"
 				}
 			]
 		},

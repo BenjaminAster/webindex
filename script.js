@@ -1,4 +1,6 @@
 
+// @ts-check
+
 /// <reference types="better-typescript" />
 
 export const storage = new class {
@@ -112,6 +114,14 @@ let tab = document.documentElement.dataset.currentTab;
 			clearSeachbox();
 			searchbox.focus();
 		});
+
+		if (tab === "css") {
+			document.querySelector("main").addEventListener("click", ({ target }) => {
+				if (/** @type {HTMLElement} */ (target).localName === "a") {
+					clearSeachbox();
+				}
+			});
+		}
 	}
 
 	{

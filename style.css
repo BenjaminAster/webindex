@@ -256,6 +256,7 @@ ul#toc-list > li > a {
 }
 
 main {
+	flex-grow: 1;
 	background-color: color-mix(in srgb, var(--gray-1) 20%, var(--black-or-white));
 }
 

@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Fri, 12 Jul 2024 10:45:01 GMT",
-		"iso": "2024-07-12T10:45:01.449Z",
-		"unixMillis": 1720781101449
+		"utc": "Thu, 05 Sep 2024 19:18:11 GMT",
+		"iso": "2024-09-05T19:18:11.932Z",
+		"unixMillis": 1725563891932
 	},
 	"groups": [
 		{
@@ -343,7 +343,7 @@
 		{
 			"name": "Decentralized Identifier Working Group",
 			"identifier": "wg/did",
-			"homepage": "https://www.w3.org/2019/did-wg/"
+			"homepage": "https://www.w3.org/groups/wg/did/"
 		},
 		{
 			"name": "Declarative 3D for the Web Architecture Community Group",
@@ -433,7 +433,7 @@
 		{
 			"name": "GPU for the Web Working Group",
 			"identifier": "wg/gpu",
-			"homepage": "https://www.w3.org/2020/gpu/"
+			"homepage": "https://www.w3.org/groups/wg/gpu/"
 		},
 		{
 			"name": "Games Community Group",
@@ -516,7 +516,7 @@
 			"homepage": "https://www.w3.org/community/ixml/"
 		},
 		{
-			"name": "JSON for Linking Data Community Group",
+			"name": "JSON for Linked Data Community Group",
 			"identifier": "cg/json-ld",
 			"homepage": "https://www.w3.org/community/json-ld/"
 		},
@@ -1063,7 +1063,7 @@
 		{
 			"name": "WCAG2ICT Task Force",
 			"identifier": "tf/wcag2ict",
-			"homepage": "https://www.w3.org/groups/tf/wcag2ict/"
+			"homepage": "https://www.w3.org/WAI/about/groups/task-forces/wcag2ict/work-statement/"
 		},
 		{
 			"name": "Web & Networks Interest Group",
@@ -1184,6 +1184,11 @@
 			"name": "Web of Things Working Group",
 			"identifier": "wg/wot",
 			"homepage": "https://www.w3.org/WoT/WG/"
+		},
+		{
+			"name": "Web-based Digital Twins for Smart Cities Interest Group",
+			"identifier": "ig/smart-cities",
+			"homepage": "https://www.w3.org/groups/ig/smart-cities/"
 		},
 		{
 			"name": "Web-interoperable Runtimes Community Group",
@@ -1586,11 +1591,6 @@
 			"homepage": "https://datatracker.ietf.org/wg/mlcodec/"
 		},
 		{
-			"name": "Multiparty Multimedia Session Control Working Group",
-			"identifier": "ietf/mmusic",
-			"homepage": "https://datatracker.ietf.org/wg/mmusic/"
-		},
-		{
 			"name": "Registration Protocols Extensions Working Group",
 			"identifier": "ietf/regext",
 			"homepage": "https://datatracker.ietf.org/wg/regext/"
@@ -1599,11 +1599,6 @@
 			"name": "Secure Asset Transfer Protocol Working Group",
 			"identifier": "ietf/satp",
 			"homepage": "https://datatracker.ietf.org/wg/satp/"
-		},
-		{
-			"name": "Secure Media Frames Working Group",
-			"identifier": "ietf/sframe",
-			"homepage": "https://datatracker.ietf.org/wg/sframe/"
 		},
 		{
 			"name": "Session Initiation Protocol Core Working Group",
@@ -1784,11 +1779,6 @@
 			"name": "Operations and Management Area Working Group",
 			"identifier": "ietf/opsawg",
 			"homepage": "https://datatracker.ietf.org/wg/opsawg/"
-		},
-		{
-			"name": "Operational Security Capabilities for IP Network Infrastructure Working Group",
-			"identifier": "ietf/opsec",
-			"homepage": "https://datatracker.ietf.org/wg/opsec/"
 		},
 		{
 			"name": "SIDR Operations Working Group",
@@ -2261,6 +2251,11 @@
 			"homepage": "https://datatracker.ietf.org/wg/lager/"
 		},
 		{
+			"name": "Multiparty Multimedia Session Control Working Group",
+			"identifier": "ietf/mmusic",
+			"homepage": "https://datatracker.ietf.org/wg/mmusic/"
+		},
+		{
 			"name": "Managing, Ordering, Distributing, Exposing, & Registering telephone Numbers Working Group",
 			"identifier": "ietf/modern",
 			"homepage": "https://datatracker.ietf.org/wg/modern/"
@@ -2299,6 +2294,11 @@
 			"name": "Serialising Extended Data About Times and Events Working Group",
 			"identifier": "ietf/sedate",
 			"homepage": "https://datatracker.ietf.org/wg/sedate/"
+		},
+		{
+			"name": "Secure Media Frames Working Group",
+			"identifier": "ietf/sframe",
+			"homepage": "https://datatracker.ietf.org/wg/sframe/"
 		},
 		{
 			"name": "SIP Best-practice Recommendations Against Network Dangers to privacY Working Group",
@@ -4164,6 +4164,11 @@
 			"name": "Network Information Model Working Group",
 			"identifier": "ietf/nim",
 			"homepage": "https://datatracker.ietf.org/wg/nim/"
+		},
+		{
+			"name": "Operational Security Capabilities for IP Network Infrastructure Working Group",
+			"identifier": "ietf/opsec",
+			"homepage": "https://datatracker.ietf.org/wg/opsec/"
 		},
 		{
 			"name": "OPS-NM Configuration Management Requirements Working Group",

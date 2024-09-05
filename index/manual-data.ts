@@ -173,7 +173,6 @@ export default {
 		"https://www.rfc-editor.org/rfc/rfc8878": "ietf/appsawg",
 	},
 	additionalSpecs: [
-		{ repo: "https://github.com/w3c/editing/tree/gh-pages/docs/execCommand", group: "wg/webediting" },
 		{ repo: "https://github.com/w3c/mathml", group: "wg/math" },
 		{ repo: "https://github.com/w3c/mediacapture-extensions", group: "wg/webrtc" },
 		{ repo: "https://github.com/w3c/webappsec-cowl", group: "wg/webappsec" },
@@ -208,12 +207,10 @@ export default {
 		{ repo: "https://github.com/WICG/webmonetization", url: "https://webmonetization.org/specification/", group: "cg/wicg", shortname: "webmonetization" },
 		{ repo: "https://github.com/webmachinelearning/model-loader", group: "cg/webmachinelearning" },
 		{ repo: "https://github.com/wpack-wg/bundled-responses/blob/main/draft-ietf-wpack-bundled-responses.md", group: "ietf/wpack" },
-		{ repo: "https://github.com/patcg-individual-drafts/private-aggregation-api", group: "cg/patcg" },
 		{ repo: "https://github.com/immersive-web/marker-tracking", group: "cg/immersive-web" },
 		{ repo: "https://github.com/screen-share/capture-all-screens", group: "cg/sccg" },
 		{ repo: "https://github.com/WICG/color-api", group: "cg/wicg" },
 		{ repo: "https://github.com/WICG/controlled-frame", group: "cg/wicg" },
-		{ repo: "https://github.com/WICG/observable", group: "cg/wicg" },
 		{ repo: "https://github.com/tabatkins/css-toggle", group: "tabatkins" },
 		{ repo: "https://github.com/tabatkins/specs/tree/gh-pages/css-stacking-context-1", group: "tabatkins" },
 		{ repo: "https://github.com/alvestrand/mediacapture-transform/tree/chrome-96", url: "https://alvestrand.github.io/mediacapture-transform/chrome-96.html", group: "haraldalvestrand", shortname: "media-stream-track-generator" },
@@ -318,6 +315,7 @@ export default {
 		"https://www.iso.org/standard/54989.html",
 		"https://www.iso.org/standard/85253.html",
 		"https://www.iso.org/standard/87621.html",
+		"https://wicg.github.io/digital-identities/",
 	],
 	specURLRewrites: {
 		"wg/css": {
@@ -356,7 +354,7 @@ export default {
 		"https://webassembly.github.io/multi-memory/core/bikeshed/",
 		"https://webassembly.github.io/tail-call/core/bikeshed/",
 		"https://webassembly.github.io/threads/core/bikeshed/",
-		"https://drafts.csswg.org/css-color-3/#opacity",
+		"https://drafts.csswg.org/css-color-3/",
 	],
 	specsExcludedFromJavaScript: [
 		"https://aomediacodec.github.io/av1-hdr10plus/",

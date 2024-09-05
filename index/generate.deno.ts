@@ -182,7 +182,7 @@ $specs: {
 		let testsURL: string;
 		if (tests) {
 			if (tests.repository === "https://github.com/web-platform-tests/wpt") {
-				testsURL = `https://wpt.fyi/results/${tests.testPaths[0]}?label=master&product=chrome&product=safari&product=firefox&product=servo&product=flow`;
+				testsURL = `https://wpt.fyi/results/${tests.testPaths[0]}?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow`;
 			} else {
 				testsURL = `${tests.repository}/tree/main/${tests.testPaths[0]}`;
 			}

@@ -51,7 +51,7 @@ See ssr/template.html instead. -->
 		</div>
 
 		<div class="searchbox-container">
-			<input type="search" id="searchbox" title="Search" placeholder="Type and press enter to search...">
+			<input type="search" id="searchbox" title="Search" autocomplete="off" placeholder="Type and press enter to search...">
 			<button id="clear-searchbox" class="icon:x" title="clear search query"></button>
 		</div>
 	</header>
@@ -1197,10 +1197,20 @@ See ssr/template.html instead. -->
 							<li id="property-background-repeat" data-searchable-name="background-repeat">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-repeat" class="name" data-unique-name="background-repeat">background-repeat</a></code></h4>
+									<h4><code><a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat" class="name" data-unique-name="background-repeat">background-repeat</a></code></h4>
 									<ul class="spec-list">
 										
 									
+											<li>
+												<a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat" class="spec">
+													<span class="spec-identifier">css-backgrounds-4</span>
+													<span class="spec-link-hash">#propdef-background-repeat</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#type-repeat-style">repeat-style</a>&gt;#</code>
+												</span>
+											</li>
+										
 											<li>
 												<a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-repeat" class="spec">
 													<span class="spec-identifier">css-backgrounds-3</span>
@@ -1208,6 +1218,86 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">&lt;<a href="#type-repeat-style">repeat-style</a>&gt;#</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="property-background-repeat-block" data-searchable-name="background-repeat-block">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat-block" class="name" data-unique-name="background-repeat-block">background-repeat-block</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat-block" class="spec">
+													<span class="spec-identifier">css-backgrounds-4</span>
+													<span class="spec-link-hash">#propdef-background-repeat-block</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#type-repetition">repetition</a>&gt;#</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="property-background-repeat-inline" data-searchable-name="background-repeat-inline">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat-inline" class="name" data-unique-name="background-repeat-inline">background-repeat-inline</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat-inline" class="spec">
+													<span class="spec-identifier">css-backgrounds-4</span>
+													<span class="spec-link-hash">#propdef-background-repeat-inline</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#type-repetition">repetition</a>&gt;#</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="property-background-repeat-x" data-searchable-name="background-repeat-x">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat-x" class="name" data-unique-name="background-repeat-x">background-repeat-x</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat-x" class="spec">
+													<span class="spec-identifier">css-backgrounds-4</span>
+													<span class="spec-link-hash">#propdef-background-repeat-x</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#type-repetition">repetition</a>&gt;#</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="property-background-repeat-y" data-searchable-name="background-repeat-y">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat-y" class="name" data-unique-name="background-repeat-y">background-repeat-y</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat-y" class="spec">
+													<span class="spec-identifier">css-backgrounds-4</span>
+													<span class="spec-link-hash">#propdef-background-repeat-y</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#type-repetition">repetition</a>&gt;#</code>
 												</span>
 											</li>
 										</ul>
@@ -3540,6 +3630,26 @@ See ssr/template.html instead. -->
 													<code class="syntax">auto | &lt;<a href="#type-length-percentage">length-percentage</a>&gt;</code>
 												</span>
 											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-bottom" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-bottom</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor">anchor()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-bottom①" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-bottom①</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
+												</span>
+											</li>
 										</ul>
 								</div>
 							</li>
@@ -4577,7 +4687,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-container-type</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">normal | size | inline-size</code>
+													<code class="syntax">normal | [ [ size | inline-size ] || scroll-state ]</code>
 												</span>
 											</li>
 										</ul>
@@ -5012,12 +5122,12 @@ See ssr/template.html instead. -->
 											</li>
 										
 											<li>
-												<a href="https://drafts.csswg.org/css-flexbox-1/#ref-for-propdef-display③" class="spec">
-													<span class="spec-identifier">css-flexbox-1</span>
-													<span class="spec-link-hash">#ref-for-propdef-display③</span><!--
+												<a href="https://drafts.csswg.org/css-grid-3/#ref-for-propdef-display②" class="spec">
+													<span class="spec-identifier">css-grid-3</span>
+													<span class="spec-link-hash">#ref-for-propdef-display②</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">flex | inline-flex</code>
+													<code class="syntax">masonry | inline-masonry</code>
 												</span>
 											</li>
 										
@@ -5038,6 +5148,16 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">grid | inline-grid</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-flexbox-1/#ref-for-propdef-display③" class="spec">
+													<span class="spec-identifier">css-flexbox-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-display③</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">flex | inline-flex</code>
 												</span>
 											</li>
 										
@@ -5717,7 +5837,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-font</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">[ [ &lt;'<a href="#property-font-style">font-style</a>'&gt; || &lt;<a href="#type-font-variant-css2">font-variant-css2</a>&gt; || &lt;'<a href="#property-font-weight">font-weight</a>'&gt; || &lt;<a href="#type-font-width-css3">font-width-css3</a>&gt; ]? &lt;'<a href="#property-font-size">font-size</a>'&gt; [ / &lt;'<a href="#property-line-height">line-height</a>'&gt; ]? &lt;'<a href="#property-font-family">font-family</a>'&gt; ] | &lt;<a href="#type-system-family-name">system-family-name</a>&gt;</code>
+													<code class="syntax">[ [ &lt;'<a href="#property-font-style">font-style</a>'&gt; || &lt;<a href="#type-font-variant-css2">font-variant-css2</a>&gt; || &lt;'<a href="#property-font-weight">font-weight</a>'&gt; || &lt;<a href="#type-font-width-css3">font-width-css3</a>&gt; ]? &lt;'<a href="#property-font-size">font-size</a>'&gt; [ / &lt;'<a href="#property-line-height">line-height</a>'&gt; ]? &lt;'<a href="#property-font-family">font-family</a>'&gt;# ] | &lt;<a href="#type-system-family-name">system-family-name</a>&gt;</code>
 												</span>
 											</li>
 										</ul>
@@ -6457,10 +6577,20 @@ See ssr/template.html instead. -->
 							<li id="property-grid-auto-flow" data-searchable-name="grid-auto-flow">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-flow" class="name" data-unique-name="grid-auto-flow">grid-auto-flow</a></code></h4>
+									<h4><code><a href="https://drafts.csswg.org/css-grid-3/#propdef-grid-auto-flow" class="name" data-unique-name="grid-auto-flow">grid-auto-flow</a></code></h4>
 									<ul class="spec-list">
 										
 									
+											<li>
+												<a href="https://drafts.csswg.org/css-grid-3/#propdef-grid-auto-flow" class="spec">
+													<span class="spec-identifier">css-grid-3</span>
+													<span class="spec-link-hash">#propdef-grid-auto-flow</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">[ row | column | row-reverse | column-reverse ] || dense || wrap-reverse</code>
+												</span>
+											</li>
+										
 											<li>
 												<a href="https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-flow" class="spec">
 													<span class="spec-identifier">css-grid-2</span>
@@ -6832,9 +6962,9 @@ See ssr/template.html instead. -->
 											</li>
 										
 											<li>
-												<a href="https://drafts.csswg.org/css-grid-3/#ref-for-propdef-grid-template-columns" class="spec">
+												<a href="https://drafts.csswg.org/css-grid-3/#ref-for-propdef-grid-template-columns①" class="spec">
 													<span class="spec-identifier">css-grid-3</span>
-													<span class="spec-link-hash">#ref-for-propdef-grid-template-columns</span><!--
+													<span class="spec-link-hash">#ref-for-propdef-grid-template-columns①</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">masonry</code>
@@ -6872,9 +7002,9 @@ See ssr/template.html instead. -->
 											</li>
 										
 											<li>
-												<a href="https://drafts.csswg.org/css-grid-3/#ref-for-propdef-grid-template-rows" class="spec">
+												<a href="https://drafts.csswg.org/css-grid-3/#ref-for-propdef-grid-template-rows①" class="spec">
 													<span class="spec-identifier">css-grid-3</span>
-													<span class="spec-link-hash">#ref-for-propdef-grid-template-rows</span><!--
+													<span class="spec-link-hash">#ref-for-propdef-grid-template-rows①</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">masonry</code>
@@ -6937,7 +7067,17 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-height</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">auto | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;)</code>
+													<code class="syntax">auto | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;) | &lt;<a href="#function-calc-size">calc-size()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-height" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-height</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
 												</span>
 											</li>
 										
@@ -7324,26 +7464,6 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
-							<li id="property-inset-area" data-searchable-name="inset-area">
-								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
-								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-anchor-position-1/#propdef-inset-area" class="name" data-unique-name="inset-area">inset-area</a></code></h4>
-									<ul class="spec-list">
-										
-									
-											<li>
-												<a href="https://drafts.csswg.org/css-anchor-position-1/#propdef-inset-area" class="spec">
-													<span class="spec-identifier">css-anchor-position-1</span>
-													<span class="spec-link-hash">#propdef-inset-area</span><!--
-												--></a><!--
-												--><span class="syntax-container">:
-													<code class="syntax">none | &lt;<a href="#type-inset-area">inset-area</a>&gt;</code>
-												</span>
-											</li>
-										</ul>
-								</div>
-							</li>
-						
 							<li id="property-inset-block" data-searchable-name="inset-block">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -7680,6 +7800,26 @@ See ssr/template.html instead. -->
 													<code class="syntax">auto | &lt;<a href="#type-length-percentage">length-percentage</a>&gt;</code>
 												</span>
 											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-left" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-left</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor">anchor()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-left③" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-left③</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
+												</span>
+											</li>
 										</ul>
 								</div>
 							</li>
@@ -7778,6 +7918,26 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">none | &lt;integer [1,∞]&gt; || &lt;'<a href="#property-block-ellipsis">block-ellipsis</a>'&gt;</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="property-line-fit-edge" data-searchable-name="line-fit-edge">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-inline-3/#propdef-line-fit-edge" class="name" data-unique-name="line-fit-edge">line-fit-edge</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-inline-3/#propdef-line-fit-edge" class="spec">
+													<span class="spec-identifier">css-inline-3</span>
+													<span class="spec-link-hash">#propdef-line-fit-edge</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">leading | &lt;<a href="#type-text-edge">text-edge</a>&gt;</code>
 												</span>
 											</li>
 										</ul>
@@ -8092,6 +8252,16 @@ See ssr/template.html instead. -->
 											</li>
 										
 											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-margin-bottom" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-margin-bottom</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
 												<a href="https://drafts.csswg.org/css-box-3/#propdef-margin-bottom" class="spec">
 													<span class="spec-identifier">css-box-3</span>
 													<span class="spec-link-hash">#propdef-margin-bottom</span><!--
@@ -8202,6 +8372,16 @@ See ssr/template.html instead. -->
 											</li>
 										
 											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-margin-left" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-margin-left</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
 												<a href="https://drafts.csswg.org/css-box-3/#propdef-margin-left" class="spec">
 													<span class="spec-identifier">css-box-3</span>
 													<span class="spec-link-hash">#propdef-margin-left</span><!--
@@ -8232,6 +8412,16 @@ See ssr/template.html instead. -->
 											</li>
 										
 											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-margin-right" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-margin-right</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
 												<a href="https://drafts.csswg.org/css-box-3/#propdef-margin-right" class="spec">
 													<span class="spec-identifier">css-box-3</span>
 													<span class="spec-link-hash">#propdef-margin-right</span><!--
@@ -8258,6 +8448,16 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">&lt;<a href="#type-length-percentage">length-percentage</a>&gt; | auto</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-margin-top" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-margin-top</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
 												</span>
 											</li>
 										
@@ -8734,6 +8934,66 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="property-masonry-direction" data-searchable-name="masonry-direction">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-grid-3/#propdef-masonry-direction" class="name" data-unique-name="masonry-direction">masonry-direction</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-grid-3/#propdef-masonry-direction" class="spec">
+													<span class="spec-identifier">css-grid-3</span>
+													<span class="spec-link-hash">#propdef-masonry-direction</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">row | column | row-reverse | column-reverse</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="property-masonry-fill" data-searchable-name="masonry-fill">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-grid-3/#propdef-masonry-fill" class="name" data-unique-name="masonry-fill">masonry-fill</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-grid-3/#propdef-masonry-fill" class="spec">
+													<span class="spec-identifier">css-grid-3</span>
+													<span class="spec-link-hash">#propdef-masonry-fill</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">normal | reverse</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="property-masonry-flow" data-searchable-name="masonry-flow">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-grid-3/#propdef-masonry-flow" class="name" data-unique-name="masonry-flow">masonry-flow</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-grid-3/#propdef-masonry-flow" class="spec">
+													<span class="spec-identifier">css-grid-3</span>
+													<span class="spec-link-hash">#propdef-masonry-flow</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;'<a href="#property-masonry-direction">masonry-direction</a>'&gt; || &lt;'<a href="#property-masonry-fill">masonry-fill</a>'&gt;</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="property-math-depth" data-searchable-name="math-depth">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -8857,7 +9117,17 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-max-height</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">none | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;)</code>
+													<code class="syntax">none | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;) | &lt;<a href="#function-calc-size">calc-size()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-max-height①" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-max-height①</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
 												</span>
 											</li>
 										
@@ -8937,7 +9207,17 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-max-width</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">none | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;)</code>
+													<code class="syntax">none | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;) | &lt;<a href="#function-calc-size">calc-size()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-max-width" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-max-width</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
 												</span>
 											</li>
 										
@@ -9017,7 +9297,17 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-min-height</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">auto | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;)</code>
+													<code class="syntax">auto | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;) | &lt;<a href="#function-calc-size">calc-size()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-min-height" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-min-height</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
 												</span>
 											</li>
 										
@@ -9097,7 +9387,17 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-min-width</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">auto | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;)</code>
+													<code class="syntax">auto | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;) | &lt;<a href="#function-calc-size">calc-size()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-min-width" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-min-width</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
 												</span>
 											</li>
 										
@@ -9507,7 +9807,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-outline</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">[ &lt;'<a href="#property-outline-color">outline-color</a>'&gt; || &lt;'<a href="#property-outline-style">outline-style</a>'&gt; || &lt;'<a href="#property-outline-width">outline-width</a>'&gt; ]</code>
+													<code class="syntax">[ &lt;'<a href="#property-outline-width">outline-width</a>'&gt; || &lt;'<a href="#property-outline-style">outline-style</a>'&gt; || &lt;'<a href="#property-outline-color">outline-color</a>'&gt; ]</code>
 												</span>
 											</li>
 										
@@ -10754,6 +11054,26 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="property-position-area" data-searchable-name="position-area">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-anchor-position-1/#propdef-position-area" class="name" data-unique-name="position-area">position-area</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#propdef-position-area" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#propdef-position-area</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">none | &lt;<a href="#type-position-area">position-area</a>&gt;</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="property-position-try" data-searchable-name="position-try">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -10787,7 +11107,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-position-try-fallbacks</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">none | [ [&lt;<a href="#type-dashed-ident">dashed-ident</a>&gt; || &lt;<a href="#type-try-tactic">try-tactic</a>&gt;] | &lt;'<a href="#property-inset-area">inset-area</a>'&gt; ]#</code>
+													<code class="syntax">none | [ [&lt;<a href="#type-dashed-ident">dashed-ident</a>&gt; || &lt;<a href="#type-try-tactic">try-tactic</a>&gt;] | &lt;'<a href="#property-position-area">position-area</a>'&gt; ]#</code>
 												</span>
 											</li>
 										</ul>
@@ -11038,6 +11358,26 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">auto | &lt;<a href="#type-length-percentage">length-percentage</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-right" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-right</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor">anchor()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-right③" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-right③</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
 												</span>
 											</li>
 										</ul>
@@ -12884,6 +13224,26 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="property-text-box" data-searchable-name="text-box">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-inline-3/#propdef-text-box" class="name" data-unique-name="text-box">text-box</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-inline-3/#propdef-text-box" class="spec">
+													<span class="spec-identifier">css-inline-3</span>
+													<span class="spec-link-hash">#propdef-text-box</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">normal | &lt;'<a href="#property-text-box-trim">text-box-trim</a>'&gt; || &lt;'<a href="#property-text-box-edge">text-box-edge</a>'&gt;</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="property-text-box-edge" data-searchable-name="text-box-edge">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -12897,7 +13257,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-text-box-edge</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">leading | [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?</code>
+													<code class="syntax">auto | &lt;<a href="#type-text-edge">text-edge</a>&gt;</code>
 												</span>
 											</li>
 										</ul>
@@ -12917,7 +13277,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-text-box-trim</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">none | start | end | both</code>
+													<code class="syntax">none | trim-start | trim-end | trim-both</code>
 												</span>
 											</li>
 										</ul>
@@ -13900,6 +14260,26 @@ See ssr/template.html instead. -->
 													<code class="syntax">auto | &lt;<a href="#type-length-percentage">length-percentage</a>&gt;</code>
 												</span>
 											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-top" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-top</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor">anchor()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-top①" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-top①</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
+												</span>
+											</li>
 										</ul>
 								</div>
 							</li>
@@ -14344,6 +14724,26 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="property-view-transition-group" data-searchable-name="view-transition-group">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-group" class="name" data-unique-name="view-transition-group">view-transition-group</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-group" class="spec">
+													<span class="spec-identifier">css-view-transitions-2</span>
+													<span class="spec-link-hash">#propdef-view-transition-group</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">normal | contain | nearest | &lt;<a href="#type-custom-ident">custom-ident</a>&gt;</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="property-view-transition-name" data-searchable-name="view-transition-name">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -14667,7 +15067,17 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#propdef-width</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">auto | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;)</code>
+													<code class="syntax">auto | &lt;length-percentage [0,∞]&gt; | min-content | max-content | fit-content(&lt;length-percentage [0,∞]&gt;) | &lt;<a href="#function-calc-size">calc-size()</a>&gt;</code>
+												</span>
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#ref-for-propdef-width" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#ref-for-propdef-width</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#function-anchor-size">anchor-size()</a>&gt;</code>
 												</span>
 											</li>
 										
@@ -15345,6 +15755,14 @@ See ssr/template.html instead. -->
 												--></a><!--
 												-->
 											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size" class="spec">
+													<span class="spec-identifier">css-sizing-3</span>
+													<span class="spec-link-hash">#funcdef-width-calc-size</span><!--
+												--></a><!--
+												-->
+											</li>
 										</ul>
 								</div>
 							</li>
@@ -15428,6 +15846,32 @@ See ssr/template.html instead. -->
 												<a href="https://drafts.csswg.org/css-color-4/#funcdef-color" class="spec">
 													<span class="spec-identifier">css-color-4</span>
 													<span class="spec-link-hash">#funcdef-color</span><!--
+												--></a><!--
+												-->
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="function-color-layers" data-searchable-name="color-layers()">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-color-6/#funcdef-color-layers" class="name" data-unique-name="color-layers()">color-layers()</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-color-6/#funcdef-color-layers" class="spec">
+													<span class="spec-identifier">css-color-6</span>
+													<span class="spec-link-hash">#funcdef-color-layers</span><!--
+												--></a><!--
+												-->
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-color-6/#ref-for-funcdef-color-layers②" class="spec">
+													<span class="spec-identifier">css-color-6</span>
+													<span class="spec-link-hash">#ref-for-funcdef-color-layers②</span><!--
 												--></a><!--
 												-->
 											</li>
@@ -19268,10 +19712,18 @@ See ssr/template.html instead. -->
 							<li id="pseudo-class-local-link" data-searchable-name=":local-link">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/selectors-4/#local-link-pseudo" class="name" data-unique-name=":local-link">:local-link</a></code></h4>
+									<h4><code><a href="https://drafts.csswg.org/selectors-5/#local-link-pseudo" class="name" data-unique-name=":local-link">:local-link</a></code></h4>
 									<ul class="spec-list">
 										
 									
+											<li>
+												<a href="https://drafts.csswg.org/selectors-5/#local-link-pseudo" class="spec">
+													<span class="spec-identifier">selectors-5</span>
+													<span class="spec-link-hash">#local-link-pseudo</span><!--
+												--></a><!--
+												-->
+											</li>
+										
 											<li>
 												<a href="https://drafts.csswg.org/selectors-4/#local-link-pseudo" class="spec">
 													<span class="spec-identifier">selectors-4</span>
@@ -20092,6 +20544,24 @@ See ssr/template.html instead. -->
 												<a href="https://drafts.csswg.org/css-gcpm-4/#selectordef-start-of-page" class="spec">
 													<span class="spec-identifier">css-gcpm-4</span>
 													<span class="spec-link-hash">#selectordef-start-of-page</span><!--
+												--></a><!--
+												-->
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="pseudo-class-state" data-searchable-name=":state()">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/selectors-5/#selectordef-state" class="name" data-unique-name=":state()">:state()</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/selectors-5/#selectordef-state" class="spec">
+													<span class="spec-identifier">selectors-5</span>
+													<span class="spec-link-hash">#selectordef-state</span><!--
 												--></a><!--
 												-->
 											</li>
@@ -24395,6 +24865,24 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="descriptor-overflowing" data-searchable-name="overflowing">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-conditional-5/#descdef-container-overflowing" class="name" data-unique-name="overflowing">overflowing</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-conditional-5/#descdef-container-overflowing" class="spec">
+													<span class="spec-identifier">css-conditional-5</span>
+													<span class="spec-link-hash">#descdef-container-overflowing</span><!--
+												--></a><!--
+												-->
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="descriptor-override-colors" data-searchable-name="override-colors">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -24761,6 +25249,24 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="descriptor-snapped" data-searchable-name="snapped">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-conditional-5/#descdef-container-snapped" class="name" data-unique-name="snapped">snapped</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-conditional-5/#descdef-container-snapped" class="spec">
+													<span class="spec-identifier">css-conditional-5</span>
+													<span class="spec-link-hash">#descdef-container-snapped</span><!--
+												--></a><!--
+												-->
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="descriptor-speak-as" data-searchable-name="speak-as">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -24808,6 +25314,24 @@ See ssr/template.html instead. -->
 												<a href="https://drafts.csswg.org/css-fonts-4/#descdef-font-face-src" class="spec">
 													<span class="spec-identifier">css-fonts-4</span>
 													<span class="spec-link-hash">#descdef-font-face-src</span><!--
+												--></a><!--
+												-->
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="descriptor-stuck" data-searchable-name="stuck">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-conditional-5/#descdef-container-stuck" class="name" data-unique-name="stuck">stuck</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-conditional-5/#descdef-container-stuck" class="spec">
+													<span class="spec-identifier">css-conditional-5</span>
+													<span class="spec-link-hash">#descdef-container-stuck</span><!--
 												--></a><!--
 												-->
 											</li>
@@ -25421,7 +25945,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-angular-color-stop-list</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-angular-color-stop">angular-color-stop</a>&gt; , [ &lt;<a href="#type-angular-color-hint">angular-color-hint</a>&gt;? , &lt;<a href="#type-angular-color-stop">angular-color-stop</a>&gt; ]#</code>
+													<code class="syntax">&lt;<a href="#type-angular-color-stop">angular-color-stop</a>&gt; , [ &lt;<a href="#type-angular-color-hint">angular-color-hint</a>&gt;? , &lt;<a href="#type-angular-color-stop">angular-color-stop</a>&gt; ]#?</code>
 												</span>
 											</li>
 										</ul>
@@ -25529,7 +26053,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-shape-arc-command</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">arc &lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt; of &lt;<a href="#type-length-percentage">length-percentage</a>&gt;{1,2} [ &lt;<a href="#type-arc-sweep">arc-sweep</a>&gt; || &lt;<a href="#type-arc-size">arc-size</a>&gt; || rotate &lt;<a href="#type-angle">angle</a>&gt; ]</code>
+													<code class="syntax">arc [[&lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;] || [of &lt;<a href="#type-length-percentage">length-percentage</a>&gt;{1,2}] || &lt;<a href="#type-arc-sweep">arc-sweep</a>&gt;? || &lt;<a href="#type-arc-size">arc-size</a>&gt;?|| rotate &lt;<a href="#type-angle">angle</a>&gt;? ]</code>
 												</span>
 											</li>
 										
@@ -25539,7 +26063,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#ref-for-typedef-shape-arc-command①</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">arc &lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt; of &lt;<a href="#type-length-percentage">length-percentage</a>&gt;{1,2} [ &lt;<a href="#type-arc-sweep">arc-sweep</a>&gt; || &lt;<a href="#type-arc-size">arc-size</a>&gt; || rotate &lt;<a href="#type-angle">angle</a>&gt; ]?</code>
+													<code class="syntax">arc [[&lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;] || [of &lt;<a href="#type-length-percentage">length-percentage</a>&gt;{1,2}] || &lt;<a href="#type-arc-sweep">arc-sweep</a>&gt;? || &lt;<a href="#type-arc-size">arc-size</a>&gt;? || [rotate &lt;<a href="#type-angle">angle</a>&gt;]?]</code>
 												</span>
 											</li>
 										</ul>
@@ -25985,7 +26509,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-bg-clip</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-visual-box">visual-box</a>&gt; | border | text</code>
+													<code class="syntax">&lt;<a href="#type-visual-box">visual-box</a>&gt; | border-area| text</code>
 												</span>
 											</li>
 										</ul>
@@ -26505,7 +27029,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-calc-size-basis</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">[ &lt;<a href="#type-intrinsic-size-keyword">intrinsic-size-keyword</a>&gt; | percentage | &lt;<a href="#function-calc-size">calc-size()</a>&gt; | any | &lt;<a href="#type-calc-sum">calc-sum</a>&gt; ]</code>
+													<code class="syntax">[ &lt;<a href="#type-intrinsic-size-keyword">intrinsic-size-keyword</a>&gt; | &lt;<a href="#function-calc-size">calc-size()</a>&gt; | any | &lt;<a href="#type-calc-sum">calc-sum</a>&gt; ]</code>
 												</span>
 											</li>
 										</ul>
@@ -26909,7 +27433,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-color-stop-list</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-linear-color-stop">linear-color-stop</a>&gt; , [ &lt;<a href="#type-linear-color-hint">linear-color-hint</a>&gt;? , &lt;<a href="#type-linear-color-stop">linear-color-stop</a>&gt; ]#</code>
+													<code class="syntax">&lt;<a href="#type-linear-color-stop">linear-color-stop</a>&gt; , [ &lt;<a href="#type-linear-color-hint">linear-color-hint</a>&gt;? , &lt;<a href="#type-linear-color-stop">linear-color-stop</a>&gt; ]#?</code>
 												</span>
 											</li>
 										
@@ -26919,7 +27443,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-color-stop-list</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-linear-color-stop">linear-color-stop</a>&gt; , [ &lt;<a href="#type-linear-color-hint">linear-color-hint</a>&gt;? , &lt;<a href="#type-linear-color-stop">linear-color-stop</a>&gt; ]#</code>
+													<code class="syntax">&lt;<a href="#type-linear-color-stop">linear-color-stop</a>&gt; , [ &lt;<a href="#type-linear-color-hint">linear-color-hint</a>&gt;? , &lt;<a href="#type-linear-color-stop">linear-color-stop</a>&gt; ]#?</code>
 												</span>
 											</li>
 										</ul>
@@ -27054,16 +27578,6 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">'&gt;' | '+' | '~' | [ '|' '|' ]</code>
-												</span>
-											</li>
-										
-											<li>
-												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-combinator" class="spec">
-													<span class="spec-identifier">css-mixins-1</span>
-													<span class="spec-link-hash">#typedef-combinator</span><!--
-												--></a><!--
-												--><span class="syntax-container">:
-													<code class="syntax">'|'</code>
 												</span>
 											</li>
 										</ul>
@@ -27864,6 +28378,26 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="type-css-type" data-searchable-name="<css-type>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-css-type" class="name" data-unique-name="<css-type>">&lt;css-type&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-css-type" class="spec">
+													<span class="spec-identifier">css-mixins-1</span>
+													<span class="spec-link-hash">#typedef-css-type</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#type-syntax-component">syntax-component</a>&gt; | &lt;<a href="#function-type">type()</a>&gt;</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="type-cubic-bezier-easing-function" data-searchable-name="<cubic-bezier-easing-function>">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -27907,7 +28441,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-shape-curve-command</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">curve &lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt; via &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;{1,2}</code>
+													<code class="syntax">curve [[&lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;] || [using &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;{1,2}]]</code>
 												</span>
 											</li>
 										
@@ -27917,7 +28451,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#ref-for-typedef-shape-curve-command①</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">curve &lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt; via &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;{1,2}</code>
+													<code class="syntax">curve [&lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt; using &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;{1,2}]</code>
 												</span>
 											</li>
 										</ul>
@@ -28243,26 +28777,6 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-delim-token</span><!--
 												--></a><!--
 												-->
-											</li>
-										</ul>
-								</div>
-							</li>
-						
-							<li id="type-dependency-list" data-searchable-name="<dependency-list>">
-								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
-								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-dependency-list" class="name" data-unique-name="<dependency-list>">&lt;dependency-list&gt;</a></code></h4>
-									<ul class="spec-list">
-										
-									
-											<li>
-												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-dependency-list" class="spec">
-													<span class="spec-identifier">css-mixins-1</span>
-													<span class="spec-link-hash">#typedef-dependency-list</span><!--
-												--></a><!--
-												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-parameter">parameter</a>&gt;#</code>
-												</span>
 											</li>
 										</ul>
 								</div>
@@ -28843,7 +29357,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-first-valid</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">first-valid( &lt;<a href="#type-declaration-value">declaration-value</a>&gt; [ ';' &lt;<a href="#type-declaration-value">declaration-value</a>&gt; ]* )</code>
+													<code class="syntax">first-valid( &lt;<a href="#type-declaration-value">declaration-value</a>&gt;# )</code>
 												</span>
 											</li>
 										</ul>
@@ -29127,7 +29641,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#font-variant-css21-values</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">[normal | small-caps]</code>
+													<code class="syntax">normal | small-caps</code>
 												</span>
 											</li>
 										</ul>
@@ -29167,7 +29681,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#font-width-css3-values</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">[normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]</code>
+													<code class="syntax">normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded</code>
 												</span>
 											</li>
 										</ul>
@@ -29244,6 +29758,26 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="type-function-dependency-list" data-searchable-name="<function-dependency-list>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-function-dependency-list" class="name" data-unique-name="<function-dependency-list>">&lt;function-dependency-list&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-function-dependency-list" class="spec">
+													<span class="spec-identifier">css-mixins-1</span>
+													<span class="spec-link-hash">#typedef-function-dependency-list</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#type-function-parameter">function-parameter</a>&gt;#</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="type-function-name" data-searchable-name="<function-name>">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -29258,6 +29792,46 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">&lt;<a href="#type-dashed-ident">dashed-ident</a>&gt;</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="type-function-parameter-list" data-searchable-name="<function-parameter-list>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter-list" class="name" data-unique-name="<function-parameter-list>">&lt;function-parameter-list&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter-list" class="spec">
+													<span class="spec-identifier">css-mixins-1</span>
+													<span class="spec-link-hash">#typedef-function-parameter-list</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#type-function-parameter">function-parameter</a>&gt;#</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="type-function-parameter" data-searchable-name="<function-parameter>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter" class="name" data-unique-name="<function-parameter>">&lt;function-parameter&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter" class="spec">
+													<span class="spec-identifier">css-mixins-1</span>
+													<span class="spec-link-hash">#typedef-function-parameter</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">&lt;<a href="#type-custom-property-name">custom-property-name</a>&gt; &lt;<a href="#type-css-type">css-type</a>&gt;? [ : &lt;<a href="#type-declaration-value">declaration-value</a>&gt; ]?</code>
 												</span>
 											</li>
 										</ul>
@@ -29353,7 +29927,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-generic-complete</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">serif | sans-serif | system-ui | cursive | fantasy | math</code>
+													<code class="syntax">serif | sans-serif | system-ui | cursive | fantasy | math | monospace</code>
 												</span>
 											</li>
 										</ul>
@@ -29373,7 +29947,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-generic-family</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-generic-script-specific">generic-script-specific</a>&gt;| &lt;<a href="#type-generic-complete">generic-complete</a>&gt; | &lt;<a href="#type-generic-incomplete">generic-incomplete</a>&gt;`</code>
+													<code class="syntax">&lt;<a href="#type-generic-script-specific">generic-script-specific</a>&gt;| &lt;<a href="#type-generic-complete">generic-complete</a>&gt; | &lt;<a href="#type-generic-incomplete">generic-incomplete</a>&gt;</code>
 												</span>
 											</li>
 										</ul>
@@ -29898,26 +30472,6 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">&lt;length-percentage [0,∞]&gt; | min-content | max-content | auto</code>
-												</span>
-											</li>
-										</ul>
-								</div>
-							</li>
-						
-							<li id="type-inset-area" data-searchable-name="<inset-area>">
-								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
-								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-anchor-position-1/#typedef-inset-area" class="name" data-unique-name="<inset-area>">&lt;inset-area&gt;</a></code></h4>
-									<ul class="spec-list">
-										
-									
-											<li>
-												<a href="https://drafts.csswg.org/css-anchor-position-1/#typedef-inset-area" class="spec">
-													<span class="spec-identifier">css-anchor-position-1</span>
-													<span class="spec-link-hash">#typedef-inset-area</span><!--
-												--></a><!--
-												--><span class="syntax-container">:
-													<code class="syntax">[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | x-self-start | x-self-end | span-x-self-start | span-x-self-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | y-self-start | y-self-end | span-y-self-start | span-y-self-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]</code>
 												</span>
 											</li>
 										</ul>
@@ -31379,7 +31933,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-mix</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">mix( &lt;<a href="#type-progress">progress</a>&gt; ';' &lt;<a href="#type-whole-value">whole-value</a>&gt; ';' &lt;<a href="#type-whole-value">whole-value</a>&gt; ) | mix( &lt;<a href="#type-progress">progress</a>&gt; &amp;&amp; of &lt;'<a href="#property-animation-name">animation-name</a>'&gt; )</code>
+													<code class="syntax">mix( &lt;<a href="#type-progress">progress</a>&gt; , &lt;<a href="#type-whole-value">whole-value</a>&gt; , &lt;<a href="#type-whole-value">whole-value</a>&gt; ) | mix( &lt;<a href="#type-progress">progress</a>&gt; &amp;&amp; of &lt;'<a href="#property-animation-name">animation-name</a>'&gt; )</code>
 												</span>
 											</li>
 										</ul>
@@ -31587,26 +32141,6 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-mq-boolean①</span><!--
 												--></a><!--
 												-->
-											</li>
-										</ul>
-								</div>
-							</li>
-						
-							<li id="type-multiplier" data-searchable-name="<multiplier>">
-								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
-								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-multiplier" class="name" data-unique-name="<multiplier>">&lt;multiplier&gt;</a></code></h4>
-									<ul class="spec-list">
-										
-									
-											<li>
-												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-multiplier" class="spec">
-													<span class="spec-identifier">css-mixins-1</span>
-													<span class="spec-link-hash">#typedef-multiplier</span><!--
-												--></a><!--
-												--><span class="syntax-container">:
-													<code class="syntax">[ '#' | '+' ]</code>
-												</span>
 											</li>
 										</ul>
 								</div>
@@ -32204,46 +32738,6 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
-							<li id="type-parameter-list" data-searchable-name="<parameter-list>">
-								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
-								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-parameter-list" class="name" data-unique-name="<parameter-list>">&lt;parameter-list&gt;</a></code></h4>
-									<ul class="spec-list">
-										
-									
-											<li>
-												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-parameter-list" class="spec">
-													<span class="spec-identifier">css-mixins-1</span>
-													<span class="spec-link-hash">#typedef-parameter-list</span><!--
-												--></a><!--
-												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-parameter">parameter</a>&gt;#</code>
-												</span>
-											</li>
-										</ul>
-								</div>
-							</li>
-						
-							<li id="type-parameter" data-searchable-name="<parameter>">
-								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
-								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-parameter" class="name" data-unique-name="<parameter>">&lt;parameter&gt;</a></code></h4>
-									<ul class="spec-list">
-										
-									
-											<li>
-												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-parameter" class="spec">
-													<span class="spec-identifier">css-mixins-1</span>
-													<span class="spec-link-hash">#typedef-parameter</span><!--
-												--></a><!--
-												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-custom-property-name">custom-property-name</a>&gt; &lt;<a href="#type-type">type</a>&gt;? [ : &lt;<a href="#type-declaration-value">declaration-value</a>&gt; ]?</code>
-												</span>
-											</li>
-										</ul>
-								</div>
-							</li>
-						
 							<li id="type-percentage-token" data-searchable-name="<percentage-token>">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -32332,6 +32826,26 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">hsl | hwb | lch | oklch</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="type-position-area" data-searchable-name="<position-area>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area" class="name" data-unique-name="<position-area>">&lt;position-area&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area" class="spec">
+													<span class="spec-identifier">css-anchor-position-1</span>
+													<span class="spec-link-hash">#typedef-position-area</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | x-self-start | x-self-end | span-x-self-start | span-x-self-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | y-self-start | y-self-end | span-y-self-start | span-y-self-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]</code>
 												</span>
 											</li>
 										</ul>
@@ -32743,7 +33257,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-query-in-parens</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">( &lt;<a href="#type-container-query">container-query</a>&gt; ) | ( &lt;<a href="#type-size-feature">size-feature</a>&gt; ) | style( &lt;<a href="#type-style-query">style-query</a>&gt; ) | &lt;<a href="#type-general-enclosed">general-enclosed</a>&gt;</code>
+													<code class="syntax">( &lt;<a href="#type-container-query">container-query</a>&gt; ) | ( &lt;<a href="#type-size-feature">size-feature</a>&gt; ) | style( &lt;<a href="#type-style-query">style-query</a>&gt; ) | scroll-state( &lt;<a href="#type-scroll-state-query">scroll-state-query</a>&gt; ) | &lt;<a href="#type-general-enclosed">general-enclosed</a>&gt;</code>
 												</span>
 											</li>
 										</ul>
@@ -33135,10 +33649,20 @@ See ssr/template.html instead. -->
 							<li id="type-repeat-style" data-searchable-name="<repeat-style>">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-backgrounds-3/#typedef-repeat-style" class="name" data-unique-name="<repeat-style>">&lt;repeat-style&gt;</a></code></h4>
+									<h4><code><a href="https://drafts.csswg.org/css-backgrounds-4/#typedef-repeat-style" class="name" data-unique-name="<repeat-style>">&lt;repeat-style&gt;</a></code></h4>
 									<ul class="spec-list">
 										
 									
+											<li>
+												<a href="https://drafts.csswg.org/css-backgrounds-4/#typedef-repeat-style" class="spec">
+													<span class="spec-identifier">css-backgrounds-4</span>
+													<span class="spec-link-hash">#typedef-repeat-style</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">repeat-x | repeat-y | &lt;<a href="#type-repetition">repetition</a>&gt;{1,2}</code>
+												</span>
+											</li>
+										
 											<li>
 												<a href="https://drafts.csswg.org/css-backgrounds-3/#typedef-repeat-style" class="spec">
 													<span class="spec-identifier">css-backgrounds-3</span>
@@ -33146,6 +33670,26 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="type-repetition" data-searchable-name="<repetition>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-backgrounds-4/#typedef-repetition" class="name" data-unique-name="<repetition>">&lt;repetition&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-backgrounds-4/#typedef-repetition" class="spec">
+													<span class="spec-identifier">css-backgrounds-4</span>
+													<span class="spec-link-hash">#typedef-repetition</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">repeat | space | round | no-repeat</code>
 												</span>
 											</li>
 										</ul>
@@ -33321,6 +33865,64 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-scope-start</span><!--
 												--></a><!--
 												-->
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="type-scroll-state-feature" data-searchable-name="<scroll-state-feature>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-feature" class="name" data-unique-name="<scroll-state-feature>">&lt;scroll-state-feature&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-feature" class="spec">
+													<span class="spec-identifier">css-conditional-5</span>
+													<span class="spec-link-hash">#typedef-scroll-state-feature</span><!--
+												--></a><!--
+												-->
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="type-scroll-state-in-parens" data-searchable-name="<scroll-state-in-parens>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-in-parens" class="name" data-unique-name="<scroll-state-in-parens>">&lt;scroll-state-in-parens&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-in-parens" class="spec">
+													<span class="spec-identifier">css-conditional-5</span>
+													<span class="spec-link-hash">#typedef-scroll-state-in-parens</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">( &lt;<a href="#type-scroll-state-query">scroll-state-query</a>&gt; ) | ( &lt;<a href="#type-scroll-state-feature">scroll-state-feature</a>&gt; ) | &lt;<a href="#type-general-enclosed">general-enclosed</a>&gt;</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="type-scroll-state-query" data-searchable-name="<scroll-state-query>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-query" class="name" data-unique-name="<scroll-state-query>">&lt;scroll-state-query&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-query" class="spec">
+													<span class="spec-identifier">css-conditional-5</span>
+													<span class="spec-link-hash">#typedef-scroll-state-query</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">not &lt;<a href="#type-scroll-state-in-parens">scroll-state-in-parens</a>&gt; | &lt;<a href="#type-scroll-state-in-parens">scroll-state-in-parens</a>&gt; [ [ and &lt;<a href="#type-scroll-state-in-parens">scroll-state-in-parens</a>&gt; ]* | [ or &lt;<a href="#type-scroll-state-in-parens">scroll-state-in-parens</a>&gt; ]* ] | &lt;<a href="#type-scroll-state-feature">scroll-state-feature</a>&gt;</code>
+												</span>
 											</li>
 										</ul>
 								</div>
@@ -33827,7 +34429,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-shape-smooth-command</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">smooth &lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt; [via &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;]?</code>
+													<code class="syntax">smooth [[&lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;] || [using &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;]?]</code>
 												</span>
 											</li>
 										
@@ -33837,7 +34439,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#ref-for-typedef-shape-smooth-command①</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">smooth &lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt; [via &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;]?</code>
+													<code class="syntax">smooth [[&lt;<a href="#type-by-to">by-to</a>&gt; &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;] || [using &lt;<a href="#type-coordinate-pair">coordinate-pair</a>&gt;]?]</code>
 												</span>
 											</li>
 										</ul>
@@ -34282,6 +34884,26 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="type-syntax-combinator" data-searchable-name="<syntax-combinator>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-syntax-combinator" class="name" data-unique-name="<syntax-combinator>">&lt;syntax-combinator&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-syntax-combinator" class="spec">
+													<span class="spec-identifier">css-mixins-1</span>
+													<span class="spec-link-hash">#typedef-syntax-combinator</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">'|'</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="type-syntax-component-name" data-searchable-name="<syntax-component-name>">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -34295,7 +34917,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-syntax-component-name</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">'&lt;' &lt;<a href="#type-type-name">type-name</a>&gt; '&gt;' | &lt;<a href="#type-custom-ident">custom-ident</a>&gt;</code>
+													<code class="syntax">'&lt;' &lt;<a href="#type-syntax-type">syntax-type</a>&gt; '&gt;' | &lt;<a href="#type-custom-ident">custom-ident</a>&gt;</code>
 												</span>
 											</li>
 										</ul>
@@ -34315,7 +34937,47 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-syntax-component</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-syntax-component-name">syntax-component-name</a>&gt; &lt;<a href="#type-multiplier">multiplier</a>&gt;? | '&lt;' transform-list '&gt;'</code>
+													<code class="syntax">&lt;<a href="#type-syntax-component-name">syntax-component-name</a>&gt; &lt;<a href="#type-syntax-multiplier">syntax-multiplier</a>&gt;? | '&lt;' transform-list '&gt;'</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="type-syntax-multiplier" data-searchable-name="<syntax-multiplier>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-syntax-multiplier" class="name" data-unique-name="<syntax-multiplier>">&lt;syntax-multiplier&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-syntax-multiplier" class="spec">
+													<span class="spec-identifier">css-mixins-1</span>
+													<span class="spec-link-hash">#typedef-syntax-multiplier</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">[ '#' | '+' ]</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
+							<li id="type-syntax-type" data-searchable-name="<syntax-type>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-syntax-type" class="name" data-unique-name="<syntax-type>">&lt;syntax-type&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-syntax-type" class="spec">
+													<span class="spec-identifier">css-mixins-1</span>
+													<span class="spec-link-hash">#typedef-syntax-type</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">angle | color | custom-ident | image | integer | length | length-percentage | number | percentage | resolution | string | time | url | transform-function</code>
 												</span>
 											</li>
 										</ul>
@@ -34335,7 +34997,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-syntax</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">'*' | &lt;<a href="#type-syntax-component">syntax-component</a>&gt; [ &lt;<a href="#type-combinator">combinator</a>&gt; &lt;<a href="#type-syntax-component">syntax-component</a>&gt; ]+</code>
+													<code class="syntax">'*' | &lt;<a href="#type-syntax-component">syntax-component</a>&gt; [ &lt;<a href="#type-syntax-combinator">syntax-combinator</a>&gt; &lt;<a href="#type-syntax-component">syntax-component</a>&gt; ]+</code>
 												</span>
 											</li>
 										</ul>
@@ -34454,6 +35116,34 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
+							<li id="type-text-edge" data-searchable-name="<text-edge>">
+								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
+								<div class="container">
+									<h4><code><a href="https://drafts.csswg.org/css-inline-3/#typedef-text-edge" class="name" data-unique-name="<text-edge>">&lt;text-edge&gt;</a></code></h4>
+									<ul class="spec-list">
+										
+									
+											<li>
+												<a href="https://drafts.csswg.org/css-inline-3/#typedef-text-edge" class="spec">
+													<span class="spec-identifier">css-inline-3</span>
+													<span class="spec-link-hash">#typedef-text-edge</span><!--
+												--></a><!--
+												-->
+											</li>
+										
+											<li>
+												<a href="https://drafts.csswg.org/css-inline-3/#ref-for-typedef-text-edge②" class="spec">
+													<span class="spec-identifier">css-inline-3</span>
+													<span class="spec-link-hash">#ref-for-typedef-text-edge②</span><!--
+												--></a><!--
+												--><span class="syntax-container">:
+													<code class="syntax">[ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?</code>
+												</span>
+											</li>
+										</ul>
+								</div>
+							</li>
+						
 							<li id="type-time-percentage" data-searchable-name="<time-percentage>">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
@@ -34537,7 +35227,7 @@ See ssr/template.html instead. -->
 													<span class="spec-link-hash">#typedef-toggle</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">toggle( &lt;<a href="#type-whole-value">whole-value</a>&gt; [ ';' &lt;<a href="#type-whole-value">whole-value</a>&gt; ]+ )</code>
+													<code class="syntax">toggle( &lt;<a href="#type-whole-value">whole-value</a>&gt;# )</code>
 												</span>
 											</li>
 										</ul>
@@ -34928,20 +35618,20 @@ See ssr/template.html instead. -->
 								</div>
 							</li>
 						
-							<li id="type-type-name" data-searchable-name="<type-name>">
+							<li id="type-type" data-searchable-name="<type()>">
 								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
 								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-type-name" class="name" data-unique-name="<type-name>">&lt;type-name&gt;</a></code></h4>
+									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-type" class="name" data-unique-name="<type()>">&lt;type()&gt;</a></code></h4>
 									<ul class="spec-list">
 										
 									
 											<li>
-												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-type-name" class="spec">
+												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-type" class="spec">
 													<span class="spec-identifier">css-mixins-1</span>
-													<span class="spec-link-hash">#typedef-type-name</span><!--
+													<span class="spec-link-hash">#typedef-type</span><!--
 												--></a><!--
 												--><span class="syntax-container">:
-													<code class="syntax">angle | color | custom-ident | image | integer | length | length-percentage | number | percentage | resolution | string | time | url | transform-function</code>
+													<code class="syntax">type( &lt;<a href="#type-syntax">syntax</a>&gt; )</code>
 												</span>
 											</li>
 										</ul>
@@ -34962,26 +35652,6 @@ See ssr/template.html instead. -->
 												--></a><!--
 												--><span class="syntax-container">:
 													<code class="syntax">&lt;<a href="#type-wq-name">wq-name</a>&gt; | &lt;<a href="#type-ns-prefix">ns-prefix</a>&gt;? '*'</code>
-												</span>
-											</li>
-										</ul>
-								</div>
-							</li>
-						
-							<li id="type-type" data-searchable-name="<type>">
-								<!-- <a href="#" class="icon icon:mdn" title="View MDN reference"></a> -->
-								<div class="container">
-									<h4><code><a href="https://drafts.csswg.org/css-mixins-1/#typedef-type" class="name" data-unique-name="<type>">&lt;type&gt;</a></code></h4>
-									<ul class="spec-list">
-										
-									
-											<li>
-												<a href="https://drafts.csswg.org/css-mixins-1/#typedef-type" class="spec">
-													<span class="spec-identifier">css-mixins-1</span>
-													<span class="spec-link-hash">#typedef-type</span><!--
-												--></a><!--
-												--><span class="syntax-container">:
-													<code class="syntax">&lt;<a href="#type-syntax-component">syntax-component</a>&gt; | type( &lt;<a href="#type-syntax">syntax</a>&gt; )</code>
 												</span>
 											</li>
 										</ul>
