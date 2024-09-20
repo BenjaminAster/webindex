@@ -192,7 +192,8 @@ $specs: {
 
 		const potentiallyAnalyzeAndGetDOM = async (pageURL: string) => {
 			const analyzeCSS = !manualData.specsExcludedFromCSS.includes(pageURL);
-			const analyzeJavaScript = manuallyAdded && !manualData.specsExcludedFromJavaScript.includes(pageURL);
+			const analyzeJavaScript = (manuallyAdded && !manualData.specsExcludedFromJavaScript.includes(pageURL))
+				|| manualData.specsWithoutIDLInWebref.includes(pageURL);
 			const getTitle = !title;
 			let idl: string;
 			if (idlPath) {
@@ -267,7 +268,7 @@ $specs: {
 					}
 					break $switch;
 				} default: {
-					console.error(`[ERROR] unhandled multipage spec: ${title} (${url})`)
+					console.error(`[ERROR] unhandled multipage spec: ${title} (${url})`);
 				}
 			}
 		} else {

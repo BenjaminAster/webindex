@@ -365,7 +365,7 @@ ul#main-list > li > ul > li > .container {
 }
 
 ul#main-list > li > ul > li > .container > h4 {
-	flex-shrink: 0;
+	flex-shrink: 1;
 }
 
 ul#main-list > li > ul > li > .container > ul {

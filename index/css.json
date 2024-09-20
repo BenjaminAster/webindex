@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Thu, 05 Sep 2024 19:28:28 GMT",
-		"iso": "2024-09-05T19:28:28.233Z",
-		"unixMillis": 1725564508233
+		"utc": "Thu, 19 Sep 2024 21:21:31 GMT",
+		"iso": "2024-09-19T21:21:31.219Z",
+		"unixMillis": 1726780891219
 	},
 	"cssProperties": [
 		{
@@ -2074,16 +2074,6 @@
 					"syntax": "auto | sRGB | linearRGB",
 					"id": "propdef-color-interpolation-filters",
 					"spec": "https://drafts.fxtf.org/filter-effects-1/"
-				}
-			]
-		},
-		{
-			"name": "color-rendering",
-			"definitions": [
-				{
-					"syntax": "auto | optimizeSpeed | optimizeQuality",
-					"id": "ColorRenderingProperty",
-					"spec": "https://www.w3.org/TR/SVG2/painting.html"
 				}
 			]
 		},
@@ -14638,18 +14628,6 @@
 		{
 			"name": "<number>",
 			"valueFor": [
-				"<progress>"
-			],
-			"definitions": [
-				{
-					"id": "valdef-progress-number",
-					"spec": "https://drafts.csswg.org/css-values-5/"
-				}
-			]
-		},
-		{
-			"name": "<number>",
-			"valueFor": [
 				"flex-grow"
 			],
 			"definitions": [
@@ -14704,6 +14682,18 @@
 				{
 					"id": "valdef-voice-balance-number",
 					"spec": "https://drafts.csswg.org/css-speech-1/"
+				}
+			]
+		},
+		{
+			"name": "<number>",
+			"valueFor": [
+				"<progress>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-progress-number",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -20984,18 +20974,6 @@
 		{
 			"name": "color",
 			"valueFor": [
-				"attr()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-attr-color",
-					"spec": "https://drafts.csswg.org/css-values-5/"
-				}
-			]
-		},
-		{
-			"name": "color",
-			"valueFor": [
 				"<blend-mode>"
 			],
 			"definitions": [
@@ -21014,6 +20992,18 @@
 				{
 					"id": "valdef-blend-mode-color",
 					"spec": "https://drafts.fxtf.org/compositing-1/"
+				}
+			]
+		},
+		{
+			"name": "color",
+			"valueFor": [
+				"attr()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-attr-color",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -22968,7 +22958,7 @@
 			"definitions": [
 				{
 					"id": "valdef-cubic-bezier-easing-function-ease",
-					"spec": "https://drafts.csswg.org/css-easing-2/"
+					"spec": "https://drafts.csswg.org/css-easing-1/"
 				}
 			]
 		},
@@ -22980,18 +22970,6 @@
 			"definitions": [
 				{
 					"id": "valdef-cubic-bezier-easing-function-ease",
-					"spec": "https://drafts.csswg.org/css-easing-1/"
-				}
-			]
-		},
-		{
-			"name": "ease-in",
-			"valueFor": [
-				"<cubic-bezier-easing-function>"
-			],
-			"definitions": [
-				{
-					"id": "valdef-cubic-bezier-easing-function-ease-in",
 					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
@@ -23009,13 +22987,13 @@
 			]
 		},
 		{
-			"name": "ease-in-out",
+			"name": "ease-in",
 			"valueFor": [
 				"<cubic-bezier-easing-function>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-cubic-bezier-easing-function-ease-in-out",
+					"id": "valdef-cubic-bezier-easing-function-ease-in",
 					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
@@ -23033,13 +23011,13 @@
 			]
 		},
 		{
-			"name": "ease-out",
+			"name": "ease-in-out",
 			"valueFor": [
 				"<cubic-bezier-easing-function>"
 			],
 			"definitions": [
 				{
-					"id": "valdef-cubic-bezier-easing-function-ease-out",
+					"id": "valdef-cubic-bezier-easing-function-ease-in-out",
 					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
@@ -23053,6 +23031,18 @@
 				{
 					"id": "valdef-cubic-bezier-easing-function-ease-out",
 					"spec": "https://drafts.csswg.org/css-easing-1/"
+				}
+			]
+		},
+		{
+			"name": "ease-out",
+			"valueFor": [
+				"<cubic-bezier-easing-function>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-cubic-bezier-easing-function-ease-out",
+					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
 		},
@@ -23191,18 +23181,6 @@
 		{
 			"name": "end",
 			"valueFor": [
-				"steps()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-steps-end",
-					"spec": "https://drafts.csswg.org/css-easing-2/"
-				}
-			]
-		},
-		{
-			"name": "end",
-			"valueFor": [
 				"<self-position>",
 				"<content-position>",
 				"justify-self",
@@ -23251,6 +23229,18 @@
 				{
 					"id": "valdef-steps-end",
 					"spec": "https://drafts.csswg.org/css-easing-1/"
+				}
+			]
+		},
+		{
+			"name": "end",
+			"valueFor": [
+				"steps()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-steps-end",
+					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
 		},
@@ -24178,18 +24168,6 @@
 		{
 			"name": "flex",
 			"valueFor": [
-				"attr()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-attr-flex",
-					"spec": "https://drafts.csswg.org/css-values-5/"
-				}
-			]
-		},
-		{
-			"name": "flex",
-			"valueFor": [
 				"display",
 				"<display-inside>"
 			],
@@ -24222,6 +24200,18 @@
 				{
 					"id": "valdef-wrap-before-flex",
 					"spec": "https://drafts.csswg.org/css-text-4/"
+				}
+			]
+		},
+		{
+			"name": "flex",
+			"valueFor": [
+				"attr()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-attr-flex",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -26936,7 +26926,7 @@
 			"definitions": [
 				{
 					"id": "valdef-steps-jump-both",
-					"spec": "https://drafts.csswg.org/css-easing-2/"
+					"spec": "https://drafts.csswg.org/css-easing-1/"
 				}
 			]
 		},
@@ -26948,18 +26938,6 @@
 			"definitions": [
 				{
 					"id": "valdef-steps-jump-both",
-					"spec": "https://drafts.csswg.org/css-easing-1/"
-				}
-			]
-		},
-		{
-			"name": "jump-end",
-			"valueFor": [
-				"steps()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-steps-jump-end",
 					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
@@ -26977,13 +26955,13 @@
 			]
 		},
 		{
-			"name": "jump-none",
+			"name": "jump-end",
 			"valueFor": [
 				"steps()"
 			],
 			"definitions": [
 				{
-					"id": "valdef-steps-jump-none",
+					"id": "valdef-steps-jump-end",
 					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
@@ -27001,13 +26979,13 @@
 			]
 		},
 		{
-			"name": "jump-start",
+			"name": "jump-none",
 			"valueFor": [
 				"steps()"
 			],
 			"definitions": [
 				{
-					"id": "valdef-steps-jump-start",
+					"id": "valdef-steps-jump-none",
 					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
@@ -27021,6 +26999,18 @@
 				{
 					"id": "valdef-steps-jump-start",
 					"spec": "https://drafts.csswg.org/css-easing-1/"
+				}
+			]
+		},
+		{
+			"name": "jump-start",
+			"valueFor": [
+				"steps()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-steps-jump-start",
+					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
 		},
@@ -28275,24 +28265,24 @@
 		{
 			"name": "linear",
 			"valueFor": [
-				"<easing-function>"
-			],
-			"definitions": [
-				{
-					"id": "valdef-easing-function-linear",
-					"spec": "https://drafts.csswg.org/css-easing-2/"
-				}
-			]
-		},
-		{
-			"name": "linear",
-			"valueFor": [
 				"easing-function"
 			],
 			"definitions": [
 				{
 					"id": "valdef-easing-function-linear",
 					"spec": "https://drafts.csswg.org/css-easing-1/"
+				}
+			]
+		},
+		{
+			"name": "linear",
+			"valueFor": [
+				"<easing-function>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-easing-function-linear",
+					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
 		},
@@ -36468,18 +36458,6 @@
 		{
 			"name": "size",
 			"valueFor": [
-				"calc-size()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-calc-size-size",
-					"spec": "https://drafts.csswg.org/css-values-5/"
-				}
-			]
-		},
-		{
-			"name": "size",
-			"valueFor": [
 				"container-type"
 			],
 			"definitions": [
@@ -36510,6 +36488,18 @@
 				{
 					"id": "valdef-contain-size",
 					"spec": "https://drafts.csswg.org/css-contain-2/"
+				}
+			]
+		},
+		{
+			"name": "size",
+			"valueFor": [
+				"calc-size()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-calc-size-size",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},
@@ -37523,18 +37513,6 @@
 		{
 			"name": "start",
 			"valueFor": [
-				"steps()"
-			],
-			"definitions": [
-				{
-					"id": "valdef-steps-start",
-					"spec": "https://drafts.csswg.org/css-easing-2/"
-				}
-			]
-		},
-		{
-			"name": "start",
-			"valueFor": [
 				"<self-position>",
 				"<content-position>",
 				"justify-self",
@@ -37595,6 +37573,18 @@
 				{
 					"id": "valdef-steps-start",
 					"spec": "https://drafts.csswg.org/css-easing-1/"
+				}
+			]
+		},
+		{
+			"name": "start",
+			"valueFor": [
+				"steps()"
+			],
+			"definitions": [
+				{
+					"id": "valdef-steps-start",
+					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
 		},
@@ -37739,7 +37729,7 @@
 			"definitions": [
 				{
 					"id": "valdef-step-easing-function-step-end",
-					"spec": "https://drafts.csswg.org/css-easing-2/"
+					"spec": "https://drafts.csswg.org/css-easing-1/"
 				}
 			]
 		},
@@ -37751,18 +37741,6 @@
 			"definitions": [
 				{
 					"id": "valdef-step-easing-function-step-end",
-					"spec": "https://drafts.csswg.org/css-easing-1/"
-				}
-			]
-		},
-		{
-			"name": "step-start",
-			"valueFor": [
-				"<step-easing-function>"
-			],
-			"definitions": [
-				{
-					"id": "valdef-step-easing-function-step-start",
 					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
@@ -37776,6 +37754,18 @@
 				{
 					"id": "valdef-step-easing-function-step-start",
 					"spec": "https://drafts.csswg.org/css-easing-1/"
+				}
+			]
+		},
+		{
+			"name": "step-start",
+			"valueFor": [
+				"<step-easing-function>"
+			],
+			"definitions": [
+				{
+					"id": "valdef-step-easing-function-step-start",
+					"spec": "https://drafts.csswg.org/css-easing-2/"
 				}
 			]
 		},
@@ -42766,12 +42756,12 @@
 			"name": "calc-size()",
 			"definitions": [
 				{
-					"id": "funcdef-calc-size",
-					"spec": "https://drafts.csswg.org/css-values-5/"
-				},
-				{
 					"id": "funcdef-width-calc-size",
 					"spec": "https://drafts.csswg.org/css-sizing-3/"
+				},
+				{
+					"id": "funcdef-calc-size",
+					"spec": "https://drafts.csswg.org/css-values-5/"
 				}
 			]
 		},

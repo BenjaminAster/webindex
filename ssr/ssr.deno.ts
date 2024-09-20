@@ -204,6 +204,7 @@ for (const { fileName, tab } of [
 			const renderJavaScript = async () => {
 				const {
 					jsInterfaces,
+					jsMixins,
 					jsAttributes,
 					jsFunctions,
 					jsDictionaries,
@@ -211,7 +212,8 @@ for (const { fileName, tab } of [
 				} = JSON.parse(await Deno.readTextFile(new URL("../index/javascript.json", import.meta.url)));
 
 				const allData = [
-					["Interfaces and mixins", jsInterfaces],
+					["Interfaces", jsInterfaces],
+					["Mixins", jsMixins],
 					["Dictionaries", jsDictionaries],
 					["Attributes", jsAttributes],
 					["Functions", jsFunctions],
@@ -235,22 +237,25 @@ for (const { fileName, tab } of [
 					const itemTemplate = list.querySelector(":scope > template");
 					let /** @type {HTMLElement} */ specList;
 					let /** @type {string} */ prevDisplayName;
-					$dataLoop: for (const { name, definitions, static: isStatic, interface: interfaceName, dictionary, mixin, namespace } of data) {
+					$dataLoop: for (const { name, definitions, static: isStatic, interface: interfaceName, dictionary, namespace, extends: inheritance, includes } of data) {
 						if (!name) continue $dataLoop;
 						let displayName = name;
-						if (categoryId === "interfaces-and-mixins") {
-							if (mixin) displayName = `${name} (mixin)`;
-							else if (namespace) displayName = `${name} (${namespace} namespace)`;
+						if (categoryId === "interfaces") {
+							if (namespace) displayName = `${namespace}.${name}`;
+							if (inheritance || includes) displayName += ` (${[
+								...(inheritance ? [`extends ${inheritance}`] : []),
+								...(includes ? [`includes ${includes.join(", ")}`] : []),
+							].join("; ")})`
 						} else if (categoryId === "attributes") {
-							if (interfaceName === "Window") displayName = `${name} (window)`;
-							else if (isStatic) displayName = `${name} (${interfaceName})`;
-							else displayName = `${name} (${interfaceName}.prototype)`;
+							if (interfaceName === "Window") displayName += ` (window)`;
+							else if (isStatic) displayName += ` (${interfaceName})`;
+							else displayName += ` (${interfaceName}.prototype)`;
 						} else if (categoryId === "functions") {
-							if (interfaceName === "Window") displayName = `${name}() (window)`;
-							else if (isStatic) displayName = `${name}() (${interfaceName})`;
-							else displayName = `${name}() (${interfaceName}.prototype)`;
+							if (interfaceName === "Window") displayName += `() (window)`;
+							else if (isStatic) displayName += `() (${interfaceName})`;
+							else displayName += `() (${interfaceName}.prototype)`;
 						} else if (categoryId === "dictionary-fields") {
-							displayName = `${name} (${dictionary})`;
+							displayName += ` (${dictionary})`;
 						}
 						const itemClone = itemTemplate.cloneNode(true).content;
 						itemClone.querySelector("a.name").textContent = displayName;

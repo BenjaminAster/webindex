@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Thu, 05 Sep 2024 19:28:28 GMT",
-		"iso": "2024-09-05T19:28:28.233Z",
-		"unixMillis": 1725564508233
+		"utc": "Thu, 19 Sep 2024 21:21:31 GMT",
+		"iso": "2024-09-19T21:21:31.219Z",
+		"unixMillis": 1726780891219
 	},
 	"specs": [
 		{
@@ -2582,12 +2582,6 @@
 					"shortname": "svg-streaming"
 				},
 				{
-					"title": "SVG Markers",
-					"url": "https://svgwg.org/specs/markers/",
-					"repo": "https://github.com/w3c/svgwg/tree/main/specs/markers",
-					"shortname": "svg-markers"
-				},
-				{
 					"title": "SVG Paths",
 					"url": "https://svgwg.org/specs/paths/",
 					"repo": "https://github.com/w3c/svgwg/tree/main/specs/paths",
@@ -4371,24 +4365,6 @@
 					"shortname": "text-detection-api"
 				},
 				{
-					"title": "Accessibility Object Model",
-					"url": "https://wicg.github.io/aom/spec/",
-					"repo": "https://github.com/WICG/aom/tree/gh-pages/spec",
-					"shortname": "aom"
-				},
-				{
-					"title": "AOM Input Event Types",
-					"url": "https://wicg.github.io/aom/spec/input-events.html",
-					"repo": "https://github.com/WICG/aom/blob/gh-pages/spec/input-events.html",
-					"shortname": "input-events"
-				},
-				{
-					"title": "AOM Phase 1 - ARIA reflection",
-					"url": "https://wicg.github.io/aom/spec/aria-reflection.html",
-					"repo": "https://github.com/WICG/aom/blob/gh-pages/spec/aria-reflection.bs",
-					"shortname": "aom/aria-reflection"
-				},
-				{
 					"title": "Attribution Reporting",
 					"url": "https://wicg.github.io/attribution-reporting-api/",
 					"repo": "https://github.com/WICG/attribution-reporting-api",
@@ -4472,12 +4448,6 @@
 					"shortname": "datacue"
 				},
 				{
-					"title": "Default semantic properties for Custom Elements",
-					"url": "https://wicg.github.io/aom/spec/custom-element-semantics.html",
-					"repo": "https://github.com/WICG/aom/blob/gh-pages/spec/custom-element-semantics.bs",
-					"shortname": "aom/custom-element-semantics"
-				},
-				{
 					"title": "Deprecation Reporting",
 					"url": "https://wicg.github.io/deprecation-reporting/",
 					"repo": "https://github.com/WICG/deprecation-reporting",
@@ -4541,13 +4511,6 @@
 					"url": "https://wicg.github.io/eyedropper-api/",
 					"repo": "https://github.com/WICG/eyedropper-api",
 					"shortname": "eyedropper-api"
-				},
-				{
-					"title": "Federated Credential Management API",
-					"url": "https://fedidcg.github.io/FedCM/",
-					"repo": "https://github.com/fedidcg/FedCM",
-					"shortname": "FedCM",
-					"tests": "https://wpt.fyi/results/fedcm?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
 					"title": "Fenced Frame",
@@ -4718,12 +4681,6 @@
 					"url": "https://wicg.github.io/nav-speculation/no-vary-search.html",
 					"repo": "https://github.com/WICG/nav-speculation",
 					"shortname": "no-vary-search"
-				},
-				{
-					"title": "Observable",
-					"url": "https://wicg.github.io/observable/",
-					"repo": "https://github.com/WICG/observable",
-					"shortname": "observable"
 				},
 				{
 					"title": "Observable",

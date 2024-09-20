@@ -1,5 +1,5 @@
 
-// @ ts-ignore
+// @ts-ignore
 import { parse as _parseIDL } from "npm:webidl2@24.4.1";
 import manualData from "./manual-data.ts";
 import { sortArrayByObjectValue } from "./utils.deno.ts";
@@ -11,7 +11,7 @@ export const parseIDL = (idl: string) => {
 		console.error("[ERROR] failed to parse WebIDL");
 		return [];
 	}
-}
+};
 
 export const collectedCSSStuff = {
 	cssProperties: [],
@@ -28,10 +28,12 @@ export const collectedCSSStuff = {
 
 export const collectedJavaScriptStuff = {
 	jsInterfaces: [],
+	jsMixins: [],
 	jsDictionaries: [],
 	jsDictionaryFields: [],
 	jsAttributes: [],
 	jsFunctions: [],
+	jsInterfaceAliases: [],
 };
 
 const cssProperties: any[] = manualData.additionalCSSProperties;
@@ -45,10 +47,15 @@ const cssPseudoClasses = [];
 const cssPseudoElements = manualData.additionalCSSPseudoElements;
 const cssUnits = manualData.additionalCSSUnits;
 const jsInterfaces = [];
+const jsInterfaceAliases = [];
+const jsMixins = [];
+const jsMixinIncludings = new Map<string, Set<string>>();
 const jsDictionaries = [];
 const jsDictionaryFields = [];
 const jsAttributes = [];
 const jsFunctions = [];
+
+const debugMixinIncludingsSource = new Map<string, string[]>();
 
 export const tidyUpCollectedStuff = () => {
 	sortArrayByObjectValue(cssProperties, "name");
@@ -62,6 +69,8 @@ export const tidyUpCollectedStuff = () => {
 	sortArrayByObjectValue(cssPseudoElements, "name");
 	sortArrayByObjectValue(cssUnits, "name");
 	sortArrayByObjectValue(jsInterfaces, "name");
+	sortArrayByObjectValue(jsInterfaceAliases, "name");
+	sortArrayByObjectValue(jsMixins, "name");
 	sortArrayByObjectValue(jsDictionaries, "name");
 	sortArrayByObjectValue(jsDictionaryFields, "name");
 	sortArrayByObjectValue(jsAttributes, "name");
@@ -136,7 +145,7 @@ export const tidyUpCollectedStuff = () => {
 		}
 
 		return organizedArray;
-	}
+	};
 
 	// collectedStuff.cssProperties = organizedArray;
 
@@ -153,10 +162,24 @@ export const tidyUpCollectedStuff = () => {
 	collectedCSSStuff.cssPseudoElements = group(cssPseudoElements);
 	collectedCSSStuff.cssUnits = group(cssUnits, { propertiesToConsider: ["name", "forType"] });
 
-	collectedJavaScriptStuff.jsInterfaces = group(jsInterfaces, { propertiesToConsider: ["name", "mixin", "namespace"] });
+	collectedJavaScriptStuff.jsInterfaces = group(jsInterfaces, { propertiesToConsider: ["name", "namespace", "isNamespace"] });
+	for (const interfaceInfo of collectedJavaScriptStuff.jsInterfaces) {
+		const includes = jsMixinIncludings.get(interfaceInfo.name);
+		if (includes) interfaceInfo.includes = Array.from(includes);
+		let inheritance: string;
+		for (const definition of interfaceInfo.definitions) {
+			if (definition.extends) {
+				inheritance = definition.extends;
+				delete definition.extends;
+			}
+		}
+		if (inheritance) interfaceInfo.extends = inheritance;
+	}
+	collectedJavaScriptStuff.jsMixins = group(jsMixins, { propertiesToConsider: ["name"] });
 	collectedJavaScriptStuff.jsDictionaries = group(jsDictionaries, { propertiesToConsider: ["name"] });
 	collectedJavaScriptStuff.jsDictionaryFields = group(jsDictionaryFields, { propertiesToConsider: ["name", "dictionary"] });
-	collectedJavaScriptStuff.jsAttributes = group(jsAttributes, { propertiesToConsider: ["name", "interface", "static"] });
+	collectedJavaScriptStuff.jsAttributes = group(jsAttributes, { propertiesToConsider: ["name", "interface", "static", "const"] });
+	collectedJavaScriptStuff.jsInterfaceAliases = jsInterfaceAliases;
 	collectedJavaScriptStuff.jsFunctions = group(jsFunctions, { propertiesToConsider: ["name", "interface", "static"] });
 
 	// collectedStuff.cssTypes = cssTypes;
@@ -176,8 +199,10 @@ export const tidyUpCollectedStuff = () => {
 
 	// Deno.writeTextFile(new URL("./invalid.idl", import.meta.url), b);
 
+	// Deno.writeTextFileSync("./debug-mixin-sources.json", JSON.stringify(Object.fromEntries(debugMixinIncludingsSource), null, "\t"));
+
 	// console.log([...a]);
-}
+};
 
 // let types = new Set();
 
@@ -220,7 +245,7 @@ let a = new Set();
 
 let b = "";
 
-export const analyzeDocument = (doc: Document, { url }: { url: string }) => {
+export const analyzeDocument = (doc: Document, { url }: { url: string; }) => {
 	{
 		// debug
 
@@ -401,7 +426,7 @@ export const analyzeDocument = (doc: Document, { url }: { url: string }) => {
 	}
 };
 
-export const extractIDL = (doc: Document, { url }: { url: string }) => {
+export const extractIDL = (doc: Document, { url }: { url: string; }) => {
 	let idl = "";
 
 	$idlLoop: for (const container of doc.querySelectorAll("pre > code.idl, pre.idl:not(.example)")) {
@@ -424,7 +449,7 @@ export const extractIDL = (doc: Document, { url }: { url: string }) => {
 	return idl;
 };
 
-export const analyzeIDL = (idl: string, { url, generator }: { url: string, generator: string }) => {
+export const analyzeIDL = (idl: string, { url, generator }: { url: string, generator: string; }) => {
 	const tree = parseIDL(idl);
 
 	if (tree.length === 0) {
@@ -433,7 +458,16 @@ export const analyzeIDL = (idl: string, { url, generator }: { url: string, gener
 	}
 
 	for (const item of tree) {
-		if (["interface", "interface mixin", "namespace", "dictionary"].includes(item.type)) {
+		if (item.type === "includes") {
+			let array = jsMixinIncludings.get(item.target);
+			if (!array) jsMixinIncludings.set(item.target, array = new Set());
+			array.add(item.includes);
+			{
+				let info = debugMixinIncludingsSource.get(item.includes);
+				if (!info) debugMixinIncludingsSource.set(item.includes, info = []);
+				info.push(url);
+			}
+		} else if (["interface", "interface mixin", "callback interface", "namespace", "dictionary"].includes(item.type)) {
 			// TODO: reverse-engineer actual link ids better
 			const lowercaseName = item.name.toLowerCase();
 			const id = (() => {
@@ -465,12 +499,22 @@ export const analyzeIDL = (idl: string, { url, generator }: { url: string, gener
 			} else {
 				const inheritance = item.inheritance;
 				const namespace = item.extAttrs.find(({ name }) => name === "LegacyNamespace")?.rhs?.value;
-				jsInterfaces.push({
+				let aliases = item.extAttrs.find(({ name }) => name === "LegacyWindowAlias" || name === "LegacyFactoryFunction")?.rhs?.value;
+				if (aliases) {
+					if (Array.isArray(aliases)) aliases = aliases.map(info => info.value);
+					else aliases = [aliases];
+					jsInterfaceAliases.push({
+						name: item.name,
+						aliases,
+					});
+				}
+
+				(item.type === "interface mixin" ? jsMixins : jsInterfaces).push({
 					name: item.name,
-					...(inheritance ? { inheritance } : {}),
+					...(inheritance ? { extends: inheritance } : {}),
 					...(namespace ? { namespace: namespace } : {}),
 					...(item.partial ? { partial: true } : {}),
-					...(item.type === "interface mixin" ? { mixin: true } : {}),
+					...(item.type === "namespace" ? { isNamespace: true } : {}),
 					spec: url,
 					id,
 				});
@@ -478,8 +522,9 @@ export const analyzeIDL = (idl: string, { url, generator }: { url: string, gener
 
 			for (const member of item.members) {
 				if (member.type === "operation") {
+					if (item.type === "callback interface") continue;
 					jsFunctions.push({
-						name: member.name,
+						name: member.special === "stringifier" ? "toString" : member.name,
 						interface: item.name,
 						...(item.type === "namespace" || member.special === "static" ? { static: true } : {}),
 						spec: url,
@@ -490,6 +535,7 @@ export const analyzeIDL = (idl: string, { url, generator }: { url: string, gener
 						name: member.name,
 						interface: item.name,
 						...(item.type === "namespace" || member.type === "const" || member.special === "static" ? { static: true } : {}),
+						...(member.type === "const" ? { const: true } : {}),
 						spec: url,
 						id,
 					});
@@ -500,6 +546,65 @@ export const analyzeIDL = (idl: string, { url, generator }: { url: string, gener
 						spec: url,
 						id,
 					});
+				} else if (member.type === "iterable") {
+					for (const functionName of ["entries", "forEach", "keys", "values"]) {
+						jsFunctions.push({
+							name: functionName,
+							interface: item.name,
+							spec: url,
+							id,
+						});
+					}
+				} else if (member.type === "maplike") {
+					for (const functionName of ["entries", "forEach", "get", "has", "keys", "values"]) {
+						jsFunctions.push({
+							name: functionName,
+							interface: item.name,
+							spec: url,
+							id,
+						});
+					}
+					jsAttributes.push({
+						name: "size",
+						interface: item.name,
+						spec: url,
+						id,
+					});
+					if (!member.readonly) {
+						for (const functionName of ["clear", "delete", "set"]) {
+							jsFunctions.push({
+								name: functionName,
+								interface: item.name,
+								spec: url,
+								id,
+							});
+						}
+					}
+				} else if (member.type === "setlike") {
+					for (const functionName of ["entries", "forEach", "has", "keys", "values"]) {
+						jsFunctions.push({
+							name: functionName,
+							interface: item.name,
+							spec: url,
+							id,
+						});
+					}
+					jsAttributes.push({
+						name: "size",
+						interface: item.name,
+						spec: url,
+						id,
+					});
+					if (!member.readonly) {
+						for (const functionName of ["add", "clear", "delete"]) {
+							jsFunctions.push({
+								name: functionName,
+								interface: item.name,
+								spec: url,
+								id,
+							});
+						}
+					}
 				}
 			}
 		}
