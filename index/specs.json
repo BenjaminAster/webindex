@@ -1,8 +1,8 @@
 {
 	"timestamp": {
-		"utc": "Thu, 19 Sep 2024 21:21:31 GMT",
-		"iso": "2024-09-19T21:21:31.219Z",
-		"unixMillis": 1726780891219
+		"utc": "Mon, 21 Jul 2025 13:41:09 GMT",
+		"iso": "2025-07-21T13:41:09.635Z",
+		"unixMillis": 1753105269635
 	},
 	"specs": [
 		{
@@ -30,6 +30,12 @@
 					"repo": "https://github.com/w3c/aria",
 					"shortname": "wai-aria-1.3",
 					"tests": "https://wpt.fyi/results/wai-aria?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+				},
+				{
+					"title": "ARIA in HTML",
+					"url": "https://w3c.github.io/html-aria/",
+					"repo": "https://github.com/w3c/html-aria",
+					"shortname": "html-aria"
 				},
 				{
 					"title": "Core Accessibility API Mappings 1.2",
@@ -107,15 +113,35 @@
 			]
 		},
 		{
+			"groupName": "Audio Community Group",
+			"groupHomepage": "https://www.w3.org/community/audio-comgp/",
+			"groupIdentifier": "cg/audio-comgp",
+			"specs": [
+				{
+					"title": "Web Speech API",
+					"url": "https://webaudio.github.io/web-speech-api/",
+					"repo": "https://github.com/WebAudio/web-speech-api",
+					"shortname": "speech-api"
+				}
+			]
+		},
+		{
 			"groupName": "Audio Working Group",
 			"groupHomepage": "https://www.w3.org/groups/wg/audio/",
 			"groupIdentifier": "wg/audio",
 			"specs": [
 				{
-					"title": "Web Audio API",
+					"title": "Web Audio API 1.1",
 					"url": "https://webaudio.github.io/web-audio-api/",
 					"repo": "https://github.com/WebAudio/web-audio-api",
-					"shortname": "webaudio",
+					"shortname": "webaudio-1.0",
+					"tests": "https://wpt.fyi/results/webaudio?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+				},
+				{
+					"title": "Web Audio API 1.1",
+					"url": "https://webaudio.github.io/web-audio-api/",
+					"repo": "https://github.com/WebAudio/web-audio-api",
+					"shortname": "webaudio-1.1",
 					"tests": "https://wpt.fyi/results/webaudio?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
@@ -128,10 +154,28 @@
 			]
 		},
 		{
+			"groupName": "BiDirectional or Server-Initiated HTTP Working Group",
+			"groupHomepage": "https://datatracker.ietf.org/wg/hybi/",
+			"groupIdentifier": "ietf/hybi",
+			"specs": [
+				{
+					"title": "RFC 6455: The WebSocket Protocol",
+					"url": "https://www.rfc-editor.org/rfc/rfc6455",
+					"shortname": "rfc6455"
+				}
+			]
+		},
+		{
 			"groupName": "Browser Testing and Tools Working Group",
-			"groupHomepage": "https://www.w3.org/testing/browser/",
+			"groupHomepage": "https://www.w3.org/groups/wg/browser-tools-testing/",
 			"groupIdentifier": "wg/browser-tools-testing",
 			"specs": [
+				{
+					"title": "AT Driver",
+					"url": "https://w3c.github.io/at-driver/",
+					"repo": "https://github.com/w3c/at-driver",
+					"shortname": "at-driver"
+				},
 				{
 					"title": "WebDriver",
 					"url": "https://w3c.github.io/webdriver/",
@@ -159,6 +203,13 @@
 					"shortname": "box-tree-api-1"
 				},
 				{
+					"title": "Cascading Style Sheets (CSS) Level 2",
+					"url": "https://drafts.csswg.org/css2/",
+					"repo": "https://github.com/w3c/csswg-drafts",
+					"shortname": "CSS2",
+					"tests": "https://wpt.fyi/results/css/CSS2?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+				},
+				{
 					"title": "Compositing and Blending Level 1",
 					"url": "https://drafts.fxtf.org/compositing-1/",
 					"repo": "https://github.com/w3c/fxtf-drafts",
@@ -171,13 +222,6 @@
 					"repo": "https://github.com/w3c/fxtf-drafts",
 					"shortname": "compositing-2",
 					"tests": "https://wpt.fyi/results/css/compositing?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
-				},
-				{
-					"title": "CSS 2",
-					"url": "https://drafts.csswg.org/css2/",
-					"repo": "https://github.com/w3c/csswg-drafts",
-					"shortname": "CSS22",
-					"tests": "https://wpt.fyi/results/css/CSS2?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
 					"title": "CSS Anchor Positioning",
@@ -315,7 +359,7 @@
 					"title": "CSS Color HDR Module Level 1",
 					"url": "https://drafts.csswg.org/css-color-hdr-1/",
 					"repo": "https://github.com/w3c/csswg-drafts",
-					"shortname": "css-color-hdr"
+					"shortname": "css-color-hdr-1"
 				},
 				{
 					"title": "CSS Color Module Level 3",
@@ -399,6 +443,12 @@
 					"repo": "https://github.com/w3c/csswg-drafts",
 					"shortname": "css-counter-styles-3",
 					"tests": "https://wpt.fyi/results/css/css-counter-styles?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+				},
+				{
+					"title": "CSS Custom Functions and Mixins Module Level 1",
+					"url": "https://drafts.csswg.org/css-mixins-1/",
+					"repo": "https://github.com/w3c/csswg-drafts",
+					"shortname": "css-mixins-1"
 				},
 				{
 					"title": "CSS Custom Highlight API Module Level 1",
@@ -504,7 +554,7 @@
 					"tests": "https://wpt.fyi/results/css/css-fonts?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
-					"title": "CSS Form Styling Module Level 1",
+					"title": "CSS Form Control Styling Level 1",
 					"url": "https://drafts.csswg.org/css-forms-1/",
 					"repo": "https://github.com/w3c/csswg-drafts",
 					"shortname": "css-forms-1"
@@ -524,10 +574,10 @@
 					"tests": "https://wpt.fyi/results/css/css-break?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
-					"title": "CSS Functions and Mixins Module",
-					"url": "https://drafts.csswg.org/css-mixins-1/",
+					"title": "CSS Gap Decorations Module Level 1",
+					"url": "https://drafts.csswg.org/css-gaps-1/",
 					"repo": "https://github.com/w3c/csswg-drafts",
-					"shortname": "css-mixins-1"
+					"shortname": "css-gaps-1"
 				},
 				{
 					"title": "CSS Generated Content for Paged Media Module",
@@ -967,13 +1017,15 @@
 					"title": "CSS View Transitions Module Level 1",
 					"url": "https://drafts.csswg.org/css-view-transitions-1/",
 					"repo": "https://github.com/w3c/csswg-drafts",
-					"shortname": "css-view-transitions-1"
+					"shortname": "css-view-transitions-1",
+					"tests": "https://wpt.fyi/results/css/css-view-transitions?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
 					"title": "CSS View Transitions Module Level 2",
 					"url": "https://drafts.csswg.org/css-view-transitions-2/",
 					"repo": "https://github.com/w3c/csswg-drafts",
-					"shortname": "css-view-transitions-2"
+					"shortname": "css-view-transitions-2",
+					"tests": "https://wpt.fyi/results/css/css-view-transitions?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
 					"title": "CSS Viewport Module Level 1",
@@ -1072,6 +1124,12 @@
 					"shortname": "selectors-nonelement-1"
 				},
 				{
+					"title": "Pointer-driven Animations",
+					"url": "https://drafts.csswg.org/pointer-animations-1/",
+					"repo": "https://github.com/w3c/csswg-drafts",
+					"shortname": "pointer-animations-1"
+				},
+				{
 					"title": "Proposals for the future of CSS Paged Media",
 					"url": "https://drafts.csswg.org/css-page-4/",
 					"repo": "https://github.com/w3c/csswg-drafts",
@@ -1156,12 +1214,25 @@
 				{
 					"title": "Graphics Interchange Format",
 					"url": "https://www.w3.org/Graphics/GIF/spec-gif89a.txt",
-					"shortname": "GIF"
+					"shortname": "GIF",
+					"tests": "https://wpt.fyi/results/gif?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
 					"title": "Graphics Interchange Format (GIF) version 87a",
 					"url": "https://www.w3.org/Graphics/GIF/spec-gif87.txt",
 					"shortname": "GIF-87a"
+				}
+			]
+		},
+		{
+			"groupName": "Concise Binary Object Representation Maintenance and Extensions Working Group",
+			"groupHomepage": "https://datatracker.ietf.org/wg/cbor/",
+			"groupIdentifier": "ietf/cbor",
+			"specs": [
+				{
+					"title": "RFC 8610: Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures",
+					"url": "https://www.rfc-editor.org/rfc/rfc8610",
+					"shortname": "rfc8610"
 				}
 			]
 		},
@@ -1317,7 +1388,7 @@
 					"tests": "https://wpt.fyi/results/screen-wake-lock?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
-					"title": "Vibration API (Second Edition)",
+					"title": "Vibration API",
 					"url": "https://w3c.github.io/vibration/",
 					"repo": "https://github.com/w3c/vibration",
 					"shortname": "vibration",
@@ -1345,8 +1416,8 @@
 			"specs": [
 				{
 					"title": "Cookies Having Independent Partitioned State specification",
-					"url": "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html",
-					"repo": "https://github.com/explainers-by-googlers/CHIPS-spec",
+					"url": "https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html",
+					"repo": "https://github.com/privacycg/CHIPS",
 					"shortname": "partitioned-cookies"
 				}
 			]
@@ -1357,10 +1428,22 @@
 			"groupIdentifier": "wg/fedid",
 			"specs": [
 				{
+					"title": "Digital Credentials",
+					"url": "https://w3c-fedid.github.io/digital-credentials/",
+					"repo": "https://github.com/w3c-fedid/digital-credentials",
+					"shortname": "digital-credentials"
+				},
+				{
 					"title": "Federated Credential Management API",
 					"url": "https://w3c-fedid.github.io/FedCM/",
 					"repo": "https://github.com/w3c-fedid/FedCM",
 					"shortname": "fedcm-1"
+				},
+				{
+					"title": "Login Status API",
+					"url": "https://w3c-fedid.github.io/login-status/",
+					"repo": "https://github.com/w3c-fedid/login-status",
+					"shortname": "login-status"
 				}
 			]
 		},
@@ -1393,14 +1476,14 @@
 					"shortname": "rfc6386"
 				},
 				{
+					"title": "RFC 9649: WebP Image Format",
+					"url": "https://www.rfc-editor.org/rfc/rfc9649",
+					"shortname": "rfc9649"
+				},
+				{
 					"title": "WebP Container Specification",
 					"url": "https://developers.google.com/speed/webp/docs/riff_container",
 					"shortname": "webp-container"
-				},
-				{
-					"title": "WebP Image Format",
-					"url": "https://www.ietf.org/archive/id/draft-zern-webp-15.html",
-					"shortname": "webp"
 				},
 				{
 					"title": "WebP Lossles Bitstream Specification",
@@ -1473,6 +1556,12 @@
 			"groupHomepage": "https://datatracker.ietf.org/wg/httpbis/",
 			"groupIdentifier": "ietf/httpbis",
 			"specs": [
+				{
+					"title": "Compression Dictionary Transport",
+					"url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
+					"repo": "https://github.com/httpwg/http-extensions",
+					"shortname": "compression-dictionary"
+				},
 				{
 					"title": "Cookies: HTTP State Management Mechanism",
 					"url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
@@ -1609,6 +1698,12 @@
 					"url": "https://httpwg.org/specs/rfc7538.html",
 					"repo": "https://github.com/httpwg/httpwg.github.io",
 					"shortname": "rfc7538"
+				},
+				{
+					"title": "The No-Vary-Search HTTP Response Header Field",
+					"url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
+					"repo": "https://github.com/httpwg/http-extensions",
+					"shortname": "no-vary-search"
 				}
 			]
 		},
@@ -1820,6 +1915,12 @@
 			"groupIdentifier": "marknottingham",
 			"specs": [
 				{
+					"title": "RFC 5861 - HTTP Cache-Control Extensions for Stale Content",
+					"url": "https://httpwg.org/specs/rfc5861.html",
+					"repo": "https://github.com/httpwg/httpwg.github.io",
+					"shortname": "rfc5861"
+				},
+				{
 					"title": "RFC 8288 - Web Linking",
 					"url": "https://httpwg.org/specs/rfc8288.html",
 					"repo": "https://github.com/httpwg/httpwg.github.io",
@@ -1872,17 +1973,17 @@
 			"groupIdentifier": "wg/media",
 			"specs": [
 				{
-					"title": "Audio Session",
-					"url": "https://w3c.github.io/audio-session/",
-					"repo": "https://github.com/w3c/audio-session",
-					"shortname": "audio-session"
-				},
-				{
 					"title": "Media Playback Quality",
 					"url": "https://w3c.github.io/media-playback-quality/",
 					"repo": "https://github.com/w3c/media-playback-quality",
 					"shortname": "media-playback-quality",
 					"tests": "https://wpt.fyi/results/media-playback-quality?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+				},
+				{
+					"title": "Audio Session",
+					"url": "https://w3c.github.io/audio-session/",
+					"repo": "https://github.com/w3c/audio-session",
+					"shortname": "audio-session"
 				},
 				{
 					"title": "Autoplay Policy Detection",
@@ -2149,7 +2250,7 @@
 					"title": "Pointer Events",
 					"url": "https://w3c.github.io/pointerevents/",
 					"repo": "https://github.com/w3c/pointerevents",
-					"shortname": "pointerevents3",
+					"shortname": "pointerevents4",
 					"tests": "https://wpt.fyi/results/pointerevents?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				}
 			]
@@ -2160,7 +2261,7 @@
 			"groupIdentifier": "wg/png",
 			"specs": [
 				{
-					"title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+					"title": "Portable Network Graphics (PNG) Specification (Fourth Edition)",
 					"url": "https://w3c.github.io/png/",
 					"repo": "https://github.com/w3c/png",
 					"shortname": "png-3"
@@ -2179,16 +2280,11 @@
 					"shortname": "saa-non-cookie-storage"
 				},
 				{
-					"title": "Global Privacy Control (GPC)",
-					"url": "https://privacycg.github.io/gpc-spec/",
-					"repo": "https://github.com/privacycg/gpc-spec",
-					"shortname": "gpc-spec"
-				},
-				{
 					"title": "Navigational-Tracking Mitigations",
 					"url": "https://privacycg.github.io/nav-tracking-mitigations/",
 					"repo": "https://github.com/privacycg/nav-tracking-mitigations",
-					"shortname": "nav-tracking-mitigations"
+					"shortname": "nav-tracking-mitigations",
+					"tests": "https://wpt.fyi/results/nav-tracking-mitigations?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
 					"title": "Private Click Measurement",
@@ -2212,6 +2308,19 @@
 			]
 		},
 		{
+			"groupName": "Privacy Working Group",
+			"groupHomepage": "https://www.w3.org/groups/wg/privacy/",
+			"groupIdentifier": "wg/privacy",
+			"specs": [
+				{
+					"title": "Global Privacy Control (GPC)",
+					"url": "https://w3c.github.io/gpc/",
+					"repo": "https://github.com/w3c/gpc",
+					"shortname": "gpc"
+				}
+			]
+		},
+		{
 			"groupName": "Private Advertising Technology Community Group",
 			"groupHomepage": "https://www.w3.org/community/patcg/",
 			"groupIdentifier": "cg/patcg",
@@ -2227,6 +2336,19 @@
 					"url": "https://patcg-individual-drafts.github.io/topics/",
 					"repo": "https://github.com/patcg-individual-drafts/topics",
 					"shortname": "topics"
+				}
+			]
+		},
+		{
+			"groupName": "Private Advertising Technology Working Group",
+			"groupHomepage": "https://www.w3.org/groups/wg/pat/",
+			"groupIdentifier": "wg/pat",
+			"specs": [
+				{
+					"title": "Attribution Level 1",
+					"url": "https://w3c.github.io/ppa/",
+					"repo": "https://github.com/w3c/ppa",
+					"shortname": "privacy-preserving-attribution"
 				}
 			]
 		},
@@ -2275,6 +2397,18 @@
 			"groupIdentifier": "wg/secondscreen",
 			"specs": [
 				{
+					"title": "Open Screen Application Protocol",
+					"url": "https://w3c.github.io/openscreenprotocol/application.html",
+					"repo": "https://github.com/w3c/openscreenprotocol",
+					"shortname": "openscreen-application"
+				},
+				{
+					"title": "Open Screen Network Protocol",
+					"url": "https://w3c.github.io/openscreenprotocol/network.html",
+					"repo": "https://github.com/w3c/openscreenprotocol",
+					"shortname": "openscreen-network"
+				},
+				{
 					"title": "Open Screen Protocol",
 					"url": "https://w3c.github.io/openscreenprotocol/",
 					"repo": "https://github.com/w3c/openscreenprotocol",
@@ -2304,16 +2438,15 @@
 			]
 		},
 		{
-			"groupName": "Service Workers Working Group",
-			"groupHomepage": "https://www.w3.org/sw/",
-			"groupIdentifier": "wg/service-workers",
+			"groupName": "Spatio-temporal Data on the Web Working Group",
+			"groupHomepage": "https://www.w3.org/2021/sdw",
+			"groupIdentifier": "wg/sdw",
 			"specs": [
 				{
-					"title": "Service Workers",
-					"url": "https://w3c.github.io/ServiceWorker/",
-					"repo": "https://github.com/w3c/ServiceWorker",
-					"shortname": "service-workers",
-					"tests": "https://wpt.fyi/results/service-workers?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+					"title": "Extensions to the Semantic Sensor Network Ontology",
+					"url": "https://w3c.github.io/sdw-sosa-ssn/ssn-extensions/",
+					"repo": "https://github.com/w3c/sdw-sosa-ssn",
+					"shortname": "vocab-ssn-ext"
 				}
 			]
 		},
@@ -2372,6 +2505,12 @@
 					"url": "https://svgwg.org/specs/integration/",
 					"repo": "https://github.com/w3c/svgwg",
 					"shortname": "svg-integration"
+				},
+				{
+					"title": "SVG Paths",
+					"url": "https://svgwg.org/specs/paths/",
+					"repo": "https://github.com/w3c/svgwg",
+					"shortname": "svg-paths"
 				},
 				{
 					"title": "SVG Strokes",
@@ -2614,287 +2753,293 @@
 			"groupIdentifier": "tc39",
 			"specs": [
 				{
-					"title": "ECMAScript® 2025 Language Specification: Table of Contents",
+					"title": "ECMAScript® 2026 Language Specification: Table of Contents",
 					"url": "https://tc39.es/ecma262/multipage/",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Scope",
+					"title": "ECMAScript® 2026 Language Specification: 1 Scope",
 					"url": "https://tc39.es/ecma262/multipage/scope.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/scope",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Conformance",
+					"title": "ECMAScript® 2026 Language Specification: 2 Conformance",
 					"url": "https://tc39.es/ecma262/multipage/conformance.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/conformance",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Normative References",
+					"title": "ECMAScript® 2026 Language Specification: 3 Normative References",
 					"url": "https://tc39.es/ecma262/multipage/normative-references.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/normative-references",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Overview",
+					"title": "ECMAScript® 2026 Language Specification: 4 Overview",
 					"url": "https://tc39.es/ecma262/multipage/overview.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/overview",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Notational Conventions",
+					"title": "ECMAScript® 2026 Language Specification: 5 Notational Conventions",
 					"url": "https://tc39.es/ecma262/multipage/notational-conventions.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/notational-conventions",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: ECMAScript Data Types and Values",
+					"title": "ECMAScript® 2026 Language Specification: 6 ECMAScript Data Types and Values",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-data-types-and-values",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Abstract Operations",
+					"title": "ECMAScript® 2026 Language Specification: 7 Abstract Operations",
 					"url": "https://tc39.es/ecma262/multipage/abstract-operations.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/abstract-operations",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Syntax-Directed Operations",
+					"title": "ECMAScript® 2026 Language Specification: 8 Syntax-Directed Operations",
 					"url": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/syntax-directed-operations",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Executable Code and Execution Contexts",
+					"title": "ECMAScript® 2026 Language Specification: 9 Executable Code and Execution Contexts",
 					"url": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/executable-code-and-execution-contexts",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Ordinary and Exotic Objects Behaviours",
+					"title": "ECMAScript® 2026 Language Specification: 10 Ordinary and Exotic Objects Behaviours",
 					"url": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ordinary-and-exotic-objects-behaviours",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Source Text",
+					"title": "ECMAScript® 2026 Language Specification: 11 ECMAScript Language: Source Text",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-source-code.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-source-code",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Lexical Grammar",
+					"title": "ECMAScript® 2026 Language Specification: 12 ECMAScript Language: Lexical Grammar",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-lexical-grammar",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Expressions",
+					"title": "ECMAScript® 2026 Language Specification: 13 ECMAScript Language: Expressions",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-expressions",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Statements and Declarations",
+					"title": "ECMAScript® 2026 Language Specification: 14 ECMAScript Language: Statements and Declarations",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-statements-and-declarations",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Functions and Classes",
+					"title": "ECMAScript® 2026 Language Specification: 15 ECMAScript Language: Functions and Classes",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-functions-and-classes",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: ECMAScript Language: Scripts and Modules",
+					"title": "ECMAScript® 2026 Language Specification: 16 ECMAScript Language: Scripts and Modules",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-language-scripts-and-modules",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Error Handling and Language Extensions",
+					"title": "ECMAScript® 2026 Language Specification: 17 Error Handling and Language Extensions",
 					"url": "https://tc39.es/ecma262/multipage/error-handling-and-language-extensions.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/error-handling-and-language-extensions",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: ECMAScript Standard Built-in Objects",
+					"title": "ECMAScript® 2026 Language Specification: 18 ECMAScript Standard Built-in Objects",
 					"url": "https://tc39.es/ecma262/multipage/ecmascript-standard-built-in-objects.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/ecmascript-standard-built-in-objects",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: The Global Object",
+					"title": "ECMAScript® 2026 Language Specification: 19 The Global Object",
 					"url": "https://tc39.es/ecma262/multipage/global-object.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/global-object",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Fundamental Objects",
+					"title": "ECMAScript® 2026 Language Specification: 20 Fundamental Objects",
 					"url": "https://tc39.es/ecma262/multipage/fundamental-objects.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/fundamental-objects",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Numbers and Dates",
+					"title": "ECMAScript® 2026 Language Specification: 21 Numbers and Dates",
 					"url": "https://tc39.es/ecma262/multipage/numbers-and-dates.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/numbers-and-dates",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Text Processing",
+					"title": "ECMAScript® 2026 Language Specification: 22 Text Processing",
 					"url": "https://tc39.es/ecma262/multipage/text-processing.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/text-processing",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Indexed Collections",
+					"title": "ECMAScript® 2026 Language Specification: 23 Indexed Collections",
 					"url": "https://tc39.es/ecma262/multipage/indexed-collections.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/indexed-collections",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Keyed Collections",
+					"title": "ECMAScript® 2026 Language Specification: 24 Keyed Collections",
 					"url": "https://tc39.es/ecma262/multipage/keyed-collections.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/keyed-collections",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Structured Data",
+					"title": "ECMAScript® 2026 Language Specification: 25 Structured Data",
 					"url": "https://tc39.es/ecma262/multipage/structured-data.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/structured-data",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Managing Memory",
+					"title": "ECMAScript® 2026 Language Specification: 26 Managing Memory",
 					"url": "https://tc39.es/ecma262/multipage/managing-memory.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/managing-memory",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Control Abstraction Objects",
+					"title": "ECMAScript® 2026 Language Specification: 27 Control Abstraction Objects",
 					"url": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/control-abstraction-objects",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Reflection",
+					"title": "ECMAScript® 2026 Language Specification: 28 Reflection",
 					"url": "https://tc39.es/ecma262/multipage/reflection.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/reflection",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Memory Model",
+					"title": "ECMAScript® 2026 Language Specification: 29 Memory Model",
 					"url": "https://tc39.es/ecma262/multipage/memory-model.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/memory-model",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Grammar Summary",
+					"title": "ECMAScript® 2026 Language Specification: Annex A (informative) Grammar Summary",
 					"url": "https://tc39.es/ecma262/multipage/grammar-summary.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/grammar-summary",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Additional ECMAScript Features for Web Browsers",
+					"title": "ECMAScript® 2026 Language Specification: Annex B (normative) Additional ECMAScript Features for Web Browsers",
 					"url": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/additional-ecmascript-features-for-web-browsers",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: The Strict Mode of ECMAScript",
+					"title": "ECMAScript® 2026 Language Specification: Annex C (informative) The Strict Mode of ECMAScript",
 					"url": "https://tc39.es/ecma262/multipage/strict-mode-of-ecmascript.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/strict-mode-of-ecmascript",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Host Layering Points",
+					"title": "ECMAScript® 2026 Language Specification: Annex D (informative) Host Layering Points",
 					"url": "https://tc39.es/ecma262/multipage/host-layering-points.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/host-layering-points",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Corrections and Clarifications in ECMAScript 2015 with Possible Compatibility Impact",
+					"title": "ECMAScript® 2026 Language Specification: Annex E (informative) Corrections and Clarifications in ECMAScript 2015 with Possible Compatibility Impact",
 					"url": "https://tc39.es/ecma262/multipage/corrections-and-clarifications-in-ecmascript-2015-with-possible-compatibility-impact.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/corrections-and-clarifications-in-ecmascript-2015-with-possible-compatibility-impact",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Additions and Changes That Introduce Incompatibilities with Prior Editions",
+					"title": "ECMAScript® 2026 Language Specification: Annex F (informative) Additions and Changes That Introduce Incompatibilities with Prior Editions",
 					"url": "https://tc39.es/ecma262/multipage/additions-and-changes-that-introduce-incompatibilities-with-prior-editions.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/additions-and-changes-that-introduce-incompatibilities-with-prior-editions",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Colophon",
-					"url": "https://tc39.es/ecma262/multipage/colophon.html",
-					"repo": "https://github.com/tc39/ecma262",
-					"shortname": "ecmascript/colophon",
-					"tests": "https://github.com/tc39/test262/tree/main/test"
-				},
-				{
-					"title": "ECMAScript® 2025 Language Specification: Bibliography",
+					"title": "ECMAScript® 2026 Language Specification: Bibliography",
 					"url": "https://tc39.es/ecma262/multipage/bibliography.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/bibliography",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2025 Language Specification: Copyright & Software License",
+					"title": "ECMAScript® 2026 Language Specification: Colophon",
+					"url": "https://tc39.es/ecma262/multipage/colophon.html",
+					"repo": "https://github.com/tc39/ecma262",
+					"shortname": "ecmascript/colophon",
+					"tests": "https://github.com/tc39/test262/tree/main/test"
+				},
+				{
+					"title": "ECMAScript® 2026 Language Specification: Copyright & Software License",
 					"url": "https://tc39.es/ecma262/multipage/copyright-and-software-license.html",
 					"repo": "https://github.com/tc39/ecma262",
 					"shortname": "ecmascript/copyright-and-software-license",
 					"tests": "https://github.com/tc39/test262/tree/main/test"
 				},
 				{
-					"title": "ECMAScript® 2024 Internationalization API Specification",
+					"title": "ECMAScript® 2026 Internationalization API Specification",
 					"url": "https://tc39.es/ecma402/",
 					"repo": "https://github.com/tc39/ecma402",
 					"shortname": "ecma-402",
 					"tests": "https://github.com/tc39/test262/tree/main/test/intl402"
 				},
 				{
-					"title": "ES Array.fromAsync (2022)",
+					"title": "Source map format specification",
+					"url": "https://tc39.es/ecma426/",
+					"repo": "https://github.com/tc39/ecma426",
+					"shortname": "ecma-426"
+				},
+				{
+					"title": "ES Array.fromAsync",
 					"url": "https://tc39.es/proposal-array-from-async/",
 					"repo": "https://github.com/tc39/proposal-array-from-async",
 					"shortname": "tc39-array-from-async"
@@ -2912,6 +3057,12 @@
 					"shortname": "tc39-async-explicit-resource-management"
 				},
 				{
+					"title": "Atomics.pause",
+					"url": "https://tc39.es/proposal-atomics-microwait/",
+					"repo": "https://github.com/tc39/proposal-atomics-microwait",
+					"shortname": "tc39-atomics-microwait"
+				},
+				{
 					"title": "Time Zone Canonicalization proposal",
 					"url": "https://tc39.es/proposal-canonical-tz/",
 					"repo": "https://github.com/tc39/proposal-canonical-tz",
@@ -2922,6 +3073,12 @@
 					"url": "https://tc39.es/proposal-decorators/",
 					"repo": "https://github.com/tc39/proposal-decorators",
 					"shortname": "tc39-decorators"
+				},
+				{
+					"title": "Deferred Imports Evaluation",
+					"url": "https://tc39.es/proposal-defer-import-eval/",
+					"repo": "https://github.com/tc39/proposal-defer-import-eval",
+					"shortname": "tc39-defer-import-eval"
 				},
 				{
 					"title": "Dynamic Code Brand Checks",
@@ -2936,18 +3093,6 @@
 					"shortname": "tc39-explicit-resource-management"
 				},
 				{
-					"title": "Float16Array",
-					"url": "https://tc39.es/proposal-float16array/",
-					"repo": "https://github.com/tc39/proposal-float16array",
-					"shortname": "tc39-float16array"
-				},
-				{
-					"title": "Import Attributes",
-					"url": "https://tc39.es/proposal-import-attributes/",
-					"repo": "https://github.com/tc39/proposal-import-attributes",
-					"shortname": "tc39-import-attributes"
-				},
-				{
 					"title": "Intl.DurationFormat",
 					"url": "https://tc39.es/proposal-intl-duration-format/",
 					"repo": "https://github.com/tc39/proposal-intl-duration-format",
@@ -2960,46 +3105,16 @@
 					"shortname": "tc39-intl-locale-info"
 				},
 				{
-					"title": "Iterator Helpers",
-					"url": "https://tc39.es/proposal-iterator-helpers/",
-					"repo": "https://github.com/tc39/proposal-iterator-helpers",
-					"shortname": "tc39-iterator-helpers"
-				},
-				{
-					"title": "JSON modules",
-					"url": "https://tc39.es/proposal-json-modules/",
-					"repo": "https://github.com/tc39/proposal-json-modules",
-					"shortname": "tc39-json-modules"
-				},
-				{
 					"title": "JSON.parse source text access",
 					"url": "https://tc39.es/proposal-json-parse-with-source/",
 					"repo": "https://github.com/tc39/proposal-json-parse-with-source",
 					"shortname": "tc39-json-parse-with-source"
 				},
 				{
-					"title": "Promise.try",
-					"url": "https://tc39.es/proposal-promise-try/",
-					"repo": "https://github.com/tc39/proposal-promise-try",
-					"shortname": "tc39-promise-try"
-				},
-				{
-					"title": "RegExp.escape",
-					"url": "https://tc39.es/proposal-regex-escaping/",
-					"repo": "https://github.com/tc39/proposal-regex-escaping",
-					"shortname": "tc39-regex-escaping"
-				},
-				{
-					"title": "Regular Expression Pattern Modifiers for ECMAScript",
-					"url": "https://tc39.es/proposal-regexp-modifiers/",
-					"repo": "https://github.com/tc39/proposal-regexp-modifiers",
-					"shortname": "tc39-regexp-modifiers"
-				},
-				{
-					"title": "Set methods",
-					"url": "https://tc39.es/proposal-set-methods/",
-					"repo": "https://github.com/tc39/proposal-set-methods",
-					"shortname": "tc39-set-methods"
+					"title": "Math.sumPrecise",
+					"url": "https://tc39.es/proposal-math-sum/",
+					"repo": "https://github.com/tc39/proposal-math-sum",
+					"shortname": "tc39-math-sum"
 				},
 				{
 					"title": "ShadowRealm API",
@@ -3014,22 +3129,28 @@
 					"shortname": "tc39-source-phase-imports"
 				},
 				{
-					"title": "Temporal proposal",
+					"title": "Temporal",
 					"url": "https://tc39.es/proposal-temporal/",
 					"repo": "https://github.com/tc39/proposal-temporal",
 					"shortname": "tc39-temporal"
-				},
-				{
-					"title": "Source Map",
-					"url": "https://tc39.es/source-map/",
-					"repo": "https://github.com/tc39/source-map",
-					"shortname": "sourcemap"
 				},
 				{
 					"title": "ArrayBuffer transfer",
 					"url": "https://tc39.es/proposal-arraybuffer-transfer/",
 					"repo": "https://github.com/tc39/proposal-arraybuffer-transfer",
 					"shortname": "tc39-arraybuffer-transfer"
+				},
+				{
+					"title": "Float16Array",
+					"url": "https://tc39.es/proposal-float16array/",
+					"repo": "https://github.com/tc39/proposal-float16array",
+					"shortname": "tc39-float16array"
+				},
+				{
+					"title": "Import Attributes",
+					"url": "https://tc39.es/proposal-import-attributes/",
+					"repo": "https://github.com/tc39/proposal-import-attributes",
+					"shortname": "tc39-import-attributes"
 				},
 				{
 					"title": "Intl Enumeration API Specification",
@@ -3062,16 +3183,58 @@
 					"shortname": "tc39-intl-pluralrules"
 				},
 				{
+					"title": "Error.isError",
+					"url": "https://tc39.es/proposal-is-error/",
+					"repo": "https://github.com/tc39/proposal-is-error",
+					"shortname": "tc39-is-error"
+				},
+				{
+					"title": "Iterator Helpers",
+					"url": "https://tc39.es/proposal-iterator-helpers/",
+					"repo": "https://github.com/tc39/proposal-iterator-helpers",
+					"shortname": "tc39-iterator-helpers"
+				},
+				{
+					"title": "JSON modules",
+					"url": "https://tc39.es/proposal-json-modules/",
+					"repo": "https://github.com/tc39/proposal-json-modules",
+					"shortname": "tc39-json-modules"
+				},
+				{
+					"title": "Promise.try",
+					"url": "https://tc39.es/proposal-promise-try/",
+					"repo": "https://github.com/tc39/proposal-promise-try",
+					"shortname": "tc39-promise-try"
+				},
+				{
 					"title": "ES Promise.withResolvers (2023)",
 					"url": "https://tc39.es/proposal-promise-with-resolvers/",
 					"repo": "https://github.com/tc39/proposal-promise-with-resolvers",
 					"shortname": "tc39-promise-with-resolvers"
 				},
 				{
+					"title": "RegExp.escape",
+					"url": "https://tc39.es/proposal-regex-escaping/",
+					"repo": "https://github.com/tc39/proposal-regex-escaping",
+					"shortname": "tc39-regex-escaping"
+				},
+				{
+					"title": "Regular Expression Pattern Modifiers for ECMAScript",
+					"url": "https://tc39.es/proposal-regexp-modifiers/",
+					"repo": "https://github.com/tc39/proposal-regexp-modifiers",
+					"shortname": "tc39-regexp-modifiers"
+				},
+				{
 					"title": "Resizable ArrayBuffer and growable SharedArrayBuffer",
 					"url": "https://tc39.es/proposal-resizablearraybuffer/",
 					"repo": "https://github.com/tc39/proposal-resizablearraybuffer",
 					"shortname": "tc39-resizablearraybuffer"
+				},
+				{
+					"title": "Set methods",
+					"url": "https://tc39.es/proposal-set-methods/",
+					"repo": "https://github.com/tc39/proposal-set-methods",
+					"shortname": "tc39-set-methods"
 				},
 				{
 					"title": "The JSON Data Interchange Syntax",
@@ -3119,8 +3282,8 @@
 					"shortname": "change-password-url"
 				},
 				{
-					"title": "A Well-Known URL for Passkey Endpoints",
-					"url": "https://w3c.github.io/webappsec-passkey-endpoints/passkey-endpoints.html",
+					"title": "A Well-Known URL for Relying Party Passkey Endpoints",
+					"url": "https://w3c.github.io/webappsec-passkey-endpoints/",
 					"repo": "https://github.com/w3c/webappsec-passkey-endpoints",
 					"shortname": "passkey-endpoints"
 				},
@@ -3157,6 +3320,12 @@
 					"repo": "https://github.com/w3c/webappsec-credential-management",
 					"shortname": "credential-management-1",
 					"tests": "https://wpt.fyi/results/credential-management?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+				},
+				{
+					"title": "Device Bound Session Credentials",
+					"url": "https://w3c.github.io/webappsec-dbsc/",
+					"repo": "https://github.com/w3c/webappsec-dbsc",
+					"shortname": "dbsc"
 				},
 				{
 					"title": "Fetch Metadata Request Headers",
@@ -3216,7 +3385,7 @@
 					"title": "Subresource Integrity",
 					"url": "https://w3c.github.io/webappsec-subresource-integrity/",
 					"repo": "https://github.com/w3c/webappsec-subresource-integrity",
-					"shortname": "SRI",
+					"shortname": "sri-2",
 					"tests": "https://wpt.fyi/results/subresource-integrity?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
@@ -3240,10 +3409,10 @@
 					"shortname": "webappsec-uisecurity"
 				},
 				{
-					"title": "Web Cryptography API",
+					"title": "Web Cryptography API Level 2",
 					"url": "https://w3c.github.io/webcrypto/",
 					"repo": "https://github.com/w3c/webcrypto",
-					"shortname": "WebCryptoAPI",
+					"shortname": "webcrypto-2",
 					"tests": "https://wpt.fyi/results/WebCryptoAPI?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				}
 			]
@@ -3253,12 +3422,6 @@
 			"groupHomepage": "https://www.w3.org/groups/wg/webapps/",
 			"groupIdentifier": "wg/webapps",
 			"specs": [
-				{
-					"title": "ARIA in HTML",
-					"url": "https://w3c.github.io/html-aria/",
-					"repo": "https://github.com/w3c/html-aria",
-					"shortname": "html-aria"
-				},
 				{
 					"title": "Badging API",
 					"url": "https://w3c.github.io/badging/",
@@ -3333,6 +3496,13 @@
 					"repo": "https://github.com/w3c/screen-orientation",
 					"shortname": "screen-orientation",
 					"tests": "https://wpt.fyi/results/screen-orientation?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+				},
+				{
+					"title": "Service Workers Nightly",
+					"url": "https://w3c.github.io/ServiceWorker/",
+					"repo": "https://github.com/w3c/ServiceWorker",
+					"shortname": "service-workers",
+					"tests": "https://wpt.fyi/results/service-workers?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
 					"title": "UI Events",
@@ -3432,7 +3602,7 @@
 					"title": "ContentEditable",
 					"url": "https://w3c.github.io/contentEditable/",
 					"repo": "https://github.com/w3c/contentEditable",
-					"shortname": "contentEditable",
+					"shortname": "content-editable",
 					"tests": "https://wpt.fyi/results/contenteditable?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
@@ -3471,7 +3641,7 @@
 		},
 		{
 			"groupName": "Web Fonts Working Group",
-			"groupHomepage": "https://www.w3.org/Fonts/WG/",
+			"groupHomepage": "https://www.w3.org/groups/wg/webfonts/",
 			"groupIdentifier": "wg/webfonts",
 			"specs": [
 				{
@@ -4034,7 +4204,8 @@
 					"title": "URL Pattern Standard",
 					"url": "https://urlpattern.spec.whatwg.org/",
 					"repo": "https://github.com/whatwg/urlpattern",
-					"shortname": "urlpattern"
+					"shortname": "urlpattern",
+					"tests": "https://wpt.fyi/results/urlpattern?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
 					"title": "Web IDL Standard",
@@ -4069,6 +4240,24 @@
 					"url": "https://webmachinelearning.github.io/model-loader/",
 					"repo": "https://github.com/webmachinelearning/model-loader",
 					"shortname": "model-loader"
+				},
+				{
+					"title": "Prompt API",
+					"url": "https://webmachinelearning.github.io/prompt-api/",
+					"repo": "https://github.com/webmachinelearning/prompt-api",
+					"shortname": "prompt-api"
+				},
+				{
+					"title": "Translator and Language Detector APIs",
+					"url": "https://webmachinelearning.github.io/translation-api/",
+					"repo": "https://github.com/webmachinelearning/translation-api",
+					"shortname": "translation-api"
+				},
+				{
+					"title": "Writing Assistance APIs",
+					"url": "https://webmachinelearning.github.io/writing-assistance-apis/",
+					"repo": "https://github.com/webmachinelearning/writing-assistance-apis",
+					"shortname": "writing-assistance-apis"
 				}
 			]
 		},
@@ -4236,6 +4425,12 @@
 					"tests": "https://wpt.fyi/results/device-memory?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
+					"title": "Element Timing API",
+					"url": "https://w3c.github.io/element-timing/",
+					"repo": "https://github.com/w3c/element-timing",
+					"shortname": "element-timing"
+				},
+				{
 					"title": "Event Timing API",
 					"url": "https://w3c.github.io/event-timing/",
 					"repo": "https://github.com/w3c/event-timing",
@@ -4338,7 +4533,7 @@
 					"tests": "https://wpt.fyi/results/timing-entrytypes-registry?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
-					"title": "User Timing Level 3",
+					"title": "User Timing",
 					"url": "https://w3c.github.io/user-timing/",
 					"repo": "https://github.com/w3c/user-timing",
 					"shortname": "user-timing",
@@ -4363,6 +4558,12 @@
 					"url": "https://wicg.github.io/shape-detection-api/text.html",
 					"repo": "https://github.com/WICG/shape-detection-api",
 					"shortname": "text-detection-api"
+				},
+				{
+					"title": "Accessibility Object Model",
+					"url": "https://wicg.github.io/aom/spec/",
+					"repo": "https://github.com/WICG/aom",
+					"shortname": "aom"
 				},
 				{
 					"title": "Attribution Reporting",
@@ -4461,12 +4662,6 @@
 					"shortname": "device-attributes"
 				},
 				{
-					"title": "Digital Credentials",
-					"url": "https://wicg.github.io/digital-credentials/",
-					"repo": "https://github.com/WICG/digital-credentials",
-					"shortname": "digital-credentials"
-				},
-				{
 					"title": "Digital Goods API",
 					"url": "https://wicg.github.io/digital-goods/",
 					"repo": "https://github.com/WICG/digital-goods",
@@ -4493,6 +4688,12 @@
 					"tests": "https://wpt.fyi/results/document-policy?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
+					"title": "Document-Isolation-Policy",
+					"url": "https://wicg.github.io/document-isolation-policy/",
+					"repo": "https://github.com/WICG/document-isolation-policy",
+					"shortname": "document-isolation-policy"
+				},
+				{
 					"title": "Early detection of input events",
 					"url": "https://wicg.github.io/is-input-pending/",
 					"repo": "https://github.com/WICG/is-input-pending",
@@ -4500,17 +4701,22 @@
 					"tests": "https://wpt.fyi/results/is-input-pending?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
-					"title": "Element Timing API",
-					"url": "https://wicg.github.io/element-timing/",
-					"repo": "https://github.com/WICG/element-timing",
-					"shortname": "element-timing",
-					"tests": "https://wpt.fyi/results/element-timing?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+					"title": "Explicit JavaScript Compile Hints (File-based)",
+					"url": "https://wicg.github.io/explicit-javascript-compile-hints-file-based/",
+					"repo": "https://github.com/WICG/explicit-javascript-compile-hints-file-based",
+					"shortname": "explicit-javascript-compile-hints-file-based"
 				},
 				{
 					"title": "EyeDropper API",
 					"url": "https://wicg.github.io/eyedropper-api/",
 					"repo": "https://github.com/WICG/eyedropper-api",
 					"shortname": "eyedropper-api"
+				},
+				{
+					"title": "Facilitated Payment Link Type in HTML",
+					"url": "https://wicg.github.io/paymentlink/",
+					"repo": "https://github.com/WICG/paymentlink",
+					"shortname": "paymentlink"
 				},
 				{
 					"title": "Fenced Frame",
@@ -4677,12 +4883,6 @@
 					"tests": "https://wpt.fyi/results/netinfo?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
-					"title": "No-Vary-Search",
-					"url": "https://wicg.github.io/nav-speculation/no-vary-search.html",
-					"repo": "https://github.com/WICG/nav-speculation",
-					"shortname": "no-vary-search"
-				},
-				{
 					"title": "Observable",
 					"url": "https://wicg.github.io/observable/",
 					"repo": "https://github.com/WICG/observable",
@@ -4705,10 +4905,10 @@
 					"url": "https://wicg.github.io/page-lifecycle/",
 					"repo": "https://github.com/WICG/page-lifecycle",
 					"shortname": "page-lifecycle",
-					"tests": "https://wpt.fyi/results/lifecycle?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
+					"tests": "https://wpt.fyi/results/page-lifecycle?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
 				},
 				{
-					"title": "Pending Beacon",
+					"title": "Page not found · GitHub Pages",
 					"url": "https://wicg.github.io/pending-beacon/",
 					"repo": "https://github.com/WICG/pending-beacon",
 					"shortname": "pending-beacon"
@@ -4807,6 +5007,12 @@
 					"url": "https://wicg.github.io/shared-storage/",
 					"repo": "https://github.com/WICG/shared-storage",
 					"shortname": "shared-storage"
+				},
+				{
+					"title": "Signature-based Integrity",
+					"url": "https://wicg.github.io/signature-based-sri/",
+					"repo": "https://github.com/WICG/signature-based-sri",
+					"shortname": "signature-based-sri"
 				},
 				{
 					"title": "Soft Navigations",
@@ -4911,13 +5117,6 @@
 					"shortname": "web-smart-card"
 				},
 				{
-					"title": "Web Speech API",
-					"url": "https://wicg.github.io/speech-api/",
-					"repo": "https://github.com/WICG/speech-api",
-					"shortname": "speech-api",
-					"tests": "https://wpt.fyi/results/speech-api?label=master&product=chrome&product=safari&product=firefox&product=servo&product=ladybird&product=flow"
-				},
-				{
 					"title": "WebHID API",
 					"url": "https://wicg.github.io/webhid/",
 					"repo": "https://github.com/WICG/webhid",
@@ -4963,6 +5162,12 @@
 					"url": "https://w3c.github.io/mediacapture-handle/identity/",
 					"repo": "https://github.com/w3c/mediacapture-handle",
 					"shortname": "capture-handle-identity"
+				},
+				{
+					"title": "Captured Surface Control",
+					"url": "https://w3c.github.io/mediacapture-surface-control/",
+					"repo": "https://github.com/w3c/mediacapture-surface-control",
+					"shortname": "mediacapture-surface-control"
 				},
 				{
 					"title": "IceTransport Extensions for WebRTC",
@@ -5185,6 +5390,12 @@
 					"url": "https://webassembly.github.io/threads/core/bikeshed/",
 					"repo": "https://github.com/WebAssembly/threads",
 					"shortname": "wasm-core-2-fork-threads"
+				},
+				{
+					"title": "WebAssembly Core Specification",
+					"url": "https://webassembly.github.io/wide-arithmetic/core/bikeshed/",
+					"repo": "https://github.com/WebAssembly/wide-arithmetic",
+					"shortname": "wasm-core-2-fork-wide-arithmetic"
 				},
 				{
 					"title": "WebAssembly JavaScript Interface",

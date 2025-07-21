@@ -92,15 +92,17 @@ $specs: {
 	}
 
 	// let results = await fetchJSON(indexURL);
-	results = results.map(({
-		nightly: { url, repository: repo, pages } = {} as any,
-		groups: [{ url: groupHomepage, name: groupName, }],
-		css: cssPath,
-		idl: idlPath,
-		// url: tr,
-		url: mainURL,
-		...rest
-	}) => ({ ...rest, url, mainURL, repo, groupHomepage, groupName, cssPath, idlPath, pages }));
+	results = results
+		.map(({
+			nightly: { url, repository: repo, pages } = {} as any,
+			groups: [{ url: groupHomepage, name: groupName, }],
+			css: cssPath,
+			idl: idlPath,
+			// url: tr,
+			url: mainURL,
+			...rest
+		}) => ({ ...rest, url, mainURL, repo, groupHomepage, groupName, cssPath, idlPath, pages }))
+		.filter(({ mainURL }) => !manualData.excludedSpecs.includes(mainURL));
 
 	$specLoop: for (let {
 		url,
@@ -125,14 +127,14 @@ $specs: {
 
 		if (!url) {
 			if (repo) {
-				let { login, repoName, path, isFile } = repo.match(
-					/^https:\/\/github.com\/(?<login>[\w-]+)\/(?<repoName>[\w-]+)(\/(tree|(?<isFile>blob))\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/
+				let { username, repoName, path, isFile } = repo.match(
+					/^https:\/\/github.com\/(?<username>[\w-]+)\/(?<repoName>[\w-]+)(\/(tree|(?<isFile>blob))\/(?<branch>[\w-]+)(\/(?<path>.*))?)?$/
 				).groups;
-				url = `https://${login.toLowerCase()}.github.io/${repoName}/${path ? (isFile ? path.replace(/(\.bs|\.md)$/, ".html") : `${path}/`) : ""}`;
+				url = `https://${username.toLowerCase()}.github.io/${repoName}/${path ? (isFile ? path.replace(/(\.bs|\.md)$/, ".html") : `${path}/`) : ""}`;
 			} else url = mainURL;
 		}
 
-		if (manualData.excludedSpecs.includes(url)) continue $specLoop;
+		// if () continue $specLoop;
 		if (categories && !categories.includes("browser")) continue $specLoop;
 
 		if (!shortname) {
@@ -171,6 +173,9 @@ $specs: {
 
 		let groupObject = specs.find((item) => item.groupIdentifier === group);
 		if (!groupObject) {
+			if (!groupInfo) {
+				console.log(groupInfo, group, url);
+			}
 			specs.push(groupObject = {
 				groupName: groupInfo.name,
 				groupHomepage: groupInfo.homepage,
@@ -242,7 +247,9 @@ $specs: {
 						await potentiallyAnalyzeAndGetDOM(page);
 						const text = await fetchCached(page);
 						let doc = domParser.parseFromString(text, "text/html");
-						let { heading } = doc.querySelector("h1").textContent.trim().match(/^[\w]+ (?<heading>.+)$/s).groups;
+						console.log(page);
+						// let { heading } = doc.querySelector("h1").textContent.trim().match(/^[\w]+ (?<heading>.+)$/s).groups;
+						let heading = doc.querySelector("h1").textContent.trim();
 						groupObject.specs.push({
 							title: `${title}: ${heading}`,
 							url: page,

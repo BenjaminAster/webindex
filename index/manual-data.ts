@@ -146,6 +146,11 @@ export default {
 			identifier: "davidbenjamin",
 			homepage: "https://datatracker.ietf.org/person/davidben@google.com",
 		},
+		{
+			name: "Spatial Data on the Web Working Group",
+			identifier: "wg/sdw",
+			homepage: "https://www.w3.org/2021/sdw/",
+		},
 	],
 	groupRewrites: {
 		"https://w3c.github.io/encrypted-media/": "wg/media",
@@ -162,7 +167,8 @@ export default {
 		"https://w3c.github.io/mse-byte-stream-format-mp2t/": "wg/media",
 		"https://w3c.github.io/mse-byte-stream-format-mpeg-audio/": "wg/media",
 		"https://w3c.github.io/mse-byte-stream-format-webm/": "wg/media",
-		"https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html": "dylancutler",
+		// "https://explainers-by-googlers.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html": "dylancutler",
+		"https://www.ietf.org/archive/id/draft-cutler-httpbis-partitioned-cookies-01.html": "dylancutler",
 		"https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html": "davidbenjamin",
 		"https://www.ietf.org/archive/id/draft-zern-webp-15.html": "google",
 		"https://www.rfc-editor.org/rfc/rfc6386": "google",
@@ -171,6 +177,9 @@ export default {
 		"https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html": "khronos",
 		"https://www.rfc-editor.org/rfc/rfc7932": "ietf/appsawg",
 		"https://www.rfc-editor.org/rfc/rfc8878": "ietf/appsawg",
+		"https://www.rfc-editor.org/rfc/rfc9649": "google", // WebP has no associated IETF group
+		"https://httpwg.org/specs/rfc5861.html": "marknottingham",
+		"https://w3c.github.io/sdw-sosa-ssn/ssn-extensions/": "wg/sdw",
 	},
 	additionalSpecs: [
 		{ repo: "https://github.com/w3c/mathml", group: "wg/math" },
@@ -244,6 +253,7 @@ export default {
 		// TODO: more FIDO specs at https://fidoalliance.org/specs/
 		// TODO: more image, audio, video, font, ... formats
 		{ url: "https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf", group: "tc39", shortname: "json" },
+		{ repo: "https://github.com/webmachinelearning/prompt-api", group: "cg/webmachinelearning" },
 	],
 	titleRewrites: {
 		"jpeg": {
@@ -299,16 +309,17 @@ export default {
 		"https://tc39.es/proposal-intl-numberformat-v3/out/annexes/proposed.html",
 		"https://tc39.es/proposal-array-grouping/",
 		"https://www.w3.org/TR/CSS21/",
-		"https://sourcemaps.info/spec.html",
-		"https://w3c.github.io/fingerprinting-guidance/",
+		"https://www.w3.org/TR/fingerprinting-guidance/",
 		"https://www.w3.org/2001/tag/doc/promises-guide",
 		"https://www.w3.org/Consortium/Patent-Policy/",
 		"https://www.w3.org/Consortium/Process/",
 		"https://www.w3.org/TR/test-methodology/",
 		"https://www.w3.org/TR/SVG11/",
-		"https://drafts.csswg.org/css-2022/",
-		"https://drafts.csswg.org/css-2023/",
-		"https://drafts.csswg.org/css-2024/",
+		"https://www.w3.org/TR/css-2022/",
+		"https://www.w3.org/TR/css-2023/",
+		"https://www.w3.org/TR/css-2024/",
+		"https://www.w3.org/TR/css-2025/",
+		"https://www.w3.org/TR/css-2026/",
 		"https://wicg.github.io/close-watcher/",
 		"https://wicg.github.io/urlpattern/",
 		"https://wicg.github.io/sanitizer-api/",
@@ -316,6 +327,8 @@ export default {
 		"https://www.iso.org/standard/85253.html",
 		"https://www.iso.org/standard/87621.html",
 		"https://wicg.github.io/digital-identities/",
+		"https://www.w3.org/policies/process/",
+		"https://www.w3.org/TR/pointerevents3/", // Pointer Events appears twice in webref
 	],
 	specURLRewrites: {
 		"wg/css": {
